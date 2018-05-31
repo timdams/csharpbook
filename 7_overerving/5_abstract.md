@@ -32,7 +32,7 @@ class Wolf: Dier
 ```
 En dan zal dit wel werken: ``Wolf wolfje= new Wolf();``
 
-En als we polymorfisme gebruiken ([zie verder](/11_polymorfisme/README.MD)) dan mag dit ook: ``Dier paardje= new Paard();`` 
+En als we polymorfisme gebruiken ([zie verder](../11_polymorfisme/README.MD)) dan mag dit ook: ``Dier paardje= new Paard();`` 
 
 ## Abstracte methoden
 Het is logisch dat we mogelijk ook bepaalde zaken in de abstracte klasse als abstract kunnen aanduiden. Beeld je in dat je een Methode "MaakGeluid" hebt in je klasse Dier. Wat voor een geluid maakt 'een dier'? We kunnen dus ook geen implementatie (code) geven in de abstracte parent klasse. 

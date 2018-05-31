@@ -6,7 +6,7 @@ We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 
 
 ## Polymorfisme in de praktijk: Dieren
-Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk ([abstracte klassen in overerving](7_overerving/5_abstract.md)):
+Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk ([abstracte klassen in overerving](../7_overerving/5_abstract.md)):
 ```csharp
 abstract class  Dier
 {

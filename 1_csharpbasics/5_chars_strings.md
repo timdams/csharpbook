@@ -8,7 +8,7 @@ Console.WriteLine("eenLetter=" + eenLetter);
 Het is belangrijk dat je de apostrof (') niet vergeet voor en na het karakter dat je wenst op te slaan!
 
 Je kan eender welk ASCII-teken in een char-bewaren, namelijk letters, cijfers en speciale tekens (%, $, * , #, etc.) Merk dus op dat volgende lijn: ``
-char eenGetal = '7';`` Weliswaar een getal als teken opslaan, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal ([zie Convert en Casting](1_csharpbasics/4_converteren_casting.md)).
+char eenGetal = '7';`` Weliswaar een getal als teken opslaan, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal ([zie Convert en Casting](../1_csharpbasics/4_converteren_casting.md)).
 
 # String
 Een string is een reeks van 0, 1 of meerdere chars, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
