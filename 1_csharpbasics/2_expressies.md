@@ -19,7 +19,7 @@ Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van me
 De voorgaande code kan ook langer geschreven worden als:
 
 ```csharp
-int tussenResultaat= temperatuurGisteren - temperatuurVandaag;
+int tussenResultaat = temperatuurGisteren - temperatuurVandaag;
 int temperatuursVerschil = tussenResultaat;
 ```
 

@@ -3,7 +3,7 @@
 De belangrijkste basistypen van C\# om getallen weer te geven zijn
 
 * Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
-* Voor kommagetallen: `double , float, decimal`
+* Voor kommagetallen: `double, float, decimal`
 
 ## Bereik van datatypes
 
@@ -26,9 +26,9 @@ Voor de kommagetallen:
 
 | **Type** | **Geheugen** | **Range** | **Precisie** |
 | :--- | :--- | :--- | :--- |
-| `float` | **32 bits** | 1,5\*10-45tot 3,4\*1048 | 7 digits |
-| `double` | 64 bits | **5\*10-324tot 1,7\*10308** | 15 digits |
-| `decimal` | 128 bits | 1\*10-28tot 7,9\*1028 | **28-29 digits** |
+| `float` | **32 bits** | 1,5\*10^-45 tot 3,4\*10^48 | 7 digits |
+| `double` | 64 bits | **5\*10^-324 tot 1,7\*10^308** | 15 digits |
+| `decimal` | 128 bits | 1\*10^-28 tot 7,9\*10^28 | **28-29 digits** |
 
 ### Bereik in code weten
 
@@ -69,7 +69,7 @@ int mijnLeeftijd = 37;
 
 Vanaf dit punt kunnen we dus ten allen tijde deze variabele gebruiken om een waarde aan toe te kennen, de bestaande waarde te overschrijven, of de waarde te gebruiken:
 
-* Waarde toekennen: `mijnGetal= 15;`
+* Waarde toekennen: `mijnGetal = 15;`
 * Waarde tonen op scherm: `Console.WriteLine(mijnGetal);`
 
 Met de** toekennings-operator \(=\)** kan je een waarde toekennen aan een variabele. Hierbij kan je zowel een literal toekennen oftewel het resultaat van een expressie.
@@ -119,6 +119,6 @@ In dit voorbeeld zal er dus voor gezorgd worden dat de oude waarde van temperatu
 Volgende code toont hoe je bijvoorbeeld eerst de vorige waarde kunt bewaren:
 
 ```csharp
-int temperatuurEerGisteren= temperatuurGisteren;
+int temperatuurEerGisteren = temperatuurGisteren;
 temperatuurGisteren = 25;
 ```

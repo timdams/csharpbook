@@ -78,10 +78,10 @@ Echter, .NET heeft ook enkele ingebouwde conversie-methoden die je kunnen helpen
 Het gebruik hiervan is zeer eenvoudig.Enkele voorbeelden:
 
 ```csharp
-int getal= Convert.ToInt32(3.2); //double to int
-double anderGetal= Convert.ToDouble(5); //int to double
-bool isWaar= Convert.ToBoolean(1); //int to bool
-int userAge= Convert.ToInt32("19"); //string to int
+int getal = Convert.ToInt32(3.2); //double to int
+double anderGetal = Convert.ToDouble(5); //int to double
+bool isWaar = Convert.ToBoolean(1); //int to bool
+int userAge = Convert.ToInt32("19"); //string to int
 ```
 
 De convert-klasse bevat tal van conversiemogelijkheden. Opgelet: de convert zal zelf zo goed mogelijk de data omzetten en dus indien nodig widening of narrowing toepassen. Zeker bij het omzetten van een string naar een ander type kijk je best steeds de documentatie na om te weten wat er intern juist zal gebeuren.
