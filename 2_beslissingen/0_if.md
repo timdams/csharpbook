@@ -20,7 +20,7 @@ int x = 10;
  
 if ( x > 9 )
 {
-         System.Console.WriteLine ("x is greater than 9!");
+         System.Console.WriteLine("x is greater than 9!");
 }
 ```
 
@@ -33,11 +33,11 @@ int x = 10;
  
 if ( x > 9 )
 {
-         System.Console.WriteLine ("x is greater than 9!");
+         System.Console.WriteLine("x is greater than 9!");
 }
 else
 {
-         System.Console.WriteLine ("x is less than 9!");
+         System.Console.WriteLine("x is less than 9!");
 }
 ```
 ## If/else if
@@ -50,15 +50,15 @@ int x = 9;
  
 if (x == 10)
 {
-     System.Console.WriteLine ("x is 10");
+     System.Console.WriteLine("x is 10");
 }
 else if (x == 9)
 {
-     System.Console.WriteLine ("x is 9");
+     System.Console.WriteLine("x is 9");
 }
 else if (x == 8)
 {
-     System.Console.WriteLine ("x is 8");
+     System.Console.WriteLine("x is 8");
 }
 ```
 

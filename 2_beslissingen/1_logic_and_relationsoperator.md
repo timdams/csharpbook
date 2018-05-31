@@ -20,5 +20,5 @@ De logische EN , OF en NIET-operators die je kent van de booleaanse algebra kan 
 
 Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te draaien. Bijvoorbeeld:
 ```csharp
-!(0==2)  //zal true geven
+!(0==2)  // Zal true geven
 ```

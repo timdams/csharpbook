@@ -49,13 +49,13 @@ option = int.Parse(Console.ReadLine());
 switch(option)
 {
     case 1:
-     Console.WriteLine("Afbreken gekozen");
+        Console.WriteLine("Afbreken gekozen");
         break;
     case 2:        
-     Console.WriteLine("Opslaan gekozen");
+        Console.WriteLine("Opslaan gekozen");
         break;
     case 3:
-     Console.WriteLine("Laden gekozen");
+        Console.WriteLine("Laden gekozen");
         break;
     default: 
         Console.WriteLine("Ongeldige optie");
