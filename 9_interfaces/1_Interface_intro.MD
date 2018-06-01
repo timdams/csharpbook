@@ -81,7 +81,7 @@ interface IGod:ISuperHeld
 ```
 
 ## Voorbeeld: Presidenten en interfaces
-In het hoofdstuk Polymorfisme bespraken we een voorbeeld van een klasse ``President`` die enkele ``Advisor``-klassen gebruikt om hem te helpen ([lees hier na](11_polymorfisme#polymorfisme-in-de-praktijk-presidenten)).
+In het hoofdstuk Polymorfisme bespraken we een voorbeeld van een klasse ``President`` die enkele ``Advisor``-klassen gebruikt om hem te helpen ([lees hier na](../11_polymorfisme#polymorfisme-in-de-praktijk-presidenten)).
 
 Een nadeel van die voorgaande aanpak is dat al onze Advisors maar 1 "job" kunnen hebben: ze erven allemaal over van ``Advisor`` en kunnen nergens anders van overerven (geen multiple inheritance is toegestaan in C#). Via interfaces kunnen we dit oplossen. Een advisor gaan we dan eerder als een "bij-job" beschouwen en niet de hoofdreden van een klasse.
 

@@ -117,7 +117,7 @@ Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
 Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
 
 ### Student Organizer Deluxe
-Herschrijf de [Student-klasse](/6_klassen_en_objecten/A_practica.md#studentklasse) en zorg ervoor dat iedere public field private is. Vervolgens maak je bijhorende public properties aan die toegang tot deze private fields verzorgen. Controleer in de properties op illegale input zodat bijvoorbeeld geen  de punten enkel getallen tussen 0 en 20 mogen zijn.
+Herschrijf de [Student-klasse](../6_klassen_en_objecten/A_practica.md#studentklasse) en zorg ervoor dat iedere public field private is. Vervolgens maak je bijhorende public properties aan die toegang tot deze private fields verzorgen. Controleer in de properties op illegale input zodat bijvoorbeeld geen  de punten enkel getallen tussen 0 en 20 mogen zijn.
 
 Herschrijf de studentmanager zodat deze werkt met deze nieuwe klasse .
 

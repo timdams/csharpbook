@@ -68,7 +68,7 @@ var1 = 20;
 var2 = var1;
 ```
 
-Deze code zal zonder problemen gaan. Var2 zal de waarde 20.0 bevatten. De inhoud van var1 wordt �verbreed� naar een double, eenvoudigweg door er een kommagetal van te maken. Er gaat g��n inhoud verloren echter.
+Deze code zal zonder problemen gaan. Var2 zal de waarde 20.0 bevatten. De inhoud van var1 wordt *verbreed* naar een double, eenvoudigweg door er een kommagetal van te maken. Er gaat **geen** inhoud verloren echter.
 
 ## Conversie
 Casting is de 'oldschool' manier van data omzetten die vooral zeer nuttig is daar deze ook werkt in andere C#-related programmeertalen zoals C, C++ en Java. 
@@ -86,11 +86,11 @@ int userAge = Convert.ToInt32("19"); //string to int
 
 De convert-klasse bevat tal van conversiemogelijkheden. Opgelet: de convert zal zelf zo goed mogelijk de data omzetten en dus indien nodig widening of narrowing toepassen. Zeker bij het omzetten van een string naar een ander type kijk je best steeds de documentatie na om te weten wat er intern juist zal gebeuren.
 
-Je kan [alle conversie-mogelijkheden hier bekijken](https://msdn.microsoft.com/en-us/library/system.convert(v=vs.110).aspx)
+Je kan [alle conversie-mogelijkheden hier bekijken](https://msdn.microsoft.com/en-us/library/system.convert.aspx)
 
 ## Parsing
 Ieder ingebouwd type heeft ook een .Parse() methode die je kan aanroepen om strings om te zetten naar het gewenste type. Parsing zal je echter minder vaak nodig hebben. Gebruik deze enkel wanneer
 1. Je een string hebt waarvan je weet dat deze altijd van een specifiek type zal zijn, bv een int, dan kan je ``Int32.Parse()`` gebruiken 
-2. Je input van de gebruiker vraagt (bv via Console.ReadLine) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()`` [info](https://msdn.microsoft.com/en-us/library/f02979c7(v=vs.110).aspx)
+2. Je input van de gebruiker vraagt (bv via Console.ReadLine) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()`` [info](https://msdn.microsoft.com/en-us/library/f02979c7.aspx)
 
 Er zij nog subtiele verschillen die we hier niet behandelen ([zie](https://stackoverflow.com/questions/199470/whats-the-main-difference-between-int-parse-and-convert-toint32))

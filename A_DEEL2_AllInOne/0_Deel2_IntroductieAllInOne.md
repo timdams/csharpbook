@@ -6,6 +6,6 @@ Volgende hoofdstukken bevatten grotere projecten waarin wordt getracht meerdere 
 
 Volgt nu een beschrijving van de belangrijkste technieken die je in de projecten hierna zal tegenkomen:
 
-* [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md): Klassen en objecten, Enum, List<>, Compositie
-* [War Simulator](A_DEEL2_AllInOne/3_WarGame.md): Klassen en objecten, Overerving, Abstract, List<>, Polymorfisme, Compositie, Interfaces
-* [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md): Klassen en objecten, Overerving, Abstract, List<>, Polymorfisme, Compositie, Interfaces
+* [OO Textbased Game](2_OOTextGame.md): Klassen en objecten, Enum, List<>, Compositie
+* [War Simulator](3_WarGame.md): Klassen en objecten, Overerving, Abstract, List<>, Polymorfisme, Compositie, Interfaces
+* [Map Maker](1_MapMapker.md): Klassen en objecten, Overerving, Abstract, List<>, Polymorfisme, Compositie, Interfaces

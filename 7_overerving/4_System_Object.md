@@ -97,7 +97,7 @@ public override bool Equals(Object o)
 }
 ```
 
-De lijn ``Student temp = (Student)o;`` zal het object o casten naar een Student. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het object o. [Dit concept het polymorfisme en wordt later uitgelegd](/11_polymorfisme/README.MD).
+De lijn ``Student temp = (Student)o;`` zal het object o casten naar een Student. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het object o. [Dit concept het polymorfisme en wordt later uitgelegd](../11_polymorfisme/README.MD).
 
 ## GetHashcode
 Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.

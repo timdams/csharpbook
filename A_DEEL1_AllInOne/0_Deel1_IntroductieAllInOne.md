@@ -5,8 +5,8 @@ Volgende hoofdstukken bevatten grotere projecten waarin wordt getracht meerdere 
 2. Aantonen dat, indien je tot hier bent geraakt, je al een aardig hoop skills hebt om grote, complexe applicaties te maken die verder gaan dan de standaard oefeningen die je na ieder hoofdstuk hebt gemaakt.
 
 Volgt nu een beschrijving van de belangrijkste technieken die je in de projecten hierna zal tegenkomen:
-* [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md): Console, ConsoleColor, Loops, Random
-* [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md):  Loops, Beslissingen, Chars, Casting
-* [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md): Vorige project + Methoden, Chars, Casting
-* [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md): Loops, Methoden, Arrays, ``out`` 
+* [Console Matrix](1_ConsoleMatrix.md): Console, ConsoleColor, Loops, Random
+* [Ascii filmpjes maken met loops](3_AsciiMovieWithLoops.md):  Loops, Beslissingen, Chars, Casting
+* [Ascii filmpjes maken met methoden](2_AsciiMoviesWithMethods.md): Vorige project + Methoden, Chars, Casting
+* [Tekst-gebaseerd Maze game](4_MazeGame.md): Loops, Methoden, Arrays, ``out`` 
 

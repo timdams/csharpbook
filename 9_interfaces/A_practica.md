@@ -1,9 +1,10 @@
 # Figures with interfaces
-Gebruik je [Rechthoek-klasse](/6_klassen_en_objecten/A_practica.md#figuren) die je eerder  hebt aangemaakt. Maak een List aan waarin je een 10 rechthoek-objecten plaatsen, allen met een verschillende grootte. Zorg ervoor dat je nu je rechthoeken met de Sort()-methode kan sorteren op oppervlakte.
+Gebruik je [Rechthoek-klasse](../6_klassen_en_objecten/A_practica.md#figuren) die je eerder  hebt aangemaakt. Maak een List aan waarin je een 10 rechthoek-objecten plaatsen, allen met een verschillende grootte. Zorg ervoor dat je nu je rechthoeken met de Sort()-methode kan sorteren op oppervlakte.
 
 Toon de werking aan in een klein voorbeeld programma. 
 
 ## Game
+**Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.**
 
 Maak een spel dat als volgt werkt:
 * De speler dient met zijn pion de overkant van het veld te bereiken.
@@ -32,7 +33,7 @@ Iedere beurt van het spel bestaat uit volgende stappen:
 
 Stel de speler voor door een X, een rots door O , een monster door M een RockDestroyer door D.
 
-Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.
+
 
 ## Extra’s:
 Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functionaliteit naar believen zoals:
@@ -43,6 +44,23 @@ Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functi
 * Meerdere spelers
 * Verder schieten, of schieten in andere richtingen.
 
+## Klasse-schema
 ![](/assets/9_interfaces/practgame.png)
+
+``Location`` is van het type ``Point`` (compositie). ``Point`` is een zelfgemaakte mini klasse die er als volgt uit (minimaal uitziet): 
+```csharp
+class Point
+{
+  public int X{get;set;}
+  public int Y{get;set;}
+}
+```
+
+En dus in je abstracte klasse MapElement zal iets krijgen in de trend van: ``public Point Location {get;set;} = new Point();``
+
+## Enkele screenshots
+
 ![](/assets/9_interfaces/practgame2.png)
 ![](/assets/9_interfaces/practgame3.png)
+
+
