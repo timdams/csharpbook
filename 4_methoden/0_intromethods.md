@@ -45,7 +45,7 @@ string myName = GetNameAuthor();
 Of bijvoorbeeld ook:
 
 ```csharp
-Console.WriteLine("This program is written by "+ GetNameAuthor());
+Console.WriteLine("This program is written by " + GetNameAuthor());
 ```
 
 Een ander voorbeeld is bijvoorbeeld een methode die de faculteit van 5 berekent. We tonen een voorbeeldprogramma die deze methode gebruikt. De oproep van de methode gebeurt vanuit de Main-methode:
@@ -147,15 +147,15 @@ Stel dat je een methode hebt:
 ```csharp 
 static void ToonDeling(double teller, double noemer)
 {
-    string result=Convert.ToString( teller/noemer);
+    string result=Convert.ToString(teller/noemer);
     Console.WriteLine(teller/noemer);
 }
 ```
 
 Stel dat we nu in onze main volgende aanroep doen:
 ```csharp
-double n= 4.2;
-double t= 5.2;
+double n = 4.2;
+double t = 5.2;
 ToonDeling(n,t);
 ```
 Dit zal een ander resultaat geven dan wanneer we volgende code zouden uitvoeren:
@@ -172,7 +172,7 @@ static void ToonInfo(string name, int age)
 ```
 Deze aanroep is correct:
 ```csharp
-ToonInfo("Tim",37);
+ToonInfo("Tim", 37);
 ```
 Deze is **FOUT** en zal niet compileren:
 ```csharp
@@ -291,7 +291,7 @@ static void Main(string[] args)
  
 }
 ```
-Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop:``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}`` 
+Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop: ``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}`` 
 
 
 

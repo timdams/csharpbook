@@ -34,8 +34,8 @@ public const double PI;
 
 Je kan deze gebruiken in berekeningen als volgt:
 ```csharp
-double straal= 5.5;
-double omtrek= Math.PI * 2 * straal;
+double straal = 5.5;
+double omtrek = Math.PI * 2 * straal;
 ```
 ## Intellisense
 "Hoe kan je deze methode nu gebruiken?" is een veelgestelde vraag. Zeker wanneer je de basis van C# onder knie hebt en je stilletjes aan met bestaande .NET bibliotheken wil gaan werken. Wat volgt is een essentieel onderdeel van VS dat veel gevloek en tandengeknars zal voorkomen.

@@ -31,7 +31,8 @@ In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
 ```csharp
-do{
+do
+{
      // C# code to be performed while expression evaluates to true
 } while (condition);
 ```
@@ -55,9 +56,9 @@ do
 Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de booleaanse logische operator.
 Volgende while bijvoorbeeld zal uitgevoerd worden zolang teller groter is dan 5 en de variabele naam van het type string niet gelijk is aan "tim":
 ```csharp
-while(teller> && naam!="tim")
+while (teller > 5 && naam != "tim")
 {
-  //Keep repeating
+  // Keep repeating
 }
 ```
 
@@ -67,18 +68,18 @@ Indien de loop-conditie nooit false wordt dan heb je een oneindige loop gemaakt.
 Volgende twee voorbeelden tonen dit:
 * Een bewuste oneindige loop:
 ```csharp
-while(true)
+while (true)
 {
- //See you in infinity
+ // See you in infinity
 }
 ```
 * Een bug die een oneindige loop veroorzaakt:
 ```csharp
 int teller = 0; 
-while(teller<10)
+while (teller<10)
 {
   Console.WriteLine(teller);
-  teller--;    //oops, dit had teller++ moeten zijn
+  teller--;    // oops, dit had teller++ moeten zijn
 }
 ```
 
@@ -87,7 +88,7 @@ Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je ee
 Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen (1+2+3+...+10) zou maken:
 
 ```csharp
-int teller=1;
+int teller = 1;
 while(teller<=10)
 {
    int som=0;
@@ -98,12 +99,12 @@ Console.WriteLine(som); //deze lijn zal fout genereren
 
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden:
 ```csharp
-int teller=1;
-int som=0;  
+int teller = 1;
+int som = 0;  
 while(teller<=10)
 {
    
-   som= som+teller;
+   som = som+teller;
 }
-Console.WriteLine(som); //deze lijn zal fout genereren
+Console.WriteLine(som); // Deze lijn zal fout genereren
 ```

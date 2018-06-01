@@ -26,7 +26,7 @@ for (setup; finish test; update)
 Gebruiken we deze kennis nu, dan kunnen we de eerder vermelde code om de even getallen van 0 tot en met 10 tonen als volgt:
 
 ```csharp
-for (int i = 0; i < 11; i=i+2)
+for (int i = 0; i < 11; i = i + 2)
 {
     Console.WriteLine(i);
 }

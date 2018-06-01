@@ -3,7 +3,7 @@ Wanneer je geen indexering nodig hebt, maar toch snel over alle elementen in een
 Een foreach loop zal ieder element in de array een voor een in een tijdelijke variabele plaatsen (de **iteration variable**). 
 Volgende code toont de werking waarbij we een array van doubles hebben en alle elementen er in op het scherm willen tonen:
 ```csharp
-double[] killdeathRates= {1.2, 0.89, 3.15, 0.1};
+double[] killdeathRates = {1.2, 0.89, 3.15, 0.1};
 foreach (double kdrate in killdeathRates)
 {
    Console.WriteLine($"Kill/Death rate is {kdrate}");
@@ -21,9 +21,9 @@ Het voordeel is dat je dus geen teller/index nodig hebt en dat foreach zelf de l
 # var keyword
 C# heeft een **``var``** keyword. Je mag dit keyword gebruiken ter vervanging van het type (bv int) op voorwaarde dat de compiler kan achterhalen wat het type moet zijn.
 ```csharp
-var getal= 5; //var zal int zijn
-var myArray= new double[20]; //var zal double[] zijn
-var tekst= "Hi there handsome"; //var zal string zijn
+var getal = 5; //var zal int zijn
+var myArray = new double[20]; //var zal double[] zijn
+var tekst = "Hi there handsome"; //var zal string zijn
 ```
 
 **Opgelet**: het ``var`` keyword is gewoon een *lazy programmer syntax toevoeging* om te voorkomen dat je als programmer niet constant het type moet schrijven (vooral handig bij [klassen en objecten later](6_klassen_en_objecten/README.MD)). Bij javascript heeft var een totaal andere functie: het zegt eigenlijk "het type dat je in deze variabele kan steken is...variabel", m.a.w. het kan de ene  keer een string zijn, dan een int. Bij C# gaat dit niet: eens je een variabele aanmaakt dan zal dat type onveranderbaar zijn.
