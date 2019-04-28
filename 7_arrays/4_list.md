@@ -55,6 +55,12 @@ Interessante methoden en properties voorts zijn:
 myStringList.Insert(1,"A fourth sentence");
 ```
 voegt de string toe op de tweede plek en schuift de rest naar achter
+* ``RemoveAt()``: methode om element te verwijderen doormiddel van zijn index
+```csharp
+mijnGetallen.RemoveAt(2);
+```
+Het derde getal van deze list zal worden verwijderd
+
 * ``Contains()``: geef als parameter een specifiek object mee (van het type dat de List<> bevat) om te weten te komen of dat specifieke object in de List<> terug te vinden is. Indien ja dan zal true worden teruggeven.
 * ``IndexOf()``: geeft de index terug van het element item in de rij. Indien deze niet in de lijst aanwezig is dan wordt -1 teruggegeven.
 
