@@ -60,8 +60,8 @@ Oh boy...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passer
 
 Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 
-* Al je code komt binnen de ``Main`` accolades
-* Eindig iedere lijn code daar met een kommapunt;
+* Al je code komt binnen de ``Main`` accolades.
+* Eindig iedere lijn code daar met een puntkomma ( ; ).
 
 ## WriteLine: Tekst op het scherm
 
