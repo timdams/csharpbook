@@ -1,6 +1,6 @@
 # Expressies en operators
 
-Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die resulteren tot 1 resultaat. De volgende code is bijvoorbeeld een expressie: `3+2`
+Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die op 1 resultaat uitkomen. De volgende code is bijvoorbeeld een expressie: `3+2`.
 
 Het resultaat van deze expressie is 5. [Meer informatie over expressies hier](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions).
 
@@ -19,7 +19,7 @@ Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van el
 De voorgaande code kan ook langer geschreven worden als:
 
 ```csharp
-int tussenResultaat= temperatuurGisteren - temperatuurVandaag;
+int tussenResultaat = temperatuurGisteren - temperatuurVandaag;
 int temperatuursVerschil = tussenResultaat;
 ```
 
@@ -40,7 +40,7 @@ int hoogte = 20 * breedte;
 Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgen de wiskundige regels van **volgorde van berekeningen**:
 
 1. Haakjes
-2. Vermenigvuldigen : ``*`` en ``/`` (alsook `%` die we later zien)
+2. Vermenigvuldigen: ``*`` en ``/`` (alsook `%` die we later zien)
 3. Optellen: `+` en `-`
 (etc.)
 
@@ -56,15 +56,15 @@ double gewichtOpAarde= 80.3;        //kg
 double zwaartekrachtAarde= 9.81;    //m/s² 
 double zwaartekrachtMars= 3.711;    //m/s²
 
-double  gewichtOpMars= (gewichtOpAarde/zwaartekrachtAarde)* zwaartekrachtMars; //kg
-Console.WriteLine("Je weeg op Mars" + gewichtOpMars+ " kg");
+double  gewichtOpMars= (gewichtOpAarde/zwaartekrachtAarde) * zwaartekrachtMars; //kg
+Console.WriteLine("Je weeg op Mars" + gewichtOpMars + " kg");
 ```
 
-## Module operator ``%``
+## Modulo operator ``%``
 De modulo operator die we in C# aanduiden met ``%`` verdient wat meer uitleg. Deze operator zal als resultaat de gehele rest teruggeven wanneer we het linkse getal door het rechtse getal delen:
 ```text
 7%2 => zal 1 geven, daar 7 gedeeld door 2,  3 met rest 1 geeft 
-10%5=> zal 0 geven, daar 10 gedeeld door 5, 2 met rest 0 geeft 
+10%5 => zal 0 geven, daar 10 gedeeld door 5, 2 met rest 0 geeft 
 ```
 
 De modulo-operator zal je geregeld gebruiken om bijvoorbeeld te weten of een getal een veelvoud van iets is. Als de rest dan 0 is weet je dat het getal een veelvoud is van het getal waar je het door deelde.
@@ -109,7 +109,7 @@ int otherResult= 3.1/45.2;
 
 But wait... it gets worse! 
 
-Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. ** Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
+Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
 ```csharp
 int getal1= 9;
 int getal2= 2;
@@ -141,7 +141,7 @@ En nu krijgen we wel ``4.5``.
 
 Het kan subtiel en ambetant worden in grotere berekeningen.
 
-Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien (fictief) 10000 euro per maand. 
+Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien (fictief)(wishfull thinking) 10000 euro per maand. 
 Ik gebruik volgende formule:
 
 ```csharp
@@ -149,8 +149,8 @@ double helft= 10000.0 * (1/2);
 ```
 Hoeveel krijg je van me? **0.0 euro, MUHAHAHAHA!!!**
 
-De volgorde van berekeningen zal eerst het gedeelte tussen de haakjes doen: 1 delen door 2 geeft 0, daar we een ``int`` door een ``int``delen en dus terug een ``int`` als resultaat willen. 
-Vervolgens zullen we deze ``0`` vermenigvuldigen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een``double`` (het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
+De volgorde van berekeningen zal eerst het gedeelte tussen de haakjes doen: 1 delen door 2 geeft 0, daar we een ``int`` door een ``int`` delen en dus terug een ``int`` als resultaat krijgen. 
+Vervolgens zullen we deze ``0`` vermenigvuldigen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een ``double`` (het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
 
 Wil je het dus eerlijk spelen dan zal je de formule moeten aanpassen naar:
 ```csharp
