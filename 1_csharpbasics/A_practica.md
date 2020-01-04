@@ -20,25 +20,24 @@ Opgelet: de % hier is de modulo-operator!
 
 # Gemiddelde
 
-Maak 3 variabelen aan van het type ``int`` genaamd ``september``, ``oktober``, ``november``. Plaats in elke variabele de hoeveelheid uren slaap je die maand verwacht te doen. Bereken nu het gemiddelde van 3 maanden en toon het resultaat op het scherm (kies uiteraard 3 verschillende hoeveelheden slaap).
+Maak 3 variabelen aan van het type ``int`` genaamd ``september``, ``oktober`` en ``november``. Plaats in elke variabele de hoeveelheid uren slaap je die maand verwacht te doen. Bereken nu het gemiddelde van 3 maanden en toon het resultaat op het scherm (kies uiteraard 3 verschillende hoeveelheden slaap).
 
 # Euro naar dollar
 
-Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers
-Je hoeft niet af te ronden. Het resultaat op het scherm wordt als volgt weergegeven: ``[x] EUR is gelijk aan [y] USD``.
+Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers. Je hoeft niet af te ronden. Het resultaat op het scherm wordt als volgt weergegeven: ``[x] EUR is gelijk aan [y] USD``.
 
 # Tafel en Console.Clear()
 
-Met het statement ``Console.Clear();`` kan je de console -je raadt het nooit- leegmaken. Test deze code in het volgende programma:
+Met het statement ``Console.Clear();`` kan je de console - je raadt het nooit - leegmaken. Test deze code in het volgende programma:
 
-Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411=411, 2x411= 822 tot en met 10x411=4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
+Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411= 411, 2x411= 822 tot en met 10x411= 4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
 
 ```text
 1 x 411 = 411
 Druk op enter voor de volgende lijn.
 [Scherm leeg gemaakt]
 2 x 411 = 822
-Druk op enter voor de volgende lijn
+Druk op enter voor de volgende lijn.
 [Scherm leeg gemaakt]
 ...
 ```
@@ -50,10 +49,10 @@ Je kan wachten tot de gebruiker op enter duwt door gewoon een lege ``Console.Rea
 
 ```csharp
 Console.WriteLine("Eerste beeld");
-Console.WriteLine("Druk enter om voort te gaan");
+Console.WriteLine("Druk enter om voort te gaan.");
 Console.ReadLine();
 Console.Clear();
-Console.WriteLine("tweede beeld");
+Console.WriteLine("Tweede beeld");
 ```
 
 > Merk op dat ``Console.Clear()`` niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
@@ -62,13 +61,13 @@ Console.WriteLine("tweede beeld");
 
 Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio.
 
-(**opgelet: begrijp je waarom we best een van beide variabelen in double zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met int zou werken).
+(**opgelet: begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met ``int`` zou werken).
 
 # Gewicht in space
 
 Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.
 
-Maak een variabele ``double gewichtOpAarde`` aan. Wijs een gewicht toe (bv het jouwe). Schrijf nu een programma dat onder elkaar jouw gewicht op verschillende planeten toont.
+Maak een variabele ``double gewichtOpAarde`` aan. Wijs een gewicht toe (bv. het jouwe). Schrijf nu een programma dat onder elkaar jouw gewicht op verschillende planeten toont.
 
 Hier de omzettingstabel (je gewicht op Mercurius is dus je gewicht op aarde x 0.38):
 
