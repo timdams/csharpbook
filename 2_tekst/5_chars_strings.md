@@ -6,7 +6,7 @@ char eenLetter = 'X';
 Console.WriteLine("eenLetter=" + eenLetter);
 ```
 
-Het is belangrijk dat je de apostrof (') niet vergeet voor en na het karakter dat je wenst op te slaan daar dit de literal voorstelling van `char`-literals is (zie ook [hier](../1_csharpbasics/1_datatypes.md)).
+Het is belangrijk dat je de apostrof (``'`` ) niet vergeet voor en na het karakter dat je wenst op te slaan daar dit de literal voorstelling van `char`-literals is (zie ook [hier](../1_csharpbasics/1_datatypes.md)).
 
 Je kan eender welk [UNICODE-teken](https://en.wikipedia.org/wiki/Unicode) in een `char` bewaren, namelijk letters, cijfers en speciale tekens zoals `%`, `$`, `*`, `#`, etc. Merk dus op dat volgende lijn: ``char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal ([zie Convert en Casting](../3_data/4_converteren_casting.md)).
 
@@ -46,12 +46,12 @@ string eenString = '1'; //fout
 int eenGetal = '1'; //fout
 ```
 
-1. In de eerste toekenning proberen we dus een literal van het type string toe te kennen een variabele van het type char.
-2. In de tweede toekenning proberen we een literal van het type char toe te kennen een variabele van het type string.
-3. En in de laatste toekenning proberen we een literal van het type char toe te kennen aan een variabele van het type int.
+1. In de eerste toekenning proberen we dus een literal van het type **string** toe te kennen een variabele van het type **char**.
+2. In de tweede toekenning proberen we een literal van het type **char** toe te kennen een variabele van het type **string**.
+3. In de laatste toekenning proberen we een literal van het type **char** toe te kennen aan een variabele van het type **int**.
 
 # Escape characters
-Naast letters en tekens mogen in string en chars ook escape characters staan. Escape characters worden met een backslash (`\`) gestart, gevolgd door het karakter dat we wensen te tonen. In C# hebben bepaalde tekens namelijk een speciale functie, zoals de dubbele aanhalingstekens (") om het begin of einde van een string-literal aan te geven .
+Naast letters en tekens mogen in string en chars ook escape characters staan. Escape characters worden met een backslash (`\`) gestart, gevolgd door het karakter dat we wensen te tonen. In C# hebben bepaalde tekens namelijk een speciale functie, zoals de dubbele aanhalingstekens (`"`) om het begin of einde van een string-literal aan te geven.
 
 Zonder aan te geven dat we letterlijk dat teken willen tonen, en het niet in z’n C# functie gebruiken, zouden we problemen krijgen.
 
@@ -68,10 +68,10 @@ char apostrof= '\'';
 ```
 Er zijn echter nog een heleboel andere escape characters die je geregeld zal moeten gebruiken, waaronder `` \n``  om een nieuwe lijn aan te geven en \t om een tab in de tekst te plaatsen.
 
-Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de belangrijkste op (Voor een totaal overzicht kijk [hier](https://blogs.msdn.microsoft.com/csharpfaq/2004/03/12/what-character-escape-sequences-are-available/):
-* `\'` – single quote, needed for character literals
-* `\"` – double quote, needed for string literals
-* `\\` – backslash
+Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de belangrijkste op (voor een totaal overzicht kijk [hier](https://blogs.msdn.microsoft.com/csharpfaq/2004/03/12/what-character-escape-sequences-are-available/)):
+* `\'` – Single quote, needed for character literals
+* `\"` – Double quote, needed for string literals
+* `\\` – Backslash
 * `\n` – New line (zogenaamde 'enter')
 * `\t` – Horizontal tab 
 * `v\uxxxx` – Unicode escape sequence for character with hex value xxxx
@@ -93,7 +93,7 @@ Het is belangrijk dat je vlot kan werken met escape characters in string, daar w
 
 **De belangrijkste escape chars zijn: `` \t \n \" \'``**
 
-``\a`` mag je enkel gebruiken als je een koptelefoon op hebt daar dit het escape character is om de computer een biep te laten doen (mogelijk doet dit niets bij jou, dit hangt van de je computerinstellingen af) .
+``\a`` mag je enkel gebruiken als je een koptelefoon op hebt daar dit het escape character is om de computer een biep te laten doen (mogelijk doet dit niets bij jou, dit hangt van de je computerinstellingen af).
 
 ## Optellen van char 
 Stel dat we volgende char-variabelen aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. Bij char mag dat niet!
