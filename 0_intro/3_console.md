@@ -1,6 +1,6 @@
 # First program verbeteren
 
-We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
+We nemen terug ons eerste programma erbij en gaan hieraan verder werken:
 
 ```csharp
 using System;
@@ -57,7 +57,6 @@ namespace Demo1
             Console.WriteLine("Wie ben jij?!");
             string result;
             result = Console.ReadLine();
-
         }
     }
 }
@@ -67,7 +66,7 @@ Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont 
 
 ## Input gebruiker verwerken en gebruiken
 
-We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``  gebruiken en tonen op het scherm. 
+We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``,  gebruiken en tonen op het scherm. 
 
 ```csharp
 Console.WriteLine("Dag ");
@@ -139,7 +138,7 @@ hoe gaat het met je?
 
 ## Write en WriteLine
 
-De ``WriteLine``-methode zal steeds een line break (een 'enter' ) aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
+De ``WriteLine``-methode zal steeds een line break (een 'enter') aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
 
 De ``Write``-methode zal geen enter aan het einde van de lijn toevoegen. Als je dus vervolgens iets toevoegt (met een volgende ``Write`` of ``WriteLine``) **dan zal dit aan dezelfde lijn toegevoegd worden.**
 
