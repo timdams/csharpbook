@@ -9,7 +9,7 @@ Console.BackgroundColor = ConsoleColor.Blue;
 Console.ForegroundColor = ConsoleColor.Green;
 ```
 
-Vanaf dan zal alle tekst die je na deze 2 expressies via ``WriteLine`` naar het scherm stuurt met de kleuren werken.
+Vanaf dan zal alle tekst die je na deze 2 expressies via ``WriteLine`` naar het scherm stuurt met deze kleuren werken.
 
 Een voorbeeld:
 
@@ -31,7 +31,7 @@ Als je deze code uitvoert krijg je als resultaat:
 
 # Mogelijke kleuren
 
-Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` en zijn:
+Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
 
 * ConsoleColor.Black
 * ConsoleColor.DarkBlue
@@ -53,7 +53,7 @@ Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` en zijn:
 
 Soms wil je terug de originele applicatie-kleuren hebben. Je zou manueel dit kunnen instellen, maar wat als de gebruiker slecht ziend is en in z'n besturingssysteem andere kleuren als standaard heeft ingesteld?!
 
-De veiligste manier is daarom de kleuren te resetten door de ``Console.ResetColor()`` methode aan te roepen zoals volgende voorbeeld toont:
+De veiligste manier is daarom de kleuren te resetten door de ``Console.ResetColor()`` methode aan te roepen zoals volgend voorbeeld toont:
 
 ```csharp
 Console.ForegroundColor = ConsoleColor.Red;
