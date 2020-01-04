@@ -25,7 +25,7 @@ Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de erro
 
 ![De errorlist](../assets/0_intro/errorlist.PNG)
 
-In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correct lijn te gaan.
+In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correcte lijn te gaan.
 
 ## Fouten oplossen
 
@@ -33,13 +33,13 @@ Wanneer je je cursor op een lijn met een fout zet dan zal je soms vooraan een ge
 
 ![Lampje](../assets/0_intro/errorlampje.png)
 
-Je kan hier op klikken en heel vaak krijg je dan ineens een mogelijke oplossing. **Wees steeds kritisch** hierover want VS is niet alomwetend en kan niet raden wat je altijd bedoelt. Neem dus het voorstel niet zomaar over zonder goed na te denken of het dat was wat je bedoelde.
+Je kan hier op klikken en heel vaak krijg je dan ineens een mogelijke oplossing. **Wees steeds kritisch** hierover want VS is niet alomwetend en kan niet altijd raden wat je bedoelt. Neem dus het voorstel niet zomaar over zonder goed na te denken of het dat was wat je bedoelde.
 
 ## Meest voorkomende fouten
 
 De meest voorkomende fouten in deze eerste weken zullen zijn:
 
-* **Kommapunt** vergeten.
+* **Puntkomma** vergeten.
 * **Schrijffouten** in je code RaedLine i.p.v. ReadLine.
 * Geen rekening gehouden met **hoofdletter gevoeligheid** Readline i.p.v. ReadLine (zie volgende hoofdstuk).
 * Per ongeluk **accolades verwijderd**.
