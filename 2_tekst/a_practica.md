@@ -5,7 +5,8 @@
 [Meerdere projecten in 1 solution](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a)
 
 **Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
-2. Sommige oefeningen zullen soms [PRO] in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. [PRO²] oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
+
+2. Sommige oefeningen zullen soms **[PRO]** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
 
 # ASCII Art
 
@@ -15,11 +16,11 @@ Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze
 
 Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest geven. Pas string interpolatie m.b.v. ``$`` (manier 2) toe in deze 2 oefeningen.
 
-> Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
-
 # ASCII Art & Colors
 
 Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine`, alsook de werking van kleuren in console-applicaties, om je ASCII-art naam van de eerdere oefening nu van kleur te voorzien. Zorg ervoor dat minstens 1 letter in een andere kleur is.
+
+> Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
 
 # Systeem informatie
 
@@ -66,7 +67,7 @@ Opgelet: sta toe dat de gebruiker 1 voor de eerste harde schijf mag gebruiken, 2
 Bv:
 
 ```csharp
-int invoer= Convert.ToInt32(Console.ReadLine()) - 1 ;
+int invoer= Convert.ToInt32(Console.ReadLine()) - 1;
 long totalsize = DriveInfo.GetDrives()[invoer].TotalSize;  
  ```
 
@@ -84,11 +85,11 @@ Maak een programma dat de weerstandwaarde berekent gebaseerd op:
 
 * Ring 1: die de tientallen voorstelt
 * Ring 2: die de eenheden voorstel
-* [ENKEL VOOR PRO] Ring 3: die de exponent (10 tot de macht) voorstelt. (tip:``Math.Pow(10,ring3``))
+* [ENKEL VOOR PRO] Ring 3: die de exponent (10 tot de macht) voorstelt. (tip:``Math.Pow(10,ring3)``)
 
 Gebruik twee variabelen van het type ``int`` waar je getal van 0 tot 9 telkens aan kan toewijzen. (we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele)
 
-Test dat je "formule/berekening" klopt om gebaseerd op 2 (of 3) ringen de weerstandswaarde te berekenen. 
+Test dat je formule / berekening klopt om gebaseerd op 2 (of 3) ringen de weerstandswaarde te berekenen. 
 
 ## Deel 2
 
@@ -113,7 +114,7 @@ of:
 
 ## [PRO²] Deel 3
 
-Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken)
+Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken).
 
 # [PRO] Shell-starter
 Je kan de output van een ``Process.Start()`` programma naar je console scherm sturen. Dit vereist wat meer code. Volgend voorbeeld zal de output van het commando ``ipconfig /all`` op het scherm tonen:
