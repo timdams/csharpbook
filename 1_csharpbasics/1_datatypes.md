@@ -2,7 +2,7 @@
 
 Er zijn tal basistypes in C# gedeclareerd (zogenaamde **primitieve datatypes**). Dit semester leren we werken met datatypes voor:
 * Gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
-* Kommagetallen: `double , float, decimal`
+* Kommagetallen: `double, float, decimal`
 * Tekst: `char, string`
 * Booleans: `bool`
 
@@ -15,7 +15,7 @@ Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaard zou dat voor on
 De basistypen van C\# om getallen in op te slaan zijn:
 
 * Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
-* Voor kommagetallen: `double , float, decimal`
+* Voor kommagetallen: `double, float, decimal`
 
 > Ieder type hierboven heeft een bepaald bereik en hoeveelheid geheugen nodig. Je zal dus steeds moeten afwegen wat je wenst. Op een high-end pc met ettelijke gigabytes aan werkgeheugen (RAM) is geheugen zelden een probleem waar je rekening mee moet houden...Of toch: zoals met real-time shooters die miljoenen berekeningen (3D) per seconde moeten uitvoeren. Daar zal iedere byte tellen. Op andere apparaten (smartphone, arduino, smart fridges, etc.) is iedere byte geheugen nog kostbaarder. **Kortom: kies steeds bewust het datatype dat het beste 'past' voor je probleem qua bereik, precisie en geheugengebruik.**
 
@@ -37,14 +37,14 @@ Voor de gehele getallen:
 | `ulong` | 64 bits | 0 tot 18 446 744 073 709 551 615 | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/long)|
 | `char` | 16 bits | 0 tot 65535 | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/char)|
 
-**We raden aan dat je de 'info' urls bekijkt om te ontdekken hoe je de literals van data datatypes moet schrijven in C#.**
+**We raden aan dat je de 'info' urls bekijkt om te ontdekken hoe je de literals van datatypes moet schrijven in C#.**
 
 Enkele opmerkingen bij deze tabel:
 * De `s` vooraan `sbyte` types staat voor ``signed``: m.a.w. 1 bit wordt gebruikt om het + of - teken te bewaren. 
-* De `u` vooraan `ushort`en `uint` staat voor `unsigned`. Het omgekeerde van signed dus. Kwestie van het ingewikkeld te maken. Deze twee datatypes hebben dus geen teken en zijn **altijd positief**.
-* `char`bewaard karakters. We zullen verderop dit datatype uitspitten en ontdekken dat karakters (alle tekens op het toetsenbord, inclusief getallen, leesteken, etc.) als gehele, binaire getallen worden bewaard. Daarom staat `char` in deze lijst.
+* De `u` vooraan `ushort`, `uint` en `ulong` staat voor `unsigned`. Het omgekeerde van signed dus. Kwestie van het ingewikkeld te maken. Deze twee datatypes hebben dus geen teken en zijn **altijd positief**.
+* `char` bewaard karakters. We zullen verderop dit datatype uitspitten en ontdekken dat karakters (alle tekens op het toetsenbord, inclusief getallen, leesteken, etc.) als gehele, binaire getallen worden bewaard. Daarom staat `char` in deze lijst.
 * Het grootste getal bij `long` is 2 tot de 63ste (
-negen triljoen tweehonderddrieëntwintig biljoen driehonderd tweeënzeventig biljoen zesendertig miljard achthonderdvierenvijftig miljoen zevenhonderdvijfenzeventigduizend achthonderd en zeven). Dit zijn maar 63 bits?! Inderaad, de laatste bit wordt gebruikt om het teken te bewaren.
+negen triljoen tweehonderddrieëntwintig biljard driehonderd tweeënzeventig biljoen zesendertig miljard achthonderdvierenvijftig miljoen zevenhonderdvijfenzeventigduizend achthonderd en zeven). Dit zijn maar 63 bits?! Inderaad, de laatste bit wordt gebruikt om het teken te bewaren.
 
 ## Kommagetallen
 Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voordeel' tegenover de 2 andere, dit voordeel staat vet in de tabel:
@@ -62,7 +62,7 @@ Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voo
 # Boolean datatype
 Het ``bool`` (**boolean**) is het eenvoudigste datatype van C#. Het kan maar 2 mogelijke waarden bevatten: ``true`` of ``false``. 0 of 1 met andere woorden. 
 
-Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken terwijl ze toch weten dat de variabele maar 2 mogelijke waarden zal hebben. Om dus onnodig geheugen te verbruiken is het aan te raden om in die gevallen steeds met een ``bool`` variabele te werken.
+Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken terwijl ze toch weten dat de variabele maar 2 mogelijke waarden zal hebben. Om dus geen onnodig geheugen te verbruiken is het aan te raden om in die gevallen steeds met een ``bool`` variabele te werken.
 
 We zullen het ``bool`` datatype erg veel nodig hebben wanneer we met [beslissingen](../4_beslissingen/0_beslissingen_intro.md) zullen werken, specifiek de [``if`` statements](../4_beslissingen/0_if.md) die afhankelijk van de uitslag van een ``bool`` bepaalde code wel of niet zullen doen uitvoeren.
 
