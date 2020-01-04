@@ -8,7 +8,7 @@ De data die we in een programma gebruiken bewaren we namelijk in een **variabele
 Om een variabele te maken moeten we deze **declareren**, door een type en naam te geven. Vanaf dan zal de computer een hoeveelheid geheugen voor je reserveren waar de inhoud van deze variabele in kan bewaard worden. 
 Hiervoor dien je minstens op te geven:
 
-1. Het datatype \(bv ``int`` ,  ``double``\).
+1. Het datatype \(bv ``int``,  ``double``\).
 2. Een identifier zodat de variabele uniek kan geïdentificeerd worden ([volgens de naamgevingsregel van C#](0_csharpessentials.md)).
 3. \(optioneel\) Een beginwaarde die de variabele krijgt bij het aanmaken ervan.
 
