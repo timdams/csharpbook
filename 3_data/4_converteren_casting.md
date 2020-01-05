@@ -76,9 +76,9 @@ Stel dat temperatuurGisteren en temperatuurVandaag van het type int zijn, maar d
 ```csharp
 int temperatuurGemiddeld = (temperatuurGisteren + temperatuurVandaag)/2;
 ```
-Test dit eens met de waarden 20 en 25. Wat zou je verwachten als resultaat? Inderdaad: 22,5 (omdat 20+25)/2 = 22.5) *Nochtans krijg je 22 op scherm te zien en zal de variabele temperatuurGemiddeld ook effectief de waarde 22 bewaren en niet 22.5.*
+Test dit eens met de waarden 20 en 25. Wat zou je verwachten als resultaat? Inderdaad: 22,5 (omdat (20+25)/2 = 22.5) *Nochtans krijg je 22 op scherm te zien en zal de variabele temperatuurGemiddeld ook effectief de waarde 22 bewaren en niet 22.5.*
 
-Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (temperatuurGisteren en temperatuurVandaag) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon *weggegooid*, vandaar de uitkomst. **Dit is narrowing.**
+Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (temperatuurGisteren, temperatuurVandaag en 2) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon *weggegooid*, vandaar de uitkomst. **Dit is narrowing.**
 
 Hoe krijgen we de correctere uitslag te zien? Door temperatuurGemiddeld als kommagetal te declareren (bijvoorbeeld door het type double):
 
@@ -86,7 +86,7 @@ Hoe krijgen we de correctere uitslag te zien? Door temperatuurGemiddeld als komm
 double temperatuurGemiddeld = (temperatuurGisteren + temperatuurVandaag)/2;
 ```
 
-Als we dit testen zal nog steeds de waarde 22 aan temperatuurGemiddeld toegewezen worden, inderdaad. De expressie rechts bevat enkel integers en de computer zal dus ook de berekening en het resultaat als integer beschouwen ([lees hier hoe dit nu weer zat](../1_csharpbasics/2_expressies.md)). We moeten dus ook de rechterkant van de toekenning als double beschouwen. *We doen dit door middel van **casting** zoals eerder vermeld*, als volgt:
+Als we dit testen zal nog steeds de waarde 22 aan temperatuurGemiddeld toegewezen worden. De expressie rechts bevat enkel integers en de computer zal dus ook de berekening en het resultaat als integer beschouwen ([lees hier hoe dit nu weer zat](../1_csharpbasics/2_expressies.md)). We moeten dus ook de rechterkant van de toekenning als double beschouwen. *We doen dit, zoals eerder vermeld, door middel van **casting***, als volgt:
 
 ```csharp
 double temperatuurGemiddeld = ((double)temperatuurGisteren + (double)temperatuurVandaag)/2;
@@ -112,7 +112,7 @@ Casting is de 'oldschool' manier van data omzetten die vooral zeer nuttig is daa
 Echter, .NET heeft ook  ingebouwde conversie-methoden die je kunnen helpen om data van het ene type naar het andere te brengen. Het nadeel is dat ze iets meer typwerk (en dus meer code) verwachten dan bij casting. 
 Al deze methoden zitten binnen de **Convert**-bibliotheek van .NET.
 
-Het gebruik hiervan is zeer eenvoudig.Enkele voorbeelden:
+Het gebruik hiervan is zeer eenvoudig. Enkele voorbeelden:
 
 ```csharp
 int getal= Convert.ToInt32(3.2); //double to int
@@ -121,9 +121,9 @@ bool isWaar= Convert.ToBoolean(1); //int to bool
 int userAge= Convert.ToInt32("19"); //string to int
 int ageOther= Convert.ToInt32(anderGetal); //double to int
 ```
- Je plaatst tussen de ronde haakjes de variabele of literal die je wenst te converteren naar een ander type. Merk op dat naar een `int`  converteren met ``.ToInt32()`` moet gebeuren. Naar een ``short`` is dit met behulp van ``.ToInt16()``.
+ Je plaatst tussen de ronde haakjes de variabele of literal die je wenst te converteren naar een ander type. Merk op dat naar een `int`  converteren met ``.ToInt32()`` moet gebeuren. Om naar een ``short`` te converteren is dit met behulp van ``.ToInt16()``.
  
- > ``Convert.ToBoolean`` verdient extra aandacht: Wanneer je een getal, eender welk, aan deze methode meegeeft zal deze altijd naar ``True`` geconverteerd worden.  Enkel indien je ``0``, (``int``) of f``0.0`` ingeeft, dan krijg je ``False``. In quasi alle andere gevallen krijg je altijd ``True``.
+ > ``Convert.ToBoolean`` verdient extra aandacht: Wanneer je een getal, eender welk, aan deze methode meegeeft zal deze altijd naar ``True`` geconverteerd worden.  Enkel indien je ``0``, (``int``) of ``0.0`` ingeeft, dan krijg je ``False``. In quasi alle andere gevallen krijg je altijd ``True``.
 
 Opgelet: de convert zal zelf zo goed mogelijk de data omzetten en dus indien nodig widening of narrowing toepassen. Zeker bij het omzetten van een string naar een ander type kijk je best steeds de documentatie na om te weten wat er intern juist zal gebeuren.
 
