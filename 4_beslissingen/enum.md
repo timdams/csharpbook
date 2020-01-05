@@ -1,5 +1,5 @@
 # Enum datatypes
-> Deel van dit hoofdstuk uit Visual C# 2012 -  De basis (Sander Gerz)
+> Deel van dit hoofdstuk is uit Visual C# 2012 -  De basis (Sander Gerz)
 
 # De bestaansreden voor enums
 Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week iets anders moet doen. In een wereld zonder enums (enumeraties) zou je dit kunnen schrijven op 2 zeer foutgevoelige manieren:
@@ -24,7 +24,7 @@ if //enz..
 
 Deze oplossing heeft 2 grote nadelen:
 * Wat als we per ongeluk ``dagKeuze`` een niet geldige waarde geven, zoals 9, 2000, -4, etc. ? 
-* De code is niet erg leesbaar. ``dagKeuze==2``? Was dat nu dinsdag of woensdag (want misschien was maandag 0 i.p.v. 1)
+* De code is niet erg leesbaar. ``dagKeuze==2``? Was dat nu dinsdag of woensdag (want misschien was maandag 0 i.p.v. 1).
 
 ## Slechte oplossing 2: Met strings
 De waarde van de dag bewaren we nu in een variabele ``string dagKeuze``. We bewaren de dagen als ``"maandag"``, ``"dinsdag"``, etc.
@@ -50,7 +50,7 @@ Enumeraties (**enum**) zijn een C# syntax die bovenstaand probleem oplost en het
 
  Het keyword ``enum`` geeft aan dat we een nieuw type maken dat maar enkele mogelijke waarden kan hebben. Nadat we dit nieuwe type hebben gedefiniëerd kunnen we variabele van dit nieuwe type aanmaken. De variabele die we dan later maken zal van dit type zijn en enkel de opgegeven waarden mogen bevatten. Ook zal IntelliSense van Visual Studio je de mogelijke waarden helpen invullen.
 
-In C# zitten al veel Enum-types ingebouwd. Denk maar aan ``ConsoleColor``: wanneer je de kleur van het lettertype van de console wilt veranderen gebruiken we een enum-type. Er werd reeds gedefinieerd wat de toegelaten waarden zijn: ``Console.ForegroundColor= ConsoleColor.Red;`` 
+In C# zitten al veel Enum-types ingebouwd. Denk maar aan ``ConsoleColor``: wanneer je de kleur van het lettertype van de console wilt veranderen gebruiken we een enum-type. Er werd reeds gedefinieerd wat de toegelaten waarden zijn, bijvoorbeeld: ``Console.ForegroundColor = ConsoleColor.Red;`` 
 
 ## Zelf enum maken
 Zelf een ``enum`` type maken gebeurt in 2 stappen:
@@ -86,7 +86,6 @@ public class Program
 ```csharp
 public class Program
 {
-
     public static void Main(string[] args)
     {
         enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}   
@@ -101,7 +100,7 @@ Weekdagen dagKeuze;
 Weekdagen andereKeuze;
 ```
 
-En vervolgens kunnen we waarden aan deze variabelen waarden toewijzen als volgt
+En vervolgens kunnen we waarden aan deze variabelen toewijzen als volgt
 ```csharp
 dagKeuze = Weekdagen.Donderdag;
 ```
@@ -111,7 +110,7 @@ Kortom: we hebben variabelen zoals we gewoon zijn, het enige verschil is dat we 
 ## Enums en beslissingen werken graag samen
 Ook de beslissingsstructuren worden leesbaarder:
 ```csharp
-if(dagKeuze== Weekdagen.Woensdag)
+if(dagKeuze == Weekdagen.Woensdag)
 ```
 of een switch:
 ```csharp
@@ -130,7 +129,7 @@ Intern worden de enum-variabelen als ints bewaard. In het geval van de ``Weekdag
 
 Volgende conversies met behulp van [casting](../3_data/4_converteren_casting.md) zijn dan ook perfect toegelaten:
 ```csharp
-int keuze= 3;
+int keuze = 3;
 
 Weekdagen dagKeuze = (Weekdagen)keuze;
 
@@ -148,13 +147,13 @@ Weekdagen nieuweDag= (Weekdagen)extradag;
 Standaard worden de waarden dus genummerd intern beginnende bij 0, enz. Je kan dit ook manueel veranderen door bij het maken van de ``enum`` expliciet aan te geven wat de interne waarde moet zijn, als volgt:
 
 ```csharp
-enum WeekDagen {Maandag =1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
+enum WeekDagen {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
 ```
 De dagen zullen nu vanaf 1 genummerd worden, dus ``WeekDagen.Woensdag`` zal de waarde 3 hebben.
 
 We kunnen ook nog meer informatie meegeven, bijvoorbeeld:
 ```csharp
-enum WeekDagen {Maandag =1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
+enum WeekDagen {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
 ```
 
 In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden, Zaterdag als 50, en Zondag als 60.
@@ -162,7 +161,7 @@ In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden
 # Why should I care?
 ![](../assets/care.jpg)
 
-Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum``ontdekten (en begrepen) zijn nog maar weinig programmeurs er van af gestapt. 
+Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum``ontdekten (en begrepen) zijn nog maar weinig programmeurs ervan af gestapt. 
 
 De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen datatypes aanmaken?! Van zodra je ze in de vingers hebt zal je ontdekken dat je veel leesbaardere code kunt schrijven én dat Visual Studio je kan helpen met het opsporen van bugs. 
 
