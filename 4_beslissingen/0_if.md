@@ -140,7 +140,7 @@ c contains 1
 c is non-negative
 ```
 
-We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operatoren (``&&``(AND), ``||``(OR), ``!``(NOT)) .
+We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operatoren (``&&``, ``||``, ``!``) .
 
 Een voorbeeld:
 ```csharp
