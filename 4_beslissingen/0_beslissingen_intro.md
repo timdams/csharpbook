@@ -11,6 +11,6 @@ Onze programma's waren met andere woorden niet meer dan een eenvoudige oplijstin
 7. Smullen maar
 
 
-Alhoewel dit algoritme redelijk duidelijk en goed zal werken, zal de realiteit echter zelden zo goed zijn. Een beter algoritme (dat foutgevoeliger is én interactieve voor de eindgebruiker) zal afhankelijk van de omstandigheden (bakker gesloten, geen geld meer, etc) mogelijke andere stappen ondernemen. **Het programma zal beslissingen maken**.
+Alhoewel dit algoritme redelijk duidelijk en goed zal werken, zal de realiteit echter zelden zo goed zijn. Een beter algoritme (dat foutgevoeliger is én interactieve voor de eindgebruiker) zal afhankelijk van de omstandigheden (bakker gesloten, geen geld meer, etc.) mogelijke andere stappen ondernemen. **Het programma zal beslissingen maken**.
 
 
