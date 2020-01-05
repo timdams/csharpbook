@@ -13,7 +13,7 @@ do
     x= Convert.ToInt32(instring);
     //....
 
-}while (x != 32767)
+}while (x != 32767);
 Console.WriteLine($"Som is{y}");
 ```
 
@@ -35,6 +35,7 @@ Deze 4 getallen worden steeds geüpdate en getoond wanneer de gebruiker een nieu
 ```csharp
 int getal;
 int poging = 0;
+int aantalPogingen=0;
 string pogingString;
 bool gevonden= false;
 Random rand= new Random();
@@ -42,8 +43,9 @@ getal= rand.Next(0,10);
 
 while(!gevonden)
 {
+    aantalPogingen++;
     Console.WriteLine("Geef een getal tussen 0 en 10");
-    pogingString= Console.ReadLine();
+    pogingString= Console.ReadLine(); 
     poging = int.Parse(pogingString);
 
     if(getal>poging)
@@ -57,7 +59,7 @@ while(!gevonden)
     else 
         gevonden=true;
 }
-Console.WriteLine($"Gevonden! Het te zoeken getal was inderdaad {getal} je had er {poging} pogingen voor nodig.");
+Console.WriteLine($"Gevonden! Het te zoeken getal was inderdaad {getal} je had er {aantalPogingen} pogingen voor nodig.");
 ```
 
 **Deel 2:** Pas het programma zo aan dat de tekst die verschijnt bij het inlezen van de volgende poging het resterende interval aangeeft. Gebruik hiervoor twee extra variabelen "ondergrens" en "bovengrens" die als beginwaarden respectievelijk 0 en 100 krijgen. Bij het inlezen van de volgende waarde voor poging zal deze toegekend worden aan ondergrens of bovengrens naargelang ze groter dan wel kleiner dan het te zoeken getal is. 
@@ -116,14 +118,6 @@ while (true)
 
 Vul de code aan zodat de karakters random kleuren krijgen. Kan je het nog cooler maken?
 
-# PRO  Password generator
-Ontwerp een consoletoepassing waarmee je een wachtwoord genereert voor een gebruiker. Het wachtwoord is opgebouwd uit:
-
-de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2de letter is een kleine letter. 
-Daarna worden de 2 letters gewisseld;
-het zonenummer van het telefoonnummer zonder de 0;
-het eerste cijfer van de postcode in het kwadraat.
-
 # BeerSong
 Schrijf een BeerSong-generator zoals onderstaande output. Merk op dat de laatste 6 zinnen anders zijn:
 
@@ -159,46 +153,3 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 ```
-
-## BankManager
-
-Ontwerp een klasse Account die minstens een Naamveld, bedrag en rekeningnummer bevat. Voorzie 3 methoden:
-
-1. WithdrawFunds: bepaald bedrag wordt van rekening verwijderd
-2. PayInFunds: bepaald bedrag (als parameter) wordt op de rekening gezet
-3. GetBalance: het totale bedrag op de rekening wordt teruggegeven
-
-Pas de WithdrawFunds methode aan zodat als returntype het bedrag (int) wordt teruggegeven. Indien het gevraagde bedrag meer dan de balance is dan geef je al het geld terug dat nog op de rekening staat en toon je in de console dat niet al het geld kon worden gegeven.
-
-Maak 2 instanties van het type Account aan en toon aan dat je geld van de ene account aan de andere kunt geven, als volgt:
-
-```csharp
-BankAccount rekening1=new BankAccount();
-BankAccount rekening2=new BankAccount();
-```
-
-Voeg aan de Account-klasse een private field toe zijnde van het type accountState dat een enumeratie bevat. De account kan in volgende states zijn "Geldig", "Geblokkeerd"). 
-Maak een bijhorende publieke Methode  waarmee je de account van state kunt veranderen. Deze methode (noem ze ChangeState) vereist één parameter van het type accountState natuurlijk.
-
-Indien een persoon geld van of naar een Geblokkeerde rekening wil sturen dan zal er een error op het scherm verschijnen.
-Maak een array aan van 10 klanten. Wanneer je met klassen werkt moet je bij de initialisatie van de array ook ieder element afzonderlijk initialiseren, als volgt:
-
-```csharp
-BankAccount[] lijst = new BankAccount[10];
-//Init
-for(int i=O; i<lijst.Length;i++)
-{ 
- lijst[i]= new BankAccount();
-}
-```
-
-Schrijf nu een BankManager systeem. Voorzie  een console- menu waarbij de gebruiker volgende zaken kan doen:
-
-1. Nieuwe klant aanmaken (max 10) 
-2. Status van bestaande klant tonen 
-3. Geld op  bepaalde account zetten 
-4. Geld van bepaalde account afhalen 
-5. Geld tussen 2 accounts overschrijven.
-6. Een totaaloverzicht van alle accounts tonen (Allerlei statistieken zoals de totale som op alle rekeningen samen, rijkste account, etc worden in een tabel getoond)
-
-Voorzie extra functionaliteit naar keuze.

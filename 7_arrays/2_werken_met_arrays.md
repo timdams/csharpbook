@@ -2,6 +2,30 @@
 
 Net zoals we hebben gezien dat de Math-klasse een hele boel nuttige methoden in zich, zo ook heeft iedere array een aantal methoden waar handig gebruik van kan gemaakt worden.
 
+>![](../assets/attention.jpg)
+>
+> Om deze methoden te kunnen gebruiken moet je bovenaan je file de volgende lijn toevoegen: ``using System.Linq;``:
+
+```csharp
+using System;
+using System.Linq;
+namespace methodmovie
+{
+   class Program
+    {
+        public static void Main()
+        {
+            int[] getallen = new int[101];
+
+            //..
+            Console.WriteLine(getallen.Sum());
+       
+        }
+    }
+}
+```
+
+
 Wanneer een array hebt gemaakt, dan kan je met de IntelliSense van Visual studio bekijken wat je allemaal kan doen met de array:
 
 ![](../assets/5_arrays/arrays2.png)

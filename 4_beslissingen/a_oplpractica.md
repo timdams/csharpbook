@@ -79,3 +79,49 @@ else
 }
 Console.WriteLine($"Prijs is {prijs}");
 ```
+## Enum seizoenen
+
+```csharp
+enum Seizoenen { Winter, Lente, Zomer, Herfst, Onbekend}     
+```
+
+```csharp
+Console.WriteLine("Geef een maandnummer (1 tot 12)");
+int maand = Convert.ToInt32(Console.ReadLine());
+Seizoenen huidigSeizoen = Seizoenen.Onbekend;
+switch(maand)
+{
+    case 1:
+    case 2:
+    case 3:
+        huidigSeizoen = Seizoenen.Winter;
+        break;
+    case 4:
+    case 5:
+    case 6:
+        huidigSeizoen = Seizoenen.Lente;
+        break;
+    case 7:
+    case 8:
+    case 9:
+        huidigSeizoen = Seizoenen.Zomer;
+        break;
+    case 10:
+    case 11:
+    case 12:
+        huidigSeizoen = Seizoenen.Herfst;
+        break;
+    default:
+        huidigSeizoen = Seizoenen.Onbekend;
+        break;
+
+}
+
+if(huidigSeizoen== Seizoenen.Winter || huidigSeizoen== Seizoenen.Herfst)
+    Console.WriteLine("Dat is een koud seizoen!");
+else if(huidigSeizoen == Seizoenen.Zomer || huidigSeizoen == Seizoenen.Lente)
+    Console.WriteLine( "Dat is een warm seizoen!");
+else //Seizoen.Onbekend
+    Console.WriteLine("Dat is geen seizoen!");
+
+```

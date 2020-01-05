@@ -50,3 +50,4 @@ De Math.Pow methode vereist dus bijvoorbeeld 2 parameters van het type double. W
 
 ![](../assets/4_methoden/methoden8.png)
 
+

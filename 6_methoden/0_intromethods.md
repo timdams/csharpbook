@@ -238,9 +238,20 @@ Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische 
 
 ![Hoe comment getoond wordt](../assets/4_methoden/comment.png)
 
-# Nut van methoden
+# Kennisclip
+![](../assets/infoclip.png)
+* [Introductie methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=500f8c7e-874c-4e01-a2e5-aaf600dcda06)
+* [Sneller methoden schrijven m.b.v. IntelliSense](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b93447e7-88a1-49ec-992f-a9af00b22dde)
 
-Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na n jaren met de volgende formule:
+
+
+
+# Why should I care?
+![](../assets/care.jpg)
+
+Volgt nu een voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. 
+
+Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na *n* jaren met de volgende formule:
 
 ```csharp
 eindkapitaal = startkapitaal x ( 1 + (rentepercentage/100))^n

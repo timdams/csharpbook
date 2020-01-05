@@ -29,10 +29,10 @@
 * H2: Tekst in code
   * [Strings en chars](2_tekst/5_chars_strings.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
-  * [Unicode tonen](2_tekst/7_unicode.md) 
+  * [Unicode tonen](2_tekst/7_unicode.md)
+  * [Environment bibliotheek](2_tekst/8_environment.md) 
   * [_Oefeningen](2_tekst/a_practica.md)
 
-  
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
@@ -51,9 +51,11 @@
   * [_Oefeningen](4_beslissingen/a_practica.md)
 
 * Module 1 eindetest
-  * [Opgave](EindeTests/Mod1/Opgave.md)
-  * [Opgave vaardigheidsproef mod 1 1819](EindeTests/Mod1/Opgave_1819.md)
-  * [Bespreking vaardigheidsproef mod 1 1819](EindeTests/Mod1/Oplossing_1819.md)
+  * [Opgave 1](EindeTests/Mod1/Opgave.md)
+  * [Opgave 2: vaardigheidsproef deel 19-20](EindeTests/Mod1/Opgave_1920.md)
+  * [Opgave 3: vaardigheidsproef deel 18-19](EindeTests/Mod1/Opgave_1819.md)
+  * [Bespreking en oplossing Opgave 2](EindeTests/Mod1/Oplossing_1920.md)
+  * [Bespreking en oplossing Opgave 3](EindeTests/Mod1/Oplossing_1819.md)
 
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
@@ -69,14 +71,16 @@
   * [Methoden intro](6_methoden/0_intromethods.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Geavanceerde methoden](6_methoden/3_advancedmethod.md)  
-  * [_Oefeningen](6_methoden/b_practica.md)
+  * [_Oefeningen deel 1](6_methoden/b_practica.md)
+  * [_Oefeningen deel 2](6_methoden/c_practica.md)
 
 * H7: Arrays
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Werken met arrays](7_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
-  * [Oefeningen](7_arrays/A_practica.md)
+  * [_Oefeningen deel 1](7_arrays/A_practica.md)
+  * [_Oefeningen deel 2](7_arrays/B_practica.md)
   
 * Module 2 eindetest
   * [Opgave](EindeTests/Mod2/Opgave.md)
@@ -177,6 +181,7 @@
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
   * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
   * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
+  * [Fun with methods: een verhaalgenerator](A_DEEL1_AllInOne/3_verhaalgenerator.md)
   * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
@@ -223,3 +228,6 @@
 * Events
   * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
+
+* Software engineering
+  * [SOLID](20_SE/solid1.md)

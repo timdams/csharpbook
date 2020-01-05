@@ -26,7 +26,7 @@ Als de gebruiker dus ``ACGTGGTCTTAA`` heeft ingevoerd moet het resultaat: ``UGCA
 
 Ga er van uit dat de gebruiker letter per letter invoert (telkens dus enter na een letter) en je de omgezette string doet groeien (m.b.v ``+=``).
 
-## PRO Armstrong nummer
+## [PRO] Armstrong nummer
 Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
 
 * 9 is een Armstrong nummer, want 9 = 9^1 = 9
@@ -63,7 +63,7 @@ Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft onder 
 **Tip: module is je grote held hier. Een getal is een veelvoud van x indien ``getal%x`` 0 als resultaat geeft.**
 
 
-## PRO: For doordenker 
+## [PRO] For doordenker 
 Schrijf een programma dat de volgende output geeft , gegeven dat de gebruiker een maximum waarde invoert , dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel forloops!
 ```
 *
@@ -75,7 +75,7 @@ Schrijf een programma dat de volgende output geeft , gegeven dat de gebruiker ee
 *
 ```
 
-## PRO: For doordenker extra
+## [PRO] For doordenker extra
 Schrijf een programma dat de volgende output geeft  (zie ook WhileDoordenker van vorige labo), gegeven dat de gebruiker een maximum waarde invoert die opgeeft uit hoeveel lijnen de boom bestaat. Maak enkel gebruik van for-loops.
 ```
      *

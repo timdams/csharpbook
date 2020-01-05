@@ -26,20 +26,7 @@ Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine
 
 ## Deel 1
 
-Maak een applicatie die de belangrijkste computer-informatie (geheugen, etc) aan de gebruiker toont.
-
-Deze computer-informatie kan je verkrijgen mbv de Environment-klasse. Hier enkele voorbeelden (kijk zelf of er nog nuttige properties over je computer in staan):
-
-```csharp
-bool is64bit = Environment.Is64BitOperatingSystem;
-string pcname = Environment.MachineName;
-int proccount = Environment.ProcessorCount;
-string username = Environment.UserName;
-long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
-```
-
-> **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (Wat een vreemde lange zin.)
-
+Maak een applicatie die de belangrijkste computer-informatie (geheugen, etc) aan de gebruiker toont m.b.v. de ``Environment`` bibliotheek.
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
 
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
@@ -133,7 +120,6 @@ string output = process.StandardOutput.ReadToEnd(); //normal output
 Console.WriteLine(output);
 string err = process.StandardError.ReadToEnd(); //error output (if any)
 Console.WriteLine(err);
-process.WaitForExit();
 //Continue
 Console.WriteLine("Klaar");
 ```

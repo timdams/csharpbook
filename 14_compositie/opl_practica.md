@@ -63,7 +63,7 @@ myHuis.Kamers.Add(new Kamer());
 Console.WriteLine(myHuis.BerekenPrijs());
 ```
 
-##Klasse
+## Klasse
 
 (In sommige hanteer ik de [EDM-schrijftstijl](B_appendix/6_exprbody.md) bij de override van properties.)
 

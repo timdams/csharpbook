@@ -69,7 +69,7 @@ De pizzabestelling wordt gevisualiseerd als volgt:
 
 Voorbeelden:
 
-![](../assets/2_beslissingen/vaardig1819.jpg)
+![](../../assets/2_beslissingen/vaardig1819.jpg)
 
 ### Prijsberekening (3 punten)
 De prijsberekening van de pizza gebruikt de prijzen hierboven vermeld en is gewoon de optelsom van de aparte delen.

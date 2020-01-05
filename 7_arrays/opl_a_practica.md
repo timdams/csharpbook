@@ -41,7 +41,7 @@ for(int i = 0; i<getallen.Length;i++)
 
 //Maak een array gevuld met afwisselen true en false(lengte is 30)
 bool[] binary= new bool[30];
-Random r= new Random();
+//Random r= new Random();
 for(int i = 0; i<binary.Length;i++)
 {
     if(i%2==0) 
@@ -254,7 +254,7 @@ static void Main(string[] args)
     }
 }
 
-private static bool IsRealDNA(char[] dna)
+static bool IsRealDNA(char[] dna)
 {
     for (int i = 0; i < dna.Length; i++)
     {
@@ -263,5 +263,225 @@ private static bool IsRealDNA(char[] dna)
             return false;
     }
     return true;
+}
+```
+
+# Oplossingen deel 2
+
+## Parkeergarage
+
+```csharp
+static void Main()
+{
+    Console.WriteLine("Geef aantal auto's in:");
+    int aantal = Convert.ToInt32(Console.ReadLine());
+
+    double[] duur = new double[aantal];
+
+    for (int i = 0; i < duur.Length; i++)
+    {
+        Console.WriteLine($"Geef parkeertijd auto {i + 1} in (uren)");
+        duur[i] = Convert.ToDouble(Console.ReadLine());
+
+    }
+
+    ToonResultaat(duur);
+}
+
+static void ToonResultaat(double[] duur)
+{
+    double somDuur = 0;
+    double somKost = 0;
+    Console.WriteLine("Auto\tDuur\tKost");
+    for (int i = 0; i < duur.Length; i++)
+    {
+        double kost = berekenKosten(duur[i]);
+        somKost += kost;
+        somDuur += duur[i];
+        
+        Console.WriteLine($"{i+1}\t{duur[i]}\t{berekenKosten(duur[i])}");
+    }
+    Console.WriteLine($"Totaal\t{somDuur}\t{somKost}");
+}
+
+static double berekenKosten(double duur)
+{
+
+    double kost = 2;
+    if (duur > 3)
+    {
+        double extra = Math.Ceiling(duur - 3);
+        kost += (extra * 0.5);
+
+    }
+    if (duur >= 24)
+    {
+        kost = 10;
+    }
+    return kost;
+}
+```
+
+## ArrayViewer
+
+```csharp
+static void VisualiseerArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]}\t");
+    }
+    Console.Write(Environment.NewLine);
+}
+```
+
+## Caesar Encryptie
+
+```csharp
+static char[] DeCrypt(char[] cipertext, int key)
+{
+    return Encrypt(cipertext, -key);
+}
+
+static char[] Encrypt(char[] plaintext, int key)
+{
+    char[] result = new char[plaintext.Length];
+    //werkt enkel voor kleine letters
+    for (int i = 0; i < plaintext.Length; i++)
+    {
+        if (plaintext[i] == ' ')
+            result[i] = ' ';
+        else
+        {
+            int newchar = (int)plaintext[i] + key;
+            if (newchar > 122) //nodig voor encrypt
+                newchar -= 26;
+            else if (newchar < 97) //nodig voor decrypt
+                newchar += 26;
+
+            result[i] = (char)newchar;
+        }
+    }
+    return result ;
+}
+```
+
+## Determinant
+
+```csharp
+static int BerekenDeterminant(int[,] aMatrix)
+{
+    return aMatrix[0, 0] * aMatrix[1, 1] - aMatrix[0, 1] * aMatrix[1, 0];
+}
+```
+
+## Robot simulator
+
+```csharp
+enum richtingen { Noord, Oost, Zuid, West };
+static void Main(string[] args)
+{
+    int x = 7;
+    int y = 3;
+    richtingen richting = richtingen.Noord;
+    bool[,] map = new bool[20, 20];
+
+    string tekst = "AALAALALAAARAARAA";
+
+    char[] opdrachten = tekst.ToCharArray();
+
+    for (int i = 0; i < opdrachten.Length; i++)
+    {
+        switch (opdrachten[i])
+        {
+            case 'R':
+                richting = RoteerRechts(richting);
+                break;
+            case 'L':
+                richting = RoteerLinks(richting);
+                break;
+            case 'A':
+                //missing: checken dat er niet uit randen wordt gegaan
+                switch (richting)
+                {
+                    case richtingen.Noord:
+                        y--;
+                        break;
+                    case richtingen.Oost:
+                        x++;
+                        break;
+                    case richtingen.Zuid:
+                        y++;
+                        break;
+                    case richtingen.West:
+                        x--;
+                        break;
+                    default:
+                        break;
+                }
+                map[x, y] = true;
+                break;
+        }
+        TekenKaart(map);
+        Console.ReadKey();
+    }
+}
+
+private static void TekenKaart(bool[,] map)
+{
+    Console.Clear();
+    for (int i = 0; i < map.GetUpperBound(0); i++)
+    {
+        for (int j = 0; j < map.GetUpperBound(1); j++)
+        {
+            if (map[j, i] == false)
+                Console.Write(".");
+            else
+                Console.Write("X");
+        }
+        Console.Write(Environment.NewLine);
+    }
+}
+
+private static richtingen RoteerLinks(richtingen richting)
+{
+    switch (richting)
+    {
+        case richtingen.Noord:
+            return richtingen.West;
+            break;
+        case richtingen.Oost:
+            return richtingen.Noord;
+            break;
+        case richtingen.Zuid:
+            return richtingen.Oost;
+            break;
+        case richtingen.West:
+            return richtingen.Zuid;
+            break;
+    }
+
+    return richtingen.Noord;
+}
+
+private static richtingen RoteerRechts(richtingen richting)
+{
+    switch (richting)
+    {
+        case richtingen.Noord:
+            return richtingen.Oost;
+            break;
+        case richtingen.Oost:
+            return richtingen.Zuid;
+            break;
+        case richtingen.Zuid:
+            return richtingen.West;
+            break;
+        case richtingen.West:
+            return richtingen.Noord;
+            break;
+    }
+
+    return richtingen.Noord;
 }
 ```

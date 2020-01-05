@@ -30,7 +30,7 @@ Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat.
  ![](../assets/3_loops/for.png)
 
 # Voorbeeld flowchart
-Door de eerder beschreven elementen nu samen te voegen kunnen we een programma als een flowchart voorstellen.  Stel dat we een programma "Faculteit" maken. Hierin is het de bedoeling om de faculteit  van een gegeven getal N dat door de gebruiker wordt ingevoerd, te berekenen (bijvoorbeeld N=5 geeft dan ``5! = 5x4x3x2x2 = 120`` ). 
+Door de eerder beschreven elementen nu samen te voegen kunnen we een programma als een flowchart voorstellen.  Stel dat we een programma "Faculteit" maken. Hierin is het de bedoeling om de faculteit  van een gegeven getal N dat door de gebruiker wordt ingevoerd, te berekenen (bijvoorbeeld N=5 geeft dan ``5! = 5x4x3x2x1 = 120`` ). 
 De finale flowchart ziet er als volgt uit:
 
  ![](../assets/3_loops/fullflow.png)
