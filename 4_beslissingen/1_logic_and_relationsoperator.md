@@ -1,5 +1,5 @@
 # Relationele operators
-Om beslissingen te kunnen nemen in C# hebben we een nieuw soort operators nodig. Operators waarmee we kunne testen of iets waar of niet waar is. Dit doen we met de zogenaamde **relationele operators**. En guess what, je kent die al van uit het lager! Enkel de "gelijk aan" ziet er iets anders uit dan we gewoon zijn:
+Om beslissingen te kunnen nemen in C# hebben we een nieuw soort operators nodig. Operators waarmee we kunnen testen of iets waar of niet waar is. Dit doen we met de zogenaamde **relationele operators**. En guess what, je kent die al van uit het lager! Enkel de "gelijk aan" ziet er iets anders uit dan we gewoon zijn:
 
 
 | C#-syntax| Betekenis| 
@@ -12,7 +12,7 @@ Om beslissingen te kunnen nemen in C# hebben we een nieuw soort operators nodig.
 | ``>=`` |groter dan of gelijk aan| 
 
 # Logische operator
-De logische EN , OF en NIET-operators die je kent van de booleaanse algebra kan je ook gebruiken in C#:
+De logische EN, OF en NIET-operatoren die je kent van de booleaanse algebra kan je ook gebruiken in C#:
 
 | C#-syntax| Betekenis| 
 | ---------| ---------| 
@@ -28,12 +28,12 @@ Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te
 
 Een booleaanse expressie is een stuk C# code dat een ``bool`` als resultaat zal geven. 
 
-De logische operators van hierboven zijn operators die een ``bool`` teruggeven. Ze zijn zogenaamde test-operators: ze testen of iets waar is of niet. 
-"is b kleiner dan c?" schrijf je dan als de booleaanse expressie: ``b<c``
+De logische operators van hierboven zijn operators die een ``bool`` teruggeven. Ze zijn zogenaamde test-operators: ze testen of iets waar is of niet.
+"Is b kleiner dan c?" schrijf je dan als de booleaanse expressie: ``b<c``
 
 Test maar eens wat er op je scherm komt als je in code schrijft: ``Console.WriteLine(45<=55);``. 
 
-Zoals verwacht zal er ``True`` op het scherm verschijnen.
+Zoals verwacht zal er ``true`` op het scherm verschijnen.
 
 
 # Test jezelf
