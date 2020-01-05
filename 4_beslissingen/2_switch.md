@@ -1,6 +1,6 @@
 # Switch
 
-Een switch statement is een program-flow element om een veelvoorkomende constructie van if/if else...else elementen eenvoudiger te tonen. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken (bijvoorbeeld een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma), zoals:
+Een ``switch`` statement is een program-flow element om een veelvoorkomende constructie van ``if``/``if else``...``else`` elementen eenvoudiger te tonen. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken (bijvoorbeeld een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma), zoals:
 
 ```csharp
 int option;
@@ -18,7 +18,7 @@ else
 
 ```
 
-Met een switch kan dit eenvoudiger. De syntax van een switch is een beetje specialer dan de andere programma flow-elementen (if, while, etc.), namelijk als volgt:
+Met een ``switch`` kan dit eenvoudiger. De syntax van een ``switch`` is een beetje specialer dan de andere programma flow-elementen (``if``, ``while``, etc.), namelijk als volgt:
 
 ```csharp
 switch (value)
@@ -37,9 +37,9 @@ switch (value)
 
 
 
-``value`` is de waarde of variabele (beide mogen) die wordt gebruikt als test in de switch. Iedere case begint met het ``case`` keyword gevolgd door de waarde die value moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze case. De case zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het ``break`` keyword.
+``value`` is de waarde of variabele (beide mogen) die wordt gebruikt als test in de switch. Iedere case begint met het ``case`` keyword gevolgd door de waarde die value moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze ``case``. De ``case`` zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het ``break`` keyword.
 
-Tijdens de uitvoer zal het programma value vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan value dan zal de code binnen de ``default``-case uitgevoerd worden (de ``else`` achteraan indien alle vorige ``if else``-tests negatief waren).
+Tijdens de uitvoer zal het programma ``value`` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan value dan zal de code binnen de ``default``-case uitgevoerd worden (de ``else`` achteraan indien alle vorige ``if else``-tests negatief waren).
 
 Het menu van zonet kunnen we nu herschrijven naar een ``switch``:
 ```csharp
@@ -65,11 +65,11 @@ switch (option)
 
 ## Opgelet:
 
-De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1, "1", 1.0, 1.d, '1'``, etc.)
+De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.)
 
 # Falthrough
 
-Some wil je dat dezelfde code moet uitgevoerd bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
+Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
 
 ```csharp
 switch (option)
