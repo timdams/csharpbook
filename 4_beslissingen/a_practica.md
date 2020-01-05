@@ -1,6 +1,6 @@
 # BMI met if
 
-Pas je BMI-programma ([zie practica vorige hoofdstuk](../3_data/A_Practica.md#bmi-berekenaar)) aan zodat je programma feedback aan de gebruiker geeft naargelang de berekende BMI.
+Pas je BMI-programma ([zie practica vorige hoofdstuk](../3_data/A_Practica.md#bmi-berekenaar)) aan zodat je programma feedback geeft aan de gebruiker naargelang het berekende BMI.
 
 De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
 
@@ -11,7 +11,7 @@ De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
 * Boven de 40 (magenta): ernstige zwaarlijvigheid. Je moet dringend vermageren want je gezondheid is in gevaar (of je hebt je lengte of gewicht in verkeerde eenheid ingevoerd).
 
 # Schoenverkoper
-a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20euro. Indien de gebruiker 10 paar of meer koopt kosten de eerste 9 paar nog steeds 20euro, de overige kosten echter maar 10euro. Toon aan de gebruiker de totale prijs.
+a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20 euro. Indien de gebruiker 10 paar of meer koopt kosten de eerste 9 paar nog steeds 20 euro, de overige kosten echter maar 10 euro. Toon aan de gebruiker de totale prijs.
 
 Voorbeeld:  
 * 8 schoenen kost 8x20 = 160 euro
@@ -23,7 +23,7 @@ Voorbeeld:
 * De kassiester voert 6 in. Dan kosten 8 schoenen: 6x20 + 2x10 = 140 euro.
 
 # Ohm-berekenaar
-Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroomsterkte. Vraag vervolgens de 2 andere waarden (als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand) en bereken m.b.v. de wet van Ohm de gewenste waarde.
+Vraag aan de gebruiker wat hij wenst te berekenen: spanning, weerstand of stroomsterkte. Vraag vervolgens de 2 andere waarden (als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand) en bereken m.b.v. de wet van Ohm de gewenste waarde.
 
 # Kleurcode weerstand naar ohm
 Vraag aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst (bv ``groen``). Toon vervolgens de de waarde van deze weerstand.
@@ -36,24 +36,24 @@ rood
 ```
 Dan zal het programma tonen:
 
-``Deze weerstand heeft waarde van  2700 Ohm``
+``Deze weerstand heeft een waarde van  2700 Ohm``
 
-Indien je deze oefening maakt nadat je reeds ``switch`` hebt leren gebruiken, los deze oefening dan met ``switch`` op. Nog niet gezien? Ga voor ``if``-`` if else`` code.
+Indien je deze oefening maakt nadat je reeds ``switch`` hebt leren gebruiken, los deze oefening dan met ``switch`` op. Nog niet gezien? Ga voor ``if``/``else if`` code.
 
 
 # Orakeltje van Delphi, part deux
-Vul de oefening aan uit het vorige hoofdstuk (zie [hier](../3_data/A_Practica.md#het-orakeltje-van-delphi)). Voor het orakel je vertelt hoe lang je te leven hebt zal het eerste vragen of je een vrouw (``v``) of een man (``m``)bent. Dan vraagt ze je leeftijd.
+Vul de oefening aan uit het vorige hoofdstuk (zie [hier](../3_data/A_Practica.md#het-orakeltje-van-delphi)). Voor het orakel je vertelt hoe lang je te leven hebt zal het eerste vragen of je een vrouw (``v``) of een man (``m``) bent. Dan vraagt ze je leeftijd.
 Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Laat het orakel een duur voorspellen die kan. Als een vrouw van 50 de vraag stelt dan zal het orakel dus een getal tussen 5 en 100 (``150-50``) genereren. Een man van 35 zal tussen de 5 en 85 (``120-35``) jaren langer kunnen leven. 
 
 
 # Casino
- Genereer  een random getal maar toon dit niet aan de gebruiker. Vraag aan de gebruiker welk getal hij denkt dat de computer heeft "geworpen". Indien de gebruiker juist raadt verschijnt er "proficiat" op het scherm. Anders: "you lose".
+ Genereer  een random getal van 1 t.e.m. 6 maar toon dit niet aan de gebruiker. Vraag aan de gebruiker welk getal hij denkt dat de computer heeft "geworpen". Indien de gebruiker juist raadt verschijnt er "proficiat" op het scherm. Anders: "you lose".
 
  # Casino 3
  Vul de voorgaande oefening aan, maar laat de gebruiker 3x na mekaar raden. Enkel als hij juist raadt mag hij nog eens raden. Als hij ook de derde juist raadt wint hij. In alle andere gevallen niet.
 
 # Quiz
-Maak een quiz. Maak gebruik van het ``switch``-statement om de input van de gebruiker (a,b,c of d) te verwerken en bij iedere vraag aan te geven of dit juist/fout is. Voorzie 3 multiple choice vragen. Houdt bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore (Juist is +2 , fout is -1)
+Maak een quiz. Maak gebruik van het ``switch``-statement om de input van de gebruiker (a, b, c of d) te verwerken en bij iedere vraag aan te geven of dit juist of fout is. Voorzie 3 multiple choice vragen. Houdt bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore (Juist is +2, fout is -1).
 
  Zoek op hoe je de kleur van de letters en de achtergrond in een console-applicatie kunt aanpassen en pas dit toe op je quiz om deze er iets boeiender uit te laten zien. Toon iedere vraag op een nieuw scherm.
 
@@ -73,11 +73,11 @@ Kan jij volgende ludieke stemwijzer van GuntherD in een eenvoudig programma giet
 
 # Enum seizoenen
 Maak een enum die de seizoenen van het jaar bevat. Vraag aan de gebruiker om een maandnummer in te voeren. Gebruik vervolgens een switch om te bepalen in welk seizoen deze maand (grotendeels) ligt. Wijs deze enum toe aan een variabele in de switch.
-Vervolgens gebruik je een if om , gebaseerd op deze enum-variabele, te tonen of het om een koud seizoen (Winter en Herfst) of een warm seizoen (Zomer en Lente) gaat.
+Vervolgens gebruik je een if om, gebaseerd op deze enum-variabele, te tonen of het om een koud seizoen (winter en herfst) of een warm seizoen (zomer en lente) gaat.
 
 # Enum bij BMI
 
-Maak een enum die de verschillende soorten gewichten voorsteld (Obese, Zwaarlijvig,NormaalGewicht, etc.) Pas de bestaande "BMI met if" oefening aan zodat je deze enum gebruikt om je code leesbaarder te maken. 
+Maak een enum die de verschillende soorten gewichten voorsteld (Obees, Zwaarlijvig, NormaalGewicht, etc.) Pas de bestaande "BMI met if" oefening aan zodat je deze enum gebruikt om je code leesbaarder te maken. 
 
 # Kleurcode weerstand naar ohm, met enum
 Open de "Kleurcode weerstand naar ohm" die je eerder in dit hoofdstuk hebt gemaakt. Gebruik enum om de weerstandskleuren voor te stellen zodat je veel leesbaardere code krijgt.
