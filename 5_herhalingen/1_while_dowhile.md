@@ -9,11 +9,11 @@ while (booleaanse expressie)
 }
 ```
 
-Waarbij, net als bij een ``if`` statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators.
+Waarbij, net als bij een ``if`` statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operatoren.
 
-Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden. Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de while-loop niet worden uitgevoerd.
+Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden. Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de ``while``-loop niet worden uitgevoerd.
 
-Telkens wanneer aan het programma einde van het while codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer ``true`` dan wordt de code weer uitgevoerd. Van zodra de test ``false`` is zal de code voorbij het codeblock springen en na de ``while`` doorgaan.
+Telkens wanneer het programma aan het einde van het ``while`` codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer ``true`` dan wordt de code weer uitgevoerd. Van zodra de test ``false`` is zal de code voorbij het codeblock springen en na het ``while`` codeblok doorgaan.
 
 Het diagramma is duidelijk:
  ![](../assets/3_loops/while.png)
@@ -31,7 +31,7 @@ while (myCount < 100)
 }
 ```
 
-Zolang ``myCount`` kleiner is dan 100 (``myCount<100``) zal myCount met 1 verhoogd worden en zal de huidige waarde van myCount getoond worden. We krijgen met dit programma dus alle getallen van 1 tot en met 100 op het scherm onder elkaar te zien.
+Zolang ``myCount`` kleiner is dan 100 (``myCount < 100``) zal myCount met 1 verhoogd worden en zal de huidige waarde van myCount getoond worden. We krijgen met dit programma dus alle getallen van 1 tot en met 100 op het scherm onder elkaar te zien.
 
 Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 nog wel getoond zal worden. **Begrijp je waarom?** Test dit zelf!
 
@@ -41,7 +41,7 @@ In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 
 
 Vergelijk volgende diagramma van de ``do while``:
 
- !do while[](../assets/3_loops/dowhile.png)
+ ![](../assets/3_loops/dowhile.png)
 
  met die hierboven van de ``while``.
 
@@ -49,13 +49,12 @@ De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
 ```csharp
 do{
-      // C# die zal uitgevoegd worden zolang de booleaanse expressie waar is
+      // C# die uitgevoerd zal worden zolang de booleaanse expressie waar is
 } while (booleaanse expressie);
 ```
 
 Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
-Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd
-Volgende eenvoudige aftelprogramma toont de werking van de do-while loop
+Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop.
 
 ```csharp
 int i = 10;
@@ -70,9 +69,9 @@ Begrijp je wat dit programma zal doen?
 
 ## Complexe condities
 
-Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operators.
+Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operatoren.
 
-Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang teller groter is dan 5 en de variabele naam van het type string niet gelijk is aan "tim":
+Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang ``teller`` groter is dan 5 en de variabele ``naam`` van het type ``string`` niet gelijk is aan "tim":
 
 ```csharp
 while(teller > 5 && naam != "tim")
@@ -85,7 +84,7 @@ while(teller > 5 && naam != "tim")
 Indien de loop-conditie nooit ``false`` wordt dan heb je een oneindige loop gemaakt. Soms is dit gewenst gedrag (bijvoorbeeld bij de gameloop) soms is dit een bug en zal je dit moeten debuggen.
 
 Volgende twee voorbeelden tonen dit:
-* Een bewuste oneindige loop:
+* Een bewust oneindige loop:
 ```csharp
 while(true)
 {
@@ -109,10 +108,10 @@ Let er op dat de [scope](../4_beslissingen/3_scope.md) van variabelen bij loops 
 Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen (1+2+3+...+10) zou maken:
 
 ```csharp
-int teller=1;
-while(teller<=10)
+int teller= 1;
+while(teller <= 10)
 {
-   int som=0;
+   int som= 0;
    som= som+teller;
    teller++;
 }
@@ -121,9 +120,9 @@ Console.WriteLine(som); //deze lijn zal fout genereren
 
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden:
 ```csharp
-int teller=1;
+int teller= 1;
 int som=0;  
-while(teller<=10)
+while(teller <= 10)
 {
    
    som= som+teller;
@@ -136,7 +135,7 @@ Console.WriteLine(som);
 Dankzij loops kunnen we nu ook eenvoudiger omgaan met foutieve input van de gebruiker. Stel dat we volgende vraag hebben:
 
 ```csharp
-Console.WriteLine("Geef uw keuze in: a,b of c");
+Console.WriteLine("Geef uw keuze in: a, b of c");
 string input= Console.ReadLine();
 ```
 
@@ -145,11 +144,11 @@ Met een loop kunnen we nu deze vragen blijven stellen tot de gebruiker een geldi
 string input;
 do
 {
-  Console.WriteLine("Geef uw keuze in: a,b of c");
+  Console.WriteLine("Geef uw keuze in: a, b of c");
   input= Console.ReadLine();
-}while( input != "a"  && input != "b" && input != "c");
+}while(input != "a"  || input != "b" || input != "c");
 ```
-**Zolang (while) de gebruiker niet ``"a"`` EN ``"b"`` EN ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
+**Zolang (while) de gebruiker niet ``"a"`` OF ``"b"`` OF ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
 
 Merk op dat we de variabele ``string input`` VOOR de `` do while`` moeten aanmaken. Zouden we die IN de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
 > Je ziet dat het stuk ``} while(input...);`` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft).
