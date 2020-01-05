@@ -1,12 +1,12 @@
 **Gebruik je kennis van debuggen om vanaf dit hoofstuk problemen op te lossen. Gebruik niet ``Console.WriteLine()`` om de waarde van een variabele te controleren at-runtime, maar gebruik daarentegen breakpoints!**
 
 # Supercomputer
-> Vanaf dit punt zullen  de meeste oefeningen "iets vragen aan de gebruiker". Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
+> Vanaf dit punt zullen  de meeste oefeningen iets "vragen" aan de gebruiker. Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
 
 Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getallen.
 
 # Geometric-fun
-Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen (rad= x° * (Pi/180°)), gebruik ``Math.PI`` voor Pi. Gebruik vervolgens de verschillende geometrische functies in de ``Math.`` bibliotheek om de Sin, Cosinus en Tangens van de hoek aan de gebruiker te tonen (deze functies werken in radialen, daarom moeten we deze eerst omzetten).
+Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen (rad= x° * (π/180°)), gebruik ``Math.PI`` voor Pi (``π``). Gebruik vervolgens de verschillende geometrische functies in de ``Math.`` bibliotheek om de sinus (``.Sin``), cosinus (``.Cos``) en tangens (``.Tan``) van de hoek aan de gebruiker te tonen (deze functies werken in radialen, daarom moeten we deze eerst omzetten).
 
 # BMI berekenaar
 Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolgens z'n berekende BMI (Body Mass Index) toont.
@@ -76,4 +76,4 @@ Het totaal te betalen bedrag is 126 EURO.
  > We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
 
  # Random invoer
- Pas 1 van bovenstaande programma's aan waarbij je de invoer niet aan de gebruiker meer vraagt, maar deze genereert door een random generator. Zorg ervoor dat je realistische waarden genereert.
+ Pas 1 van bovenstaande programma's aan zodat je de invoer niet meer aan de gebruiker vraagt, maar deze genereert door een random generator. Zorg ervoor dat je realistische waarden genereert.
