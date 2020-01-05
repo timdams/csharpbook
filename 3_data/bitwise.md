@@ -7,12 +7,12 @@ Je kan ook met binaire getallen werken in C#. Dit kan nuttig zijn wanneer je bij
 Je kan een string die een binair getal voorstelt eenvoudig naar een getal omzetten m.b.v. 
 
 ```csharp
-string data= "0101";
-int output = Convert.ToInt32(data, 2);`` 
+string data = "0101";
+int output = Convert.ToInt32(data, 2);
 ```
 
 
-De tweede parameter ``2`` bij de Convert geeft aan van welke base het getal komt. Je kan hier ook 8 (hexadecimaal) en 16 zetten indien je bijvoorbeeld een hexadecimale voorstelling wilt omzetten.
+De tweede parameter ``2`` bij de Convert geeft aan van welke base het getal komt. Je kan hier ook 8 en 16 (hexadecimaal) zetten indien je bijvoorbeeld een hexadecimale voorstelling wilt omzetten.
 
 Ook in de andere richting kan, maar dan met behulp van de ``Convert.ToString`` methode:
 
@@ -25,17 +25,17 @@ string binary = Convert.ToString(value, 2);
 Bitwise operators in C# laten toe om de klassieke binaire bewerkingen (AND, OR, NOT, etc) die je kent uit booleanse algebra toe te passen op je variabelen.
 
 
-Stel dat we volgende twee variabelen hebben: ``int A=60; int B=13``. 
+Stel dat we volgende twee variabelen hebben: ``int A=60`` en ``int B=13``. 
 Volgende operators kan je gebruiken [bron](https://www.tutorialspoint.com/csharp/csharp_bitwise_operators.htm):
 
 |Operator|	Beschrijving|	Voorbeeld|
 |---|---|---|
-| ``&``|	Binary AND Operator copies a bit to the result if it exists in both operands.|	``(A & B) = 12``, which is 0000 1100|
-| <code>&#124;</code> |	Binary OR Operator copies a bit if it exists in either operand. |	<code>(A &#124; B) = 61</code>, which is 0011 1101|
-|``^``	|Binary XOR Operator copies the bit if it is set in one operand but not both.	|``(A ^ B) = 49``, which is 0011 0001|
-|``~``|	Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.|	``(~A ) = -61``, which is 1100 0011 in 2's complement due to a signed binary number.|
-|``<<``	|Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.|	``A << 2 = 240``, which is 1111 0000|
-|``>>``|	Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.|	``A >> 2 = 15``, which is 0000 1111|
+| ``&``|	Binary AND Operator copies a bit to the result if it exists in both operands. (De Binaire AND Operator kopieerd een bit naar het resultaat indien de bit bestaat in beide factoren.) |	``(A & B) = 12``, which is 0000 1100|
+| <code>&#124;</code> |	Binary OR Operator copies a bit if it exists in either operand. (De Binaire OR Operator kopieerd een bit naar het resultaat als het in één of beide van de factoren voorkomt.) |	<code>(A &#124; B) = 61</code>, which is 0011 1101|
+|``^``	|Binary XOR Operator copies the bit if it is set in one operand but not both.	(De Binaire XOR Operator  kopieert en bit naar het resultaat indien het in slechts één van de twee factoren voorkomt.) |``(A ^ B) = 49``, which is 0011 0001|
+|``~``|	Binary Ones Complement Operator is unary and has the effect of 'flipping' bits. (De Binaire Ones Complement Operator is unair en 'draait de bits om'.) |	``(~A ) = -61``, which is 1100 0011 in 2's complement due to a signed binary number.|
+|``<<``	|Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand. (De Binaire Links Shift Operator. De linkse factor zijn waarde wordt naar links verschoven met dezelfde hoeveelheid als de waarde van de rechterfactor.) |	``A << 2 = 240``, which is 1111 0000|
+|``>>``|	Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. (De Binaire Rechts Shift Operator. De linkse factor zijn waarde wordt naar rechts verschoven met dezelfde hoeveelheid als de waarde van de rechterfactor.) |	``A >> 2 = 15``, which is 0000 1111|
 
 
 
