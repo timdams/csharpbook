@@ -34,7 +34,7 @@ En zal volgende error genereren:
 
 ## Arraymethode voorbeeld
 
-Volgende voorbeeld toont een methode die alle getallen van de array op het scherm zal tonen:
+Volgend voorbeeld toont een methode die alle getallen van de array op het scherm zal tonen:
 ```csharp
 static void ToonArray(int[] getalArray)
 {
@@ -45,7 +45,7 @@ static void ToonArray(int[] getalArray)
     }
 }
 ```
-Stel dat je elders volgende array hebt ``int[] leeftijden= {2,5,1,6};``.
+Stel dat je elders volgende array hebt ``int[] leeftijden = {2, 5, 1, 6};``.
 De ``ToonArray`` methode aanroepen kan dan als volgt:
 ```csharp
 ToonArray(leeftijden);
@@ -60,7 +60,7 @@ Array output:
 ```
 
 ### Voorbeeldprogramma met methoden
-Volgende programma toont hoe we verschillende onderdelen van de code in methoden hebben geplaatst zodat:
+Volgend programma toont hoe we verschillende onderdelen van de code in methoden hebben geplaatst zodat:
 1. de lezer van de code sneller kan zien wat het programma juist doet
 2. zodat code herbruikbaar is
 
@@ -102,10 +102,10 @@ namespace ArrayMethods
             int[] getallen = new int[100];
  
             //Array vullen
-           VulArray(getallen);
+            VulArray(getallen);
  
             //Alle elementen met 3 vermenigvuldigen
-            VermenigvuldigArray(getallen,3);
+            VermenigvuldigArray(getallen, 3);
  
             //Enkel veelvouden van 4 op het scherm tonen
             ToonVeelvouden(getallen, 4);
