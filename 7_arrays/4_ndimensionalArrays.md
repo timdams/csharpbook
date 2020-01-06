@@ -52,13 +52,13 @@ Dit zal ``Mike Pastore`` op het scherm zetten.
 
 En bij de temperaturen:
 ```csharp
-Console.WriteLine(temperatures[2,0,1]);
+Console.WriteLine(temperatures[2, 0, 1]);
 ```
-Zal ``27`` terug geven: we vragen van de laatste array (``[2]``), daarbinnenin de eerste array (``[0]``)en daarvan het tweede (``[1]``)element.
+Zal ``27`` terug geven: we vragen van de laatste array (``[2]``), daarbinnenin de eerste array (``[0]``) en daarvan het tweede (``[1]``) element.
 
 ## Lengte van iedere dimensie in een n-dimensionale matrix
 
-Indien je de lengte opvraagt van een meer-dimensionale array dan krijg je de som van iedere lengte van iedere dimensie. Onze books array zal bijvoorbeeld dus lengte 9 hebben. Je kan echter de lengte van iedere aparte dimensie te weten komen met de GetLength() methode die iedere array heeft. Als parameter geef je de dimensie mee van de welke je de lengte wenst.
+Indien je de lengte opvraagt van een meer-dimensionale array dan krijg je de som van iedere lengte van iedere dimensie. Onze books array zal bijvoorbeeld dus lengte 9 hebben. Je kan echter de lengte van iedere aparte dimensie te weten komen met de GetLength() methode die iedere array heeft. Als parameter geef je de dimensie mee waarvan je de lengte wenst.
 
 ```csharp
 int arrayRijen = books.GetLength(0);
