@@ -1,17 +1,17 @@
 
-> Vanaf nu zul je véél meer oefeningen voorgeschoteld krijgen dan je kan afwerken in 1 labo tijd (I dare you ;). Selecteer zelf de oefeningen die je wenst te doen en sla die over waarvan je overtuigd bent ze al te kunnen. 
-> De oefening zijn , in de mate van het mogelijke, gerangschikt op moeilijkheid.
+> Vanaf nu zul je véél meer oefeningen voorgeschoteld krijgen dan je kan afwerken in 1 labo tijd (I dare you ;) ). Selecteer zelf de oefeningen die je wenst te doen en sla die over waarvan je overtuigd bent ze al te kunnen. 
+> De oefening zijn, in de mate van het mogelijke, gerangschikt op moeilijkheid.
 
 # De opwarmers
 Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](../assets/docs/oefenvragen2010.pdf) 
 
-> Ter info: Dit document staat ook in de lijst onderaan bij de nuttige extra's [hier](../_intro/nuttigeextras.md).
+> Ter info: Dit document staat ook in de lijst onderaan bij de [nuttige extra's](../_intro/nuttigeextras.md).
 
 # De oefeningen
 > Indien niet expliciet vermeld mag je kiezen met wat voor loop (for, while, do while) je het probleem zal oplossen.
 
 ## Tafels van vermenigvuldigen
-Gebruik de kracht van loops om pijlsnel alle tafels van 1 tot en met 10 van vermenigvuldigen op het scherm te tonen (dus van 1x1 tot 10x10 en alles daartussen)
+Gebruik de kracht van loops om pijlsnel alle tafels van 1 tot en met 10 van vermenigvuldigen op het scherm te tonen (dus van 1x1 tot 10x10 en alles daartussen).
 
 ## RNA Transscriptie
 
@@ -24,7 +24,7 @@ De omzetting is als volgt:
 
 Als de gebruiker dus ``ACGTGGTCTTAA`` heeft ingevoerd moet het resultaat: ``UGCACCAGAAUU`` zijn. 
 
-Ga er van uit dat de gebruiker letter per letter invoert (telkens dus enter na een letter) en je de omgezette string doet groeien (m.b.v ``+=``).
+Ga er van uit dat de gebruiker letter per letter invoert (telkens dus enter na een letter) en je de omgezette string doet groeien (m.b.v. ``+=``).
 
 ## [PRO] Armstrong nummer
 Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
@@ -33,9 +33,10 @@ Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van z
 * 10 is geen Armstrong nummer, want 10 != 1^2 + 0^2 = 1
 * 153 is een  Armstrong nummer, want: 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
 * 154 is geen  Armstrong nummer, want: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
+
 Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont of het ingevoerde getal een Armstrong-nummer is of niet.
 
-> Je zou deze oefening kunnen oplossen door het ingevoerde getal als string op te splitsen in individuele char's. Maar ik raad je aan om de "wiskunde" weg te volgen zodat je terdege leert met loops te wiskunde.*
+> Je zou deze oefening kunnen oplossen door het ingevoerde getal als string op te splitsen in individuele char's. Maar ik raad je aan om de "wiskunde" weg te volgen zodat je terdege leert met loops en wiskunde te werken.
 
 Tip 1: Stel dat je het getal 4560 hebt:
 
@@ -58,13 +59,13 @@ Je kan dan nu met ``Math.Pow(10,lengte-1)`` berekenen vanaf welke exponent van 1
 ## Euler project
 Maak volgende opdracht van [projecteuler.net](http://projecteuler.net):
 >Indien we alle natuurlijke getallen van 0 tot en met 10 oplijsten die een meervoud van 3 of 5 zijn, dan krijgen we de getallen 3,5,6,9 en 10. De som van deze 4 getallen is 33.
-Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft onder van 0 tot 1000 (dit zou 234168) moeten geven.
+Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft van 0 tot 1000 (dit zou 234168 moeten geven).
 
 **Tip: module is je grote held hier. Een getal is een veelvoud van x indien ``getal%x`` 0 als resultaat geeft.**
 
 
 ## [PRO] For doordenker 
-Schrijf een programma dat de volgende output geeft , gegeven dat de gebruiker een maximum waarde invoert , dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel forloops!
+Schrijf een programma dat de volgende output geeft, gegeven dat de gebruiker een maximum waarde invoert, dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel for-loops!
 ```
 *
 **
