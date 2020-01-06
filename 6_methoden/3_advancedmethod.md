@@ -1,5 +1,5 @@
 # Meer met methoden
-Volgende sectie is grotendeels gebaseerd op volgende [artikel](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments).
+Volgende sectie is grotendeels gebaseerd op het volgende [artikel](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments).
 
 ## Named parameters
 Wanneer je een methode aanroept is de volgorde van je argumenten belangrijk: deze moeten meegeven worden in de volgorde zoals de methode parameters ze verwachten.
@@ -31,7 +31,7 @@ We kunnen named parameters aangeven door de naam van de parameter gevolg door ee
  ```
 
 ### Volgorde van named parameters belangrijk
-Je mag ook een combinatie doen van named en gewone parameters, maar **dan is de volgorde belangrijk*: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).
+Je mag ook een combinatie doen van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).
 Enkele voorbeelden:
 ```csharp
 PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
@@ -56,21 +56,20 @@ Je geef aan dat een parameter optioneel is door deze een default waarde te geven
 In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters (``optionalstr`` en ``age``) optioneel zijn:
 ```csharp
 
-static void ExampleMethod(int required, string optionalstr = "default string",
-    int age = 10)
+static void ExampleMethod(int required, string optionalstr = "default string", int age = 10)
 ```
 
 Volgende manieren zijn nu geldige manieren om de methode aan te roepen:
 ```csharp
-ExampleMethod(15,"tim", 25); //klassieke aanroep
-ExampleMethod(20,"dams"); //age zal 10 zijn
-ExampleMethod(35)// optionalstr zal "default string" en age zal 10 zijn
+ExampleMethod(15, "tim", 25); //klassieke aanroep
+ExampleMethod(20, "dams"); //age zal 10 zijn
+ExampleMethod(35); //optionalstr zal "default string" en age zal 10 zijn
 ```
 
 Je mag enkel de optionele parameters van achter naar voor weglaten. Volgende aanroepen zijn dus **niet geldig**:
 ```csharp
-ExampleMethode(3, 4) //daar de tweede param een string moet zijn
-ExampleMethode(3, ,4)
+ExampleMethode(3, 4); //daar de tweede param een string moet zijn
+ExampleMethode(3, ,4);
 ```
 
 Met optionele parameters kunnen we dit indien gewenst omzeilen. Volgende aanroep is wel geldig:
@@ -92,7 +91,7 @@ static int ComputeArea(int lengte, int breedte)
 
 static int ComputeArea(int radius)
 {
-    int opp =(int) (Math.PI*radius*radius);
+    int opp = (int)(Math.PI*radius*radius);
     return opp;
 }
 ```
@@ -104,13 +103,13 @@ Afhankelijk van de aanroep zal dus de ene of andere uitgevoerd worden. Volgende 
 ```
 
 ### Betterness rule
-Indien de compiler twijfelt tijdens de **overload resolution** (welke versie moet aangeroepen worden) zal de betterness rule worden gehanteerd: de best 'passende' methode zal aangeroepen.
+Indien de compiler twijfelt tijdens de **overload resolution** (welke versie moet aangeroepen worden) zal de betterness rule worden gehanteerd: de best 'passende' methode zal aangeroepen worden.
 Stel dat we volgende overloaded methoden hebben:
 
 ```csharp
 static int ComputeArea(int radius) //versie A
 {
-    int opp =(int) (Math.PI*radius*radius);
+    int opp = (int)(Math.PI*radius*radius);
     return opp;
 }
 
@@ -128,21 +127,22 @@ Console.WriteLine($"Circle 2: {ComputeArea(7.5)}"); //versie B
 Console.WriteLine($"Circle 3: {ComputeArea(7.3f)}"); //versie B
 ```
 
-De betterness ruls is als volgt:
-| Meegegeven type        | Voorkeur (betterness) van meeste voorkeur naar minste  |
-| ----------- |-------------| 
-|byte|short, ushort, int, uint, long, ulong, float, double, decimal|
-|sbyte|short, int long, float, double, decimal|
-|short|int, long, float, double, decimal|
-|ushort| int, uint, long, ulong, float, double, decimal|
-|int| long, float, double, decimal|
-|uint|long, ulong, float, double, decimal|
-|long|float, double, decimal|
-|ulong|float, double, decimal|
-|float|double|
-|char|ushort, int, uint, long, ulong, float, double, decimal|
+De betterness rule is als volgt:
 
-Als je dus bijvoorbeeld een parameter van het type int meegeeft bij een methode aanroept (eerstekolom), dan zal een long geprefereerd worden boven een long, enz.
+| Meegegeven type | Voorkeur (betterness) van meeste voorkeur naar minste |
+| --------------- | --------------- | 
+| byte | short, ushort, int, uint, long, ulong, float, double, decimal |
+| sbyte | short, int long, float, double, decimal |
+| short | int, long, float, double, decimal |
+| ushort | int, uint, long, ulong, float, double, decimal |
+| int | long, float, double, decimal |
+| uint | long, ulong, float, double, decimal |
+| long | float, double, decimal |
+| ulong | float, double, decimal |
+| float | double |
+| char | ushort, int, uint, long, ulong, float, double, decimal |
+
+Als je dus bijvoorbeeld een parameter van het type int meegeeft bij een methode aanroep (eerste kolom), dan zal een long geprefereerd worden boven een float, enz.
 
 Indien de betterness regel niet werkt, dan zal de eerste parameter bepalen wat er gebruikt wordt. Dat zien we in volgende voorbeeld:
 
