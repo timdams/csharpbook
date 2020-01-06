@@ -6,10 +6,10 @@
 # Oplossing practica deel 1
 ## Oplossing Tafels van vermenigvuldiging:
 ```csharp
-int teller =1;
-while(teller<=10)
+int teller= 1;
+while(teller <= 10)
 {
-    int product= teller*10;
+    int product= teller * 10;
     Console.WriteLine($"{teller} x 10 = {product}");
     teller++;
 }
@@ -17,35 +17,35 @@ while(teller<=10)
 
 ## Oplossing DNA Transscriptie
 ```csharp
-string inp="", DNA="", RNA ="";
+string inp= "", DNA= "", RNA= "";
 do
 {
-    Console.WriteLine("Voer G,C,T of A in");
-    inp= Console.ReadLine();
+    Console.WriteLine("Voer G, C, T of A in");
+    inp = Console.ReadLine();
     switch(inp)
     {
         case "G":
-            DNA+="G";
-            RNA+="C";
+            DNA += "G";
+            RNA += "C";
             break;
         case "C":
-            DNA+="C";
-            RNA+="G";
+            DNA += "C";
+            RNA += "G";
             break;
         case "T":
-            DNA+="T";
-            RNA+="A";
+            DNA += "T";
+            RNA += "A";
             break;
         case "A":
-            DNA+="A";
-            RNA+="U";
+            DNA += "A";
+            RNA += "U";
             break;
         default:
-            Console.WriteLine("Onbekende invoer. We stoppen ermee");
-            inp="stop";
+            Console.WriteLine("Onbekende invoer. We stoppen ermee.");
+            inp = "stop";
             break;
     }
-}while(inp!="stop");
+}while(inp != "stop");
 Console.WriteLine("Resultaat:");
 Console.WriteLine(DNA);
 Console.WriteLine(RNA);	  
@@ -54,11 +54,11 @@ Console.WriteLine(RNA);
 ## Oplossing Armstrong nummer
 ```csharp
     Console.WriteLine("Voer getal in:");
-    int getal = Convert.ToInt32(Console.ReadLine());
+    int getal= Convert.ToInt32(Console.ReadLine());
     //1° Aantal cijfers ontdekken
-    int aantalcijfers = 0;
-    int deling = 0;
-    int maaltien = 10;
+    int aantalcijfers= 0;
+    int deling= 0;
+    int maaltien= 10;
     do
     {
         deling = getal / maaltien;
@@ -76,12 +76,9 @@ Console.WriteLine(RNA);
         enkelgetal = tussengetal / (int)Math.Pow(10, aantalloops - 1);
         som += (int)Math.Pow(enkelgetal, aantalcijfers);
 
-
         tussengetal = tussengetal - (enkelgetal * (int)Math.Pow(10, aantalloops - 1));
         aantalloops--;
-
     }
-
 
     if (som == getal)
     {
@@ -91,10 +88,10 @@ Console.WriteLine(RNA);
 
 ## Oplossing Euler project
 ```csharp
-int som = 0;
-for (int i = 0; i <=1000; i++)
+int som= 0;
+for (int i= 0; i <= 1000; i++)
 {
-    if(i%3==0 || i%5==0)
+    if(i % 3 == 0 || i % 5 == 0)
     {
         som += i;
     }
@@ -103,21 +100,20 @@ Console.WriteLine($"Som:{som}");
 ```
 
 ## Oplossing for doordenker
-
 ```csharp
-int rows = 4;
-for (int i = 1; i <= rows; ++i)
+int rows= 4;
+for (int i= 1; i <= rows; i++)
 {
-    for (int j = 1; j <= i; ++j)
+    for (int j= 1; j <= i; j++)
     {
         Console.Write("*");
     }
     Console.WriteLine();
 }
 
-for (int i = 1; i <= rows-1; ++i)
+for (int i= 1; i <= rows-1; i++)
 {
-    for (int j = 1; j <= 4- i%4; ++j)
+    for (int j= 1; j <= 4 - i % 4; j++)
     {
         Console.Write("*");
     }
@@ -128,20 +124,20 @@ for (int i = 1; i <= rows-1; ++i)
 ## Oplossing pro for doordenker extra
 
 ```csharp
-int rows = 6;
-int k = 0;
-int space = 0;
-for (int i = 1; i <= rows; ++i,  k = 0)
+int rows= 6;
+int k= 0;
+int space= 0;
+for (int i= 1; i <= rows; i++,  k = 0)
 {
-    for (space = 1; space <= rows - i; ++space)
+    for (space = 1; space <= rows - i; space++)
     {
         Console.Write("  ");
     }
 
     while (k != 2 * i - 1)
     {
-        Console.Write("* ");
-        ++k;
+        Console.Write("*");
+        k++;
     }
 
     Console.WriteLine();
@@ -157,53 +153,54 @@ for (int i = 1; i <= rows; ++i,  k = 0)
 # Oplossing practica deel 3
 
 ## Oplossing grootste getal
-Toe te voegen lijnen aangeduid met ``//NEW``
+Toe te voegen lijnen aangeduid met ``//NEW``.
 ```csharp
-int x = 0;
-int y = 0;
-int grootste = int.MinValue; //NEW
+int x= 0;
+int y= 0;
+int grootste= int.MinValue; //NEW
 do
 {
     y = y + x;
     Console.WriteLine("Voer gehele waarden in (32767=stop)");
-    string instring = Console.ReadLine();
+    string instring= Console.ReadLine();
     x = Convert.ToInt32(instring);
-    if (x > grootste && x!=32767) //NEW
+    if (x > grootste && x != 32767) //NEW
         grootste = x; //NEW
-
 } while (x != 32767);
-Console.WriteLine($"Som is{y}");
+Console.WriteLine($"Som is {y}");
 Console.WriteLine($"Grootste getal is {grootste}");//NEW
 ```
 
 ## Oplossing Boekhouder
 ```csharp
-int som = 0, negsom = 0, plussom = 0, aantalingevoerd = 0;
-Console.WriteLine("Voer getallen in. Dit programma stopt nooit");
+int som= 0, negsom= 0, plussom= 0, aantalingevoerd= 0;
+Console.WriteLine("Voer getallen in. Dit programma stopt nooit.");
 while (true)
 {
-    int invoer = Convert.ToInt32(Console.ReadLine());
+    int invoer= Convert.ToInt32(Console.ReadLine());
     som += invoer;
-    if (invoer > 0) plussom += invoer;
-    else            negsom += invoer;
+    if (invoer > 0) 
+        plussom += invoer;
+    else
+        negsom += invoer;
 
     aantalingevoerd++;
 
-    Console.WriteLine($"Balans={som}");
-    Console.WriteLine($"Positieve balans=+{plussom}");
-    Console.WriteLine($"Negatieve balans={negsom}");
-    Console.WriteLine($"Gemiddelde={(double)som/aantalingevoerd}");
+    Console.WriteLine($"Balans= {som}");
+    Console.WriteLine($"Positieve balans= +{plussom}");
+    Console.WriteLine($"Negatieve balans= {negsom}");
+    Console.WriteLine($"Gemiddelde= {(double)som/aantalingevoerd}");
 }
 ```
 
 ## Oplossing BeerSong
 ```csharp
-for (int i = 99; i > 2; i--)
+for (int i= 99; i > 2; i--)
 {
-    Console.WriteLine($"{i}bottles of beers on the wall, {i} bottles of beer");
-    Console.WriteLine($"Take on down and pass it around,{i - 1} bottles of beer on the wall");
+    Console.WriteLine($"{i} bottles of beers on the wall, {i} bottles of beer.");
+    Console.WriteLine($"Take one down and pass it around, {i - 1} bottles of beer on the wall.");
 }
-Console.WriteLine("2 bottles of beer on the wall, 2 bottles of beer.\n " +
+Console.WriteLine("2 bottles of beer on the wall, 2 bottles of beer.\n" +
                     "Take one down and pass it around, 1 bottle of beer on the wall.\n" +
 
                     "1 bottle of beer on the wall, 1 bottle of beer.\n" +
