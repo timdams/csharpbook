@@ -1,6 +1,6 @@
 # Methoden
 
-Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoud van de code wordt verhoogd.
+Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoudbaarheid van de code wordt verhoogd.
 
 ## Wat is een methode
 
@@ -80,7 +80,7 @@ partial class Program
 
 ### Void returntype
 
-Indien je methode niets teruggeeft wanneer de methode eindigt (bijvoorbeeld indien de methode enkel tekst op het scherm toont) dan dien je dit ook aan te geven. Hiervoor gebruik je het keyword void. Een voorbeeld
+Indien je methode niets teruggeeft wanneer de methode eindigt (bijvoorbeeld indien de methode enkel tekst op het scherm toont) dan dien je dit ook aan te geven. Hiervoor gebruik je het keyword void. Een voorbeeld:
 
 ```csharp
 static void ShowProgramVersion()
@@ -129,7 +129,7 @@ static void Main(string[] args)
 }
 ```
 
-Dit geeft als uitvoer: ``Faculteit van 5 is 120``
+Dit geeft als uitvoer: ``Faculteit van 5 is 120``.
 
 Je zou nu echter de waarde van getal kunnen aanpassen (door bijvoorbeeld aan de gebruiker te vragen welke faculteit moet berekend worden) en je code zal nog steeds werken.
 
@@ -157,18 +157,18 @@ Faculteit van 9 is 362880
 Faculteit van 10 is 3628800
 ```
 
-Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten verlaagt.
+Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven, wat de kans op fouten verlaagt.
 
 ### Volgorde van parameters
 
 De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter toegekend, en zo voort. 
 
-Volgende voorbeeld toont dit. Stel dat je een methode hebt:
+Het volgende voorbeeld toont dit. Stel dat je een methode hebt:
 
 ```csharp
 static void ToonDeling(double teller, double noemer)
 {
-    string result=Convert.ToString( teller/noemer);
+    string result= Convert.ToString(teller/noemer);
     Console.WriteLine(teller/noemer);
 }
 ```
@@ -178,13 +178,13 @@ Stel dat we nu in onze main volgende aanroep doen:
 ```csharp
 double n= 4.2;
 double t= 5.2;
-ToonDeling(n,t);
+ToonDeling(n, t);
 ```
 
 Dit zal een ander resultaat geven dan wanneer we volgende code zouden uitvoeren:
 
 ```csharp
-ToonDeling(t,n);
+ToonDeling(t, n);
 ```
 
 Ook de volgorde is belangrijk zeker wanneer je met verschillende types als parameters werkt:
@@ -199,7 +199,7 @@ static void ToonInfo(string name, int age)
 Deze aanroep is correct:
 
 ```csharp
-ToonInfo("Tim",37);
+ToonInfo("Tim", 37);
 ```
 
 Deze is **FOUT** en zal niet compileren:
@@ -249,12 +249,12 @@ Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische 
 # Why should I care?
 ![](../assets/care.jpg)
 
-Volgt nu een voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. 
+Volg nu een voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. 
 
 Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na *n* jaren met de volgende formule:
 
 ```csharp
-eindkapitaal = startkapitaal x ( 1 + (rentepercentage/100))^n
+eindkapitaal = startkapitaal x (1 + (rentepercentage/100))^n
 ```
 
 (^ is tot de macht in pseudocode)
@@ -334,7 +334,7 @@ static void Main(string[] args)
  
 }
 ```
-Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop:``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}``
+Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop: ``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}``
 
 ## Rente berekenen verbeterd, versie 2
 
