@@ -3,18 +3,18 @@
 **Opgelet: wanneer je een oefening maakt die invoer van de gebruiker vereist, gelieve die invoer dan BUITEN de methode te vragen (dus meestal in de ``Main`` methode). Op die manier zorg je er voor dat je je methoden kunt herbruiken.**
 
 # Deel 0 - Opwarmers
-Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveergerangschikt naar moeilijkheid;
+Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveer gerangschikt naar moeilijkheid.
 
 Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
 
-* Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend. ( het getal geef je mee als paramater)
-* Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft (de diameter geef je mee als parameter)
-* Idem voor omtrek en oppervlakte
-* Methode die het grootste van 2 getallen teruggeeft (beide getallen geef je mee als parameter)
-* Methode ``IsEven`` die bepaald of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even)
+* Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend ( het getal geef je mee als paramater).
+* Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft (de diameter geef je mee als parameter).
+* Idem voor omtrek en oppervlakte.
+* Methode die het grootste van 2 getallen teruggeeft (beide getallen geef je mee als parameter).
+* Methode ``IsEven`` die bepaald of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even).
 * Methode ``IsArmstrong`` die bepaald of een getal een Armstrong getal is.
 * Methode ``ToonOEvenNummers`` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
-* Methode ``ToonArmstrongNummers`` die idem alle [Armstrong](../5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
+* Methode ``ToonArmstrongNummers`` die alle [Armstrong](../5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
 
 # Deel 1 - De basics
 > Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je main door deze aan te roepen.
@@ -36,15 +36,15 @@ MyIntro();
 Zorg er voor dat je nu je naam, leeftijd en adres via parameters kan meegeven en dus de methode als volgt kunt aanhouden:
 
 ```csharp
-MyIntro("Jos",34, "Trammezantlei 21");
+MyIntro("Jos", 34, "Trammezantlei 21");
 ```
 
 ## Grootste methode
 Schrijf een methode die 3 ints aanvaardt en vervolgens de grootste van de 3 parameters als resultaat terug geeft.
 
 ## Rekenmachine
-Maak minimaal methoden genaamd ``TelOp``, ``TrekAf``, ``VermenigVuldig`` en ``Deel``. Je kan aan deze methoden steeds twee doubles meegeven en het resultaat dat terugkomt is uiteraard de bewerking van die twee parameters.
-Maak een eenvoudig programma'tje waarin je die methoden test. Kan je een eenvoudige rekenmachine maken? (inclusief geheugen) Voeg extra methoden naar keuze toe (denk aan Macht, Sinus, Cosinus, Modulo, etc.)
+Maak minimaal de methoden genaamd ``TelOp``, ``TrekAf``, ``VermenigVuldig`` en ``Deel``. Je kan aan deze methoden steeds twee doubles meegeven en het resultaat dat terugkomt is uiteraard de bewerking van die twee parameters.
+Maak een eenvoudig programmatje waarin je die methoden test. Kan je een eenvoudige rekenmachine maken (inclusief geheugen)? Voeg extra methoden naar keuze toe (denk aan macht, sinus, cosinus, modulo, etc.).
 
 
 ## Paswoord generator methode
