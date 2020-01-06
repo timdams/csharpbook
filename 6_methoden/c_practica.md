@@ -29,7 +29,7 @@ Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef of de [deel 1 ein
 Kan je deze code leesbaarder maken door methoden (en loops) toe te voegen?
 
 ## Verhaalgenerator
-Bekijk het all-one-project ["De verhaal generator"](../A_DEEL1_AllInOne/3_verhaalgenerator.md) : kan jij dit project afwerken zoals onderaan de opgave wordt voorgesteld?
+Bekijk het all-one-project ["De verhaal generator"](../A_DEEL1_AllInOne/3_verhaalgenerator.md): kan jij dit project afwerken zoals onderaan de opgave wordt voorgesteld?
 
 ## Muziek en methoden
 
@@ -38,7 +38,7 @@ Muziek maken
 
 De `Console.Beep()` methode laat ons toe om tonen te genereren op een bepaalde frequentie (in Hz) en van een bepaalde duur (in milliseconden, i.e. 1/1000 van een seconde). 
 
-We kunnen dus de computer de toonladder afspelen, elke noot 1seconde langs, als volgt:
+We kunnen dus de computer de toonladder afspelen, elke noot 1 seconde lang, als volgt:
 
 ```csharp
 Console.Beep(264, 1000);
@@ -83,7 +83,7 @@ Si
 Do
 ```
  
-Extra: plaats ieder noot in een andere tekstkleur (mbv ``Console.ForeGroundColor``)
+Extra: plaats ieder noot in een andere tekstkleur (m.b.v. ``Console.ForeGroundColor``)
 
 ## Opgave 3
 
@@ -107,8 +107,8 @@ Do2(500,2);
 
 ## Opgave 4
 
-Maak minstens 2 methoden naar keuze: iedere methode zal een liedje beginnen spelen dat je zelf hebt gemaakt (bv een bestaand kinderliedje).
-Hier bijvoorbeeld het begin van "You are my sunshine"
+Maak minstens 2 methoden naar keuze: iedere methode zal een liedje beginnen spelen dat je zelf hebt gemaakt (bv. een bestaand kinderliedje).
+Hier bijvoorbeeld het begin van "You are my sunshine":
 
 ```csharp
 Re();
@@ -134,9 +134,9 @@ Do1();
 Si();
 ```
 
-De methoden als naam ``SpeelX`` met ``X`` de titel van het liedje, bijvoorbeeld ``SpeelYouAreMySunshine`` .
+De methoden als naam ``SpeelX`` met ``X`` de titel van het liedje, bijvoorbeeld ``SpeelYouAreMySunshine``.
 
-> Extra: De Lyrics verschijnen op de juiste momenten op het scherm (dus vlak voor het afspelen van de bijhorende noot)
+> Extra: De Lyrics verschijnen op de juiste momenten op het scherm (dus vlak voor het afspelen van de bijhorende noot).
 
 ## Opgave 5
 
@@ -147,7 +147,7 @@ Bij het opstarten van het programma krijg je een menu te zien waaruit de gebruik
 
 Wanneer een liedje werd afgespeeld dan dient de methode terug te geven (als double) hoe lang het liedje heeft geduurd. Het hoofdmenu toont dit aan het einde van het afspelen.
  
-Je kan de duur van een methode heel eenvoudig methoden als volgt, gebruikmakende van de StopWatch:
+Je kan de duur van een methode heel eenvoudig meten als volgt, gebruikmakende van de ``StopWatch``:
 
 ```csharp
             //Start
@@ -158,8 +158,8 @@ Je kan de duur van een methode heel eenvoudig methoden als volgt, gebruikmakende
             stopwatch.Stop();
             double totaletijd = stopwatch.Elapsed.TotalSeconds;
 ```
-totaleTijd zal de totaal verstreken tijd in seconden bevatten.
+``totaleTijd`` zal de totaal verstreken tijd in seconden bevatten.
 
 ## Opgave 7 
-Toon je muzikale skills en zorg voor uitbreidingen naar keuze (meer songs, complexere songs, meer kleurtjes, stoerdere timings, zotte functionaliteit, animaties, etc. The sky is the limit!)
+Toon je muzikale skills en zorg voor uitbreidingen naar keuze (meer songs, complexere songs, meer kleurtjes, stoerdere timings, zotte functionaliteit, animaties, etc. The sky is the limit!).
 
