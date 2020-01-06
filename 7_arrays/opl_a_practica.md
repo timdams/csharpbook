@@ -4,59 +4,58 @@
 ## Opwarmers 
 ```csharp
 //Maak een array gevuld met de getallen 0 tot 100
-int[] getallen= new int[10];
-for(int i = 0; i<10;i++)
+int[] getallen = new int[10];
+for(int i = 0; i < 10; i++)
 {
-    getallen[i]= i+1;
-    Console.Write(getallen[i]+",");
+    getallen[i] = i + 1;
+    Console.Write(getallen[i] + ",");
 }
 
 //Maak een array gevuld met de getallen van 100 tot 0
-int[] getallen= new int[100];
+int[] getallen = new int[100];
 int counter = 100;
-for(int i = 0; i<getallen.Length;i++)
+for(int i = 0; i < getallen.Length; i++)
 {
-    getallen[i]= counter; //zonder counter: getallen[i]=100-i;
+    getallen[i] = counter; //zonder counter: getallen[i] = 100 - i;
     counter--;
-    Console.Write(getallen[i]+",");
+    Console.Write(getallen[i] + ",");
 }
 
 //Maak een array gevuld met de letters a tot z
-char[] letters= new char[26];
-int startascii=97;
-for(int i = 0; i<letters.Length;i++)
+char[] letters = new char[26];
+int startascii = 97;
+for(int i = 0; i < letters.Length; i++)
 {
-    letters[i]= (char)(startascii+i);
-    Console.Write(letters[i]+",");
+    letters[i] = (char)(startascii + i);
+    Console.Write(letters[i] + ",");
 }
 
 //Maak een array gevuld met willekeurige getallen tussen 1 en 100 (array is 20 lang)
-int[] getallen= new int[20];
-Random r= new Random();
-for(int i = 0; i<getallen.Length;i++)
+int[] getallen = new int[20];
+Random r = new Random();
+for(int i = 0; i < getallen.Length; i++)
 {
-    getallen[i]= r.Next(1,101);
-    Console.Write(getallen[i]+",");
+    getallen[i] = r.Next(1, 101);
+    Console.Write(getallen[i] + ", ");
 }
 
-//Maak een array gevuld met afwisselen true en false(lengte is 30)
-bool[] binary= new bool[30];
-//Random r= new Random();
-for(int i = 0; i<binary.Length;i++)
+//Maak een array gevuld met afwisselen true en false (lengte is 30)
+bool[] binary = new bool[30];
+for(int i = 0; i < binary.Length; i++)
 {
-    if(i%2==0) 
-        binary[i]=true;
+    if(i % 2 == 0) 
+        binary[i] = true;
     else
-        binary[i]=false;
+        binary[i] = false;
     
-    Console.Write(binary[i]+",");
+    Console.Write(binary[i] + ", ");
 }
 ```
 
 ## ArrayOefener1
 
 ```csharp
- int[] getallen = new int[10];
+int[] getallen = new int[10];
 //Invoer
 Console.WriteLine("Voer 10 gehele getallen in");
 for (int i = 0; i < getallen.Length; i++)
@@ -79,18 +78,15 @@ Console.WriteLine($"Som is {som}, Gemiddelde is {(double)som/getallen.Length}, G
 Console.WriteLine("******");
 
 Console.WriteLine("Geef minimum getal in?");
-int keuze =Convert.ToInt32(Console.ReadLine());
-if(keuze>grootste)
+int keuze = Convert.ToInt32(Console.ReadLine());
+if(keuze > grootste)
     Console.WriteLine("Niets is groter");
 else
 {
     for (int i = 0; i < getallen.Length; i++)
     {
         if (getallen[i] >= keuze)
-            Console.Write($"{getallen[i]},");
-        {
-
-        }
+            Console.Write($"{getallen[i]}, ");
     }
 }
 ```
@@ -109,7 +105,7 @@ static void Main(string[] args)
     for (int i = 0; i < length; i++)
     {
         C[i] = A[i] + B[i];
-        Console.Write($"{C[i]},");
+        Console.Write($"{C[i]}, ");
     }
 }
 
@@ -170,7 +166,7 @@ int index = -1;
 bool found = false;
 for (int i = 0; i < ar.Length; i++)
 {
-    if(!found && ar[i]==todel)
+    if(!found && ar[i] == todel)
     {
         found = true;
         index = i;
@@ -196,12 +192,12 @@ for (int i = 0; i < ar.Length; i++)
 
 ## Leveringsbedrijf
 
-Je kan dit ook oplossen met BinarySearch maar dan moet je wel de postcodes gesorteerd plaatsen in de array (sorteren via ``Array.Sort`` in code zal niet werken daar dan de relatie met ``kgpergemeente`` verloren gaat).
+Je kan dit ook oplossen met ``BinarySearch`` maar dan moet je wel de postcodes gesorteerd plaatsen in de array (sorteren via ``Array.Sort`` in code zal niet werken daar dan de relatie met ``kgpergemeente`` verloren gaat).
 
 ```csharp
-int[] postcodes ={    1000,2020,2013,4500,2340,1200,9999,6666,2362,2340};
+int[] postcodes = {1000, 2020, 2013, 4500, 2340, 1200, 9999, 6666, 2362, 2340};
 
-int[] kgpergemeente = { 12, 214, 3, 15, 56, 900, 13, 5, 111, 43 };
+int[] kgpergemeente = {12, 214, 3, 15, 56, 900, 13, 5, 111, 43};
 
 Console.WriteLine("Geef gewicht pakket");
 int gewicht = Convert.ToInt32(Console.ReadLine());
@@ -250,7 +246,7 @@ static void Main(string[] args)
     }
     else
     {
-        Console.WriteLine("Error:DNA strings niet van gelijke lengte of bevat illegale tekens");
+        Console.WriteLine("Error: DNA strings niet van gelijke lengte of bevat illegale tekens");
     }
 }
 
@@ -362,7 +358,7 @@ static char[] Encrypt(char[] plaintext, int key)
             result[i] = (char)newchar;
         }
     }
-    return result ;
+    return result;
 }
 ```
 
@@ -378,7 +374,7 @@ static int BerekenDeterminant(int[,] aMatrix)
 ## Robot simulator
 
 ```csharp
-enum richtingen { Noord, Oost, Zuid, West };
+enum richtingen {Noord, Oost, Zuid, West};
 static void Main(string[] args)
 {
     int x = 7;
@@ -460,7 +456,6 @@ private static richtingen RoteerLinks(richtingen richting)
             return richtingen.Zuid;
             break;
     }
-
     return richtingen.Noord;
 }
 
@@ -481,7 +476,6 @@ private static richtingen RoteerRechts(richtingen richting)
             return richtingen.Noord;
             break;
     }
-
     return richtingen.Noord;
 }
 ```
