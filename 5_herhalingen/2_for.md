@@ -21,7 +21,7 @@ De syntax van een ``for``-loop is de volgende:
 ```csharp
 for (setup; finish test; update)
 {
-    // C# die zal uitgevoegd worden zolang de finish test true geeft
+    // C# die zal uitgevoerd worden zolang de finish test true geeft
 }
 ```
 * *setup*: In het setup gedeelte zetten we de "wachter-variabele" op de begin waarde. De wachter-variabele is de variabele die we tijdens de loop in het oog zullen houden en die zal bepalen hoe vaak de loop moet uitgevoerd worden.
@@ -33,14 +33,14 @@ for (setup; finish test; update)
 Gebruiken we deze kennis nu, dan kunnen we de eerder vermelde code om de even getallen van 0 tot en met 10 tonen als volgt:
 
 ```csharp
-for (int i = 0; i < 11; i=i+2)
+for (int i = 0; i < 11; i += 2)
 {
     Console.WriteLine(i);
 }
 ```
 Voor de setup-variabele kiest men meestal i, maar dat is niet noodzakelijk. In de setup wordt dus een variabele op een start-waarde gezet. De finish test zal aan de start van iedere loop kijken of de finish test nog waar is, indien dat het geval is dan wordt een nieuwe loop gestart en wordt i met een bepaalde waarde, zoals in update aangegeven, verhoogd.
 
-Lees zeker [deze for tutorial na](https://www.techotopia.com/index.php/C_Sharp_Looping_-_The_for_Statement) want er zijn nog enkele subtiliteiten in for-loops die we niet hier behandelen.
+Lees zeker [deze for tutorial na](https://www.techotopia.com/index.php/C_Sharp_Looping_-_The_for_Statement) want er zijn nog enkele subtiliteiten in for-loops die we hier niet behandelen.
 
 ## for-tab-tab
 Als je in Visual Studio ``for`` typt en dan tweemaal op [tab] duwt krijg je  kant en klare for-loop code.
@@ -54,7 +54,7 @@ Om iemand op StackOverflow te quoten:
 
 [Bron StackOverFlow: Are `break` and `continue` bad programming practices? ](https://softwareengineering.stackexchange.com/questions/58237/are-break-and-continue-bad-programming-practices)
 
-Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break)
+Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break).
 
 # Kennisclip
 ![](../assets/infoclip.png)
