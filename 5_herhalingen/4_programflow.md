@@ -38,4 +38,4 @@ De finale flowchart ziet er als volgt uit:
 Zoals verteld kunnen we een flowchart in beide richtingen gebruiken. We hebben de flowchart hiervoor gemaakt, gebaseerd op onze oplossing van het vorige labo. Maar stel dat je deze flowchart krijgt, dan kan je dus ook deze chart rechtstreeks omzetten in C#.
 
 # Code 2 flow
-Via de website+app "Code2flow" ([site](https://code2flow.com/app)) kan je heel eenvoudig een flowchart genereren van pseudocode.
+Via de website en app "Code2flow" ([site](https://code2flow.com/app)) kan je heel eenvoudig een flowchart genereren van pseudocode.
