@@ -2,9 +2,9 @@
 
 ## Parkeergarage
 
-Een parkeergarage vraagt sowieso €2.00 om tot maximum 3uur te parkeren. Per extra uur NA die 3uur wordt telkens €0.5 aangerekend (dus 4uur parkeren kost €2.5. Er wordt maximum €10 aangerekend per dag. En veronderstel dat er nooit langer dan 1 dag (24u) kan geparkeerd worden.
+Een parkeergarage vraagt sowieso €2.00 om tot maximum 3uur te parkeren. Per extra uur NA die 3uur wordt telkens €0.50 aangerekend (dus 4uur parkeren kost €2.50. Er wordt maximum €10 aangerekend per dag. Veronderstel dat er nooit langer dan 1 dag (24u) kan geparkeerd worden.
 
-Schrijf een programma dat het verschuldigde bedrag toont gegeven de duur van een auto. Bij het opstarten van het programma wordt eerst gevraagd hoeveel auto’s ingevoerd zullen worden, dan wordt per auto de duur van het parkeren gevraagd. Finaal wordt, netjes getabuleerd, alle informatie getoond, inclusief het totaal bedrag. Gebruik minstens 1 methode ‘berekenKosten’ die de kost voor 1 gebruiker telkens teruggeeft, gegeven de duur als parameter. Gebruik ook een methode die een array als parameter aanvaard (bijvoorbeeld de array met daarin de respectievelijke uren per auto).
+Schrijf een programma dat het verschuldigde bedrag toont gegeven de duur dat de parkeergarage gebruikt werd. Bij het opstarten van het programma wordt eerst gevraagd hoeveel auto’s ingevoerd zullen worden, dan wordt per auto de duur van het parkeren gevraagd. Finaal wordt, netjes getabuleerd, alle informatie getoond, inclusief het totaal bedrag. Gebruik minstens 1 methode ‘berekenKosten’ die de kost voor 1 gebruiker telkens teruggeeft, gegeven de duur als parameter. Gebruik ook een methode die een array als parameter aanvaard (bijvoorbeeld de array met daarin de respectievelijke uren per auto).
 
 Voorbeeldoutput:
 Opstart:
@@ -21,8 +21,8 @@ Maak een programma dat een methode VisualiseerArray implementeert. De methode za
 Voorbeeld van main:
 
 ```csharp
-int[] array={15,6,9};
-int[] array2={0,1,2,3,4,5,6};
+int[] array={15, 6, 9};
+int[] array2={0, 1, 2, 3, 4, 5, 6};
 VisualiseerArray(array);
 VisualiseerArray(array2);
 ```
@@ -41,11 +41,11 @@ Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker e
 
 > Encryptie is de kunst van het vercijferen van data. Hierbij gaat men een gewone tekst zodanig omvormen (*versleutelen*) zodat deze onleesbaar is en enkel kan ontcijferd worden door de ontvanger die weet hoe de tekst terug kan verkregen worden en enkel indien deze ook de ‘private’ sleutel heeft.
 
-> Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbij gaan we het alfabet met x  plaatsen opschuiven en vervolgens de te vercijferen tekst letter per letter te vervangen met z’n respectievelijke opgeschoven versie. Hierbij is x dus de geheime sleutel die zender en ontvanger moeten afspreken.
+> Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbij gaan we het alfabet met x plaatsen opschuiven en vervolgens de te vercijferen tekst letter per letter vervangen met z’n respectievelijke opgeschoven versie. Hierbij is x dus de geheime sleutel die zender en ontvanger moeten afspreken.
 
 ![](../assets/5_arrays/practarray8.png) 
 
-Stel bijvoorbeeld dat x=3  dan krijgen we volgende nieuwe alfabet:
+Stel bijvoorbeeld dat x=3 dan krijgen we volgende nieuwe alfabet:
 
 ```text
 DEFGHIJKLMNOPQRSTUVWXYZABC
@@ -71,7 +71,7 @@ WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
 
 Ontwerp een methode waarmee je een Belgisch ondernemingsnummer kan controleren. Een Belgisch ondernemingsnummer is als volgt opgebouwd: BE 0xxx.xxx.xxx waarbij BE de landcode is die standaard gevolgd wordt door een spatie en dan een 0. Wanneer je de volgende 7 cijfers deelt door 97 in een gehele deling, dan is het getal gevormd door de laatste 2 cijfers gelijk aan 97 minus de rest van deze gehele deling.
 Bij een geldig ondernemingsnummer verschijnt de tekst "Geldig ondernemingsnummer.", bij een ongeldig ondernemingsnummer "Ongeldig ondernemingsnummer.".
-De methode aanvaardt een string waarin je de ondernemingsnummer staat.
+De methode aanvaardt een string waarin je het ondernemingsnummer staat.
 
 # Meer-dimensionale arrays
 
@@ -80,10 +80,10 @@ Schrijf een programma dat een methode BerekenDeterminant heeft. Deze methode hee
 
 Volgende voorbeeld-main dient te werken, 
 ```csharp
-int[,] aMatrix={ 
-                  {2,4},
-                  {3,5}
-                };
+int[,] aMatrix = { 
+                  {2, 4},
+                  {3, 5}
+                 };
 Console.WriteLine($"Determinant van matrix is {BerekenDeterminant(aMatrix)}");
 ```
 
@@ -100,7 +100,7 @@ Breid het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualisee
 
 Voorbeeld van main:
 ```csharp
-int [,] array= { {15,6,9},{1,2,3},{6,9,12}};
+int [,] array = { {15, 6, 9}, {1, 2, 3}, {6, 9, 12}};
 VisualiseerArray(array);
 ```
 Output:
@@ -114,12 +114,11 @@ Output:
 Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en als resultaat een nieuwe matrix teruggeeft die het product van beide matrices bevat.
 
 ## Voetbalcoach
-Maak een console-applicatie voor een assistent voetbaltrainer (of een sport naar keuze)
+Maak een console-applicatie voor een assistent voetbaltrainer (of een sport naar keuze).
 
 De voetbalcoach wil na de match iedere knappe en domme actie van een speler weten. Op die manier weet hij aan het einde van de match wie er de meeste goede en slechte acties doet. De spelers hebben rugnummers 1 tot en met 12. (het gaat om een voetbal variant waar m'n geen elftal maar een twaalftal gebruikt :p)
 
-
-Wanneer de coach een rugnummer intypt kan hij vervolgens ingeven of hij (a) een knappe actie of (b) een domme actie wil ingeven. Vervolgens geeft hij een getal in . Gebruik een 2dimensionale array die per speler het aantal domme en goede acties bijhoudt (de array is dus 12 bij 2 groot: 1 lijn per speler, bestaande uit 2 kolommen voor goede en domme actie. De index van de lijn is de rugnummer van speler -1 ). 
+Wanneer de coach een rugnummer intypt kan hij vervolgens ingeven of hij (a) een knappe actie of (b) een domme actie wil ingeven. Vervolgens geeft hij een getal in. Gebruik een 2dimensionale array die per speler het aantal domme en goede acties bijhoudt (de array is dus 12 bij 2 groot: 1 lijn per speler, bestaande uit 2 kolommen voor goede en domme actie. De index van de lijn is de rugnummer van speler -1). 
 
 Een typische invoer kan dus zijn:
 ```
@@ -130,10 +129,9 @@ a
 6
 ```
 
-
 De coach kiest dus de speler met rugnummer 2, hij kiest voor een knappe actie, en voert 6 in als aantal goede acties.
 
-In de array op index 1 (rugnummer -1 ) zal in de de 0'de kolom(0=goede, 1=slechte) het getal 6 geplaatst worden.
+In de array op index 1 (rugnummer -1) zal in de 0'de kolom (0 = goede, 1 = slechte) het getal 6 geplaatst worden.
 
 Vervolgens kan de coach een ander rugnummer (of hetzelfde) invoeren en zo verder.
 
@@ -165,7 +163,7 @@ The robots have three possible movements:
 * turn right
 * turn left
 * advance
-Robots are placed on a hypothetical infinite grid, facing a particular direction (north, east, south, or west) at a set of {x,y} coordinates, e.g., {3,8}, with coordinates increasing to the north and east.
+Robots are placed on a hypothetical infinite grid, facing a particular direction (north, east, south, or west) at a set of {x, y} coordinates, e.g., {3, 8}, with coordinates increasing to the north and east.
 
 The robot then receives a number of instructions, at which point the testing facility verifies the robot's new position, and in which direction it is pointing.
 
@@ -181,9 +179,9 @@ Say a robot starts at {7, 3} facing north. Then running this stream of instructi
 Teken het gevolgde pad in de console (gebruik ``Console.SetCursorPosition()``).
 
 ## Galgje
-Maak een spel , vergelijkbaar als galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
+Maak een spel, vergelijkbaar met galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
 
-Voorbeeld  output:
+Voorbeeld output:
 
 ![](../assets/5_arrays/practarray9.png) 
 
@@ -192,4 +190,4 @@ Maak een methode Som() die eender welke hoeveelheid parameters van het type ``in
 
 Toon in je main aan dat de methode werkt door onder andere 1, 3, 5 en 10 als gehele getalen mee te geven.
 
-Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de methode. (hint:je moet het ``params``  keyword gebruiken)
+Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de methode. (hint: je moet het ``params`` keyword gebruiken)
