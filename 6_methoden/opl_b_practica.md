@@ -3,7 +3,7 @@
 
 ![](../assets/movie.png)
 
-De oplossingen van dit deel worden in volgende kennisclip besproken:[hier](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7d5b4399-8c6c-4207-8e4d-a9af00b4ac58)
+De oplossingen van dit deel worden in volgende kennisclip besproken: [hier](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7d5b4399-8c6c-4207-8e4d-a9af00b4ac58)
 
 # Oplossingen practica deel 1 - De basics
 
@@ -44,7 +44,7 @@ static int Grootste(int getal1, int getal2, int getal3)
 ## Rekenmachine
 
 ```csharp
-static double TelOp(double a,double b){return a + b;}
+static double TelOp(double a, double b) { return a + b; }
 static double TrekAf(double a, double b) { return a - b; }
 static double Vermenigvuldig(double a, double b) { return a * b; }
 static double Deel(double a, double b) { return a / b; }
@@ -59,7 +59,7 @@ static string PaswoordGenerator(int lengte)
     Random r = new Random();
     for (int i = 0; i < lengte; i++)
     {
-        switch(r.Next(0,3))
+        switch(r.Next(0, 3))
         {
             case 0: //cijfer
                 resultaat += r.Next(0, 10);
@@ -81,8 +81,8 @@ static string PaswoordGenerator(int lengte)
 ## Film Default
 
 ```csharp
-static void FilmRuntime(string naam, int duur =90,Genre filmgenre= Genre.Onbekend )
+static void FilmRuntime(string naam, int duur= 90, Genre filmgenre= Genre.Onbekend )
 {
-    Console.WriteLine($"{naam}({duur}, {filmgenre})");
+    Console.WriteLine($"{naam} ({duur}, {filmgenre})");
 }
 ```
