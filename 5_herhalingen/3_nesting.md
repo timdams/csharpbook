@@ -10,14 +10,14 @@ Geneste loops komen vaak voor, maar zijn wel een ras apart wanneer je deze zaken
 
  Volgende code toont bijvoorbeeld 2 loops die genest werden:
  ```csharp
-int tellerA=0;
-int tellerB=0;
+int tellerA= 0;
+int tellerB= 0;
 
-while(tellerA<3 )  //outer loop
+while(tellerA < 3 )  //outer loop
 {
     tellerA++;
-    tellerB=0;
-    while(tellerB<5)
+    tellerB = 0;
+    while(tellerB < 5)
     {
         tellerB++;
         Console.WriteLine($"Teller:{tellerA}, Teller2:{tellerB}")
@@ -34,7 +34,7 @@ while(tellerA<3 )  //outer loop
 # Geneste loops tellen
 Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenenigvuldig je al deze getallen met elkaar.
 
-Een voorbeeld: Hoe vaak zal de zin ``Hallo`` op het scherm verschijnen bij volgende code?
+Een voorbeeld: Hoe vaak zal het woord ``Hallo`` op het scherm verschijnen bij volgende code?
 ```csharp
 for (int i = 0; i < 10; i++)
 {
@@ -45,7 +45,7 @@ for (int i = 0; i < 10; i++)
 }
 
 ```
-De outer loop zal 10 maal uitgevoerd worden (i zal de waarden 0 tot en met 9 krijgen). De inner loop zal 5 maal uitgevoerd worden. In totaal zal dus **50 maal ``Hallo``** op het scherm verschijnen (5x10).
+De outer loop zal 10 maal uitgevoerd worden (i zal de waarden 0 tot en met 9 krijgen). De inner loop zal 5 maal (j zal de waarden 0 tot en met 4 krijgen) uitgevoerd worden. In totaal zal dus **50 maal ``Hallo``** op het scherm verschijnen (5x10).
 
 # Break in nested loop
 Let er op dat ``break`` je enkel uit de huidge loop zal halen. Indien je dit dus gebruik in de inner loop dan zal de outer loop nog steeds voortgaan. Nog een reden om zéér voorzichtig om te gaan in het gebruik van ``break``.
