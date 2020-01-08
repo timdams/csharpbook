@@ -51,9 +51,9 @@ Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voo
 
 | **Type** | **Geheugen** | **Bereik** | **Precisie** |
 | :--- | :--- | :--- | :--- |
-| `float` | **32 bits** | ![float](../assets/1_csharpbasics/float.png) | 7 digits |  [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/float)|
-| `double` | 64 bits | ![double](../assets/1_csharpbasics/double.png) | 15 digits |  [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/double)|
-| `decimal` | 128 bits | ![decimal](../assets/1_csharpbasics/decimal.png) | **28-29 digits** | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/decimal)|
+| `float` | **32 bits** | ±1.5 x 10<sup>-45</sup> to ±3.4 x 10<sup>38</sup> | 7 digits |  [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/float)|
+| `double` | 64 bits | **±5.0 x 10<sup>-324</sup> to ±1.7 x 10<sup>308</sup>** | 15 digits |  [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/double)|
+| `decimal` | 128 bits | ±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup> | **28-29 digits** | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/decimal)|
 
   Zoals je ziet moet je bij kommagetallen een afweging maken tussen 3 even belangrijke criteria.  Heb je ongelooflijk grote precisie nodig dan ga je voor een ``decimal``. Wil je vooral erg grote of erg kleine getallen kies je voor ``double``. De precisie van een getal is het aantal beduidende of significante cijfers. Het getal 12,45 heeft een precisie van 4. Zoals je merkt zal je dus zelden ``decimal`` nodig hebben, deze zal vooral nuttig zijn in wetenschappelijke programma's waar met erg exacte cijfers moet gewerkt worden. 
   
