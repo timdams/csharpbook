@@ -13,7 +13,7 @@ Een klasse heeft de volgende vorm:
 }
 ```
 
-Volgende code de klasse auto in C#
+Volgende code beschrijft de klasse auto in C#
 
 ```csharp
 class Auto
@@ -51,7 +51,7 @@ Auto mijnAndereAuto = new Auto();
 
 We hebben nu **twee objecten aangemaakt van het type Auto**.
 
-Let goed op dat je dus op de juiste plekken dit alles doen (bekijk de onderstaande screenshot):
+Let goed op dat je dus op de juiste plekken dit alles doet (bekijk de onderstaande screenshot):
 
 * Klassen maak je aan als aparte files in je project
 * Objecten creëer je in je code op de plekken dat je deze nodig hebt, bijvoorbeeld in je ``Main`` methode bij een Console-applicatie
