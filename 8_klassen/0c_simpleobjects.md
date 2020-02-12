@@ -37,7 +37,7 @@ Er zal 2x ``Ik ben een mens!`` op het scherm verschijnen. Waarbij telkens ieder 
 
 ## Public en private access modifiers
 
-De **access modifier** geeft aan hoe zichtbaar een bepaalde deel van de klasse is. Wanneer je niet wilt dat "van buitenuit" (bv objecten vna je klasse in de Main) een bepaalde methode kan aangeroepen worden, dan dien je deze als ``private`` in te stellen. Wil je dit net wel dat moet je er expliciet ``public`` voor zetten.
+De **access modifier** geeft aan hoe zichtbaar een bepaalde deel van de klasse is. Wanneer je niet wilt dat "van buitenuit" (bv. objecten van je klasse in de Main) een bepaalde methode kan aangeroepen worden, dan dien je deze als ``private`` in te stellen. Wil je dit net wel dat moet je er expliciet ``public`` voor zetten.
 
 Test in de voorgaande klasse eens wat gebeurt wanneer je ``public`` verwijderd voor de methode. Inderdaad, je zal de methode ``Praat`` niet meer op de objecten kunnen aanroepen.
 
@@ -124,18 +124,17 @@ class Mens
     {
         Console.WriteLine("Ik ben een mens! ");
         Console.WriteLine($"Ik ben {leeftijd} jaar oud");
-
     }
 
 }
 ```
 
-Hier zien we een pak details de onze aandacht vereisen:
+Hier zien we een pak details die onze aandacht vereisen:
 
-* Ook variabelen zoals ``int leeftijd`` mogen een access modifier krijgen in een klasse. Ook hier, als je niet expliciet ``public`` zet wordt deze als ``private`` beschouwd
-* Ook al is ``leeftijd`` ``private`` alle methoden in de klasse kunnen hier aan. Het is enkel langs buiten dat bijvoorbeeld volgende code niet zal werken ``rachid.leeftijd = 34`;``
+* Ook variabelen zoals ``int leeftijd`` mogen een access modifier krijgen in een klasse. Ook hier, als je niet expliciet ``public`` zet wordt deze als ``private`` beschouwd.
+* Ook al is ``leeftijd`` ``private`` alle methoden in de klasse kunnen hier aan. Het is enkel langs buiten dat bijvoorbeeld volgende code niet zal werken ``rachid.leeftijd = 34;``.
 * We kunnen iedere variabele een beginwaarde geven.
-* **Ieder object zal z'n eigen leeftijd hebben**
+* **Ieder object zal z'n eigen leeftijd hebben.**
 
 Die laatste opmerking is een kernconcept van OOP: ieder object heeft z'n eigen interne staat die kan aangepast worden individueel van de andere objecten van hetzelfde type.
 
