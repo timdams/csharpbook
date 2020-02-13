@@ -4,7 +4,7 @@ Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze c
 
 # Ultra editors Hall of Fame
 
-Eerst wil ik drie studenten apart bedankt voor hun hardcore input in deze cursus, namelijk:
+Eerst wil ik vier studenten apart bedankt voor hun hardcore input in deze cursus, namelijk:
 
 * Hattas Zeno
 * Van Driel Kevin
