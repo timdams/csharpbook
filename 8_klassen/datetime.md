@@ -13,7 +13,7 @@ Er zijn 2 manieren om ``DateTime`` objecten aan te maken:
 
 ## DateTime.Now
 
-Volgende voorbeeld toont hoe we een object kunnen maken dat de huidige datum tijd van het systeem bevat. Vervolgens printen we dit op het scherm:
+Volgend voorbeeld toont hoe we een object kunnen maken dat de huidige datum tijd van het systeem bevat. Vervolgens printen we dit op het scherm:
 
 ```csharp
         DateTime currentTime = DateTime.Now;
@@ -34,7 +34,7 @@ DateTime someMomentInTime = new DateTime(2017, 1, 18, 10, 16,34 ); //year, month
 
 # DateTime methoden
 
-Ieder ``DateTime`` object dat je aanmaakt heeft en hoop nuttige methoden
+Ieder ``DateTime`` object dat je aanmaakt heeft en hoop nuttige methoden.
 
 ## Add Methods
 
@@ -106,8 +106,8 @@ Sommige properties zijn read-only, andere kan je zowel naar schrijven als uitlez
 Een voorbeeld:
 
 ```csharp
-DateTime moment = new DateTime(
-								1999, 1, 13, 3, 57, 32, 11);
+DateTime moment = new DateTime(1999, 1, 13, 3, 57, 32, 11);
+
 // Year gets 1999.
 int year = moment.Year;
 
@@ -139,7 +139,7 @@ Console.WriteLine($"The current day is {now.DayOfWeek}");
 ```
 
 # Datum en tijd formateren
-Je hebt een invloed hoe DateTime objecten naar string worden opgezet. Je kan dit door door extra *formatter syntax* mee te geven.
+Je hebt een invloed op hoe DateTime objecten naar string worden opgezet. Je kan dit door door extra *formatter syntax* mee te geven.
 
 Dit zie je in volgende voorbeeld:
 
@@ -164,7 +164,7 @@ Wil je nog meer controle over de output dan kan je ook zelf je formaat specifier
 
 ## Localized time
 
-De manier waarop ``DateTime`` objecten worden getoond (via ToString) is afhankelijk van de landinstellingen van je systeem. Soms wil je echter op een andere manier dit tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum moet getoond worden.
+De manier waarop ``DateTime`` objecten worden getoond (via ToString) is afhankelijk van de landinstellingen van je systeem. Soms wil je echter op een andere manier dit tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum getoond moet worden.
 
 Dit vereist dat je eerst een ``CultureInfo`` aanmaakt en dat je dan meegeeft:
 
@@ -176,12 +176,11 @@ Console.WriteLine($"Current time in Russian style is: {now.ToString("F", russian
 ```
 
 ### Culture names
-Een lijst van alle cultures in .NET kan je [hier terugvinden](http://www.csharp-examples.net/culture-names/)
-. 
+Een lijst van alle cultures in .NET kan je [hier terugvinden](http://www.csharp-examples.net/culture-names/). 
 **Opgelet, enkel indien een specifieke culture op je computer staat geïnstalleerd zal je deze kunnen gebruiken.**
 
 # Static method
-Sommige methoden zijn ``static`` dat wil zeggen dat je ze enkel rechtstreeks op de klasse kunt aanroepen. Vaak zijn deze methoden hulpmethoden waar de individuele objecten niets aan hebben
+Sommige methoden zijn ``static`` dat wil zeggen dat je ze enkel rechtstreeks op de klasse kunt aanroepen. Vaak zijn deze methoden hulpmethoden waar de individuele objecten niets aan hebben.
 ## Parsing time
 
 Parsen laat toe dat je strings omzet naar ``DateTime``. Dit is handig als je bijvoorbeeld de gebruiker via ``ReadLine`` tijd en datum wilt laten invoeren:
@@ -222,7 +221,7 @@ WriteLine("{0} days have passed since the Battle of Borodino.", diff.TotalDays);
 
 ## Klokje
 
-Maak een applicatie die bestaat uit een oneindige loop. De loop . De loop zal iedere seconden pauzeren: ``System.Threading.Thread.Sleep(1000);``.
+Maak een applicatie die bestaat uit een oneindige loop. De loop zal iedere seconde pauzeren: ``System.Threading.Thread.Sleep(1000);``.
 Vervolgens wordt het scherm leeg gemaakt en wordt de huidige tijd getoond. Merk op dat ENKEL de tijd wordt getoond, niet de datum.
 
 ## Verjaardag
