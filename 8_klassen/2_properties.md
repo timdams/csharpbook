@@ -189,7 +189,7 @@ Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only w
         }
     }
 ```
-Van buitenuit zal enkel code werken die de``get``-`van deze property aanroept: ``Console.WriteLine(Palpatine.Energy);``. Code die de ``set`` van buitenuit nodig heeft zal een fout geven zoals: ``Palpatine.Energy=65``; ongeacht of deze geldig is of niet.
+Van buitenuit zal enkel code werken die de ``get`` van deze property aanroept: ``Console.WriteLine(Palpatine.Energy);``. Code die de ``set`` van buitenuit nodig heeft zal een fout geven zoals: ``Palpatine.Energy=65``; ongeacht of deze geldig is of niet.
 
 **Nu goed opletten**: indien we in het object de property willen gebruiken dan moeten we deze dus ook effectief aanroepen, anders omzeilen we hem als we rechtstreeks ``energy`` instellen.
 
