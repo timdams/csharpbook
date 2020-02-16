@@ -114,7 +114,7 @@ We zullen de property nu stuk per stuk analyseren:
 * ``get {}``: indien je wenst dat de property data **naar buiten** moet sturen, dan schrijven we de get-code. Binnen de accolades van de get schrijven we wat er naar buiten moet gestuurd worden. In dit geval ``return energy`` maar dit mag even goed bijvoorbeeld ``return 4`` of een hele reeks berekeningen zijn. Het element dat je returnt in de get code moet uiteraard van hetzelfde type zijn als waarmee je de property hebt gedefinieerd (``int`` in dit geval).
     * We kunnen nu van buitenaf toch de waarde van ``energy`` uitlezen via de property en het get-gedeelte: ``Console.WriteLine(Palpatine.Energy);``
 * set{}: in het set-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een interne variabele aan te passen. De waarde die we van buitenuit krijgen (als een parameter zeg maar) zal **altijd** in een lokale variabele ``value`` worden bewaard. Deze zal van het type van de property zijn. Vervolgens kunnen we ``value`` toewijzen aan de interne variabele indien gewenst: ``energy=value`` 
-    * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo ``energy``vtoch bereiken: ``Palpatine.Energy=50``.
+    * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo ``energy`` toch bereiken: ``Palpatine.Energy=50``.
 
 ### Snel property schrijven
 Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief een bijhorende private dataveld, te schrijven. **Typ ``propfull`` gevolgd door twee tabs!**
@@ -123,7 +123,7 @@ Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief
 De full property ``Energy`` heeft nog steeds het probleem dat we negatieve waarden kunnen toewijzen (via de ``set``) die dan vervolgens zal toegewezen worden aan ``energy``.
 > Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.
 
-We kunnen in de ``set``code extra controles inbouwen. Asl volgt:
+We kunnen in de ``set`` code extra controles inbouwen. Asl volgt:
 ```csharp
    public int Energy
     {
@@ -142,7 +142,7 @@ Enkel indien de toegewezen waarde groter of gelijk is aan 0 zal deze ook effecti
 Volgende lijn zal dus geen effect hebben:
 `` Palpatine.Energy=-1;``
 
-We kunnen de code binnen ``set`` (en ``get``) zo complex als we willen maken.
+We kunnen de code binnen ``set`` (en ``get``) zo complex maken als we willen.
 
 ## Property variaties
 We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property te schrijven. 
@@ -158,7 +158,7 @@ We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property t
         }
     }
 ```
-We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit aanpassen
+We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitlezen.
 
 ### Read-only property
 ```csharp
@@ -189,6 +189,7 @@ Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only w
         }
     }
 ```
+
 Van buitenuit zal enkel code werken die de ``get`` van deze property aanroept: ``Console.WriteLine(Palpatine.Energy);``. Code die de ``set`` van buitenuit nodig heeft zal een fout geven zoals: ``Palpatine.Energy=65``; ongeacht of deze geldig is of niet.
 
 **Nu goed opletten**: indien we in het object de property willen gebruiken dan moeten we deze dus ook effectief aanroepen, anders omzeilen we hem als we rechtstreeks ``energy`` instellen.
@@ -372,7 +373,7 @@ public class Person
     }
 ```
 
-Beide klassen hebben exact dezelfde functionaliteit, echter de klasse aan de rechterzijde is aanzienlijk eenvoudig om te lezen en te typen. 
+Beide klassen hebben exact dezelfde functionaliteit, echter is de laatste klasse aanzienlijk eenvoudiger om te lezen en te typen. 
 
 ## Beginwaarde van autoprops
 
@@ -393,16 +394,15 @@ set
         _age = value;
 }
 ```
-**Voorgaande property kan dus NIET herschreven worden met een automatic property.**
+**Voorgaande property kan dus *NIET* herschreven worden met een automatic property.**
 
 ## Alleen-lezen eigenschap
-Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definiëren . Als volgt:
+Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definiëren. Als volgt:
 
 Originele klasse:
 ```csharp
 public string FirstName
 {
- 
     get
     {
         return _firstName;
@@ -411,14 +411,14 @@ public string FirstName
 ```
 Met autoprops:
 ```csharp
-public string FirstName { get; private set;}
+public string FirstName { get; private set; }
 ```
 
 En andere manier die ook kan is als volgt:
 ```csharp
 public string FirstName { get; }
 ```
-De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren.[Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
+De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren. [Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
 
 
 ## Snel autoproperties typen in Visual Studio:
@@ -438,10 +438,11 @@ De regel is eenvoudig:
 * Betreft het een actie, iets dat het object moet doen (tekst tonen, iets berekenen, etc) dan plaats je het in een **methode**
 * Betreft het een eigenschap die een bepaalde waarde heeft, dan gebruik je een **property**
 
-[Hier een iets meer uitgebreid PRO antwoord](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
+[Hier een iets meer uitgebreid PRO antwoord.](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
 
 # Kennisclip
 ![](../assets/infoclip.png)
 * [Properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=34e326ab-5ee3-4e36-8880-ab6100c13715)
 * [Full properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a9c712ba-5788-4121-aff9-ab6100c3d1ed)
 * [Auto properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9eb70ee5-402d-4c6d-b880-ab6100c5291d)
+
