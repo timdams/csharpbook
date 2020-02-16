@@ -1,5 +1,11 @@
 Op deze pagina vind je alle briljante en minder briljante oefeningen terug die niet meer bij een bepaald hoofdstuk staan. Meestal staan deze oefeningen hier omdat ze leerstof behandelen die niet meer bij de verplichte leerstof hoort.
 
+## Alledaags
+
+Zoek een foto naar keuze (nieuws, privé, etc) waarop meer dan één element opstaat (dus geen pasfoto of foto van blauwe lucht zonder wolken). Tracht de nodige klassen te verzinnen en verzin minstens 1 auto-property en 1 methode per klasse.  Maak in een console-applicatie vervolgens objecten van deze klassen aan en test ze. Voeg de foto aan je solution-folder toe.
+
+Bijvoorbeeld: een foto van een betoging. Je zou minstens 3 klassen kunnen verzinnen (gebouw, politie, betoger). Van ieder van deze klassen maak je dan objecten aan zoals je ze op de foto ziet (uiteraard gaan we geen 30 betoger-instanties maken, enkele zijn genoeg, als voorbeeld).
+
 # Binaire god
 
 > Deze leerstof werd niet in het hoorcollege gezien. NEem zelf het hoofdstuk "Bitwise operators" door.
@@ -11,6 +17,7 @@ Vraag een getal aan de gebruiker (als int). Gebruik enkel bitwise operators om:
 * het getal van teken te veranderen
 
 Doe hetzelfde maar vraag nu aan de gebruiker een string met de binaire voorstelling van een getal (bv ``"0011"``) en zit dit eerst om naar een int. Toon telkens het resultaat zowel als int en als een binaire string voorstelling.
+
 
 # APCenture-Job Agency
 

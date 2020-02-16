@@ -2,7 +2,7 @@
 
 # Boeken
 
-Er zijn oneindig veel boeken over C# geschreven, althans zo lijkt het. Hier een selectie van boeken met een korte bespreking waarom ik denk dat ze voor jou een meerwaarde kunnen zijn bij het leren programmeren in C#:
+Er zijn quasi oneindig veel boeken over C# geschreven, althans zo lijkt het. Hier een selectie van boeken met een korte bespreking waarom ik denk dat ze voor jou een meerwaarde kunnen zijn bij het leren programmeren in C#:
 
 ## Beginner boeken
 

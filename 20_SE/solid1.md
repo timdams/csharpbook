@@ -1969,3 +1969,13 @@ Alle bovenstaande veranderingen moeten leiden tot makkelijker te onderhouden cod
 
  
 > Eigenschap van het strategy patrooon: Het strategy patroon laat toe om objecten in real time van status te veranderen.
+
+
+Digitap iframe: 
+
+
+<iframe src="https://learning.ap.be/mod/hvp/embed.php?id=256343" width="1428" height="85" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://learning.ap.be/mod/hvp/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+H5P iframe:
+
+<iframe src="https://h5p.org/h5p/embed/617" width="1091" height="675" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
