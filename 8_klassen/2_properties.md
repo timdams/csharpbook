@@ -123,7 +123,7 @@ Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief
 De full property ``Energy`` heeft nog steeds het probleem dat we negatieve waarden kunnen toewijzen (via de ``set``) die dan vervolgens zal toegewezen worden aan ``energy``.
 > Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.
 
-We kunnen in de ``set`` code extra controles inbouwen. Asl volgt:
+We kunnen in de ``set`` code extra controles inbouwen. Als volgt:
 ```csharp
    public int Energy
     {
