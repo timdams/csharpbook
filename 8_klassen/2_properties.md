@@ -123,7 +123,8 @@ Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief
 De full property ``Energy`` heeft nog steeds het probleem dat we negatieve waarden kunnen toewijzen (via de ``set``) die dan vervolgens zal toegewezen worden aan ``energy``.
 > Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.
 
-We kunnen in de ``set`` code extra controles inbouwen. Asl volgt:
+We kunnen in de ``set`` code extra controles inbouwen. Als volgt:
+
 ```csharp
    public int Energy
     {
@@ -189,7 +190,8 @@ Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only w
         }
     }
 ```
-Van buitenuit zal enkel code werken die de``get`` van deze property aanroept: ``Console.WriteLine(Palpatine.Energy);``. Code die de ``set`` van buitenuit nodig heeft zal een fout geven zoals: ``Palpatine.Energy=65;`` ongeacht of deze geldig is of niet.
+
+Van buitenuit zal enkel code werken die de ``get`` van deze property aanroept: ``Console.WriteLine(Palpatine.Energy);``. Code die de ``set`` van buitenuit nodig heeft zal een fout geven zoals: ``Palpatine.Energy=65``; ongeacht of deze geldig is of niet.
 
 **Nu goed opletten**: indien we in het object de property willen gebruiken dan moeten we deze dus ook effectief aanroepen, anders omzeilen we hem als we rechtstreeks ``energy`` instellen.
 

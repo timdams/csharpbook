@@ -18,10 +18,10 @@ Console.WriteLine("Geef je verjaardag (formaat: d/m . Bv 18/3)");
 DateTime verj = DateTime.Parse(Console.ReadLine());
 
 
-if (verj < DateTime.Now)
+if (verj < DateTime.Today)
     verj = verj.AddYears(1);
 
-TimeSpan dagenover = verj - DateTime.Now;
+TimeSpan dagenover = verj - DateTime.Today;
 
 Console.WriteLine($"Je verjaart over {dagenover.Days} dagen");
 ```

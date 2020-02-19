@@ -1,3 +1,29 @@
+# BankManager 2
+
+Gebruik de BankManager klasse uit hoofdstuk 8.
+
+Maak een array aan van 10 klanten. Wanneer je met klassen werkt moet je bij de initialisatie van de array ook ieder element afzonderlijk initialiseren, als volgt:
+
+```csharp
+BankAccount[] lijst = new BankAccount[10];
+//Init
+for(int i=O; i<lijst.Length;i++)
+{ 
+ lijst[i]= new BankAccount();
+}
+```
+
+Schrijf nu een BankManager systeem. Voorzie  een console- menu waarbij de gebruiker volgende zaken kan doen:
+
+1. Nieuwe klant aanmaken (max 10) 
+2. Status van bestaande klant tonen 
+3. Geld op  bepaalde account zetten 
+4. Geld van bepaalde account afhalen 
+5. Geld tussen 2 accounts overschrijven.
+6. Een totaaloverzicht van alle accounts tonen (Allerlei statistieken zoals de totale som op alle rekeningen samen, rijkste account, etc worden in een tabel getoond)
+
+Voorzie extra functionaliteit naar keuze.
+
 # Prijzen met foreach
 
 ```csharp
