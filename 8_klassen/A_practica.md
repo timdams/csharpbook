@@ -4,7 +4,7 @@
 
 ## RapportModule
 
-Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad worden weergegeven. Dit zijn de mogelijkheden:
+Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad weergegeven worden. Dit zijn de mogelijkheden:
 
 * < 50: niet geslaagd;
 * tussen 50 en 68: voldoende;
@@ -19,14 +19,14 @@ Test je klasse door enkele objecten in je main aan te maken en de verschillende 
 
 Maak een eenvoudige klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
 
-* ``Som``: geeft som van beide getallen weer
-* ``Verschil``: geeft verschil van beide getallen weer
-* ``Product``: geeft product van beide getallen weer
-* ``Quotient``: geeft deling van beide getallen weer. Toon "Error" indien je zou moeten delen door 0.
+* ``Som``: geeft de som van beide getallen weer
+* ``Verschil``: geeft het verschil van beide getallen weer
+* ``Product``: geeft het product van beide getallen weer
+* ``Quotient``: geeft de deling van beide getallen weer. Toon "Error" indien je zou moeten delen door 0.
 
 Toon in je main aan dat je code werkt.
 
-Volgende code zou namelijk onderstaande output moeten geven:
+Volgende code zou bijvoorbeeld onderstaande output moeten geven:
 
 ```csharp
     Nummers paar1 = new Nummers();
@@ -205,9 +205,9 @@ Schrijf nu een BankManager systeem. Voorzie  een console- menu waarbij de gebrui
 
 1. Nieuwe klant aanmaken (max 10) 
 2. Status van bestaande klant tonen 
-3. Geld op  bepaalde account zetten 
-4. Geld van bepaalde account afhalen 
-5. Geld tussen 2 accounts overschrijven.
+3. Geld op een bepaald account zetten 
+4. Geld van een bepaald account afhalen
+5. Geld tussen 2 accounts overschrijven
 6. Een totaaloverzicht van alle accounts tonen (Allerlei statistieken zoals de totale som op alle rekeningen samen, rijkste account, etc worden in een tabel getoond)
 
 Voorzie extra functionaliteit naar keuze.
