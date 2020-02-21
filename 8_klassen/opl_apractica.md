@@ -108,7 +108,7 @@ class Rechthoek
 }
 ```
 
-Driehoek is quasi zelfde, met uiteraard een andere berekening van de oppervlakte.
+Driehoek is quasi hetzelfde, met uiteraard een andere berekening van de oppervlakte.
 
 ## Studentklasse
 
