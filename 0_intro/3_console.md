@@ -41,7 +41,7 @@ Bespreking van deze code:
 ``result = Console.ReadLine();``
 
 * Vervolgens roepen we de ``ReadLine`` methode aan. Deze methode zal de invoer van de gebruiker uitlezen tot de gebruiker op enter drukt.
-* Het resultaat van de ingevoerde tekst wordt bewaarde in de variabele result (denk eraan dat de toekening van rechts naar links gebeurt).
+* Het resultaat van de ingevoerde tekst wordt bewaard in de variabele ``result`` (denk eraan dat de toekenning van rechts naar links gebeurt).
 
 
 Je programma zou nu moeten zijn:

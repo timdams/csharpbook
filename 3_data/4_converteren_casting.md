@@ -27,7 +27,7 @@ Het is belangrijk in te zien dat het casten van een variabele naar een ander typ
 
 > **Je dient enkel aan casting te doen wanneer je aan *narrowing* doet: een datatype omzetten naar een ander datatype dat een verlies aan data met zich zal meebrengen.**
 
-Casting duidt je aan door voor de variabele of literal het datatype tussen haakjes te plaatsen naar wat het omgezet moet worden:
+Casting duid je aan door voor de variabele of literal het datatype tussen haakjes te plaatsen naar wat het omgezet moet worden:
 
 ```csharp
 int mijngetal = (int)3.5;
