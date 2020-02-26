@@ -57,7 +57,7 @@ Wanneer we een variabele aanmaken zal deze moeten voldoen aan enkele afspraken. 
 * Het type van de variabele: het **datatype**  dat aangeeft wat voor data we wensen op te slaan (tekst, getal, afbeelding, etc.).
 * De naam van de variabele: de **identifier** waarmee we snel aan de variabele-waarde kunnen.
 
-De verschillende datatypes bespreken we in een volgende [hoofdstuk](1_datatypes.md).
+De verschillende datatypes bespreken we in een volgend [hoofdstuk](1_datatypes.md).
 
 ## Regels voor identifiers
 
