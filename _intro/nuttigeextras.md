@@ -73,7 +73,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 
 Ja hoor, ze bestaan. Meer en meer professionele én beginnende programmeurs streamen terwijl te programmeren. Dit is een ideale manier om te zien hoe andere mensen problemen aanpakken. De meeste programming streamers kan je terugvinden op youtube, maar ook op Twitch zijn er steeds meer. Enkele aanraders (bekijk zeker de filmpjes uit de archieven eens):
 
-* [Handmade Hero](https://handmadehero.org/watch#EpisodeGuide): deze programmeur heeft een volledige RPG gemaakt en het hele proces gestreamt.
+* [Handmade Hero](https://handmadehero.org/watch#EpisodeGuide): deze programmeur heeft een volledige RPG gemaakt en het hele proces gestreamd.
 * [CSharpFrits](http://youtube.com/csharpfritz)
 * [DevChatter](https://www.twitch.tv/devchatter)
 * [Visual Studio Twitch](https://www.twitch.tv/visualstudio)
