@@ -147,3 +147,29 @@ Bono.VerjaardagVieren();
 ```
 
 Als je deze code zou uitvoeren zal je zien dat de leeftijd van Elvis verhoogt en niet die van Bono wanneer we ``VerjaardagVieren`` aanroepen. Zoals het hoort!
+
+## Initiële waarde van een instantievariabele
+Bekijk opnieuw het voorbeeld:
+
+```csharp
+class Mens
+{
+    private int leeftijd = 1;
+
+    public void VerjaardagVieren()
+    {
+        Console.WriteLine("Hiphip hoera voor mezelf!");
+        leeftijd++;
+        Praat();
+    }
+
+    public void Praat()
+    {
+        Console.WriteLine("Ik ben een mens! ");
+        Console.WriteLine($"Ik ben {leeftijd} jaar oud");
+    }
+
+}
+```
+
+De eerste regel binnenin de klasse betekent dat een ``Mens`` wordt aangemaakt met een leeftijd van 1 jaar. WE noemen dit de initiële waarde van de instantievariabele ``leeftijd``. Het is niet verplicht deze te voorzien. Als je niet aangeeft welke waarde een variabele krijgt (hier of in, zoals we iets verder zullen zien, de constructor), dan zal de instantievariabele een defaultwaarde krijgen die afhangt van zijn type.
