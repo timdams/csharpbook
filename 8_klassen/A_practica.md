@@ -160,16 +160,7 @@ Toon maw aan dat je:
 * Instanties (objecten) van deze klasse kunt maken
 * Kunt werken met deze instanties (properties instellen én uitlezen, aanroepen van methoden)
 
-### Sport simulator
 
-Schrijf een methode genaamd:
-``static void SimuleerSpeler(Waterpolospeler testspeler)``
-
-(vervang Waterpolospeler door de klasse die je zelf hebt gemaakt)
-
-De SimuleerSpeler-methode zal beide methoden van je klasse telkens 3x aanroepen m.b.v. een for-loop in de methode (dus in mijn geval 3x GooiBal en 3xWatertrappen)
-
-Test je methode door 2 objecten aan te maken en telkens mee te geven als parameter.
 
 ### enums
 

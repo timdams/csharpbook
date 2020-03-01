@@ -1,3 +1,22 @@
+# Meetlat
+
+Maak een object "Meetlat". Via een write-only property LengteInMeter kan de gebruiker de lengte van een voorwerp instellen. Via een reeks read-only properties kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
+
+* LengteInM
+* LengteInCm
+* LengteInKm
+* LengteInVoet (1m= 3.2808ft)
+
+**Opgelet het ``readonly`` keyword heb je niét nodig om readonly properties te maken. Zoek op hoe je dit wel doet**
+
+Voorbeeld gebruik van klasse:
+
+```csharp
+Meetlat mijnLat=new Meetlat();
+mijnLat.LengteInMeter= 2;
+Console.WriteLine($"{mijnLat.LengteInM} meter is {mijnLat.LengteInVoet} voet.");
+```
+
 # Pokémon
 
 We gaan een programma schrijven dat ons toelaat enkele basis-eigenschappen van specifieke Pokémon te berekenen terwijl ze levellen.
@@ -28,6 +47,7 @@ De base-stats worden als ints bewaard. Maak voor al deze basis-eigenschappen ful
 * Speed_Base
 
 ### Extra stats
+
 
 Voorts wordt een Pokémon ook gedefinieerd door z’n naam (string), type (string, bv. "grass & poison") en nummer (int), maak hiervoor auto properties aan.
 

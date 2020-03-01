@@ -4,7 +4,7 @@
 
 Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan (dit bespraken we reeds in [een eerder hoofdstuk](0_intrototcs.md)).
 
-Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUIDT NOOIT DE CHECKBOX AAN**:
+Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
 ![Zie je de fout?](../assets/0_intro/errorwarning.PNG)
 >De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
 

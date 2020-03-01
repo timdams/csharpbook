@@ -42,7 +42,7 @@ De **access modifier** geeft aan hoe zichtbaar een bepaald deel van de klasse is
 
 Test in de voorgaande klasse eens wat gebeurt wanneer je ``public`` verwijderd voor de methode. Inderdaad, je zal de methode ``Praat`` niet meer op de objecten kunnen aanroepen.
 
-De reden: **wanneer je voor een methode (of klasse) niet expliciet ``public`` zet dan wordt deze methode als ``private`` beschouwd.**
+De reden: **wanneer je voor een methode (of klasse) niet expliciet ``public`` zet, dan kan deze methode niet van uit alle andere klassen worden aangeroepen.**
 
 Test volgende klasse eens, kan je de methode ``VertelGeheim`` vanuit de Main op ``joske`` aanroepen?
 
@@ -61,12 +61,7 @@ class Mens
 }
 ```
 
-Zoals aangehaald hoef je ``private`` niet expliciet te schrijven, maar het is wel een goede gewoonte. Volgende twee manieren zijn dus identiek:
-
-```csharp
- VertelGeheim() {....}  //private impliciet
- private  VertelGeheim() {....} //private expliciet
-```
+Als je duidelijk wil maken dat bepaalde code niet van buitenaf aangeroepen kan worden, schrijf dan ``private`` in plaats van ``public``. Als je geen van beide schrijft, zit je code ergens tussenin ``public`` en ``private`` (zie later). Als beginnende programmeur maak je er best een gewoonte van duidelijk te kiezen voor ``public`` of ``private``.
 
 ### Reden van private
 
@@ -105,7 +100,7 @@ Ik ben een mens!
 Mijn geheim is dat ik leef!
 ```
 
-# Interne variabelen
+# Instantievariabelen
 
 We maken onze klasse wat groter, we willen dat een object een leeftijd heeft die we kunnen verhogen via een methode ``VerjaardagVieren`` (we hebben de methode ``VertelGeheim`` even weggelaten):
 
@@ -152,3 +147,29 @@ Bono.VerjaardagVieren();
 ```
 
 Als je deze code zou uitvoeren zal je zien dat de leeftijd van Elvis verhoogt en niet die van Bono wanneer we ``VerjaardagVieren`` aanroepen. Zoals het hoort!
+
+## Initiële waarde van een instantievariabele
+Bekijk opnieuw het voorbeeld:
+
+```csharp
+class Mens
+{
+    private int leeftijd = 1;
+
+    public void VerjaardagVieren()
+    {
+        Console.WriteLine("Hiphip hoera voor mezelf!");
+        leeftijd++;
+        Praat();
+    }
+
+    public void Praat()
+    {
+        Console.WriteLine("Ik ben een mens! ");
+        Console.WriteLine($"Ik ben {leeftijd} jaar oud");
+    }
+
+}
+```
+
+De eerste regel binnenin de klasse betekent dat een ``Mens`` wordt aangemaakt met een leeftijd van 1 jaar. WE noemen dit de initiële waarde van de instantievariabele ``leeftijd``. Het is niet verplicht deze te voorzien. Als je niet aangeeft welke waarde een variabele krijgt (hier of in, zoals we iets verder zullen zien, de constructor), dan zal de instantievariabele een defaultwaarde krijgen die afhangt van zijn type.

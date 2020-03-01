@@ -214,11 +214,11 @@ Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen
 
 Visual Studio zal dan automatisch de parameters verwerken van je methode zodat je vervolgens enkel nog het doel van iedere parameter moet plaatsen.
 
-Stel dat we een methode hebben geschreven die de macht van een getal berekend.  We zouden dan volgende commentaar toevoegen:
+Stel dat we een methode hebben geschreven die de macht van een getal berekent.  We zouden dan volgende commentaar toevoegen:
 
 ```csharp
 /// <summary>
-/// Berekend de macht van een getal.
+/// Berekent de macht van een getal.
 /// </summary>
 /// <param name="grondtal">Het getal dat je tot een bepaalde macht wilt verheffen</param>
 /// <param name="exponent">De exponent van de macht</param>

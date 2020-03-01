@@ -14,7 +14,7 @@ De applicatie zal bestaan uit enkele fasen:
 
 1. Eerst zal worden gevraagd van hoeveel dagen (DagboekEntry’s) de gebruiker een dagboek-input wilt schrijven.
 2. Vervolgens wordt een samenvatting van het ingevoerde dagboek getoond
-3. Finaal berekend een analyse-module hoe de Qal van de gebruiker is gebaseerd op het ingevoerde dagboek
+3. Finaal berekent een analyse-module hoe de Qal van de gebruiker is gebaseerd op het ingevoerde dagboek
 
 # Klassen
 De applicatie steunt op 2 belangrijke klassen:

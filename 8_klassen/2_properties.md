@@ -173,6 +173,9 @@ We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitleze
 ```
 We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 
+**Opgelet: het ``readonly`` keyword heeft andere doelen en wordt NIET gebruikt in C# om een readonly property te maken**
+
+
 ### Read-only property met private set
 Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only willen maken. We willen echter intern (in de klasse zelf) nog steeds controleren dat er geen illegale waarden aan private datafields worden gegeven. Op dat moment definieren we een read-only property met een private setter:
 
