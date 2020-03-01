@@ -9,7 +9,7 @@ stud1.Naam= "Test";
 
 Dit zal een fout geven. ``stud1`` bevat namelijk nog geen referentie. Maar wat dan wel?
 
-Deze variabele bevat de waarde **``null``** . Net zoals bij value types die een default waarde hebben (bv 0 bij een ``int`` ) als je er geen geeft, zo bevat reference types altijd ``null``.
+Deze variabele bevat de waarde **``null``** . Net zoals bij value types die een default waarde hebben (bv. 0 bij een ``int`` ) als je er geen geeft, zo bevat reference types altijd ``null``.
 
 ## NullReferenceException
 
@@ -31,7 +31,7 @@ Dit zal resulteren in volgende foutboodschap:
 
 ## NullReferenceException voorkomen
 
-Objecten die niet bestaan zullen altijd ``null``. Uiteraard kan je niet altijd al je code uitvlooien waar je misschien ``=new SomeObject();`` bent vergeten.
+Objecten die niet bestaan zullen altijd ``null`` weergeven. Uiteraard kan je niet altijd al je code uitvlooien waar je misschien ``=new SomeObject();`` bent vergeten.
 
 Voorts kan het ook soms by design zijn dat een object voorlopig ``null`` is.
 
@@ -39,7 +39,7 @@ Gelukkig kan je controleren of een object ``null`` is als volgt:
 
 ```csharp
 if(stud1 == null)
-    Console.WriteLine("oei. object bestaat niet")
+    Console.WriteLine("Oei. Object bestaat niet.")
 ```
 
 ### Verkorte null controle notatie
@@ -61,7 +61,7 @@ Console.WriteLine(stud1?.Name)
 
 Het vraagteken direct na het object geeft aan: *"de code na dit vraagteken enkel uitvoeren indien het object voor het vraagteken niét null is".*
 
-Bovenstaande code zal dus gewoon een lege lijn op scherm plaatsen indien ``stud1`` effetief ``null`` is, anders komt de naam op het scherm.
+Bovenstaande code zal dus gewoon een lege lijn op scherm plaatsen indien ``stud1`` effectief ``null`` is, anders komt de naam op het scherm.
 
 ## Return null
 
