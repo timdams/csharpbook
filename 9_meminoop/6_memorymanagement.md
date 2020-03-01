@@ -30,7 +30,7 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 ## Waarom twee geheugens?
 
 Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal berekend worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd weet het OS perfect hoeveel geheugen het minstens moet reserveren. 
-Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Een variabele van het type ``int`` is perfect geweten hoe groot die zal zijn (32 bit).Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen?
+Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Een variabele van het type ``int`` is perfect geweten hoe groot die zal zijn (32 bit). Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen?
 Het zou nutteloos (en zonde) zijn om reeds bij aanvang een bepaalde hoeveelheid voor een array te reserveren als we niet weten hoe groot die zal worden. Beeld je maar eens in dat we 2k byte reserveren om dan te ontdekken dat we maar 5byte ervan nodig hebben. RAM is goedkoop, maar toch...
 De heap laat ons dus toe om geheugen op een wat minder gestructureerde manier in te palmen. Tijdens de uitvoer van het programma zal de heap als het ware dienst doen als een grote zandbak waar eender welke plek kan ingepalmd worden om zaken te bewaren. De stack daarentegen is het kleine bankje naast de zandbak: handig, snel, en perfect geweten hoe groot.
 
@@ -59,7 +59,7 @@ int anderGetal= getal;
 
 Vanaf nu zal ``anderGetal`` de waarde ``3`` hebben. Als we nu een van beide variabelen aanpassen dan zal dit **geen** effect hebben op de andere variabelen.
 
-We zien het zelfde effect wanneer we een methode maken die een parameter van het value type aanvaardt- we geven een kopie van de variabele mee:
+We zien hetzelfde effect wanneer we een methode maken die een parameter van het value type aanvaardt - we geven een kopie van de variabele mee:
 
 ```csharp
 void DoeIets(int a)
@@ -73,7 +73,7 @@ int getal= 5;
 DoeIets(getal);
 Console.WriteLine($"Na methode {getal}");
 ```
-De parameter ``a`` zal de waarde 5 gekopieerd krijgen. Maar wanneer we nu zaken aanpassen in ``a`` zal dit geen effect hebben op de waarde van ``getal``.
+De parameter ``a`` zal de waarde ``5`` gekopieerd krijgen. Maar wanneer we nu zaken aanpassen in ``a`` zal dit geen effect hebben op de waarde van ``getal``.
 De output van bovenstaand programma zal zijn:
 ```
 In methode 6
@@ -81,7 +81,7 @@ Na methode 5
 ```
 
 ### Reference types
-**Reference** types worden in de heap bewaard. De effectieve waarde wordt in de heap bewaard, en in de stack zal enkel een **referentie** of **pointer** naar de data in de heap bewaard worden. Een referentie (of pointer) is niet meer dan het geheugenadres naar waar verwezen wordt (bv ``0xA3B3163``)  Concreet zijn dit alle zaken die vaak redelijk groot zullen zijn:
+**Reference** types worden in de heap bewaard. De *effectieve waarde* wordt in de heap bewaard, en in de stack zal enkel een **referentie** of **pointer** naar de data in de heap bewaard worden. Een referentie (of pointer) is niet meer dan het geheugenadres naar waar verwezen wordt (bv. ``0xA3B3163``)  Concreet zijn dit alle zaken die vaak redelijk groot zullen zijn:
 * objecten, interfaces en delegates
 * arrays
 
@@ -89,6 +89,7 @@ Na methode 5
 Wanneer we de = operator gebruiken bij een reference type dan kopieren we de referentie naar de waarde, niet de waarde zelf.
 
 **Bij objecten**
+
 We zien dit gedrag bij alle reference types, zoals objecten:
 ```csharp
 Student stud= new Student();
@@ -110,7 +111,7 @@ int[] nummers= {4,5,10};
 int[] andereNummers= nummers;
 ```
 
-In dit voorbeeld zal ``andereNummers`` dus nu ook verwijzen naar de array in de heap waar de actuele waarden staan.
+In dit voorbeeld zal ``andereNummers`` nu dus ook verwijzen naar de array in de heap waar de actuele waarden staan.
 
 Als we dus volgende code uitvoeren dan ontdekken we dat beide variabele naar dezelfde array verwijzen:
 ```csharp
@@ -127,8 +128,8 @@ We zullen dus als output krijgen:
 Hetzelfde gedrag zien we bij objecten:
 ```csharp
 Student a= new Student("Abba");
-Student b= new Student("Queen");
 a=b;
+Student b= new Student("Queen");
 Console.WriteLine(a.Naam);
 ```
 We zullen in dit geval dus ``Queen`` op het scherm zien omdat zowel ``b`` als ``a`` naar het zelfde object in de heap verwijzen. Het originele "abba"-object zijn we kwijt en zal verdwijnen (zie Garbage collector verderop).
@@ -155,7 +156,7 @@ In methode 6
 Na methode 6
 ```
 
-**Opgelet:** Wanneer we een methode hebben die een value type aanvaardt en we geven één element van de array met dan geven dus een kopie van de actuele waarde mee!
+**Opgelet:** Wanneer we een methode hebben die een value type aanvaardt en we geven één element van de array mee dan geven we dus een kopie van de actuele waarde mee!
 
 ```csharp
 void DoeIets(int a)
@@ -176,7 +177,7 @@ Na methode 5
 ```
 
 ## De Garbage Collector (GC)
-Een essentieel onderdeel van .NET is de zogenaamde GC, de Garbage Collector. Dit is een geautomatiseerd onderdeel van ieder C# programma dat ervoor zorgt dat we geen geheugen voor niets gereserveerd houden.
+Een essentieel onderdeel van .NET is de zogenaamde GC, de Garbage Collector. Dit is een geautomatiseerd onderdeel van ieder C# programma dat ervoor zorgt dat we geen geheugen nodeloos gereserveerd houden.
 De GC zal geregeld het geheugen doorlopen en kijken of er in de heap data staat waar geen references naar verwijzen. Indien er geen references naar wijzen zal dit stuk data verwijderd worden.
 
 In dit voorbeeld zien we dit in actie:
@@ -185,9 +186,9 @@ int[] array1= {1,2,3};
 int[] array2= {3,4,5};
 array2=array1;
 ```
-Vanaf de laatste lijn zal er geen referentie meer naar ``{3,4,5}`` in de heap zijn, daar we deze hebben overschreven met een referentie naar ``{1,2,3}``.De GC zal dus deze data verwijderen.
+Vanaf de laatste lijn zal er geen referentie meer naar ``{3,4,5}`` zijn in de heap, daar we deze hebben overschreven met een referentie naar ``{1,2,3}``. De GC zal dus deze data verwijderen.
 
-Wil je dat niet dan zal je dus minstens 1 variabele moeten hebben dat naar de data verwijst. Volgende voorbeeld toont dit:
+Wil je dat niet dan zal je dus minstens 1 variabele moeten hebben die naar de data verwijst. Volgend voorbeeld toont dit:
 ```
 int[] array1= {1,2,3};
 int[] array2= {3,4,5};
@@ -199,7 +200,7 @@ De variabele ``bewaarArray`` houdt dus een referentie naar ``{3,4,5}`` bij en we
 
 # Meer weten?
 
-Meer info, lees zeker volgende artikels:
+Voor meer info, lees zeker volgende artikels:
 * [Reference en value types](https://www.c-sharpcorner.com/uploadfile/prvn_131971/types-in-C-Sharp/)
 * [Stack vs heap](https://www.c-sharpcorner.com/article/C-Sharp-heaping-vs-stacking-in-net-part-i/)
 
