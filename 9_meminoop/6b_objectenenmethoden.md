@@ -50,7 +50,7 @@ static void ToonMetingEnVerhoog(Meting inmeting)
 }
 ```
 
-Als we deze methode als volgt aanroepen
+Als we deze methode als volgt aanroepen:
 ```csharp
 Meting m1 = new Meting();
 m1.Temperatuur = 26; m1.OpgemetenDoor = "Elon Musk";
@@ -60,7 +60,7 @@ ToonMetingEnVerhoog(m1);
 Console.WriteLine(m1.Temperatuur);
 ```
 
-Da zullen we zien dat de temperatuur in ``m1`` effectief met 1 werd verhoogd.
+Dan zullen we zien dat de temperatuur in ``m1`` effectief met 1 werd verhoogd.
 
 Dit gedrag zouden we NIET zien bij volgende methode daar ``int`` **by value** wordt doorgegeven:
 
@@ -106,7 +106,7 @@ static Meting GenereerRandomMeting()
 }
 ```
 
-Deze methode kan je als volgt dan gebruiken:
+Deze methode kan je dan als volgt gebruiken:
 
 ```csharp
 Meting m3 = GenereerRandomMeting();
