@@ -1,3 +1,4 @@
+> **Opgelet** : In deze opgave komen geen arrays (H11) van objecten voor. Dit is echter ook leerstof en zal in de toekomst ZEKER WEL in de tussentijdse vaardigheidstoetsen voorkomen.
 
 # Goal
 

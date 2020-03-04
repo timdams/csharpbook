@@ -1,6 +1,6 @@
 # Meetlat
 
-Maak een object "Meetlat". Via een write-only property LengteInMeter kan de gebruiker de lengte van een voorwerp instellen. Via een reeks read-only properties kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
+Maak een klasse "Meetlat". Via een write-only property BeginLengte kan de gebruiker de lengte van een voorwerp instellen (in meter). Via een reeks read-only properties (die transformeren) kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
 
 * LengteInM
 * LengteInCm
@@ -12,8 +12,8 @@ Maak een object "Meetlat". Via een write-only property LengteInMeter kan de gebr
 Voorbeeld gebruik van klasse:
 
 ```csharp
-Meetlat mijnLat=new Meetlat();
-mijnLat.LengteInMeter= 2;
+Meetlat mijnLat = new Meetlat();
+mijnLat.BeginLengte = 2;
 Console.WriteLine($"{mijnLat.LengteInM} meter is {mijnLat.LengteInVoet} voet.");
 ```
 
@@ -31,6 +31,10 @@ Korte uitleg over Pokémon en hun interne werking: Iedere Pokémon wordt uniek g
 De full-stats (punt 9) zijn echter de stats die de effectieve ‘krachten’ van een Pokémon bepalen in een gevecht. Deze stats worden berekend gebaseerd op de vaste base-stats en het huidige level van de Pokémon. Hoe hoger het level van de Pokémon, hoe hoger dus zijn full-stats. 
 
 ![Pokémon](../assets/6_klassen/pokemon.png)
+
+
+![](../assets/infoclip.png)
+* [Meer uitleg bij bovenstaande tekening](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=245f5d03-dbe4-49d9-b9e9-ab720084b984)
 
 ## De Pokémonopdracht
 
@@ -51,6 +55,9 @@ De base-stats worden als ints bewaard. Maak voor al deze basis-eigenschappen ful
 
 Voorts wordt een Pokémon ook gedefinieerd door z’n naam (string), type (string, bv. "grass & poison") en nummer (int), maak hiervoor auto properties aan.
 
+> Met ``nummer`` bedoelen we de Pokémon index die je in de Pokédex kunt opzoeken. Zo heeft Bulbasaur nummer 1 en Pikachu heeft 25. 
+
+
 ### Level
 
 Voeg een fullproperty Level toe (type int). Deze heeft een public get, maar een private setter.
@@ -69,10 +76,11 @@ Voeg 2 read-only properties toe (enkel get, géén set) genaamd "Average" en "To
 
 De eigenschappen van de Pokémon die mee evolueren met het leven gaan we steeds als read-only property implementeren:
 
-* Voeg een read-only HP_Full property (int) toe om de maximum health voor te stellen. Deze wordt berekend als volgt: ``( ( (HP_Base + 50) * Level) / 50) + 10 ``
-
-* Voeg voor iedere base-stat een full-stat toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
+* Voeg een read-only property ``HP_Full``  toe om de maximum health voor te stellen. Deze wordt berekend als volgt: ``( ( (HP_Base + 50) * Level) / 50) + 10 `` wanneer de get wordt aangeroepen.
+* Voeg voor iedere base-stat een ``XX_Full`` readonly property toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
 Attack_Full bijvoorbeeld wordt dus berekend als: ``( (Attack_Base * Level) / 50) + 5``
+
+> Was voorgaande uitleg wat complex? Bekijk zeker bovenstaande kennisclip die alles nog eens samenvat.
 
 ### Maak enkele Pokémon
 

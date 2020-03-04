@@ -2,53 +2,23 @@
 
 Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
 
-# Bookmark Manager
+# Speelkaarten
 
-Maak een "bookmark manager". Deze tool zal in de console aan de gebruiker 5 favoriete sites vragen: naam en url. Vervolgens zal de tool alle sites in een lijst tonen met een nummer voor. De gebruiker kan dan de nummer intypen en de tool zal automatisch de site in de browser openen. 
+Maak een klasse ``Speelkaart`` die je kan gebruiken om een klassieke kaart met getal en "kleur" voor te stellen. 
 
-Je opdracht:
+* Een kaart heeft 2 eigenschappen, een getal van 1 tot en met 13 (boer=11, koningin= 12, heer= 13):
+* Een kleur, de zogenaamde suite. Deze stel je voor via een enumtype en kan als waarden Schoppen, Harten, Klaveren of Ruiten zijn.
 
-1. Maak een array waarin je 5 bookmark objecten kan plaatsen. 
-2. Vul de applicatie aan zodat de gebruiker: een bestaand bookmark kan verwijderen en een bestaand bookmark kan aanpassen
 
-Enkele zaken die je nodig hebt:
+Schrijf nu 2 loops die de 52 kaarten van een standaard pak in een ``List<SpeelKaart>`` lijst plaatst.
 
-**BookMark klasse:**
-```csharp
-class BookMark
-{
-
-    public string Naam { get; set; }
-    public string URL { get; set; }
-    public void OpenSite()
-    {
-        Process.Start("chrome.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
-    }
-}
-```
-
-Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Om te weten of hij dat proces kent, klikt op Start->Run/uitvoeren en voer daar bijvoorbeeld ``chrome.exe`` in. Als je op enter duwt en je browser opent, dan weet je dat hij dat proces zal vinden.
-
-Voorbeeld van hoe de bookmark klasse zal werken:
-
-```csharp
-BookMark u = new BookMark();
-u.Naam = "Windows";
-u.URL = "www.google.be";
-u.OpenSite();
-```
+Maak nu een applicatie die telkens een willekeurige kaart uit de deck trekt en deze aan de gebruiker toont. De kaart wordt na het tonen dus uit de lijst verwijderd. Door met een willekeurig getal te werken hoef je dus je deck niet te schudden.
 
 # Student Organizer
 
-We gaan nu de Student-klasse uit een vorige hoofdstuk (zie onderaan de opgave) gebruiken om een array van studenten te vullen.
+We gaan nu de Student-klasse uit een vorige hoofdstuk (zie onderaan de opgave) gebruiken om een ``List<Student>`` van studenten te vullen.
 
-Maak daarom een studenten-array aan die 5 studenten bevat :
-
-```csharp
-Student[] alleStudenten= new Student[5];
-for(int i =0;  i< alleStudenten.Length; i++)
-    alleStudenten[i]= new Student();
-```
+Maak daarom een studenten-lijst aan die 5 studenten bevat :
 
 Initialiseer alle properties van iedere student op een standaard-waarde via de default constructor.
  
@@ -101,4 +71,40 @@ class Student
         Console.WriteLine($"Gemiddelde:\t\t{BerekenTotaalCijfer():0.0}");
     }
 }
+```
+
+# Bookmark Manager
+
+Maak een "bookmark manager". Deze tool zal in de console aan de gebruiker 5 favoriete sites vragen: naam en url. Vervolgens zal de tool alle sites in een lijst tonen met een nummer voor. De gebruiker kan dan de nummer intypen en de tool zal automatisch de site in de browser openen. 
+
+Je opdracht:
+
+1. Maak een array waarin je 5 bookmark objecten kan plaatsen. 
+2. Vul de applicatie aan zodat de gebruiker: een bestaand bookmark kan verwijderen en een bestaand bookmark kan aanpassen
+
+Enkele zaken die je nodig hebt:
+
+**BookMark klasse:**
+```csharp
+class BookMark
+{
+
+    public string Naam { get; set; }
+    public string URL { get; set; }
+    public void OpenSite()
+    {
+        Process.Start("chrome.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
+    }
+}
+```
+
+Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Om te weten of hij dat proces kent, klikt op Start->Run/uitvoeren en voer daar bijvoorbeeld ``chrome.exe`` in. Als je op enter duwt en je browser opent, dan weet je dat hij dat proces zal vinden.
+
+Voorbeeld van hoe de bookmark klasse zal werken:
+
+```csharp
+BookMark u = new BookMark();
+u.Naam = "Windows";
+u.URL = "www.google.be";
+u.OpenSite();
 ```

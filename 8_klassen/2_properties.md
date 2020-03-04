@@ -236,7 +236,7 @@ public void ResetLord()
 
 > **Het is een goede gewoonte om zo vaak mogelijk via de properties je interne variabele aan te passen en niet rechtstreeks het dataveld zelf.**
 
-### Read-only Get-omvormers
+### Read-only properties die transformeren
 Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
 
 Stel dat we volgende klasse hebben
@@ -424,6 +424,7 @@ public string FirstName { get; }
 ```
 De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren. [Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
 
+**Opgelet: je hebt ook read-only properties die full property zijn. Lees zeker ook de tekst hierboven in ver band met de get-omvormers.**
 
 ## Snel autoproperties typen in Visual Studio:
 Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabtoets indrukt dan verschijnt al de nodige code voor een automatic property. Je hoeft dan enkel nog volgende zaken in orde te brengen:

@@ -6,7 +6,7 @@
   * [Nuttige extras](_intro/nuttigeextras.md)
   * [Dankwoord](_intro/dankwoord.md)
   * [Mee helpen?](_intro/helpen.md)
-
+  * [Oplijsting videos](allvideos.md)
 ## Semester 1: Programming Principles
 
 * H0: Werken met Visual Studio
