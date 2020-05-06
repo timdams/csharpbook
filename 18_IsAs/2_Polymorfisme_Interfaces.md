@@ -1,5 +1,9 @@
 # Polymorfisme, interfaces en is/as
 
+{% hint style='warning' %}
+Bekijk zeker de "Fuifsimulator" onderaan bij de videoclips. Deze wordt niet in de tekst besproken maar heeft wel een erg goed inzicht in deze materie.
+{% endhint %}
+
 De eigenschappen van polymorfisme en interfaces combineren kan zeer krachtige tot zeer krachtige code resulteren wanneer we de ``is`` en ``as`` keywords gebruiken.
 We tonen dit in een voorbeeld.
 
