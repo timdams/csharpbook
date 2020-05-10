@@ -77,7 +77,11 @@ Schrijf deze klassen en toon de werking ervan in je main.
 
 # Geometric figures
 
-Maak een abstracte klasse ``GeometricFigure``. Iedere figuur heeft een hoogte, breedte en oppervlakte. Maak autoproperties voor van ``Hoogte`` en ``Breedte``. De oppervlakte is een read-only property want deze wordt berekend gebaseerd op de hoogte en breedte.
+Maak een abstracte klasse ``GeometricFigure``. Iedere figuur heeft een hoogte, breedte en oppervlakte. Maak autoproperties voor van ``Hoogte`` en ``Breedte``. De ``Oppervlakte`` is een read-only property want deze wordt berekend gebaseerd op de hoogte en breedte. Deze berekening gebeurt in de methode ``BerekenOppervlakte``: deze roep je met andere woorden aan in de getter van ``Oppervlakte`` en dat resultaat geeft de getter terug 
+
+{% hint style='warning' %}
+Let er dus op dat ``Oppervlakte`` enkel een getter heeft. Een Setter schrijven zou vreemde bugs geven: wat als de gebruiker de Oppervlakte van de figuur zo aanpast, maar wel andere hoogte en breedte heeft ingesteld? Je zou dan een foute oppervlakte krijgen daar die niet berekend wordt.
+{% endhint %}
 
 Voorzie een abstracte methode ``BerekenOppervlakte`` die een int teruggeeft.
 
@@ -93,12 +97,12 @@ Maak een applicatie waarin je de werking van deze klassen aantoont
 # Dierentuin
 Maak een console-applicatie waarin je een zelfverzonnen abstract klasse Dier in een List<Dier> kunt plaatsen. Ieder dier heeft een gewicht en een methode ``Zegt`` (die abstract is) die het geluid van het dier in kwestie op het scherm zal tonen. Maak enkele childklassen die overerven van Dier en uiteraard de ``Zegt`` methode overriden.
 
-Vervolgens vraag je aan de gebruiker wat voor dieren er in deze lijst moeten toegevoegd worden.  Wanneer de gebruiker 'q' kiest stopt het programma met vragen welke dieren moeten toegevoegd worden en komt er een nieuw keuze menu. 
-Het keuze menu heeft volgende opties:
+Plaats enkele dieren in de nieuw aangemaakt lijst.
+Vervolgens verschijnt er een menu Wanneer de gebruiker 'q' kiest stopt het programma.Het keuze menu heeft volgende opties:
 
 1. Dier verwijderen , gevolgd door de gebruiker die invoert het hoeveelste dier weg moet uit de List.
 2. Diergewicht gemiddelde: het gemiddelde van alle dieren hun gewicht wordt getoond
 3. Dier praten: alle dieren hun Zegt() methode wordt aangeroepen en via WriteLine getoond
-4. Opnieuw beginnen: de List wordt leeggemaakt en het programma zal terug van voor af aan beginnen.
+4. Opnieuw beginnen: de List wordt leeggemaakt en het programma zal terug van voor af aan beginnen. Waarbij de lijst terug gevuld wordt met enkele start dieren.
 
 Probeer zo modulair mogelijk te werken.
