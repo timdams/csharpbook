@@ -73,6 +73,12 @@ class Student
 }
 ```
 
+{% hint style='tip' %}
+Je kan aan de gebruiker enkel strings als input vragen. Om dus zijn ingevoerde klas om te zetten naar een enum gebruik je ofwel:
+a) een switch of if-else structuur die naargelang de invoer een andere enumwaarde toekent aan een enumvariabele
+b) (PRO) je gebruikt ``Enum.Parse()`` (vb : ``Klassen mijnKlas= (Klassen)Enum.Parse(typeof(Klassen), "EA2");``)
+{% endhint %}
+
 # Bookmark Manager
 
 Maak een "bookmark manager". Deze tool zal in de console aan de gebruiker 5 favoriete sites vragen: naam en url. Vervolgens zal de tool alle sites in een lijst tonen met een nummer voor. De gebruiker kan dan de nummer intypen en de tool zal automatisch de site in de browser openen. 
@@ -93,13 +99,14 @@ class BookMark
     public string URL { get; set; }
     public void OpenSite()
     {
-        Process.Start("chrome.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
+        Process.Start(@"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
+        
     }
 }
 ```
 
 {% hint style='tip' %}
-Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Om te weten of hij dat proces kent, klikt op Start->Run/uitvoeren en voer daar bijvoorbeeld ``chrome.exe`` in. Als je op enter duwt en je browser opent, dan weet je dat hij dat proces zal vinden.
+Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Zorg ervoor dat je het volledige path naar het uitvoerbaar bestand meegeeft. 
 {% endhint %}
 
 Voorbeeld van hoe de bookmark klasse zal werken:
