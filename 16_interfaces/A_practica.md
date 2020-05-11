@@ -7,10 +7,10 @@ Toon de werking aan in een klein voorbeeld programma.
 # Carbon Footprint
 
 Maak 4 klassen:
-* Huis
-* Fabriek
-* Auto
-* Plant
+* ``Huis``
+* ``Fabriek``
+* ``Auto``
+* ``Plant``
 
 Maak een interface ``ICarbonFootPrint`` die 
 * 1 methode ``BerekenFootprint`` heeft die een int teruggeeft en geen parameters nodig heeft
@@ -78,6 +78,9 @@ Iedere beurt van het spel bestaat uit volgende stappen:
 
 Stel de speler voor door een X, een rots door O , een monster door M een RockDestroyer door D.
 
+{% hint style='tip' %}
+Je zal de meeste logica in je ``Main`` of een ``Manager`` klasse moeten plaatsen. De Speler klasse bijvoorbeeld kan niet beslissen at een monster moet doen, dat zou willen zeggen dat de speler als jet ware " in het monster" beslissingen kan maken, wat tegen het principe van OOP zou zijn.
+{% endhint %}
 
 
 ## Extra’s:
