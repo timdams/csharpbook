@@ -26,6 +26,7 @@ Als programmeur van eigen klassen zijn er 3 opties voor je:
 * Je hebt enkel een **default** constructor nodig. Je kan nog steeds objecten met ``new Student()`` aanmaken, maar je gaat zelf beschrijven wat er moet gebeuren bij de default constructor
 * Je wenst gebruik te maken van een of meerdere **overloaded** constructoren, hierbij zal je dan extra argumenten kunnen meegeven bij de creatie van een object, bijvoorbeeld: ``new Student(24, "Jos")``.
 
+
 {% hint style='warning' %}
 ## Constructors zijn soms gratis, soms niet
 
@@ -33,6 +34,7 @@ Een lege default constructor voor je klasse krijg je standaard wanneer je een ni
 
 Van zodra je echter beslist om zelf een of meerdere constructors te schrijven zal C# zeggen "ok, jij je zin, nu doe je alles zelf". De default constructor die je gratis kreeg zal ook niet meer bestaan en heb je die dus nodig dan zal je die dus zelf moeten schrijven!
 {% endhint %}
+
 
 ## Default constructor
 
