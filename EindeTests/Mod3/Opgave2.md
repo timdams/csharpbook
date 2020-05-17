@@ -65,7 +65,8 @@ Voeg een ``bool`` parameter toe aan de simulatiemethode om aan te geven of mutat
 Voeg extra eigenschappen aan je ``Mens`` toe die je ook betrekt als genetische eigenschappen tijdens het voortplanten (denk aan haarkleur, allergieën of aantal armen).
 
 {% hint style='tip' %}
-# Ter info
+
+**Ter info**
 
 Volgende code toont hoe je je lijst kunt sorteren op Geslacht, veronderstellende dat de lijst ``mensen`` heet:
 

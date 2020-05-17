@@ -236,8 +236,3 @@
   * [Chat server](19_events/chatserver.md)
 * Software engineering
   * [SOLID](20_SE/solid1.md)
-
-# WHY YOU NO WORK?
-
-* Software engineering
-  * [SOLID](20_SE/solid1.md)

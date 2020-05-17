@@ -1,5 +1,5 @@
 # Introductie
-![Kaart uitleg](assets\title.png) 
+![Kaart uitleg](..\..\assets\title.png) 
 Het spel Magic The Gathering is een populair kaart/verzamel spel. We gaan een vereenvoudigde versie maken die ons zal toelaten om te ontdekken of we een bepaald wezen kunnen maken (*casten*) gegeven een bepaalde hoeveelheid land-kaarten.
 
 Er zijn 2 soorten kaarten:
@@ -21,7 +21,7 @@ Deze opgave bestaat uit 3 grote delen:
 
 Een kaart met een wezen wordt gedefinieerd door volgende zaken (enkel de zwarte pijlen gaan we gebruiken):
 
-![Kaart uitleg](assets\kaartuitleg.jpg) 
+![Kaart uitleg](..\..\assets\kaartuitleg.jpg) 
 
 ## Eigenschappen
 * **CreatureName**: naam van het wezen
@@ -68,7 +68,7 @@ Bij attack en defense toon je de HUIDIGE waarden.
 # LandKaart klasse
 
 Er zijn 5 soorten land. Ieder land genereert 1 mana van de kleur die op de kaart staat. 
-![Kaart uitleg](assets\mana.jpg) 
+![Kaart uitleg](..\..\assets\mana.jpg) 
 
 ## Eigenschappen
 Een landkaart wordt door 2 zaken gedefinieerd:
@@ -106,10 +106,10 @@ Maak 3 CreatureObjecten aan in je main:
 1. Namelijk ten eerste de Mahamori Djinn van hierboven.
     * ``ColoredTypeNeeded``: ManaType.Water, ``AmountColoredTypeNeeded``: 2 en ``AmoundUncoloredTypeNeeded``:4
 2. Alsook een "KinderCatch" (merk ok dat deze kaart geen ``SpecialAbilities`` heeft en je deze property dus als een lege tekst mag voorstellen (``""``)). Deze kaart heeft dus 3 bos-mana en 3 kleurloze mana nodig.
-![Kaart uitleg](assets\card2.jpg) 
+![Kaart uitleg](..\..\assets\card2.jpg) 
     * ``ColoredTypeNeeded``: ManaType.Bos, ``AmountColoredTypeNeeded``: 3 en ``AmoundUncoloredTypeNeeded``:3
 3. Als derde deze schattige "Mountain Goat" die als ``SpecialAbility`` "Mountainwalk heeft".
-![Kaart uitleg](assets\card3.jpg)
+![Kaart uitleg](..\..\assets\card3.jpg)
     * ``ColoredTypeNeeded``: ManaType.Vuur, ``AmountColoredTypeNeeded``: 1 en ``AmoundUncoloredTypeNeeded``:0
 # Casting tester
 

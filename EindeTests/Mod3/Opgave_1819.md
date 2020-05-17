@@ -125,7 +125,7 @@ Opmerking: de dagen mogen in het Engels verschijnen als jouw OS in die taal werd
 De gebruiker dient nu steeds in te geven hoe hij zich voelde (description), of hij geïnspireerd was (IsInspired), de Qal score die dag (Qal) en of het om een private entry gaat.
 Deze informatie wordt steeds in een DagboekEntry geplaatst en aan de array toegevoegd.
 
-**Deel uitvoer/invoer van de methode **
+**Deel uitvoer/invoer van de methode**
 
 ```text
 Rise and shine
