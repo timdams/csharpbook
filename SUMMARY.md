@@ -124,6 +124,7 @@
   * [Oplossing Opgave 3](EindeTests/Mod3/OplossingOpgave3.md)
   * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
   * [Bespreking vaardigheidsproef mod 3 1819](EindeTests/Mod3/Oplossing_1819.md)
+  * [Opgave vaardigheidsproef mod 3 1920](EindeTests/Mod3/Opgave_1920.md)
 * H12: Overerving
   * [Overerving intro](12_overerving/0_overerving_intro.MD)
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
