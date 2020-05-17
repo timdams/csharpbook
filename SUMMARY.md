@@ -1,4 +1,5 @@
 # Summary
+
 * [Welkom](README.md)
 * Inleiding
   * [Benodigdheden](_intro/benodigdheden.md)
@@ -6,7 +7,9 @@
   * [Mee helpen?](_intro/helpen.md)
 * [Nuttige extras](_intro/nuttigeextras.md)
 * [Oplijsting videos](allvideos.md)
+
 ## Semester 1: Programming Principles
+
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
@@ -87,7 +90,9 @@
   * [Oplossing vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Oplossing_1920.md)
   * [Opgave 5- vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/Opgave_1920b.md)
   * [Oplossing vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/Oplossing_1920b.md)
+
 ## Semester 2 : OOP
+
 * H8: Klassen en objecten
   * [OOP Intro](8_klassen/0_oop_intro.md)
   * [Klassen en objecten in C#](8_klassen/0b_oopincs.md)
@@ -154,10 +159,14 @@
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
+  
 ## Appendix
+
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Oefeningen kerkhof](B_appendix/graveyard.md)
+  
 ## Semester 1 appendix
+
 * [Nice to know stuff](B_appendix/prostuff.md)
   * [Out en Ref parameters](B_appendix/2_outenref.md)
   * [Jagged arrays](B_appendix/5_jaggedArrays.md) 
@@ -179,7 +188,9 @@
   * [Fun with methods: een verhaalgenerator](A_DEEL1_AllInOne/3_verhaalgenerator.md)
   * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
+
 ## Semester 2 appendix
+
 * Nice to know stuff
   * [Klassen herbruiken](B_appendix/namespaces.md)
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
@@ -207,7 +218,9 @@
   * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)
   * [Magic The Gathering API](A_DEEL2_AllInOne/mtgapi.md)
+
 ## Pro (geen leerstof en/of in opbouw)
+
 * [Bitwise operators](3_data/bitwise.md)
 * Generics en collections
   * [Generics methoden en types](17_gencols/0_generics_intro.MD)
