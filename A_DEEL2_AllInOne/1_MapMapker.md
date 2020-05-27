@@ -8,7 +8,7 @@ Volgende hoofdstuk toont het gebruik van van de belangrijkste OO concepten in ee
 
 Eerst definiëren we een kleine hulpklasse Point die een punt in de ruimte voorstelt. We kunnen deze klasse ook gebruiken om een vector voor te stellen:
 ```csharp
-    public class Point
+    class Point
     {
         public Point(int inx, int iny)
 	{
@@ -19,19 +19,19 @@ Eerst definiëren we een kleine hulpklasse Point die een punt in de ruimte voors
         public int X
 	{
 	  get{return x;}
-	  set{x=value;;}
+	  set{x=value;}
 	}
         public int Y	 
 	{
 	  get{return y;}
-	  set{y=value;;}
+	  set{y=value;}
 	}
     }
 ```
 We maken nu  een abstracte klasse MapObject, die we vervolgens zullen gebruiken om over te erven zodat nieuwe klassen aangemaakt kunnen worden. 
 
 ```csharp
-    abstract public class MapObject
+    abstract class MapObject
     {
         private Point location;
         private double price ;
@@ -56,7 +56,7 @@ We maken de ``MapObject`` klasse expres abstract, we willen voorkomen dat deze k
 
 Laten we nu een nieuwe klasse aanmaken dat overerft van de abstract klasse MapObject 
 ```csharp
-    public class WallElement: MapObject
+    class WallElement: MapObject
     {
         public override void Paint()
         {}
@@ -70,6 +70,7 @@ De methode van Paint moeten we verplicht overriden (daar ze abstract was in de b
 
 ### Elementen op het scherm
 We kunnen nu in ons hoofdprogramma (main-methode) al direct elementen op het scherm brengen met bijvoorbeeld volgende code:
+
 ```csharp
             WallElement steen1= new WallElement();
             steen1.Paint();
@@ -80,6 +81,7 @@ Dit geeft,als je een default constructor hebt gemaakt die automatisch ieder obje
 We zouden dus nu bijvoorbeeld meerdere stenen kunnen plaatsen (met verschillende prijs, naargelang de soort) en dan de totaalprijs opvragen.
 ### Grotere objecten
 We hebben nu een basis om andere zaken te maken. Stel dat we grotere objecten op het scherm wensen. We zouden dan kunnen definiëren dat de variabele Location het punt linksboven van het object bepaald. Volgende nieuwe object erft over van de MapObject en geeft een grotere figuur weer (vierkant, maar je kan natuurlijk je fantasie de vrije loop laten gaan):
+
 ```csharp
     class FurnitureElement: MapObject
     {
@@ -108,6 +110,7 @@ We hebben nu een basis om andere zaken te maken. Stel dat we grotere objecten op
     }
 ```
 We kunnen dan eenvoudig weg allerlei meubels definiëren, zoals een zetel:
+
 ```csharp
     class ZetelElement: FurnitureElement
     {
@@ -159,7 +162,7 @@ Het maken van een semi-grafisch menu is verrassend eenvoudig.
 ### Menu Tekenen
 Volgende klasse toont een kadertje met wat tekst in:
  ```csharp
- public class Menu
+    class Menu
     {
         public Menu()
         {}
@@ -191,6 +194,7 @@ Volgende klasse toont een kadertje met wat tekst in:
     }
 ```
 Je kan dit dan als volgt oproepen in je main:
+
 ```csharp
 Menu menu= new Menu();
 menu.ShowMenu();
@@ -198,6 +202,7 @@ menu.ShowMenu();
 
 ### Tekstverwerken van Menu
 We geven onze lijst van objecten mee aan ons Menu zodat het Menu object nieuwe zaken aan de map kan toevoegen:
+
 ```csharp
         public void GetInput(List<MapObject> list)
         {
@@ -231,6 +236,7 @@ We kunnen dan in de main volgende code plaatsen die constant het scherm herteken
 ```
 ### Map verplaatsen
 De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar beneden wenst te verplaatsen als de B wordt ingedrukt; Je update gewoon de locatie van ieder object waarbij de y-positie gewoon met 1 wordt verhoogd:
+
 ```csharp
         if (input == "B" || input == "b")
         {
@@ -249,7 +255,7 @@ De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar ben
 ## Composiet-klassen
 Voorts kunnen we bijvoorbeeld nu meerdere klassen aanmaken (tafels, stoelen, deuren, etc) en dan een composiet-klasse aanmaken die bijvoorbeeld een volledig salon beschrijft, de code zou er dan als volgt kunnen uitzien:
 ```csharp
-   public class SalonElement: MapObject
+    class SalonElement: MapObject
     {
         private List<MapObject> elementen= new List<MapObject>();
 
@@ -273,15 +279,18 @@ Voorts kunnen we bijvoorbeeld nu meerdere klassen aanmaken (tafels, stoelen, deu
     }
 ```
 Merk op dat we rekening moeten houden met het feit dat de locatie van het salon het punt linksboven is, en dat dus de nieuwe locaties van de zetels vanaf dit punt hun oorsprong hebben. Althans dat willen we.. Als we in het main-programma dan schrijven:
+
 ```csharp
             SalonElement salon1= new SalonElement(new Point(6,5));
             salon1.Paint();
 ```
+
 ![](../assets/7_overerving/mapmaker4.png)
 Dan verschijnen onze zetels wel, maar niet op de locatie zoals we wilden (nu verschijnen de zetels op locatie (2,2) en (5,9), terwijl we liever hebben dat ze verschijnen op (2+6, 2+5) en (5+6, 9+5), dus rekening houdende met de locatie van het salon zelf
 
 ## Interface 
 We willen nu ervoor zorgen dat wanneer we volgende code schrijven, dat ook alle elementen van het Salon mee verhuizen naar de nieuwe locatie:
+
 ```csharp
             List<MapObject> allObjects = new List<MapObject>();
             allObjects.Add(new SalonElement(new Point(5, 5)));
@@ -295,15 +304,18 @@ Echter, dat gebeurt niet. De oplossing is een gevorderd principe, maar eentje da
 
 
 We leggen een nieuwe interface IComposite vast die iedere composietklasse moet implementeren:
+
 ```csharp
     interface IComposite
     {
         void UpdateElements(Point offset);
     }
 ```
+
 Ons SalonElement wordt krijgt dan volgende aanpassing:
+
 ```csharp
-    public class SalonElement: MapObject,IComposite
+    class SalonElement: MapObject,IComposite
     {
         private List<MapObject> elementen= new List<MapObject>();
 
@@ -324,6 +336,7 @@ Ons SalonElement wordt krijgt dan volgende aanpassing:
     }
 ```
 De UpdateElements methode zou er dan als volgt kunnen uitzien:
+
 ```csharp
             for (int i = 0; i < elementen.Count; i++)
             {
@@ -338,6 +351,7 @@ Telkens we dus UpdateElements aanroepen dan worden alle elementen die bij het ob
 
 Nu rest ons nog één aanpassing, dat is ervoor zorgen dat deze methode ook effectief telkens wordt aangeroepen. De methode moet aangeroepen worden telkens we een aanpassing aan de Location van het SalonElement doen. Hierbij controleren we eerst of de locatie überhaupt al geïnitialiseerd is (anders is deze waarde gelijk aan ‘null’). Vervolgens berekenen we de offset, dit is het verschil tussen de huidige en de nieuwe locatie van de composietklasse.
 Daar Location bij MapObject hoort, moeten we dus in die klasse een aanpassing doen. We bereiden daarom de Locationproperty uit als volgt:
+
 ```csharp
         public Point Location
         {
