@@ -202,7 +202,7 @@ In vloot:
         }
 ```
 
-## Stap 5
+## Stap 6
 
 ```csharp
 static void Main(string[] args)
