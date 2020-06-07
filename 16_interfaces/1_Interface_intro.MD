@@ -143,11 +143,89 @@ Met interfaces kunnen we volgens SOLID programmeren: het boeit ons niet meer wat
 
 Ok, als de helft van bovenstaande zinnen je wat filosofisch overkwamen, don't worry maar geloof ons: als je tegen interfaces kan programmeren i.p.v. klasse dan zal je code vaak een pak beter worden in de long run.
 
-Toch nog voorbeeld?
+{% hint style='tip' %}
+
+### Toch nog voorbeeld?
+
 Beeld je in dat je een complexe klasse ``DiskWriter`` hebt die je programma gebruikt om data van en naar de harde schijf te schrijven. De klasse implementeert een interface ``IData`` die twee methoden heeft (``ReadData()`` en ``WriteData``).
 Als je later beslist om je data naar een online server te schrijven en niet naar de harde schijf, dan kan je gewoon die klasse schrijven (bv. ``InternetWriter``) en vervolgens ook de ``IData`` interface laten implementeren. 
 Al je andere code moet dan niet aangepast worden! Ze (je andere klassen) kunnen gewoon blijven zeggen ``ReadData`` en ``WriteData`` en weten misschien zelfs niet dat hun  data niet meer naar de HD maar naar het internet wordt gestuurd.
 Mooi toch!
+
+Volgende code toont dit.
+
+Eerst maken we de nodige writers:
+
+```csharp
+        interface IData
+        {
+            void ReadData();
+            void WriteData();
+        }
+```
+
+```csharp
+       class DiskWriter : IData
+        {
+            public void ReadData()
+            {
+               //Lees van harde schijf
+            }
+
+            public void WriteData()
+            {
+                //Schrijf naar harde schijf
+            }
+
+            //Allerlei andere zaken
+        }
+```
+
+```csharp
+        class InternetWriter: IData
+        {
+            public void ReadData()
+            {
+                //Lees van internet
+            }
+
+            public void WriteData()
+            {
+                //Schrijf naar internet
+            }
+        }
+```
+
+Vervolgens maken we een klasse die effectief die writer gebruikt. De "truuk" zit hem er nu in dat deze klasse met ``IData`` werkt via compositie en dus niet weet naar waar alles zal geschreven worden. 
+Je kan vervolgens volgens de compositie regels instellen welk object ``IData`` krijgt. In volgende voorbeeld stellen we dit in via de constructor, maar je zou ook van ``datadoel`` een property kunnen maken:
+
+```csharp
+        class Logbook
+        {
+            private IData datadoel;
+            public Logbook(IData doel)
+            { datadoel = doel; }
+
+            public void Schrijf()
+            {
+                datadoel.WriteData();
+            }
+
+            //etc.
+        }
+```
+Vanaf nu kan je logbook-objecten aanmaken die naar verschillende plekken schrijven/lezen zonder dat je IN  ``logbook`` moet weten naar waar dat gebeurt:
+
+```csharp
+            Logbook naarlokalefile = new Logbook(new DiskWriter());
+            naarlokalefile.Schrijf();
+
+            Logbook naarInternet = new Logbook(new InternetWriter());
+            naarInternet.Schrijf();
+```
+
+Voor de geïnteresseerden, dit concept is een eerste stap naar [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection#:~:text=In%20software%20engineering%2C%20dependency%20injection,object%20is%20called%20a%20service.), een erg krachtig concept dat je nog veel zal tegenkomen in je verdere programmeercarriere.
+{% endhint %}
 
 # Kennisclip
 ![](../assets/infoclip.png)
