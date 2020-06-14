@@ -30,6 +30,7 @@
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
   * [Unicode tonen](2_tekst/7_unicode.md)
   * [Environment bibliotheek](2_tekst/8_environment.md) 
+  * [Je applicatie delen](2_tekst/delen.md)
   * [_Oefeningen](2_tekst/a_practica.md)
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)

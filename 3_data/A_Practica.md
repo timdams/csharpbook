@@ -11,6 +11,26 @@ Vanaf dit punt zullen  de meeste oefeningen iets "vragen" aan de gebruiker. Hier
 
 Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getallen.
 
+# Vierkant
+Schrijf een programma om de omtrek en de oppervlakte van een vierkant te bepalen. De zijde wordt ingelezen. Zorg ervoor dat de uitvoer er als volgt uitziet:
+	
+```text
+zijde: … 
+omtrek: … 
+oppervlakte: …
+```
+
+# Balk
+
+Bereken de oppervlakte en de inhoud van een balk . De gegevens (hoogte, breedte, lengte) worden ingelezen. Zorg ervoor dat de uitvoer er als volgt uitziet:
+```text
+lengte: … 
+breedte: … 
+hoogte: … 
+oppervlakte: … 
+inhoud: … 
+```
+
 # Geometric-fun
 Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen (rad= x° * (π/180°)), gebruik ``Math.PI`` voor Pi (``π``). Gebruik vervolgens de verschillende geometrische functies in de ``Math.`` bibliotheek om de sinus (``.Sin``), cosinus (``.Cos``) en tangens (``.Tan``) van de hoek aan de gebruiker te tonen (deze functies werken in radialen, daarom moeten we deze eerst omzetten).
 

@@ -10,6 +10,13 @@ De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
 * Tussen de 30 en de 39,9 (rood): Zwaarlijvigheid (obesitas). Verhoogde kans op allerlei aandoeningen zoals diabetes, hartaandoeningen en rugklachten. Je zou 5 tot 10 kg moeten vermageren.
 * Boven de 40 (magenta): ernstige zwaarlijvigheid. Je moet dringend vermageren want je gezondheid is in gevaar (of je hebt je lengte of gewicht in verkeerde eenheid ingevoerd).
 
+# BankRekening controle
+Schrijf een programma om het vroegere nationale bankrekeningnummer te controleren off het al of niet een geldig nummer is (dus niet het IBAN nummer). 
+
+Het bankrekeningnummer wordt ingelezen als 3 gehele getallen van 3, 7 en 2.
+
+Opmerking: een bankrekeningnummer is geldig als de rest van de deling van het getal, dat bestaat uit de eerste 10 cijfers, door 97, gelijk is aan het getal bestaande uit de laatste 2 cijfers.
+
 # Schoenverkoper
 a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20 euro. Indien de gebruiker 10 paar of meer koopt kosten de eerste 9 paar nog steeds 20 euro, de overige kosten echter maar 10 euro. Toon aan de gebruiker de totale prijs.
 
@@ -47,10 +54,21 @@ Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Laat het orakel een
 
 
 # Casino
- Genereer  een random getal van 1 t.e.m. 6 maar toon dit niet aan de gebruiker. Vraag aan de gebruiker welk getal hij denkt dat de computer heeft "geworpen". Indien de gebruiker juist raadt verschijnt er "proficiat" op het scherm. Anders: "you lose".
+Genereer  een random getal van 1 t.e.m. 6 maar toon dit niet aan de gebruiker. Vraag aan de gebruiker welk getal hij denkt dat de computer heeft "geworpen". Indien de gebruiker juist raadt verschijnt er "proficiat" op het scherm. Anders: "you lose".
 
- # Casino 3
- Vul de voorgaande oefening aan, maar laat de gebruiker 3x na mekaar raden. Enkel als hij juist raadt mag hij nog eens raden. Als hij ook de derde juist raadt wint hij. In alle andere gevallen niet.
+# Casino 3
+Vul de voorgaande oefening aan, maar laat de gebruiker 3x na mekaar raden. Enkel als hij juist raadt mag hij nog eens raden. Als hij ook de derde juist raadt wint hij. In alle andere gevallen niet.
+
+# Schaakstuk
+
+Schrijf een applicatie om het volgende te verwezenlijken: De bedoeling is om 3 stukken willekeurig te kiezen van een schaakspel. 
+Maak maximaal gebruik van enumeratie-types. Op het scherm moet dus willekeurig een opsomming van 3 stukken (als woorden) verschijnen. De uitvoer kan dus bijvoorbeeld zijn: 
+
+```text
+wit paard
+zwarte loper
+witte pion
+```
 
 # Quiz
 Maak een quiz. Maak gebruik van het ``switch``-statement om de input van de gebruiker (a, b, c of d) te verwerken en bij iedere vraag aan te geven of dit juist of fout is. Voorzie 3 multiple choice vragen. Houdt bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore (Juist is +2, fout is -1).

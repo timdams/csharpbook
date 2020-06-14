@@ -167,6 +167,15 @@ Kan je in voorgaand voorbeeld het dataveld ``reeks`` vervangen door een dataveld
 {% endhint %}
 
 
+# Bibliotheek
+
+Boeken in een bibliotheek mogen maximum 14 dagen uitgeleend worden. Schrijf een console-applicatie om de volgende gegevens te tonen door middel van een klasse ``BibBoek``:
+* de naam van de ontlener, die werd ingelezen (autoproperty)
+* de datum van vandaag (autoproperty met private set)
+* de datum, dat het boek ten laatste terug moet ingeleverd worden (readonly property)
+
+
+
 ## BankManager
 
 Ontwerp een klasse Account die minstens een ``naamveld``, ``balans`` en ``rekeningnummer`` bevat. Voorzie 3 methoden:

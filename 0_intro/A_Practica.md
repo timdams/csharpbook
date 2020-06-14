@@ -17,3 +17,14 @@ Kan je je programma van zonet aanpassen zodat iedere zin in een andere kleur is?
 Bekijk de werking van Console.Write(). Kan je ieder woord in een andere kleur zetten?
 
 Go nuts!
+
+# Visitekaart
+
+Schrijf een programma (1 Visitekaartje), om de volgende zaken te tonen op afzonderlijke regels
+* Naam: *voornaam achternaam*
+* Adres: *straat en gemeente* 
+* Hobby: *hobby*
+* Waarom deze opleiding volgen? *Argumentatie*
+* Waarop op AP? *Argumentatie*
+
+Wat cursief staat moet  vervangen worden door je eigen gepaste waarden

@@ -65,6 +65,10 @@ We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tij
 * ``Console.WriteLine("Hoi ik ben het");``: en ook deze lijn komt op het scherm.
 * Sluitende accolades: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
 
+{% hint style='tip' %}
+"Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt: [Hello world in meer dan 600 programmeertalen](http://helloworldcollection.de/)! 
+{% endhint %}
+
 # Say what now?!
 
 ![](../assets/care.jpg)

@@ -73,6 +73,9 @@ Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typ
 **Begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met ``int`` zou werken.
 {% endhint %}
 
+# BTW
+Schrijf een programma waarin je het BTW-percentage 21% als een constante definieert door het keyword ``const`` voor de variabele te zetten. Vervolgens toon je een prijs naar keuze, met en zonder btw op het scherm. De prijs wordt getoond tot 2 cijfers na de komma.
+
 # Gewicht in space
 
 Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.

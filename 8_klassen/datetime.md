@@ -233,6 +233,18 @@ Vervolgens wordt het scherm leeg gemaakt en wordt de huidige tijd getoond. Merk 
 
 Maak een applicatie die aan de gebruiker vraagt op welke dag hij jarig is. Toon vervolgens over hoeveel dagen z'n verjaardag dan zal zijn.
 
-## Doe-het-zelf
+## Countdown
+Schrijf een console applicatie om het aantal dagen te berekenen tussen vandaag en het einde van het jaar.
 
-Verzin zelf een applicatie zodat je zelf nog leert werken met ``DateTime``.
+Druk beide data en het resultaat af.
+Druk bovendien de datum van vandaag op de volgende wijzen af:
+* korte datum zonder tijd
+* lange datum zonder tijd
+* lange datum met korte tijd
+* korte datum met korte tijd
+
+# New York Tijdszone
+
+Onderstel dat een firma een filiaal in Londen en een filiaal in New York heeft. Het tijdsverschil in beide steden bedraagt in de zomer 5 uren. De managers van Londen wensen vandaag een video conferentie te starten om 14 uur. Schrijf een console applicatie om de overeenkomstige tijd in New York te bepalen. 
+
+Geef de optie zodanig dat de stad met het tijdsverschil en de starttijd van de conferentie in Londen worden ingelezen in plaats van New York.
