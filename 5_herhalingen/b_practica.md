@@ -31,51 +31,23 @@ Je houdt volgende zaken bij:
 
 Deze 4 getallen worden steeds geüpdate en getoond wanneer de gebruiker een nieuw getal invoert en op enter duwt.
 
-## Raad het getal
+## Hoger Lager
 
-**Deel 1:** Teken de flowchart van het volgende programma. 
-```csharp
-int getal;
-int poging= 0;
-int aantalPogingen= 0;
-string pogingString;
-bool gevonden= false;
-Random rand= new Random();
-getal= rand.Next(0, 10);
+Simulatie van het "hoger-lager" spel. Het programma kiest een random-getal tussen 1 en 100 (telkens inbegrepen). Vervolgens wordt de gebruiker gevraagd om een gok te doen en toont het programma of de gok juist was, te laag was ("hoger") of te hoog ("lager"). Het programma blijft gokken van de gebruiker accepteren tot de gok juist is of de gebruiker besluit te stoppen. Het aantal beurten wordt op het einde van het spel getoond en de mogelijkheid om opnieuw te spelen.
 
-while(!gevonden)
-{
-    aantalPogingen++;
-    Console.WriteLine("Geef een getal tussen 0 en 10");
-    pogingString = Console.ReadLine(); 
-    poging = int.Parse(pogingString);
+### Limiet
+Pas het programma aan zodat er een maximum aantal pogingen is toegestaan.
 
-    if(getal > poging)
-    {
-        Console.WriteLine("Het gezochte getal is groter, probeer opnieuw.");
-    }
-    else if(getal < poging)
-    {
-        Console.WriteLine("Het gezochte getal is kleiner, probeer opnieuw.");
-    }
-    else 
-        gevonden = true;
-}
-Console.WriteLine($"Gevonden! Het te zoeken getal was inderdaad {getal} je had er {aantalPogingen} pogingen voor nodig.");
+# Tekenen
+
+Twee getallen tussen 2 en 20 worden ingelezen (invoercontrole!). Er moet een open rechthoek afgedrukt worden bestaande uit *'en waarbij de ingelezen getallen respectievelijk de breedte en de hoogte van de rechthoek voorstellen. Als bijvoorbeeld 10 en 4 werden ingelezen, wordt de volgende rechthoek getoond:
+
+```text
+* * * * * * * * * *
+*                 *
+*                 *
+* * * * * * * * * *
 ```
-
-**Deel 2:** Pas het programma zo aan dat de tekst die verschijnt bij het inlezen van de volgende poging het resterende interval aangeeft. Gebruik hiervoor twee extra variabelen "ondergrens" en "bovengrens" die als beginwaarden respectievelijk 0 en 100 krijgen. Bij het inlezen van de volgende waarde voor poging zal deze toegekend worden aan ondergrens of bovengrens naargelang ze groter dan wel kleiner dan het te zoeken getal is. 
-
-Zie hieronder een voorbeeldoutput:
-
-![](../assets/3_loops/raadgetaloutput.png)
-
-**Deel 3:**
-Bouw in het programma een controle in die er voor zorgt dat je geen waarde meer kan ingeven die buiten het opgegeven interval ligt (dus ook indien de grenzen aangepast worden moet deze controle blijven werken!).
-
-**Deel 4:**
-Pas het programma aan zodat er een maximum aantal pogingen is toegestaan. Om dit maximum te bepalen moet je uitgaan van de beginwaarden van "ondergrens" en "bovengrens". Ga dus na hoeveel pogingen er in het ideale geval (bij het zoeken telkens de middelste waarde als nieuwe poging ingeven) maximaal nodig zijn om een interval te doorzoeken.
-
 
 ## Steen schaar papier
 Maak een applicatie waarbij de gebruiker steen-schaar-papier met de computer kan spelen. De gebruiker kiest telkens steen, schaar of papier en drukt op enter. Vervolgens kiest de computer willekeurig steen, schaar of papier (gebruik de Random.Next() methode, waarbij je deze tussen 1 en 3 laat varieren). 

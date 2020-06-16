@@ -4,39 +4,41 @@ Een aantal oefeningen is geïnspireerd op oefeningen van [Exercism.io](https://e
 
 # Opwarmers
 
-Een kort programma om op te warmen. Iedere opdracht hieronder is een apart programma (uiteraard mag je dit ook in 1 project oplossen).
+1.	Er worden 20 getallen ingelezen. De getallen worden in omgekeerde volgorde afgedrukt.
 
-Gebruik steeds een loop om dit op te lossen.
+2.	Er worden 20 getallen ingelezen. De getallen worden 1 plaats naar voor verschoven afgedrukt, d.w.z. eerst het tweede ingelezen getal, dan het derde ingelezen getal, dan het vierde ingelezen getal , ... , dan het laatste ingelezen getal en tenslotte het eerste ingelezen getal.
 
-* Maak een array gevuld met de getallen 0 tot 10
-* Maak een array gevuld met de getallen van 100 tot 1
-* Maak een array gevuld met de letters a tot z
-* Maak een array gevuld met willekeurige getallen tussen 1 en 100 (de array is 20 lang)
-* Maak een array gevuld met afwisselend ``true`` en ``false`` (de array is 30 lang)
+3.	Er worden 20 getallen ingelezen. De getallen worden 3 plaatsen naar achter verschoven afgedrukt, d.w.z. eerst het derde laatste ingelezen getal, dan het voorlaatste ingelezen getal, dan het laatste ingelezen getal, dan het eerste ingelezen getal, dan het tweede ingelezen getal en tenslotte het vierde laatste ingelezen getal.
 
-Per array: output de array naar het scherm, maar ieder element naast elkaar met komma gescheiden.
-Dus niet:
+4.	Er worden 20 getallen ingelezen. De getallen worden geroteerd afgedrukt over een aantal elementen x, waarbij x eerst nog wordt ingelezen. Eerst wordt dus het x+1de ingelezen getal afgedrukt, dan het x+2de ingelezen getal, ... , dan het laatste ingelezen getal, dan het eerste ingelezen getal, ... en tenslotte het xde ingelezen getal.
 
-```
-true
-false
-true
-\\etc
-```
+5.	Een rij van 100 getallen wordt ingelezen. Druk de inhoud van de rij af in 3 kolommen. De getallen worden gerangschikt rij per rij.
 
-maar wel: ``true, false, true, ...``
+6.	Een rij van 100 getallen wordt ingelezen. Druk de inhoud van de rij af in 3 kolommen. De getallen worden gerangschikt kolom per kolom
 
-# ArrayOefener 1
-Maak een programma dat aan de gebruiker vraagt om 10 waarden (int) in te voeren in een array. Vervolgens toont het programma de som, het gemiddelde en het grootste getal van deze 10.
+7.	Een rij van 100 gehele getallen wordt ingelezen. Maak een tweede rij die bestaat uit de elementen van de eerste rij in omgekeerde volgorde.
 
-Vervolgens vraagt het programma de gebruiker om een getal in te voeren. Het programma toont dan alle getallen die groter of gelijk zijn aan dit ingevoerde getal zijn die in de array aanwezig zijn. Indien geen getallen groter zijn dan verschijnt een bericht ``Niets is groter`` op het scherm.
+8.	Een rij van 100 gehele getallen wordt ingelezen. Wissel de inhoud van de rij om.
 
-![](../assets/5_arrays/practarray1.png)
+9.	Een rij van 100 gehele getallen wordt ingelezen. Verschuif de inhoud van de rij 1 plaats naar achter. Het laatste getal moet eerst komen.
 
-# ArrayOefener 2
-Maak een programma dat aan de gebruiker vraagt om 2 keer 5 getallen in te voeren. Bewaar de eerste reeks waarden in een array A, de tweede reeks waarden in array B. Maak een nieuwe array C aan die steeds de som bevat van het respectievelijke element uit arrays A en B. Toon het resultaat.
+10.	Een rij van 100 gehele getallen wordt ingelezen. Maak een tweede rij die bestaat uit de elementen van de eerste rij maar 1 plaats naar achter verschoven . Het laatste getal van de eerste rij moet eerst komen in de tweede rij.
 
-![](../assets/5_arrays/practarray2.png)
+11.	Een rij van 100 gehele getallen wordt ingelezen. Maak een tweede rij die bestaat uit de elementen van de eerste rij maar 3 plaatsen naar voor verschoven. Het eerste getal van de eerste rij moet derde laatst komen in de tweede rij, het tweede getal van de eerste rij moet voorlaatst komen in de tweede rij en het derde getal van de eerste rij moet laatst komen in de tweede rij.
+
+12.	Een rij van 100 gehele getallen wordt ingelezen. Verschuif de inhoud van de rij 3 plaatsen naar voor. Het eerste getal moet derde laatst komen, het tweede, voorlaatst en het derde, laatst.
+
+13.	Gegeven is een rij van 50 getallen. Maak een tweede rij waarin geen dubbels voorkomen.
+
+14.	Gegeven is een gesorteerde rij van 50 getallen. Maak een tweede (eveneens gesorteerde) rij waarin geen dubbels voorkomen.
+
+15.	Een rij van maximaal 100 gehele getallen met afsluitwaarde 32767 wordt ingelezen. Druk het maximum van de rij af, het aantal keer dat het voorkwam en de plaats waar het de eerste keer voorkwam.
+
+16.	Een rij van maximaal 100 gehele getallen met afsluitwaarde 32767 wordt ingelezen. Druk het minimum van de rij af, het aantal keer dat het voorkwam en de plaats waar het de laatste keer voorkwam.
+
+17.	Een rij gehele getallen met afsluitwaarde 32767 wordt ingelezen. Het aantal ingelezen getallen is onbeperkt, maar er zullen maximaal 100 verschillende getallen worden ingelezen. Druk af hoeveel verschillende getallen ingelezen werden. 
+
+18.	Druk alle priemgetallen kleiner dan 100.000 af. Maak gebruik van het algoritme van Eratosthenes.
 
 # Vraag Array
 Maak een array die 6 strings kan bevatten. Ieder element van de array bevat een vraag (naar keuze te verzinnen) als string waar de gebruiker met een getal op moet antwoorden.

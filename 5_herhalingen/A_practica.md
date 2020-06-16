@@ -7,11 +7,41 @@ De oefening zijn, in de mate van het mogelijke, gerangschikt op relatieve moeili
 {% endhint %}
 
 # De opwarmers
-Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](../assets/docs/oefenvragen2010.pdf) 
+1. Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](../assets/docs/oefenvragen2010.pdf) 
 
 {% hint style='tip' %}
 Dit document staat ook in de lijst onderaan bij de [nuttige extra's](../_intro/nuttigeextras.md).
 {% endhint %}
+
+2.	Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken de som en druk die af.
+3.	Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Druk het aantal strikt positieve en het aantal strikt negatieve getallen af.
+4.	Lees een willekeurig aantal getallen in met als afsluitwaarde -32768. Bepaal het aantal strikt positieve getallen, het aantal strikt negatieve getallen en het aantal getallen gelijk aan nul. Druk deze aantallen af.
+5.	Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken het produkt en druk dit af.
+6.	 Lees een getal in en druk de som van zijn cijfers af.
+7.	Lees een willekeurig aantal positieve getallen in en bereken het (afgekapt) gemiddelde ervan. De afsluitwaarde is een willekeurig negatief getal.
+8.	Lees een willekeurig aantal getallen in met afsluitwaarde -32768. Druk het kleinste getal af en het aantal keer dat het voorkomt.
+9.	Een reeks in stijgende volgorde gesorteerde getallen wordt ingelezen. De invoer moet stoppen indien er een fout in de sorteervolgorde voorkomt.
+10.	Een reeks getallen wordt ingelezen. De invoer moet stoppen indien er twee maal achter elkaar een nul wordt ingelezen. Het gemiddelde van de reeks getallen wordt afgedrukt. De laatste twee nullen tellen uiteraard niet mee voor de bepaling van het gemiddelde.
+11.	Bepaal de som van de kwadraten van de even natuurlijke getallen tussen 50 en 100 (inbegrepen). De som wordt afgedrukt.
+12.	Een reeks van 100 getallen wordt ingelezen. Van de positieve getallen moet er afgedrukt worden hoeveel deelbaar waren door 2, hoeveel deelbaar waren door 3 en hoeveel door 6.
+13.	Druk de som af van de eerste 30 termen van de volgende reeksen:
+     * 6 + 12 + 18 + 24 + 30 + ...
+     * 4 + 12 + 20 + 28 + 36 + ...
+     * 1 + 2 + 4 + 8 + 16 + ...
+     * 1 + 1/2 + 1/4 + 1/8 + 1/16 + ...
+     * 1 + 1/3 + 1/5 + 1/7 + 1/9 + ...
+     * 1/2 + 1/3 + 1/5 + 1/9 + 1/17 + ...
+14.	Druk de som af van de eerste 20 termen van de volgende reeksen:
+     * 4 + 8 + 12 + 16 + 20 + ...
+     * 4 + 10 + 16 + 22 + 28 + ...
+     * 1 + 3 + 9 + 27 + 81 + ...
+     * 1/2 + 1/4 + 1/6 + 1/8 + 1/10 + ...
+     * 1 + 1/2 + 1/4 + 1/8 + 1/16 + ...
+     * 1 + 1/3 + 1/7 + 1/15 + 1/31 + ...
+
+
+
+
 
 # De oefeningen
 
