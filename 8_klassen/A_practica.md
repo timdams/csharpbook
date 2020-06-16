@@ -211,3 +211,11 @@ Voorzie extra functionaliteit naar keuze.
 ## [Pro] OO Textbased game
 
 Bij de all-in-one projecten van dit semester vind je als eerst een tekstgebaseerde game ([hier](../A_DEEL2_AllInOne/2_OOTextGame.md)). Volg deze uitleg, maak het spel en voeg je eigen zotte ideeën toe.
+
+# Persoon
+
+Ontwerp en implementeer een klasse Persoon met 2 velden voornaam en achternaam. Voorzie hiervoor automatische properties. Voeg bovendien een property GeboorteDatum toe. De geboortedatum moet tussen 1/1/1990 en vandaag liggen. Indien dit niet de situatie is, wordt de huidige datum gebruikt. Definieer vervolgens een methode Leeftijd, die op grond van de geboortedatum en de systeemdatum de leeftijd van de persoon levert. Voorzie de nodige testcode.
+
+# Dobbelstenen	
+
+Ontwerp en implementeer een klasse PaarDobbelstenen, bestaande uit 2 dobbelstenen (elk met 6 oppervlakken). Creëer een klasse met een Main methode, waarin 1000 keer met een paar dobbelstenen wordt gegooid. Bereken hoeveel keer een dubbel zes voorkomt.
