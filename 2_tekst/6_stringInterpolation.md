@@ -85,3 +85,7 @@ Wens je meer informatie over ``string.Format``, kijk dan [hier](https://codevan1
 {% endhint %}
 
 
+# Kennisclip
+![](../assets/infoclip.png)
+
+* [String interpolation](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a3d572bc-f72d-4622-9875-abe300b9ecf7)
