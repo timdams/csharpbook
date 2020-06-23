@@ -22,6 +22,7 @@ Console.WriteLine("Hoi, ik ben het!");
 
 Zodat je dus volgende code krijgt:
 
+{caption: "My Amazing Algorithm"}
 ```csharp
 using System;
 
