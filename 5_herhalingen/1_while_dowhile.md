@@ -54,7 +54,7 @@ do{
 } while (booleaanse expressie);
 ```
 
-{% hint style='warning' %}
+{% hint style='danger' %}
 Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
 Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop.
 {% endhint %}
@@ -109,7 +109,7 @@ Probeer er altijd zeker van te zijn dat de variabele(n) die je gebruikt in je te
 {% endhint %}
 
 ## Scope van variabelen in loops
-Let er op dat de [scope](../4_beslissingen/3_scope.md) van variabelen bij loops zeer belangrijk is. Indien je een variabelen binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende cyclus van de loop start.
+Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je een variabele binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende cyclus van de loop start.
 Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen (1+2+3+...+10) zou maken:
 
 ```csharp
