@@ -22,7 +22,6 @@ Console.WriteLine("Hoi, ik ben het!");
 
 Zodat je dus volgende code krijgt:
 
-{caption: "My Amazing Algorithm"}
 ```csharp
 using System;
 
@@ -38,6 +37,9 @@ namespace Demo1
     }
 }
 ```
+
+{type: video, poster: "http://img.youtube.com/vi/VOCYL-FNbr0/mqdefault.jpg"}
+![Introducing Markua](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=645c1bae-c84d-47c4-89d6-abe3009410c3)
 
 Compileer deze code en voer ze uit: **druk hiervoor op het groene driehoekje. Of via het menu Debug en dan Start Debugging.
 
