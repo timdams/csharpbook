@@ -9,6 +9,8 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 ### Hoofdstuk 0 - Intro
 * [De VS omgeving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7f6e9867-6b45-4c98-9255-aacd00880111)
 * [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
+* [WriteLine, Write en ReadLine](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=645c1bae-c84d-47c4-89d6-abe3009410c3)
+* [Werken met kleuren in console](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a0446be7-b8f2-4ce7-ba76-abe30094107e)
 * [Bespreking oplossingen hoofdstuk 0](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1a353c40-e317-4b1d-b81b-a966007b8ed2)
 
 ### Hoofdstuk 1 - Basics

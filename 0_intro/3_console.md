@@ -248,3 +248,9 @@ leeftijd = Console.ReadLine();
 Console.WriteLine("Geef adres");
 adres = Console.ReadLine();
 ```
+
+
+# Kennisclip
+![](../assets/infoclip.png)
+
+* [WriteLine, Write en ReadLine](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=645c1bae-c84d-47c4-89d6-abe3009410c3)

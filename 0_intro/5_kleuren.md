@@ -66,3 +66,9 @@ Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
 
 
 ![Bron afbeelding : https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/](../assets/1_csharpbasics/kleurenconsole.jpg)
+
+
+# Kennisclip
+![](../assets/infoclip.png)
+
+* [Werken met kleuren in console](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a0446be7-b8f2-4ce7-ba76-abe30094107e)
