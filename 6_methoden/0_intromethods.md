@@ -1,8 +1,10 @@
 # Methoden
 
+## Hoe werken methoden
+
 Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoudbaarheid van de code wordt verhoogd.
 
-## Wat is een methode
+### Wat is een methode
 
 Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerdere statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet met extra parameters, en kan ook een resultaat terug geven.
 
@@ -26,7 +28,7 @@ Indien er wel parameters nodig zijn dan geef je die mee als volgt, het is belang
 MethodeNaam(parameter1, parameter2, …);
 ```
 
-## Returntypes
+### Returntypes
 
 Het returntype van een methode geeft aan wat het type is van de data die de methode als resultaat teruggeeft bij het beëindigen ervan. Eender welk type dat je kent kan hiervoor gebruikt worden, zoals int, string, char, float, etc. Maar ook klassen (zie later) zoals Student, Canvas, etc.
 
@@ -78,7 +80,7 @@ partial class Program
 }
 ```
 
-### Void returntype
+#### Void returntype
 
 Indien je methode niets teruggeeft wanneer de methode eindigt (bijvoorbeeld indien de methode enkel tekst op het scherm toont) dan dien je dit ook aan te geven. Hiervoor gebruik je het keyword void. Een voorbeeld:
 
@@ -90,7 +92,7 @@ static void ShowProgramVersion()
 }
 ```
 
-## Parameters doorgeven
+### Parameters doorgeven
 
 Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
 
@@ -159,7 +161,7 @@ Faculteit van 10 is 3628800
 
 Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven, wat de kans op fouten verlaagt.
 
-### Volgorde van parameters
+#### Volgorde van parameters
 
 De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter toegekend, en zo voort. 
 
@@ -208,7 +210,7 @@ Deze is **FOUT** en zal niet compileren:
 ToonInfo(37, "Tim");
 ```
 
-## Commentaar toevoegen
+#### Commentaar toevoegen
 
 Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen als volgt (dit werkt enkel bij methoden): ``///``
 
@@ -241,7 +243,7 @@ Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische 
 
 
 
-# Een Nuttige methode
+### Een Nuttige methode
 
 Vaak moet je code schrijven van volgende vorm:
 
@@ -269,7 +271,7 @@ int leeftijd= VraagInt("Geef leeftijd");
 ```
 
 
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 * [Introductie methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=500f8c7e-874c-4e01-a2e5-aaf600dcda06)
 * [Sneller methoden schrijven m.b.v. IntelliSense](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b93447e7-88a1-49ec-992f-a9af00b22dde)

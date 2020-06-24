@@ -1,4 +1,4 @@
-# Bestaande methoden en bibliotheken
+## Bestaande methoden en bibliotheken
 
 Je herkent een methode aan de ronde haakjes na de methodenaam. Je hebt dus reeds een aantal methoden gebruikt zonder dat je het wist, denk maar aan ``WriteLine(), ReadLine() en Parse()``.
 
@@ -19,7 +19,7 @@ Voor ``WriteLine`` geeft dit:
 In de overload list zien we de verschillende manieren waarop je de methode in kwestie kan aanroepen. Je kan op iedere methode klikken voor meer informatie en een codevoorbeeld.
 
 
-## Intellisense
+### Intellisense
 "Hoe kan je deze methode nu gebruiken?" is een veelgestelde vraag. Zeker wanneer je de basis van C# onder knie hebt en je stilletjes aan met bestaande .NET bibliotheken wil gaan werken. Wat volgt is een essentieel onderdeel van VS dat veel gevloek en tandengeknars zal voorkomen.
 
 De help-files van VS zijn zeer uitgebreid en dankzij IntelliSense krijg je ook aardig wat informatie tijdens het typen van de code zelf.

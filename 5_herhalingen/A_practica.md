@@ -1,3 +1,5 @@
+## Oefeningen
+
 {% hint style='tip' %}
 Vanaf nu zul je véél meer oefeningen voorgeschoteld krijgen dan je kan afwerken in 1 labo tijd (I dare you ;) ). Selecteer zelf de oefeningen die je wenst te doen en sla die over waarvan je overtuigd bent ze al te kunnen. 
 {% endhint %}
@@ -6,7 +8,7 @@ Vanaf nu zul je véél meer oefeningen voorgeschoteld krijgen dan je kan afwerke
 De oefening zijn, in de mate van het mogelijke, gerangschikt op relatieve moeilijkheidsgraad
 {% endhint %}
 
-# De opwarmers
+### De opwarmers
 1. Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](../assets/docs/oefenvragen2010.pdf) 
 
 {% hint style='tip' %}
@@ -43,16 +45,16 @@ Dit document staat ook in de lijst onderaan bij de [nuttige extra's](../_intro/n
 
 
 
-# De oefeningen
+### De oefeningen
 
 {% hint style='tip' %}
 Indien niet expliciet vermeld mag je kiezen met wat voor loop (``for``, ``while``, ``do while``) je het probleem zal oplossen.
 {% endhint %}
 >
-## Tafels van vermenigvuldigen
+#### Tafels van vermenigvuldigen
 Gebruik de kracht van loops om pijlsnel alle tafels van 1 tot en met 10 van vermenigvuldigen op het scherm te tonen (dus van 1x1 tot 10x10 en alles daartussen).
 
-## RNA Transscriptie
+#### RNA Transscriptie
 
 DNA heeft steeds een RNA-complement (DNA is het gevolg van RNA transscriptie). Schrijf een programma dat een ingevoerde DNA-string omzet naar een RNA-string. De gebruiker voert steeds 1 DNA-nucleotide in per keer en duwt op enter, de RNA string wordt steeds groter.
 De omzetting is als volgt:
@@ -65,7 +67,7 @@ Als de gebruiker dus ``ACGTGGTCTTAA`` heeft ingevoerd moet het resultaat: ``UGCA
 
 Ga er van uit dat de gebruiker letter per letter invoert (telkens dus enter na een letter) en je de omgezette string doet groeien (m.b.v. ``+=``).
 
-## [PRO] Armstrong nummer
+#### [PRO] Armstrong nummer
 Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
 
 * 9 is een Armstrong nummer, want 9 = 9^1 = 9
@@ -96,7 +98,7 @@ int lengte= myInputGetal.Length;  //veronderstellend dat myInputGetal van het ty
 Je kan dan nu met ``Math.Pow(10,lengte-1)`` berekenen vanaf welke exponent van 10 we moeten beginnen werken.
 {% endhint %}
 
-## Euler project
+#### Euler project
 Maak volgende opdracht van [projecteuler.net](http://projecteuler.net):
 >Indien we alle natuurlijke getallen van 0 tot en met 10 oplijsten die een meervoud van 3 of 5 zijn, dan krijgen we de getallen 3,5,6,9 en 10. De som van deze 4 getallen is 33.
 Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft van 0 tot 1000 (dit zou 234168 moeten geven).
@@ -105,7 +107,7 @@ Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft van 0 
 **Tip: module is je grote held hier. Een getal is een veelvoud van x indien ``getal%x`` 0 als resultaat geeft.**
 {% endhint %}
 
-## [PRO] For doordenker 
+#### [PRO] For doordenker 
 Schrijf een programma dat de volgende output geeft, gegeven dat de gebruiker een maximum waarde invoert, dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel for-loops!
 ```
 *
@@ -117,7 +119,7 @@ Schrijf een programma dat de volgende output geeft, gegeven dat de gebruiker een
 *
 ```
 
-## [PRO] For doordenker extra
+#### [PRO] For doordenker extra
 Schrijf een programma dat de volgende output geeft  (zie ook WhileDoordenker van vorige labo), gegeven dat de gebruiker een maximum waarde invoert die opgeeft uit hoeveel lijnen de boom bestaat. Maak enkel gebruik van for-loops.
 ```
      *

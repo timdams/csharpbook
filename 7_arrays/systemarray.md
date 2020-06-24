@@ -1,7 +1,9 @@
 
+## System.Array
+
 Alle C# arrays erven over van de ``System.Array`` klasse (klasse en overerving zien we later dit semester), hierdoor kan je zaken zoals ``Length`` gebruiken op je array. De ``System.Array`` klasse heeft echter ook nog een hoop andere nuttige methoden zoals de ``BinarySearch()``, ``Sort()`` en ``Reverse()`` methoden. Het gebruik hiervan is steeds dezelfde zoals volgende voorbeelden tonen:
 
-# Sort: Arrays sorteren
+### Sort: Arrays sorteren
 Om arrays te sorteren roep je de ``Sort()``-methode op als volgt, als parameter geef je de array mee die gesorteerd moet worden.
 
 Volgende voorbeeld toont hier het gebruik van:
@@ -19,21 +21,21 @@ for (int i = 0; i < myColors.Length; i++)
 ```
 Wanneer je de Sort-methode toepast op een array van strings dan zullen de elementen alfabetisch gerangschikt worden.
 
-# Reverse: Arrays omkeren
+### Reverse: Arrays omkeren
 Met de ``Array.Reverse()``-methode kunnen we dan weer de elementen van de array omkeren (dus het laatste element vooraan zetten en zo verder:
 
 ```csharp
 Array.Reverse(myColors);
 ```
 
-## Clear: Arrays leegmaken
+### Clear: Arrays leegmaken
 Een array volledig leegmaken (alle elementen op ‘null’ zetten) doe je met de ``Array.Clear``-methode, als volgt:
 
 ```csharp
 Array.Clear(myColors);
 ```
 
-# BinarySeach: Zoeken in arrays
+### BinarySeach: Zoeken in arrays
 
 De ``BinarySearch``-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. 
 
@@ -65,7 +67,7 @@ else
     Console.WriteLine("Not found");
 ```
 
-## Copy : Array kopieren
+### Copy : Array kopieren
 
 In het vorige hoofdstuk vertelden we reeds over het venijn van arrays kopiëren, daar deze 'by reference' worden bewaard. Lijn 2 in deze code creëert dus enkel een alias naar dezelfde array en geen kopie:
 

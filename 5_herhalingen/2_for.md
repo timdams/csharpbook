@@ -1,4 +1,4 @@
-# For
+## For-loops
 
 Een veelvoorkomende manier van while-loops gebruiken is waarbij je een bepaalde teller bijhoudt die je telkens met een bepaalde waarde verhoogt. Wanneer de teller een bepaalde waarde bereikt moet de loop afgesloten worden.
 
@@ -15,7 +15,7 @@ while(k<11)
 
 **Met een for-loop kunnen we deze veel voorkomende code-constructie verkort schrijven.**
 
-## For syntax
+### For syntax
 
 De syntax van een ``for``-loop is de volgende:
 ```csharp
@@ -45,10 +45,10 @@ Lees zeker [deze for tutorial na](https://www.techotopia.com/index.php/C_Sharp_L
 {% endhint %}
 
 
-## for-tab-tab
+### for-tab-tab
 Als je in Visual Studio ``for`` typt en dan tweemaal op [tab] duwt krijg je  kant en klare for-loop code.
 
-## Break
+### Break
 Je kan loops (alle types) altijd vroegtijdig stopzetten door het ``break`` keyword. Het gebruik hiervan ligt soms in de schemerzone van misbruik. Probeer dus eerst je probleem anders op te lossen voor je ``break`` begint te gebruiken.
 
 Om iemand op StackOverflow te quoten: 
@@ -59,7 +59,7 @@ Om iemand op StackOverflow te quoten:
 
 Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break).
 
-# Kennisclip
+## Kennisclip
 
 ![](../assets/infoclip.png)
 

@@ -1,3 +1,5 @@
+## Methoden in de praktijk
+
 Volgt nu een voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. 
 
 Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na *n* jaren met de volgende formule:
@@ -85,7 +87,7 @@ static void Main(string[] args)
 ```
 Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop: ``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}``
 
-## Rente berekenen verbeterd, versie 2
+### Rente berekenen verbeterd, versie 2
 
 Je code opdelen in methoden is een zeer goede eerste stap naar modulair programmeren: kleine stukken code die ieder een eigen verantwoordelijkheid hebben. Om perfect modulair te zijn moet een methode zo praktisch en algemeen mogelijk blijven, zodat de methode herbruikbaar is in andere projecten.
 

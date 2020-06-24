@@ -1,6 +1,8 @@
-# Methoden met arrays als parameter
+## Nog oefeningen
 
-## Parkeergarage
+### Methoden met arrays als parameter
+
+#### Parkeergarage
 
 Een parkeergarage vraagt sowieso €2.00 om tot maximum 3uur te parkeren. Per extra uur NA die 3uur wordt telkens €0.50 aangerekend (dus 4uur parkeren kost €2.50. Er wordt maximum €10 aangerekend per dag. Veronderstel dat er nooit langer dan 1 dag (24u) kan geparkeerd worden.
 
@@ -15,7 +17,7 @@ Resultaat:
 
 ![](../assets/5_arrays/practarray5.png)
 
-## Array Viewer
+#### Array Viewer
 
 Maak een programma dat een methode VisualiseerArray implementeert. De methode zal een array (type int) als parameter hebben en niets teruggeven (void). Echter, de methode zal met behulp van Write() de array, van eender welke grootte, op het scherm tonen. Tussen ieder element van dezelfde rij dient een tab (‘\t’) gezet te worden. Je dient in de methode gebruik te maken van een for-loop.
 Voorbeeld van main:
@@ -31,7 +33,7 @@ Geeft volgende output:
 
 ![](../assets/5_arrays/practarray6.png)
 
-## Caesar-encryptie
+#### Caesar-encryptie
 
 Maak 2 methoden ``Encrypt`` en ``Decrypt`` die als parameters telkens een chararray krijgen en een integer. Bedoeling is dat de Encrypt-methode de array van het type string versleuteld gegeven de sleutel x volgens het Caesar cipher (zie hieronder). Als resultaat komt er uit de methode de geëncrypteerde array.
 
@@ -66,7 +68,7 @@ dan krijgen we:
 WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
 ```
 
-## Ondernemingsnummer
+#### Ondernemingsnummer
 
 [Originele bron voor dit idee](https://www.c-sharp.be/c-sharp/functies/)
 
@@ -74,9 +76,9 @@ Ontwerp een methode waarmee je een Belgisch ondernemingsnummer kan controleren. 
 Bij een geldig ondernemingsnummer verschijnt de tekst "Geldig ondernemingsnummer.", bij een ongeldig ondernemingsnummer "Ongeldig ondernemingsnummer.".
 De methode aanvaardt een string waarin je het ondernemingsnummer staat.
 
-# Meer-dimensionale arrays
+### Meer-dimensionale arrays
 
-## Determinant
+#### Determinant
 Schrijf een programma dat een methode BerekenDeterminant heeft. Deze methode heeft één paramater als input: een 2 bij 2 array van integers. Als resultaat geeft de methode de determinant als integer terug. Zoek zelf op hoe je de determinant van een matrix kunt berekenen.
 
 Volgende voorbeeld-main dient te werken, 
@@ -96,7 +98,7 @@ Determinant van matrix is -2
 Extra:
 Breid uit zodat de BerekenDeterminant-methode ook werkt voor 3-bij-3 matrices. De methodeaanroep blijft dezelfde, enkel de interne code van de methode zal nu rekening moeten houden met de grootte van de matrix .
 
-## 2D Array Viewer
+#### 2D Array Viewer
 Breid het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de GetLength() methode van een array).
 
 Voorbeeld van main:
@@ -111,10 +113,10 @@ Output:
 6   9  12
 ```
 
-## MatrixMultiplier
+#### MatrixMultiplier
 Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en als resultaat een nieuwe matrix teruggeeft die het product van beide matrices bevat.
 
-## Voetbalcoach
+#### Voetbalcoach
 Maak een console-applicatie voor een assistent voetbaltrainer (of een sport naar keuze).
 
 De voetbalcoach wil na de match iedere knappe en domme actie van een speler weten. Op die manier weet hij aan het einde van de match wie er de meeste goede en slechte acties doet. De spelers hebben rugnummers 1 tot en met 12. (het gaat om een voetbal variant waar m'n geen elftal maar een twaalftal gebruikt :p)
@@ -150,9 +152,9 @@ Rugnummer   Goede   Domme   Verschil
 Het programma toont ook welke speler(s) het meest performant waren, namelijk zij met het grootste positieve verschil tussen goede en domme acties, alsook de minst performante en de meeste “gemiddelde” speler (i.e. verschil == 0 )
 
 
-# Pro
+### Pro
 
-## Robot Simulator
+#### Robot Simulator
 Volgende opgave komt uit [Exercism.io](https://exercism.io.io)
 
 "
@@ -179,14 +181,14 @@ Say a robot starts at {7, 3} facing north. Then running this stream of instructi
 
 Teken het gevolgde pad in de console (gebruik ``Console.SetCursorPosition()``).
 
-## Galgje
+#### Galgje
 Maak een spel, vergelijkbaar met galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
 
 Voorbeeld output:
 
 ![](../assets/5_arrays/practarray9.png) 
 
-## Grote Som
+#### Grote Som
 Maak een methode Som() die eender welke hoeveelheid parameters van het type ``int`` aanvaardt en vervolgens de som van al deze parameters teruggeeft (als int).
 
 Toon in je main aan dat de methode werkt door onder andere 1, 3, 5 en 10 als gehele getalen mee te geven.

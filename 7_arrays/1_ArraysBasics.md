@@ -1,7 +1,9 @@
+# Arrays
+
+## Arrays: de weg naar (big)data
 {% hint style='tip' %}
 Grote delen van dit hoofdstuk zijn vertaald uit het handboek C# 4.0 Essentials.
 {% endhint %}
-
 
 Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voordeel van arrays is dat je een enkele variabele kunt hebben die een grote groep waarden voorstelt van eenzelfde type. Hierdoor wordt je code leesbaarder en eenvoudiger in onderhoud. Arrays zijn een zeer krachtig hulpmiddel, maar er zitten wel enkele venijnige addertjes onder het gras.
 
@@ -9,7 +11,9 @@ Een array is niet meer dan een verzameling waarden van hetzelfde type (bijvoorbe
 
 Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kan veranderen. Later zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben (zie [hier](../17_gencols/8_Collections.md)).
 
-## Nut van arrays
+De nadelen zullen we echter met plezier erbij nemen wanneer we programma's beginnen schrijven die werken met véél data van dezelfde soort. Eenvoudigweg kan je stellen dat van zodra je 3 of meer variabelen heeft die dezelfde soort data bevatten, arrays altijd de oplossing zullen zijn.
+
+### Nut van arrays
 
 Stel dat je de dagelijkse neerslag wenst te bewaren. Dit kan je zonder arrays eenvoudig:
 
@@ -25,12 +29,12 @@ int dag7= 23;
 
 Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Van zodra je een bepaalde soort data hebt die je veelvuldig wenst te bewaren dan zijn arrays de oplossing.
 
-# Array Basics
+## Array Basics
 
-## Arrays declareren
+### Arrays declareren
 Een array creëren (declareren) kan op verschillende manieren. Hoewel manier 1 de meest gebruikelijke is, zal deze voor de beginnende programmeur nog wat abstract lijken vanwege het gebruik van het ``new`` keyword. Manier 2 is de eenvoudigste en snelste manier, maar deze is wel minder flexibel.
 
-### Manier 1
+#### Manier 1
 De eenvoudigste variant is deze waarbij je een array variabele aanmaakt, maar deze nog niet initialiseert (i.e. je maakt enkel een identifier in aan). De syntax is als volgt:
 
 ```csharp
@@ -56,7 +60,7 @@ myColors = new string[] {"red", "green", "yellow", "orange", "blue"};
 ```
 Je array zal vanaf dit punt een lengte van 5 hebben en kan niet meer groeien.
 
-### Manier 2
+#### Manier 2
 Indien je direct waarden wilt toekennen (initialiseren) tijdens het aanmaken van de array zelf dan mag dit ook als volgt:
 
 ```csharp
@@ -64,7 +68,7 @@ string[] myColors = {"red", "green", "yellow", "orange", "blue"};
 ```
 Ook hier zal dus vanaf dit punt je array een vaste lengte van 5 elementen hebben. Merk op dat deze manier dus enkel werkt indien je reeds weet welke waarden in de array moeten. In manier 1 kunnen we perfect een array aanmaken en pas veel later in programma ook effectief waarden toekennen (bijvoorbeeld door ze stuk per stuk door een gebruiker te laten invoeren).
 
-### Manier 3
+#### Manier 3
 Nog een andere manier om arrays aan te maken is de volgende, waarbij je aangeeft hoe groot de array moet zijn, zonder reeds effectief waarden toe te kennen:
 
 ```csharp
@@ -72,7 +76,7 @@ string[] myColors;
 myColors = new string[5];
 ```
 
-### Samengevat
+#### Samengevat
 
 De 3 manieren om arrays te declareren zijn dus:
 
@@ -89,7 +93,7 @@ myColors = new string[5];
 
 
 
-## Elementen van een array aanpassen en uitlezen
+### Elementen van een array aanpassen en uitlezen
 Van zodra er waarden in een array staan of moeten bijgeplaatst worden dan kan je deze benaderen met de zogenaamde *array accessor* notatie Deze notatie is heel eenvoudigweg de volgende:
 
 ```csharp
@@ -101,14 +105,14 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal *i*
 
 ![](../assets/5_arrays/arrays1.png)
 
-### Veelgemaakte fouten: Lengte en indexering van arrays
+#### Veelgemaakte fouten: Lengte en indexering van arrays
 Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmaken van een array aan de hand van de lengte en het indexeren.
 
 De regels zijn duidelijk:
 * Bij het maken van een array is de lengte van een array gelijk aan het aantal elementen dat er in aanwezig is. Dus een array met 5 elementen heeft als lengte 5.
 * Bij het schrijven en lezen van individuele elementen uit de array (zie hierna) gebruiken we een indexering die start bij 0. Bijgevolg is de index **4** van het laatste elemente in een array met **lengte 5**.
 
-## Schrijven
+### Schrijven
 Ook schrijven van waarden naar de array gebruikt dezelfde notatie. Enkel moet je dus deze keer de array accessor-notatie links van de toekenningsoperator plaatsen. Stel dat we bijvoorbeeld de waarde van het eerste element uit de myColors array willen veranderen van red naar indigo, dan gebruiken we volgende notatie:
 
 ```csharp
@@ -126,7 +130,7 @@ myColors[2] = "yellow";
 myColors[3] = "orange";
 myColors[4] = "blue";
 ```
-## Uitlezen
+### Uitlezen
 Stel dat we een array aanmaken (eerste lijn) dan kunnen we dus bijvoorbeeld het getal ``90`` op het scherm tonen als volgt:
 
 ```csharp
@@ -180,7 +184,7 @@ for(int teller = 0; teller < 4; teller++)
 }
 ```
 
-## De lengte van de array te weten komen
+### De lengte van de array te weten komen
 Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De ``Length`` eigenschap van iedere array geeft dit weer. Volgend voorbeeld toen dit:
 ```csharp
 string[] myColors = {"red", "green", "yellow", "orange", "blue"};
@@ -201,7 +205,7 @@ for (int i = 0; i < getallen.Length; i++)
 }
 ```
 
-# Volledig voorbeeldprogramma met arrays
+### Volledig voorbeeldprogramma met arrays
 Met al de voorgaande informatie is het nu mogelijk om heel eenvoudig complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-element om een bepaalde operatie over de hele array toe te passen.
 
 Het volgende programma zal een array van integers aanmaken die alle gehele getallen van 0 tot 99 bevat. Vervolgens zal ieder getal met 3 vermenigvuldigd worden. Finaal tonen we tonen we enkel die getallen die een veelvoud van 4 zijn na de bewerking.

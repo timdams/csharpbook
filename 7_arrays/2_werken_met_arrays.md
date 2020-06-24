@@ -1,4 +1,4 @@
-# Nuttige array methoden
+## Nuttige array methoden
 
 Net zoals we hebben gezien dat de Math-klasse een heleboel nuttige methoden in zich heeft, zo heeft ook iedere array een aantal methoden waar handig gebruik van gemaakt kan worden.
 

@@ -1,3 +1,5 @@
+## Algoritmes en arrays
+
 {% hint style='warning' %}
 Het is zéér belangrijk dat je vlot de algoritmen kan schrijven die in dit hoofdstuk aan bod komen, zoals:
 
@@ -10,7 +12,7 @@ Het is zéér belangrijk dat je vlot de algoritmen kan schrijven die in dit hoof
 Dit soort algoritmes worden erg vaak bij solicitaties voor een programmeer-functie gevraagd om te maken.
 {% endhint %}
 
-# Manueel zoeken in arrays
+#### Manueel zoeken in arrays
 
 Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgend programmatje gaat zoeken of het getal 12 aanwezig is in de array. Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
@@ -34,7 +36,7 @@ for (int i = 0; i < getallen.Length; i++)
 
 Voorgaande stukje code is de meest naïeve oplossing. Bedenk echter wat er gebeurt indien het getal dat we zoeken 2 of meerdere keren in de array staat. Index zal dan de positie bevatten van de laatst gevonden 12 in de array.
 
-### Manueel zoeken met for en while
+#### Manueel zoeken met for en while
 
 We tonen nu twee voorbeelden van hoe je kan zoeken in een array wanneer we bijvoorbeeld 2 arrays hebben die 'synchroon' zijn. Daarmee bedoel ik: de eerste array bevat producten, de tweede array bevat de prijs van ieder product. De prijs van de producten staat steeds op dezelfde index in de andere array:
 

@@ -1,8 +1,10 @@
+## Oefeningen
+
 {% hint style='tip' %}
 Een aantal oefeningen is geïnspireerd op oefeningen van [Exercism.io](https://exercism.io/tracks/csharp/exercises).
 {% endhint %}
 
-# Opwarmers
+### Opwarmers
 
 1.	Er worden 20 getallen ingelezen. De getallen worden in omgekeerde volgorde afgedrukt.
 
@@ -40,7 +42,7 @@ Een aantal oefeningen is geïnspireerd op oefeningen van [Exercism.io](https://e
 
 18.	Druk alle priemgetallen kleiner dan 100.000 af. Maak gebruik van het algoritme van Eratosthenes.
 
-# Vraag Array
+### Vraag Array
 Maak een array die 6 strings kan bevatten. Ieder element van de array bevat een vraag (naar keuze te verzinnen) als string waar de gebruiker met een getal op moet antwoorden.
 Maak een array aan die tot 6 ints kan bevatten. Lees 1 voor 1 de vraag uit de string-array uit en toon deze op het scherm. Lees vervolgens het antwoord uit dat de gebruiker intypt en bewaar dit als int in de 2e array.
 
@@ -48,7 +50,7 @@ Na de 6 vragen toon je vervolgens de vragen opnieuw met achter iedere vraag het 
 
 ![](../assets/5_arrays/arvraag.png)
 
-# Array Zoeker
+### Array Zoeker
 
 Maak een programma dat eerst weer aan de gebruiker om 10 waarden vraagt die in een array worden gezet.
 
@@ -62,7 +64,7 @@ Indien de te zoeken waarde meer dan 1 keer voorkomt, wordt enkel de eerst gevond
 
 ![](../assets/5_arrays/practarray3.png)
 
-# LeveringsBedrijf
+### LeveringsBedrijf
 Maak een programma voor een koeriersbedrijf.  Maak een array die 10 postcodes bevat (zelf te kiezen) van gemeenten waar het bedrijf naar levert. Maak een tweede array die de prijs bevat per kg van iedere respectievelijke gemeente.  Het eerste element  van deze array bevat dus de prijs/kg om naar de gemeente die als eerste in de array met postcodes staat.
 
 Vraag aan de gebruiker een postcode en het gewicht van het pakket. Vervolgens wordt de prijs opgezocht voor die gemeente en wordt deze berekend gegeven het ingegeven gewicht.
@@ -77,7 +79,7 @@ Naar welke postcode wenst u dit pakket te versturen?
 Dit zal 9630 euro kosten.
 ```
 
-# Bob
+### Bob
 "Bob is a lackadaisical teenager. In conversation, his responses are very limited.
 
 Bob answers 'Sure.' if you ask him a question.
@@ -98,7 +100,7 @@ Gebruik een array om de antwoorden in te bewaren.
 
 PRO: kan je met een array eerdere vragen van de gebruiker bewaren om zo complexere antwoorden te genereren?
 
-# Hamming distance
+### Hamming distance
 De hamming distance is het aantal tekens dat twee reeksen verschillen indien we ieder element vergelijken op dezelfde plaats in de andere reeks.
 
 Maak een programma dat aan de gebruiker vraagt om twee DNA strings in te voeren (een reeks bestaande uit de letters G, A, C & T). Beide reeksen moeten even lang zijn.
@@ -113,7 +115,7 @@ CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
 ```
 
-# [PRO] Password generator
+### [PRO] Password generator
 Ontwerp een consoletoepassing waarmee je een wachtwoord genereert voor een gebruiker. Het wachtwoord is opgebouwd uit:
 
 de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2de letter is een kleine letter. 
