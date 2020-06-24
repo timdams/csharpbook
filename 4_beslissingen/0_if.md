@@ -173,19 +173,20 @@ Uitvoer van dit programma zal zijn:
 Met ``if``/``else`` kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditie niet waar (``false``) is. Volgend voorbeeld geeft een typisch gebruik van een ``if``/``else`` structuur om 2 waarden met elkaar te vergelijken:
 
 ```csharp
-int x = 10;
+int nummer = 10;
+int max=5;
  
-if ( x > 9 )
+if ( nummer > max )
 {
-         Console.WriteLine ("x is greater than 9!");
+         Console.WriteLine ($"Nummer is groter dan {max}!");
 }
 else
 {
-         Console.WriteLine ("x is less than 9!");
+         Console.WriteLine ($"Nummer is NIET groter dan {max}!);
 }
 ```
 
-> Kan je zelf een flowchart van bovenstaande code tekenen? Try it!
+![Flowchart van bovenstaande code](../assets/2_beslissingen/ifelseflow.png)
 
 ### If/else if
 Met een ``if``/``else if`` constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een ``if``. Als men vervolgens een ``else if`` plaats dan zal de code van deze ``else if`` uitgevoerd worden enkel en alleen als de eerste expressie (van de ``if``) niet waar was en de expressie van deze ``else if`` wel waar is.
