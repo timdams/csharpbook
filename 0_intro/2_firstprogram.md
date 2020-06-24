@@ -1,15 +1,15 @@
-# Console-applicaties
+## Console-applicaties
 
 Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in deze cursus enkel console-applicaties leren maken. Grafische frontends (bv WPF) komen in deze cursus niet aan bod.
 
-## ReadLine en WriteLine
+### ReadLine en WriteLine
 
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:
 Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen en met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
 
 
 
-# Je eerste console programma
+### Je eerste console programma
 
 Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het nog niet open is). **Veeg de code die hier reeds staat niet weg!**
 
@@ -46,14 +46,14 @@ Compileer deze code en voer ze uit: **druk hiervoor op het groene driehoekje. Of
 
 
 {% hint style='danger' %}
-## Moet ik niets bewaren?
+**Moet ik niets bewaren?**
 
 Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen bewaard. Trouwens: **Kies nooit voor "save as..."**!!!!
 
 Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.
 {% endhint %}
 
-## Analyse van de code
+#### Analyse van de code
 
 We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tijd niet belangrijk zijn.  Onthoud nu alvast dat: **alle belangrijke code staat tussen de accolades onder de lijn ``static void Main(string[] args)``**!
 
@@ -69,7 +69,7 @@ We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tij
 "Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt: [Hello world in meer dan 600 programmeertalen](http://helloworldcollection.de/)! 
 {% endhint %}
 
-# Say what now?!
+#### Say what now?!
 
 ![](../assets/care.jpg)
 
@@ -80,7 +80,7 @@ Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 * Al je code komt binnen de ``Main`` accolades.
 * Eindig iedere lijn code daar met een puntkomma ( ; ).
 
-## WriteLine: Tekst op het scherm
+### WriteLine: Tekst op het scherm
 
  De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zorgt ervoor dat we tekst op het scherm kunnen tonen.
 

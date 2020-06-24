@@ -1,4 +1,4 @@
-# Kennismaken met C# en Visual Studio
+## Kennismaken met C# en Visual Studio
 
 Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debugger, code editor, compiler, etc) zodat je niet tientallen paketten moet gebruiken om software te schrijven.
 
@@ -6,7 +6,7 @@ Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debugger, 
 
 Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken.
 
-# De compiler en Visual Studio
+### De compiler en Visual Studio
 
 Jouw taak als programmeur in deze cursus is algoritmes in C# taal uitschrijven. We zouden dit in een eenvoudige tekstverwerker kunnen doen, maar dan maken we het onszelf lastig. Net zoals je tekst in notepad kunt schrijven, is het handiger dit in bijvoorbeeld Word te doen: je krijgt een spellingchecker en allerlei handige extra's. Ook voor het schrijven van computer code is het handiger om een zogenaamde IDE te gebruiken, een omgeving die ons zal helpen foutloze C# code te schrijven.
 
@@ -18,7 +18,7 @@ Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken
 In deze cursus zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (gratis, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
 {% endhint %}
 
-# Visual Studio Installeren
+### Visual Studio Installeren
 
 In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com/vs](https://visualstudio.microsoft.com/vs/).
 
@@ -30,13 +30,13 @@ Het is belangrijk bij de installatie dat je minimaal
 
 
 
-# Visual studio opstarten
+### Visual studio opstarten
 
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen.
 
 ![VS Opstarten](../assets/0_intro/vsstart.png)
 
-## Een nieuw project aanmaken
+#### Een nieuw project aanmaken
 
 We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 
@@ -67,7 +67,7 @@ Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je a
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
 Een console applicatie is een programma dat alle uitvoer naar een zogenaamde ‘console’ stuurt, een shell. M.a.w., je kan enkel tekst (Unicode) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
 
-# IDE Layout
+### IDE Layout
 
 Wanneer je VS opstart zal je mogelijk overweldigd worden door de hoeveelheid menu's, knopjes, schermen, etc. Dit is normaal voor een IDE: deze wil zoveel mogelijk mogelijkheden aanbieden aan de gebruiker. Vergelijk dit met Word: afhankelijk van wat je gaat doen gebruikt iedere gebruiker andere zaken van Word. De makers van Word kunnen dus niet bepaalde zaken weglaten, ze moeten net zoveel mogelijk aanbieden.
 
@@ -83,7 +83,7 @@ We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van 
 
 * Het **properties** venster (eigenschappen) is een belangrijk venster. Hier komen alle eigenschappen van het huidige geselecteerde element. Selecteer bijvoorbeeld maar eens Program.cs in de solution explorer en merk op dat er allerlei eigenschappen getoond worden. Onderaan het Properties venster wordt steeds meer informatie getoond over de huidig geselecteerde eigenschap.
 
-## Layout kapot/kwijt/vreemd
+#### Layout kapot/kwijt/vreemd
 
 De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venster en tab verzetten, verankeren en zelfs verplaatsen naar een ander bureaublad. Experimenteer hier gerust mee en besef dat je steeds alles kan herstellen. Het gebeurt namelijk al eens dat je layout een beetje om zeep is:
 
@@ -92,7 +92,7 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 
 ![VS Layout resetten](../assets/0_intro/vsreset.png)
 
-# Je programma starten
+### Je programma starten
 
 De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, programma. Je kan de code compileren en uitvoeren door op de groene driehoek bovenaan te klikken:
 
@@ -104,15 +104,15 @@ Als alles goed gaat krijg je nu "Hello world" te zien en wat extra informatie om
 
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
 
-## Is dit alles?
+### Is dit alles?
 
 Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte? Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in het linkermenu om verder te lezen): [hier](https://tutorials.visualstudio.com/vs-get-started/intro).
 
-# Liever VS Enterprise?
+### Liever VS Enterprise?
 
 Als AP-student heb je ook recht op een Visual Studio Enterprise licentie. Wil je deze gebruiken, download deze dan via [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/) en zorg ervoor dat je een key aanvraagt via de tab 'Software' op [Azure for education](https://azureforeducation.microsoft.com/devtools). Je kan deze sleutel vervolgens via Help->Register in VS invoeren.
 
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 * [De VS omgeving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7f6e9867-6b45-4c98-9255-aacd00880111)
 * [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)

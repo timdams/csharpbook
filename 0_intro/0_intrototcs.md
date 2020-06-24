@@ -1,6 +1,8 @@
-# Introductie tot programmeren met C-Sharp
+# De eerste stappen
 
-## Het algoritme
+## Introductie tot programmeren met C-Sharp
+
+### Het algoritme
 
 De essentie van een computerprogramma is het zogenaamde **algoritme** (het "recept" zeg maar). Dit is de reeks instructies die het programma moet uitvoeren telkens het wordt opgestart.
 Het algoritme van een programma moet je zelf verzinnen. De volgorde waarin de instructies worden uitgevoerd zijn uiteraard zeer belangrijk. Dit is exact hetzelfde als in het echte leven: een algoritme om je fiets op te pompen kan zijn:
@@ -13,7 +15,7 @@ Het algoritme van een programma moet je zelf verzinnen. De volgorde waarin de in
 
 Eender welke andere volgorde van bovenstaande algoritme zal vreemde (en soms fatale) fouten geven.
 
-## C-Sharp
+### C-Sharp
 
 Om een algoritme te schrijven dat onze computer begrijpt dienen we een programmeertaal te gebruiken. Net zoals er ontelbare spreektalen in de wereld zijn, zijn er ook vele programmeertalen. **C#** (spreek uit *'siesjarp'*) is er een van de vele. In tegenstelling tot onze spreektalen moet een computertaal 'exact' zijn en moet het op ondubbelzinnige manier door de computer verstaan worden. C# is een taal die deel uitmaakt van de .NET (spreek uit  *'dotnet'*) omgeving die meer dan 15 jaar geleden door Microsoft werd ontwikkeld (juli 2000).
 
@@ -21,7 +23,7 @@ Om een algoritme te schrijven dat onze computer begrijpt dienen we een programme
 
 De geschiedenis en de hele .NET-wereld vertellen zou een cursus op zich betekenen en gaan we hier niet doen. Het is nuttig om weten dat er een gigantische bron aan informatie over .NET en C# online te vinden is, beginnende met [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/).
 
-# Microsoft .NET
+### Microsoft .NET
 
 Bij de geboorte van .NET in 2000 zat dus ook de taal C#. .NET is een zogenaamd **framework**. Dit framework bestaat uit een grote groep van bibliotheken (**class libraries**) en een *virtual execution system* genaamd de **Common Language Runtime (CLR)**. De CLR zal ervoor zorgen dat C#, of andere .NET talen (F#, VB.NET, etc.), kunnen samenwerken met de vele bibliotheken.
 

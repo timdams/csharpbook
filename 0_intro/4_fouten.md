@@ -1,4 +1,4 @@
-# Fouten oplossen
+## Fouten oplossen
 
 {% hint style='danger' %}
 Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan (dit bespraken we reeds in [een eerder hoofdstuk](0_intrototcs.md)).
@@ -18,7 +18,7 @@ Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderda
 
 
 
-## Fouten vinden
+### Fouten vinden
 
 Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder kan. Gelukkig helpt VS je daarmee op 2 manieren:
 
@@ -27,7 +27,7 @@ Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder
 
 ![Zie je de fout?](../assets/0_intro/error.PNG)
 
-## Fouten vinden
+### Fouten sneller vinden
 
 Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de error-list snel naar al je fouten gaan. Open deze door op het error-icoontje onderaan te klikken:
 
@@ -35,7 +35,7 @@ Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de erro
 
 In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correcte lijn te gaan.
 
-## Fouten oplossen
+### Fouten oplossen
 
 Wanneer je je cursor op een lijn met een fout zet dan zal je soms vooraan een geel error-lampje zien verschijnen:
 
@@ -43,7 +43,7 @@ Wanneer je je cursor op een lijn met een fout zet dan zal je soms vooraan een ge
 
 Je kan hier op klikken en heel vaak krijg je dan ineens een mogelijke oplossing. **Wees steeds kritisch** hierover want VS is niet alomwetend en kan niet altijd raden wat je bedoelt. Neem dus het voorstel niet zomaar over zonder goed na te denken of het dat was wat je bedoelde.
 
-## Meest voorkomende fouten
+### Meest voorkomende fouten
 
 De meest voorkomende fouten in deze eerste weken zullen zijn:
 

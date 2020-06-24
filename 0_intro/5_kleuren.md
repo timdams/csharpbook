@@ -1,4 +1,4 @@
-# Kleuren in console
+## Kleuren in console
 
 Je kan in console-applicaties zelf bepalen in welke kleur nieuwe tekst op het scherm verschijnt. Je kan zowel de kleur van het lettertype instellen (via ``ForegroundColor``) als de achtergrondkleur (``BackgroundColor``).
 
@@ -31,7 +31,7 @@ Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en mee
 {% endhint %}
 
 
-# Kleur resetten
+### Kleur resetten
 
 Soms wil je terug de originele applicatie-kleuren hebben. Je zou manueel dit kunnen instellen, maar wat als de gebruiker slecht ziend is en in z'n besturingssysteem andere kleuren als standaard heeft ingesteld?!
 
@@ -44,7 +44,7 @@ Console.ResetColor();
 Console.WriteLine("Het programma sluit nu af");
 ```
 
-# Mogelijke kleuren 
+### Mogelijke kleuren 
 
 Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
 
@@ -68,7 +68,7 @@ Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
 ![Bron afbeelding : https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/](../assets/1_csharpbasics/kleurenconsole.jpg)
 
 
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 
 * [Werken met kleuren in console](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a0446be7-b8f2-4ce7-ba76-abe30094107e)

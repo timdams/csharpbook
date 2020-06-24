@@ -1,4 +1,4 @@
-# First program verbeteren
+### First program verbeteren
 
 We nemen terug ons eerste programma erbij en gaan hieraan verder werken:
 
@@ -19,7 +19,7 @@ namespace Demo1
 }
 ```
 
-## ReadLine: Input van de gebruiker verwerken
+#### ReadLine: Input van de gebruiker verwerken
 
 Met de console kan je met een handvol methoden reeds een aantal interessante dingen doen.
 
@@ -64,7 +64,7 @@ namespace Demo1
 
 Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont en wacht op invoer. Je kan nu eender wat intypen en van zodra je op enter duwt gaat het programma verder (in dit geval stopt het programma hierna dus).
 
-## Input gebruiker verwerken en gebruiken
+### Input gebruiker verwerken en gebruiken
 
 We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``,  gebruiken en tonen op het scherm. 
 
@@ -120,7 +120,7 @@ tim
 hoe gaat het met je?
 ```
 
-### Aanhalingsteken of niet?
+#### Aanhalingsteken of niet?
 
 Wanneer je de inhoud van een variabele wil gebruiken in een methode zoals  ``WriteLine()`` dan plaats je deze zonder aanhalingsteken!
 Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code ``Console.Write(result);`` vervangt door ``Console.Write("result");``.
@@ -136,7 +136,7 @@ result
 hoe gaat het met je?
 ```
 
-## Write en WriteLine
+### Write en WriteLine
 
 De ``WriteLine``-methode zal steeds een line break (een 'enter') aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
 
@@ -207,7 +207,7 @@ MadSciFab: why do u need an escape sequence for a blank space?
 MakAtak: err.. is that what you call "space"?  
 Bron: [bash.org](http://bash.org/?21854)
 
-## Zinnen aan elkaar plakken
+### Zinnen aan elkaar plakken
 
 We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om variabelen van het type string aan elkaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
 
@@ -224,7 +224,7 @@ Console.WriteLine("Dag "+ result + " hoe gaat het met je?");
 Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 ```
 
-### Meer input vragen
+#### Meer input vragen
 
 Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:
 
@@ -250,7 +250,7 @@ adres = Console.ReadLine();
 ```
 
 
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 
 * [WriteLine, Write en ReadLine](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=645c1bae-c84d-47c4-89d6-abe3009410c3)
