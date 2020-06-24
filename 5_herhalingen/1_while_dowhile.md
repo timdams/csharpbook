@@ -108,9 +108,9 @@ In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 
 
 Vergelijk volgende diagramma van de ``do while``:
 
- ![](../assets/3_loops/dowhile.png)
+![](../assets/3_loops/dowhile.png)
 
- met die hierboven van de ``while``.
+met die hierboven van de ``while``.
 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 

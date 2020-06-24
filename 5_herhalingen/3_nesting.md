@@ -3,13 +3,14 @@
 Wanneer we 1 of meerdere loops in een andere loop plaatsen dan spreken we over **geneste loops**. 
 Geneste loops komen vaak voor, maar zijn wel een ras apart wanneer je deze zaken wilt debuggen en correct schrijven.
 
- ![Deze afbeelding komt uit het zeer aan te raden handboek "Microsoft Visual C# .NET" van Joyce Farrell.](../assets/3_loops/nesting.png)
+![Deze afbeelding komt uit het zeer aan te raden handboek "Microsoft Visual C# .NET" van Joyce Farrell.](../assets/3_loops/nesting.png)
 
- We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loops de **inner loop(s)** zijn. 
+We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loops de **inner loop(s)** zijn. 
 
 
- Volgende code toont bijvoorbeeld 2 loops die genest werden:
- ```csharp
+Volgende code toont bijvoorbeeld 2 loops die genest werden:
+
+```csharp
 int tellerA= 0;
 int tellerB= 0;
 
@@ -23,9 +24,9 @@ while(tellerA < 3 )  //outer loop
         Console.WriteLine($"Teller:{tellerA}, Teller2:{tellerB}")
     }
 }
- ```
+```
 
- De uitvoer hiervan zal als volgt zijn:
+De uitvoer hiervan zal als volgt zijn:
 
 ![](../assets/3_loops/nestedoutput.png)
 
