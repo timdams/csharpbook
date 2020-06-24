@@ -196,16 +196,19 @@ Console.Write(result);
 Console.Write("_hoe gaat het met je?");
 ```
 
-> Een leuke conversatie uit de oude doos:
+{% hint style='tip' %}
+Een leuke conversatie uit de oude doos:
 
-> fuck0ff: hi, does someone here know the escape sequence for a blank?  
+fuck0ff: hi, does someone here know the escape sequence for a blank?  
 fuck0ff: hello? a blank ?  
 fuck0ff: escape sequence like 't' for tab, and blank like the things you do between words. ?  
 fuck0ff: it's for a c program  
 fuck0ff: has the channel #programming anything to do with, like to program?  
 MadSciFab: why do u need an escape sequence for a blank space?  
 MakAtak: err.. is that what you call "space"?  
+
 Bron: [bash.org](http://bash.org/?21854)
+{% endhint %}
 
 ### Zinnen aan elkaar plakken
 

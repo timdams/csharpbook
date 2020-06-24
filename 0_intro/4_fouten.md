@@ -12,11 +12,8 @@ Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DA
 {% hint style='tip' %}
 De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
 
-
 Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste goed gelukte code uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
 {% endhint %}
-
-
 
 ### Fouten vinden
 
@@ -39,7 +36,7 @@ In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correct
 
 Wanneer je je cursor op een lijn met een fout zet dan zal je soms vooraan een geel error-lampje zien verschijnen:
 
-![Lampje](../assets/0_intro/errorlampje.png)
+![Lampje: de brenger der oplossingen](../assets/0_intro/errorlampje.png)
 
 Je kan hier op klikken en heel vaak krijg je dan ineens een mogelijke oplossing. **Wees steeds kritisch** hierover want VS is niet alomwetend en kan niet altijd raden wat je bedoelt. Neem dus het voorstel niet zomaar over zonder goed na te denken of het dat was wat je bedoelde.
 

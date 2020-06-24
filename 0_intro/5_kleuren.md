@@ -30,7 +30,6 @@ Als je deze code uitvoert krijg je als resultaat:
 Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen.
 {% endhint %}
 
-
 ### Kleur resetten
 
 Soms wil je terug de originele applicatie-kleuren hebben. Je zou manueel dit kunnen instellen, maar wat als de gebruiker slecht ziend is en in z'n besturingssysteem andere kleuren als standaard heeft ingesteld?!
@@ -63,7 +62,6 @@ Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
 * ``ConsoleColor.Red``
 * ``ConsoleColor.Magenta``
 * ``ConsoleColor.Yellow``
-
 
 ![Bron afbeelding : https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/](../assets/1_csharpbasics/kleurenconsole.jpg)
 

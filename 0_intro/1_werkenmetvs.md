@@ -2,7 +2,7 @@
 
 Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debugger, code editor, compiler, etc) zodat je niet tientallen paketten moet gebruiken om software te schrijven.
 
-![VS2019 Logo](../assets/0_intro/vslogo.png)
+![Het Visual Studio 2019 Logo](../assets/0_intro/vslogo.png)
 
 Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken.
 
@@ -23,9 +23,9 @@ In deze cursus zullen we steeds werken met Visual Studio. Niet met Visual Studio
 In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com/vs](https://visualstudio.microsoft.com/vs/).
 
 Het is belangrijk bij de installatie dat je minimaal 
-* de **.NET desktop development** en **.NET Core cross-platform development**  workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
+* de **.NET desktop development** en **.NET Core cross-platform development**  workload selecteert als te installeren tools. ![Correcte workloads selecteren](../assets/0_intro/vsinstall.png)
 * Bij individual components de "Class Designer" aanduiden
-![VS Installeren](../assets/0_intro/vsinstallclassdesigner.png)
+![Voeg zeker de class designer toe](../assets/0_intro/vsinstallclassdesigner.png)
 * Uiteraard ben je vrij om meerdere zaken te installeren.
 
 
@@ -47,7 +47,7 @@ Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van d
 
 Dit semester kiezen we steeds als Project Type  **Console App (.NET Core)**. Kies dit type en klik 'Next'.
 
-![VS Project maken](../assets/0_intro/vsproject.png)
+![Een VS Project aanmaken](../assets/0_intro/vsproject.png)
 
  Op het volgende scherm kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
 
@@ -60,7 +60,7 @@ Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld ge
 {% endhint %}
 Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen)
 
-![VS Project maken](../assets/0_intro/vsprojectname.PNG)
+![Instellingen van een project](../assets/0_intro/vsprojectname.PNG)
 
 **Klik nu op create**.
 
@@ -90,17 +90,17 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 * Om eenvoudig een venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu).
 * Je kan ook altijd je layout in z'n geheel **resetten**: ga naar "Window" en kies "Reset window layout".
 
-![VS Layout resetten](../assets/0_intro/vsreset.png)
+![De layout resetten](../assets/0_intro/vsreset.png)
 
 ### Je programma starten
 
 De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, programma. Je kan de code compileren en uitvoeren door op de groene driehoek bovenaan te klikken:
 
-![Command shell](../assets/0_intro/startprogram.PNG)
+![Het programma uitvoeren](../assets/0_intro/startprogram.PNG)
 
 Als alles goed gaat krijg je nu "Hello world" te zien en wat extra informatie omtrent het programma dat net werd uitgevoerd:
 
-![Command shell](../assets/0_intro/vscmd.png)
+![Uitvoer van het programma](../assets/0_intro/vscmd.png)
 
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
 

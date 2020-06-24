@@ -5,14 +5,13 @@ Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassie
 ### ReadLine en WriteLine
 
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:
-Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen en met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
 
-
+* Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen.
+* Met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
 
 ### Je eerste console programma
 
 Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het nog niet open is). **Veeg de code die hier reeds staat niet weg!**
-
 
 Voeg onder de lijn ``Console.WriteLine("Hello World!");`` volgende code toe:
 
@@ -82,7 +81,7 @@ Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 
 ### WriteLine: Tekst op het scherm
 
- De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zorgt ervoor dat we tekst op het scherm kunnen tonen.
+De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zorgt ervoor dat we tekst op het scherm kunnen tonen.
 
 Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
 
