@@ -1,5 +1,6 @@
+## Oefeningen
 
-# Enkele opmerkingen vooraf
+### Enkele opmerkingen vooraf
 
 {% hint style='tip' %}
 Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:
@@ -15,35 +16,32 @@ Sommige oefeningen zullen soms **[PRO]** in de titel hebben. Dit zijn pittigere 
 
 
 
-# ASCII Art
+### ASCII Art
 
 Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze aan de start van een van je bestaande programma's zodat nu je naam wordt getoond wanneer het programma start, gevolgd door de rest.
 
-# String interpolation
+### String interpolation
 
 Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest geven. Pas string interpolatie m.b.v. ``$`` (manier 2) toe in deze 2 oefeningen.
 
-# ASCII Art & Colors
+### ASCII Art & Colors
 
 Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine`, alsook de werking van kleuren in console-applicaties, om je ASCII-art naam van de eerdere oefening nu van kleur te voorzien. Zorg ervoor dat minstens 1 letter in een andere kleur is.
 
-
-
-
-# Systeem informatie
+### Systeem informatie
 
 {% hint style='tip' %}
 Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
 {% endhint %}
 
-## Deel 1
+#### Deel 1
 
 Maak een applicatie die de belangrijkste computer-informatie (geheugen, etc) aan de gebruiker toont m.b.v. de ``Environment`` bibliotheek.
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
 
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
-## [PRO] Deel 2
+#### [PRO] Deel 2
 
 Ook informatie over de harde schijven kan je verkrijgen (in bits). 
 Dit vereist wel dat je bovenaan je programma volgende lijn bijschrijft: ``using System.IO``. 
@@ -70,7 +68,7 @@ int invoer= Convert.ToInt32(Console.ReadLine()) - 1;
 long totalsize = DriveInfo.GetDrives()[invoer].TotalSize;  
  ```
 
-# Weerstandberekenaar
+### Weerstandberekenaar
 
 Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de streepjes wel, maar niet hoe je die kunt omzetten naar de effectieve weerstandswaarde. In dit programma kunnen we de gebruiker helpen.
 
@@ -78,7 +76,7 @@ Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de 
 
 (Bron afbeelding: [https://www.esdsite.nl](https://www.esdsite.nl))
 
-## Deel 1
+#### Deel 1
 
 Maak een programma dat de weerstandwaarde berekent gebaseerd op:
 
@@ -90,7 +88,7 @@ Gebruik twee variabelen van het type ``int`` waar je getal van 0 tot 9 telkens a
 
 Test dat je formule / berekening klopt om gebaseerd op 2 (of 3) ringen de weerstandswaarde te berekenen. 
 
-## Deel 2
+#### Deel 2
 
 Plaats het geheel in een mooie UNICODE/Ascii-tabel
 
@@ -112,11 +110,11 @@ of:
 
 ![](../assets/1_csharpbasics/tabel2.png)
 
-## [PRO²] Deel 3
+#### [PRO²] Deel 3
 
 Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken).
 
-# [PRO] Shell-starter
+### [PRO] Shell-starter
 Je kan de output van een ``Process.Start()`` programma naar je console scherm sturen. Dit vereist wat meer code. Volgend voorbeeld zal de output van het commando ``ipconfig /all`` op het scherm tonen:
 
 ```csharp

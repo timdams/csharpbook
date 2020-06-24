@@ -1,4 +1,4 @@
-# Environment bibliotheek
+## Environment bibliotheek
 
 De ``Console`` blibotheekis maar 1 van de vele bibliotheken die je in je C# programma's kunt gebruiken. Een andere erg nuttige is de ``Environment``-blibotheek. Deze geeft je applicatie allerlei nuttige informatie over de computer waarop het programma op dat moment draait. Denk maar aan het werkgeheugen, gebruikersnaam van de huidige gebruiker, het aantal processoren etc.
 
@@ -26,7 +26,7 @@ long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 
 Je kan [hier](https://docs.microsoft.com/en-us/dotnet/api/system.environment?view=netframework-4.8) opzoeken welke nuttige zaken je nog met de blibotheek kunt doen.
 
-# Programma afsluiten
+## Programma afsluiten
 
 De ``Enviroment`` bibliotheek heeft ook een methode om je applicatie af te sluiten. Je doet dit met behulp van ``Environment.Exit(0);`` Het getal tussen haakjes mag je zelf bepalen en is de zogenaamde foutcode die je wilt meegeven bij het afsluiten (als je dan later via logbestanden wilt opzoeken waarom het programma stopte dan kan je opzoeken weke foutcode er werd opgeworpen).
 

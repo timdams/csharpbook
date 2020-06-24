@@ -1,4 +1,6 @@
-# Statements en de C# syntax
+# De basisconcepten van C#
+
+## Statements en de C# syntax
 
 Om een werkend C#-programma te maken moeten we de C#-taal beheersen. Net zoals iedere taal, bestaat ook C# uit enerzijds grammatica, in de vorm van de **C# syntax** en anderzijds vocabulair in de vorm van de te gebruiken **keywords**.
 
@@ -13,7 +15,7 @@ Enkele belangrijke regels van C#:
 * **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren. De enige plek waar witruimtes wél een verschil geven is tussen aanhalingstekens ``"      "`` die we later (bij string) zullen leren gebruiken.
 * **Commentaar toevoegen kan**: met behulp van ``//`` voor een enkele lijn en ``/*         */`` voor meerdere lijnen commentaar. Alles dat in commentaar staat zal door de compiler genegeerd worden.
 
-# Keywords: de woordenschat
+## Keywords: de woordenschat
 
 C# bestaat zoals gezegd niet enkel uit grammaticale regels. Grammatica zonder woordenschat is nutteloos. Er zijn binnen C# dan ook 80 woorden, zogenaamde **reserved keywords**  die de woordenschat voorstellen.
 In deze cursus zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
@@ -53,7 +55,7 @@ Indien je deze tabel in pdf bekijkt zal deze om zeep zijn. Onze gitbook gnomes p
 {% endhint %}
 
 
-# Variabelen, identifiers en naamgeving
+## Variabelen, identifiers en naamgeving
 
 We hebben variabelen nodig om (tijdelijke) data in op te slaan. Wanneer we een statement schrijven dat bijvoorbeeld input van de gebruiker moet vragen, dan willen we ook die input bewaren zodat we verderop in het programma (het algoritme) iets met deze data kunnen doen.
 We doen hetzelfde in ons hoofd wanneer we bijvoorbeeld zegen "tel 3 en 4 op en vermenigvuldig dat resultaat met 5". Eerst zullen we het resultaat van 3+4 in een variabele moeten bewaren. Vervolgens zullen we de inhoud van die variabele vermenigvuldigen met 5 en dat nieuwe resultaat ook in een nieuwe variabele opslaan (om vervolgens bijvoorbeeld naar het scherm te sturen).
@@ -65,7 +67,7 @@ Wanneer we een variabele aanmaken zal deze moeten voldoen aan enkele afspraken. 
 
 De verschillende datatypes bespreken we in een volgend [hoofdstuk](1_datatypes.md).
 
-## Regels voor identifiers
+### Regels voor identifiers
 
 De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan **variabelen** (en later ook methoden, objecten, etc.) dan moeten we een aantal regels volgen:
 
@@ -80,7 +82,7 @@ De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in on
   * een cijfer (``0`` tot en met ``9``)
 * **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houd het best leesbaar.
 
-### Enkele voorbeelden
+#### Enkele voorbeelden
 
 Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
 
@@ -97,18 +99,18 @@ Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
 |class | neen| gereserveerd keyword|
 |WriteLine| ja|  |
 
-## Naamgeving afspraken
+### Naamgeving afspraken
 
 Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding guidelines** die doorheen je opleiding moeten gevolgd worden. Naarmate we meer C# leren zullen er extra guidelines bijkomen (zie [deze appendix voor alle guidelines van de opleiding](../B_appendix/codingguidelines.md)).
 
 * **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever ``gewicht`` of ``leeftijd`` in plaats van ``a`` of ``meuh``.
 * **Camel casing**: gebruik camel casing indien je meerdere woorden in je identifier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn ``leeftijdTimDams`` of ``aantalLeerlingenKlas1EA``. Merk op dat we liefst het eerste woord met kleine letter starten. Uiteraard zijn er geen spaties toegelaten.
 
-# Commentaar
+## Commentaar
 
 Soms wil je misschien extra commentaar bij je code zetten. Als je dat gewoon zou doen (bv ``Dit deel zal alles verwijderen``) dan zal je compiler niet begrijpen wat die zin doet. Hij verwacht namelijk C#  en niet een Nederlandstalige zin. Om dit op te lossen kan je in je code op twee manieren aangeven dat een stuk tekst gewoon commentaar is en mag genegeerd worden door de compiler:
 
-## Enkele lijn commentaar
+### Enkele lijn commentaar
 
 Eén lijn commentaar geef je aan door de lijn te starten met twee voorwaartse slashes ``//``. Uiteraard mag je ook meerdere lijnen op deze manier in commentaar zetten. Zo wordt dit ook vaak gebruikt om tijdelijk een stuk code "uit te schakelen". Ook mogen we commentaar *achter* een stuk C# code plaatsen (zie voorbeeld hieronder).
 
@@ -121,7 +123,7 @@ int result = getal * 5;
 Console.WriteLine(result); //We tonen resultaat op scherm: 15
 ```
 
-## Blok commentaar
+### Blok commentaar
 
 We kunnen een stuk tekst als commentaar aangeven door voor de tekst ``/*`` te plaatsen en ``*/`` achteraan. Een voorbeeld:
 

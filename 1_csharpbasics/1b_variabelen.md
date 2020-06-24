@@ -1,4 +1,4 @@
-# Variabelen
+## Variabelen
 In het vorige hoofdstuk zagen we dat er verschillende soorten datatypes bestaan. Deze types hebben we nodig om **variabelen** aan te maken.
 
 De data die we in een programma gebruiken bewaren we namelijk in een **variabele van een bepaald type**. Een variabele is een plekje in het geheugen dat in je programma zal gereserveerd worden om daarin data te bewaren van het type dat je aan de variabele hebt toegekend. Een variabele zal intern een geheugenadres hebben (waar de data in het geheugen staat) maar dat zou lastig programmeren zijn indien je steeds dit adres moet gebruiken. Daarom moeten we ook steeds een naam oftewel **identifier** aan de variabele geven zodat we makkelijk de geheugenplek kunnen aanduiden. 
@@ -8,7 +8,7 @@ De naam (identifier) van de variabele moet voldoen aan de identifier regels uit 
 {% endhint %}
 
 
-# Variabelen aanmaken en gebruiken
+### Variabelen aanmaken en gebruiken
 
 Om een variabele te maken moeten we deze **declareren**, door een type en naam te geven. Vanaf dan zal de computer een hoeveelheid geheugen voor je reserveren waar de inhoud van deze variabele in kan bewaard worden. 
 Hiervoor dien je minstens op te geven:
@@ -37,7 +37,7 @@ Indien je reeds weet wat de beginwaarde moet zijn van de variabele dan mag je de
 int mijnLeeftijd = 37;
 ```
 
-## Waarden toekennen aan variabelen
+### Waarden toekennen aan variabelen
 
 Vanaf dit punt kunnen we dus ten allen tijde deze variabele gebruiken om een waarde aan toe te kennen, de bestaande waarde te overschrijven, of de waarde te gebruiken, zoals:
 
@@ -53,7 +53,7 @@ int eenAndereLeeftijd = mijnLeeftijd;
 ```
 
 
-## Literal toewijzen
+### Literal toewijzen
 
 Literals zijn expliciet ingevoerde waarden in je code. Als je in je code expliciet de waarde 4 wilt toekennen aan een variabele dan is het getal 4 in je code een zogenaamde literal. Wanneer we echter data bijvoorbeeld eerst uitlezen of berekenen \(via bijvoorbeeld invoer van de gebruiker of als resultaat van een berekening\) en het resultaat hiervan toekennen aan een variabele dan is dit geen literal.
 
@@ -83,7 +83,7 @@ Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschap
 ![](../assets/0_intro/errorliteraltoekenning.png)
 {% endhint %}
 
-### Literal bepaald het datatype
+#### Literal bepaald het datatype
 De manier waarop je een literal schrijft in je code zal bepalen wat het datatype van de literal is:
 
 * **Gehele getallen** worden standaard als ``int`` beschouwd, vb: ``125``.
@@ -100,7 +100,7 @@ De manier waarop je een literal schrijft in je code zal bepalen wat het datatype
   
 De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduiding. Er wordt vanuit gegaan wanneer je een literal probeert toe te wijzen aan een van deze types dat dit zonder problemen zal gaan (ze worden impliciet geconverteerd).
 
-#### Hexadecimale en binaire notatie
+##### Hexadecimale en binaire notatie
 
 Je kan ook hexadecimale notatie (starten met ``0x`` of ``0X``) gebruiken wanneer je bijvoorbeeld met ``int`` of ``byte`` werkt:
 ```csharp
@@ -115,7 +115,7 @@ byte myByteValue =  0b‭00100100‬9;
 ``` 
 
 
-## Nieuwe waarden overschrijven oude waarden
+### Nieuwe waarden overschrijven oude waarden
 
 Wanneer je een reeds gedeclareerde variabele een **nieuwe waarde toekent** dan zal de oude waarde in die variabele onherroepelijk verloren zijn. Probeer dus altijd goed op te letten of je de oude waarde nog nodig hebt of niet. Wil je de oude waarde ook nog bewaren dan zal je een nieuwe, extra variabele moeten aanmaken en daarin de nieuwe waarde moeten bewaren:
 
@@ -138,6 +138,6 @@ temperatuurGisteren = 25; //temperatuur nu overschrijven
 ```
 We hebben dus aan het einde van het programma zowel de temperatuur van eergisteren, ``20``, als die van vandaag, ``25``.
 
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 * [Variabelen en datatypes](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=22d326cf-b619-4cf0-80fc-a966007ffef5)

@@ -1,4 +1,7 @@
-# Relationele operators
+## Relationele en logische operators
+
+### Relationele operators
+
 Om beslissingen te kunnen nemen in C# hebben we een nieuw soort operators nodig. Operators waarmee we kunnen testen of iets waar of niet waar is. Dit doen we met de zogenaamde **relationele operators**. En guess what, je kent die al van uit het lager! Enkel de "gelijk aan" ziet er iets anders uit dan we gewoon zijn:
 
 
@@ -11,7 +14,8 @@ Om beslissingen te kunnen nemen in C# hebben we een nieuw soort operators nodig.
 | ``<=`` |kleiner dan of gelijk aan| 
 | ``>=`` |groter dan of gelijk aan| 
 
-# Logische operator
+### Logische operators
+
 De logische EN, OF en NIET-operatoren die je kent van de booleaanse algebra kan je ook gebruiken in C#:
 
 | C#-syntax| Betekenis| 
@@ -24,7 +28,7 @@ Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te
 ```csharp
 !(0==2)  //zal true geven
 ```
-## Booleaanse expressies
+### Booleaanse expressies
 
 Een booleaanse expressie is een stuk C# code dat een ``bool`` als resultaat zal geven. 
 
@@ -36,7 +40,7 @@ Test maar eens wat er op je scherm komt als je in code schrijft: ``Console.Write
 Zoals verwacht zal er ``true`` op het scherm verschijnen.
 
 
-# Test jezelf
+### Test jezelf
 Wat zal de uitkomst zijn van volgende expressies? (protip: het zal steeds ``true`` of ``false`` zijn, niets anders)
 * ``3>2  ``
 * ``4!=4`` 

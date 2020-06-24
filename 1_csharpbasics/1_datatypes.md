@@ -1,4 +1,6 @@
-﻿Een essentieel onderdeel van C# is kennis van datatypes. Binnen C# zijn een aantal types gedefinieerd die je kan gebruiken om data in op te slaan. Wanneer je data wenst te bewaren in je applicatie dan zal je je moeten afvragen wat voor soort data het is. Gaat het om een getal, een geheel getal, een kommagetal, een stuk tekst of misschien een binaire reeks? Ieder datatype in C# kan één welbepaald soort data bewaren en dit zal telkens een bepaalde hoeveelheid computergeheugen vereisen. 
+﻿## Datatypes
+
+Een essentieel onderdeel van C# is kennis van datatypes. Binnen C# zijn een aantal types gedefinieerd die je kan gebruiken om data in op te slaan. Wanneer je data wenst te bewaren in je applicatie dan zal je je moeten afvragen wat voor soort data het is. Gaat het om een getal, een geheel getal, een kommagetal, een stuk tekst of misschien een binaire reeks? Ieder datatype in C# kan één welbepaald soort data bewaren en dit zal telkens een bepaalde hoeveelheid computergeheugen vereisen. 
 
 Er zijn tal basistypes in C# gedeclareerd (zogenaamde **primitieve datatypes**). Dit semester leren we werken met datatypes voor:
 * Gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
@@ -17,7 +19,7 @@ result = Console.ReadLine();
 ```
 {% endhint %}
 
-# Basistypen voor getallen
+### Basistypen voor getallen
 Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaard zou dat voor ons niet erg handig werken. C# heeft daarom een hoop datatypes gedefinieerd om te werken met getallen zoals wij ze kennen, gehele en kommagetallen. Intern zullen deze getallen nog steeds binair bewaard worden, maar dat is tijdens het programmeren zelden een probleem.
 
 {% hint style='tip' %}
@@ -33,12 +35,13 @@ De basistypen van C\# om getallen in op te slaan zijn:
 > 
 
 {% hint style='warning' %}
+
 Ieder type hierboven heeft een bepaald bereik en hoeveelheid geheugen nodig. Je zal dus steeds moeten afwegen wat je wenst. Op een high-end pc met ettelijke gigabytes aan werkgeheugen (RAM) is geheugen zelden een probleem waar je rekening mee moet houden...Of toch: zoals met real-time shooters die miljoenen berekeningen (3D) per seconde moeten uitvoeren. Daar zal iedere byte tellen. Op andere apparaten (smartphone, arduino, smart fridges, etc.) is iedere byte geheugen nog kostbaarder. **Kortom: kies steeds bewust het datatype dat het beste 'past' voor je probleem qua bereik, precisie en geheugengebruik.**
 {% endhint %}
 
 Deze datatypes hebben allemaal een bepaald bereik, wat een rechtstreeks gevolg is van de hoeveelheid geheugen die ze innemen.
 
-## Gehele getallen
+#### Gehele getallen
 Voor de gehele getallen:
 
 | **Type** | **Geheugen** | **Bereik** | **Meer info**|
@@ -65,7 +68,7 @@ Enkele opmerkingen bij deze tabel:
 * Het grootste getal bij `long` is 2 tot de 63ste (
 negen triljoen tweehonderddrieëntwintig biljard driehonderd tweeënzeventig biljoen zesendertig miljard achthonderdvierenvijftig miljoen zevenhonderdvijfenzeventigduizend achthonderd en zeven). Dit zijn maar 63 bits?! Inderaad, de laatste bit wordt gebruikt om het teken te bewaren.
 
-## Kommagetallen
+#### Kommagetallen
 Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voordeel' tegenover de 2 andere, dit voordeel staat vet in de tabel:
 
 | **Type** | **Geheugen** | **Bereik** | **Precisie** |
@@ -82,7 +85,7 @@ Bij twijfel opteren we meestal voor kommagetallen om het **``double``** datatype
 {% endhint %}
 
 
-# Boolean datatype
+### Boolean datatype
 
 Het ``bool`` (**boolean**) is het eenvoudigste datatype van C#. Het kan maar 2 mogelijke waarden bevatten: ``true`` of ``false``. 0 of 1 met andere woorden. 
 
@@ -90,7 +93,7 @@ Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken ter
 
 We zullen het ``bool`` datatype erg veel nodig hebben wanneer we met [beslissingen](../4_beslissingen/0_beslissingen_intro.md) zullen werken, specifiek de [``if`` statements](../4_beslissingen/0_if.md) die afhankelijk van de uitslag van een ``bool`` bepaalde code wel of niet zullen doen uitvoeren.
 
-# Tekst/String datatype
+### Tekst/String datatype
 We besteden verderop een heel apart hoofdstuk aan tonen hoe je tekst en enkele karakters kan bewaren in variabelen. Sneak preview: 
 * Tekst kan bewaard worden in het ``string`` datatype
 * Een enkel karakter wordt bewaard in het ``char`` datatype dat we ook hierboven al even hebben zien passeren.

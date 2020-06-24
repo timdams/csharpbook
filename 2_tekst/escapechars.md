@@ -1,5 +1,5 @@
 
-# Escape characters
+## Escape characters
 
 {% hint style='warning' %}
 In het verleden is dit altijd een van de meest overgeslagen hoofdstukken geweest. Menig student heeft hier nog steeds spijt van en heeft uit miserie besloten te stoppen met leren programmeren ;)
@@ -37,7 +37,7 @@ Je kan in grote Unicode-tabellen opzoeken wat de unicode (voorstelling van het t
 Wil je weten hoe je coole 'console'-tekeningen kan maken? Kijk dan zeker naar de appendix-sectie  ["Vreemde tekens in console tonen"](../B_appendix/prostuff.md).
 {% endhint %}
 
-## Escape characters in strings
+### Escape characters in strings
 
 We gebruiken vooral escape characters in strings, om bijvoorbeeld witregels en tabulaties aan te geven. Test bijvoorbeeld volgende lijn eens:
 
@@ -53,7 +53,7 @@ Het is belangrijk dat je vlot kan werken met escape characters in string, daar w
 
 ``\a`` mag je enkel gebruiken als je een koptelefoon op hebt daar dit het escape character is om de computer een biep te laten doen (mogelijk doet dit niets bij jou, dit hangt van de je computerinstellingen af).
 
-## Optellen van char 
+### Optellen van char 
 Stel dat we volgende char-variabelen aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. Bij char mag dat niet!
 
 ```csharp

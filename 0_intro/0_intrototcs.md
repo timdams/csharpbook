@@ -1,6 +1,6 @@
 # De eerste stappen
 
-## Introductie tot programmeren met C-Sharp
+## Introductie tot programmeren met C#
 
 ### Het algoritme
 
@@ -15,8 +15,7 @@ Het algoritme van een programma moet je zelf verzinnen. De volgorde waarin de in
 
 Eender welke andere volgorde van bovenstaande algoritme zal vreemde (en soms fatale) fouten geven.
 
-### C-Sharp
-
+### De C# taal
 Om een algoritme te schrijven dat onze computer begrijpt dienen we een programmeertaal te gebruiken. Net zoals er ontelbare spreektalen in de wereld zijn, zijn er ook vele programmeertalen. **C#** (spreek uit *'siesjarp'*) is er een van de vele. In tegenstelling tot onze spreektalen moet een computertaal 'exact' zijn en moet het op ondubbelzinnige manier door de computer verstaan worden. C# is een taal die deel uitmaakt van de .NET (spreek uit  *'dotnet'*) omgeving die meer dan 15 jaar geleden door Microsoft werd ontwikkeld (juli 2000).
 
 > Deze cursus werd geschreven in [Markdown](https://en.wikipedia.org/wiki/Markdown). Helaas ondersteunt deze geen # in titels. Daardoor heet dit hoofdstuk "C-Sharp" en niet "C#". Niets aan te doen.

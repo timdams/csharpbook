@@ -1,4 +1,4 @@
-# Scope van variabelen
+## Scope van variabelen
 
 De locatie waar je een variabele aanmaakt bepaald de **scope**, oftewel de zichtbaarheid, van de variabele.
 Eenvoudig gezegd zullen steeds de omliggende accolades de scope van de variabele bevatten. Indien je de variabele dus buiten die accolades nodig hebt dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
@@ -32,7 +32,7 @@ De scope van variabelen is soms wat verwarrend maar wel een onderdeel dat je dez
 Hopelijk kan volgende kennisclip je helpen: [Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).
 {% endhint %}
 
-# Variabelen met zelfde naam
+### Variabelen met zelfde naam
 Zolang je in de scope van een variabele bent kan je geen nieuwe variabele met dezelfde naam aanmaken:
 
 Volgende code is dus niet toegestaan:
@@ -63,6 +63,6 @@ Dit is wel geldig, daar de scope van de eerste variabele afgesloten wordt door d
 ```
 
 
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 * [Scope ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f)

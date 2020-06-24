@@ -1,4 +1,4 @@
-# Input van de gebruiker verwerken
+## Input van de gebruiker verwerken
 
 {% hint style='tip' %}
 Dit hoofdstuk is niet lang, maar het is wel een zeer belangrijk aspect van console-applicaties!
@@ -18,7 +18,7 @@ User input verwerken (dat een andere type dan string moet zijn) bestaat dus uit 
 * Input **bewaren** in een ``string`` variabele
 * De variabele **converteren** met ``Convert.`` bibliotheek naar het gewenste type
 
-# Input converteren 
+### Input converteren 
 Om strings naar een ander type te converteren gebruiken we best de Convert.-bibliotheek (maar ``.Parse()`` kan ook). De volgende code zal je dus erg vaak moeten schrijven. 
 Stel dat we aan de gebruiker z'n gewicht vragen, dan moeten we dus doen:
 ```csharp
@@ -28,7 +28,7 @@ double gewicht= Convert.ToDouble(inputGewicht);
 ```
 
 
-# Foutloze input
+### Foutloze input
 Voorgaande code veronderstelt dat de gebruiker géén fouten invoert. De conversie zal namelijk mislukken indien de gebruiker bijvoorbeeld  ``IKWEEG10KG`` invoert in plaats van ``10,3``.
 
 De komende hoofdstukken **moet**  je er altijd van uitgaan dat de gebruiker foutloze input geeft.
@@ -45,6 +45,6 @@ De komende hoofdstukken **moet**  je er altijd van uitgaan dat de gebruiker fout
 
 
 
-# Fouten in input
+### Fouten in input
 En wat als je toch foute invoer wilt opvangen? Dan is ``TryParse`` je vriend. We zullen dit bespreken wanneer we aan Methoden komen. Ongeduldig? [Lees hier alles over TryParse](https://www.dotnetperls.com/parse).
 

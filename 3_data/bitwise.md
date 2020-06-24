@@ -1,4 +1,4 @@
-# Binaire bewerkingen
+## Binaire bewerkingen
 
 Je kan ook met binaire getallen werken in C#. Dit kan nuttig zijn wanneer je bijvoorbeeld met een stuk hardware wilt communiceren via C# en je bepaalde bits moet in/uit schakelen. [Deze uitleg](https://playground.arduino.cc/Code/BitMath/#common) toont enkele toffe voorbeelden waarom bitwise operators nuttig zijn wanneer je met Arduino werkt en [hier](https://stackoverflow.com/questions/38997913/python-bitwise-logic-to-operate-leds) met een Raspberry Pi.
 
@@ -21,7 +21,7 @@ int value = 8;
 string binary = Convert.ToString(value, 2);
 ```
 
-# Bitwise operator
+### Bitwise operator
 Bitwise operators in C# laten toe om de klassieke binaire bewerkingen (AND, OR, NOT, etc) die je kent uit booleanse algebra toe te passen op je variabelen.
 
 
@@ -40,7 +40,7 @@ Volgende operators kan je gebruiken [bron](https://www.tutorialspoint.com/csharp
 
 
 
-## Voorbeeld
+#### Voorbeeld
 
 Een uitgewerkt voorbeeld (ook van [hier](https://www.tutorialspoint.com/csharp/csharp_bitwise_operators.htm)):
 

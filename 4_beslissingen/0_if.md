@@ -32,7 +32,7 @@ Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scher
 
 ![](../assets/2_beslissingen/ifflow.png)
 
-## if met een block
+### if met een block
 Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.**
 
 Een voorbeeld:
@@ -50,12 +50,13 @@ De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk cod
 
 
 
-## Veelgemaakte if-fouten
+### Veelgemaakte if-fouten
 Er zijn enkele veelgemaakte fouten waar je op moet letten:
 
-### Appelen en peren vergelijken
+#### Appelen en peren vergelijken
 De types in je booleanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: ``if( "4" > 3)`` daar we hier een ``string`` met een ``int`` vergelijken.
-### Accolades vergeten
+
+#### Accolades vergeten
 Accolades vergeten plaatsen om een codeblock aan te duiden, maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true``. Gebruiken we de ``if`` met block van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de ``if``:
 
 ```csharp
@@ -68,7 +69,7 @@ if ( number < 5 )
 
 Merk ook op dat je code anders uitlijnen géén invloed heeft op de uitvoer (wat bijvoorbeeld wel zo is bij de programmeertaal Python).
 
-### Een puntkomma plaatsen na de booleanse expressie. 
+#### Een puntkomma plaatsen na de booleanse expressie. 
 
 Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de ``if`` hoort en je dus een nietszeggende ``if`` hebt geschreven. De code na het puntkomma zal uitgevoerd worden ongeacht de ``if``:
 
@@ -81,7 +82,7 @@ if ( number < 5 );
   ![](../assets/2_beslissingen/ifflowsemicolon.png)
   
 
-## Gebruik relationele operatoren
+### Gebruik relationele operatoren
 Met de relationele operatoren (``==``, ``!=``, ``<``, ``>``, ``<=`` en ``>=``) kunnen we complexere expressies schrijven die als uitkomst waar (``true``) of niet waar (``false``) geven.
 
 Een voorbeeld:
@@ -166,7 +167,7 @@ Uitvoer van dit programma zal zijn:
 5
 ```
 
-## If/else
+### If/else
 Met ``if``/``else`` kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditie niet waar (``false``) is. Volgend voorbeeld geeft een typisch gebruik van een ``if``/``else`` structuur om 2 waarden met elkaar te vergelijken:
 
 ```csharp
@@ -184,7 +185,7 @@ else
 
 > Kan je zelf een flowchart van bovenstaande code tekenen? Try it!
 
-## If/else if
+### If/else if
 Met een ``if``/``else if`` constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een ``if``. Als men vervolgens een ``else if`` plaats dan zal de code van deze ``else if`` uitgevoerd worden enkel en alleen als de eerste expressie (van de ``if``) niet waar was en de expressie van deze ``else if`` wel waar is.
 
 Een voorbeeld:
@@ -207,7 +208,7 @@ else if (x == 8)
 ```
 
 
-## Nesting
+### Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een ``if``/``else if``/``else`` hoort. Binnen dit blok kunnen nu echter opnieuw ``if``/``else if``/``else`` structuren worden aangemaakt.
 
 Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan ``closed`` gelijkstelt):

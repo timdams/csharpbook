@@ -1,4 +1,4 @@
-# Expressies en operators
+## Expressies en operators
 
 Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die op 1 resultaat uitkomen. De volgende code is bijvoorbeeld een expressie: `3+2`.
 
@@ -11,7 +11,7 @@ Over expressies in C# is véél te vertellen, maar niet aan de orde in deze curs
 {% endhint %}
 
 
-## Expressie-resultaat toewijzen
+### Expressie-resultaat toewijzen
 
 Meestal zal je expressies schrijven waarin je bewerkingen op en met variabelen uitvoert. Vervolgens zal je het resultaat van die expressie willen bewaren voor verder gebruik in je code.
 
@@ -43,7 +43,7 @@ int breedte = 15;
 int hoogte = 20 * breedte;
 ```
 
-# Operators
+### Operators
 Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgen de wiskundige regels van **volgorde van berekeningen**:
 
 1. **Haakjes**
@@ -67,7 +67,7 @@ double  gewichtOpMars= (gewichtOpAarde/zwaartekrachtAarde) * zwaartekrachtMars; 
 Console.WriteLine("Je weeg op Mars" + gewichtOpMars + " kg");
 ```
 
-## Modulo operator ``%``
+#### Modulo operator ``%``
 De modulo operator die we in C# aanduiden met ``%`` verdient wat meer uitleg. Deze operator zal als resultaat de gehele rest teruggeven wanneer we het linkse getal door het rechtse getal delen:
 ```text
 7%2 => zal 1 geven, daar 7 gedeeld door 2,  3 met rest 1 geeft 
@@ -83,7 +83,7 @@ int rest= getal%2;
 Console.WriteLine($"Indien het getal als rest 0 geeft weten we dat het even is. De rest is: {rest}");
 ```
 
-## Verkorte operator notaties
+#### Verkorte operator notaties
 Heel vaak wil je de inhoud van een variabele bewerken en dan terug bewaren in de variabele zelf. Bijvoorbeeld een variabele vermenigvuldigen met 10 en het resultaat ervan terug in de variabele plaatsen. Hiervoor zijn enkele verkorte notaties in C#.
 Stel dat we een variabele ``int getal`` hebben:
 
@@ -97,7 +97,8 @@ Stel dat we een variabele ``int getal`` hebben:
 | ``getal/=2;`` | ``getal= getal/2;``| variabele delen door een getal|
 
 Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter zijn om te lezen. Bij twijfel, gebruik gewoon de lange notatie. 
-#  Expressiedatatypes 
+
+###  Expressiedatatypes 
 ![](../assets/attention.jpg)
 
 De types die je in je berekeningen gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
@@ -144,7 +145,7 @@ Console.WriteLine(result);
 ```
 En nu krijgen we wel ``4.5``.
 
-## En complexer?
+### En complexer?
 
 Het kan subtiel en ambetant worden in grotere berekeningen.
 
@@ -165,6 +166,6 @@ double helft = 10000.0 * (1.0/2);
 ```
 Nu krijgt het gedeelte tussen de haakjes een ``double`` als resultaat, namelijk ``0.5`` dat we dan kunnen vermenigvuldigen met het salaris om ``5000.0`` te krijgen.
 
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 * [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3a0370ef-b3da-4642-aeaa-a9660083e329)

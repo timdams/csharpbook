@@ -1,4 +1,4 @@
-# Switch
+## Switch
 
 Een ``switch`` statement is een program-flow element om een veelvoorkomende constructie van ``if``/``if else``...``else`` elementen eenvoudiger te tonen. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken (bijvoorbeeld een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma), zoals:
 
@@ -67,7 +67,7 @@ switch (option)
 De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.)
 {% endhint %}
 
-# Falthrough
+### Falthrough
 
 Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
 
