@@ -1,5 +1,5 @@
-
 ## If
+
 De ``if`` uitdrukking is 1 van de meest elementaire uitdrukking in een programmeertaal en laat ons toe 'vertakingen' in onze programmaflow in te bouwen.
 
 De syntax is als volgt:
@@ -13,8 +13,6 @@ if (boolean expression)
 ```
 Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heeft, zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie niet waar is (``false``) dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
 
-
-
 Een voorbeeld:
 ```csharp
 int number = 3;
@@ -23,16 +21,20 @@ if ( number < 5 )
         Console.WriteLine ("A");
 Console.WriteLine("B");
 ```
+
 De uitvoer van dit programma zal zijn:
+
 ```
 A
 B
 ```
+
 Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B")`` zal sowieso uitgevoerd worden zoals je ook kan zien aan de volgende flowchart:
 
 ![](../assets/2_beslissingen/ifflow.png)
 
 ### if met een block
+
 Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.**
 
 Een voorbeeld:
@@ -79,7 +81,7 @@ if ( number < 5 );
     Console.WriteLine ("D");
 ```
 
-  ![](../assets/2_beslissingen/ifflowsemicolon.png)
+![](../assets/2_beslissingen/ifflowsemicolon.png)
   
 
 ### Gebruik relationele operatoren

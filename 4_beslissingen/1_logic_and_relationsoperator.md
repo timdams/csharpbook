@@ -55,8 +55,6 @@ Wat zal de uitkomst zijn van volgende expressies? (protip: het zal steeds ``true
 Voorgaande oefeningen komen uit een vorige kennistoets examen. Het is voornaam dat je dit soort expressies vlot kunt oplossen!
 {% endhint %}
 
-
-
-# Kennisclip
+### Kennisclip
 ![](../assets/infoclip.png)
 * [Logische operators en expressies ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4602c8f9-1540-427e-8fd8-a91100bc3abb)
