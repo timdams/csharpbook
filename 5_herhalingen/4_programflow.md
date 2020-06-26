@@ -32,7 +32,7 @@ We tonen nu kort de verschillende program flow elementen en hoe ze in een flowch
 Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat. Dit is dus de manier om een while/do while te herkennen: er wordt naar een eerder punt in de code gegaan, een punt waar we reeds geweest waren
 
 ####	For-element
- ![](../assets/3_loops/for.png)
+![](../assets/3_loops/for.png)
 
 ### Voorbeeld flowchart
 
@@ -40,13 +40,12 @@ Door de eerder beschreven elementen nu samen te voegen kunnen we een programma a
 
 De finale flowchart ziet er als volgt uit:
 
- ![](../assets/3_loops/fullflow.png)
+![](../assets/3_loops/fullflow.png)
 
 Zoals verteld kunnen we een flowchart in beide richtingen gebruiken. We hebben de flowchart hiervoor gemaakt, gebaseerd op onze oplossing van het vorige labo. Maar stel dat je deze flowchart krijgt, dan kan je dus ook deze chart rechtstreeks omzetten in C#.
 
 {% hint style='tip' %}
-
-### Code 2 flow
+**Code 2 flow**
 
 Via de [website en app "Code2flow"](https://code2flow.com/app) kan je heel eenvoudig een flowchart genereren van pseudocode.
 {% endhint %}

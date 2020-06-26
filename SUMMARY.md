@@ -160,6 +160,8 @@
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
+  * [Opgave vaardigheidsproef 1920](EindeTests/Mod4/Opgave_1920.md)
+  * [Oplossing vaardigheidsproef 1920](EindeTests/Mod4/Ooplpgave_1920.md)
   
 ## Appendix
 
