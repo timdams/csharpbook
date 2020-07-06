@@ -2,12 +2,18 @@
 
 Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in deze cursus enkel console-applicaties leren maken. Grafische frontends (bv WPF) komen in deze cursus niet aan bod.
 
-### ReadLine en WriteLine
+### In en uit -  ReadLine en WriteLine
+
+Een programma zonder invoer van de gebruiker is niet erg boeiend. De meeste programma's die we leren schrijven vereisen dan ook "input" (**IN**). We moeten echter ook zaken aan de gebruiker kunnen tonen (bijvoorbeeld de uitkomst van een berekening, een foutboodschap, etc) wat dus vereist dat er "output" (**UIT**) naar het scherm kan gestuurd worden.
+
+![](../assets/1_csharpbasics/inuit.png)
+
 
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:
 
-* Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen.
-* Met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
+* **IN** Met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
+* **UIT**: Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen.
+
 
 ### Je eerste console programma
 
@@ -37,7 +43,7 @@ namespace Demo1
 }
 ```
 
-Compileer deze code en voer ze uit: **druk hiervoor op het groene driehoekje. Of via het menu Debug en dan Start Debugging.
+Compileer deze code en voer ze uit: **druk hiervoor weer op het groene driehoekje**. Of via het menu Debug en dan Start Debugging.
 
 {% hint style='danger' %}
 **Let erop dat je iedere 'zin' eindigt met een puntkomma.**
@@ -47,7 +53,7 @@ Compileer deze code en voer ze uit: **druk hiervoor op het groene driehoekje. Of
 {% hint style='danger' %}
 **Moet ik niets bewaren?**
 
-Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen bewaard. Trouwens: **Kies nooit voor "save as..."**!!!!
+Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen bewaard. Trouwens: **Kies nooit voor "save as..."!**
 
 Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.
 {% endhint %}
@@ -56,16 +62,20 @@ Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.
 
 We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tijd niet belangrijk zijn.  Onthoud nu alvast dat: **alle belangrijke code staat tussen de accolades onder de lijn ``static void Main(string[] args)``**!
 
-* ``using System;`` :  Alle ``Console``-commando's die we verderop gebruiken zitten in de ``System`` bibliotheek. Als we deze lijn (een zogenaamde **directive**) niet zouden schrijven dan moesten we ``System.Console.WriteLine`` i.p.v. ``Console.WriteLine`` schrijven verderop in de code. 
-* ``namespace Demo1``: Dit is de unieke naam waarbinnen we ons programma zullen steken, en het is niet toevallig de naam van je project. Verander dit nooit tenzij je weet wat je aan het doen bent.
-* ``class Program{}``: Hier start je echte programma. Alle code binnen deze Program accolades zullen gecompileerd worden naar een uitvoerbaar bestand.
-* ``static void Main(string[] args)``: Het startpunt van iedere console-applicatie. Wat hier gemaakt wordt is een **methode** genaamd ``Main``. Je programma kan meerdere methoden (of functies) bevatten, maar enkel degene genaamd ``Main`` zal door de compiler als het startpunt van het programma gemaakt worden.
-* ``Console.WriteLine("Hello world");``: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
-* ``Console.WriteLine("Hoi ik ben het");``: en ook deze lijn komt op het scherm.
-* Sluitende accolades: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
+{% hint style='warning' %}
+Laat je niet afschrikken door wat er nu volgt. Ik gooi je even in het diepe gedeelte van het zwembad maar zal je er op tijd uithalen zodat we vervolgens terug in het babybadje rustig op de glijbaan kunnen gaan spelen en C# op een rustiger tempo kunnen ontdekken.
+{% endhint %}
+
+* **``using System;``** :  Alle ``Console``-commando's die we verderop gebruiken zitten in de ``System`` bibliotheek. Als we deze lijn (een zogenaamde **directive**) niet zouden schrijven dan moesten we ``System.Console.WriteLine`` i.p.v. ``Console.WriteLine`` schrijven verderop in de code. 
+* **``namespace Demo1``**: Dit is de unieke naam waarbinnen we ons programma zullen steken, en het is niet toevallig de naam van je project. Verander dit nooit tenzij je weet wat je aan het doen bent.
+* **``class Program``**: Hier start je echte programma. Alle code binnen deze Program accolades zullen gecompileerd worden naar een uitvoerbaar bestand.
+* **``static void Main(string[] args)``**: Het startpunt van iedere console-applicatie. Wat hier gemaakt wordt is een **methode** genaamd ``Main``. Je programma kan meerdere methoden (of functies) bevatten, maar enkel degene genaamd ``Main`` zal door de compiler als het startpunt van het programma gemaakt worden.
+* **``Console.WriteLine("Hello world");``**: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
+* **``Console.WriteLine("Hoi ik ben het");``**: en ook deze lijn komt op het scherm.
+* **Accolades**: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
 
 {% hint style='tip' %}
-"Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt: [Hello world in meer dan 600 programmeertalen](http://helloworldcollection.de/)! 
+"Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt op [helloworldcollection.de](http://helloworldcollection.de/).
 {% endhint %}
 
 #### Say what now?!
@@ -87,7 +97,7 @@ Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
 
 ``Console.WriteLine("Wie ben jij?!");``
 
-De WriteLine methode zal alle tekst tonen die tussen de  "  " staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het puntkomma helemaal achteraan.**
+De WriteLine methode zal alle tekst tonen die tussen de aanhalingstekens (``"  "``) staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het puntkomma helemaal achteraan.**
 
 Je programma is nu:
 
@@ -108,6 +118,4 @@ namespace Demo1
 }
 ```
 
-Kan je ook deze code uitvoeren?! Make it happen en ga dan gezwind naar het volgende hoofdstuk!
-
-
+Kan je ook deze code uitvoeren?! Make it happen en lees dan gezwind verder!

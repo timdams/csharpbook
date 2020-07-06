@@ -31,18 +31,19 @@ result = Console.ReadLine();
 
 ```
 
-Bespreking van deze code:
+Wat gebeurt er hier juist?
 
-``string result;``
-
+De eerste lijn code: 
 * Concreet zeggen we hiermee aan de compiler: maak in het geheugen een plekje vrij waar enkel data van het type string in mag bewaard worden;
 * Noem deze geheugenplek ``result``  zodat we deze later makkelijk kunnen in en uitlezen.
 
-``result = Console.ReadLine();``
-
+Tweede lijn code:
 * Vervolgens roepen we de ``ReadLine`` methode aan. Deze methode zal de invoer van de gebruiker uitlezen tot de gebruiker op enter drukt.
-* Het resultaat van de ingevoerde tekst wordt bewaard in de variabele ``result`` (denk eraan dat de toekenning van rechts naar links gebeurt).
+* Het resultaat van de ingevoerde tekst wordt bewaard in de variabele ``result``.
 
+{% hint style='tip' %}
+Merk op dat de toekenning in C# van rechts naar links gebeurt. Vandaar dat ``result`` dus links van de toekenning (``=``) staat en de waarde krijgt van het gedeelte rechts ervan.
+{% endhint %}
 
 Je programma zou nu moeten zijn:
 
@@ -53,6 +54,7 @@ namespace Demo1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World!");
             Console.WriteLine("Hoi, ik ben het!");
             Console.WriteLine("Wie ben jij?!");
             string result;
@@ -82,9 +84,6 @@ Je volledige programma ziet er dus nu zo uit:
 
 ```csharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Demo1
 {
@@ -93,6 +92,7 @@ namespace Demo1
         static void Main(string[] args)
         {
 
+            Console.WriteLine("Hello World!");
             Console.WriteLine("Hoi, ik ben het!");
             Console.WriteLine("Wie ben jij?!");
 
@@ -120,7 +120,8 @@ tim
 hoe gaat het met je?
 ```
 
-#### Aanhalingsteken of niet?
+{% hint style='tip' %}
+**Aanhalingsteken of niet?**
 
 Wanneer je de inhoud van een variabele wil gebruiken in een methode zoals  ``WriteLine()`` dan plaats je deze zonder aanhalingsteken!
 Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code ``Console.Write(result);`` vervangt door ``Console.Write("result");``.
@@ -135,14 +136,17 @@ Dag
 result
 hoe gaat het met je?
 ```
+{% endhint %}
 
 ### Write en WriteLine
+
+Naast ``WriteLine`` bestaat er ook ``Write``.
 
 De ``WriteLine``-methode zal steeds een line break (een 'enter') aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
 
 De ``Write``-methode zal geen enter aan het einde van de lijn toevoegen. Als je dus vervolgens iets toevoegt (met een volgende ``Write`` of ``WriteLine``) **dan zal dit aan dezelfde lijn toegevoegd worden.**
 
-Vervang daarom eens de laatste 3 lijnen code in je project door:
+Vervang daarom eens in de laatste 3 lijnen code in je project alle ``WriteLine`` door ``Write``:
 
 ```csharp
 Console.Write("Dag");
@@ -159,7 +163,7 @@ tim [enter]
 Dagtimhoe gaat het met je?
 ```
 
-Wat is er verkeerd gelopen? Al je tekst van de laatste lijn plakt zo dicht bij elkaar? Inderdaad, we zijn spaties vergeten toe te voegen! Spaties zijn ook tekens die op scherm moeten komen (ook al zien we ze niet) en je dient dus binnen de aanhalingstekens spaties toe  te voegen. Namelijk:
+Wat is er verkeerd gelopen? Al je tekst van de laatste lijn plakt zo dicht bij elkaar? Inderdaad, we zijn spaties vergeten toe te voegen. Spaties zijn ook tekens die op scherm moeten komen (ook al zien we ze niet) en je dient dus binnen de aanhalingstekens spaties toe  te voegen. Namelijk:
 
 ```csharp
 Console.Write("Dag ");
@@ -176,11 +180,18 @@ tim [enter]
 Dag tim hoe gaat het met je?
 ```
 
-### Opletten met spaties
+{% hint style='warning' %}
+C# trekt zich niets aan van witregels (zowel spaties als enters) die niét binnen aanhalingstekens staan. Met andere woorden: je kan het voorgaande programma perfect in één lange lijn code typen, zonder enters. DIt is echter niet aangeraden want het maakt je code een pak onleesbaarder.
 
-Spaties zijn ook tekens die op scherm moeten komen (ook al zien we ze niet) en je dient dus binnen de aanhalingstekens spaties toe  te voegen. Indien je deze erbuiten plaats dan heeft dit geen effect (je wist al uit het eerste hoofdstuk dat C# alle witregels negeert die niet tussen aanhalingstekens staan). *In volgend voorbeeld zijn de spaties aangegeven als liggende streepjes ( _ )*.
+![Voorgaande programma in exact 1 lijn. Cool? Ja, in sommige kringen. Dom en onleesbaar? Ook ja.](../assets/1_csharpbasics/online.png)
+{% endhint %}
 
-Fout (de code zal werken maar je spaties worden genegeerd):
+{% hint style='tip' %}
+**Opletten met spaties**
+
+Let goed op hoe je spaties gebruikt bij ``WriteLine`` Indien je dus sptaties buiten de aanhalingstekens plaatst dan heeft dit geen effect. *In volgend voorbeeld zijn de spaties aangegeven als liggende streepjes ( _ )*.
+
+Hier een fout gebruik van spaties (de code zal werken maar je spaties worden genegeerd):
 
 ```csharp
 Console.Write("Dag"_);
@@ -188,42 +199,34 @@ Console.Write(result_);
 Console.Write("hoe gaat het met je?");
 ```
 
-Correct:
+En een correct gebruik:
 
 ```csharp
 Console.Write("Dag_");
 Console.Write(result);
 Console.Write("_hoe gaat het met je?");
 ```
-
-{% hint style='tip' %}
-Een leuke conversatie uit de oude doos:
-
-fuck0ff: hi, does someone here know the escape sequence for a blank?  
-fuck0ff: hello? a blank ?  
-fuck0ff: escape sequence like 't' for tab, and blank like the things you do between words. ?  
-fuck0ff: it's for a c program  
-fuck0ff: has the channel #programming anything to do with, like to program?  
-MadSciFab: why do u need an escape sequence for a blank space?  
-MakAtak: err.. is that what you call "space"?  
-
-Bron: [bash.org](http://bash.org/?21854)
 {% endhint %}
+
 
 ### Zinnen aan elkaar plakken
 
-We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om variabelen van het type string aan elkaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
+We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om tekst aan elkaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
 
 ```csharp
 Console.WriteLine("Dag " + result + " hoe gaat het met je?");
 ```
 
+{% hint style='tip' %}
 Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling tot de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
+{% endhint %}
 
-Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code vervangt door de lijn er onder:
-
+Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code:
 ```csharp
 Console.WriteLine("Dag "+ result + " hoe gaat het met je?");
+```
+Vervangt door: 
+```csharp
 Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 ```
 

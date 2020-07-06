@@ -2,8 +2,6 @@
 
 ### Main
 
-<!--- Ignore me  --->
-
 ```csharp
 static Random r = new Random();
 static void Main(string[] args)

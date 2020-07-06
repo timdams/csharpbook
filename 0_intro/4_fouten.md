@@ -1,21 +1,16 @@
 ## Fouten oplossen
 
+Je code zal pas compileren indien deze foutloos is geschreven. Herinner je dat computers uiterst dom zijn en dus vereisen dat je code 100% foutloos is qua woordenschat en grammatica.
+
+
 {% hint style='danger' %}
-Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan (dit bespraken we reeds in [een eerder hoofdstuk](0_intrototcs.md)).
-
-
 Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
 
-![Zie je de fout?](../assets/0_intro/errorwarning.PNG)
-{% endhint %}
-
-{% hint style='tip' %}
-De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
+![Duidt nooit deze checkbox aan wanner je om duistere redenen op "yes" wilt drukken in dit scherm.](../assets/0_intro/errorwarning.PNG)
 
 Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste goed gelukte code uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
 {% endhint %}
 
-### Fouten vinden
 
 Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder kan. Gelukkig helpt VS je daarmee op 2 manieren:
 
@@ -27,8 +22,11 @@ Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder
 ### Fouten sneller vinden
 
 Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de error-list snel naar al je fouten gaan. Open deze door op het error-icoontje onderaan te klikken:
+![So many errors?!](../assets/1_csharpbasics/errors.png)
 
-![De errorlist](../assets/0_intro/errorlist.PNG)
+Dit zal de "error list" openen (een schermdeel van VS dat ik aanraad om altijd open te laten én dus niet weg te klikken):
+
+![De error list](../assets/0_intro/errorlist.PNG)
 
 In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correcte lijn te gaan.
 
@@ -40,12 +38,16 @@ Wanneer je je cursor op een lijn met een fout zet dan zal je soms vooraan een ge
 
 Je kan hier op klikken en heel vaak krijg je dan ineens een mogelijke oplossing. **Wees steeds kritisch** hierover want VS is niet alomwetend en kan niet altijd raden wat je bedoelt. Neem dus het voorstel niet zomaar over zonder goed na te denken of het dat was wat je bedoelde.
 
+{% hint style='warning' %}
+Warnings kan je over het algemeen , zeker in het begin, negeren. Bekijk ze gewoon af en toe, wie weet bevatten ze nuttige informatie om je code te verbeteren.
+{% endhint %}
+
 ### Meest voorkomende fouten
 
-De meest voorkomende fouten in deze eerste weken zullen zijn:
+De meest voorkomende fouten die je als beginnende C# programmeur maakt zijn:
 
 * **Puntkomma** vergeten.
-* **Schrijffouten** in je code RaedLine i.p.v. ReadLine.
-* Geen rekening gehouden met **hoofdletter gevoeligheid** Readline i.p.v. ReadLine (zie volgende hoofdstuk).
+* **Schrijffouten** in je code, bijvoorbeeld ``RaedLine`` i.p.v. ``ReadLine``.
+* Geen rekening gehouden met **hoofdletter gevoeligheid`van #** ``Readline`` i.p.v. ``ReadLine`` (zie verder).
 * Per ongeluk **accolades verwijderd**.
-* Code geschreven op plekken waar dat niet mag (je mag enkel binnen de accolades van ``Main`` schrijven).
+* Code geschreven op plekken waar dat niet mag (je mag momenteel enkel binnen de accolades van ``Main`` schrijven).

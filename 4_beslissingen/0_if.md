@@ -31,6 +31,7 @@ B
 
 Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B")`` zal sowieso uitgevoerd worden zoals je ook kan zien aan de volgende flowchart:
 
+<!--- {float: left} --->
 ![](../assets/2_beslissingen/ifflow.png)
 
 ### if met een block
@@ -45,7 +46,7 @@ if ( number < 5 )
     Console.WriteLine ("D");
 }
 ```
-
+<!--- {float: left} --->
 ![](../assets/2_beslissingen/iffflowblock.png)
 
 De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk code zijn dat altijd een ``bool`` als resultaat teruggeeft. 
@@ -67,6 +68,7 @@ if ( number < 5 )
     Console.WriteLine ("D");
 ```
 
+<!--- {float: left} --->
 ![](../assets/2_beslissingen/ifflownobrace.png)
 
 Merk ook op dat je code anders uitlijnen géén invloed heeft op de uitvoer (wat bijvoorbeeld wel zo is bij de programmeertaal Python).
@@ -81,6 +83,7 @@ if ( number < 5 );
     Console.WriteLine ("D");
 ```
 
+<!--- {float: left} --->
 ![](../assets/2_beslissingen/ifflowsemicolon.png)
   
 

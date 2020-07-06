@@ -38,7 +38,7 @@ double complex= 3+ DerdeMachtVan20 * Math.Round(sineHoekA);
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
 
-1. Schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de rode error negeren). ![](../assets/4_methoden/math.png)
+1. Schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de rode error negeren). <!--- {height:50%} --->![](../assets/4_methoden/math.png)
 2. Plaats je cursor op ``Pow``.
 3. Druk op ``F1`` op je toetsenbord.
 4. Je krijgt nu de help-files te zien van deze methode op MDSDN.

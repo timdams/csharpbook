@@ -61,7 +61,7 @@ Console.WriteLine("This program is written by "+ GetNameAuthor());
 Hier een voorbeeld van een methode die de faculteit van 5 berekent. De oproep van de methode gebeurt vanuit de Main-methode:
 
 ```csharp
-partial class Program
+class Program
 {
     static int FaculteitVan5()
     {
@@ -238,6 +238,7 @@ static int Macht(int grondtal, int exponent)
 
 Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische extra informatie:
 
+<!--- {height:80%} --->
 ![Hoe comment getoond wordt](../assets/4_methoden/comment.png)
 
 

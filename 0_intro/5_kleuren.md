@@ -17,9 +17,9 @@ Een voorbeeld:
 Console.WriteLine("Tekst in de standaard kleur");
 Console.BackgroundColor = ConsoleColor.Blue;
 Console.ForegroundColor = ConsoleColor.Green;
-Console.WriteLine("Deze tekst komt in het groen met blauwe achtergrond");
+Console.WriteLine("Groen met blauwe achtergrond");
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine("En deze in het rood met blauwe achtergrond");
+Console.WriteLine("Rood met blauwe achtergrond");
 ```
 
 Als je deze code uitvoert krijg je als resultaat:
@@ -32,7 +32,7 @@ Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en mee
 
 ### Kleur resetten
 
-Soms wil je terug de originele applicatie-kleuren hebben. Je zou manueel dit kunnen instellen, maar wat als de gebruiker slecht ziend is en in z'n besturingssysteem andere kleuren als standaard heeft ingesteld?!
+Soms wil je terug de originele applicatie-kleuren hebben. Je zou manueel dit kunnen instellen, maar wat als de gebruiker slechtziend is en in z'n besturingssysteem andere kleuren als standaard heeft ingesteld?!
 
 De veiligste manier is daarom de kleuren te resetten door de ``Console.ResetColor()`` methode aan te roepen zoals volgend voorbeeld toont:
 

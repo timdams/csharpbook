@@ -24,6 +24,7 @@ Console.WriteLine("˧");
 
 Noteer de hexadecimale code van het karakter dat in de tabel staat.
 
+<!--- {height:50%} --->
 ![](../assets/0_intro/letter.jpg)
 
 In dit geval is de code 0x02e7.

@@ -13,25 +13,27 @@ Een flowchart bestaat uit een aantal elementen:
 
 ### Flow-elementen
 We tonen nu kort de verschillende program flow elementen en hoe ze in een flowchart voorkomen.  
-##	If-element
+
+**If-element**
 
 ![](../assets/3_loops/if.png)
 
-####	If-else element
+**If-else element**
 
 ![](../assets/3_loops/ifelse.png)
 
-####	While-element
+**While-element**
 
 ![](../assets/3_loops/while.png)
 
-####	Do while-element
+**Do while-element**
 
 ![](../assets/3_loops/dowhile.png)
 
 Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat. Dit is dus de manier om een while/do while te herkennen: er wordt naar een eerder punt in de code gegaan, een punt waar we reeds geweest waren
 
-####	For-element
+**For-element**
+
 ![](../assets/3_loops/for.png)
 
 ### Voorbeeld flowchart

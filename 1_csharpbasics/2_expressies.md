@@ -99,6 +99,8 @@ Stel dat we een variabele ``int getal`` hebben:
 Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter zijn om te lezen. Bij twijfel, gebruik gewoon de lange notatie. 
 
 ###  Expressiedatatypes 
+
+<!--- {height:50%} --->
 ![](../assets/attention.jpg)
 
 De types die je in je berekeningen gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
