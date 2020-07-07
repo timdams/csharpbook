@@ -101,8 +101,10 @@ Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zul
 ###  Expressiedatatypes 
 
 <!--- {height:50%} --->
-![](../assets/attention.jpg)
-
+![](../assets/attention.png)
+{% hint style='tip' %}
+Voorman Tim verschijnt wanneer een sectie start waar véél fouten op gemaakt worden, zelfs bij ervaren programmeurs. Opletten geblazen dus.
+{% endhint %}
 De types die je in je berekeningen gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
 
 ```csharp

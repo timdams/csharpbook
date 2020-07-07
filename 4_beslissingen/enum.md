@@ -167,7 +167,7 @@ enum WeekDagen {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Z
 In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden, Zaterdag als 50, en Zondag als 60.
 
 ### Why should I care?
-![](../assets/care.jpg)
+![](../assets/care.png)
 
 Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum``ontdekten (en begrepen) zijn nog maar weinig programmeurs ervan af gestapt. 
 

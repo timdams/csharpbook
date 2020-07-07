@@ -132,7 +132,7 @@ interface IGod:ISuperHeld
 
 
 # Why should I care?
-![](../assets/care.jpg)
+![](../assets/care.png)
 
 In kleine projecten lijken interfaces wat overkill, en dat zijn ze vaak wel. Van zodra je een iets complexer project krijgt met meerdere klasse die onderling met elkaar allerlei zaken moeten doen, dan zijn interfaces je dikke vrienden!
 Je hebt misschien al over de [SOLID programmeerprincipes gehoord](https://en.wikipedia.org/wiki/SOLID)? 

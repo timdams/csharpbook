@@ -81,6 +81,6 @@ static void Main(string[] args)
 ```
 
 # Why should I care?
-![](../assets/care.jpg)
+![](../assets/care.png)
 
 Generics zijn een zeer krachtig concept van C#. De eerste maanden zal je vooral bestaande generieke klassen gebruiken die de .NET programmeurs reeds voor je hebben geprogrammeerd. Dankzij generics konden zij klassen schrijven die veel polyvalenter zijn omdat ze niet gebonden zijn aan een bepaald type. *Heb ik die klassen al gebruikt?* Wie weet. Maar als je straks de [generieke collections ontdekt ](../17_gencols/8_Collections.md) dan zal je direct verkocht zijn. Nog enkele hoofdstukken geduld dus!

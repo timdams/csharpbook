@@ -71,7 +71,7 @@ if(jos!=null)
 ```
 
 # Why should I care?
-![](../assets/care.jpg)
+![](../assets/care.png)
 
 De ``is`` en ``as`` keywords laten toe om meer dynamische code te schrijven. Mogelijk weet je niet op voorhand wat voor datatype je code zal moeten verwerken en wordt polymorfisme je oplossing. Maar dan? Dan komen ``is`` en ``as`` to the rescue!
 
