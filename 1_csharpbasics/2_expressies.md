@@ -1,8 +1,8 @@
 ## Expressies en operators
 
-Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die op 1 resultaat uitkomen. De volgende code is bijvoorbeeld een expressie: `3+2`.
+Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die op 1 resultaat uitkomen met een specifiek datatype. De volgende code is bijvoorbeeld een expressie: `3+2`.
 
-Het resultaat van deze expressie is 5. 
+Het resultaat van deze expressie is de ``int`` **``5``**. 
 
 {% hint style='tip' %}
 
@@ -30,10 +30,10 @@ int tussenResultaat = temperatuurGisteren - temperatuurVandaag;
 int temperatuursVerschil = tussenResultaat;
 ```
 
-Een ander voorbeeld van een **expressie**-resultaat toewijzen maar nu met literals \(stel dat we temperatuursVerschil reeds hebben gedeclareerd eerder\):
+Een ander voorbeeld van een **expressie**-resultaat toewijzen maar nu met literals:
 
 ```csharp
-temperatuursVerschil = 21 - 25;
+int temperatuursVerschil = 21 - 25;
 ```
 
 Uiteraard mag je ook combinaties van literals en variabelen gebruiken in je expressies:
@@ -51,27 +51,35 @@ Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`)
 3. **Optellen en aftrekken**: `+` en `-`
 (etc.)
 
+{% hint style='tip' %}
+We spreken over operators en **operands**. Een operand is het element dat we links en/of rechts van een operator zetten. In de som ``3+2`` zijn ``3`` en ``2`` de operanden, en ``+`` de operator. In dit voorbeeld spreken we van een **binaire operator** omdat er twee operanden zijn.
+
+Er bestaan ook **unaire operators** die maar 1 operand hebben. Denk bijvoorbeeld aan de ``-`` operator om het teken van een getal om te wisselen: ``-6``.
+{% endhint %}
+
 Net zoals in de wiskunde kan je in C# met behulp van de haakjes verplichten het deel tussen de haakjes eerst te doen, ongeacht de andere operators en hun volgorde van berekeningen:
-```text
-3+5*2 => zal 13 als resultaat geven
-(3+5)*2 => zal 16 geven
+
+```csharp
+3+5*2 // zal 13 (type int) als resultaat geven
+(3+5)*2  // zal 16 (type int) geven
 ``` 
 
 Je kan nu complexe berekeningen doen door literals, operators en variabelen samen te voegen. Bijvoorbeeld om te weten hoeveel je op Mars zou wegen:
 ```csharp
 double gewichtOpAarde= 80.3;        //kg
-double zwaartekrachtAarde= 9.81;    //m/s² 
-double zwaartekrachtMars= 3.711;    //m/s²
+double gAarde= 9.81;    //m/s² 
+double gMars= 3.711;    //m/s²
 
-double  gewichtOpMars= (gewichtOpAarde/zwaartekrachtAarde) * zwaartekrachtMars; //kg
+double  gewichtOpMars= (gewichtOpAarde/gAarde) * gMars; //kg
 Console.WriteLine("Je weeg op Mars" + gewichtOpMars + " kg");
 ```
 
 #### Modulo operator ``%``
 De modulo operator die we in C# aanduiden met ``%`` verdient wat meer uitleg. Deze operator zal als resultaat de gehele rest teruggeven wanneer we het linkse getal door het rechtse getal delen:
-```text
-7%2 => zal 1 geven, daar 7 gedeeld door 2,  3 met rest 1 geeft 
-10%5 => zal 0 geven, daar 10 gedeeld door 5, 2 met rest 0 geeft 
+
+```csharp
+7%2  // zal 1 geven, daar 7 gedeeld door 2,  3 met rest 1 geeft 
+10%5 // zal 0 geven, daar 10 gedeeld door 5, 2 met rest 0 geeft 
 ```
 
 De modulo-operator zal je geregeld gebruiken om bijvoorbeeld te weten of een getal een veelvoud van iets is. Als de rest dan 0 is weet je dat het getal een veelvoud is van het getal waar je het door deelde.
@@ -80,7 +88,7 @@ Bijvoorbeeld om te testen of getal even is gebruiken we ``%2``:
 ```csharp
 int getal= 1234234;
 int rest= getal%2;
-Console.WriteLine($"Indien het getal als rest 0 geeft weten we dat het even is. De rest is: {rest}");
+Console.WriteLine("Indien het getal als rest 0 geeft weten we dat het even is. De rest is: "+ rest);
 ```
 
 #### Verkorte operator notaties
@@ -96,7 +104,9 @@ Stel dat we een variabele ``int getal`` hebben:
 | ``getal*=7;`` | ``getal= getal*7;``| variabele vermenigvuldigen met een getal|
 | ``getal/=2;`` | ``getal= getal/2;``| variabele delen door een getal|
 
+{% hint style='tip' %}
 Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter zijn om te lezen. Bij twijfel, gebruik gewoon de lange notatie. 
+{% endhint %}
 
 ###  Expressiedatatypes 
 
@@ -105,15 +115,15 @@ Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zul
 {% hint style='tip' %}
 Voorman Tim verschijnt wanneer een sectie start waar véél fouten op gemaakt worden, zelfs bij ervaren programmeurs. Opletten geblazen dus.
 {% endhint %}
-De types die je in je berekeningen gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
+De types die je in je expressies gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
 
 ```csharp
-int result= 3+4;
+int result= 3 + 4;
 ```
 
 Je kan echter geen kommagetallen aan ``int`` toewijzen. Als je dus twee ``double`` variabelen deelt is het resultaat terug een ``double`` en zal deze lijn een fout geven daar je probeert een ``double`` aan een ``int`` toe te wijzen:
 ```csharp
-int otherResult= 3.1/45.2;
+int otherResult= 3.1 / 45.2;  //dit is fout!!!
 ```
 
 
@@ -154,7 +164,7 @@ En nu krijgen we wel ``4.5``.
 Het kan subtiel en ambetant worden in grotere berekeningen.
 
 Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien (fictief)(wishfull thinking) 10000 euro per maand. 
-Ik gebruik volgende formule:
+Ik gebruik volgende formule om te berekenen wat je van mij krijgt:
 
 ```csharp
 double helft= 10000.0 * (1/2);

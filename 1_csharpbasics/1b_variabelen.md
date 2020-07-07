@@ -1,5 +1,5 @@
 ## Variabelen
-In het vorige hoofdstuk zagen we dat er verschillende soorten datatypes bestaan. Deze types hebben we nodig om **variabelen** aan te maken.
+Hiervoor zagen we dat er verschillende soorten datatypes bestaan. Deze types hebben we nodig om **variabelen** aan te maken.
 
 De data die we in een programma gebruiken bewaren we namelijk in een **variabele van een bepaald type**. Een variabele is een plekje in het geheugen dat in je programma zal gereserveerd worden om daarin data te bewaren van het type dat je aan de variabele hebt toegekend. Een variabele zal intern een geheugenadres hebben (waar de data in het geheugen staat) maar dat zou lastig programmeren zijn indien je steeds dit adres moet gebruiken. Daarom moeten we ook steeds een naam oftewel **identifier** aan de variabele geven zodat we makkelijk de geheugenplek kunnen aanduiden. 
 
@@ -19,10 +19,15 @@ Hiervoor dien je minstens op te geven:
 
 
 Een variabele declaratie heeft als syntax:
+
 ```csharp
 datatype identifier;
 ```
-Bijvoorbeeld: ``int leeftijd;``
+
+Enkele voorbeelden:
+*  ``int leeftijd;`` 
+*  ``string leverAdres;`` 
+*  ``bool isGehuwd;`` 
 
 Je mag ook meerdere variabelen van het zelfde datatype in 1 enkele declaratie aanmaken door deze met komma's te scheiden:
 
@@ -39,10 +44,10 @@ int mijnLeeftijd = 37;
 
 ### Waarden toekennen aan variabelen
 
-Vanaf dit punt kunnen we dus ten allen tijde deze variabele gebruiken om een waarde aan toe te kennen, de bestaande waarde te overschrijven, of de waarde te gebruiken, zoals:
+Van zodra je een variabele hebt gedeclareerd kunnen we dus ten allen tijde deze variabele gebruiken om een waarde aan toe te kennen, de bestaande waarde te overschrijven, of de waarde te gebruiken, zoals:
 
-* Waarde toekennen: `mijnGetal= 15;`. **Toekenning gebeurt steeds van rechts naar links: het deel rechts van het gelijkheidsteken wordt toegewezen aan het deel links er van.**
-* Waarde tonen op scherm: `Console.WriteLine(mijnGetal);`
+* **Waarde toekennen**: `mijnGetal= 15;`. Herinner dat de toekenning steeds gebeurt van rechts naar links: het deel rechts van het gelijkheidsteken wordt toegewezen aan het deel links er van.)
+* **Waarde tonen op scherm**: `Console.WriteLine(mijnGetal);`
 
 Met de **toekennings-operator \(=\)** kan je een waarde toekennen aan een variabele. Hierbij kan je zowel een literal toekennen oftewel het resultaat van een expressie.
 
@@ -55,7 +60,7 @@ int eenAndereLeeftijd = mijnLeeftijd;
 
 ### Literal toewijzen
 
-Literals zijn expliciet ingevoerde waarden in je code. Als je in je code expliciet de waarde 4 wilt toekennen aan een variabele dan is het getal 4 in je code een zogenaamde literal. Wanneer we echter data bijvoorbeeld eerst uitlezen of berekenen \(via bijvoorbeeld invoer van de gebruiker of als resultaat van een berekening\) en het resultaat hiervan toekennen aan een variabele dan is dit geen literal.
+Literals zijn expliciet ingevoerde waarden in je code. Als je in je code expliciet de waarde 4 wilt toekennen aan een variabele dan is het getal 4 in je code een zogenaamde **literal**. Wanneer we echter data bijvoorbeeld eerst uitlezen of berekenen \(via bijvoorbeeld invoer van de gebruiker of als resultaat van een berekening\) en het resultaat hiervan toekennen aan een variabele dan is dit geen literal.
 
 Voorbeelden van een literal toekennen:
 
@@ -89,14 +94,14 @@ De manier waarop je een literal schrijft in je code zal bepalen wat het datatype
 * **Gehele getallen** worden standaard als ``int`` beschouwd, vb: ``125``.
 * **Kommagetallen** (met punt ``.``) worden standaard als ``double`` beschouwd, vb: ``12.5``.
 * Via een **suffix** na het getal kan je aangeven als het om andere types gaat:
-    * ``U`` of ``u`` voor ``uint``, vb: ``125U``.
+    * ``U`` of ``u`` voor ``uint``, vb: ``125U`` (dus bijvoorbeeld ``uint aantalSchapen = 27u;``)
     * ``L`` of ``l`` voor ``long``, vb: ``125L``.
     * ``UL`` of ``ul`` voor ``ulong``, vb: ``125ul``.
     * ``F`` of ``f`` voor ``float``, vb: ``12.5f``.
     * ``M`` of ``m`` voor ``decimal``, vb: ``12.5M``.
 * Voor **``bool``** (zie verder) is dit enkel ``true``  of ``false``.
-* Voor **``char``** (zie verder) wordt dit aangeduid met een enkele apostrof voor en na de literal, vb: ``'q'``.
-* Voor **``string``** (zie verder) wordt dit aangeduid met  aanhalingsteken voor en na de literal, vb: ``"pikachu"``.
+* Voor **``char``** (zie verder) wordt dit aangeduid met een enkele apostrof voor en na de literal, vb: ``char laatsteLetter = 'z';``.
+* Voor **``string``** (zie verder) wordt dit aangeduid met  aanhalingsteken voor en na de literal, vb: ``string myPoke = "pikachu"``.
   
 De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduiding. Er wordt vanuit gegaan wanneer je een literal probeert toe te wijzen aan een van deze types dat dit zonder problemen zal gaan (ze worden impliciet geconverteerd).
 
@@ -104,14 +109,15 @@ De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduidi
 
 Je kan ook hexadecimale notatie (starten met ``0x`` of ``0X``) gebruiken wanneer je bijvoorbeeld met ``int`` of ``byte`` werkt:
 ```csharp
-int myAge= 0x0024;
-byte myByteValue = 0x00C9;
+int myAge= 0x0024; //36
+byte myByteValue = 0x00C9; //201
 ``` 
 
 Ook binaire notatie (starten met ``0b`` of ``0B``) kan:
 ```csharp
-int myAge= 0b00010110001101000010‬; //Vanaf C# 7.2 mag je ook schrijven: 0b0001_0110_0011_0100_0010
-byte myByteValue =  0b‭00100100‬9;
+int myAge= 0b001001000; //90
+int otherAge= 0b0001_0110_0011_0100_0010 //idem, maar met _ als seperator
+byte myByteValue =  0b‭00100100‬1;
 ``` 
 
 
@@ -132,11 +138,31 @@ Volgende code toont hoe je bijvoorbeeld eerst de vorige waarde kunt bewaren en d
 int temperatuurGisteren= 20;
 //Doe vanalles
 //...
-//1 dag later
-int temperatuurEerGisteren= temperatuurGisteren; //Vorige temperatuur in eergisteren bewaren
-temperatuurGisteren = 25; //temperatuur nu overschrijven
+//Vervolgens: vorige temperatuur in eergisteren bewaren
+int temperatuurEerGisteren= temperatuurGisteren; 
+//temperatuur nu overschrijven
+temperatuurGisteren = 25; 
 ```
 We hebben dus aan het einde van het programma zowel de temperatuur van eergisteren, ``20``, als die van vandaag, ``25``.
+
+
+{% hint style='warning' %}
+Een veel gemaakte fout is variabelen meer dan één keer declareren. Dit hoeft niet én mag niet. Van zodra je een variabele declareert is deze blijkbaar in de scope (zie verder) tot het einde.
+Volgende code zal dus een fout geven:
+
+```csharp
+double kdRating= 2.1;
+//even later...
+double kdRating = 3.4; 
+```
+
+Lijn 3 moet dus worden:
+ 
+```csharp
+kdRating = 3.4; 
+```
+
+{% endhint %}
 
 ### Kennisclip
 ![](../assets/infoclip.png)

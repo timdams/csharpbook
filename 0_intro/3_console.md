@@ -189,7 +189,7 @@ C# trekt zich niets aan van witregels (zowel spaties als enters) die niét binne
 {% hint style='tip' %}
 **Opletten met spaties**
 
-Let goed op hoe je spaties gebruikt bij ``WriteLine`` Indien je dus sptaties buiten de aanhalingstekens plaatst dan heeft dit geen effect. *In volgend voorbeeld zijn de spaties aangegeven als liggende streepjes ( _ )*.
+Let goed op hoe je spaties gebruikt bij ``WriteLine`` Indien je dus spaties buiten de aanhalingstekens plaatst dan heeft dit geen effect. *In volgend voorbeeld zijn de spaties aangegeven als liggende streepjes ( _ )*.
 
 Hier een fout gebruik van spaties (de code zal werken maar je spaties worden genegeerd):
 
