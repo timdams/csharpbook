@@ -37,7 +37,7 @@ char blokje = (char)0x02e7;
 Console.WriteLine(blokje);
 ```
 
-In C\# schrijf je hexadecimale getallen als volgt als je ze rechstreeks in een string wilt plaatsen: \u02e7
+In C\# schrijf je hexadecimale getallen als volgt als je ze rechtsreeks in een string wilt plaatsen: \u02e7
 
 Wil je dus bovenstaande teken schrijven dan kan dan ook als volgt:
 
@@ -57,7 +57,7 @@ Stel dat je een toffe titel of tekening via een van volgende sites hebt gemaakt:
 Je kan het resultaat eenvoudig naar je klembord kopiëren en vervolgens in je C#-code integraal copy pasten als literal voor een ``string`` op voorwaarde dat je het laat voorafgaan door ``@"`` en uiteraard eindigt met ``";``.
 
 {% hint style='tip' %}
-Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerk adress wilt schrijven en niet iedere ``\`` wilt escapen:
+Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerkadres wilt schrijven en niet iedere ``\`` wilt escapen:
 
 ```csharp
 string zonderAt = "C\\Temp\\Myfile.txt";

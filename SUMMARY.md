@@ -44,8 +44,8 @@
   * [Booleanse logica en operators](4_beslissingen/1_logic_and_relationsoperator.md)
   * [If](4_beslissingen/0_if.md)
   * [Scope van variabelen](4_beslissingen/3_scope.md)
-  * [enum](4_beslissingen/enum.md)
   * [Switch](4_beslissingen/2_switch.md)
+  * [enum](4_beslissingen/enum.md)
   * [_Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
   * [Opgave 1](EindeTests/Mod1/Opgave.md)

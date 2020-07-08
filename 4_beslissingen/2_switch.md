@@ -4,7 +4,7 @@ Een ``switch`` statement is een program-flow element om een veelvoorkomende cons
 
 ```csharp
 int option;
-Console.WriteLine("Kies 1 voor afbreken, 2 voor opslaan, 3 voor laden:");
+Console.WriteLine("Kies: 1)afbreken\n2)opslaan\n3)laden:");
 option = Convert.ToInt32(Console.ReadLine());
  
 if (option == 1)
@@ -37,15 +37,12 @@ switch (value)
 
 
 
-``value`` is de waarde of variabele (beide mogen) die wordt gebruikt als test in de switch. Iedere case begint met het ``case`` keyword gevolgd door de waarde die value moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze ``case``. De ``case`` zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het ``break`` keyword.
+``value`` is de variabele die wordt gebruikt als test in de switch (``option`` in ons voorbeeld). Iedere case begint met het ``case`` keyword gevolgd door de waarde die value moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze ``case``. De ``case`` zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het ``break`` keyword.
 
 Tijdens de uitvoer zal het programma ``value`` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan value dan zal de code binnen de ``default``-case uitgevoerd worden (de ``else`` achteraan indien alle vorige ``if else``-tests negatief waren).
 
 Het menu van zonet kunnen we nu herschrijven naar een ``switch``:
 ```csharp
-int option;
-Console.WriteLine("Kies 1 voor afbreken, 2 voor opslaan, 3 voor laden:");
-option = Convert.ToInt32(Console.ReadLine());
 switch (option)
 {
     case 1:
@@ -64,9 +61,10 @@ switch (option)
 ```
 
 {% hint style='warning' %}
-De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.)
+De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.). Uiteraard moeten de case waarden van hetzelfde datatype zijn als die van de testwaarde.
 {% endhint %}
 
+{% hint style='tip' %}
 ### Falthrough
 
 Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
@@ -88,4 +86,5 @@ switch (option)
 ```
 
 In dit geval zullen zowel de waarden ``2`` en ``3`` resulteren in de zin "Laden of opslaan gekozen" op het scherm.
+{% endhint %}
 
