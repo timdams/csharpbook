@@ -255,6 +255,13 @@ Console.WriteLine("Geef adres");
 adres = Console.ReadLine();
 ```
 
+{% hint style='tip' %}
+Je zal vaak ``Console.WriteLine`` moeten schrijven als je dit boek volgt. Ik heb echter goed nieuws voor je: er zit een ingebouwde "snippet" in VS om sneller ``Console.WriteLine op het scherm te toveren. Ik zal je niet langer in spanning houden...of toch... nog even. Ben je benieuwd? Ik ook. Spannend he!
+
+Hier gaan we: ``cw [tab] [tab]``
+
+Als je dus ``cw`` schrijft en dan twee maal op de tab-toets van je toetsenbord duwt verschijnt daar automagisch een verse lijncode!
+{% endhint %}
 
 ### Kennisclip
 ![](../assets/infoclip.png)
