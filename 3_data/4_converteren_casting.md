@@ -13,19 +13,19 @@ Je kan geen appelen in peren veranderen zonder magie: in het geval van C# zal je
 Dit kan op 3 manieren:
 * Via **casting**: de (oude) manier die ook werkt in veel andere programmeertalen.
 * Via de **Convert. bibliotheek** van .NET.
-* Via **parsing** die we enkel terloops bespreken, maar die niet bij de leerstof van deze cursus hoort. Deze manier is enkel nuttig om strings om te zetten naar andere zaken.
+* Via **parsing** : Deze manier is enkel nuttig om strings om te zetten naar andere zaken.
 
 
 ## Casting
 Het is uiteraard onmogelijk om een kommagetal aan een geheel getal toe te wijzen zonder dat er informatie verloren zal gaan. Toch willen we dit soms doen. **Van zodra we een variabele van het ene type willen toekennen aan een variabele van een ander type en er dataverlies zal plaatsvinden dan moeten we aan casting doen.**
 
-Hierbij dien je aan de compiler te zeggen: *"Volgende variabele die van het type x is, moet aan deze variabele van het type y toegekend worden. **Ik besef dat hierbij data verloren kan gaan, maar zet de variabele toch maar om naar het nieuwe type, ik draag alle verantwoordelijkheid voor het verlies.**"*.
+Hierbij dien je aan de compiler te zeggen: *"Volgende variabele die van het type x is, moet aan deze variabele van het type y toegekend worden. **Ik besef dat hierbij data verloren kan gaan, maar zet de variabele toch maar om naar het nieuwe type, ik draag alle verantwoordelijkheid voor het verlies"**.
 
 
 ### Wat is casting
-Casting heb je nodig om een variabele van een bepaald type voor een ander type te laten doorgaan. Stel dat je een complexe berekening hebt waar je werkt met verschillende types (bijvoorbeeld int, double en float). Door te casten voorkom je dat je vreemde resultaten krijgt. Je gaat namelijk bepaalde types even als andere types gebruiken.
+Casting heb je nodig om een variabele van een bepaald type voor een ander type te laten doorgaan. Stel dat je een complexe berekening hebt waar je werkt met verschillende types (bijvoorbeeld ``int``, ``double`` en ``float``). Door te casten voorkom je dat je vreemde resultaten krijgt. Je gaat namelijk bepaalde types even als andere types gebruiken.
 
-Het is belangrijk in te zien dat het casten van een variabele naar een ander type enkel een gevolg heeft TIJDENS het uitwerken van de expressie waarbinnen je werkt. De variabele in het geheugen zal voor eeuwig en altijd het type zijn waarin het origineel gedeclareerd werd.
+Het is belangrijk in te zien dat het casten van een variabele naar een ander type enkel een gevolg heeft **tijdens** het uitwerken van de expressie waarbinnen je werkt. De variabele in het geheugen zal voor eeuwig en altijd het type zijn waarin het origineel gedeclareerd werd.
 
 {% hint style='tip' %}
 **Je dient enkel aan casting te doen wanneer je aan *narrowing* doet: een datatype omzetten naar een ander datatype dat een verlies aan data met zich zal meebrengen.**
@@ -57,9 +57,9 @@ var1 = 20.4;
 var2 = var1;
 ```
 
-Dit zal niet gaan. Je probeert namelijk een waarde van het type double in een variabele van het type int te steken. Dat gaat enkel als je informatie weggooit. Je moet aan *narrowing* doen.
+Dit zal niet gaan. Je probeert namelijk een waarde van het type double in een variabele van het type int te steken. Dat gaat enkel als je informatie weggooit (namelijk het gedeelte na de komma). Je moet aan *narrowing* doen.
 
-Dit gaat enkel als je expliciet aan de compiler zegt: het is goed, je mag informatie weggooien, ik begrijp dat en zal er rekening mee houden. Dit proces van narrowing noemen we casting.
+Dit gaat enkel als je expliciet aan de compiler zegt: *het is goed, je mag informatie weggooien*, ik begrijp dat en zal er rekening mee houden. Dit proces van narrowing noemen we casting.
 
 En je lost dit op door voor de variabele die tijdelijk dienst moet doen als een ander type, het nieuwe type, tussen ronde haakjes te typen, als volgt:
 
@@ -70,7 +70,7 @@ int var2;
 var1 = 20.4;
 var2 = (int)var1;
 ```
-Het resultaat in `var2` zal `20` zijn (alles na de komma wordt bij casting van een double naar een int weggegooid).
+Het resultaat in `var2` zal `20` zijn (alles na de komma wordt weggegooid bij casting van een ``double`` naar een ``int`` ).
 
 {% hint style='tip' %}
 Merk op dat `var1` nooit van datatype is veranderd; enkel de inhoud ervan (`20.4`) werd eruit gehaald, omgezet ("gecast") naar `20` en dan aan ``var2`` toegewezen dat enkel `int` aanvaardt.
@@ -78,30 +78,38 @@ Merk op dat `var1` nooit van datatype is veranderd; enkel de inhoud ervan (`20.4
 
 ### Narowing in de praktijk
 
-Stel dat ``temperatuurGisteren`` en ``temperatuurVandaag`` van het type int zijn, maar dat we nu de gemiddelde temperatuur willen weten. De formule voor gemiddelde temperatuur over 2 dagen is:
+{% hint style='tip' %}
+<!--- {height:50%} --->
+![](../assets/attention.png)
+Voorman Tim hier. Tijd om je helm op te zetten en weer even extra op te letten. Herinner je vorige keer nog dat ik je op slinkse manier de helft van m'n loon ging geven en je de volle 0 euro mee naar huis kreeg? Wel, dit concept gaan we hier nog eens bekijken, maar nu in combinatie met casting. Opletten!
+{% endhint %}
+
+
+Stel dat ``tempGisteren`` en ``tempVandaag`` van het type ``int`` zijn, maar dat we nu de gemiddelde temperatuur willen weten. De formule voor gemiddelde temperatuur over 2 dagen is:
 
 ```csharp
-int temperatuurGemiddeld = (temperatuurGisteren + temperatuurVandaag)/2;
+int tempGemiddeld = (tempGisteren + tempVandaag)/2;
 ```
 
-Test dit eens met de waarden 20 en 25. Wat zou je verwachten als resultaat? Inderdaad: 22,5 (omdat (20+25)/2 = 22.5) *Nochtans krijg je 22 op scherm te zien en zal de variabele ``temperatuurGemiddeld`` ook effectief de waarde 22 bewaren en niet 22.5.*
+Test dit eens met de waarden 20 en 25. Wat zou je verwachten als resultaat? Inderdaad: 22,5 (omdat (20+25)/2 = 22.5) *Nochtans krijg je 22 op scherm te zien en zal de variabele ``tempGemiddeld`` ook effectief de waarde 22 bewaren en niet 22.5.*
 
-Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (temperatuurGisteren, temperatuurVandaag en 2) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon *weggegooid*, vandaar de uitkomst. **Dit is narrowing.**
+Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (tempGisteren, tempVandaag en 2) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon *weggegooid*, vandaar de uitkomst. **Dit is narrowing.**
 
-Hoe krijgen we de correctere uitslag te zien? Door temperatuurGemiddeld als kommagetal te declareren (bijvoorbeeld door het type double):
+
+Hoe krijgen we de correctere uitslag te zien? Door tempGemiddeld als kommagetal te declareren (bijvoorbeeld door het type double):
 
 ```csharp
-double temperatuurGemiddeld = (temperatuurGisteren + temperatuurVandaag)/2;
+double tempGemiddeld = (tempGisteren + tempVandaag)/2;
 ```
 
-Als we dit testen zal nog steeds de waarde 22 aan temperatuurGemiddeld toegewezen worden. De expressie rechts bevat enkel integers en de computer zal dus ook de berekening en het resultaat als integer beschouwen ([lees hier hoe dit nu weer zat](../1_csharpbasics/2_expressies.md)). 
+Als we dit testen zal nog steeds de waarde 22 aan tempGemiddeld toegewezen worden. De expressie rechts bevat enkel integers en de computer zal dus ook de berekening en het resultaat als integer beschouwen.
 
 We moeten dus ook de rechterkant van de toekenning als double beschouwen. *We doen dit, zoals eerder vermeld, door middel van **casting***, als volgt:
 
 ```csharp
-double temperatuurGemiddeld = ((double)temperatuurGisteren + (double)temperatuurVandaag)/2;
+double tempGemiddeld = ((double)tempGisteren + (double)tempVandaag)/2;
 ```
-Nu zal temperatuurGemiddeld wel de waarde 22.5 bevatten.
+Nu zal tempGemiddeld wel de waarde 22.5 bevatten.
 
 ### Widening
 Casting is echter  niet nodig als je aan **widening** doet (een kleiner type in een groter type steken), als volgt:
@@ -139,29 +147,28 @@ int ageOther= Convert.ToInt32(anderGetal); //double to int
 Enkel indien je ``0``, (``int``) of ``0.0`` ingeeft, dan krijg je ``False``. In quasi alle andere gevallen krijg je altijd ``True``.
 {% endhint %}
 
-Opgelet: de convert zal zelf zo goed mogelijk de data omzetten en dus indien nodig widening of narrowing toepassen. Zeker bij het omzetten van een string naar een ander type kijk je best steeds de documentatie na om te weten wat er intern juist zal gebeuren.
+{% hint style='warning' %}
+Opgelet: de conversie zal zelf zo goed mogelijk de data omzetten en dus indien nodig widening of narrowing toepassen. Zeker bij het omzetten van een string naar een ander type kijk je best steeds de documentatie na om te weten wat er intern juist zal gebeuren.
 
 Je kan [alle conversie-mogelijkheden hier bekijken](https://msdn.microsoft.com/en-us/library/system.convert.aspx).
-
-## Ter info: Parsing
-{% hint style='tip' %}
-Voorlopig zullen we parsing niet nodig hebben. Voor de volledigheid plaatsen we deze informatie hier echter.
 {% endhint %}
 
-Naast conversie en casting bestaat er ook nog parsing.
+## Parsing
+{% hint style='tip' %}
+Voorlopig zullen we parsing niet nodig hebben. Voor de volledigheid plaatsen we deze informatie hier echter. Ben je toch benieuwd: bekijk zeker eens de werking van ``TryParse``! Dit is een erg krachtige manier van werken.
+{% endhint %}
 
-Parsing is anders dan conversie en casting. Parsing zal je dit jaar enkel nodig hebben om tekst naar getallen om te zetten. Intern zal bijna altijd ``Convert.To...`gebruikt worden.
+Naast conversie en casting bestaat er ook nog **parsing**.
 
-Ieder ingebouwd type heeft  een .Parse() methode die je kan aanroepen om strings om te zetten naar het gewenste type. Parsing zal je echter minder vaak nodig hebben. Gebruik deze enkel wanneer je:
+Parsing is anders dan conversie en casting. Parsing zal je in dit boek enkel nodig hebben om tekst(``string``) naar getallen om te zetten. Echter, intern zal bijna altijd ``Convert.To...`` gebruikt worden indien je een ``Parse`` methode aanroept.
 
-1. een string hebt waarvan je weet dat deze altijd van een specifiek type zal zijn, bv een int, dan kan je ``Int32.Parse()`` gebruiken.
-2. input van de gebruiker vraagt (bv via Console.ReadLine) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()``. ([info](https://msdn.microsoft.com/en-us/library/f02979c7.aspx))
+Ieder ingebouwd type heeft  een .Parse() methode die je kan aanroepen om strings om te zetten naar het gewenste type. Voorbeeld van parsing:
 
-Er zijn nog subtiele verschillen die we hier niet behandelen ([zie](https://stackoverflow.com/questions/199470/whats-the-main-difference-between-int-parse-and-convert-toint32)).
-
-Voorbeeld van parsing:
 ```csharp
 int numVal = Int32.Parse("-105");
 Console.WriteLine(numVal);
 ```
+Gebruik parsing enkel wanneer je:
 
+1. een string hebt waarvan je weet dat deze altijd van een specifiek type zal zijn, bv een int, dan kan je ``Int32.Parse()`` gebruiken.
+2. input van de gebruiker vraagt (bv via Console.ReadLine) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()``. ([info](https://msdn.microsoft.com/en-us/library/f02979c7.aspx))

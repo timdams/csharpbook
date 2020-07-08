@@ -13,20 +13,21 @@ char eenLetter = 'X';
 Console.WriteLine("eenLetter=" + eenLetter);
 ```
 
-Het is belangrijk dat je de apostrof (``'`` ) niet vergeet voor en na het karakter dat je wenst op te slaan daar dit de literal voorstelling van `char`-literals is (zie ook [hier](../1_csharpbasics/1_datatypes.md)).
+Het is belangrijk dat je de apostrof (``'`` ) niet vergeet voor en na het karakter dat je wenst op te slaan daar dit de literal voorstelling van `char`-literals is.
 
-Je kan eender welk [UNICODE-teken](https://en.wikipedia.org/wiki/Unicode) in een `char` bewaren, namelijk letters, cijfers en speciale tekens zoals `%`, `$`, `*`, `#`, etc. Merk dus op dat volgende lijn: ``char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal ([zie Convert en Casting](../3_data/4_converteren_casting.md)).
+Je kan eender welk [UNICODE-teken](https://en.wikipedia.org/wiki/Unicode) in een `char` bewaren, namelijk letters, cijfers en speciale tekens zoals `%`, `$`, `*`, `#`, etc. 
+Merk dus op dat volgende lijn: ``char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal ([zie Convert en Casting](../3_data/4_converteren_casting.md)).
 
 
 ### String
 Een string is een reeks (eigenlijk [array](../7_arrays/1_ArraysBasics.md)) van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
 
-![](../assets/1_csharpbasics/stringenchars.png)
+![IntelliSense is de krachtige technologie in VS die je behulpzame informatie geeft tijdens het programmeren](../assets/1_csharpbasics/stringenchars.png)
 
 #### Strings declareren
 Merk op dat we bij een string literal gebruik maken van aanhalingstekens (`"`) terwijl bij chars we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te onderscheiden.
 
-Volgende code geeft dus drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer behelst het een char (enkelvoudig teken), dan een een string (reeks van tekens) en dan een int (effectief getal):
+Volgende code geeft dus drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer gaat het om het een ``char`` (enkelvoudig teken), dan een een ``string`` (reeks van tekens) en dan een ``int`` (effectief getal):
 
 ```csharp
 char eenKarakter = '1'; 
@@ -38,12 +39,13 @@ Console.WriteLine(eenString);
 Console.WriteLine(eenGetal);
 ```
 De output van dit programma zal dan zijn:
-```
-1
-1
-1
-```
 
+<!---{line-numbers:false}--->
+```text
+1
+1
+1
+```
 
 Fout gebruik van strings en chars zal code geven die niet zal gecompileerd worden:
 

@@ -27,8 +27,30 @@ string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud.";
 ```
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet tegen het vorige stringstuk wilt 'plakken'.
 
+{% hint style='tip' %}
+De volgorde van strings met andere types samenvoegen (**concateneren**) bepaald wat de uitvoer zal zijn! Kijk zelf:
+
+```csharp
+Console.WriteLine("1"+1+1);
+Console.WriteLine(1+1+"1");
+Console.WriteLine("1" + (1 + 1));
+```
+
+Geef als uitvoer:
+
+<!---{line-numbers:false}--->
+```text
+111
+21
+12
+```
+
+Ook in dit soort code wordt dus de volgorde van bewerkingen gerespecteerd. De concatenatie gebeurt van links naar rechts en de linkse operand zal steeds bepalen wat het resultaat van de bewerking zal zijn. 
+{% endhint %}
+
+
 ### Manier 2: String interpolation met $
-In de oude dagen van C# gebruikten we ``String.Format()`` (zie hieronder) om meerdere strings en variabelen samen te voegen tot één string. Nu kan dat met string interpolation waarbij we het $-teken gebruiken.
+In de oude dagen van C# gebruikten we ``String.Format()`` (zie hierna) om meerdere strings en variabelen samen te voegen tot één string. Nu kan dat met string interpolation waarbij we het $-teken gebruiken.
 
 Door het $-teken **VOOR** de string te plaatsen geef je aan dat alle delen in de string die tussen accolades staan { } als code mogen beschouwd worden. Een voorbeeld maakt dit duidelijk:
 ```csharp
@@ -59,17 +81,20 @@ Wil je bijvoorbeeld een kommagetal tonen met maar 2 cijfers na de komma dan schr
 double number = 12.345;
 Console.WriteLine($"{number:F2}");
 ```
+
+{% hint style='tip' %}
 Nog enkele nuttige vormen:
 * D5: geheel getal bestaande uit 5 cijfers (``123`` wordt ``00123``) (werkt enkel op gehele getallen!)
 * E2: wetenschappelijke notatie met 2 cijfers precisie (``12000000`` wordt ``1,20E+007``)
 * C: geldbedrag (``12,34`` wordt € 12,34: teken van valuta afhankelijk van instellingen pc)
+{% endhint %}
   
 Alle format specifiers staan [hier opgelijst](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
 
 ### Manier 3: String.Format()
 String interpolatie met het $-teken is een nieuwe C# aanwinst. Je zal echter nog veel documentatie en online code tegenkomen die nog met ``String.Format`` werkt (ook zijn er nog zaken waar het te prefereren is om ``String.Format`` te gebruiken i.p.v. 1 van vorige manieren). Om die reden bespreken we dit nog in deze cursus.
 
-``String.Format`` is een ingebouwde methode die string-interpolatie toe laat op een iets minder intuïtieve manier:
+``String.Format`` is een ingebouwde methode die string-interpolatie toelaat op een iets minder intuïtieve manier:
 ```csharp
 string result= String.Format("Ik ben {0} en ik ben {1} jaar oud.",name,age);
 ```
@@ -77,7 +102,7 @@ Het getal tussen de accolades geeft aan de hoeveelste parameter na de string hie
 
 Volgende code zal een ander resultaat geven:
 ```csharp
-string result= String.Format("Ik ben {1} en ik ben {1} jaar oud.",name,age);
+string result= String.Format("Ik ben {1} en ben {1} jaar.",name,age);
 ```
 Namelijk:  ``Ik ben 13 en ik ben 13 jaar oud.``
 

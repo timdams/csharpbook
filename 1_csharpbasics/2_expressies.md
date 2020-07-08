@@ -112,6 +112,7 @@ Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zul
 
 <!--- {height:50%} --->
 ![](../assets/attention.png)
+
 {% hint style='tip' %}
 Voorman Tim verschijnt wanneer een sectie start waar véél fouten op gemaakt worden, zelfs bij ervaren programmeurs. Opletten geblazen dus.
 {% endhint %}
