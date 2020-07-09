@@ -9,9 +9,9 @@ while (booleaanse expressie)
 }
 ```
 
-Waarbij, net als bij een ``if`` statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operatoren.
+Waarbij, net als bij een ``if`` statement, de **conditie** uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operatoren.
 
-Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden. Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de ``while``-loop niet worden uitgevoerd.
+**Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden.** Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de ``while``-loop nooit worden uitgevoerd.
 
 Telkens wanneer het programma aan het einde van het ``while`` codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer ``true`` dan wordt de code weer uitgevoerd. Van zodra de test ``false`` is zal de code voorbij het codeblock springen en na het ``while`` codeblok doorgaan.
 
@@ -39,7 +39,7 @@ Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 
 
 Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operatoren.
 
-Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang ``teller`` groter is dan 5 en de variabele ``naam`` van het type ``string`` niet gelijk is aan "tim":
+Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang ``teller`` groter is dan 5 én de variabele ``naam`` van het type ``string`` niet gelijk is aan "tim":
 
 ```csharp
 while(teller > 5 && naam != "tim")
@@ -85,17 +85,22 @@ while(teller <= 10)
    som= som+teller;
    teller++;
 }
-Console.WriteLine(som); //deze lijn zal fout genereren
+Console.WriteLine(som); //deze lijn zal een fout genereren
 ```
 
-De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden:
+{% hint style='tip' %}
+Voorgaande code zal volgende VS error geven:
+
+![Deze fout zal je nog tegenkomen](../assets/3_loops/unasigned.png)
+{% endhint %}
+
+De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden. Hier de oplossing:
 
 ```csharp
 int teller= 1;
 int som=0;  
 while(teller <= 10)
 {
-   
    som= som+teller;
    teller++
 }
@@ -116,14 +121,15 @@ De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
 ```csharp
 do{
-      // C# die uitgevoerd zal worden zolang de booleaanse expressie waar is
+      // code indien booleaanse expressie waar is
 } while (booleaanse expressie);
 ```
 
 {% hint style='danger' %}
 Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
-Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop.
 {% endhint %}
+
+Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop:
 
 ```csharp
 int i = 10;
@@ -157,10 +163,10 @@ do
 
 **Zolang (while) de gebruiker niet ``"a"`` OF ``"b"`` OF ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
 
-Merk op dat we de variabele ``string input`` VOOR de `` do while`` moeten aanmaken. Zouden we die IN de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
+Merk op dat we de variabele ``string input`` **voor** de `` do while`` moeten aanmaken. Zouden we die in de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
 
 {% hint style='tip' %}
-Je ziet dat het stuk ``} while(input...);`` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft.
+Je ziet dat de test achteraan (``while(input...);``) buiten de accolades van de loop ligt en dus een andere scope heeft.
 {% endhint %}
 
 

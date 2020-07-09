@@ -58,13 +58,11 @@
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
   * [For](5_herhalingen/2_for.md)
   * [Nesting](5_herhalingen/3_nesting.md)
-  * [Programma flow analyse](5_herhalingen/4_programflow.md)
   * [_Oefeningen deel 1](5_herhalingen/A_practica.md)
   * [_Oefeningen deel 2](5_herhalingen/c_practica.md)
   * [_Oefeningen deel 3](5_herhalingen/b_practica.md)
 * H6: Methoden
   * [Methoden intro](6_methoden/0_intromethods.md)
-  * [Methoden in de praktijk](6_methoden/methodepraktijk.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Geavanceerde methodetechnieken](6_methoden/3_advancedmethod.md)  
   * [_Oefeningen deel 1](6_methoden/b_practica.md)
@@ -166,6 +164,7 @@
 ## Appendix
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+* [Programma flow analyse](5_herhalingen/4_programflow.md)
 * [Oefeningen kerkhof](B_appendix/graveyard.md)
   
 ## Semester 1 appendix
