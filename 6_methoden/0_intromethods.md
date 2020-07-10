@@ -259,7 +259,13 @@ int getal= 5;
 int resultaat= BerekenFaculteit(getal);
 ```
 
+
+
 Als we even later ``resultaat`` dan zouden gebruiken zal de waarde ``120`` er in zitten.
+
+{% hint style='tip' %}
+Parameters worden "by value" meegegeven (zie het hoofdstuk over Arrays verderop) wat wil zeggen dat een **kopie** van de waarde wordt meegegeven. Als je dus in de methode de waarde van de parameter aanpast, dan heeft dit géén invloed op de waarde van de originele parameter waar je de methode aanriep.
+{% endhint %}
 
 Je zou nu echter de waarde van getal kunnen aanpassen (door bijvoorbeeld aan de gebruiker te vragen welke faculteit moet berekend worden) en je code zal nog steeds werken.
 

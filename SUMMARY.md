@@ -70,7 +70,6 @@
 * H7: Arrays
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Arrays en geheugen](7_arrays/arraysgeheugen.md)
-  * [Nuttige array methoden](7_arrays/2_werken_met_arrays.md)
   * [System.Array](7_arrays/systemarray.md)
   * [Algoritmes met arrays](7_arrays/algoarrays.md)
   * [Strings en arrays](7_arrays/stringarray.md)
@@ -172,6 +171,7 @@
 * [Nice to know stuff](B_appendix/prostuff.md)
   * [Out en Ref parameters](B_appendix/2_outenref.md)
   * [Jagged arrays](B_appendix/5_jaggedArrays.md) 
+  * [Nuttige array methoden](7_arrays/2_werken_met_arrays.md)
 * Oplossingen oefeningen
   * [H0 - Werken met VS](0_intro/opl_apractica.md)
   * [H1 - Variabelen en datatypes](1_csharpbasics/opl_apractica.md)

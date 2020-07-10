@@ -7,21 +7,7 @@ Om deze methoden te kunnen gebruiken moet je bovenaan je file de volgende lijn t
 {% endhint %}
 
 ```csharp
-using System;
-using System.Linq;
-namespace methodmovie
-{
-   class Program
-    {
-        public static void Main()
-        {
-            int[] getallen = new int[101];
-
-            //..
-            Console.WriteLine(getallen.Sum());
-        }
-    }
-}
+Console.WriteLine(getallen.Sum());
 ```
 
 

@@ -1,15 +1,9 @@
 ## Algoritmes en arrays
 
-{% hint style='warning' %}
-Het is zéér belangrijk dat je vlot de algoritmen kan schrijven die in dit hoofdstuk aan bod komen, zoals:
-
-* Zoeken van elementpositie in array
-* Tellen hoe vaak een element in een array voorkomt
-* Elementen in een array 1 of meerdere plaatsen opschuiven
-{% endhint %} 
+Omdat arrays ongelooflijk groot kunnen worden, is het nuttig dat je algoritmes kunt schrijven die vlot met arrays kunnen werken. Je wilt niet dat je programma er 3 minuten over doet om gewoon te ontdekken of een bepaalde waarde in een array voorkomt of niet.
 
 {% hint style='tip' %}
-Dit soort algoritmes worden erg vaak bij solicitaties voor een programmeer-functie gevraagd om te maken.
+Dit soort algoritmes worden erg vaak bij sollicitaties voor een programmeer-functie gevraagd om te maken zonder externe hulp.
 {% endhint %}
 
 #### Manueel zoeken in arrays
@@ -110,3 +104,7 @@ else
     Console.WriteLine("Not found");
 }
 ```
+
+{% hint style='tip' %}
+Dat was het? Er zijn tal van andere algoritmes. Denk maar aan de verschillende manieren om arrays te sorteren (bijvoorbeeld de bubblesort). Al deze algortimes hier bespreken zou een boek apart vereisen. We toonden daarom enkele ter illustratie.
+{% endhint %}
