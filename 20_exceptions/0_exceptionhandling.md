@@ -1,5 +1,11 @@
 # Exception handling
 
+<!---NOBOOKSTART--->
+{% hint style='tip' %}
+Opgelet: indien je door deze cursus gaat voor het tweede zit examen OOP van dit academiejaar (2019-2020) dan mag je dit hoofdstuk negeren. Het zal pas volgende academiejaar deel uitmaken van de leerstof
+{% endhint %}
+<!---NOBOOKEND--->
+
 Veel fouten in code zijn het gevolg van:
 
 * Het aanroepen van data die er niet is (bijvoorbeeld een bestand dat werd verplaatst of hernoemd)

@@ -29,6 +29,7 @@ Het algoritme is de essentie van een computerprogramma en kan je beschouwen als 
 
 Het algoritme van een programma moet je zelf verzinnen. De volgorde waarin de instructies worden uitgevoerd zijn echter zeer belangrijk. Dit is exact hetzelfde als in het echte leven: een algoritme om je fiets op te pompen kan zijn:
 
+<!---{line-numbers:false}--->
 ```text
 1. Haal dop van het ventiel
 2. Plaats pomp op ventiel

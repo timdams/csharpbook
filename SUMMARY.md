@@ -154,6 +154,10 @@
   * [Final chapter: we brengen alles samen](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [_Oefeningen](16_interfaces/A_practica.md)
   * [_Corona Missie](16_interfaces/coronamissie.md)
+* H17: Exception handling
+  * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
+  * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
+  * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
@@ -229,10 +233,6 @@
   * [Generic classes en constraints](17_gencols/2_genericclasses_en_constraints.md)
   * [Collections](17_gencols/8_Collections.md)
   * [Labo-oefeningen](17_gencols/A_Practica.md)
-* Exception handling
-  * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
-  * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
-  * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)
 * Events
   * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
