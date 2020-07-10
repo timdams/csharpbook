@@ -48,8 +48,8 @@ Steve Jobs, de oprichter van Apple, was een fervent fan van OOP. In een intervie
 
 > You have no idea how I did that. You have no knowledge of the laundry place. Maybe you speak French, and you can’t even hail a taxi. You can’t pay for one, you don’t have dollars in your pocket. Yet, I knew how to do all of that. And you didn’t have to know any of it. All that complexity was hidden inside of me, and we were able to interact at a very high level of abstraction. That’s what objects are. They encapsulate complexity, and the interfaces to that complexity are high level.
 
-En omdat het vloeken in de kerk is om Steve Jobs in een C# cursus aan het woord te laten, hier wat Microsoft-oprichter Bill Gates over OOP te zeggen had:
+En omdat het vloeken in de kerk is om Steve Jobs in een C# boek aan het woord te laten, hier wat Microsoft-oprichter Bill Gates over OOP te zeggen had:
 
-![](../assets/6_klassen/gates.jpg)
+![Bill Gates](../assets/6_klassen/gates.jpg)
 
 [Bron](https://www.azquotes.com/quote/1470407)

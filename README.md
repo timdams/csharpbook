@@ -1,6 +1,6 @@
 # Zie scherp
 
-Deze cursus wordt gebruikt als handboek binnen de [opleiding professionele bachelor elektronica-ict van de AP Hogeschool](https://www.ap.be/opleiding/elektronica-ict).
+Dit boek wordt gebruikt als handboek binnen de [opleiding professionele bachelor elektronica-ict van de AP Hogeschool](https://www.ap.be/opleiding/elektronica-ict).
 
 Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programmeren met C\#':
 

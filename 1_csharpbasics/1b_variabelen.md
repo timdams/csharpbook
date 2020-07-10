@@ -85,7 +85,7 @@ eenGetal = "4";
 
 Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschappen:
 
-![](../assets/0_intro/errorliteraltoekenning.png)
+![Foutboodschap wanneer je literals toekent van een verkeerd datatype](../assets/0_intro/errorliteraltoekenning.png)
 {% endhint %}
 
 #### Literal bepaald het datatype

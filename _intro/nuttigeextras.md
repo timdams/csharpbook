@@ -7,7 +7,7 @@ Er zijn quasi oneindig veel boeken over C# geschreven, althans zo lijkt het. Hie
 ## Beginner boeken
 
 * [C# Programming](https://ineasysteps.com/products-page/all_books/c-sharp-programming-in-easy-steps/) van Mike McGrath: een uiterst compact, maar zeer helder en kleurrijk boekje dat ik ten stelligste aanbeveel als je wat last hebt met de materie van de eerste weken.
-* [Microsoft Visual C# 2015: An introduction to OOP](https://www.amazon.com/Microsoft-Visual-2015-Introduction-Object-Oriented/dp/1285860233) van Joyce Farrell: Niet het meest sexy boek, maar wel het meest volledige qua overlap met de leerstof van deze cursus. Aanrader voor zij die wat meer in detail willen gaan en op zoek zijn naar oneindig veel potentiele examenvragen ;)  
+* [Microsoft Visual C# 2015: An introduction to OOP](https://www.amazon.com/Microsoft-Visual-2015-Introduction-Object-Oriented/dp/1285860233) van Joyce Farrell: Niet het meest sexy boek, maar wel het meest volledige qua overlap met de leerstof van dit boek. Aanrader voor zij die wat meer in detail willen gaan en op zoek zijn naar oneindig veel potentiele examenvragen ;)  
 * [Head First C#](https://www.bol.com/nl/f/head-first-c/37019965/?country=BE) van Andrew Stellman & Jennifer Greene: laat de ietwat bizarre, bijna kleuterachtige look and feel van de head first boeken je niet afschrikken. Ieder boek in deze serie is goud waar. De head first boeken zijn de ideale manier als je zoekt naar een alternatieve manier om complexe materie te begrijpen. Bekijk zeker ook de Head First Design Patterns en Head First Sql boeken in de reeks!
 
 ## Geavanceerd
@@ -17,7 +17,7 @@ Er zijn quasi oneindig veel boeken over C# geschreven, althans zo lijkt het. Hie
 
 # Online 
 
-Leren programmeren door enkele de opdrachten in deze cursus te maken zal je niet ver (genoeg) brengen. Onze dikke vriend het Internet heeft echter tal van schitterende bronnen. Hier een overzicht.
+Leren programmeren door enkele de opdrachten in dit boek te maken zal je niet ver (genoeg) brengen. Onze dikke vriend het Internet heeft echter tal van schitterende bronnen. Hier een overzicht.
 
 ## Cheat sheet
 
@@ -47,15 +47,15 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 * [RPG Game in C#](http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/) (behandelt leerstof van volledig eerste jaar en meer)
 * [Advent of code](https://adventofcode.com) Pittige programmeeroefeningen die jaarlijks in december verschijnen.
 * [Free Programming Book](https://books.goalkicker.com/) Handig vorm gegeven gratis ebooks met tal van onderwerpen waaronder ook C# en het .NET Framework.
-* [Tutorials teacher](https://www.tutorialsteacher.com/csharp/csharp-tutorials): De uitgebreidere, Engelstalige variant van deze cursus zeg maar.
+* [Tutorials teacher](https://www.tutorialsteacher.com/csharp/csharp-tutorials): De uitgebreidere, Engelstalige variant van dit boek zeg maar.
 
 ## Tutorials
 
 * [Dotnet beginning](http://dot.net/videos)
 * [C# Getting started interactive quickstart tutorials](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/): Aanrader.
 * [Online video c#  cursus](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners):  Zeer aan te raden indien je een bepaald concept uit de les niet begrijpt.
-* [C-sharp.be](http://www.c-sharp.be) : Nederlandstalige cursus met veel toffe oefeningen waarvan je sommige zelfs in deze cursus zal terugvinden.
-* [Microsoft Virtual Academy](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949):  Microsoft heeft een virtual academy cursus "C# fundamentals" uitgebracht. Ik kan deze cursus zeer erg aanbevelen.
+* [C-sharp.be](http://www.c-sharp.be) : Nederlandstalige cursus met veel toffe oefeningen waarvan je sommige zelfs in dit boek zal terugvinden.
+* [Microsoft Virtual Academy](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949):  Microsoft heeft een virtual academy cursus "C# fundamentals" uitgebracht. Ik kan dit boek zeer erg aanbevelen.
 * [Rob Miles's The C# Programming Yellow book](http://www.robmiles.com/c-yellow-book/): Zeer vermakelijk, vlot geschreven C# boek(je)
 * [Open Source Game Clones](https://osgameclones.com/): "This site tries to gather open-source remakes of great old games in one place." Je vindt er ook tal van C# projecten terug zoals [GTA 2](https://code.google.com/archive/p/gta2net/).Klik bovenaan op "languages" en filter maar eens op C#.
 

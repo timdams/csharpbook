@@ -1,6 +1,6 @@
 # Maak volgende klassen
 Maak 2 klassen: ``Enclave`` en ``StadsEnclave``
-![](/assets/7_overerving/coronacompo.jpg)
+![Schematische voorstelling van de enclave](/assets/7_overerving/coronacompo.jpg)
 
 Een enclave heeft 1 hospitaal, 1 generator en 1 of meerdere woonsten. Wanneer een enclave wordt aangemaakt heeft deze 3 woningen van bij de start, alsook een werkende generator en hospitaal. Al deze gebouwen komenop een willekeurige plek.
 

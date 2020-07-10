@@ -1,6 +1,6 @@
 # Bugs in vaardigheidsproef 1819
 
-We bespreken en tonen hier kort de meest voorkomende fouten in de vaardigheidsproef 1819. Ook lezers van deze cursus in verdere jaren zullen hier veel uit kunnen leren!
+We bespreken en tonen hier kort de meest voorkomende fouten in de vaardigheidsproef 1819. Ook lezers van dit boek in verdere jaren zullen hier veel uit kunnen leren!
 
 # Random perikelen
 

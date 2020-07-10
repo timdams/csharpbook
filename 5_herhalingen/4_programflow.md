@@ -14,27 +14,19 @@ Een flowchart bestaat uit een aantal elementen:
 ### Flow-elementen
 We tonen nu kort de verschillende program flow elementen en hoe ze in een flowchart voorkomen.  
 
-**If-element**
+![If](../assets/3_loops/if.png)
 
-![](../assets/3_loops/if.png)
+![if-else](../assets/3_loops/ifelse.png)
 
-**If-else element**
+![while](../assets/3_loops/while.png)
 
-![](../assets/3_loops/ifelse.png)
+![do while](../assets/3_loops/dowhile.png)
 
-**While-element**
-
-![](../assets/3_loops/while.png)
-
-**Do while-element**
-
-![](../assets/3_loops/dowhile.png)
-
+{% hint style='tip' %}
 Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat. Dit is dus de manier om een while/do while te herkennen: er wordt naar een eerder punt in de code gegaan, een punt waar we reeds geweest waren
+{% endhint %}
 
-**For-element**
-
-![](../assets/3_loops/for.png)
+![for](../assets/3_loops/for.png)
 
 ### Voorbeeld flowchart
 
@@ -42,7 +34,7 @@ Door de eerder beschreven elementen nu samen te voegen kunnen we een programma a
 
 De finale flowchart ziet er als volgt uit:
 
-![](../assets/3_loops/fullflow.png)
+![Voorbeeld](../assets/3_loops/fullflow.png)
 
 Zoals verteld kunnen we een flowchart in beide richtingen gebruiken. We hebben de flowchart hiervoor gemaakt, gebaseerd op onze oplossing van het vorige labo. Maar stel dat je deze flowchart krijgt, dan kan je dus ook deze chart rechtstreeks omzetten in C#.
 

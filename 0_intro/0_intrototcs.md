@@ -50,7 +50,7 @@ Om een algoritme te schrijven dat onze computer begrijpt dienen we een programme
 
 Net zoals er ontelbare spreektalen in de wereld zijn, zijn er ook vele programmeertalen. **C#** (spreek uit *'siesjarp'*) is er een van de vele. C# is een taal die deel uitmaakt van de .NET (spreek uit  *'dotnet'*) omgeving die meer dan 15 jaar geleden door Microsoft werd ontwikkeld (juli 2000). Het fijne van C# is dat deze een zogenaamde "hogere programmeertaal" is. Hoe "hoger" de programmeertaal, hoe leesbaarder deze wordt voor leken omdat hogere programmeertalen dichter bij onze eigen taal aanleunen. 
 
-De geschiedenis en de hele .NET-wereld vertellen zou een cursus op zich betekenen en gaan we hier niet doen. Het is nuttig om weten dat er een gigantische bron aan informatie over .NET en C# online te vinden is, beginnende met [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/).
+De geschiedenis en de hele .NET-wereld vertellen zou een boek op zich betekenen en gaan we hier niet doen. Het is nuttig om weten dat er een gigantische bron aan informatie over .NET en C# online te vinden is, beginnende met [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/).
 
 {% hint style='tip' %}
 Het fijne van leren programmeren is dat je binnenkort op een bepaald punt gaat komen waarbij de keuze van programmeertaal er minder toe doet. Vergelijk het met het leren van het Frans. Van zodra je Frans onder knie hebt is het veel eenvoudiger om vervolgens Italiaans of Spaans te leren. Zo ook met programmeertalen. De C# taal bijvoorbeeld lijkt bijvoorbeeld als twee druppels water op Java, alsook op de talen waar ze van afstamt, C en C++. 
@@ -82,5 +82,5 @@ Om een uitvoerbaar bestand te maken (**executable**, vandaar de extensie .exe bi
 {% endhint %}
 
 {% hint style='tip' %}
-Deze cursus heeft als doel om je de programmeertaal C# aan te leren. Terwijl we dit doen zullen we ook geregeld andere .NET framework gerelateerde zaken aanraken.
+Dit boek heeft als doel om je de programmeertaal C# aan te leren. Terwijl we dit doen zullen we ook geregeld andere .NET framework gerelateerde zaken aanraken.
 {% endhint %}

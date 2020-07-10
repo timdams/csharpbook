@@ -12,7 +12,7 @@ De idee is de volgende: mensen kunnen spreken. Leraren, Studenten, Politieker, e
 
 We hebben volgende klasse-structuur:
 
-![](../assets/12_isas/polyinterface.png)
+![Klasse-schema van de vloekende mensen](../assets/12_isas/polyinterface.png)
 
 
 Als basis klasse ``Mens``  hebben we dan:

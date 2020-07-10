@@ -10,7 +10,7 @@ In C# worden interfaces gebruikt om de uitwendige verschijningsvorm van een klas
 Interfaces zijn als het ware stempels die we op een klasse kunnen plakken om zo te zeggen "deze klasse gebruikt interface xyz". Gebruikers van de klasse hoeven dan niet de hele klasse uit te spitten en weten dat alle klassen met interface xyz dezelfde publieke properties en methoden hebben. 
 
 {% hint style='warning' %}
-**Merk op dat interfaces in deze cursus niets met grafische user **interfaces** (GUI) te maken heeft.**
+**Merk op dat interfaces in dit boek niets met grafische user **interfaces** (GUI) te maken heeft.**
 {% endhint %}
 
 Een interface is niet meer dan een belofte: het zegt enkel welke publieke methoden en properties de klassen bezit. Het zegt echter niets over de effectieve code/implementatie van deze methoden en properties.
@@ -39,7 +39,7 @@ Het is in de klassen dat we nu vervolgens verplicht zijn deze methode en propert
 >**Een interface is een beschrijving hoe een component een andere component kan gebruiken, zonder te zeggen hoe dit moet gebeuren. De interface is met andere woorden 100% scheiding tussen de methode/Property-signatuur en de eigenlijke implementatie ervan.**
 {% endhint %}
 
-![](../assets/9_interfaces/scuminterface.jpg)
+![Ken je scumbag Steve nog?](../assets/9_interfaces/scuminterface.jpg)
 
 # Interface regels
 

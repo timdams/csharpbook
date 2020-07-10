@@ -24,7 +24,7 @@ Zorg ervoor dat de opwarmers uit Deel 0 oefeningen hiervoor steeds minstens 1 op
 Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te plaatsen zodat je code leesbaarder én bruikbaarder wordt?
 
 ### Einde deel 1 test  herschrijven
-Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef of de [deel 1 eindetest](../EindeTests/Mod1/Opgave.md) in deze cursus. 
+Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef of de [deel 1 eindetest](../EindeTests/Mod1/Opgave.md) in dit boek. 
 
 Kan je deze code leesbaarder maken door methoden (en loops) toe te voegen?
 

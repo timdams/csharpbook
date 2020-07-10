@@ -18,7 +18,7 @@ Enkele belangrijke regels van C#:
 ## Keywords: de woordenschat
 
 C# bestaat zoals gezegd niet enkel uit grammaticale regels. Grammatica zonder woordenschat is nutteloos. Er zijn binnen C# dan ook 80 woorden, zogenaamde **reserved keywords**  die de woordenschat voorstellen.
-In deze cursus zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
+In dit boek zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
 
 Deze keywords zijn:
 

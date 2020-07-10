@@ -26,7 +26,7 @@ Console.WriteLine("˧");
 Noteer de hexadecimale code van het karakter dat in de tabel staat.
 
 <!--- {height:50%} --->
-![](../assets/0_intro/letter.jpg)
+![Een handig teken als je een huis wilt tekenen in de console](../assets/0_intro/letter.jpg)
 
 In dit geval is de code 0x02e7.
 

@@ -12,12 +12,12 @@ Het lijdende voorwerp zal steeds het object zijn dat binnen het onderwerp zal ge
 
 Compositie duiden we aan met een lijn die begint met een volle ruit aan de kant van de klasse die de objecten in zich heeft:
 
-![](../assets/6_klassen/compuml.png)
+![Iedereen kan herleid worden tot armen, benen en een hoofd](../assets/6_klassen/compuml.png)
 [bron](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
 
 Optioneel duidt een getal aan iedere kant van de lijn de verhouding aan. Bijvoorbeeld:
 
-![](../assets/6_klassen/multipplecompuml.png)
+![Een complexer compositie voorbeeld](../assets/6_klassen/multipplecompuml.png)
 [bron](http://www.jot.fm/issues/issue_2004_11/column5/)
 
 Herinner je: Overerving duiden we aan met een pijl die wijst naar de parent-klasse

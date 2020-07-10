@@ -29,7 +29,7 @@ static void Main(string[] args)
 
 De uitvoer zal zijn:
 
-![](../assets/20_exceptions/eigenex.png)
+![Het is geen goede gewoontje om je foutboodschappen uit meerdere talen te laten bestaan](../assets/20_exceptions/eigenex.png)
 
 De lijn ``throw new DivideByZeroException("Getal equals 0.You shouldn't do that!");`` zorgt er dus voor dat we een eigen boodschap 'verpakken'
 
@@ -74,4 +74,4 @@ static public void TimsMethod()
 }
 ```
 
-![](../assets/20_exceptions/myex.png)
+![Onze eigen exception in actie!](../assets/20_exceptions/myex.png)

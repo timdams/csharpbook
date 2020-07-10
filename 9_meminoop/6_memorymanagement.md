@@ -25,7 +25,7 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 | Beginwaarde | ``0``,``0.0``, ``""``,``false``, etc.      |    ``null`` |
 | Effect van = operator | Kopieert de actuele waarde     |   Kopieert het adres naar de actuele waarde |
 
-![](../assets/5_arrays/gc1.png)
+![Stack en heap](../assets/5_arrays/gc1.png)
 
 ## Waarom twee geheugens?
 
@@ -47,7 +47,7 @@ Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, in
 * ``char``
 * ``float``, ``double``, ``decimal``
 * ``bool``
-* structs (zien we niet in deze cursus)
+* structs (zien we niet in dit boek)
 * enums
 
 ## = operator bij value types

@@ -2,10 +2,10 @@
 
 Kan je volgende 2 UML-diagrammen implementeren in code? Uiteraard kan je dat: make it happen!
 
-![](../assets/6_klassen/compuml.png)
+![Iedereen bestaat nog steeds uit een hoofd, handen en benen](../assets/6_klassen/compuml.png)
 [bron](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
 
-![](../assets/6_klassen/multipplecompuml.png)
+![Een groter compositievoorbeeld](../assets/6_klassen/multipplecompuml.png)
 [bron](http://www.jot.fm/issues/issue_2004_11/column5/)
 
 # Politiek

@@ -69,7 +69,7 @@ public virtual string ToString()
  
  
  ## Equals()
- Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van deze cursus](../18_IsAs/6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
+ Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van dit boek](../18_IsAs/6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
  ```csharp
 if(stud1.Equals(stud2))
    //...
@@ -123,7 +123,7 @@ Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911
 {% hint style='tip' %}
 # Ik ben nog niet helemaal mee?
 Niet getreurd, je bent niet de enige. Overerving,System.object, Equals,...het is allemaal een hoop nieuwe kennis om te verwerken. 
-Aan het [einde van deze cursus](../18_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
+Aan het [einde van dit boek](../18_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
 {% endhint %}
 
 # Kennisclip

@@ -29,7 +29,7 @@ while(tellerA < 3 )  //outer loop
 
 De uitvoer hiervan zal als volgt zijn:
 
-![](../assets/3_loops/nestedoutput.png)
+![Merk het 'ritme' in de uitvoer. De linkse teller gaat een pak trager dan de rechtse](../assets/3_loops/nestedoutput.png)
 
 {% hint style='tip' %}
 **Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner en outer loop apart)**

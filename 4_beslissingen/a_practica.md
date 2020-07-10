@@ -88,7 +88,7 @@ Bijvoorbeeld:
 Kan jij volgende ludieke stemwijzer van GuntherD in een eenvoudig programma gieten dat door een reeks j/n vragen aan de gebruiker uiteindelijk zijn "stemprofiel" toont?
 
 
-![](../assets/2_beslissingen/stemwijzer.png)
+![Bron Stubru](../assets/2_beslissingen/stemwijzer.png)
 
 ### Enum seizoenen
 Maak een enum die de seizoenen van het jaar bevat. Vraag aan de gebruiker om een maandnummer in te voeren. Gebruik vervolgens een switch om te bepalen in welk seizoen deze maand (grotendeels) ligt. Wijs deze enum toe aan een variabele in de switch.

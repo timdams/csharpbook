@@ -17,7 +17,7 @@ Telkens wanneer het programma aan het einde van het ``while`` codeblock komt spr
 
 Het diagramma is duidelijk:
 
-![](../assets/3_loops/while.png)
+![While flowchart](../assets/3_loops/while.png)
 
 Een voorbeeld van een eenvoudige while loop:
 
@@ -113,7 +113,7 @@ In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 
 
 Vergelijk volgende diagramma van de ``do while``:
 
-![](../assets/3_loops/dowhile.png)
+![Do while flowchart](../assets/3_loops/dowhile.png)
 
 met die hierboven van de ``while``.
 

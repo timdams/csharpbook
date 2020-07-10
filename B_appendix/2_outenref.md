@@ -30,7 +30,7 @@ static void Main(string[] args)
 ```
 Dan krijgen we volgende, terechte, foutmelding:
 
-![](../assets/4_methoden/outref1.png)
+![Deze foutboodschap zal je nog al zijn tegengekomen](../assets/4_methoden/outref1.png)
 
 Door nu het out keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen.
 

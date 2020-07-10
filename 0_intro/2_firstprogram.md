@@ -1,12 +1,12 @@
 ## Console-applicaties
 
-Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in deze cursus enkel console-applicaties leren maken. Grafische frontends (bv WPF) komen in deze cursus niet aan bod.
+Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in dit boek enkel console-applicaties leren maken. Grafische frontends (bv WPF) komen in dit boek niet aan bod.
 
 ### In en uit -  ReadLine en WriteLine
 
 Een programma zonder invoer van de gebruiker is niet erg boeiend. De meeste programma's die we leren schrijven vereisen dan ook "input" (**IN**). We moeten echter ook zaken aan de gebruiker kunnen tonen (bijvoorbeeld de uitkomst van een berekening, een foutboodschap, etc) wat dus vereist dat er "output" (**UIT**) naar het scherm kan gestuurd worden.
 
-![](../assets/1_csharpbasics/inuit.png)
+![In het begin zullen al je applicatie deze opbouw hebben](../assets/1_csharpbasics/inuit.png)
 
 
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:

@@ -5,7 +5,7 @@ Je kan strings en variabelen samenvoegen tot een nieuwe string op verschillende 
 * Of de oude manier:  ``String.Format()`` 
 
 {% hint style='tip' %}
-In deze cursus prefereren we **manier 2**, de string interpolatie. Dit is de meest moderne aanpak.
+In dit boek prefereren we **manier 2**, de string interpolatie. Dit is de meest moderne aanpak.
 {% endhint %}
 
 
@@ -92,7 +92,7 @@ Nog enkele nuttige vormen:
 Alle format specifiers staan [hier opgelijst](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
 
 ### Manier 3: String.Format()
-String interpolatie met het $-teken is een nieuwe C# aanwinst. Je zal echter nog veel documentatie en online code tegenkomen die nog met ``String.Format`` werkt (ook zijn er nog zaken waar het te prefereren is om ``String.Format`` te gebruiken i.p.v. 1 van vorige manieren). Om die reden bespreken we dit nog in deze cursus.
+String interpolatie met het $-teken is een nieuwe C# aanwinst. Je zal echter nog veel documentatie en online code tegenkomen die nog met ``String.Format`` werkt (ook zijn er nog zaken waar het te prefereren is om ``String.Format`` te gebruiken i.p.v. 1 van vorige manieren). Om die reden bespreken we dit nog in dit boek.
 
 ``String.Format`` is een ingebouwde methode die string-interpolatie toelaat op een iets minder intuïtieve manier:
 ```csharp

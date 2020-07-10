@@ -11,9 +11,9 @@ Console.WriteLine(getallen.Sum());
 ```
 
 
-Wanneer je een array hebt gemaakt kan je met de IntelliSense van Visual Studio bekijken wat je allemaal kan doen met de array:
+Wanneer je een array hebt gemaakt kan je met de IntelliSense van VS bekijken wat je allemaal kan doen met de array:
 
-![](../assets/5_arrays/arrays2.png)
+![Merk de handige 'filters' onderaan zodat je bijvoorbeeld enkel de methoden kunt tonen in het lijstje](../assets/5_arrays/arrays2.png)
 
 
 Al deze methoden hier beschrijven zal ons te ver nemen. De volgende methoden zijn echter zeer handig om te gebruiken:

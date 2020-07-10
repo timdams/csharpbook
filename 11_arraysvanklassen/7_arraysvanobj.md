@@ -13,7 +13,7 @@ Student[] mijnKlas = new Student[20];
 **Maar: er staan nog géén objecten in deze array. Alle elementen in deze array zijn nu nog ``null``.**
 Je zou kunnen zeggen dat we enkel nog maar de parkeerlijnen hebben aangemaakt.
 
-![](../assets/6_klassen/legearray.png)
+![Een parking, klaar om gevuld te worden](../assets/6_klassen/legearray.png)
 
 Willen we nu elementen in deze array plaatsen dan moeten dit ook expliciet doen:
 

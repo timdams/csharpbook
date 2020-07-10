@@ -36,7 +36,7 @@ static void EenVoorbeeldMethode(ref int[6] inArray)
 ```
 En zal volgende error genereren:
 
-![](../assets/5_arrays/arrays3.png)
+!["Array size cannot be specified in a variable declaration." Duidelijk toch!](../assets/5_arrays/arrays3.png)
 
 ## Arraymethode voorbeeld
 

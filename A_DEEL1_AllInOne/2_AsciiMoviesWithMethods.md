@@ -6,7 +6,7 @@ Ons doel is een method ``SpeelFilm`` te maken die een filmpje, bestaande uit ope
 
 We zullen een uiterst boeiend filmpje maken waarin een mannetje naar z’n auto wandelt en er vervolgens in wegrijdt.
 
-![](../assets/Aallinone/asciimovie.png)
+![Ja, hier gaan prijzen mee gewonnen worden, ik weet het!](../assets/Aallinone/asciimovie.png)
 
 ## Karakter op scherm tekenen
 We maken een methode die 1 karakter op het scherm kan plaatsen op een positie naar keuze. Omdat we willen voorkomen dat dit mislukt indien de coördinaten buiten het scherm vallen, zullen we in deze methode eerst controleren of de coördinaten geldig zijn.

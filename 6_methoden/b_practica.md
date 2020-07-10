@@ -3,7 +3,7 @@
 {% hint style='tip' %}
 Ook dit hoofdstuk bevat meer oefeningen dan je lief zijn. Zoek zelf de oefeningen uit die je aanspreken en focus je op het leren werken met methoden en deze te integreren in een grotere applicatie.
 
-Tip van een lector: meestal als een cursus veel oefeningen van een bepaald onderwerp bevat is de kans bestaande dat dit onderwerp misschien wel eens belangrijk kan zijn ;)
+Tip van een lector: meestal als een boek veel oefeningen van een bepaald onderwerp bevat is de kans bestaande dat dit onderwerp misschien wel eens belangrijk kan zijn ;)
 {% endhint %}
 
 {% hint style='warning' %}

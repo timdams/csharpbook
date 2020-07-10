@@ -6,7 +6,7 @@ Het resultaat van deze expressie is de ``int`` **``5``**.
 
 {% hint style='tip' %}
 
-Over expressies in C# is véél te vertellen, maar niet aan de orde in deze cursus. Bekijk [zeker volgende tekst](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions) indien je meer interesse hebt.
+Over expressies in C# is véél te vertellen, maar niet aan de orde in dit boek. Bekijk [zeker volgende tekst](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions) indien je meer interesse hebt.
 
 {% endhint %}
 

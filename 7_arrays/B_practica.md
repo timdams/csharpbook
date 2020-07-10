@@ -9,13 +9,10 @@ Een parkeergarage vraagt sowieso €2.00 om tot maximum 3uur te parkeren. Per ex
 Schrijf een programma dat het verschuldigde bedrag toont gegeven de duur dat de parkeergarage gebruikt werd. Bij het opstarten van het programma wordt eerst gevraagd hoeveel auto’s ingevoerd zullen worden, dan wordt per auto de duur van het parkeren gevraagd. Finaal wordt, netjes getabuleerd, alle informatie getoond, inclusief het totaal bedrag. Gebruik minstens 1 methode ‘berekenKosten’ die de kost voor 1 gebruiker telkens teruggeeft, gegeven de duur als parameter. Gebruik ook een methode die een array als parameter aanvaard (bijvoorbeeld de array met daarin de respectievelijke uren per auto).
 
 Voorbeeldoutput:
-Opstart:
 
-![](../assets/5_arrays/practarray4.png)
+![Opstart](../assets/5_arrays/practarray4.png)
  
-Resultaat:
-
-![](../assets/5_arrays/practarray5.png)
+![Resultaat](../assets/5_arrays/practarray5.png)
 
 #### Array Viewer
 
@@ -31,7 +28,7 @@ VisualiseerArray(array2);
 
 Geeft volgende output:
 
-![](../assets/5_arrays/practarray6.png)
+![Uitvoer](../assets/5_arrays/practarray6.png)
 
 #### Caesar-encryptie
 
@@ -46,7 +43,8 @@ Encryptie is de kunst van het vercijferen van data. Hierbij gaat men een gewone 
 
 Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbij gaan we het alfabet met x plaatsen opschuiven en vervolgens de te vercijferen tekst letter per letter vervangen met z’n respectievelijke opgeschoven versie. Hierbij is x dus de geheime sleutel die zender en ontvanger moeten afspreken.
 {% endhint %}
-![](../assets/5_arrays/practarray8.png) 
+
+![Caesar-encryptie is een erg eenvodig concept. Het programmeren is iets pittiger.](../assets/5_arrays/practarray8.png) 
 
 Stel bijvoorbeeld dat x=3 dan krijgen we volgende nieuwe alfabet:
 
@@ -186,7 +184,7 @@ Maak een spel, vergelijkbaar met galgje, waarin de speler een woord moet raden. 
 
 Voorbeeld output:
 
-![](../assets/5_arrays/practarray9.png) 
+![Uitvoer](../assets/5_arrays/practarray9.png) 
 
 #### Grote Som
 Maak een methode Som() die eender welke hoeveelheid parameters van het type ``int`` aanvaardt en vervolgens de som van al deze parameters teruggeeft (als int).

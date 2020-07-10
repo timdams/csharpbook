@@ -21,7 +21,7 @@ Test wat er gebeurt indien je het resultaat in een ``int`` bewaard en wat er geb
 Toon beide uitkomsten (m.b.v. ``WriteLine``) telkens op het scherm.
 
 {% hint style='warning' %}
-Opgelet: de % hier is de modulo-operator! Dit zal in heel de cursus ALTIJD zo zijn.
+Opgelet: de % hier is de modulo-operator! Dit zal in heel dit boek ALTIJD zo zijn.
 {% endhint %}
 
 

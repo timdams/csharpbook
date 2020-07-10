@@ -1,5 +1,5 @@
 
-![](../assets/movie.png)
+![](../assets/infoclip.png)
 
 * [Bespreking oplossingen hoofdstuk 0](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1a353c40-e317-4b1d-b81b-a966007b8ed2)
 

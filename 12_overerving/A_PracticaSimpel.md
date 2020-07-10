@@ -1,6 +1,6 @@
 # Het dierenrijk
 
-![](../assets/7_overerving/animals.png)
+![Vereenvoudigde voorstelling van (een deel van het) dierenrijk](../assets/7_overerving/animals.png)
 
 Maak bovenstaande klassenhierarchie na. Animal is de parentklasse , mammal en reptile zijn childklassen van Animal en zo voort.
 

@@ -12,13 +12,13 @@ In de voorgaande gevallen zijn dan *exceptions* (uitzonderingen) nuttig. Door zo
 
 Je zal zelf al geregeld exceptions zijn tegengekomen in je console programma. Wanneer je je programma gewoon uitvoert en er verschijnt plots een hele hoop tekst (met ondere andere het woord Exception in) gevolgd door het prompt afsluiten ervan, dan heb je dus een exception gegenereerd die je niet hebt afgehandeld.
 
-![](../assets/20_exceptions/exceptcode.png)
+![Een joekel van een foutboodschap die je gebruiker huilend zal wegjagen](../assets/20_exceptions/exceptcode.png)
 
-Vooral het eerste zinnetje van zo’n exception is altijd veel verklarender dan je denkt!
+Vooral het eerste zinnetje van zo'n exception is altijd veel verklarender dan je denkt!
 
 Indien je aan het debuggen bent en je krijgt een exception dan zal deze anders getoond worden, maar het gaat wel degelijk om dezelfde fout:
 
-![](../assets/20_exceptions/excepinvs.png)
+![In VS is de foutboodschap iets leesbaarder](../assets/20_exceptions/excepinvs.png)
 
 ## Try en Catch
 
@@ -111,7 +111,7 @@ Indien een FormatException optreedt dan zal het eerste catch-blok uitgevoerd wor
 
 De MSDN bibliotheek is de manier om te weten te komen welke exceptions een methode mogelijk kan gooien. Gaan we bijvoorbeeld naar de constructor-pagina van de StreamWrite klasse ([hier](https://docs.microsoft.com/en-us/dotnet/api/system.io.streamwriter.-ctor?view=netframework-4.8#System_IO_StreamWriter__ctor_System_String_System_Boolean_System_Text_Encoding_System_Int32_) dan zie we daar een hoofstuk Exception waar klaar en duidelijk wordt beschreven wanneer welke Exception wordt gegooid.
 
-![](../assets/20_exceptions/msdn.png)
+![Documentatie](../assets/20_exceptions/msdn.png)
 
 ## Werken met de exception parameter
 
@@ -119,7 +119,7 @@ De Exceptions die worden ‘gegooid’ door het programma zijn objecten van de E
 
 Bovenaan de declaratie van het catch-blok geef je aan hoe het exception object in het blok zal heten. In de vorige voorbeelden was dit altijd `e` (standaardnaam)
 
-![](../assets/20_exceptions/eexc.png)
+![IntelliSense to the rescue](../assets/20_exceptions/eexc.png)
 
 Omdat alle exception van Exception afgeleid zijn bevatten ze allemaal minstens:
 

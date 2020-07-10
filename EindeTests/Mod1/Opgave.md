@@ -2,7 +2,7 @@
 {% hint style='tip' %}
 Dit is een goede oefening om te testen of je alle leerstof van de voorbije hoofdstukken goed beheerst.
 
-We hebben deze cursus in 4 delen ("modules") opgedeeld. Aan het einde van ieder deel komen enkele geïntegreerde opdrachten die alle kennis van het voorgaande deel vereist. Sommige van deze oefeningen waren ooit testen/examens van deze cursus.
+We hebben dit boek in 4 delen ("modules") opgedeeld. Aan het einde van ieder deel komen enkele geïntegreerde opdrachten die alle kennis van het voorgaande deel vereist. Sommige van deze oefeningen waren ooit testen/examens van dit boek.
 {% endhint %}
 ## Opgave
 

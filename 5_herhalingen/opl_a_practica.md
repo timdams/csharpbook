@@ -1,5 +1,5 @@
 
-![](../assets/movie.png)
+![](../assets/infoclip.png)
 
 * [Micro-tips om loop-opgaven op te lossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ea69bf95-f828-4b45-afca-f0ae911ab7c4)
 
@@ -146,7 +146,7 @@ for (int i= 1; i <= rows; i++,  k = 0)
 
 # Oplossing practica deel 2 
 
-![](../assets/movie.png)
+![](../assets/infoclip.png)
 
 * [Oplossingen deel 2 (deel 1)](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=93c5cd9e-e621-4e9f-a180-ab0a00d9c08f)
 

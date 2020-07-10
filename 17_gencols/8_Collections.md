@@ -75,7 +75,11 @@ Deze werd reeds besproken in het [hoofdstuk over arrays](../11_arraysvanklassen/
 
 
 ## Queue<> collectie
-Een queue (Ned. : rij) stelt een FIFO-lijst voor. Een queue stelt dus de rijen voor die we in het echte leven ook hebben wanneer we bijvoorbeeld aanschuiven aan een ticketverkoop. Met deze klasse kunnen we zo’n rij simuleren en ervoor zorgen dat steeds het ‘eerste/oudste’ element in de rij als eerste wordt behandeld. Nieuwe elementen worden achteraan de rij toegevoegd.
+Een queue (*rij*) stelt een FIFO-lijst voor. Een queue stelt dus de rijen voor die we in het echte leven ook hebben wanneer we bijvoorbeeld aanschuiven aan een ticketverkoop. Met deze klasse kunnen we zo’n rij simuleren en ervoor zorgen dat steeds het ‘eerste/oudste’ element in de rij als eerste wordt behandeld. Nieuwe elementen worden achteraan de rij toegevoegd.
+
+{% hint style='tip' %}
+Queue spreek je uit als het het engelse "cute" maar zonder de t achteraan.
+{% endhint %}
 
 We gebruiken 2 methoden om met een queue te werken:
 
@@ -106,7 +110,7 @@ Een andere interessante methode is de **Peek()** methode; hiermee kunnen we kijk
 ### Stack collectie
 Daar waar een queue first-in-first-out is, is een stack last-in first out. M.a.w. het recentst toegevoegde element zal steeds vooraan staan en als eerste verwerkt worden. Je kan dit vergelijken met een stapel waar je steeds bovenop een nieuw object legt.
 
-![](../assets/10_generics/generics3.png)
+![Stack vs queue (Bron helaas onbekend)](../assets/10_generics/generics3.png)
 
 We gebruiken volgende 2 methoden om met een stack te werken:
 

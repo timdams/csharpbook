@@ -16,12 +16,12 @@ Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken
 ![Vereenvoudigd compiler overzicht](../assets/0_intro/compilereenvoudig.png)
 
 {% hint style='danger' %} 
-In deze cursus zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (gratis, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
+In dit boek zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (gratis, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
 {% endhint %}
 
 ### Visual Studio Installeren
 
-In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com/vs](https://visualstudio.microsoft.com/vs/).
+In dit boek zullen de voorbeelden steeds met de **Community** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com/vs](https://visualstudio.microsoft.com/vs/).
 
 Het is belangrijk bij de installatie dat je minimaal 
 * de **.NET desktop development** en **.NET Core cross-platform development**  workload selecteert als te installeren tools. 

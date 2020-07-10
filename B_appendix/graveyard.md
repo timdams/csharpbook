@@ -82,7 +82,7 @@ Pro: Voeg een methode ``Vereenvoudig`` toe. Deze zal de breuk vereenvoudigen ind
 
 # Heroes of AP
  
- *Volgende opgave komt uit een examen van augustus 2018 van deze cursus*
+ *Volgende opgave komt uit een examen van augustus 2018 van dit boek*
 
 ** Opgelet: deze opgave is erg brak en niet conform mijn gewoonlijke standaard.Waarvoor excuses**
 

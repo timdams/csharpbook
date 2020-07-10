@@ -189,7 +189,7 @@ System.Net.WebClient wc = new System.Net.WebClient();
 string downloaded = wc.DownloadString("https://bit.ly/2tE4CB0"); //laatste is een nul
 string[] lines = downloaded.Split('\n');
 //string[] lines = File.ReadAllLines("pokemon.csv");
-List<Pokemon> pokedex = new List<Pokemon>(); //zien we verderop in de cursus
+List<Pokemon> pokedex = new List<Pokemon>(); //zien we verderop in dit boek
 
 for (int i = 1; i < lines.Length-1; i++)
 {

@@ -303,7 +303,7 @@ public override bool Equals (object obj)
 
 ![](../assets/care.png)
 
-Let's be honest. Als je aan dit punt en geen flauw benul hebt waarom je in godsnaam je hier iets van moet aantrekken, wel dan wordt het dringend tijd om deze cursus van voor naar achter, links naar rechts en onder tot boven terug door te nemen ;).
+Let's be honest. Als je aan dit punt en geen flauw benul hebt waarom je in godsnaam je hier iets van moet aantrekken, wel dan wordt het dringend tijd om dit boek van voor naar achter, links naar rechts en onder tot boven terug door te nemen ;).
 
 # Kennisclip
 ![](../assets/infoclip.png)
