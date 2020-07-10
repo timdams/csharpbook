@@ -79,6 +79,9 @@ gAarde= 10.48; //ZAL ERROR GEVEN
 {% endhint %}
 
 
+<!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
 * [De Math-bibliotheek](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4d790ab9-e3b9-4e4b-bf59-a976007197fa)
+
+<!---NOBOOKEND--->

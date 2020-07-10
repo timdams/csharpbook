@@ -263,7 +263,9 @@ Hier gaan we: ``cw [tab] [tab]``
 Als je dus ``cw`` schrijft en dan twee maal op de tab-toets van je toetsenbord duwt verschijnt daar automagisch een verse lijncode!
 {% endhint %}
 
+<!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
 
 * [WriteLine, Write en ReadLine](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=645c1bae-c84d-47c4-89d6-abe3009410c3)
+<!---NOBOOKEND--->

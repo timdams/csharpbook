@@ -35,7 +35,9 @@ eenMeting.IsGeconfirmeerd = true;
 
 * Je hoeft niet alle (publieke) properties via deze syntax in te stellen, enkel de zaken die je wilt meegeven.
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 
 * [Object initializer syntax](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8f1ceebc-9f02-4593-84da-ab7a0099bf99)
+<!---NOBOOKEND--->

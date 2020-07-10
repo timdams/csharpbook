@@ -373,6 +373,8 @@ public static int Width
 }
 ```
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 * [static keyword](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=04805e97-94e8-4593-b30c-ab750089ffa6)
+<!---NOBOOKEND--->

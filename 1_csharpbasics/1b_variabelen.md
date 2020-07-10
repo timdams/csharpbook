@@ -164,6 +164,9 @@ kdRating = 3.4;
 
 {% endhint %}
 
+<!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
 * [Variabelen en datatypes](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=22d326cf-b619-4cf0-80fc-a966007ffef5)
+
+<!---NOBOOKEND--->

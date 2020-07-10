@@ -126,7 +126,9 @@ Niet getreurd, je bent niet de enige. Overerving,System.object, Equals,...het is
 Aan het [einde van dit boek](../18_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
 {% endhint %}
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 * [System.Object en ToString](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=00cad992-7714-4051-a992-ab7d0093864b)
 * [Equals - objecten vergelijken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c18b27c9-ad5a-444b-9695-ab7d00c2c3d9)
+<!---NOBOOKEND--->

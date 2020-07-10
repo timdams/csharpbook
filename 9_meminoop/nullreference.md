@@ -85,6 +85,8 @@ static Student ZoekStudent(Student[] array, string naam)
 }
 ```
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 * [Referenties en null](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=49247267-d9db-411a-8de6-ab5e0084792a)
+<!---NOBOOKEND--->

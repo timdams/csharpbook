@@ -1,6 +1,8 @@
+<!---NOBOOKSTART--->
 ![](../assets/infoclip.png)
 In volgende kennisclip werk ik de oplossing stap voor stap uit.
 [Oplossing opgave coronatraining](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ca8a4561-20f1-429b-9787-ab8400fca88c)
+<!---NOBOOKEND--->
 
 
 # Program.cs

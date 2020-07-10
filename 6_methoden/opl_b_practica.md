@@ -1,9 +1,11 @@
 
 # Oplossingen practica deel 0 - Opwarmers
 
+<!---NOBOOKSTART--->
 ![](../assets/movie.png)
 
 De oplossingen van dit deel worden in volgende kennisclip besproken: [hier](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7d5b4399-8c6c-4207-8e4d-a9af00b4ac58)
+<!---NOBOOKEND--->
 
 # Oplossingen practica deel 1 - De basics
 

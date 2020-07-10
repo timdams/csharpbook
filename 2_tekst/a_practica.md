@@ -1,5 +1,6 @@
 ## Oefeningen
 
+<!---NOBOOKSTART--->
 ### Enkele opmerkingen vooraf
 
 {% hint style='tip' %}
@@ -10,6 +11,7 @@ Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1
 **Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
 {% endhint %}
 
+<!---NOBOOKEND--->
 {% hint style='tip' %}
 Sommige oefeningen zullen soms **[PRO]** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
 {% endhint %}

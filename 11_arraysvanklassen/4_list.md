@@ -79,7 +79,9 @@ foreach(int prime in integerList)
 }
 ```
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 
 * [List<> klasse](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ac1bfe58-b55b-4e7e-98f3-ab7a009085bc)
+<!---NOBOOKEND--->

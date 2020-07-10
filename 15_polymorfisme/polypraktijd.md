@@ -139,7 +139,9 @@ Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de h
 Volgende voorbeeld is iets praktischer: [Arena with a mage in C# .NET (inheritance and polymorphism)](https://www.ict.social/csharp/oop/arena-with-mage-in-csharp-net-inheritance-and-polymorphism)
 {% endhint %}
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 
 * [Polymorfisme in de praktijk](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=06305096-bee1-466a-9b70-aba700860b64)
+<!---NOBOOKEND--->

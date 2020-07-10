@@ -209,7 +209,9 @@ static void Toonverhouding(double a, int b)
 }
 ```
 
+<!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
 * [Method overloading](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d43a3aa5-2481-4e8a-aef0-a9a700cb2821)
 * [Named en optionele parameters](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e8df8cd1-e83a-4632-b69f-a9a700cd9bc9)
+<!---NOBOOKEND--->

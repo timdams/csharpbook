@@ -227,7 +227,9 @@ Vanaf nu kan je logbook-objecten aanmaken die naar verschillende plekken schrijv
 Voor de geïnteresseerden, dit concept is een eerste stap naar [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection#:~:text=In%20software%20engineering%2C%20dependency%20injection,object%20is%20called%20a%20service.), een erg krachtig concept dat je nog veel zal tegenkomen in je verdere programmeercarriere.
 {% endhint %}
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 
 * [Interfaces](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6c32cd08-980c-4fe1-9be8-aba40101be31)
+<!---NOBOOKEND--->

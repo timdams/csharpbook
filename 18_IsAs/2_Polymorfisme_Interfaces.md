@@ -132,8 +132,10 @@ Met ``is`` en ``as`` kan je snel objecten van eender welk type bevragen:
 * *"Heb jij interface x?"* m.b.v ``is``  (bv.  `` if(object is ISomething``))
 * *"Wordt jij eens even interface x!"* m.b.v. ``as`` (bv. object as ISomething)
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 
 * [Interfaces en polymorfisme in de praktijk: Vloekende mensen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=01040bf2-b14d-407f-b186-abad00b66540)
 * [Interfaces en polymorfisme in de praktijk: fuifsimulator](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1827a908-a435-4d89-ae7a-aa4c00911c87)
+<!---NOBOOKEND--->

@@ -110,10 +110,8 @@ public int CompareTo(object obj)
 
 Als ik niet overtuigend genoeg was over het nut van interfaces in het vorige hoofdstuk, dan hoop ik dat bovenstaande voorbeelden je al een beetje hebben kunnen doen proeven van de kracht van interfaces. Gedaan met ons druk te maken wat er allemaal in een klasse gebeurt. Werk gewoon 'tegen' de interfaces van een klasse en we krijgen de ultieme black-box revelatie (see what I did there? :p )!
 
+<!---NOBOOKSTART--->
 # Kennisclip
-
 ![](../assets/infoclip.png)
-
-
-
 * [Interfaces in de praktijk- een meme-detective verhaal](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2ace92d8-27c8-4b3a-9a3d-abac014a15a9)
+<!---NOBOOKEND--->

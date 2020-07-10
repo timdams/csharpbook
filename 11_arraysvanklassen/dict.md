@@ -44,7 +44,9 @@ Console.WriteLine(studentenLijst["AB12"].Leeftijd);
 studentenLijst.Remove("AB12");
 ```
 
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 
 * [Werken met dictionary](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=43e5eb65-6b40-4539-892e-ab9f0093b774)
+<!---NOBOOKEND--->

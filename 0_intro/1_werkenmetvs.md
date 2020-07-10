@@ -116,9 +116,11 @@ Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af 
 
 Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte? Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in het linkermenu om verder te lezen [https://tutorials.visualstudio.com/vs-get-started/intro](https://tutorials.visualstudio.com/vs-get-started/intro).
 
+<!---NOBOOKSTART--->
 
 ### Kennisclip
 ![](../assets/infoclip.png)
 * [De VS omgeving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7f6e9867-6b45-4c98-9255-aacd00880111)
 * [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
 
+<!---NOBOOKEND--->

@@ -73,7 +73,9 @@ Over de oorsprong van het woord *bug* en de term *debugging* is er wat onzekerhe
 
 {% endhint %}
 
+<!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
 * [Debuggen in VS ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a78b3bf5-ef96-4c2a-8248-a976006fabd1)
+<!---NOBOOKEND--->
 

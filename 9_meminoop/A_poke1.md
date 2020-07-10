@@ -83,7 +83,6 @@ De eigenschappen van de Pokémon die mee evolueren met het leven gaan we steeds 
 * Voeg voor iedere base-stat een ``XX_Full`` readonly property toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
 Attack_Full bijvoorbeeld wordt dus berekend als: ``( (Attack_Base * Level) / 50) + 5``
 
-> Was voorgaande uitleg wat complex? Bekijk zeker bovenstaande kennisclip die alles nog eens samenvat.
 
 ### Maak enkele Pokémon
 

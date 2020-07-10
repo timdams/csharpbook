@@ -67,8 +67,10 @@ Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/brea
 {% endhint %}
 
 
+<!---NOBOOKSTART--->
 ## Kennisclip
 
 ![](../assets/infoclip.png)
 
 * [De for loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2df9d5bb-ecc8-489b-a1d4-a99800b79a5c)
+<!---NOBOOKEND--->

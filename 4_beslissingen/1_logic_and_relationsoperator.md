@@ -73,6 +73,8 @@ Wat zal de uitkomst zijn van volgende expressies?
 * ``true || false``
 * ``!true && false``
 
+<!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
 * [Logische operators en expressies ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4602c8f9-1540-427e-8fd8-a91100bc3abb)
+<!---NOBOOKEND--->
