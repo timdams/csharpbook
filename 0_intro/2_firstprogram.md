@@ -78,8 +78,12 @@ Laat je niet afschrikken door wat er nu volgt. Ik gooi je even in het diepe gede
 "Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt op [helloworldcollection.de](http://helloworldcollection.de/).
 {% endhint %}
 
-#### Say what now?!
 
+<!---NOBOOKSTART--->
+{% hint style='tip' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
 {% hint style='tip' %}
@@ -92,6 +96,11 @@ Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 
 * Al je code komt binnen de ``Main`` accolades.
 * Eindig iedere lijn code daar met een puntkomma ( ; ).
+
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
 
 ### WriteLine: Tekst op het scherm
 

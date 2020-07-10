@@ -145,7 +145,11 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal , 2
 {% endhint %}
 
 
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 **Veelgemaakte fouten: Lengte en indexering van arrays**
 Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmaken van een array aan de hand van de lengte en het indexeren. Maar niet getreurd, Voorman Tim zal je hier extra tips geven.
@@ -160,7 +164,10 @@ Je kan de lengte van een array altijd weten via de ``.Length`` eigenschap die al
 ```csharp
 Console.WriteLine(myColors.Length);
 ```
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 ### Lezen
 
 We weten nu hoe we individuele waarden in een array kunnen benaderen. Ze gebruiken is dus exact hetzelfde zoals we in het verleden al met eender welke andere variabele hebben gedaan. Het enige verschil is dat de identifier dus vierkante haken met een index in bevat.
@@ -297,10 +304,17 @@ De fout:
 In 'the old days' van voor C# werd dit concept door hackers misbruikt om toegang tot delen van het geheugen te krijgen waar ze eigenlijk niet mochten zijn. Dit zijn zogenaamde *buffer offerflow attacks*.
 {% endhint %}
 
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 Sorry dat ik je al weer lastig val. Maar ik wil je nog eens extra goed naar bovestaande fout (*exception*) laten kijken. Prent die fout, **System.IndexOutOfRange**, goed in je hoofd. Deze fout zegt exact wat je fout is: je probeert elementen in een arrays te benaderen die niet bestaan omdat je buiten het bereik (*range*) van de array bent gegaan. Het is hetzelfde als wanneer ik tegen m'n personeel zeg "ga jij de muur alvast metsen op de zesde verdieping" (``etage[5]``) terwijl we een flatgebouw met maar 3 verdiepingen hebben (``.Length`` is dus 3). 
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 ### Volledig voorbeeldprogramma met arrays
 

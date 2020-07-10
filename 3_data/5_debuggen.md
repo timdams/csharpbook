@@ -54,16 +54,22 @@ We lichten hier de knoppen toe die je zeker zal nodig hebben:
 * De **rode stop** knop gebruik je indien je niet verder wilt debuggen en ogenblikkelijk terug je code wilt aanpassen.
 * De **step-over** knop (het gebogen pijltje) is een belangrijke knop. Deze zal je code & lijn code verder uitvoeren en dan weer pauzeren. Het laat je dus toe om letterlijk doorheen je code te *stappen*. Je kan dit doen om de flow van je programma te bekijken (zie volgende hoofdstukken) en om te zien hoe bepaalde variabelen evolueren doorheen je code. 
 
-<!--- {height:50%} --->
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 
-{% hint style='tip' %}
 Voorman Tim hier. Even je oren open zetten aub, ik ga iets roepen:**"Debugging is een ESSENTIËLE SKILL!!!"**. Ik laat mijn metselaars ook geen huizen bouwen zonder dat ze ooit een truweel hebben vastgepakt. Een programmeur die niet kan debuggen...is als een vis die niet kan zwemmen!. 
  
  Zorg dus dat je vlot breakpoints kunt plaatsen om zo tijdens de uitvoer te pauzeren om de inhoud van je variabelen te bekijken (via het zogenaamde watch-venster). Gebruik vervolgens de "step"-buttons om door je code te 'stappen', lijn per lijn.
 
 Neem volgende korte demonstratie van debugging door: [Debugging in Visual Studio](https://tutorials.visualstudio.com/vs-get-started/debugging).
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 
 {% hint style='tip' %}

@@ -78,11 +78,17 @@ Merk op dat `var1` nooit van datatype is veranderd; enkel de inhoud ervan (`20.4
 
 ### Narowing in de praktijk
 
-{% hint style='tip' %}
-<!--- {height:50%} --->
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 Voorman Tim hier. Tijd om je helm op te zetten en weer even extra op te letten. Herinner je vorige keer nog dat ik je op slinkse manier de helft van m'n loon ging geven en je de volle 0 euro mee naar huis kreeg? Wel, dit concept gaan we hier nog eens bekijken, maar nu in combinatie met casting. Opletten!
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 
 Stel dat ``tempGisteren`` en ``tempVandaag`` van het type ``int`` zijn, maar dat we nu de gemiddelde temperatuur willen weten. De formule voor gemiddelde temperatuur over 2 dagen is:

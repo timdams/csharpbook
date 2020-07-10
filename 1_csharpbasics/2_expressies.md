@@ -110,8 +110,17 @@ Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zul
 
 ###  Expressiedatatypes 
 
-<!--- {height:50%} --->
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
+Gegroet! Zet je helm op en let alsjebelieft goed op. Als je het volgende stuk goed begrijpt (en blijft begrijpen) dan heb je al een grote stap vooruit gezet in de wondere wereld van C#. Succes!
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
 
 {% hint style='tip' %}
 Voorman Tim verschijnt wanneer een sectie start waar véél fouten op gemaakt worden, zelfs bij ervaren programmeurs. Opletten geblazen dus.

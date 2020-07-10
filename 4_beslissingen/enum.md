@@ -1,12 +1,18 @@
 ## Enum
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
-<!--- {align:left} --->
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-<!--- {align:right} --->
+<!--- {float:left, width:50%} --->
 ![](../assets/attention.png)
 
 Ik heb mezelf even gecloned! In de hoop dat de boodschap extra duidelijk wordt: Dit is nog zo'n onderschat hoofdstuk. Enums zijn wat raar in het begin, maar van zodra je er mee weg bent zal je niet meer zonder kunnen en zal je code zoveel eleganter en stoerder worden. Zet je helm dus op en begin er aan!
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 ### De bestaansreden voor enums
 Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week iets anders moet doen. In een wereld zonder enums (**enumeraties**) zou je dit kunnen schrijven op 2 zeer foutgevoelige manieren:
@@ -194,7 +200,11 @@ static void Main(string[] args)
 ```
 {% endhint %}
 
-### Why should I care?
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
 Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum`` ontdekten (en begrepen) zijn nog maar weinig programmeurs ervan afgestapt. 
@@ -232,8 +242,12 @@ Een ander typisch voorbeeld is schaken. We maken een enum om de speelstukken voo
 
 ```csharp
 if(spelstuk== Schaakstuk.Paard)
-
 ```
+
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
 
 <!---NOBOOKSTART--->
 ### Kennisclip

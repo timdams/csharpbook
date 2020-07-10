@@ -55,7 +55,12 @@ De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk cod
 
 
 
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 **Veelgemaakte fouten**
 Voorman Tim hier! Je hebt me gemist. Ik merk het. Het ging goed de laatste tijd. Maar nu wordt het tijd dat ik je weer even wakker schudt want de code die je nu gaat bouwen kan érg vreemde gedragingen krijgen als je niet goed oplet. Luister daarom even naar deze lijst van veel gemaakte fouten wanneer je met ``if`` begint te werken: 
@@ -88,7 +93,10 @@ if ( number < 5 );
 ```
 
 ![Het effect van 1 puntkomma te veel...](../assets/2_beslissingen/ifflowsemicolon.png)
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 ### Gebruik relationele en logische operatoren
 

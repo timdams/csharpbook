@@ -60,6 +60,7 @@ foreach(var dier in zoo)
 
 
 # Why should I care?
+<!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
 Polymorfisme is een heel krachtig concept. Door objecten te bewaren in hun basistype en , wanneer nodig, ze als 'zichzelf' te gebruiken wordt je code een pak eenvoudiger.

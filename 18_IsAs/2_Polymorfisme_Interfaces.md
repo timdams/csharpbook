@@ -121,9 +121,11 @@ for(int i =0; i<mensjes.Length; i++)
 ```
 
 
-
-
-# Why should I care 
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
 In de echte C# wereld houdt men van interfaces. Het is veel beter om 'tegen interfaces' te programmeren dan tegen klassen. Het maakt je code veel beter qua onderhoud en complexiteit.
@@ -131,6 +133,12 @@ In de echte C# wereld houdt men van interfaces. Het is veel beter om 'tegen inte
 Met ``is`` en ``as`` kan je snel objecten van eender welk type bevragen:
 * *"Heb jij interface x?"* m.b.v ``is``  (bv.  `` if(object is ISomething``))
 * *"Wordt jij eens even interface x!"* m.b.v. ``as`` (bv. object as ISomething)
+
+
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
 
 <!---NOBOOKSTART--->
 # Kennisclip

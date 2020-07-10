@@ -60,8 +60,11 @@ double randomgetal= 5.0+  (myran.NextDouble() * 7.5);
 Je bereik is 7.5, namelijk ``12.5 - 5.0`` en vermenigvuldig je het resultaat van je generator hiermee. Vervolgens verschuif je dat bereik naar 5.
 
 
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
-<!--- {height:50%} --->
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 **Ik krijg dezelfde random getallen? Wat nu?**
 
@@ -87,7 +90,10 @@ Random a = new Random(666);
 Random b = new Random();
 Random c = new Random(666);
 ```
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 <!---NOBOOKSTART--->
 ### Kennisclip

@@ -194,7 +194,12 @@ static string WindRichting()
 
 Merk op dat de onderste ``return "onbekend";`` nooit zal bereikt worden. Toch vereist C# dit!
 
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+
 ![](../assets/attention.png)
 Dacht je nu echt dat ik weg was?! Het is me opgevallen dat je niet altijd de foutboodschappen in VS leest. Ik blijf alvast uit jouw buurt als je zo doorgaat. Doe jezelf (en mij) dus een plezier en probeer die foutboodschappen in de toekomst te begrijpen. Er zijn er maar een handvol en bijna altijd komen ze op hetzelfde neer. Neem nou de volgende:**Not all code paths return a value**
 Die ga je nog vaak tegenkomen!
@@ -202,7 +207,10 @@ Die ga je nog vaak tegenkomen!
 ![Foutboodschappen hebben de neiging om gecompliceerder te klinken dat de effectieve fout die ze beschrijven. Een beetje zoals een lector die lesgeeft over iets waar hij zelf niets van begrijpt.](../assets/3_loops/unasigned.png)
 
 Bovenstaande error zal je vaak krijgen en geeft altijd aan dat er bepaalde delen binnen je methode zijn waar je kan komen zonder dat er een ``return`` optreedt. Het einde van de methode wordt met andere woorden bereikt zonder dat er iets uit de methoden terug komt (wat enkel bij ``void`` mag)
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 ### Parameters doorgeven
 

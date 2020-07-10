@@ -33,8 +33,12 @@ Er zijn 3 standaard manieren om zogenaamde loops te maken in C#:
 Voorts zullen we ook een speciale loop variant zien in het volgende deel wanneer we arrays en objecten leren kennen:
 * [**``foreach``**](../11_arraysvanklassen/3_foreach.md)
 
+
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
-<!--- {height:50%} --->
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/gotopolice.png)
 
 Aandacht, aandacht! Step away from the keyboard! I repeat. Step away from the keyboard.  Hierbij wil ik u attent maken op een belangrijke, onbeschreven, wet voor C# programmeurs: "**NEVER EVER USE ``goto``**"
@@ -46,5 +50,29 @@ Voel je toch de drang: **don't!** Simpelweg, don't. Het is het niet waard. Geloo
 **NEVER USE GOTO**.
 
 Oh, en voor je denkt ``continue`` dan maar te gebruiken: let alsjeblieft ook op met dat keyword. Het is niet zo erg als ``goto`` én heeft geregeld z'n nut, maar ik zie het te vaak misbruikt worden. Denk dus dubbel na wanneer je denkt ``continue`` nodig te hebben.
-
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

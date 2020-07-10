@@ -49,8 +49,11 @@ Als je in Visual Studio ``for`` typt en dan tweemaal op [tab] duwt krijg je  kan
 ### Break
 Je kan loops (alle types) altijd vroegtijdig stopzetten door het ``break`` keyword. 
 
+<!---NOBOOKSTART--->
 {% hint style='warning' %}
-<!--- {height:50%} --->
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/gotopolice.png)
 Olla!? Wat denken we dat we aan het doen zijn? Gelieve dat keyword ogenblikkelijk terug uit je code te verwijderen. Bedankt. 
 
@@ -59,7 +62,10 @@ Olla!? Wat denken we dat we aan het doen zijn? Gelieve dat keyword ogenblikkelij
 Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break).
 
 ![Bron xkcd.com](../assets/3_loops/gotobad.png)
+<!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
 
 
 <!---NOBOOKSTART--->

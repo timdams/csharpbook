@@ -115,7 +115,16 @@ Verschillende zaken kunnen als constraint optreden. Naast de verplichting dat ee
 * Moet default constructor hebben
 * Moet overerven van een bepaalde klasse
 
-# Why should I care?
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
 Goh, eerlijk is eerlijk: in je prille programmeursbestaan zal je niet heel vaak de nood zien om je eigen generieke klasse te schrijven. Laat staan dat je ook nog eens allerlei constraints gaat definiëren. 
+
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
