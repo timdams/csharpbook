@@ -94,17 +94,21 @@ Het aantal dimensies van een array wordt trouwens weergegeven door de ``.Rank`` 
 Console.WriteLine(myColors.Rank);
 ```
 
-{% hint style='tip' %}
+## Einde deel 1
 ![](../assets/me.png)
-Wel, je hebt het tot hier gehaald! Mooi zo. Heb je het gevoel dat je C# al een beetje begint door te krijgen?  Hopelijk wel. Je zou nu lekker nieuwsgierig naar het volgende deel kunnen gaan, maar dat is niet aan te raden. Probeer jezelf er van te verzekeren dat je de materie van dit deel zeer goed in de vingers hebt voor je verder gaat. Dit deel was letterlijk de fundering van het gebouw en het deel hierna is een verdieping erbovenop, dat enkel zal blijven staan als de fundering echt grondig gemaakt is.
+>Wel, je hebt het tot hier gehaald! Mooi zo. Heb je het gevoel dat je C# al een beetje begint door te krijgen?  Hopelijk wel. Je zou nu lekker nieuwsgierig naar het volgende deel kunnen gaan, maar dat is niet aan te raden. Probeer jezelf er van te verzekeren dat je de materie van dit deel zeer goed in de vingers hebt voor je verder gaat. Dit deel was letterlijk de fundering van het gebouw en het deel hierna is een verdieping erbovenop, dat enkel zal blijven staan als de fundering echt grondig gemaakt is.
+
 ![](../assets/attention.png)
-Mag ik er even op wijzen dat funderingen en andere bouw-gerelateerde termen mijn goto-woorden zijn als ik iets uitleg?!
+>Mag ik er even op wijzen dat funderingen en andere bouw-gerelateerde termen mijn goto-woorden zijn als ik iets uitleg?!
+
 ![](../assets/gotopolice.png)
-Awel awel? Zei er hier iemand ``goto``!!
+>Awel awel? Zei er hier iemand ``goto``!!
+
 ![](../assets/me.png)
-Zucht. Anyhow. Hopelijk laat je nog even dit deel dus in je brein inwerken, maak je er veel oefeningen op en pas wanneer je het gevoel hebt dat je methoden, arrays en loops grondig begrijpt mag je continueren in dit boek.
+>Zucht. Anyhow. Hopelijk laat je nog even dit deel dus in je brein inwerken, maak je er veel oefeningen op en pas wanneer je het gevoel hebt dat je methoden, arrays en loops grondig begrijpt mag je continueren in dit boek.
+
 ![](../assets/gotopolice.png)
-Ella! Opletten met ```continue`` he. En zeker met ``break``! 
+>Ella! Opletten met ```continue`` he. En zeker met ``break``! 
+
 ![](../assets/me.png)
-"Goto hell!"
-{% endhint %}
+>"Goto hell!"
