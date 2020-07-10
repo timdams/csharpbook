@@ -36,7 +36,6 @@ Je kan de ``Next`` methode ook 2 parameters meegeven, namelijk de grenzen waarbi
 Enkele voorbeelden:
 ```csharp
 Random somegenerator = new Random();
-
 int a= somegenerator.Next(0,10);  //getal tussen 0 tot en met 9
 int b= somegenerator.Next(5,101);  //getal tussen 5 tot en met 100
 int c= somegenerator.Next(0,b);  //getal tussen 0 tot en b
@@ -89,7 +88,6 @@ Random b = new Random();
 Random c = new Random(666);
 ```
 {% endhint %}
-
 
 <!---NOBOOKSTART--->
 ### Kennisclip

@@ -23,19 +23,17 @@ Met een ``switch`` kan dit eenvoudiger. De syntax van een ``switch`` is een beet
 ```csharp
 switch (value)
 {
-      case constant:
-           statements
-           break;
-      case constant:
-           statements
-           break;
-      default:
-           statements
-           break;
-  }
+    case constant:
+        statements
+        break;
+    case constant:
+        statements
+        break;
+    default:
+        statements
+        break;
+}
 ```
-
-
 
 ``value`` is de variabele die wordt gebruikt als test in de switch (``option`` in ons voorbeeld). Iedere case begint met het ``case`` keyword gevolgd door de waarde die value moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze ``case``. De ``case`` zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het ``break`` keyword.
 
@@ -57,7 +55,7 @@ switch (option)
     default:
         Console.WriteLine("Onbekende keuze");
         break;
-  }
+}
 ```
 
 {% hint style='warning' %}
@@ -82,7 +80,7 @@ switch (option)
     default:
         Console.WriteLine("Onbekende keuze");
         break;
-  }
+}
 ```
 
 In dit geval zullen zowel de waarden ``2`` en ``3`` resulteren in de zin "Laden of opslaan gekozen" op het scherm.

@@ -99,27 +99,21 @@ De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zo
 
 Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
 
-``Console.WriteLine("Wie ben jij?!");``
+```csharp
+Console.WriteLine("Wie ben jij?!");
+```
 
 De WriteLine methode zal alle tekst tonen die tussen de aanhalingstekens (``"  "``) staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het puntkomma helemaal achteraan.**
 
-Je programma is nu:
+Je code binnen de ``Main`` accolades zou nu moeten zijn:
 
 ```csharp
-using System;
-
-namespace Demo1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hoi, ik ben het");
-            Console.WriteLine("Wie ben jij?!");
-        }
-    }
-}
+Console.WriteLine("Hello World!");
+Console.WriteLine("Hoi, ik ben het");
+Console.WriteLine("Wie ben jij?!");
 ```
+Kan je voorspellen wat de uitvoer zal zijn? Test het eens!
 
-Kan je ook deze code uitvoeren?! Make it happen en lees dan gezwind verder!
+{% hint style='tip' %}
+We tonen niet telkens de volledige broncode. Als we dat blijven doen dan wordt dit boek dubbel zo dik. We tonen daarom meestal enkel de code die binnen de ``Main`` (of later ook elders) moet komen.
+{% endhint %}

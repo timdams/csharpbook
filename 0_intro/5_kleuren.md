@@ -11,6 +11,10 @@ Console.ForegroundColor = ConsoleColor.Green;
 
 Vanaf dan zal alle tekst die je na deze 2 expressies via ``WriteLine`` naar het scherm stuurt met deze kleuren werken.
 
+{% hint style='tip' %}
+Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn: Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red, Magenta, Yellow.
+{% endhint %}
+
 Een voorbeeld:
 
 ```csharp
@@ -43,27 +47,6 @@ Console.ResetColor();
 Console.WriteLine("Het programma sluit nu af");
 ```
 
-### Mogelijke kleuren 
-
-Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
-
-* ``ConsoleColor.Black``
-* ``ConsoleColor.DarkBlue``
-* ``ConsoleColor.DarkGreen``
-* ``ConsoleColor.DarkCyan``
-* ``ConsoleColor.DarkRed``
-* ``ConsoleColor.DarkMagenta``
-* ``ConsoleColor.DarkYellow``
-* ``ConsoleColor.Gray``
-* ``ConsoleColor.DarkGray``
-* ``ConsoleColor.Blue``
-* ``ConsoleColor.Green``
-* ``ConsoleColor.Cyan``
-* ``ConsoleColor.Red``
-* ``ConsoleColor.Magenta``
-* ``ConsoleColor.Yellow``
-
-![Bron afbeelding : https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/](../assets/1_csharpbasics/kleurenconsole.jpg)
 
 
 <!---NOBOOKSTART--->

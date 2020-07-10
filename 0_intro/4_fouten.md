@@ -6,7 +6,7 @@ Je code zal pas compileren indien deze foutloos is geschreven. Herinner je dat c
 {% hint style='danger' %}
 Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
 
-![Duidt nooit deze checkbox aan wanner je om duistere redenen op "yes" wilt drukken in dit scherm.](../assets/0_intro/errorwarning.PNG)
+![](../assets/0_intro/errorwarning.PNG)
 
 Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste goed gelukte code uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
 {% endhint %}

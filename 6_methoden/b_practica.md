@@ -21,8 +21,8 @@ Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan 
 * Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft (de diameter geef je mee als parameter).
 * Idem voor omtrek en oppervlakte.
 * Methode die het grootste van 2 getallen teruggeeft (beide getallen geef je mee als parameter).
-* Methode ``IsEven`` die bepaald of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even).
-* Methode ``IsArmstrong`` die bepaald of een getal een Armstrong getal is.
+* Methode ``IsEven`` die bepaalt of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even).
+* Methode ``IsArmstrong`` die bepaalt of een getal een Armstrong getal is.
 * Methode ``ToonOEvenNummers`` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
 * Methode ``ToonArmstrongNummers`` die alle [Armstrong](../5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
 

@@ -29,11 +29,13 @@ string[] nieuwePloegen = {"Anderlecht", "Brugge"};
 nieuwePloegen = ploegen;
 ```
 
-De situatie wanneer lijn 2 werd uitgevoerd is de volgeden:
+De situatie wanneer lijn 2 werd uitgevoerd is de volgende:
+<!--- {height:80%} --->
 ![Beerschot is de ploeg van't stad ;)](../assets/5_arrays/refbeervoor.png)
 
 Deze code (``nieuwePloegen = ploegen;``) zal perfect werken. Wat er er echter is gebeurd is dat we de referentie naar ``ploegen`` ook in ``nieuwePloegen`` hebben geplaatst. Bijgevolg verwijzen beide variabelen naar dezelfde array, namelijk die waar ``ploegen`` al naar verwees. We hebben een soort alias gemaakt en kunnen nu op twee manieren de array benaderen.
 
+<!--- {height:80%} --->
 ![Beerschot is de ploeg van't stad ;)](../assets/5_arrays/refbeer.png)
 
 Als je dus  schrijft:

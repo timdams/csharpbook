@@ -4,6 +4,9 @@ Wel, wel, wie we hier hebben?! Iemand die de edele kunst van het programmeren wi
 
 De eerste stappen zijn nooit eenvoudig. Ik ga proberen het aantal dure woorden, vreemde afkortingen en ingewikkelde schema's tot een minimum te houden. Maar toch, als je een nieuwe kunst wil leren zal je je handen (én toetsenbord) vuil moeten maken. Wat er ook gebeurt de komende hoofdstukken: blijf volhouden. Leren programmeren is een beetje als een berg leren beklimmen waarvan je nooit de top lijkt te kunnen bereiken. Wat ook zo is. Er is geen "top", en dat is net het mooie van dit alles. Er valt altijd iets nieuws te leren! De zaken waar je de komende pagina's op gaat vloeken zullen over enkele hoofdstukken al kinderspel lijken. Hou dus vol, blijf oefenen, vloek gerust af en toe en vooral: geniet van nieuwe dingen ontdekken! 
 
+<!--- {height:30%} --->
+![Ooit zijn ze misschien onze robot overlords, maar voorlopig hebben ze je toch nodig geprogrammeerd te worden! (bron afbeelding: Owen Beard, Unsplash)](../assets/0_intro/introrobot.jpg)
+
 ## Wat is programmeren?
 
 Je hoort de termen geregeld: softwareontwikkelaar, programmeur, app-developer, etc. Allen zijn beroepen die in essentie kunnen herleid worden tot hetzelfde: programmeren. Programmeurs hebben geleerd hoe ze computers opdrachten kunnen geven (**programmeren**) zodat deze hopelijk doen wat je ze vraagt.
@@ -12,8 +15,7 @@ Je hoort de termen geregeld: softwareontwikkelaar, programmeur, app-developer, e
 In de 21e eeuw is de term *computer* erg breed. Quasi ieder apparaat dat op elektriciteit werkt tegenwoordig bevat een computertje. Gaande van slimme lampen, tot de servers die het Internet draaiende houden of de smartwatch aan je pols. Zelfs aardig wat ijskasten en wasmachines beginnen (kleine) computers te bevatten.
 {% endhint %}
 
-<!--- {height:30%} --->
-![Ooit zijn ze misschien onze robot overlords, maar voorlopig hebben ze je toch nodig geprogrammeerd te worden! (bron afbeelding: Owen Beard, Unsplash)](../assets/0_intro/introrobot.jpg)
+
 
 Het grote probleem van computers, ongeacht hun grootte of kracht, is dat het in essentie ongelooflijk domme dingen zijn. Ze zullen altijd **exact** doe wat jij hen verteld dat ze moeten doen. Als je hen dus de opdracht geeft om te ontploffen, schrik dan niet dat je even later naar de 101 kunt bellen.
 
@@ -29,11 +31,10 @@ Het algoritme is de essentie van een computerprogramma en kan je beschouwen als 
 
 Het algoritme van een programma moet je zelf verzinnen. De volgorde waarin de instructies worden uitgevoerd zijn echter zeer belangrijk. Dit is exact hetzelfde als in het echte leven: een algoritme om je fiets op te pompen kan zijn:
 
-<!---{line-numbers:false}--->
 ```text
-1. Haal dop van het ventiel
-2. Plaats pomp op ventiel
-3. Begin te pompen
+Haal dop van het ventiel
+Plaats pomp op ventiel
+Begin te pompen
 ```
 
 Eender welke andere volgorde van bovenstaande algoritme zal vreemde (en soms fatale) fouten geven.
@@ -61,7 +62,7 @@ Zelfs Javascript, Python en veel andere moderne talen zullen weinig geheimen voo
 
 ### De compiler
 
-Rechtstreeks onze algorithmen tegen de computer vertellen vereist dat we machinetaal kunnen. Deze is echter zo complex dat we tientallen lijnen machinetaal nodig hebben om nog maar gewoon 1 letter op het scherm te krijgen. Er werden daarom dus hogere programmeertalen ontwikkeld die aangenamer zijn dan deze zogenaamde machinetalen om met computers te praten.
+Rechtstreeks onze algoritmen tegen de computer vertellen vereist dat we machinetaal kunnen. Deze is echter zo complex dat we tientallen lijnen machinetaal nodig hebben om nog maar gewoon 1 letter op het scherm te krijgen. Er werden daarom dus hogere programmeertalen ontwikkeld die aangenamer zijn dan deze zogenaamde machinetalen om met computers te praten.
 
 Uiteraard hebben we een vertaler nodig die onze code zal vertalen naar de machinetaal van het apparaat waarop ons programma moet draaien. Deze vertaler is de **compiler** die aardig wat complex werkt op zich neemt, maar dus in essentie onze code gebruiksklaar voor de computer
 
@@ -75,11 +76,6 @@ Merk op dat we veel details van de compiler achterwege laten hier. De compiler i
 Bij de geboorte van .NET in 2000 zat ook de taal C#. .NET is een zogenaamd **framework**. Dit framework bestaat uit een grote groep van bibliotheken (**class libraries**) en een *virtual execution system* genaamd de **Common Language Runtime (CLR)**. De CLR zal ervoor zorgen dat C#, of andere .NET talen (F#, VB.NET, etc.), kunnen samenwerken met de vele bibliotheken.
 
 Om een uitvoerbaar bestand te maken (**executable**, vandaar de extensie .exe bij uitvoerbare programma's in windows) zal de broncode die je hebt geschreven in C# worden omgezet naar **Intermediate Language** (IL) code. Op zich is deze IL code nog niet uitvoerbaar, maar dat is niet ons probleem. Wanneer een gebruiker een in IL geschreven bestand wil uitvoeren dan zal, achter de schermen, de CLR deze code ogenblikkelijk naar machine code omzetten (**Just -In-Time** of JIT compilatie) en uitvoeren. De gebruiker zal dus nooit dit proces merken (tenzij er geen .NET framework werd geïnstalleerd op het systeem).
-
-![Het compiler process als we met C# werken](../assets/1_csharpbasics/compiler.png)
-
-[(Bron afbeelding)](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework)
-
 {% endhint %}
 
 {% hint style='tip' %}

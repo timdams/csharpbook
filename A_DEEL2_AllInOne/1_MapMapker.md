@@ -80,7 +80,7 @@ Dit geeft,als je een default constructor hebt gemaakt die automatisch ieder obje
 
 We zouden dus nu bijvoorbeeld meerdere stenen kunnen plaatsen (met verschillende prijs, naargelang de soort) en dan de totaalprijs opvragen.
 ### Grotere objecten
-We hebben nu een basis om andere zaken te maken. Stel dat we grotere objecten op het scherm wensen. We zouden dan kunnen definiëren dat de variabele Location het punt linksboven van het object bepaald. Volgende nieuwe object erft over van de MapObject en geeft een grotere figuur weer (vierkant, maar je kan natuurlijk je fantasie de vrije loop laten gaan):
+We hebben nu een basis om andere zaken te maken. Stel dat we grotere objecten op het scherm wensen. We zouden dan kunnen definiëren dat de variabele Location het punt linksboven van het object bepaalt. Volgende nieuwe object erft over van de MapObject en geeft een grotere figuur weer (vierkant, maar je kan natuurlijk je fantasie de vrije loop laten gaan):
 
 ```csharp
     class FurnitureElement: MapObject

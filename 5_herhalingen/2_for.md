@@ -56,13 +56,8 @@ Olla!? Wat denken we dat we aan het doen zijn? Gelieve dat keyword ogenblikkelij
 
 ``break`` is de meer subtiele vriend van ``goto``. Hij leeft meer in de schemerzone tussen wat mag en niet mag. Dat maakt hem extra gevaarlijk. Voor je ``break`` als oplossing wilt gebruiken probeer je best eerst of je de loop niet mooier kan afsluiten door de juiste booleaanse expressie te beschrijven in de test-conditie.
 
-Om iemand op StackOverflow te quoten: 
->When used at the start of a block, as first checks made, they act like preconditions, so it's good.
->When used in the middle of the block, with some code around, they act like hidden traps, so it's bad."
-
-[Bron StackOverFlow: Are `break` and `continue` bad programming practices? ](https://softwareengineering.stackexchange.com/questions/58237/are-break-and-continue-bad-programming-practices)
-
 Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break).
+
 ![Bron xkcd.com](../assets/3_loops/gotobad.png)
 {% endhint %}
 

@@ -1,25 +1,4 @@
-### First program verbeteren
-
-We nemen terug ons eerste programma erbij en gaan hieraan verder werken:
-
-```csharp
-using System;
-
-namespace Demo1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hoi, ik ben het");
-            Console.WriteLine("Wie ben jij?!");
-        }
-    }
-}
-```
-
-#### ReadLine: Input van de gebruiker verwerken
+### ReadLine: Input van de gebruiker verwerken
 
 Met de console kan je met een handvol methoden reeds een aantal interessante dingen doen.
 
@@ -28,7 +7,6 @@ Zo kan je bijvoorbeeld input van de gebruiker inlezen en bewaren in een variabel
 ```csharp
 string result;
 result = Console.ReadLine();
-
 ```
 
 Wat gebeurt er hier juist?
@@ -48,20 +26,12 @@ Merk op dat de toekenning in C# van rechts naar links gebeurt. Vandaar dat ``res
 Je programma zou nu moeten zijn:
 
 ```csharp
-namespace Demo1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hoi, ik ben het!");
-            Console.WriteLine("Wie ben jij?!");
-            string result;
-            result = Console.ReadLine();
-        }
-    }
-}
+
+Console.WriteLine("Hello World!");
+Console.WriteLine("Hoi, ik ben het!");
+Console.WriteLine("Wie ben jij?!");
+string result;
+result = Console.ReadLine();
 ```
 
 Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont en wacht op invoer. Je kan nu eender wat intypen en van zodra je op enter duwt gaat het programma verder (in dit geval stopt het programma hierna dus).
@@ -83,35 +53,24 @@ Met andere woorden: de ``WriteLine`` methode zal op het scherm tonen wat de gebr
 Je volledige programma ziet er dus nu zo uit:
 
 ```csharp
-using System;
+Console.WriteLine("Hello World!");
+Console.WriteLine("Hoi, ik ben het!");
+Console.WriteLine("Wie ben jij?!");
 
-namespace Demo1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+string result;
+result = Console.ReadLine();
 
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hoi, ik ben het!");
-            Console.WriteLine("Wie ben jij?!");
+Console.WriteLine("Dag");
+Console.WriteLine(result);
+Console.WriteLine("hoe gaat het met je?");
 
-            string result;
-            result = Console.ReadLine();
-
-            Console.WriteLine("Dag");
-            Console.WriteLine(result);
-            Console.WriteLine("hoe gaat het met je?");
-        }
-    }
-}
 ```
 
 Test het programma en voer je naam in wanneer de cursor knippert.
 
 Voorbeelduitvoer (lijn 3 is wat de gebruiker heeft ingetypt)
 
-```csharp
+```text
 Hoi, ik ben het!
 Wie ben jij?!
 tim [enter]
@@ -126,9 +85,9 @@ hoe gaat het met je?
 Wanneer je de inhoud van een variabele wil gebruiken in een methode zoals  ``WriteLine()`` dan plaats je deze zonder aanhalingsteken!
 Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code ``Console.Write(result);`` vervangt door ``Console.Write("result");``.
 
-De uitvoer wordt dan:
+De uitvoer wordt dan (merk het verschil op op lijn 5):
 
-```csharp
+```text
 Hoi, ik ben het!
 Wie ben jij?!
 tim [enter]
@@ -183,6 +142,7 @@ Dag tim hoe gaat het met je?
 {% hint style='warning' %}
 C# trekt zich niets aan van witregels (zowel spaties als enters) die niét binnen aanhalingstekens staan. Met andere woorden: je kan het voorgaande programma perfect in één lange lijn code typen, zonder enters. DIt is echter niet aangeraden want het maakt je code een pak onleesbaarder.
 
+<!--- {width:80%} --->
 ![Voorgaande programma in exact 1 lijn. Cool? Ja, in sommige kringen. Dom en onleesbaar? Ook ja.](../assets/1_csharpbasics/online.png)
 {% endhint %}
 

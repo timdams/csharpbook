@@ -2,7 +2,7 @@
 
 Visual Studio (vanaf nu **VS**) is een pakket dat een groot deel tools samenvoegt (debugger, code editor, compiler, etc) zodat je niet tientallen paketten moet gebruiken om software te schrijven (wat 'in den ouden' tijd dus wel het geval was).
 
-<!--- {height:30%} --->
+<!--- {height:10%} --->
 ![Het Visual Studio 2019 Logo](../assets/0_intro/vslogo.png)
 
 VSo is een zogenaamde IDE ("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken. Ook vice versa ben je niet verplicht om VS te gebruiken om te ontwikkelen. Je kan zelfs in notepad code schrijven en vervolgens "compileren" (zie hierna).
@@ -49,7 +49,6 @@ Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van d
 
 In dit boek zullen we altijd het  Project Type  **Console App (.NET Core)** gebruiken. Kies dit type en klik 'Next'.
 
-<!--- {height:80%} --->
 ![Een VS Project aanmaken](../assets/0_intro/vsproject.png)
 
  Op het volgende scherm kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
@@ -96,7 +95,8 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 * Om eenvoudig een venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu).
 * Je kan ook altijd je layout in z'n geheel **resetten**: ga naar "Window" en kies "Reset window layout".
 
-<!--- {width:50%} --->
+
+<!--- {width:40%} --->
 ![De layout resetten](../assets/0_intro/vsreset.png)
 {% endhint %}
 

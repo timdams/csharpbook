@@ -1,6 +1,8 @@
 ## Enum
 {% hint style='warning' %}
+<!--- {align:left} --->
 ![](../assets/attention.png)
+<!--- {align:right} --->
 ![](../assets/attention.png)
 
 Ik heb mezelf even gecloned! In de hoop dat de boodschap extra duidelijk wordt: Dit is nog zo'n onderschat hoofdstuk. Enums zijn wat raar in het begin, maar van zodra je er mee weg bent zal je niet meer zonder kunnen en zal je code zoveel eleganter en stoerder worden. Zet je helm dus op en begin er aan!
@@ -25,7 +27,7 @@ if (dagKeuze==2)
     Console.WritLine("We doen de dinsdag dingen");
 }
 else 
-if //enz..
+if //enz.
 ```
 
 Deze oplossing heeft 2 grote nadelen:
@@ -47,7 +49,7 @@ if (dagKeuze=="dinsdag")
     Console.WritLine("We doen de dinsdag dingen");
 }
 else 
-if //enz..
+if //enz.
 ```
 
 De code wordt nu wel leesbaarder, maar toch is ook hier 1 groot nadeel:
@@ -76,19 +78,11 @@ enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag
 Als volgt dus:
 
 ```csharp
-using System;
+enum Weekdagen { Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag };
 
-namespace Demo1
+static void Main(string[] args)
 {
-    class Program
-    {
-        enum Weekdagen { Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag };
-
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello enum");
-        }
-    }
+    Console.WriteLine("Hello enum");
 }
 ```
 We hebben nu letterlijk een nieuwe datatype aangemaakt, genaamd ``Weekdagen``. Net zoals ``int``, ``double`` etc. kan je nu ook variabelen van het type ``Weekdagen`` aanmaken. Hoe cool is dat?!
@@ -162,13 +156,15 @@ Weekdagen nieuweDag= (Weekdagen)extradag;
 Standaard worden de waarden dus genummerd intern beginnende bij 0, enz. Je kan dit ook manueel veranderen door bij het maken van de ``enum`` expliciet aan te geven wat de interne waarde moet zijn, als volgt:
 
 ```csharp
-enum WeekDagen {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
+enum WeekDagen 
+    {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
 ```
 De dagen zullen nu vanaf 1 genummerd worden, dus ``WeekDagen.Woensdag`` zal de waarde 3 hebben.
 
 We kunnen ook nog meer informatie meegeven, bijvoorbeeld:
 ```csharp
-enum WeekDagen {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
+enum WeekDagen 
+    {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
 ```
 
 In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden, Zaterdag als 50, en Zondag als 60.

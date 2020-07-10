@@ -61,6 +61,8 @@ int[] leeftijden = {2, 5, 1, 6};
 ToonArray(leeftijden);
 ``` 
 En de output zal dan zijn:
+
+<!---{line-numbers:false}--->
 ```
 Array output:
 2
@@ -77,7 +79,6 @@ Volgend programma toont hoe we verschillende onderdelen van de code in methoden 
 
 
 ```csharp
-
 static void VulArray(int[] getalArray)
 {
     for (int i = 0; i < getalArray.Length; i++)
@@ -105,9 +106,7 @@ static void ToonVeelvouden(int[] getalArray, int veelvoudenvan)
 
 static void Main(string[] args)
 {
-    //Array aanmaken
     int[] getallen = new int[100];
-    //Array vullen
     VulArray(getallen);
     //Alle elementen met 3 vermenigvuldigen
     VermenigvuldigArray(getallen, 3);

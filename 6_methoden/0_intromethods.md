@@ -164,6 +164,7 @@ static void ShowProgramVersion()
     Console.Write(2.16 + "\n");
 }
 ```
+
 #### return eender waar
 
 Je mag het ``return`` keyword eender waar in je methode gebruiken. Weet wel dat van zodra een statement met ``return`` wordt bereikt de methode ogenblikkelijk afsluit en het resultaat achter ``return`` teruggeeft. Soms is dit handig zoals in volgende voorbeeld:
@@ -385,7 +386,6 @@ static int Macht(int grondtal, int exponent)
 
 Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische extra informatie:
 
-<!--- {height:80%} --->
 ![Hoe comment getoond wordt](../assets/4_methoden/comment.png)
 
 {% hint style='tip' %}

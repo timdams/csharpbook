@@ -16,7 +16,6 @@ Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heef
 Een voorbeeld:
 ```csharp
 int number = 3;
- 
 if ( number < 5 )
 {
     Console.WriteLine ("A");
@@ -26,14 +25,13 @@ Console.WriteLine("B");
 
 De uitvoer van dit programma zal zijn:
 
-```
+```text
 A
 B
 ```
 
 Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B")`` zal sowieso uitgevoerd worden zoals je ook kan zien aan de volgende flowchart:
 
-<!--- {float: left} --->
 ![Flowchart](../assets/2_beslissingen/ifflow.png)
 
 {% hint style='warning' %}
@@ -49,7 +47,7 @@ if ( number < 5 )
     Console.WriteLine ("D");
 }
 ```
-<!--- {float: left} --->
+
 ![Accolades zijn duidelijk belangrijk](../assets/2_beslissingen/iffflowblock.png)
 
 De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk code zijn dat altijd een ``bool`` als resultaat teruggeeft. 
@@ -75,7 +73,6 @@ if ( number < 5 )
     Console.WriteLine ("D");
 ```
 
-<!--- {float: left} --->
 ![Dit ziet er helemaal anders uit doordat we de accolades vergaten](../assets/2_beslissingen/ifflownobrace.png)
 
 Merk ook op dat je code anders uitlijnen géén invloed heeft op de uitvoer (wat bijvoorbeeld wel zo is bij de programmeertaal Python).
@@ -90,9 +87,7 @@ if ( number < 5 );
     Console.WriteLine ("D");
 ```
 
-<!--- {float: left} --->
 ![Het effect van 1 puntkomma te veel...](../assets/2_beslissingen/ifflowsemicolon.png)
-  
 {% endhint %}
 
 ### Gebruik relationele en logische operatoren

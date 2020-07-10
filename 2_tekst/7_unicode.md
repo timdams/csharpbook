@@ -3,7 +3,7 @@
 Niets is zo leuk als de vreemdste tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om *complexe* tekeningen op het scherm te tonen. Om je ietwat saaie applicaties dus wat toffer te maken leggen we daarom uit hoe je dit kan doen.
 
 <!--- {width:50%} --->
-![Dwarf fortress: een van de bekendste (én meest complexe) console-games waar nog steeds aan ontwikkeld wordt](../assets/0_intro/kerosenethunder_mockup.png)
+![Dwarf fortress: een van de bekendste (én meest complexe) console-games waar nog steeds aan ontwikkeld wordt gebruikt ongelooflijk veel bizarre karakters om zo een erg 'cool' ogende user interface te maken](../assets/0_intro/kerosenethunder_mockup.png)
 
 ### Unicode karakters tonen
 
@@ -25,7 +25,7 @@ Console.WriteLine("˧");
 
 Noteer de hexadecimale code van het karakter dat in de tabel staat.
 
-<!--- {height:50%} --->
+<!--- {height:30%} --->
 ![Een handig teken als je een huis wilt tekenen in de console](../assets/0_intro/letter.jpg)
 
 In dit geval is de code 0x02e7.
@@ -49,24 +49,8 @@ Console.WriteLine("\u02e7");
 
 Soms zou je multiline ASCII-art willen tonen in je C# applicatie. Dit kan je eenvoudig oplossen door gebruik te maken van het ``@`` teken voor een string.
 
-Stel dat je een toffe titel of tekening via een van volgende sites hebt gemaakt:
-* [Asciiflow.Com](http://asciiflow.com/)
-* [Ascii title generator](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
-* [Ascii generator](http://www.network-science.de/ascii/)
-
+Stel dat je een toffe titel of tekening bijvoorbeeld via [Asciiflow](http://asciiflow.com/) maakt.
 Je kan het resultaat eenvoudig naar je klembord kopiëren en vervolgens in je C#-code integraal copy pasten als literal voor een ``string`` op voorwaarde dat je het laat voorafgaan door ``@"`` en uiteraard eindigt met ``";``.
-
-{% hint style='tip' %}
-Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerkadres wilt schrijven en niet iedere ``\`` wilt escapen:
-
-```csharp
-string zonderAt = "C\\Temp\\Myfile.txt";
-string metaAt = @"C\Temp\Myfile.txt";
-```
-
-Merk op dat aanhalingstekens nog steeds ge-escape'd moeten worden. Heb je dus een stuk tekst met een aanhalingsteken in dan zal je zonder het apenstaartje moeten werken.
-{% endhint %}
-
 
 Bijvoorbeeld:
 
@@ -80,8 +64,18 @@ ___________________
                    \/ ";
 
 Console.WriteLine(myname);
-
 ```
+
+{% hint style='tip' %}
+Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerkadres wilt schrijven en niet iedere ``\`` wilt escapen:
+
+```csharp
+string zonderAt = "C\\Temp\\Myfile.txt";
+string metaAt = @"C\Temp\Myfile.txt";
+```
+
+Merk op dat aanhalingstekens nog steeds ge-escape'd moeten worden. Heb je dus een stuk tekst met een aanhalingsteken in dan zal je zonder het apenstaartje moeten werken.
+{% endhint %}
 
 {% hint style='tip' %}
 Zowel de $-notatie (voor string interpolatie) als het  @-teken kan je gecombineerd gebruiken bij een string:

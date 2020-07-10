@@ -191,7 +191,7 @@ Veel beter is om bovenaan je code de nodige variabelen (met goede namen) aan te 
     PizzaTotaal = hawai + ketchup;
     ```
 
-7. Lees de opgave steeds eerst helemaal door. Bepaald dan een 'aanvalsplan' hoe je de opgave gaat oplossen. Begin daarna pas te programmeren. Vergelijk het met het bouwen van een brug: je begint niet gewoon aan de linkeroever en dan meter per meter naar de andere oever te bouwen. Om dan aan de overkant te ontdekken dat de oever daar 5 meter hoger ligt en daar geen rekening mee hebt gehouden.
+7. Lees de opgave steeds eerst helemaal door. Bepaal dan een 'aanvalsplan' hoe je de opgave gaat oplossen. Begin daarna pas te programmeren. Vergelijk het met het bouwen van een brug: je begint niet gewoon aan de linkeroever en dan meter per meter naar de andere oever te bouwen. Om dan aan de overkant te ontdekken dat de oever daar 5 meter hoger ligt en daar geen rekening mee hebt gehouden.
 
 8. De bovenste zin zal maar enkele nanoseconden op het scherm verschijnen (de gebruiker zal deze dus nooit kunnen lezen) voor het scherm wordt leegemaakt en de nieuwe zin met ``ERROR`` op het scherm komt.
 

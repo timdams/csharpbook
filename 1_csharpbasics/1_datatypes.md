@@ -36,16 +36,12 @@ Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaard zou dat voor on
 Onthoudt echter dat onderaan je programma steeds hardware zal draaien die binair werkt. 
 {% endhint %}
 
-
 De basistypen van C\# om getallen in op te slaan zijn:
 
 * Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
 * Voor kommagetallen: `double, float, decimal`
 
-> 
-
 {% hint style='warning' %}
-
 Ieder type hierboven heeft een bepaald bereik en hoeveelheid geheugen nodig. Je zal dus steeds moeten afwegen wat je wenst. Op een high-end pc met ettelijke gigabytes aan werkgeheugen (RAM) is geheugen zelden een probleem waar je rekening mee moet houden...Of toch: wat met real-time shooters die miljoenen berekeningen (3D) per seconde moeten uitvoeren? Daar zal iedere byte tellen. Op andere apparaten (smartphone, arduino, smart fridges, etc.) is iedere byte geheugen nog kostbaarder. **Kortom: kies steeds bewust het datatype dat het beste 'past' voor je probleem qua bereik, precisie en geheugengebruik.**
 {% endhint %}
 
@@ -77,9 +73,9 @@ Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voo
 
 | **Type** | **Geheugen** | **Bereik** | **Precisie** |
 | :--- | :--- | :--- | :--- |
-| `float` | **32 bits** | gemiddeld | 7 digits |  [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/float)|
-| `double` | 64 bits | **meeste** | 15 digits |  [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/double)|
-| `decimal` | 128 bits | minste | **28-29 digits** | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/decimal)|
+| `float` | **32 bits** | gemiddeld | 7 digits |
+| `double` | 64 bits | **meeste** | 15 digits |
+| `decimal` | 128 bits | minste | **28-29 digits** |
 
 Zoals je ziet moet je bij kommagetallen een afweging maken tussen 3 even belangrijke criteria.  Heb je ongelooflijk grote precisie nodig dan ga je voor een ``decimal``. Wil je vooral erg grote of erg kleine getallen kies je voor ``double``. De precisie van een getal is het aantal beduidende of significante cijfers. Het getal 12,45 heeft een precisie van 4. Zoals je merkt zal je dus zelden ``decimal`` nodig hebben, deze zal vooral nuttig zijn in wetenschappelijke programma's waar met erg exacte cijfers moet gewerkt worden. 
 
@@ -94,13 +90,11 @@ Het ``bool`` (**boolean**) is het eenvoudigste datatype van C#. Het kan maar 2 m
 
 Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken terwijl ze toch weten dat de variabele maar 2 mogelijke waarden zal hebben. Om dus geen onnodig geheugen te verbruiken is het aan te raden om in die gevallen steeds met een ``bool`` variabele te werken.
 
-We zullen het ``bool`` datatype erg veel nodig hebben wanneer we met [beslissingen](../4_beslissingen/0_beslissingen_intro.md) zullen werken, specifiek de [``if`` statements](../4_beslissingen/0_if.md) die afhankelijk van de uitslag van een ``bool`` bepaalde code wel of niet zullen doen uitvoeren.
+We zullen het ``bool`` datatype erg veel nodig hebben wanneer we met beslissingen zullen werken in een later hoofdstuk, specifiek de ``if`` statements die afhankelijk van de waarde van een ``bool`` bepaalde code wel of niet zullen doen uitvoeren.
 
 ### Tekst/String datatype
 We besteden verderop een heel apart hoofdstuk aan tonen hoe je tekst en enkele karakters kan bewaren in variabelen. Sneak preview: 
 * Tekst kan bewaard worden in het ``string`` datatype
 * Een enkel karakter wordt bewaard in het ``char`` datatype dat we ook hierboven al even hebben zien passeren.
-
-Meer info vind je later in [dit hoofdstuk](../2_tekst/5_chars_strings.md).
 
 

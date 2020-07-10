@@ -67,7 +67,7 @@ Neem volgende korte demonstratie van debugging door: [Debugging in Visual Studio
 
 
 {% hint style='tip' %}
-Over de oorsprong van het woord *bug* en de term *debugging* is er wat onzekerheid. Maar (Wikipedia)[https://en.wikipedia.org/wiki/Debugging] weet dit te vertellen:
+Over de oorsprong van het woord *bug* en de term *debugging* is er wat onzekerheid. Maar [Wikipedia](https://en.wikipedia.org/wiki/Debugging) weet dit te vertellen:
 
 > "The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. However, the term "bug", in the sense of "technical error", dates back at least to 1878 and Thomas Edison."
 

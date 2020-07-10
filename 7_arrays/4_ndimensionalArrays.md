@@ -20,8 +20,9 @@ short[,,] temperatures;
 (enz.)
 
 {% hint style='tip' %}
-Ja, dit kan dus ook
+Ja, dit kan dus ook...
 
+<!---{line-numbers:false}--->
 ```csharp
 int[,,,,,,,,,,,] jeBentGekAlsJeHierMeeWiltWerken;
 ```
