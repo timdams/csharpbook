@@ -207,7 +207,7 @@ static void Main(string[] args)
 <!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
-Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum`` ontdekten (en begrepen) zijn nog maar weinig programmeurs ervan afgestapt. 
+Ah, de tijden zonder ``enum``. Ik weet nog hoe we onze grotten beschilderden zonder ons druk te moeten maken in enumeraties. Om maar te zeggen: Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum`` ontdekten (en begrepen) zijn nog maar weinig programmeurs ervan afgestapt. 
 
 De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen datatypes aanmaken?! Van zodra je ze in de vingers hebt zal je ontdekken dat je veel leesbaardere code kunt schrijven én dat Visual Studio je kan helpen met het opsporen van bugs. 
 

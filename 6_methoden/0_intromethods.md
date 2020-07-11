@@ -128,7 +128,7 @@ string myName = GetNameAuthor();
 Of bijvoorbeeld ook:
 
 ```csharp
-Console.WriteLine($"This program is written by {GetNameAuthor()});
+Console.WriteLine($"This program is written by {GetNameAuthor()}");
 ```
 
 Hier een voorbeeld van een methode die de faculteit van 5 berekent. De oproep van de methode gebeurt vanuit de Main-methode:
