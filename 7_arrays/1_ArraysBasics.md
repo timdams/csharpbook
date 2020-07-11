@@ -133,7 +133,7 @@ myColors[2];  //element met index 2
 ```
 We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal , 2 in dit voorbeeld, aangeeft het hoeveelste element we wensen te benaderen (lezen en/of schrijven).
 
-
+{% hint style='tip' %}
 **De index van een C#-array start steeds bij 0.** Indien je dus een array aanmaakt met lengte 5 dan heb je de indices 0 tot en met 4.
 
 ![Lengte is 5, index laatste element is 4, eerste element is 0](../assets/5_arrays/arrays1.png)
@@ -163,6 +163,7 @@ Console.WriteLine(myColors.Length);
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->
+
 ### Lezen
 
 We weten nu hoe we individuele waarden in een array kunnen benaderen. Ze gebruiken is dus exact hetzelfde zoals we in het verleden al met eender welke andere variabele hebben gedaan. Het enige verschil is dat de identifier dus vierkante haken met een index in bevat.
