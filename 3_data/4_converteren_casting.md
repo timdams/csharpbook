@@ -1,6 +1,5 @@
 # Werken met data 
 
-## Casting en conversie: data omzetten
 Wanneer je de waarde van een variabele wil toekennen aan een variabele van een ander type mag dit niet zomaar. 
 Volgende code zal bijvoorbeeld een dikke error geven:
 

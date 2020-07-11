@@ -1,7 +1,4 @@
-# Herhalingen
-
-## Waarom herhalen? Waarom herhalen? Waarom herhalen?
-
+# Herhalingen, herhalingen, herhaling
 
 In het vorige hoofdstuk leerden we hoe we met behulp van beslissingen onze code konden aftakken (**branchen**) zodat andere code werd uitgevoerd afhankelijk van de staat van bepaalde variabelen of invoer van de gebruiker. 
 
@@ -12,7 +9,7 @@ Herhalingen (**loops** of **iteraties**) creëer je wanneer bepaalde code een aa
 **Door herhalende code met loops te schrijven maken we onze code korter en bijgevolg ook minder foutgevoelig en beter onderhoudbaar.**
 
 
-### Soorten loops
+## Soorten loops
 
 Er zijn verschillende soorten loops:
 * **Definite of counted loop**: een loop waar het aantal iteraties vooraf van gekend is (bv. alle getallen van 0 tot en met 100 tonen)

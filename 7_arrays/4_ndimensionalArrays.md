@@ -28,7 +28,7 @@ int[,,,,,,,,,,,] jeBentGekAlsJeHierMeeWiltWerken;
 ```
 {% endhint %}
 
-## Initialisatie
+### Initialisatie
 
 Ook om nu effectief een array aan te maken gebruiken we de komma-notatie, alleen moeten we nu ook de effectieve groottes aangeven. Voor en 5 bij 10 array bijvoorbeeld schrijven we (merk op dat dit dus een 2D-array is):
 

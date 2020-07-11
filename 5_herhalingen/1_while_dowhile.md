@@ -17,6 +17,7 @@ Telkens wanneer het programma aan het einde van het ``while`` codeblock komt spr
 
 Het diagramma is duidelijk:
 
+<!---{width:80%}--->
 ![While flowchart](../assets/3_loops/while.png)
 
 Een voorbeeld van een eenvoudige while loop:

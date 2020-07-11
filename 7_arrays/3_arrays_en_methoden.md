@@ -38,7 +38,7 @@ En zal volgende error genereren:
 
 !["Array size cannot be specified in a variable declaration." Duidelijk toch!](../assets/5_arrays/arrays3.png)
 
-## Arraymethode voorbeeld
+### Arraymethode voorbeeld
 
 Volgend voorbeeld toont een methode die alle getallen van de array op het scherm zal tonen:
 

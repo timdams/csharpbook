@@ -61,7 +61,6 @@ Olla!? Wat denken we dat we aan het doen zijn? Gelieve dat keyword ogenblikkelij
 
 Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break).
 
-![Bron xkcd.com](../assets/3_loops/gotobad.png)
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}

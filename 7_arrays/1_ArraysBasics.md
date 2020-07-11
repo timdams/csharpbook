@@ -1,10 +1,5 @@
 # Arrays
 
-## Arrays zijn leuk...en een beetje lastig
-{% hint style='tip' %}
-Grote delen van dit hoofdstuk zijn vertaald uit het handboek C# 4.0 Essentials.
-{% endhint %}
-
 Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voordeel van arrays is dat je een enkele variabele kunt hebben die een grote groep waarden voorstelt van eenzelfde type. Hierdoor wordt je code leesbaarder en eenvoudiger in onderhoud. Arrays zijn een zeer krachtig hulpmiddel, maar er zitten wel enkele venijnige addertjes onder het gras.
 
 Op papier zijn arrays eenvoudig...helaas programmeren we (zelden) op papier. In essentie is een array is niet meer dan **een verzameling waarden van hetzelfde type** (bijvoorbeeld een verzameling ints, doubles of chars). Deze waarden kunnen benaderd worden via 1 enkele variabele, de array zelf. Door middel van een *index* kan ieder afzonderlijk element uit de array aangepast of uitgelezen worden.

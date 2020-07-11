@@ -86,9 +86,8 @@ Laat je niet afschrikken door wat er nu volgt. Ik gooi je even in het diepe gede
 <!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
-{% hint style='tip' %}
 Onderwijzer Tim verschijnt wanneer we een stevige stap gezet hebben en je mogelijk even onder de indruk bent van al die nieuwe informatie. Onderwijzer Tim zal proberen informatie nog eens vanuit een ander standpunt toe te lichten en te herhalen waarom deze nieuwe kennis zo belangrijk is. 
-{% endhint %}
+
 
 Oh boy...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
 
