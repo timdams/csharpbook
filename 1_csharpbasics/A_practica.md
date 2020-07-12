@@ -1,10 +1,12 @@
-## Oefeningen
+### De basisconcepten van C#
 
+<!---NOBOOKSTART--->
 {% hint style='tip' %}
 Het is aanbevolen dat je per hoofdstuk een nieuwe folder aanmaakt op je computer. Per oefening maak je dan best een nieuw project aan dat je in de folder zet. Geef ieder project een duidelijke naam (bv EuroNaarDollar) zodat je later vlot je oefeningen kan terugvinden. Denk er aan dat je je projecten best enkel met cijfers en letters benoemd (dus beter EuroNaarDollar dan Euro-Dollar).
 {% endhint %}
+<!---NOBOOKEND--->
 
-### Simple maths
+#### Simple maths
 Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toont:
 
 ```text
@@ -21,19 +23,19 @@ Test wat er gebeurt indien je het resultaat in een ``int`` bewaard en wat er geb
 Toon beide uitkomsten (m.b.v. ``WriteLine``) telkens op het scherm.
 
 {% hint style='warning' %}
-Opgelet: de % hier is de modulo-operator! Dit zal in heel dit boek ALTIJD zo zijn.
+Opgelet: de % hier is de modulo-operator! Dit is in heel dit boek ALTIJD zo zijn.
 {% endhint %}
 
 
-### Gemiddelde
+#### Gemiddelde
 
 Maak 3 variabelen aan van het type ``int`` genaamd ``september``, ``oktober`` en ``november``. Plaats in elke variabele de hoeveelheid uren slaap je die maand verwacht te doen. Bereken nu het gemiddelde van 3 maanden en toon het resultaat op het scherm (kies uiteraard 3 verschillende hoeveelheden slaap).
 
-### Euro naar dollar
+#### Euro naar dollar
 
 Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers. Je hoeft niet af te ronden. Het resultaat op het scherm wordt als volgt weergegeven: ``[x] EUR is gelijk aan [y] USD``.
 
-### Tafel en Console.Clear()
+#### Tafel en Console.Clear()
 
 Met het statement ``Console.Clear();`` kan je de console - je raadt het nooit - leegmaken. Test deze code in het volgende programma:
 
@@ -63,22 +65,22 @@ Console.WriteLine("Tweede beeld");
 ```
 
 {% hint style='tip' %}
-Merk op dat ``Console.Clear()`` niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
+Merk op dat ``Console.Clear()`` niet werkt zoals verwacht op Mac. 
 {% endhint %}
 
-### Kill/Death-ratio
+#### Kill/Death-ratio
 
 Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio.
 
 
 {% hint style='warning' %}
-**Begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met ``int`` zou werken.
+**Begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de waarschuwing van Voorman Tim bij Expressies zeker nog eens na... Of test eens wat er gebeurt indien je met ``int`` zou werken.
 {% endhint %}
 
-### BTW
+#### BTW
 Schrijf een programma waarin je het BTW-percentage 21% als een constante definieert door het keyword ``const`` voor de variabele te zetten. Vervolgens toon je een prijs naar keuze, met en zonder btw op het scherm. De prijs wordt getoond tot 2 cijfers na de komma.
 
-### Gewicht in space
+#### Gewicht in space
 
 Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.
 
@@ -101,4 +103,3 @@ De output zijn verschillende lijnen onder elkaar in de vorm van:
 ``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
 
 Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt en die van pluto in het groen.
-

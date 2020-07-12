@@ -1,6 +1,6 @@
-## Nog oefeningen
-
-### Methoden met arrays als parameter
+{% hint style='tip' %}
+Volgende oefeningen vereisen dat je methoden schrijft die arrays als parameter en/of resultaat hebben.
+{% endhint %}
 
 #### Parkeergarage
 
@@ -44,7 +44,7 @@ Encryptie is de kunst van het vercijferen van data. Hierbij gaat men een gewone 
 Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbij gaan we het alfabet met x plaatsen opschuiven en vervolgens de te vercijferen tekst letter per letter vervangen met z’n respectievelijke opgeschoven versie. Hierbij is x dus de geheime sleutel die zender en ontvanger moeten afspreken.
 {% endhint %}
 
-![Caesar-encryptie is een erg eenvodig concept. Het programmeren is iets pittiger.](../assets/5_arrays/practarray8.png) 
+![Caesar-encryptie is een erg eenvoudig concept. Het programmeren is iets pittiger.](../assets/5_arrays/practarray8.png) 
 
 Stel bijvoorbeeld dat x=3 dan krijgen we volgende nieuwe alfabet:
 
@@ -74,7 +74,9 @@ Ontwerp een methode waarmee je een Belgisch ondernemingsnummer kan controleren. 
 Bij een geldig ondernemingsnummer verschijnt de tekst "Geldig ondernemingsnummer.", bij een ongeldig ondernemingsnummer "Ongeldig ondernemingsnummer.".
 De methode aanvaardt een string waarin je het ondernemingsnummer staat.
 
-### Meer-dimensionale arrays
+{% hint style='tip' %}
+Er volgen nu enkele meer-dimensionale array oefeningen
+{% endhint %}
 
 #### Determinant
 Schrijf een programma dat een methode BerekenDeterminant heeft. Deze methode heeft één paramater als input: een 2 bij 2 array van integers. Als resultaat geeft de methode de determinant als integer terug. Zoek zelf op hoe je de determinant van een matrix kunt berekenen.
@@ -149,10 +151,7 @@ Rugnummer   Goede   Domme   Verschil
 
 Het programma toont ook welke speler(s) het meest performant waren, namelijk zij met het grootste positieve verschil tussen goede en domme acties, alsook de minst performante en de meeste “gemiddelde” speler (i.e. verschil == 0 )
 
-
-### Pro
-
-#### Robot Simulator
+#### [PRO] Robot Simulator
 Volgende opgave komt uit [Exercism.io](https://exercism.io.io)
 
 "
@@ -179,16 +178,20 @@ Say a robot starts at {7, 3} facing north. Then running this stream of instructi
 
 Teken het gevolgde pad in de console (gebruik ``Console.SetCursorPosition()``).
 
-#### Galgje
+#### [PRO] Galgje
 Maak een spel, vergelijkbaar met galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
 
 Voorbeeld output:
 
 ![Uitvoer](../assets/5_arrays/practarray9.png) 
 
-#### Grote Som
-Maak een methode Som() die eender welke hoeveelheid parameters van het type ``int`` aanvaardt en vervolgens de som van al deze parameters teruggeeft (als int).
+#### [PRO] Grote Som
+Maak een methode ``Som()`` die eender welke hoeveelheid parameters van het type ``int`` aanvaardt en vervolgens de som van al deze parameters teruggeeft (als ``int``).
 
 Toon in je main aan dat de methode werkt door onder andere 1, 3, 5 en 10 als gehele getalen mee te geven.
 
-Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de methode. (hint: je moet het ``params`` keyword gebruiken)
+Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de methode.
+
+{% hint style='tip' %}
+Je moet het ``params`` keyword gebruiken, zoek zelf op hoe dit werkt!
+{% endhint %}
