@@ -5,7 +5,7 @@ Visual Studio (vanaf nu **VS**) is een pakket dat een groot deel tools samenvoeg
 <!--- {height:10%} --->
 ![Het Visual Studio 2019 Logo](../assets/0_intro/vslogo.png)
 
-VSo is een zogenaamde IDE ("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken. Ook vice versa ben je niet verplicht om VS te gebruiken om te ontwikkelen. Je kan zelfs in notepad code schrijven en vervolgens "compileren" (zie hierna).
+VS is een zogenaamde IDE ("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken. Ook vice versa ben je niet verplicht om VS te gebruiken om te ontwikkelen. Je kan zelfs in notepad code schrijven en vervolgens "compileren" (zie hierna).
 
 ### De compiler en Visual Studio
 

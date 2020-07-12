@@ -195,3 +195,5 @@ Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de meth
 {% hint style='tip' %}
 Je moet het ``params`` keyword gebruiken, zoek zelf op hoe dit werkt!
 {% endhint %}
+
+<!---{pagebreak}--->

@@ -1,4 +1,3 @@
-<!---{pagebreak}--->
 ### Beslissingen
 
 #### BMI met if
@@ -87,10 +86,12 @@ Bijvoorbeeld:
 * 1900: geen schrikkeljaar
 * 2000: wél schrikkeljaar
 
+<!---NOBOOKSTART--->
 #### GuntherD Stemwijzer
 Kan jij volgende ludieke stemwijzer van GuntherD in een eenvoudig programma gieten dat door een reeks j/n vragen aan de gebruiker uiteindelijk zijn "stemprofiel" toont?
 
 ![Bron Stubru](../assets/2_beslissingen/stemwijzer.png)
+<!---NOBOOKEND--->
 
 #### Enum seizoenen
 Maak een ``enum`` die de seizoenen van het jaar bevat. Vraag aan de gebruiker om een maandnummer in te voeren. Gebruik vervolgens een switch om te bepalen in welk seizoen deze maand (grotendeels) ligt. Wijs deze enum toe aan een variabele in de switch.
@@ -102,3 +103,5 @@ Maak een e``num die de verschillende soorten gewichten voorstelt (Obees, Zwaarli
 
 #### Kleurcode weerstand naar ohm, met enum
 Open de "Kleurcode weerstand naar ohm" die je eerder in dit hoofdstuk hebt gemaakt. Gebruik ``enum`` om de weerstandskleuren voor te stellen zodat je veel leesbaardere code krijgt.
+
+<!---{pagebreak}--->

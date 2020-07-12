@@ -5,10 +5,7 @@
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-<!--- {float:left, width:50%} --->
-![](../assets/attention.png)
-
-Ik heb mezelf even gecloned! In de hoop dat de boodschap extra duidelijk wordt: Dit is nog zo'n onderschat hoofdstuk. Enums zijn wat raar in het begin, maar van zodra je er mee weg bent zal je niet meer zonder kunnen en zal je code zoveel eleganter en stoerder worden. Zet je helm dus op en begin er aan!
+Dit is nog zo'n onderschat hoofdstuk. Enums zijn wat raar in het begin, maar van zodra je er mee weg bent zal je niet meer zonder kunnen en zal je code zoveel eleganter en stoerder worden. Zet je helm dus op en begin er aan!
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}

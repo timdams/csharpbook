@@ -1,4 +1,3 @@
-<!---{pagebreak}--->
 ### Herhalingen, herhalingen, herhalingen
 
 <!---NOBOOKSTART--->
@@ -25,31 +24,31 @@ Dit document staat ook in de lijst onderaan bij de [nuttige extra's](../_intro/n
 {% endhint %}
 <!---NOBOOKEND--->
 
-1.	Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken de som en druk die af.
-2.	Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Druk het aantal strikt positieve en het aantal strikt negatieve getallen af.
-3.	Lees een willekeurig aantal getallen in met als afsluitwaarde -32768. Bepaal het aantal strikt positieve getallen, het aantal strikt negatieve getallen en het aantal getallen gelijk aan nul. Druk deze aantallen af.
-4.	Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken het produkt en druk dit af.
-5.	 Lees een getal in en druk de som van zijn cijfers af.
-6.	Lees een willekeurig aantal positieve getallen in en bereken het (afgekapt) gemiddelde ervan. De afsluitwaarde is een willekeurig negatief getal.
-7.	Lees een willekeurig aantal getallen in met afsluitwaarde -32768. Druk het kleinste getal af en het aantal keer dat het voorkomt.
-8.	Een reeks in stijgende volgorde gesorteerde getallen wordt ingelezen. De invoer moet stoppen indien er een fout in de sorteervolgorde voorkomt.
-9.	Een reeks getallen wordt ingelezen. De invoer moet stoppen indien er twee maal achter elkaar een nul wordt ingelezen. Het gemiddelde van de reeks getallen wordt afgedrukt. De laatste twee nullen tellen uiteraard niet mee voor de bepaling van het gemiddelde.
-10.	Bepaal de som van de kwadraten van de even natuurlijke getallen tussen 50 en 100 (inbegrepen). De som wordt afgedrukt.
-11.	Een reeks van 100 getallen wordt ingelezen. Van de positieve getallen moet er afgedrukt worden hoeveel deelbaar waren door 2, hoeveel deelbaar waren door 3 en hoeveel door 6.
-12.	Druk de som af van de eerste 30 termen van de volgende reeksen:
-     * 6 + 12 + 18 + 24 + 30 + ...
-     * 4 + 12 + 20 + 28 + 36 + ...
-     * 1 + 2 + 4 + 8 + 16 + ...
-     * 1 + 1/2 + 1/4 + 1/8 + 1/16 + ...
-     * 1 + 1/3 + 1/5 + 1/7 + 1/9 + ...
-     * 1/2 + 1/3 + 1/5 + 1/9 + 1/17 + ...
-13.	Druk de som af van de eerste 20 termen van de volgende reeksen:
-     * 4 + 8 + 12 + 16 + 20 + ...
-     * 4 + 10 + 16 + 22 + 28 + ...
-     * 1 + 3 + 9 + 27 + 81 + ...
-     * 1/2 + 1/4 + 1/6 + 1/8 + 1/10 + ...
-     * 1 + 1/2 + 1/4 + 1/8 + 1/16 + ...
-     * 1 + 1/3 + 1/7 + 1/15 + 1/31 + ...
+1. Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken de som en druk die af.
+2. Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Druk het aantal strikt positieve en het aantal strikt negatieve getallen af.
+3. Lees een willekeurig aantal getallen in met als afsluitwaarde -32768. Bepaal het aantal strikt positieve getallen, het aantal strikt negatieve getallen en het aantal getallen gelijk aan nul. Druk deze aantallen af.
+4. Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken het produkt en druk dit af.
+5. Lees een getal in en druk de som van zijn cijfers af.
+6. Lees een willekeurig aantal positieve getallen in en bereken het (afgekapt) gemiddelde ervan. De afsluitwaarde is een willekeurig negatief getal.
+7. Lees een willekeurig aantal getallen in met afsluitwaarde -32768. Druk het kleinste getal af en het aantal keer dat het voorkomt.
+8. Een reeks in stijgende volgorde gesorteerde getallen wordt ingelezen. De invoer moet stoppen indien er een fout in de sorteervolgorde voorkomt.
+9. Een reeks getallen wordt ingelezen. De invoer moet stoppen indien er twee maal achter elkaar een nul wordt ingelezen. Het gemiddelde van de reeks getallen wordt afgedrukt. De laatste twee nullen tellen uiteraard niet mee voor de bepaling van het gemiddelde.
+10. Bepaal de som van de kwadraten van de even natuurlijke getallen tussen 50 en 100 (inbegrepen). De som wordt afgedrukt.
+11. Een reeks van 100 getallen wordt ingelezen. Van de positieve getallen moet er afgedrukt worden hoeveel deelbaar waren door 2, hoeveel deelbaar waren door 3 en hoeveel door 6.
+12. Druk de som af van de eerste 30 termen van de volgende reeksen:
+ * 6 + 12 + 18 + 24 + 30 + ...
+ * 4 + 12 + 20 + 28 + 36 + ...
+ * 1 + 2 + 4 + 8 + 16 + ...
+ * 1 + 1/2 + 1/4 + 1/8 + 1/16 + ...
+ * 1 + 1/3 + 1/5 + 1/7 + 1/9 + ...
+ * 1/2 + 1/3 + 1/5 + 1/9 + 1/17 + ...
+13. Druk de som af van de eerste 20 termen van de volgende reeksen:
+ * 4 + 8 + 12 + 16 + 20 + ...
+ * 4 + 10 + 16 + 22 + 28 + ...
+ * 1 + 3 + 9 + 27 + 81 + ...
+ * 1/2 + 1/4 + 1/6 + 1/8 + 1/10 + ...
+ * 1 + 1/2 + 1/4 + 1/8 + 1/16 + ...
+ * 1 + 1/3 + 1/7 + 1/15 + 1/31 + ...
 
 
 #### Tafels van vermenigvuldigen
@@ -89,14 +88,14 @@ Stel dat je het getal 4560 hebt:
 * We trekken 5x100 van 563 af. Dit geeft 63.
 * Deel 63 door 10. Dit geeft **6**.
 * We trekken 6 x 10 van 63 af. Dit geeft **3**
-
 {% endhint %}
 
 {% hint style='tip' %}
-Je kan aan een string vragen hoe groot deze is als volgt:
+Je kan van een string weten hoe groot deze is als volgt:
 
 ```csharp
-int lengte= myInputGetal.Length;  //veronderstellend dat myInputGetal van het type string is
+//veronderstellend dat myInputGetal van het type string is
+int lengte= myInputGetal.Length;  
 ```
 Je kan dan nu met ``Math.Pow(10,lengte-1)`` berekenen vanaf welke exponent van 10 we moeten beginnen werken.
 {% endhint %}

@@ -1,4 +1,3 @@
-<!---{pagebreak}--->
 ### Werken met data
 
 {% hint style='warning' %}
@@ -100,8 +99,8 @@ Tussenprijs= 60 euro + 50 euro + 6 euro + 10 euro
 Het totaal te betalen bedrag is 126 EURO.
 ```
 
- #### Het Orakeltje van Delphi
- Gebruik een random generator om een orakel (een duur woord voor waarzegger) te maken, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
+#### Het Orakeltje van Delphi
+Gebruik een random generator om een orakel (een duur woord voor waarzegger) te maken, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
  
 Het orakel zal enkel realistische getallen geven. M.a.w., getallen tussen de 5 en 125 jaar.
 
@@ -110,3 +109,5 @@ Het orakel zal enkel realistische getallen geven. M.a.w., getallen tussen de 5 e
 We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje. **Bewaar je oefeningen dus goed!**
 {% endhint %}
 <!---NOBOOKEND--->
+
+<!---{pagebreak}--->

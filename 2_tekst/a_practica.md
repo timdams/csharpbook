@@ -1,4 +1,3 @@
-<!---{pagebreak}--->
 ### Tekst gebruiken in code
 
 <!---NOBOOKSTART--->
@@ -14,7 +13,7 @@ Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1
 
 <!---NOBOOKEND--->
 {% hint style='tip' %}
-Sommige oefeningen zullen soms **(PRO)** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele hoofdstukken later nog eens terug naar deze oefeningen te gaan zien, wie weet kan je ze dan wel oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet in dit handboek behandeld worden.
+Sommige oefeningen zullen soms **(PRO)** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele hoofdstukken later nog eens terug naar deze oefeningen te gaan zien, wie weet kan je ze dan wel oplossen.
 {% endhint %}
 
 
@@ -113,7 +112,7 @@ of:
 
 ![Nog een voorbeeld](../assets/1_csharpbasics/tabel2.png)
 
-##### Deel 3 (PRO++)
+##### Deel 3 (PRO)
 
 Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken).
 
@@ -146,20 +145,18 @@ Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even d
 Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren, eventueel na input van de gebruiker.
 Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
 
+<!---{line-numbers:false}--->
 ```text
 hostname
-
 arp -a
-
 getmac
-
 nslookup google.com
-
 netstat
 ```
 
 Andere toffe commando's kunnen zijn:
 
+<!---{line-numbers:false}--->
 ```text
 chrome.exe ap.be
 notepad mytest.txt
@@ -167,6 +164,9 @@ notepad mytest.txt
 
 Of de naam van een bestand dat je wilt openen, maar dan met het hele path:
 
+<!---{line-numbers:false}--->
 ```text
 c:\Temp\mydocument.docx
 ```
+
+<!---{pagebreak}--->

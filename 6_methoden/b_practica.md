@@ -1,4 +1,3 @@
-<!---{pagebreak}--->
 ### Methoden
 
 {% hint style='tip' %}
@@ -8,8 +7,7 @@ Tip van een lector: meestal als een boek veel oefeningen van een bepaald onderwe
 {% endhint %}
 
 {% hint style='warning' %}
-**Opgelet: wanneer je een oefening maakt die invoer van de gebruiker vereist, gelieve die invoer dan BUITEN de methode te vragen (dus meestal in de ``Main`` methode). **
-
+Opgelet: wanneer je een oefening maakt die invoer van de gebruiker vereist, gelieve die invoer dan BUITEN de methode te vragen (dus meestal in de ``Main`` methode). 
 **Op die manier zorg je er voor dat je je methoden kunt herbruiken.**
 {% endhint %}
 

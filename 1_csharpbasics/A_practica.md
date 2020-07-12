@@ -1,4 +1,3 @@
-<!---{pagebreak}--->
 ### De basisconcepten van C#
 
 <!---NOBOOKSTART--->
@@ -101,3 +100,5 @@ De output zijn verschillende lijnen onder elkaar in de vorm van:
 ``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
 
 Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt en die van pluto in het groen.
+
+<!---{pagebreak}--->
