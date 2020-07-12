@@ -1,3 +1,4 @@
+<!---{pagebreak}--->
 ### Herhalingen, herhalingen, herhalingen
 
 <!---NOBOOKSTART--->
@@ -67,7 +68,7 @@ Als de gebruiker dus ``ACGTGGTCTTAA`` heeft ingevoerd moet het resultaat: ``UGCA
 
 Ga er van uit dat de gebruiker letter per letter invoert (telkens dus enter na een letter) en je de omgezette string doet groeien (m.b.v. ``+=``).
 
-#### [PRO] Armstrong nummer
+#### Armstrong nummer (PRO)
 Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
 
 * 9 is een Armstrong nummer, want 9 = 9^1 = 9
@@ -110,7 +111,7 @@ Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft van 0 
 De modulo-operator (``%``) is je grote held hier. Een getal is een veelvoud van x indien ``getal % x`` 0 als resultaat geeft.
 {% endhint %}
 
-#### [PRO] For doordenker 
+#### For doordenker (PRO)
 Schrijf een programma dat de volgende output geeft, gegeven dat de gebruiker een maximum waarde invoert, dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel 2 geneste for-loops!
 ```
 *

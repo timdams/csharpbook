@@ -1,3 +1,4 @@
+<!---{pagebreak}--->
 ### Arrays
 
 {% hint style='tip' %}
@@ -102,7 +103,7 @@ CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
 ```
 
-#### [PRO] Password generator
+#### Password generator (PRO)
 Ontwerp een consoletoepassing waarmee je een wachtwoord genereert voor een gebruiker. Het wachtwoord is opgebouwd uit:
 
 de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2de letter is een kleine letter. 

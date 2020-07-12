@@ -1,3 +1,4 @@
+<!---{pagebreak}--->
 ### Tekst gebruiken in code
 
 <!---NOBOOKSTART--->
@@ -13,7 +14,7 @@ Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1
 
 <!---NOBOOKEND--->
 {% hint style='tip' %}
-Sommige oefeningen zullen soms **[PRO]** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele hoofdstukken later nog eens terug naar deze oefeningen te gaan zien, wie weet kan je ze dan wel oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet in dit handboek behandeld worden.
+Sommige oefeningen zullen soms **(PRO)** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele hoofdstukken later nog eens terug naar deze oefeningen te gaan zien, wie weet kan je ze dan wel oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet in dit handboek behandeld worden.
 {% endhint %}
 
 
@@ -33,7 +34,7 @@ Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine
 #### Systeem informatie
 
 {% hint style='tip' %}
-Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
+Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een (PRO) gedeelte dat je best enkel doet als je een uitdaging wenst.
 {% endhint %}
 
 ##### Deel 1
@@ -43,7 +44,7 @@ Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het gehe
 
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
-##### [PRO] Deel 2
+##### Deel 2 (PRO)
 
 Ook informatie over de harde schijven kan je verkrijgen (in bits). 
 Dit vereist wel dat je bovenaan je programma volgende lijn bijschrijft: ``using System.IO``. 
@@ -84,7 +85,7 @@ Maak een programma dat de weerstandwaarde berekent gebaseerd op:
 
 * Ring 1: die de tientallen voorstelt
 * Ring 2: die de eenheden voorstel
-* [PRO] Ring 3: die de exponent (10 tot de macht) voorstelt. (tip:``Math.Pow(10,ring3)``)
+* (PRO) Ring 3: die de exponent (10 tot de macht) voorstelt. (tip:``Math.Pow(10,ring3)``)
 
 Gebruik twee variabelen van het type ``int`` waar je getal van 0 tot 9 telkens aan kan toewijzen. (we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele)
 
@@ -112,11 +113,11 @@ of:
 
 ![Nog een voorbeeld](../assets/1_csharpbasics/tabel2.png)
 
-##### [PRO²] Deel 3
+##### Deel 3 (PRO++)
 
 Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken).
 
-### [PRO] Shell-starter
+### Shell-starter (PRO)
 
 Je kan de output van een ``Process.Start()`` programma naar je console scherm sturen. Dit vereist wat meer code. Volgend voorbeeld zal de output van het commando ``ipconfig /all`` op het scherm tonen:
 

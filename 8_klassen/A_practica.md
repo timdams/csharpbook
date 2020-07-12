@@ -208,7 +208,7 @@ Test je klasse.
 
 Voorzie extra functionaliteit naar keuze.
 
-## [Pro] OO Textbased game
+## OO Textbased game (PRO)
 
 Bij de all-in-one projecten van dit semester vind je als eerst een tekstgebaseerde game ([hier](../A_DEEL2_AllInOne/2_OOTextGame.md)). Volg deze uitleg, maak het spel en voeg je eigen zotte ideeën toe.
 

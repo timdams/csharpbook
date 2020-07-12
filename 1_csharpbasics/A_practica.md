@@ -1,3 +1,4 @@
+<!---{pagebreak}--->
 ### De basisconcepten van C#
 
 <!---NOBOOKSTART--->
@@ -11,11 +12,8 @@ Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toon
 
 ```text
 -1 + 4 * 6
-
 ( 35 + 5 ) % 7
-
 14 + -4 * 6 / 11
-
 2 + 15 / 6 * 1 - 7 % 2
 ```
 
@@ -23,7 +21,7 @@ Test wat er gebeurt indien je het resultaat in een ``int`` bewaard en wat er geb
 Toon beide uitkomsten (m.b.v. ``WriteLine``) telkens op het scherm.
 
 {% hint style='warning' %}
-Opgelet: de % hier is de modulo-operator! Dit is in heel dit boek ALTIJD zo zijn.
+De % hier is de modulo-operator.
 {% endhint %}
 
 

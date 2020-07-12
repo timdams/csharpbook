@@ -151,7 +151,7 @@ Rugnummer   Goede   Domme   Verschil
 
 Het programma toont ook welke speler(s) het meest performant waren, namelijk zij met het grootste positieve verschil tussen goede en domme acties, alsook de minst performante en de meeste “gemiddelde” speler (i.e. verschil == 0 )
 
-#### [PRO] Robot Simulator
+#### Robot Simulator (PRO)
 Volgende opgave komt uit [Exercism.io](https://exercism.io.io)
 
 "
@@ -178,14 +178,14 @@ Say a robot starts at {7, 3} facing north. Then running this stream of instructi
 
 Teken het gevolgde pad in de console (gebruik ``Console.SetCursorPosition()``).
 
-#### [PRO] Galgje
+#### Galgje (PRO)
 Maak een spel, vergelijkbaar met galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
 
 Voorbeeld output:
 
 ![Uitvoer](../assets/5_arrays/practarray9.png) 
 
-#### [PRO] Grote Som
+#### Grote Som (PRO)
 Maak een methode ``Som()`` die eender welke hoeveelheid parameters van het type ``int`` aanvaardt en vervolgens de som van al deze parameters teruggeeft (als ``int``).
 
 Toon in je main aan dat de methode werkt door onder andere 1, 3, 5 en 10 als gehele getalen mee te geven.
