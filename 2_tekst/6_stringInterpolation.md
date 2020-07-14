@@ -11,8 +11,7 @@ In dit boek prefereren we **manier 2**, de string interpolatie. Dit is de meest 
 In de volgende sectie gaan we van volgende informatie uit:
 
 * Stel dat je 2 variabelen hebt ``int age=13`` en ``string name="Finkelstein"``.
-* We willen de inhoud van deze variabelen samenvoegen in een nieuwe ``string result`` die zal bestaan uit de tekst:
-```Ik ben Finkelstein en ik ben 13 jaar oud.```
+* We willen de inhoud van deze variabelen samenvoegen in een nieuwe ``string result`` die zal bestaan uit de tekst: ``Ik ben Finkelstein en ik ben 13 jaar oud.``
 
 Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 
@@ -22,6 +21,7 @@ Je kan string en variabelen eenvoudig bij elkaar 'optellen'. Ze worden dan achte
 ```csharp
 string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud.";
 ```
+
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet tegen het vorige stringstuk wilt 'plakken'.
 
 {% hint style='tip' %}
