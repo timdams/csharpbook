@@ -153,7 +153,8 @@ Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmake
 De regels zijn duidelijk:
 * Bij het maken van een array is de lengte van een array gelijk aan het aantal elementen dat er in aanwezig is. *Dus een array met 5 elementen heeft als lengte 5.*
 * Bij het schrijven en lezen van individuele elementen uit de array (zie hierna) gebruiken we een indexering die start bij **0**. Bijgevolg is de index **4** van het laatste element in een array met **lengte 5**.
-* <!---{/aside}--->
+
+<!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->

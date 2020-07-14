@@ -2,7 +2,7 @@
 
 Niets is zo leuk als de vreemdste tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om *complexe* tekeningen op het scherm te tonen. Om je ietwat saaie applicaties dus wat toffer te maken leggen we daarom uit hoe je dit kan doen.
 
-<!--- {width:50%} --->
+<!---{width:50%} --->
 ![Dwarf fortress: een van de bekendste (én meest complexe) console-games waar nog steeds aan ontwikkeld wordt gebruikt ongelooflijk veel bizarre karakters om zo een erg 'cool' ogende user interface te maken](../assets/0_intro/kerosenethunder_mockup.png)
 
 ### Unicode karakters tonen
@@ -25,7 +25,7 @@ Console.WriteLine("˧");
 
 Noteer de hexadecimale code van het karakter dat in de tabel staat.
 
-<!--- {height:30%} --->
+<!---{height:30%} --->
 ![Een handig teken als je een huis wilt tekenen in de console](../assets/0_intro/letter.jpg)
 
 In dit geval is de code 0x02e7.
