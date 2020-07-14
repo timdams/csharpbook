@@ -16,7 +16,7 @@ Voorbeeldoutput:
 
 #### Array Viewer
 
-Maak een programma dat een methode VisualiseerArray implementeert. De methode zal een array (type int) als parameter hebben en niets teruggeven (void). Echter, de methode zal met behulp van Write() de array, van eender welke grootte, op het scherm tonen. Tussen ieder element van dezelfde rij dient een tab (‘\t’) gezet te worden. Je dient in de methode gebruik te maken van een for-loop.
+Maak een programma dat een methode VisualiseerArray implementeert. De methode zal een array (type int) als parameter hebben en niets teruggeven (``void``). Echter, de methode zal met behulp van Write() de array, van eender welke grootte, op het scherm tonen. Tussen ieder element van dezelfde rij dient een tab (``\t``) gezet te worden. Je dient in de methode gebruik te maken van een for-loop.
 Voorbeeld van main:
 
 ```csharp
@@ -48,6 +48,7 @@ Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbi
 
 Stel bijvoorbeeld dat x=3 dan krijgen we volgende nieuwe alfabet:
 
+<!---{line-numbers:false}--->
 ```text
 DEFGHIJKLMNOPQRSTUVWXYZABC
 ```
@@ -56,12 +57,14 @@ Waarbij dus de A zal vervangen worden door een D, de Z door een C, etc.
 
 Willen we deze tekst dus encrypteren:
 
+<!---{line-numbers:false}--->
 ```text
 the quick brown fox jumps over the lazy dog
 ```
 
 dan krijgen we:
 
+<!---{line-numbers:false}--->
 ```text
 WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
 ```
@@ -91,7 +94,8 @@ Console.WriteLine($"Determinant van matrix is {BerekenDeterminant(aMatrix)}");
 ```
 
 geeft als output: 
-```
+<!---{line-numbers:false}--->
+```text
 Determinant van matrix is -2
 ```
 
@@ -99,15 +103,16 @@ Extra:
 Breid uit zodat de BerekenDeterminant-methode ook werkt voor 3-bij-3 matrices. De methodeaanroep blijft dezelfde, enkel de interne code van de methode zal nu rekening moeten houden met de grootte van de matrix .
 
 #### 2D Array Viewer
-Breid het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de GetLength() methode van een array).
+Breid het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de ``GetLength()``-methode van een array).
 
 Voorbeeld van main:
 ```csharp
 int [,] array = { {15, 6, 9}, {1, 2, 3}, {6, 9, 12}};
 VisualiseerArray(array);
 ```
-Output:
-```
+
+<!---{line-numbers:false}--->
+```text
 15  6  9
 1   2  3
 6   9  12
@@ -124,11 +129,10 @@ De voetbalcoach wil na de match iedere knappe en domme actie van een speler wete
 Wanneer de coach een rugnummer intypt kan hij vervolgens ingeven of hij (a) een knappe actie of (b) een domme actie wil ingeven. Vervolgens geeft hij een getal in. Gebruik een 2dimensionale array die per speler het aantal domme en goede acties bijhoudt (de array is dus 12 bij 2 groot: 1 lijn per speler, bestaande uit 2 kolommen voor goede en domme actie. De index van de lijn is de rugnummer van speler -1). 
 
 Een typische invoer kan dus zijn:
-```
+<!---{line-numbers:false}--->
+```text
 2
-
 a
-
 6
 ```
 
@@ -163,7 +167,7 @@ The robots have three possible movements:
 * turn right
 * turn left
 * advance
-Robots are placed on a hypothetical infinite grid, facing a particular direction (north, east, south, or west) at a set of {x, y} coordinates, e.g., {3, 8}, with coordinates increasing to the north and east.
+Robots are placed on a hypothetical infinite grid, facing a particular direction (north, east, south, or west) at a set of ``(x, y)`` coordinates, e.g., ``(3, 8)``, with coordinates increasing to the north and east.
 
 The robot then receives a number of instructions, at which point the testing facility verifies the robot's new position, and in which direction it is pointing.
 
@@ -174,7 +178,7 @@ The letter-string "RAALAL" means:
 * Advance once
 * Turn left yet again
 
-Say a robot starts at {7, 3} facing north. Then running this stream of instructions should leave it at {9, 4} facing west." 
+Say a robot starts at ``(7, 3)`` facing north. Then running this stream of instructions should leave it at ``(9, 4)`` facing west." 
 
 Teken het gevolgde pad in de console (gebruik ``Console.SetCursorPosition()``).
 
