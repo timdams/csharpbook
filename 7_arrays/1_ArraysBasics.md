@@ -136,6 +136,7 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal , 2
 {% hint style='tip' %}
 **De index van een C#-array start steeds bij 0.** Indien je dus een array aanmaakt met lengte 5 dan heb je de indices 0 tot en met 4.
 
+<!--- {width:80%} --->
 ![Lengte is 5, index laatste element is 4, eerste element is 0](../assets/5_arrays/arrays1.png)
 {% endhint %}
 
@@ -152,17 +153,18 @@ Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmake
 De regels zijn duidelijk:
 * Bij het maken van een array is de lengte van een array gelijk aan het aantal elementen dat er in aanwezig is. *Dus een array met 5 elementen heeft als lengte 5.*
 * Bij het schrijven en lezen van individuele elementen uit de array (zie hierna) gebruiken we een indexering die start bij **0**. Bijgevolg is de index **4** van het laatste element in een array met **lengte 5**.
+* <!---{/aside}--->
+<!---NOBOOKSTART--->
 {% endhint %}
+<!---NOBOOKEND--->
+
 
 {% hint style='tip' %}
 Je kan de lengte van een array altijd weten via de ``.Length`` eigenschap die alle arrays hebben. We komen hier later op terug, maar tonen het hier al even:
 ```csharp
 Console.WriteLine(myColors.Length);
 ```
-<!---{/aside}--->
-<!---NOBOOKSTART--->
 {% endhint %}
-<!---NOBOOKEND--->
 
 ### Lezen
 
