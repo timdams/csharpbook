@@ -122,9 +122,6 @@ Gegroet! Zet je helm op en let alsjebelieft goed op. Als je het volgende stuk go
 {% endhint %}
 <!---NOBOOKEND--->
 
-{% hint style='tip' %}
-Voorman Tim verschijnt wanneer een sectie start waar véél fouten op gemaakt worden, zelfs bij ervaren programmeurs. Opletten geblazen dus.
-{% endhint %}
 De types die je in je expressies gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
 
 ```csharp

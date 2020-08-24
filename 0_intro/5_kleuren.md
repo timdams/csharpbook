@@ -9,10 +9,10 @@ Console.BackgroundColor = ConsoleColor.Blue;
 Console.ForegroundColor = ConsoleColor.Green;
 ```
 
-Vanaf dan zal alle tekst die je na deze 2 expressies via ``WriteLine`` naar het scherm stuurt met deze kleuren werken.
+Vanaf dan zal alle tekst die je na deze 2 expressies via ``WriteLine`` naar het scherm stuurt met deze kleuren werken. Merk op dat we **bestaande tekst op het scherm niét van kleur kunnen veranderen zonder deze eerst te verwijderen en dan opnieuw, met andere kleurinstellingen, naar het scherm te sturen.**
 
 {% hint style='tip' %}
-Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn: Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red, Magenta, Yellow.
+Alle kleuren die beschikbaar zijn staan beschreven in ``ConsoleColor`` deze zijn: ``Black``,``DarkBlue``,``DarkGreen``,``DarkCyan``,``DarkRed``,``DarkMagenta``,``DarkYellow``,``Gray``,``DarkGray``,``Blue``,``Green``,``Cyan``,``Red``,``Magenta``,``Yellow``.
 {% endhint %}
 
 Een voorbeeld:
@@ -31,7 +31,7 @@ Als je deze code uitvoert krijg je als resultaat:
 ![Resultaat voorgaande code](../assets/0_intro/kleuren.PNG)
 
 {% hint style='tip' %}
-Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen.
+Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen. Let er wel op dat je applicatie geen aarstlelijk, op psychedelische producten geschreven programma lijkt.
 {% endhint %}
 
 ### Kleur resetten

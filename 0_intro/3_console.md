@@ -12,7 +12,7 @@ result = Console.ReadLine();
 Wat gebeurt er hier juist?
 
 De eerste lijn code: 
-* Concreet zeggen we hiermee aan de compiler: maak in het geheugen een plekje vrij waar enkel data van het type string in mag bewaard worden;
+* Concreet zeggen we hiermee aan de compiler: maak in het geheugen een plekje vrij waar enkel data van het type string in mag bewaard worden (wat deze zin exact betekent komt later. Onthoud nu dat geheugen van het type ``string`` enkel "tekst" kan bevatten).
 * Noem deze geheugenplek ``result``  zodat we deze later makkelijk kunnen in en uitlezen.
 
 Tweede lijn code:
@@ -171,7 +171,7 @@ Console.Write("_hoe gaat het met je?");
 
 ### Zinnen aan elkaar plakken
 
-We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om tekst aan elkaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
+We kunnen dit allemaal nog een pak korter tonen zonder dat de code onleesbaar wordt. De plus-operator (``+``) in C# kan je namelijk gebruiken om tekst aan elkaar te plakken. De laatste 3 lijnen code kunnen dan korter geschreven worden  als volgt:
 
 ```csharp
 Console.WriteLine("Dag " + result + " hoe gaat het met je?");
@@ -179,7 +179,6 @@ Console.WriteLine("Dag " + result + " hoe gaat het met je?");
 
 {% hint style='tip' %}
 Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling tot de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
-{% endhint %}
 
 Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code:
 ```csharp
@@ -190,6 +189,7 @@ Vervangt door:
 Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 ```
 
+{% endhint %}
 #### Meer input vragen
 
 Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:
@@ -220,7 +220,9 @@ Je zal vaak ``Console.WriteLine`` moeten schrijven als je dit boek volgt. Ik heb
 
 Hier gaan we: ``cw [tab] [tab]``
 
-Als je dus ``cw`` schrijft en dan twee maal op de tab-toets van je toetsenbord duwt verschijnt daar automagisch een verse lijncode!
+Als je dus ``cw`` schrijft en dan twee maal op de tab-toets van je toetsenbord duwt verschijnt daar automagisch een verse lijn met ``Console.WriteLine();``.
+
+Wil je dit ook voor ``Console.ReadLine();``? Dan zal je een eigen, custom, snippet aan VS moeten toevoegen. [Dit wordt hier uitgelegd](https://stackoverflow.com/questions/32229103/keyboard-shortcut-for-c-sharp-console-class).
 {% endhint %}
 
 <!---NOBOOKSTART--->

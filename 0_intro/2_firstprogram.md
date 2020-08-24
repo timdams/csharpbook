@@ -1,6 +1,6 @@
 ## Console-applicaties
 
-Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in dit boek enkel console-applicaties leren maken. Grafische frontends (bv WPF) komen in dit boek niet aan bod.
+Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in dit boek enkel console-applicaties leren maken. Grafische frontends zoals WPF komen in dit boek niet aan bod.
 
 ### In en uit -  ReadLine en WriteLine
 
@@ -11,7 +11,7 @@ Een programma zonder invoer van de gebruiker is niet erg boeiend. De meeste prog
 
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:
 
-* **IN** Met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
+* **IN**: Met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
 * **UIT**: Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen.
 
 
@@ -75,7 +75,7 @@ Laat je niet afschrikken door wat er nu volgt. Ik gooi je even in het diepe gede
 * **Accolades**: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
 
 {% hint style='tip' %}
-"Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt op [helloworldcollection.de](http://helloworldcollection.de/).
+"Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt op [helloworldcollection.de](http://helloworldcollection.de/). Deze site toont in honderden programmeertalen hoe je "Hello world" moet programmeren.
 {% endhint %}
 
 
@@ -85,20 +85,22 @@ Laat je niet afschrikken door wat er nu volgt. Ik gooi je even in het diepe gede
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/care.png)
-
-*Oerman Tim verschijnt wanneer we een stevige stap gezet hebben en je mogelijk even onder de indruk bent van al die nieuwe informatie. Hij zal proberen informatie nog eens vanuit een ander standpunt toe te lichten en te herhalen waarom deze nieuwe kennis zo belangrijk is. *
-
 Jawadde...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Ik snap het zelf ook niet. Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
 
 Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 
-* Al je code komt binnen de ``Main`` accolades.
+* Al je eigen code komt momenteel enkel tussen de ``Main`` accolades.
 * Eindig iedere lijn code daar met een puntkomma ( ; ).
 
 <!---{/aside}--->
 <!---NOBOOKSTART--->
-{% endhint %}
+De oerman verschijnt wanneer we een stevige stap gezet hebben en je mogelijk even onder de indruk bent van al die nieuwe informatie. Hij zal proberen informatie nog eens vanuit een ander standpunt toe te lichten en te herhalen waarom deze nieuwe kennis zo belangrijk is.
 <!---NOBOOKEND--->
+
+
+{% hint style='tip' %}
+"Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt op [helloworldcollection.de](http://helloworldcollection.de/). Deze site toont in honderden programmeertalen hoe je "Hello world" moet programmeren.
+{% endhint %}
 
 ### WriteLine: Tekst op het scherm
 
