@@ -94,8 +94,12 @@ Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 
 <!---{/aside}--->
 <!---NOBOOKSTART--->
-De oerman verschijnt wanneer we een stevige stap gezet hebben en je mogelijk even onder de indruk bent van al die nieuwe informatie. Hij zal proberen informatie nog eens vanuit een ander standpunt toe te lichten en te herhalen waarom deze nieuwe kennis zo belangrijk is.
+{% endhint %}
 <!---NOBOOKEND--->
+
+{% hint style='tip' %}
+De oerman verschijnt wanneer we een stevige stap gezet hebben en je mogelijk even onder de indruk bent van al die nieuwe informatie. Hij zal proberen informatie nog eens vanuit een ander standpunt toe te lichten en te herhalen waarom deze nieuwe kennis zo belangrijk is.
+{% endhint %}
 
 
 {% hint style='tip' %}

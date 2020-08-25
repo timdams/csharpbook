@@ -2,14 +2,7 @@
 
 Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die op 1 resultaat uitkomen met een specifiek datatype. De volgende code is bijvoorbeeld een expressie: `3+2`.
 
-Het resultaat van deze expressie is de ``int`` **``5``**. 
-
-{% hint style='tip' %}
-
-Over expressies in C# is véél te vertellen, maar niet aan de orde in dit boek. Bekijk [zeker volgende tekst](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions) indien je meer interesse hebt.
-
-{% endhint %}
-
+Het resultaat van deze expressie is  **``5``** (en dus van type ``int``). 
 
 ### Expressie-resultaat toewijzen
 
@@ -21,7 +14,7 @@ Voorbeeld van **expressie**-resultaat toekennen:
 int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
 ```
 
-Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van elkaar wordt afgetrokken en vervolgens bewaard worden in temperatuursVerschil.
+Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van elkaar wordt afgetrokken en vervolgens bewaard worden in ``temperatuursVerschil``.
 
 De voorgaande code kan ook langer geschreven worden als:
 
@@ -44,10 +37,10 @@ int hoogte = 20 * breedte;
 ```
 
 ### Operators
-Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgen de wiskundige regels van **volgorde van berekeningen**:
+Om expressies te gebruiken hebben we ook zogenaamde **operators** nodig. Operators in C# zijn de welgekende wiskundige bewerkingen zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgen de klassieke wiskundige regels van **volgorde van berekeningen**:
 
 1. **Haakjes**
-2. **Vermenigvuldigen, delen en modulo**: ``*`` (vermenigvuldigen), ``/`` (delen) en ``%`` (rest na deling, ook module genoemd)
+2. **Vermenigvuldigen, delen en modulo**: ``*`` (vermenigvuldigen), ``/`` (delen) en ``%`` (rest na deling, ook modulo genoemd)
 3. **Optellen en aftrekken**: `+` en `-`
 (etc.)
 
@@ -88,7 +81,8 @@ Bijvoorbeeld om te testen of getal even is gebruiken we ``%2``:
 ```csharp
 int getal= 1234234;
 int rest= getal%2;
-Console.WriteLine("Indien het getal als rest 0 geeft weten we dat het even is. De rest is: "+ rest);
+Console.WriteLine("Indien het getal als rest 0 geeft weten we dat het even is."); 
+Console.WriteLine("De rest is: "+ rest);
 ```
 
 #### Verkorte operator notaties
@@ -116,13 +110,17 @@ Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zul
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Gegroet! Zet je helm op en let alsjebelieft goed op. Als je het volgende stuk goed begrijpt (en blijft begrijpen) dan heb je al een grote stap vooruit gezet in de wondere wereld van C#. Succes!
+Gegroet! Zet je helm op en let alsjebelieft goed op. Als je het volgende stuk goed begrijpt (en blijft begrijpen) dan heb je al een grote stap vooruit gezet in de wondere wereld van C#. 
+
+We vertelden al dat variabelen het hart van programmeren zijn. Wel, expressies zijn het bloedvatensysteem dat ervoor zorgt dat al je variabelen ook effectief gecombineerd kunnen worden tot wondermooie nieuwe dingen. 
+
+Succes!
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->
 
-De types die je in je expressies gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
+Lees deze zin enkele keren luidop voor, voor je verder gaat: **De types die je in je expressies gebruikt bepalen ook het type van het resultaat.** Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven (klink logisch, maar lees aandachtig verder):
 
 ```csharp
 int result= 3 + 4;
@@ -133,59 +131,89 @@ Je kan echter geen kommagetallen aan ``int`` toewijzen. Als je dus twee ``double
 int otherResult= 3.1 / 45.2;  //dit is fout!!!
 ```
 
+Bovenstaande code geeft volgende fout:
+![Voorspelling: deze error zal je vaak tegenkomen.](../assets/1_csharpbasics/casterror.jpg)
 
 **Let hier op!**
 
-But wait... it gets worse! 
+#### But wait... it gets worse! 
 
-Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
+Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. Je bent echter alle informatie na de komma kwijt. Kijk maar:
 ```csharp
 int getal1= 9;
 int getal2= 2;
 int result= getal1/getal2;
 Console.WriteLine(result);
 ```
-Er zal ``4`` op het scherm verschijnen! (niet ``4.5`` daar dat geen ``int`` is). 
+**Er zal ``4`` op het scherm verschijnen!** (niet ``4.5`` daar dat geen ``int`` is). 
 
+#### Datatypes mengen in een expressie 
 
-Wat als je datatypes mengt? Als je een berekening doet met een ``int`` en een ``double`` dan zal C# het 'grootste' datatype kiezen. In dit geval een double. Volgende code zal dus werken:
+Wat als je datatypes mengt? Als je een berekening doet met bijvoorbeeld een ``int`` en een ``double`` dan zal C# het 'grootste' datatype kiezen. In dit geval een double. 
+
+Volgende code zal dus werken:
 ```csharp
 double result= 3/5.6;
 ```
-Volgende niet:
+Volgende code niet:
 ```csharp
 int result= 3/5.6;
 ```
+En zal weer dezelfde fout genereren:
 
-Wil je dus het probleem oplossen om 9 te delen door 2 dan zal je minstens 1 van de 2 literals of variabelen door een double moeten omzetten. Het voorbeeld van hierboven herschrijven we dan naar:
+![](../assets/1_csharpbasics/casterror.jpg)
+
+Wil je dus het probleem oplossen om 9 te delen door 2 en toch 4.5 te krijgen (en niet 4) dan zal je minstens 1 van de 2 literals of variabelen naar een double moeten omzetten. 
+
+Het voorbeeld van hierboven herschrijven we daarom naar:
 ```csharp
 int getal1= 9;
-double getal2= 2.0;
+double getal2= 2.0; //see what we do here!
 double result= getal1/getal2;
 Console.WriteLine(result);
 ```
-En nu krijgen we wel ``4.5``.
+En nu krijgen we wel ``4.5`` aangezien we nu een ``int`` door een ``double`` delen en C# dus ook het resultaat dan als een ``double`` zal teruggeven.
 
-### En complexer?
 
-Het kan subtiel en ambetant worden in grotere berekeningen.
 
-Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien (fictief)(wishfull thinking) 10000 euro per maand. 
-Ik gebruik volgende formule om te berekenen wat je van mij krijgt:
+
+
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/attention.png)
+Begrijp je nu waarom dit een belangrijke deel was? Je kan erg snel erg foute berekeningen en ongewenste afrondingen krijgen indien je niet erg bewust omgaat met je datatypes. 
+
+Laten we eens kijken of je goed hebt opgelet, het kan kan namelijk subtiel en ambetant worden in grotere berekeningen.
+
+Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien  10000 euro per maand (I wish).
+
+Ik stel je voor om volgende expressie te gebruiken om te berekenen wat je van mij krijgt:
 
 ```csharp
-double helft= 10000.0 * (1/2);
+double helft= 10000.0 * (1 / 2);
 ```
-Hoeveel krijg je van me? **0.0 euro, MUHAHAHAHA!!!**
+Hoeveel krijg je van me? 
 
-De volgorde van berekeningen zal eerst het gedeelte tussen de haakjes doen: 1 delen door 2 geeft 0, daar we een ``int`` door een ``int`` delen en dus terug een ``int`` als resultaat krijgen. 
-Vervolgens zullen we deze ``0`` vermenigvuldigen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een ``double`` (het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
+**0.0 euro, MUHAHAHAHA!!!**
 
-Wil je het dus eerlijk spelen dan zal je de formule moeten aanpassen naar:
+Begrijp je waarom? De volgorde van berekeningen zal eerst het gedeelte tussen de haakjes doen: 
+* 1 delen door 2 geeft 0, daar we een ``int`` door een ``int`` delen en dus terug een ``int`` als resultaat krijgen. 
+* Vervolgens zullen we deze ``0`` vermenigvuldigen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een ``double`` (het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
+
+Als ik dus effectief de helft van m'n salaris wil afstaan dan moet ik de expressie aanpassen naar bijvoorbeeld: 
 ```csharp
-double helft = 10000.0 * (1.0/2);
+double helft = 10000.0 * (1.0 / 2);
 ```
-Nu krijgt het gedeelte tussen de haakjes een ``double`` als resultaat, namelijk ``0.5`` dat we dan kunnen vermenigvuldigen met het salaris om ``5000.0`` te krijgen.
+
+Nu krijgt het gedeelte tussen de haakjes een ``double`` als resultaat, namelijk ``0.5`` dat we dan kunnen vermenigvuldigen met het salaris om ``5000.0`` te krijgen, wat hij vermoedelijk een fijner resultaat vindt.
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
+
 
 <!---NOBOOKSTART--->
 ### Kennisclip

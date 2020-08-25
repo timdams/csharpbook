@@ -41,7 +41,7 @@ Student[] mijnKlas = new Student[]
     };
 ```
 
-Let op de kommapunt helemaal achteraan. Die wordt als eens vergeten.
+Let op de puntkomma helemaal achteraan. Die wordt als eens vergeten.
 
 ## Individueel object benaderen
 

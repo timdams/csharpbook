@@ -1,10 +1,22 @@
 ## Variabelen
-Hiervoor zagen we dat er verschillende soorten datatypes bestaan. Deze types hebben we nodig om **variabelen** aan te maken.
 
-De data die we in een programma gebruiken bewaren we namelijk in een **variabele van een bepaald type**. Een variabele is een plekje in het geheugen dat in je programma zal gereserveerd worden om daarin data te bewaren van het type dat je aan de variabele hebt toegekend. Een variabele zal intern een geheugenadres hebben (waar de data in het geheugen staat) maar dat zou lastig programmeren zijn indien je steeds dit adres moet gebruiken. Daarom moeten we ook steeds een naam oftewel **identifier** aan de variabele geven zodat we makkelijk de geheugenplek kunnen aanduiden. 
+
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/attention.png)
+Wat een gortdroge tekst was me dat nu net? Waarom moeten we al deze datatypes kennen? Wel, we hebben deze nodig om **variabelen** aan te maken. En variabelen zijn het hart van ieder programma. Zonder variabelen ben je aan het programmeren aan een programma dat een soort vergevorderde vorm van dementie heeft en hoegenaamd niets kan onthouden. 
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
+
+De data die we in een programma gebruiken bewaren we in een **variabele van een bepaald datatype**. Een variabele is een plekje in het geheugen dat in je programma zal gereserveerd worden om daarin data te bewaren van het type dat je aan de variabele hebt toegekend. Een variabele zal intern een geheugenadres hebben (waar de data in het geheugen staat) maar dat zou lastig programmeren zijn indien je steeds dit adres moest gebruiken. Daarom moeten we ook steeds een naam oftewel **identifier** aan de variabele geven zodat we makkelijk de geheugenplek kunnen aanduiden en niet moeten werken met een lang hexadecimaal geheugen adres (bv 0x4234FE13EF1).
 
 {% hint style='tip' %}
-De naam (identifier) van de variabele moet voldoen aan de identifier regels zoals besproken in een vorige sectie.
+De naam (identifier) van de variabele moet voldoen aan de identifier regels zoals eerder besproken.
 {% endhint %}
 
 
@@ -48,12 +60,13 @@ Bijvoorbeeld ``string voornaam, achternaam, adres;``
 
 Van zodra je een variabele hebt gedeclareerd kunnen we dus ten allen tijde deze variabele gebruiken om een waarde aan toe te kennen, de bestaande waarde te overschrijven, of de waarde te gebruiken, zoals:
 
-* **Waarde toekennen**: `mijnGetal= 15;`. Herinner dat de toekenning steeds gebeurt van rechts naar links: het deel rechts van het gelijkheidsteken wordt toegewezen aan het deel links er van.)
-* **Waarde tonen op scherm**: `Console.WriteLine(mijnGetal);`
+* **Waarde toekennen**: Herinner dat de toekenning steeds gebeurt van rechts naar links: het deel rechts van het gelijkheidsteken wordt toegewezen aan het deel links er van, bijvoorbeeld: `mijnGetal= 15;`
+* **Waarde gebruiken**: Bijvoorbeeld `anderGetal = mijnGetal + 15;`
+* **Waarde tonen op scherm**: Bijvoorbeeld `Console.WriteLine(mijnGetal);`
 
 Met de **toekennings-operator \(=\)** kan je een waarde toekennen aan een variabele. Hierbij kan je zowel een literal toekennen oftewel het resultaat van een expressie.
 
-Je kan natuurlijk ook een waarde uit een variabele uitlezen en toewijzen aan een andere variabele:
+Je kan natuurlijk ook een waarde uit een variabele uitlezen en toewijzen (kopiëren) aan een andere variabele:
 
 ```csharp
 int eenAndereLeeftijd = mijnLeeftijd;
@@ -67,14 +80,12 @@ Literals zijn expliciet ingevoerde waarden in je code. Als je in je code explici
 Voorbeelden van een literal toekennen:
 
 ```csharp
-int temperatuurGisteren = 20;
-int temperatuurVandaag = 25;
+int temperatuurGisteren = 20; //20 is de literal
+int temperatuurVandaag = 25; //25 is de literal
 ```
 
 
 {% hint style='warning' %}
-
-
 Het is belangrijk dat het type van de literal overeenstemt met dat van de variabele waaraan je deze zal toewijzen. Een string-literal (zie verder) stel je voor door aanhalingstekens. Volgende code zal dan ook een compiler-fout generen, daar je een string-literal aan een int-variabele wil toewijzen, en vice versa.
 
 ```csharp
@@ -91,27 +102,27 @@ Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschap
 {% endhint %}
 
 #### Literal bepaalt het datatype
-De manier waarop je een literal schrijft in je code zal bepalen wat het datatype van de literal is:
+De manier waarop je een literal schrijft in je code zal bepalen wat het datatype van die literal is:
 
 * **Gehele getallen** worden standaard als ``int`` beschouwd, vb: ``125``.
 * **Kommagetallen** (met punt ``.``) worden standaard als ``double`` beschouwd, vb: ``12.5``.
 
 Wil je echter andere getaltypes dan ``int`` of ``double `` een waarde geven dan moet je dat dus expliciet in de literal aanduiden. Hiervoor plaats je een *suffix* achter de literalwaarde. Afhankelijk van deze suffix duidt je dan aan om welke datatype het gaat: 
-  * ``U`` of ``u`` voor ``uint``, vb: ``125U`` (dus bijvoorbeeld ``uint aantalSchapen = 27u;``)
-  * ``L`` of ``l`` voor ``long``, vb: ``125L``.
-  * ``UL`` of ``ul`` voor ``ulong``, vb: ``125ul``.
-  * ``F`` of ``f`` voor ``float``, vb: ``12.5f``.
-  * ``M`` of ``m`` voor ``decimal``, vb: ``12.5M``.
+
+* ``U`` of ``u`` voor ``uint``, vb: ``125U`` (dus bijvoorbeeld ``uint aantalSchapen = 27u;``)
+* ``L`` of ``l`` voor ``long``, vb: ``125L``.
+* ``UL`` of ``ul`` voor ``ulong``, vb: ``125ul``.
+* ``F`` of ``f`` voor ``float``, vb: ``12.5f``.
+* ``M`` of ``m`` voor ``decimal``, vb: ``12.5M``.
 
 Naast getallen zijn er uiteraard ook nog andere datatypes waar we de literals van moeten kunnen schrijven:
-* Voor **``bool``** (zie verder) is dit enkel ``true``  of ``false``.
-* Voor **``char``** (zie verder) wordt dit aangeduid met een enkele apostrof voor en na de literal, vb: ``char laatsteLetter = 'z';``.
-* Voor **``string``** (zie verder) wordt dit aangeduid met  aanhalingsteken voor en na de literal, vb: ``string myPoke = "pikachu"``.
-  
-De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduiding. Er wordt vanuit gegaan wanneer je een literal probeert toe te wijzen aan een van deze types dat dit zonder problemen zal gaan (ze worden impliciet geconverteerd).
+
+* Voor **``bool``** is dit enkel ``true``  of ``false``.
+* Voor **``char``**  wordt dit aangeduid met een enkele apostrof voor en na de literal, vb: ``char laatsteLetter = 'z';``.
+* Voor **``string``** wordt dit aangeduid met  aanhalingsteken voor en na de literal, vb: ``string myPoke = "pikachu"``.
 
 {% hint style='tip' %}
-Om samen te vatten:
+Om samen te vatten, even de belangrijkste literal schrijfwijzen op een rijtje:
 ```csharp
 int getal= 5;
 double anderGetal= 5.5;
@@ -122,6 +133,10 @@ bool isDitCool= true;
 string zin= "Ja hoor";
 ```
 {% endhint %}
+  
+De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduiding. Er wordt vanuit gegaan wanneer je een literal probeert toe te wijzen aan een van deze datatypes dat dit zonder problemen zal gaan (ze worden impliciet geconverteerd). Bijvoorbeeld ``sbyte start = 127;`` wordt toegestaan, de ``int`` literal 127 zal geconverteerd worden achter de schermen naar een ``sbyte`` en dan toegewezen worden.
+
+
 
 ##### Hexadecimale en binaire notatie
 
@@ -138,6 +153,7 @@ int otherAge= 0b0001_0110_0011_0100_0010 //idem, maar met _ als seperator
 byte myByteValue =  0b‭00100100‬1;
 ``` 
 
+Deze schrijfwijzen kan handig zijn wanneer jet met binaire of hexadecimale data wilt werken die je bijvoorbeeld uit een stuk hardware hebt uitgelezen (bijvoorbeeld een Arduino of Raspberry Pi).
 
 ### Nieuwe waarden overschrijven oude waarden
 
@@ -165,7 +181,7 @@ We hebben dus aan het einde van het programma zowel de temperatuur van eergister
 
 
 {% hint style='warning' %}
-Een veel gemaakte fout is variabelen meer dan één keer declareren. Dit hoeft niet én mag niet. Van zodra je een variabele declareert is deze blijkbaar in de scope (zie verder) tot het einde.
+Een veel gemaakte fout is variabelen meer dan één keer declareren. Dit hoeft niet én mag niet. Van zodra je een variabele declareert is deze bruikbaar in de scope (zie verder) tot het einde.
 Volgende code zal dus een fout geven:
 
 ```csharp
@@ -173,6 +189,9 @@ double kdRating= 2.1;
 //even later...
 double kdRating = 3.4; 
 ```
+
+![De foutboodschap vertelt duidelijk wat het probleem is.](../assets/1_csharpbasics/kdratingexists.jpg)
+{% endhint %}
 
 Lijn 3 moet dus worden:
  

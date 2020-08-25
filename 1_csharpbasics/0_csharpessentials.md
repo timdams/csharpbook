@@ -13,12 +13,12 @@ Enkele belangrijke regels van C#:
 * **Hoofdletter-gevoelig**: C# is hoofdlettergevoelig. Dat wil zeggen dat hoofdletter ``T`` en kleine letter ``t`` totaal verschillende zaken zijn voor C#. ``Reinhardt`` en ``reinhardt`` zijn dus ook niet hetzelfde.
 * **Statements afsluiten met puntkomma**: Iedere C# statement wordt afgesloten moet een puntkomma ( **``;``** ). Doe je dat niet dan zal C# denken dat de regel gewoon op de volgende lijn doorloopt en deze als één (fout) geheel proberen te compileren.
 * **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren. De enige plek waar witruimtes wél een verschil geven is tussen aanhalingstekens ``"      "`` die we later (bij string) zullen leren gebruiken.
-* **Commentaar toevoegen kan**: door ``//`` voor een enkele lijn te zetten zal deze lijn genegeerd worden door de compliler. Je kan ook meerdere lijnen code in commentaar zetten door er ``/*`` voor en  ``*/`` achter te zetten.
+* **Commentaar toevoegen kan**: door ``//`` voor een enkele lijn te zetten zal deze lijn genegeerd worden door de compiler. Je kan ook meerdere lijnen code in commentaar zetten door er ``/*`` voor en  ``*/`` achter te zetten.
 
 ## Keywords: de woordenschat
 
-C# bestaat zoals gezegd niet enkel uit grammaticale regels. Grammatica zonder woordenschat is nutteloos. Er zijn binnen C# dan ook 80 woorden, zogenaamde **reserved keywords**  die de woordenschat voorstellen.
-In dit boek zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
+C# bestaat zoals gezegd niet enkel uit grammaticale regels. Grammatica zonder woordenschat is nutteloos. Er zijn binnen C# dan ook momenteel 80 woorden, zogenaamde **reserved keywords**  die de woordenschat voorstellen. Het spreekt voor zich dat deze keywords een eenduidige, specifieke betekenis hebben en dan ook enkel voor dat doel gebruikt kunnen worden. 
+In dit boek zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken. 
 
 Deze keywords zijn:
 
@@ -47,8 +47,30 @@ Deze keywords zijn:
 
 
 {% hint style='tip' %}
-De keywords in vet zijn keywords die we in het eerste deel van dit boek zullen bekijken. Die in cursief in het tweede deel. De overige zal je zelf moeten ontdekken (of mogelijk nooit in je carrière gebruiken).
+De keywords in vet zijn keywords die we in het eerste deel van dit boek zullen bekijken. Die in cursief in het tweede deel. De overige zal je zelf moeten ontdekken (of mogelijk zelfs nooit in je carrière gebruiken vanwege hun obscure nut).
 {% endhint %}
+
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/gotopolice.png)
+
+Aandacht, aandacht! Step away from the keyboard! I repeat. Step away from the keyboard.  Hierbij wil ik u attent maken op een belangrijke, onbeschreven, wet voor C# programmeurs: "**NEVER EVER USE ``goto``**"
+
+Het moet hier alvast even uit m'n systeem. ``goto`` is weliswaar een officieel C# keyword, toch zal je het in dit boek **nooit** zien terugkomen in code. Je kan alle problemen in je algoritmes oplossen zonder ooit ``goto`` nodig te hebben. 
+
+Voel je toch de drang: **don't!** Simpelweg, don't. Het is het niet waard. Geloof me.
+
+**NEVER USE GOTO**.
+
+Eneuh, ik hou je in't oog hoor!
+
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
 
 ## Variabelen, identifiers en naamgeving
 
@@ -57,13 +79,13 @@ We doen hetzelfde in ons hoofd wanneer we bijvoorbeeld zeggen "tel 3 en 4 op en 
 
 Wanneer we een variabele aanmaken zal deze moeten voldoen aan enkele afspraken. Zo moeten we minstens 2 zaken meegeven:
 
-* Het type van de variabele: het **datatype**  dat aangeeft wat voor data we wensen op te slaan (tekst, getal, afbeelding, etc.).
-* De naam van de variabele: de **identifier** waarmee we snel aan de variabele-waarde kunnen.
+* De *naam* van de variabele: de **identifier** waarmee we snel aan de variabele-waarde kunnen. 
+* Het *type* van de variabele: het **datatype**  dat aangeeft wat voor data we wensen op te slaan (tekst, getal, afbeelding, etc.). Enkel en alleen dat soort type data zal in deze variabele kunnen bewaard worden. 
 
 
 ### Regels voor identifiers
 
-De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan **variabelen** (en later ook methoden, objecten, etc.) dan moeten we een aantal regels volgen:
+De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**)  geven aan **variabelen** (en later ook methoden, objecten, etc.) dan moeten we een aantal regels volgen, namelijk de volgende:
 
 * **Hoofdlettergevoelig**: de identifiers ``tim`` en ``Tim`` zijn verschillend zoals reeds vermeld.
 * **Geen keywords**: identifiers mogen geen gereserveerde C# keywords zijn. De keywords van hierboven mogen dus niet. Varianten waarbij de hoofdletters anders zijn mogen wel, bijvoorbeeld: ``gOTO`` en ``stRINg`` mogen dus wel, maar niet ``goto`` of ``string`` daar beide een gereserveerd keyword zijn maar dankzij de hoofdlettergevoelig-regel is dit dus toegelaten. Een ander voorbeeld ``INT`` mag bijvoorbeeld wel, maar ``int`` niet.
@@ -75,6 +97,13 @@ De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in on
   * liggend streepje
   * een cijfer (``0`` tot en met ``9``)
 * **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houd het best leesbaar.
+
+
+{% hint style='warning' %}
+Volg je deze regels niet dan zal je code niet gecompileerd worden en zal VS de identifiers in kwestie als een error aanduiden. Of beter, als een hele hoop errors. Schrik dus niet als je bijvoorbeeld het volgende ziet:
+
+![Zoals je ziet raakt VS volledig de kluts kwijt als je je niet houdt aan de identifier regels](../assets/1_csharpbasics/frerror.jpg)
+{% endhint %}
 
 #### Enkele voorbeelden
 

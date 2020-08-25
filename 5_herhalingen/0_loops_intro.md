@@ -38,15 +38,7 @@ Voorts zullen we ook een speciale loop variant zien in het volgende deel wanneer
 <!--- {float:right, width:50%} --->
 ![](../assets/gotopolice.png)
 
-Aandacht, aandacht! Step away from the keyboard! I repeat. Step away from the keyboard.  Hierbij wil ik u attent maken op een belangrijke, onbeschreven, wet voor C# programmeurs: "**NEVER EVER USE ``goto``**"
-
-Het moet hier alvast even uit m'n systeem. ``goto`` is weliswaar een officieel C# keyword, toch zal je het in dit boek **nooit** zien terugkomen in code. Je kan alle problemen in je algoritmes oplossen zonder ooit ``goto`` nodig te hebben. 
-
-Voel je toch de drang: **don't!** Simpelweg, don't. Het is het niet waard. Geloof me.
-
-**NEVER USE GOTO**.
-
-Oh, en voor je denkt ``continue`` dan maar te gebruiken: let alsjeblieft ook op met dat keyword. Het is niet zo erg als ``goto`` én heeft geregeld z'n nut, maar ik zie het te vaak misbruikt worden. Denk dus dubbel na wanneer je denkt ``continue`` nodig te hebben.
+Wie we daar hebben. Ik merk dat u ``goto`` flink links laat liggen. Maar uw blik op die ``continue`` baart me zorgen. Probeer dat keyword ook maar te vergeten. Het is een nuttig iets, maar kan ook verdomd misbruikt worden en ``goto``-achtige bugs genereren. Denk dus dubbel na wanneer je denkt ``continue`` nodig te hebben.
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}
