@@ -81,7 +81,7 @@ Bijvoorbeeld om te testen of getal even is gebruiken we ``%2``:
 ```csharp
 int getal= 1234234;
 int rest= getal%2;
-Console.WriteLine("Indien het getal als rest 0 geeft weten we dat het even is."); 
+Console.WriteLine("Indien het getal als rest 0 geeft is deze even."); 
 Console.WriteLine("De rest is: "+ rest);
 ```
 

@@ -41,13 +41,14 @@ De allereerste keer dat je VS opstart krijg je 2 extra schermen te zien:
 * Het "sign in" scherm mag je overslaan (kies "Not now, maybe later")
 * Vervolgens kan je je kleurenthema kiezen. Dit heeft geen invloed op de manier van werken.  
 
+<!--- {height:30%} --->
 ![Dark is uiteraard het coolste om in te coderen maar verbruikt meer inkt indien je screenshots in een boek zoals dit wilt plaatsen](../assets/0_intro/vstheme.jpg)
 
 #### Project keuze
-Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaan aanmaken zullen deze in de toekomst ook op dt scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 
+Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaan aanmaken zullen deze in de toekomst ook op dit scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 
 
 <!--- {height=30%} --->
-![VS Start scherm](../assets/0_intro/vsstart.png)
+![Keuze van je projecttype](../assets/0_intro/vsstart.png)
 
 
 #### Een nieuw project aanmaken
@@ -67,9 +68,7 @@ Kies dit type en klik 'Next'.
 
 ![Een VS project aanmaken. Zoals je ziet zal dit soort applicatie op alle gekende computer besturingssystemen werken (Windows, Linux, Mac)](../assets/0_intro/vsproject.png)
 
-
-
- Op het volgende scherm kan je een naam ingeven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
+Op het volgende scherm kan je een naam ingeven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
 
 {% hint style='danger' %}
 **De solution name blijf je af (deze moet momenteel dezelfde naam zijn als je project).**
@@ -105,6 +104,7 @@ We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van 
 * Het **properties** venster (eigenschappen) is een belangrijk venster. Hier komen alle eigenschappen van het huidige geselecteerde element. Selecteer bijvoorbeeld maar eens Program.cs in de solution explorer en merk op dat er allerlei eigenschappen getoond worden. Onderaan het Properties venster wordt steeds meer informatie getoond over de huidig geselecteerde eigenschap.
 
 {% hint style='tip' %}
+
 **Layout kapot/kwijt/vreemd**
 
 De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venster en tab verzetten, verankeren en zelfs verplaatsen naar een ander bureaublad. Experimenteer hier gerust mee en besef dat je steeds alles kan herstellen. Het gebeurt namelijk al eens dat je layout een beetje om zeep is:

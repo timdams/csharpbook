@@ -5,7 +5,7 @@
 
 # Code oplossingen
 
-## ASCII Art
+## Unicode Art
 
 ```csharp
             string myname = @"▄▄▄█████▓ ██▓ ███▄ ▄███▓   ▓█████▄  ▄▄▄       ███▄ ▄███▓  ██████ 

@@ -20,6 +20,9 @@ Dit zal de "error list" openen (een schermdeel van VS dat ik aanraad om altijd o
 
 In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correcte lijn te gaan.
 
+Zou je toch willen compileren en je hbet nog fouten dan zal VS je proberen tegen te houden. **Lees nu onmiddellijk wat de voorman hierover te vertellen heeft.**
+
+![OPLETTEN!](../assets/0_intro/errorwarning.PNG)
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -28,9 +31,7 @@ In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correct
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 
-Opletten aub : Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
-
-![OPLETTEN!](../assets/0_intro/errorwarning.PNG)
+Opletten aub : Indien je op de groene start knop duwt en bovenstaande waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
 
 Lees de boodschap eens goed na: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste werkende versie uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
 <!---{/aside}--->

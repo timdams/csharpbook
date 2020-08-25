@@ -45,9 +45,9 @@ Wil je dus bovenstaande teken schrijven dan kan dan ook als volgt:
 Console.WriteLine("\u02e7");
 ```
 
-### Ascii-art tonen
+### Unicode-art tonen
 
-Soms zou je multiline ASCII-art willen tonen in je C# applicatie. Dit kan je eenvoudig oplossen door gebruik te maken van het ``@`` teken voor een string.
+Soms zou je multiline Unicode-art (ook wel Ascii-art genoemd) willen tonen in je C# applicatie. Dit kan je eenvoudig oplossen door gebruik te maken van het ``@`` teken voor een string.
 
 Stel dat je een toffe titel of tekening bijvoorbeeld via [Asciiflow](http://asciiflow.com/) maakt.
 Je kan het resultaat eenvoudig naar je klembord kopiëren en vervolgens in je C#-code integraal copy pasten als literal voor een ``string`` op voorwaarde dat je het laat voorafgaan door ``@"`` en uiteraard eindigt met ``";``.

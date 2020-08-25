@@ -666,9 +666,9 @@ private static void VerwerkInput(
 Als kers op de taart tonen we snel hoe je het kaartje *sexier* kan tonen op het scherm. Hier zijn echter een paar belangrijke opmerkingen aan de orde:
 
 *   De code bevat enkele *hardcoded* waarden zoals het plaatsen van de cursor m.b.v. ``Console.SetCursorPosition``. Beter zou zijn als deze waarden als Magic numbers worden behandeld of on-the-fly worden berekend.
-*   De kaart bevat ascii-art met vaste grootte. Dit zal bugs geven indien onze kaart-array groter is dan de dimensies van de ascii-art: de art zal over de randen van de ascii-art getekend worden. We kunnen dit oplossen door delen van de ascii-art te *berekenen* (bv het aantal *lege lijnen* en de breedte van een pagina.
+*   De kaart bevat Unicode-art met vaste grootte. Dit zal bugs geven indien onze kaart-array groter is dan de dimensies van de Unicode-art: de art zal over de randen van de Unicode-art getekend worden. We kunnen dit oplossen door delen van de Unicode-art te *berekenen* (bv het aantal *lege lijnen* en de breedte van een pagina.
 
-We definiëren de nieuwe Methode en voegen als eerste actie ascii-art toe van een kaart:
+We definiëren de nieuwe Methode en voegen als eerste actie Unicode-art toe van een kaart:
 
 ```csharp
 private static void DrawMapCool(int[,] Kaart, int posX, int posY)
@@ -692,7 +692,7 @@ Daar we gaan spelen met de kleuren is het aan te raden om steeds volgende acties
 2.	Kleur veranderen 
 3.	Karakter of zin op scherm plaatsen
 4.	Kleur terug naar de huidige kleur aanpassen.
-We tonen dit in de volgende code waarin we de background array (die de ascii-art bevat) op het scherm willen tekenen. Daarbij willen we dat de karakters donker-cyaan zijn en dat enkel karakters die geen spatie of liggenstreepje zijn een donkergele achtergrond hebben. De commentaar toont de zonet beschreven stappen:
+We tonen dit in de volgende code waarin we de background array (die de Unicode-art bevat) op het scherm willen tekenen. Daarbij willen we dat de karakters donker-cyaan zijn en dat enkel karakters die geen spatie of liggenstreepje zijn een donkergele achtergrond hebben. De commentaar toont de zonet beschreven stappen:
 
 ```csharp
 ConsoleColor oll = Console.ForegroundColor; //1
@@ -713,7 +713,7 @@ for (int i = 0; i < background.Length; i++)
 Console.ForegroundColor = oll;//4
 
 ```
-Vervolgens gebruiken we SetCursorPosition om onze spelerskaart ‘over’ de Ascii-art te tekenen. Hierbij voegen we nog wat extra kleurtje toe, de speler-X wordt rood gekleurd:
+Vervolgens gebruiken we SetCursorPosition om onze spelerskaart ‘over’ de Unicode-art te tekenen. Hierbij voegen we nog wat extra kleurtje toe, de speler-X wordt rood gekleurd:
 ```csharp
 ConsoleColor bll2 = Console.BackgroundColor;
 Console.BackgroundColor = ConsoleColor.DarkYellow;
@@ -747,7 +747,7 @@ Console.BackgroundColor = bll2;
 ```
 De while-loop in de Main()-methode passen we nu nog aan zodat:
 1.	We de nieuwe DrawCoolMap methode gebruiken
-2.	De titel van de kamer steeds op de rechterpagina van de kaart ascii-art wordt getoond
+2.	De titel van de kamer steeds op de rechterpagina van de kaart Unicode-art wordt getoond
 3.	De beschrijving en andere tekst steeds onder map komt en niet erover
 
 

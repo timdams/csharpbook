@@ -12,7 +12,11 @@ Console.ForegroundColor = ConsoleColor.Green;
 Vanaf dan zal alle tekst die je na deze 2 expressies via ``WriteLine`` naar het scherm stuurt met deze kleuren werken. Merk op dat we **bestaande tekst op het scherm niét van kleur kunnen veranderen zonder deze eerst te verwijderen en dan opnieuw, met andere kleurinstellingen, naar het scherm te sturen.**
 
 {% hint style='tip' %}
-Alle kleuren die beschikbaar zijn staan beschreven in ``ConsoleColor`` deze zijn: ``Black``,``DarkBlue``,``DarkGreen``,``DarkCyan``,``DarkRed``,``DarkMagenta``,``DarkYellow``,``Gray``,``DarkGray``,``Blue``,``Green``,``Cyan``,``Red``,``Magenta``,``Yellow``.
+Alle kleuren die beschikbaar zijn staan beschreven in ``ConsoleColor`` deze zijn: Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red, Magenta, Yellow.
+
+Wens je dus de kleur Red dan zal je deze moeten aanroepen door er ``ConsoleColor.`` voor te zetten: ``ConsoleColor.Red``.
+
+Waarom is dit? ``ConsoleColor is een zogenaamd ``enum``-type, een concept dat we verderop in dit boek zullen bespreken.
 {% endhint %}
 
 Een voorbeeld:

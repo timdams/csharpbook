@@ -23,10 +23,10 @@ for(int i = 0; i < getallen.Length; i++)
 
 //Maak een array gevuld met de letters a tot z
 char[] letters = new char[26];
-int startascii = 97;
+int startunicode = 97;
 for(int i = 0; i < letters.Length; i++)
 {
-    letters[i] = (char)(startascii + i);
+    letters[i] = (char)(startunicode + i);
     Console.Write(letters[i] + ",");
 }
 

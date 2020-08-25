@@ -18,17 +18,17 @@ Sommige oefeningen zullen soms **(PRO)** in de titel hebben. Dit zijn pittigere 
 
 
 
-#### ASCII Art
+#### Unicode Art
 
-Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze aan de start van een van je bestaande programma's zodat nu je naam wordt getoond wanneer het programma start, gevolgd door de rest.
+Genereer je naam in Unicode Art met een van de vele online generators. Plaats deze aan de start van een van je bestaande programma's zodat nu je naam wordt getoond wanneer het programma start, gevolgd door de rest.
 
 #### String interpolation
 
 Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest geven. Pas string interpolatie m.b.v. ``$`` (manier 2) toe in deze 2 oefeningen.
 
-#### ASCII Art & Colors
+#### Unicode Art & Colors
 
-Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine`, alsook de werking van kleuren in console-applicaties, om je ASCII-art naam van de eerdere oefening nu van kleur te voorzien. Zorg ervoor dat minstens 1 letter in een andere kleur is.
+Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine`, alsook de werking van kleuren in console-applicaties, om je Unicode-art naam van de eerdere oefening nu van kleur te voorzien. Zorg ervoor dat minstens 1 letter in een andere kleur is.
 
 #### Systeem informatie
 

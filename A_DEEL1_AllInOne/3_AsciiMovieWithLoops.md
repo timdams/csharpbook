@@ -86,7 +86,7 @@ Mogelijke uitbreidingen kunnen zijn:
 * Kleuren aanpassen om zo mooiere zaken te tonen (zie voorbeeldframe 3)
 * Timing aanpassen wanneer volgende frame moet getoond worden (zie voorbeeldframe 4)
     * Bijgevolg kan je ook animaties doen, verlaag gewoon de tijd tussen frame en zet zaken op andere plekken (zie voorbeeldframes 5 t.e.m. 8)
-* Ipv tekst zou je heeldere ASCII-art afbeeldingen kunnen tonen (én animeren)
+* Ipv tekst zou je heeldere Unicode-art afbeeldingen kunnen tonen (én animeren)
 
 ## Geavanceerde uitbreidingen
 ### Niet-sequentiële flow
