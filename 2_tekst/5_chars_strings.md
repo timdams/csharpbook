@@ -19,7 +19,6 @@ Je kan eender welk [UNICODE-teken](https://en.wikipedia.org/wiki/Unicode) in een
 
 Merk dus op dat volgende lijn: ``char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal.
 
-
 {% hint style='tip' %}
 Ieder teken dat je op je toetsenbord kunt intypen is dus een ``char``. Je toetsenbord bevat echter maar een kleine selectie van alle mogelijkheden (vergelijk jouw toetsenbord bijvoorbeeld maar eens met dat van iemand in Rusland).
 
@@ -33,14 +32,20 @@ De eerste 1F karaters zijn "onzichtbare" karakters die een historische reden heb
 {% endhint %}
 
 ### String
-Een string is een reeks (eigenlijk [array](../7_arrays/1_ArraysBasics.md)) van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
+Een ``string`` is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
 
 ![IntelliSense is de krachtige technologie in VS die je behulpzame informatie geeft tijdens het programmeren](../assets/1_csharpbasics/stringenchars.png)
 
-#### Strings declareren
-Merk op dat we bij een string literal gebruik maken van aanhalingstekens (`"`) terwijl bij chars we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te onderscheiden.
+We gebruiken het ``string`` datatype om tekst mee voor te stellen. Je begrijpt waarschijnlijk zelf wel waarom het ``string`` datatype een belangrijk en veelgebruikt type is in eender welke programmeertaal: er zijn maar weinig applicaties die niet minstens enkele lijnen tekst vertonen (ja, zelfs Flappy Bird had tekst, of hoe denk je dat je score werd voorgesteld op het scherm?).
 
-Volgende code geeft dus drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer gaat het om het een ``char`` (enkelvoudig teken), dan een een ``string`` (reeks van tekens) en dan een ``int`` (effectief getal):
+{% hint style='tip' %}
+In deel 2 van deze boekenreeks zullen we ontdekken dat strings eigenlijk zogenaamde arrays zijn. Wat dit juist inhoudt laten we nog even lekker mystereus achterwege (ik probeer alles om je dat volgende deel te doen lezen nietwaar).
+{% endhint %}
+
+#### Strings declareren
+Merk op dat we bij een ``string`` literal gebruik maken van aanhalingstekens (`"`) terwijl bij een ``char`` literal we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te onderscheiden (naast het feit dat een string uit meer dan 1 element kan bestaan uiteraard)
+
+Volgende uiterst boeiende code geeft drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer gaat het om het een ``char`` (enkelvoudig teken), dan een een ``string`` (reeks van tekens) en dan een ``int`` (effectief getal):
 
 ```csharp
 char eenKarakter = '1'; 
@@ -51,7 +56,7 @@ Console.WriteLine(eenKarakter);
 Console.WriteLine(eenString);
 Console.WriteLine(eenGetal);
 ```
-De output van dit programma zal dan zijn:
+De output van dit briljant onnuttige programma zal dan zijn:
 
 <!---{line-numbers:false}--->
 ```text
@@ -60,14 +65,10 @@ De output van dit programma zal dan zijn:
 1
 ```
 
-Fout gebruik van strings en chars zal code geven die niet zal gecompileerd worden:
+Fout gebruik van literals zal code geven die uiteraard niet zal gecompileerd worden:
 
 ```csharp
 char eenKarakter = "1"; //fout
 string eenString = '1'; //fout
 int eenGetal = '1'; //fout
 ```
-
-1. In de eerste toekenning proberen we dus een literal van het type **string** toe te kennen een variabele van het type **char**.
-2. In de tweede toekenning proberen we een literal van het type **char** toe te kennen een variabele van het type **string**.
-3. In de laatste toekenning proberen we een literal van het type **char** toe te kennen aan een variabele van het type **int**.
