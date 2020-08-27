@@ -1,14 +1,14 @@
 ## Environment bibliotheek
 
-De ``Console`` bibliotheek is maar 1 van de vele bibliotheken die je in je C# programma's kunt gebruiken. Een andere erg nuttige is de ``Environment``-bibliotheek. Deze geeft je applicatie allerlei nuttige informatie over de computer waarop het programma op dat moment draait. Denk maar aan het werkgeheugen, gebruikersnaam van de huidige gebruiker, het aantal processoren etc.
+De ``Console`` bibliotheek is maar 1 van de vele bibliotheken die je in je C# programma's kunt gebruiken. 
 
+Een andere erg nuttige is de ``Environment``-bibliotheek. Deze geeft je applicatie allerlei informatie over de computer waarop het programma op dat moment draait. Denk maar aan het werkgeheugen, gebruikersnaam van de huidige gebruiker, het aantal processoren etc.
 
 {% hint style='tip' %}
 De laatste zin in vorige alinea is belangrijk: als je jouw programma dus op een andere computer laat uitvoeren zal je mogelijk andere informatie verkrijgen. 
 
 Wil je een programma dus testen dat deze bibliotheek gebruikt is het aangeraden om het op meerdere systemen met verschillende eigenschappen te testen.
 {% endhint %}
-
 
 Hier enkele voorbeelden hoe je deze bibliotheek kunt gebruiken (kijk zelf of er nog nuttige properties over je computer in staan):
 
@@ -20,8 +20,18 @@ string username = Environment.UserName;
 long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 ```
 
+Vervolgens zou je dan de inhoud van die variabelen kunnen gebruiken om bijvoorbeeld aan de gebruiker te tonen wat z'n machine naam is:
+
+```csharp
+Console.WriteLine($"Je computernaam is {pcName}");
+Console.WriteLine($"en dit programma gebruikt {memory} Mb geheugen");
+Console.WriteLine($"En je usernaam is {Environment.UserName}");
+```
+
+In de laatste lijn code tonen we dat je uiteraard ook rechtstreeks de variabelen uit``Environment`` in je string interpolatie kunt gebruiken en dus niet met een tussenvariabele moet werken.
+
 {% hint style='tip' %}
-**WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (Wat een vreemde lange zin.)
+**WorkingSet** geeft terug hoeveel geheugen het programma van Windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (Wat een vreemde lange zin.). Test maar eens wat er gebeurt als je programma maakt dat uit meer lijnen code bestaat.
 {% endhint %}
 
 Je kan [hier](https://docs.microsoft.com/en-us/dotnet/api/system.environment?view=netframework-4.8) opzoeken welke nuttige zaken je nog met de bibliotheek kunt doen.

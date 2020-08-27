@@ -1,13 +1,15 @@
 ## Vreemde tekens in console tonen
 
-Niets is zo leuk als de vreemdste tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om *complexe* tekeningen op het scherm te tonen. Om je ietwat saaie applicaties dus wat toffer te maken leggen we daarom uit hoe je dit kan doen.
+Niets is zo leuk als de vreemdste Unicode tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om complexe tekeningen op het scherm te tonen. Om je ietwat saaie applicaties dus wat toffer te maken leggen we daarom uit hoe je dit kan doen.
 
 <!---{width:50%} --->
-![Dwarf fortress: een van de bekendste (én meest complexe) console-games waar nog steeds aan ontwikkeld wordt gebruikt ongelooflijk veel bizarre karakters om zo een erg 'cool' ogende user interface te maken](../assets/0_intro/kerosenethunder_mockup.png)
+![Dwarf fortress: een van de bekendste (én meest complexe) console-games ooit waar nog steeds aan ontwikkeld wordt gebruikt ongelooflijk veel bizarre karakters om zo een erg 'cool' ogende user interface te maken](../assets/0_intro/kerosenethunder_mockup.png)
 
 ### Unicode karakters tonen
 
-Je toetsenbord heeft maar een beperkt aantal toetsen. Er zijn echter tal van andere tekens gedefinieerd die console-applicaties ook kunnen gebruiken. Al deze tekens, UNICODE-karakters, hebben een eigen unieke code die je kan opzoeken om vervolgens dat tekens in je code te gebruiken. Dit gaat als volgt in z'n werk:
+Je toetsenbord heeft maar een beperkt aantal toetsen. Er zijn echter tal van andere tekens gedefinieerd die console-applicaties ook kunnen gebruiken. We zagen reeds dat al deze tekens, Unicode-karakters, hebben een eigen unieke code die je kan opzoeken om vervolgens dat tekens in je code te gebruiken daar het ``char`` type hiermee werkt.
+
+Dit gaat als volgt in z'n werk:
 
 1. Zoek het teken\(s\) dat je nodig hebt in een UNICODE-tabel \([deze is handig](https://unicode-table.com/en/)\)
 2. Plaats bovenaan je Main: `Console.OutputEncoding = System.Text.Encoding.UTF8;`
@@ -18,8 +20,10 @@ Je toetsenbord heeft maar een beperkt aantal toetsen. Er zijn echter tal van and
 Kopieer het karakter zelf en plaats het in je code waar je het nodig hebt, bijvoorbeeld:
 
 ```csharp
-Console.WriteLine("˧");
+Console.WriteLine("˧"); //eigenlijk staat hier die omgekeerde t
 ```
+
+Helaas zal dit teken als een vierkantje in de meeste boeken getoond worden omdat het lettertype dit teken niet kent. Je zal hetzelfde fenomeen trouwens in je console hebben bij tekens die het Console-lettertype (meestal Courrier) niet kent.
 
 #### Manier 2: hexadecimale code casten naar char
 
@@ -50,6 +54,7 @@ Console.WriteLine("\u02e7");
 Soms zou je multiline Unicode-art (ook wel Ascii-art genoemd) willen tonen in je C# applicatie. Dit kan je eenvoudig oplossen door gebruik te maken van het ``@`` teken voor een string.
 
 Stel dat je een toffe titel of tekening bijvoorbeeld via [Asciiflow](http://asciiflow.com/) maakt.
+
 Je kan het resultaat eenvoudig naar je klembord kopiëren en vervolgens in je C#-code integraal copy pasten als literal voor een ``string`` op voorwaarde dat je het laat voorafgaan door ``@"`` en uiteraard eindigt met ``";``.
 
 Bijvoorbeeld:
@@ -65,17 +70,6 @@ ___________________
 
 Console.WriteLine(myname);
 ```
-
-{% hint style='tip' %}
-Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerkadres wilt schrijven en niet iedere ``\`` wilt escapen:
-
-```csharp
-string zonderAt = "C\\Temp\\Myfile.txt";
-string metaAt = @"C\Temp\Myfile.txt";
-```
-
-Merk op dat aanhalingstekens nog steeds ge-escape'd moeten worden. Heb je dus een stuk tekst met een aanhalingsteken in dan zal je zonder het apenstaartje moeten werken.
-{% endhint %}
 
 {% hint style='tip' %}
 Zowel de $-notatie (voor string interpolatie) als het  @-teken kan je gecombineerd gebruiken bij een string:

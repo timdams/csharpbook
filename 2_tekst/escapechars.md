@@ -124,6 +124,22 @@ Console.WriteLine("\t1\t2\t3\t4\t5");
 
 ``\a`` mag je enkel gebruiken als je een koptelefoon op hebt daar dit het escape character is om de computer een biep te laten doen (mogelijk doet dit niets bij jou, dit hangt van de je computerinstellingen af).
 
+Volgende codevoorbeeld zal, als alles goed gaat, een zin op het scherm tonen en dan ogenblikkelijk erna een biepje:
+
+```csharp
+Console.WriteLine("Een zin en dan nu de biep\a");
+```
+
+### Het apenstaartje om escape characters te negeren
+
+Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerkadres wilt schrijven en niet iedere ``\`` wilt escapen:
+
+```csharp
+string zonderAt = "C\\Temp\\Myfile.txt";
+string metaAt = @"C\Temp\Myfile.txt";
+```
+
+Merk op dat aanhalingstekens nog steeds ge-escape'd moeten worden. Heb je dus een stuk tekst met een aanhalingsteken in dan zal je zonder het apenstaartje moeten werken.
 
 ## Optellen van char variabelen
 
@@ -154,12 +170,6 @@ dan zal de compiler deze twee waarden letterlijk optellen en het nieuw verkregen
 
 
 {% hint style='tip' %}
-Je zou misschien verwachten dat C# vervolgens het element op plaats 131 in de unicode tabel zou tonen. Dat is niet zo: omdat de ``+`` operator niet is gedefinieerd voor het ``char`` datatype maar wel voor het ``int`` datatype, besluit de compiler om de twee operanden (``letter1`` en ``letter2``) als ``int`` operanden te hanteren. Aangezien ``int+int`` een ``int`` als resultaat geeft, krijgen we dus ``131`` op het scherm en niet het Unicode element 131 ``ƒ``.
-
-Protip: wou je wel dit teken krijgen dan moet je het resultaat van de optelling terug omzetten naar een ``char``. Dit zogenaamde **casting** komen we in het volgende hoofdstuk op terug:
-
-```csharp
-Console.WriteLine((char)(letter1+letter2));
-```
+Je zou misschien verwachten dat C# vervolgens het element op plaats 131 in de unicode tabel zou tonen. Dat is niet zo: omdat de ``+`` operator niet is gedefinieerd voor het ``char`` datatype maar wel voor het ``int`` datatype, besluit de compiler om de twee operanden (``letter1`` en ``letter2``) als ``int`` operanden te hanteren. Aangezien ``int+int`` een ``int`` als resultaat geeft, krijgen we dus ``131`` op het scherm en niet het Unicode element 131 ``ƒ`` (we zien verderop hoe je dit wel kunt doen).
 {% endhint %}
 
