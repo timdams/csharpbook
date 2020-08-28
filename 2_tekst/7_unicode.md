@@ -15,6 +15,10 @@ Dit gaat als volgt in z'n werk:
 2. Plaats bovenaan je Main: `Console.OutputEncoding = System.Text.Encoding.UTF8;`
 3. Je kan nu op 2 manieren dit teken in console plaatsen
 
+Stel je voor dat we volgende "omgekeerde t" wensen te gebruiken in onze applicatie:
+<!---{height:30%} --->
+![Een handig teken als je een huis wilt tekenen in de console](../assets/0_intro/letter.jpg)
+
 #### Manier 1: copy/paste
 
 Kopieer het karakter zelf en plaats het in je code waar je het nodig hebt, bijvoorbeeld:
@@ -27,21 +31,14 @@ Helaas zal dit teken als een vierkantje in de meeste boeken getoond worden omdat
 
 #### Manier 2: hexadecimale code casten naar char
 
-Noteer de hexadecimale code van het karakter dat in de tabel staat.
-
-<!---{height:30%} --->
-![Een handig teken als je een huis wilt tekenen in de console](../assets/0_intro/letter.jpg)
-
-In dit geval is de code 0x02e7.
-
-Om dit teken te tonen schrijf je dan:
+Noteer de hexadecimale code van het karakter dat in de tabel staat. In dit geval is de code 0x02e7. Om dit teken te tonen schrijf je dan:
 
 ```csharp
 char blokje = (char)0x02e7;
 Console.WriteLine(blokje);
 ```
 
-In C\# schrijf je hexadecimale getallen als volgt als je ze rechtsreeks in een string wilt plaatsen: \u02e7
+In C# schrijf je hexadecimale getallen als volgt als je ze rechtsreeks in een string wilt plaatsen: \u02e7
 
 Wil je dus bovenstaande teken schrijven dan kan dan ook als volgt:
 

@@ -39,7 +39,7 @@ Console.WriteLine($"Nog een getal: {mygen.Next()}");
 ```
 
 {% hint style='tip' %}
-De ``new Random()`` code is iets wat in het tweede deel van deze boekenreeds volledig uit de doeken zal gedaan worden. Lig er dus niet van wakker.
+De ``new Random()`` code is iets wat in het tweede deel van deze boekenreeks volledig uit de doeken zal gedaan worden. Lig er dus niet van wakker.
 {% endhint %}
 
 #### Next mogelijkheden

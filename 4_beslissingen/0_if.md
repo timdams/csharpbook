@@ -1,16 +1,18 @@
 ## If
 
-De ``if`` uitdrukking is één van de meest elementaire uitdrukking in een programmeertaal en laat ons toe 'vertakingen' in onze programmaflow in te bouwen.
+De ``if`` (*als*) uitdrukking is één van de meest elementaire uitdrukking in een programmeertaal en laat ons toe 'vertakingen' in onze programmaflow in te bouwen. Ze laat om "als dit waar is doe dan dat"-beslissingen te maken.
 
 De syntax is als volgt:
 
 ```csharp
 if (booleaanse expressie) 
 {
-     //indien de booleaanse expressie waar is
+    //deze code wordt uitgevoerd indien
+    //de booleaanse expressie true is
 }
 
 ```
+
 Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heeft, zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie niet waar is (``false``) dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
 
 ![](../assets/2_beslissingen/ifflow.png)
@@ -34,13 +36,10 @@ A
 B
 ```
 
-Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B")`` zal sowieso uitgevoerd worden zoals je ook kan zien aan de flowchart.
+Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B");`` zal sowieso uitgevoerd worden zoals je ook kan zien aan de flowchart.
 
 
-{% hint style='warning' %}
 ### if met een block
-
-![Accolades zijn duidelijk belangrijk](../assets/2_beslissingen/iffflowblock.png)
 
 Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.**
 
@@ -53,9 +52,9 @@ if ( number < 5 )
 }
 ```
 
+![Accolades zijn duidelijk belangrijk](../assets/2_beslissingen/iffflowblock.png)
 
 
-De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk code zijn dat altijd een ``bool`` als resultaat teruggeeft. 
 {% endhint %}
 
 
@@ -68,10 +67,15 @@ De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk cod
 ![](../assets/attention.png)
 **Veelgemaakte fouten**
 Voorman hier! Je hebt me gemist. Ik merk het. Het ging goed de laatste tijd. Maar nu wordt het tijd dat ik je weer even wakker schudt want de code die je nu gaat bouwen kan érg vreemde gedragingen krijgen als je niet goed oplet. Luister daarom even naar deze lijst van veel gemaakte fouten wanneer je met ``if`` begint te werken: 
-Er zijn enkele veelgemaakte fouten waar je op moet letten:
+
 
 **Appelen en peren vergelijken**
-De types in je booleaanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: ``if( "4" > 3)`` daar we hier een ``string`` met een ``int`` vergelijken.
+De types in je booleaanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: 
+
+```csharp
+if( "4" > 3)
+```
+daar we hier een ``string`` met een ``int`` vergelijken.
 
 **Accolades vergeten**
 Accolades vergeten plaatsen om een codeblock aan te duiden, maar je code toch zodanig uitlijnen (met tabs of spaties) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true``. Gebruiken we de ``if`` met block van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de ``if``:
@@ -99,27 +103,35 @@ if ( number < 5 );
 {% endhint %}
 <!---NOBOOKEND--->
 
-### Gebruik relationele en logische operatoren
+### Gebruik relationele en logische operators
 
-We kunnen ook meerdere booleanse expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operatoren (``&&``, ``||``, ``!``) .
+We kunnen ook meerdere booleanse expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operators (``&&``, ``||``, ``!``) .
 
 Een voorbeeld:
+
 ```csharp
-int a = 5, b = 5, c = 10;
+Console.WriteLine("Voer a in");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Voer b in");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Voer c in");
+int c = Convert.ToInt32(Console.ReadLine());
  
 if (a == b)
 {
-        Console.WriteLine(a);
+    Console.WriteLine("A en B zijn even groot");
 }
  
 if ((a > c) || (a == b))
 {  
-    Console.WriteLine(b);
+    Console.WriteLine("A is groter dan C, of gelijk aan B");
 }
  
 if ((a >= c) && (b <= c))
 {
-    Console.WriteLine(c);
+    Console.WriteLine("A is groter dan of gelijk aan C");
+    Console.WriteLine("EN");
+    Console.WriteLine("B is kleiner of gelijk aan C")
 }
 ```
 
@@ -132,7 +144,8 @@ Uitvoer van dit programma zal zijn:
 ```
 
 ### If/else
-Met ``if``/``else`` kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is **maar ook welke specifieke code indien de conditie niet waar is**. Volgend voorbeeld geeft een typisch gebruik van een ``if``/``else`` structuur om 2 waarden met elkaar te vergelijken:
+
+Met ``if``/``else`` kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is **maar ook welke specifieke code moet uitgevoerd indien de conditie niet waar is**. Volgend voorbeeld geeft een typisch gebruik van een ``if``/``else`` structuur om 2 waarden met elkaar te vergelijken:
 
 ```csharp
 int nummer = 10;
@@ -151,9 +164,27 @@ else
 <!--- {width:60%} --->
 ![Flowchart van bovenstaande code](../assets/2_beslissingen/ifelseflow.png)
 
+{% hint style='warning' %}
+Een veel gemaakte fout is bij de ``else`` sectie ook een booleanse expressie plaatsen. Dit kan niet: de ``else`` sectie zal gewoon uitgevoerd worden indien de ``if`` sectie NIET uitgevoerd werd. 
+
+Volgende code MAG DUS NIET:
+```csharp
+if(a > b)
+{
+    //...
+}
+else (a <= b)   //<=FOUT!
+{
+    //...
+}
+```
+
+{% endhint %}
+
 ### If/else if
+
 Met een ``if``/``else if`` constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. 
-Sowieso begint men steeds met een ``if``. Als men vervolgens een ``else if`` plaats dan zal de code van deze ``else if`` uitgevoerd worden enkel en alleen als de eerste expressie (van de ``if``) niet waar was en de expressie van deze ``else if`` wel waar is.
+Sowieso begint men steeds met een ``if``. Als men vervolgens een ``else if`` plaats dan zal de expressie van deze ``else if`` getest worden enkel en alleen als de eerste expressie (van de ``if``) niet waar was. Als de expressie van deze ``else if`` wel waar is zal de bijhorende code uitgevoerd worden, zo niet wordt deze overgeslagen.
 
 Een voorbeeld:
 
@@ -215,3 +246,18 @@ else
     }
 }
 ```
+
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/care.png)
+
+Laat deze tiental bladzijden uitleg je niet de indruk geven dat code schrijven met ``if``-structuren een eenvoudige job is. Vergelijk het met van je pa leren hoe je met pijl en boog moet jagen, wat vlekkeloos gaat op een stilstaande schijf, tot je in het bos voor een mammoet staat die op je komt afgestormd. *Da's andere kak he?*
+
+Het is dan ook aangeraden om, zeker in het begin, om steeds een flowchart te tekenen van wat je juist wil bereiken. Dit zal je helpen om je code op een juiste manier op te bouwen (denk maar aan nesting en het plaatsen van meerdere ``if\else`` structuren in of na elkaar). *Bezint eer ge begint.*
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->

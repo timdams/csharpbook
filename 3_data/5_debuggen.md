@@ -61,7 +61,9 @@ We lichten hier de knoppen toe die je zeker zal nodig hebben:
 <!---NOBOOKEND--->
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
-![](../assets/attention.png)
+![](../assets/care.png)
+
+Pfft. Debuggen. Waarom moet ik me daar nu mee bezig houden? 
 
 Even je oren open zetten aub, ik ga iets roepen:**"Debugging is een ESSENTIËLE SKILL!!!"**. Ik laat mijn metselaars ook geen huizen bouwen zonder dat ze ooit een truweel hebben vastgepakt. Een programmeur die niet kan debuggen...is als een vis die niet kan zwemmen!. 
  

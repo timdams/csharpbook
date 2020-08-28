@@ -9,7 +9,7 @@ while (booleaanse expressie)
 }
 ```
 
-Waarbij, net als bij een ``if`` statement, de **conditie** uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operatoren.
+Waarbij, net als bij een ``if`` statement, de **conditie** uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators.
 
 **Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden.** Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de ``while``-loop nooit worden uitgevoerd.
 
@@ -38,7 +38,7 @@ Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 
 
 ### Complexe condities
 
-Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operatoren.
+Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operators.
 
 Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang ``teller`` groter is dan 5 én de variabele ``naam`` van het type ``string`` niet gelijk is aan "tim":
 

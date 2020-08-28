@@ -2,7 +2,7 @@
 
 De ``Console`` bibliotheek is maar 1 van de vele bibliotheken die je in je C# programma's kunt gebruiken. 
 
-Een andere erg nuttige is de ``Environment``-bibliotheek. Deze geeft je applicatie allerlei informatie over de computer waarop het programma op dat moment draait. Denk maar aan het werkgeheugen, gebruikersnaam van de huidige gebruiker, het aantal processoren etc.
+Een andere nuttige bibliotheek is de ``Environment``-bibliotheek. Deze geeft je applicatie allerlei informatie over de computer waarop het programma op dat moment draait. Denk maar aan het werkgeheugen, gebruikersnaam van de huidige gebruiker, het aantal processoren etc.
 
 {% hint style='tip' %}
 De laatste zin in vorige alinea is belangrijk: als je jouw programma dus op een andere computer laat uitvoeren zal je mogelijk andere informatie verkrijgen. 
@@ -34,7 +34,7 @@ In de laatste lijn code tonen we dat je uiteraard ook rechtstreeks de variabelen
 **WorkingSet** geeft terug hoeveel geheugen het programma van Windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (Wat een vreemde lange zin.). Test maar eens wat er gebeurt als je programma maakt dat uit meer lijnen code bestaat.
 {% endhint %}
 
-Je kan [hier](https://docs.microsoft.com/en-us/dotnet/api/system.environment?view=netframework-4.8) opzoeken welke nuttige zaken je nog met de bibliotheek kunt doen.
+Je kan [hier](https://docs.microsoft.com/en-us/dotnet/api/system.environment) opzoeken welke nuttige zaken je nog met de bibliotheek kunt doen.
 
 ## Programma afsluiten
 
