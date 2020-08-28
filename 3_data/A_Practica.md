@@ -14,7 +14,8 @@ Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getall
 
 #### Vierkant
 Schrijf een programma om de omtrek en de oppervlakte van een vierkant te bepalen. De zijde wordt ingelezen. Zorg ervoor dat de uitvoer er als volgt uitziet:
-	
+
+<!---{line-numbers:false}--->
 ```text
 zijde: … 
 omtrek: … 
@@ -24,6 +25,8 @@ oppervlakte: …
 #### Balk
 
 Bereken de oppervlakte en de inhoud van een balk . De gegevens (hoogte, breedte, lengte) worden ingelezen. Zorg ervoor dat de uitvoer er als volgt uitziet:
+
+<!---{line-numbers:false}--->
 ```text
 lengte: … 
 breedte: … 
@@ -52,6 +55,8 @@ Een vaste klant in je café besteld altijd "op-de-poef". Dat wil zeggen dat hij 
 Schrijf een programma dat 5 keer na elkaar aan de barman vraagt om een bedrag in te voeren. Het ingevoerde bedrag wordt opgeteld bij wat er reeds op de rekening staat. Na 5 keer wordt de totale som getoond alsook hoeveel weken het duurt indien de klant wekelijks 10 euro afbetaald.
 
 Voorbeeldwerking:
+
+<!---{line-numbers:false}--->
 ```text
 Voer bedrag in?
 12

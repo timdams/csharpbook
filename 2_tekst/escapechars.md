@@ -47,8 +47,8 @@ Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de bel
 * `\'` : de apostrof zoals zonet besproken
 * `\"` : een aanhalingsteken zodat je dat ook in je string kunt gebruiken zonder deze af te sluiten
 * `\\` : een backslash in je tekst tonen. Want een enkele backslash is natuurlijk de start van een escape character.
-* `\n` – New line (zogenaamde 'enter')
-* `\t` – Horizontal tab 
+* `\n` : New line (zogenaamde 'enter')
+* `\t` : Horizontal tab 
 * `\uxxxx` – Unicode escape sequence for character with hex value xxxx
 
 
@@ -75,6 +75,7 @@ Console.WriteLine("Console.WriteLine(\"Cool he\");");
 
 Beide voorbeelden zullen dus volgende tekst op het scherm geven:
 
+<!---{line-numbers:false}--->
 ```text
 Console.WriteLine("Cool he");
 ```
@@ -106,6 +107,7 @@ Het is belangrijk dat je vlot kan werken met escape characters in string, daar w
 **Tab stop**
 Als je het niet gewoon bent de tab-toets op je toetsenbord te gebruiken dan is de eerste werking van ``\t`` mogelijk verwarrend. Nochtans is ``\t`` in een string gebruiken exact hetzelfde als op de tab-toets te duwen. In je console-scherm zijn de tab stops vooraf bepaald. Wanneer je dus een tab invoegt zal de cursor zich verplaatsen naar de eerstvolgende tab stop. In volgende tekstuitvoer zie je de tabstops op de 2 lijn "gevisualiseerd":
 
+<!---{line-numbers:false}--->
 ```text
 01234567890123456789012345678901234567890123456789
         1       2       3       4       5

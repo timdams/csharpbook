@@ -12,6 +12,7 @@ De klasse heeft een abstracte methode ``PrintGebouw``. Deze methode geeft niets 
 
 De klasse override ``ToString`` en zal de volgende tekst teruggeven (veronderstel dat het gebouw als Naam ``Hospitaal`` heeft op locatie (3,4 )):
 
+<!---{line-numbers:false}--->
 ```text
 Hospitaal (locatie: 3, 4)
 ```

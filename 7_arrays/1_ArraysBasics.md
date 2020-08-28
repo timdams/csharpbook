@@ -148,7 +148,7 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal , 2
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 **Veelgemaakte fouten: Lengte en indexering van arrays**
-Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmaken van een array aan de hand van de lengte en het indexeren. Maar niet getreurd, Voorman Tim zal je hier extra tips geven.
+Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmaken van een array aan de hand van de lengte en het indexeren. Maar niet getreurd, ik zal je hier extra tips geven.
 
 De regels zijn duidelijk:
 * Bij het maken van een array is de lengte van een array gelijk aan het aantal elementen dat er in aanwezig is. *Dus een array met 5 elementen heeft als lengte 5.*

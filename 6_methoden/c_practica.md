@@ -9,6 +9,7 @@ Indien de duur van de film niet wordt meegeven wordt een standaard  lengte van 9
 
 De methode geeft niets terug maar toont eenvoudigweg de film op het scherm, gevolgd door z’n duur en genre in volgende formaat.
 
+<!---{line-numbers:false}--->
 ```text
 The Matrix (120minuten, Actie)
 ```

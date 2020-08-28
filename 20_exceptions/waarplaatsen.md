@@ -42,6 +42,7 @@ catch (Exception ex)
 
 Zal resulteren in:
 
+<!---{line-numbers:false}--->
 ```text
 http://www.ap.be gedownload!
 Ongeldige URI: kan de Authority/Host niet parsen.
@@ -70,6 +71,7 @@ foreach (string url in urlstodownload)
 
 Dit zal resulteren in:
 
+<!---{line-numbers:false}--->
 ```text
 http://www.ap.be gedownload!
 Ongeldige URI: kan de Authority/Host niet parsen.

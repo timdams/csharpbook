@@ -134,6 +134,7 @@ class President: Minister
 
 De output van onderstaande code zal zijn:
 
+<!---{line-numbers:false}--->
 ```text
 Je hebt nog geen agp kaart
 Je hebt nog 2 vrij ramsloten

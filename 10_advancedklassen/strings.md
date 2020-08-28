@@ -84,6 +84,7 @@ Dankzij ``ReadAllLines`` en ``Split`` hebben we nu alle bouwstenen om eenvoudig 
 
 Stel je voor dat een bestand ``soccer.csv`` volgende tekst bevat:
 
+<!---{line-numbers:false}--->
 ```text
 Dams;Tim;1981
 Hamdaoui;Mounir;1984

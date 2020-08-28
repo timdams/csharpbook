@@ -50,6 +50,7 @@ m2.ToonLeeftijd();
 
 Dan zien we volgende uitvoer:
 
+<!---{line-numbers:false}--->
 ```text
 3
 2

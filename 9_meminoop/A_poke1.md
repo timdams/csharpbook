@@ -106,6 +106,7 @@ Test eens hoe de stats na bv 100 levels evolueren. Je zal zien dat bepaalde stat
 
 Het is een heel gedoe om telkens manueel de informatie van een Pokémon op het scherm te outputen. Voeg een methode ``public void ShowInfo()`` toe aan je Pokemon klasse. Deze methode zal alle relevante informatie (alle properties!) in een mooie vorm op het scherm tonen, bv:
 
+<!---{line-numbers:false}--->
 ```text
 Pikachu (level 5)
 Base stats:

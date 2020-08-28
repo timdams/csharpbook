@@ -18,6 +18,7 @@ Google (www.google.com)
 
 Bij ``HiddenBookmark`` wordt er achteraan nog "---HIDDEN---" gezet:
 
+<!---{line-numbers:false}--->
 ```text
 Google (www.google.com)  ---HIDDEN---
 ```

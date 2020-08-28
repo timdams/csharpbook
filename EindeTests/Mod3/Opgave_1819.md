@@ -51,6 +51,7 @@ Een ``DagboekEntry`` stelt 1 dag voor die de gebruiker in z’n dagboek heeft ge
 * ``ShowInfo``: deze methode vereist geen parameters en geeft niets terug.
   * Output het object naar het scherm als volgt (tekst tussen vierkante haakjes wordt vervangen door de effectieve waarden:
 
+<!---{line-numbers:false}--->
 ```text
 ********
 ENTRY:
@@ -94,6 +95,7 @@ Deze klasse bevat enkel static methoden, namelijk:
 
 Er verschijnt een welkomstzin: Rise and shine. Gevolgd door de huidige tijd in uren en minuten:
 
+<!---{line-numbers:false}--->
 ```text
 Rise and shine
 Het is nu 15:25
@@ -110,6 +112,7 @@ Vraag aan de gebruiker hoeveel dagen de gebruiker wilt loggen. De gebruiker voer
 
 Je toont nu telkens aan de gebruiker om de hoeveelste dag het gaat (starten van 1 ) en welke dag dat ook effectief is. Als het programma wordt uitgevoerd op zondag, dan zal er dus verschijnen:
 
+<!---{line-numbers:false}--->
 ```text
 Dag 1: Maandag
 [info uit stap 2b]
@@ -127,6 +130,7 @@ Deze informatie wordt steeds in een DagboekEntry geplaatst en aan de array toege
 
 **Deel uitvoer/invoer van de methode**
 
+<!---{line-numbers:false}--->
 ```text
 Rise and shine
 Het is nu 15:25

@@ -52,6 +52,7 @@ Een ``CreatureKaart`` object kan enkel via een **overloaded constructor** aangem
 
 * **``Toonkaart``**: deze methode aanvaardt geen parameters en geeft niets terug. Aanroepen ervan zal een samenvatting van de kaart op het scherm tonen. 
 
+<!---{line-numbers:false}--->
 ```text
 *******************************************************
 Mahamoti Djinn (4 kleurloos, 2 Water mana)
@@ -94,6 +95,7 @@ Een ``LandKaart`` object kan enkel via een **overloaded constructor** aangemaakt
 
 * Toonkaart: deze methode aanvaardt geen parameters en geeft niets terug. Aanroepen ervan zal een samenvatting van de kaart op het scherm tonen. 
 
+<!---{line-numbers:false}--->
 ```text
 *******************************************************
 Island (Water mana)
@@ -122,6 +124,7 @@ We maken nu een applicatie die uit drie stappen bestaat:
 # Stap 1: Landen maken
 De gebruiker wordt gevraagd hoeveel landen hij per manatype heeft.
 
+<!---{line-numbers:false}--->
 ```text 
 Aantal Water? 
 4   <-ingevoerd door gebruiker

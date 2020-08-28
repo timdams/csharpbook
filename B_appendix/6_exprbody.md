@@ -2,6 +2,7 @@
 
 Wanneer je methoden, constructors of properties schrijft waar **exact 1 expressie** (*1 lijn code* die een resultaat teruggeeft) nodig is dan kan je gebruik maken van de **expression bodied member syntax** (EBM). Deze is van de vorm:
 
+<!---{line-numbers:false}--->
 ```text
 member => expression
 ```

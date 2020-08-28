@@ -45,6 +45,7 @@ Pas het Hoger Lager programma aan zodat er een maximum aantal pogingen is toeges
 
 Twee getallen tussen 2 en 20 worden ingelezen (invoercontrole!). Er moet een open rechthoek afgedrukt worden bestaande uit `*`en waarbij de ingelezen getallen respectievelijk de breedte en de hoogte van de rechthoek voorstellen. Als bijvoorbeeld 10 en 4 werden ingelezen, wordt de volgende rechthoek getoond:
 
+<!---{line-numbers:false}--->
 ```text
 * * * * * * * * * *
 *                 *

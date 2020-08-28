@@ -118,6 +118,7 @@ Werking:
 
 Voorbeeld output
 
+<!---{line-numbers:false}--->
 ```text
 Huis met prijs 1240 euro heb je gekocht
 Huis met prijs 1690 euro heb je niet gekocht

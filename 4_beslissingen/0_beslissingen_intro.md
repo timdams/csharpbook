@@ -3,6 +3,7 @@ Nu we de elementaire zaken van C# en Visual Studio kennen is het tijd om onze pr
 
 Onze programma's waren met andere woorden niet meer dan een eenvoudige oplijsting van opdrachten. Je kan het vergelijken met een lijst die je vertelt over hoe je een brood moet kopen:
 
+<!---{line-numbers:false}--->
 ```text
 Neem geld uit spaarpot
 Wandel naar de bakker om de hoek

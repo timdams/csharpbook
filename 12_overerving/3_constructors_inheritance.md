@@ -28,6 +28,7 @@ Medic RexGregor= new Medic();
 
 Dan zal zien we de volgorde van constructor-aanroep op het scherm:
 
+<!---{line-numbers:false}--->
 ```text
 Soldier reporting in
 Who needs healing?

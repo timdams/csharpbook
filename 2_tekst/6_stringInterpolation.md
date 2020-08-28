@@ -46,8 +46,8 @@ Was dit de uitvoer die je voorspeld had?
 
 Ook in dit soort code wordt dus de volgorde van bewerkingen gerespecteerd. De **concatenatie gebeurt van links naar rechts en de linkse operand zal steeds bepalen wat het resultaat van de bewerking zal zijn indien er twijfel is**.  Dit nieuw samengevoegde deel wordt dan de linkse operand voor het volgende deel.
 
-Kijken we dus naar ``"1"+1+1`` dan wordt dit eerst ``"11"+1`` en dus vervolgens de ``string`` ``111``.
-Bij ``1+1+"1"`` krijgen we eerste ```2+"1"``, dit geeft vervolgens ``21`` (aangezien C# niet kan bepalen dat de string iets bevat wat een getal kan zijn, en dus besluit om beide operands als een ``string`` te zien wat altijd de veiligste oplossing is).
+Kijken we dus naar ``"1"+1+1`` dan wordt dit eerst ``"11"+1`` en dus vervolgens de ``string`` ``"111"``.
+Bij ``1+1+"1"`` krijgen we eerste ``2+"1"``, dit geeft vervolgens ``21`` (aangezien C# niet kan bepalen dat de string iets bevat wat een getal kan zijn, en dus besluit om beide operands als een ``string`` te zien wat altijd de veiligste oplossing is).
 {% endhint %}
 
 
@@ -83,6 +83,7 @@ string result= $"Ik ben {age*age+(3%2)} jaar oud.";
 {% hint style='warning' %}
 Uiteraard mag je dit dus ook gebruiken wanneer je eenvoudiger zaken naar het scherm wenst te sturen gebruik makende van ``Console.WriteLine`` en interpolatie:
 
+<!---{line-numbers:false}--->
 ```csharp
 Console.WriteLine($"3 maal 9 is  {3*9}");
 ```
@@ -101,6 +102,7 @@ Console.WriteLine($"{number:F2}");
 
 Er zal op het scherm verschijnen:
 
+<!---{line-numbers:false}--->
 ```text
 12.34
 ```

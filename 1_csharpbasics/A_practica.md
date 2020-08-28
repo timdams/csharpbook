@@ -9,6 +9,7 @@ Het is aanbevolen dat je per hoofdstuk een nieuwe folder aanmaakt op je computer
 #### Simple maths
 Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toont:
 
+<!---{line-numbers:false}--->
 ```text
 -1 + 4 * 6
 ( 35 + 5 ) % 7
@@ -38,6 +39,7 @@ Met het statement ``Console.Clear();`` kan je de console - je raadt het nooit - 
 
 Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411= 411, 2x411= 822 tot en met 10x411= 4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
 
+<!---{line-numbers:false}--->
 ```text
 1 x 411 = 411
 Druk op enter voor de volgende lijn.

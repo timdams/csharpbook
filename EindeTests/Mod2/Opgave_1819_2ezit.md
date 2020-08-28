@@ -79,6 +79,8 @@ Als laatste fase wordt een methode ``ToonStatistieken`` aangeroepen. Deze method
 De methode gebruikt de 2 arrays om enkele interessante statistieken te tonen:
 1.	Het toont het percentage dat partijen vertegenwoordigd zijn. Als dus de array bestaat uit vvd,d66,vvd. Dan zal vvd 66% vertegenwoordigen, d66 33%
 2.	Je toont ook het aantal keer dat iedere partij voorkwam aan de hand van een lijn bestaande uit zoveel sterren. Als vvd 5 stemmen kreeg, d66 3 en bas 6 dan toont de methode dit als volgt:
+
+<!---{line-numbers:false}--->
 ```text
 vvd ******
 d66 ***
@@ -86,6 +88,7 @@ bas *****
 ```
 3.	Het toont de gemiddelde lengte van de gebruiker. Als de namen bestaan uit Tim,Jos,Frederik, Frans dan is dit gemiddelde 4,75 letters
 4.	Het geeft een overzicht van alle stemresultaten maar toont enkel de eerste letter van iedere naam. Als bijvoorbeeld Tom op d66 uitkwam, Gerolf op vvd en Frans op bas dan verschijnt er:
+<!---{line-numbers:false}--->
     ```text
 	T, d66
 	G, vvd

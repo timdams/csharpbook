@@ -95,6 +95,7 @@ rachid.Praat();
 
 Dan zal de uitvoer worden:
 
+<!---{line-numbers:false}--->
 ```text
 Ik ben een mens!
 Mijn geheim is dat ik leef!

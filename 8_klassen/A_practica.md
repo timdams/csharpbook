@@ -47,6 +47,7 @@ Volgende code zou bijvoorbeeld onderstaande output moeten geven:
 
 Output:
 
+<!---{line-numbers:false}--->
 ```text
 Paar: 12, 34
 Som = 46
@@ -89,6 +90,7 @@ Test je programma door enkele studenten aan te maken en in te stellen. Volgende 
 
 Output:
 
+<!---{line-numbers:false}--->
 ```text
 Joske Vermeulen, 21 jaar
 Klas: EA2

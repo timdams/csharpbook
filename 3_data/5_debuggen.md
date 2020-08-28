@@ -11,6 +11,7 @@ Tijd dus om je **debugger** boven te halen en die (logische) fouten uit je code 
 Code die compileert is enkel code die foutloos geschreven is volgens de C# afspraken qua grammatica en syntax. De code zal met andere woorden gecompileerd worden, maar wat er daarna gebeurt is volledig afhankelijk van wat juist de betekenis is van wat je hebt geschreven.
 
 Volgende algoritme bijvoorbeeld is perfecte Nederlandstalige code en zal dus door een fictieve compiler kunnen gecompileerd worden. Het vervolgens uitvoeren is echter niet aan te raden (natrium en water samen geeft een stevige exotherme reactie):
+
 <!---{line-numbers:false}--->
 ```text
 Neem natrium
@@ -62,7 +63,7 @@ We lichten hier de knoppen toe die je zeker zal nodig hebben:
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 
-Voorman Tim hier. Even je oren open zetten aub, ik ga iets roepen:**"Debugging is een ESSENTIËLE SKILL!!!"**. Ik laat mijn metselaars ook geen huizen bouwen zonder dat ze ooit een truweel hebben vastgepakt. Een programmeur die niet kan debuggen...is als een vis die niet kan zwemmen!. 
+Even je oren open zetten aub, ik ga iets roepen:**"Debugging is een ESSENTIËLE SKILL!!!"**. Ik laat mijn metselaars ook geen huizen bouwen zonder dat ze ooit een truweel hebben vastgepakt. Een programmeur die niet kan debuggen...is als een vis die niet kan zwemmen!. 
  
  Zorg dus dat je vlot breakpoints kunt plaatsen om zo tijdens de uitvoer te pauzeren om de inhoud van je variabelen te bekijken (via het zogenaamde watch-venster). Gebruik vervolgens de "step"-buttons om door je code te 'stappen', lijn per lijn.
 

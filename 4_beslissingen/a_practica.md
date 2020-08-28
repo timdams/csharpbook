@@ -67,6 +67,7 @@ Vul de voorgaande oefening aan, maar laat de gebruiker 3x na mekaar raden. Enkel
 Schrijf een applicatie om het volgende te verwezenlijken: De bedoeling is om 3 stukken willekeurig te kiezen van een schaakspel. 
 Maak maximaal gebruik van enumeratie-types. Op het scherm moet dus willekeurig een opsomming van 3 stukken (als woorden) verschijnen. De uitvoer kan dus bijvoorbeeld zijn: 
 
+<!---{line-numbers:false}--->
 ```text
 wit paard
 zwarte loper

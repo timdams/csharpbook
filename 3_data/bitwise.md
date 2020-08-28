@@ -71,6 +71,7 @@ Console.ReadLine();
 
 Geeft als uitvoer:
 
+<!---{line-numbers:false}--->
 ```text
 Line 1 - Value of c is 12
 Line 2 - Value of c is 61
