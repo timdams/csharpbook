@@ -24,8 +24,8 @@ static void Main(string[] args)
     int tweede;
     RefValueVerschil(eerste, ref tweede);
  
-    Console.WriteLine("Eerste bedraagt na method:{0}", eerste);
-    Console.WriteLine("Tweede bedraagt na method:{0}", tweede);
+    Console.WriteLine($"Eerste bedraagt na method:{eerste}");
+    Console.WriteLine($"Tweede bedraagt na method:{tweede}");
 }
 ```
 Dan krijgen we volgende, terechte, foutmelding:
@@ -42,8 +42,8 @@ static void RefValueVerschil(int getal1, out int getal2)
     getal2 = 10;
     getal1 = getal1 + 1;
     getal2 = getal2 + 2;
-    Console.WriteLine("Getal1 bedraagt in method:{0}", getal1);
-    Console.WriteLine("Getal2 bedraagt in method:{0}", getal2);
+    Console.WriteLine($"Getal1 bedraagt in method:{getal1}");
+    Console.WriteLine($"Getal2 bedraagt in method:{getal2}");
  
 }
  
@@ -52,8 +52,8 @@ static void Main(string[] args)
     int eerste = 5;
     RefValueVerschil(eerste, out int tweede);
  
-    Console.WriteLine("Eerste bedraagt na method:{0}", eerste);
-    Console.WriteLine("Tweede bedraagt na method:{0}", tweede);
+    Console.WriteLine($"Eerste bedraagt na method:{eerste}");
+    Console.WriteLine($"Tweede bedraagt na method:{tweede}");
 }
 ```
 
@@ -73,8 +73,8 @@ static void RefValueVerschil(int getal1, ref int getal2)
 {
     getal1 = getal1 + 1;
     getal2 = getal2 + 2;
-    Console.WriteLine("Getal1 bedraagt in methode:{0}", getal1);
-    Console.WriteLine("Getal2 bedraagt in methode:{0}", getal2);
+    Console.WriteLine($"Getal1 bedraagt in methode:{getal1}");
+    Console.WriteLine($"Getal2 bedraagt in methode:{getal2}");
 }
  
 static void Main(string[] args)
@@ -82,8 +82,8 @@ static void Main(string[] args)
     int eerste = 5;
     int tweede = 10;
     RefValueVerschil(eerste, ref tweede);
-    Console.WriteLine("Eerste bedraagt na methode:{0}", eerste);
-    Console.WriteLine("Tweede bedraagt na methode:{0}", tweede);
+    Console.WriteLine($"Eerste bedraagt na methode:{eerste}");
+    Console.WriteLine($"Tweede bedraagt na methode:{tweede}");
 }
 ```
 De uitvoer is de volgende, zoals verwacht: :

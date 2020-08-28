@@ -1,10 +1,9 @@
 ## Geavanceerde methode-technieken
 
-Nu we methoden in de vingers krijgen, is het tijd om naar enkele gevorderde aspecten. Je hebt vermoedelijk al door dat methoden een erg fundamenteel concept zijn van een programmeertaal en dus hoe beter we ermee kunnen werken, hoe beter. 
+Nu we methoden in de vingers krijgen, is het tijd om naar enkele gevorderde aspecten te kijken. Je hebt vermoedelijk al door dat methoden een erg fundamenteel concept zijn van een programmeertaal en dus hoe beter we ermee kunnen werken, hoe beter. 
 
-{% hint style='tip' %}
 Wat nu volgt is grotendeels gebaseerd op het volgende [artikel](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments).
-{% endhint %}
+
 
 ### Named parameters
 Wanneer je een methode aanroept is de volgorde van je argumenten belangrijk: deze moeten meegeven worden in de volgorde zoals de methode parameters ze verwachten.
@@ -200,12 +199,12 @@ static void Main(string[] args)
 
 static void Toonverhouding(int a, double b)
 {
-    Console.WriteLine("{0}/{1}", a, b);
+    Console.WriteLine($"{a}/{b}");
 }
 
 static void Toonverhouding(double a, int b)
 {
-    Console.WriteLine("{0}/{1}", a, b);
+    Console.WriteLine($"{a}/{b}");
 }
 ```
 

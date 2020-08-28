@@ -14,11 +14,11 @@ Het is je misschien nog niet opgevallen, maar sinds het vorige hoofdstuk zijn we
 
 ### Wat is een methode
 
-Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerdere statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet met extra parameters, en kan ook een resultaat terug geven.
+Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerdere statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet met extra parameters, en kan ook een resultaat terug geven. Een methode kan van eender waar in je code aangeroepen worden.
 
-{% hint style='tip' %}
-Je gebruikt al sinds les 1 methoden. Telkens je ``Console.WriteLine()`` bijvoorbeeld gebruikte, roep je een methode aan. Methoden in C# zijn namelijk herkenbaar aan de ronde haakjes achteraan, al dan niet met parameters tussen. Kortom, alles wat we nu gaan zien heb je (onbewust) al gebruikt. Het grote verschil zal zijn dat we nu **zelf methoden** gaan definiëren, en niet enkel bestaande methoden gebruiken.
-{% endhint %}
+Je gebruikt al sinds les 1 methoden. Telkens je ``Console.WriteLine()`` bijvoorbeeld gebruikte, roep je een methode aan. **Methoden in C# zijn namelijk herkenbaar aan de ronde haakjes achteraan, al dan niet met parameters tussen.** Kortom, alles wat we nu gaan zien heb je (onbewust) al gebruikt. Het grote verschil zal zijn dat we nu ook **zelf methoden** gaan definiëren, en niet enkel bestaande methoden gebruiken.
+
+Methoden gebruiken hebben als voordeel dat je (kleine) herbruikbare stukken code kunt gebruiken en dus niet steeds deze code overal moet copy pasten. Daarnaast zullen methoden je code ook overzichtelijker maken.
 
 ### Methode syntax
 
@@ -95,16 +95,18 @@ namespace Demo1
 ![Visualisatie van bovenstaande code](../assets/4_methoden/timsoft.png)
 
 
-### Returntypes
+### Returntypes, ``void`` en ``return``
 
-Voorgaande methode gaf niets terug. Dat kon je zien aan het keyword ``void`` (letterlijk *leegte*). Vaak willen we echter wel dat de methode iets teruggeeft. Bijvoorbeeld het resultaat van een berekening.
+Voorgaande methode gaf niets terug. Dat kon je zien aan het keyword **``void``** (letterlijk: *leegte*). Vaak willen we echter wel dat de methode iets teruggeeft. Bijvoorbeeld het resultaat van een berekening.
 
 Het returntype van een methode geeft aan wat het type is van de data die de methode als resultaat teruggeeft bij het beëindigen ervan. Eender welk type dat je kent kan hiervoor gebruikt worden, zoals ``int``, ``string``, ``char``, ``float``, etc. Ook zelfgemaakte (of bestaande) ``enum`` datatypes kunnen als returnwaarde door het leven.
 
-Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegeven, dit doe je met het keyword ``return``
+Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegeven, dit doe je met het keyword **``return``**
 gevolgd door de variabele die moet teruggeven worden. 
 
 Denk er dus aan dat deze variabele van het type is dat je hebt opgegeven als zijnde het returntype. Van zodra je ``return`` gebruikt zal je op die plek uit de methode 'vliegen'.
+
+Wanneer je een methode maakt die iets teruggeeft (dus ander returntype dan ``void``) is het ook de bedoeling dat je resultaat van die methode opvangt en gebruikt. Je kan bijvoorbeeld het resultaat van de methode in een variabele bewaren. Dit vereist dat die variabele dan van hetzelfde returntype is! 
 
 Volgend voorbeeld bestaat uit een methode die de naam van de auteur van je programma teruggeeft:
 
@@ -131,6 +133,23 @@ Of bijvoorbeeld ook:
 Console.WriteLine($"This program is written by {GetNameAuthor()}");
 ```
 
+{% hint style='tip' %}
+Zoals je merkt is er niet veel verschil met wat je al wist aangaande het gebruik van variabelen. Als je dus twijfelt wat methoden kunnen, beschouw ze als een soort "slimme variabelen" die finaal ook gewoon een waarde hebben, maar deze waarde kan het resultaat van een complex stuk code in the methode zijn.
+{% endhint %}
+
+
+{% hint style='tip' %}
+Je mag zowel literals als variabelen en zelfs andere methode-aanroepen plaatsen achter het ``return`` keyword. Zolang het maar om een expressie gaat die een resultaat heeft kan dit. Voorgaande methode kunnen we dus ook schrijven als:
+
+```csharp
+static string GetNameAuthor()
+{
+    return "Tim Dams";
+}
+```
+{% endhint %}
+
+
 Hier een voorbeeld van een methode die de faculteit van 5 berekent. De oproep van de methode gebeurt vanuit de Main-methode:
 
 ```csharp
@@ -148,7 +167,7 @@ class Program
  
     static void Main(string[] args)
     {
-       Console.WriteLine("Faculteit van 5 is {0}", FaculteitVan5());
+       Console.WriteLine($"Faculteit van 5 is {FaculteitVan5()}");
     }
 }
 ```
@@ -203,9 +222,10 @@ Merk op dat de onderste ``return "onbekend";`` nooit zal bereikt worden. Toch ve
 Dacht je nu echt dat ik weg was?! Het is me opgevallen dat je niet altijd de foutboodschappen in VS leest. Ik blijf alvast uit jouw buurt als je zo doorgaat. Doe jezelf (en mij) dus een plezier en probeer die foutboodschappen in de toekomst te begrijpen. Er zijn er maar een handvol en bijna altijd komen ze op hetzelfde neer. Neem nou de volgende:**Not all code paths return a value**
 Die ga je nog vaak tegenkomen!
 
+Bovenstaande error zal je vaak krijgen en geeft altijd aan dat er bepaalde delen binnen je methode zijn waar je kan komen zonder dat er een ``return`` optreedt. Het einde van de methode wordt met andere woorden bereikt zonder dat er iets uit de methoden terug komt (wat enkel bij ``void`` mag)
+
 ![Foutboodschappen hebben de neiging om gecompliceerder te klinken dat de effectieve fout die ze beschrijven. Een beetje zoals een lector die lesgeeft over iets waar hij zelf niets van begrijpt.](../assets/3_loops/unasigned.png)
 
-Bovenstaande error zal je vaak krijgen en geeft altijd aan dat er bepaalde delen binnen je methode zijn waar je kan komen zonder dat er een ``return`` optreedt. Het einde van de methode wordt met andere woorden bereikt zonder dat er iets uit de methoden terug komt (wat enkel bij ``void`` mag)
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}
@@ -222,18 +242,17 @@ Indien er wel parameters nodig zijn dan geef je die mee als volgt:
 MethodeNaam(parameter1, parameter2, …);
 ```
 
+Je hebt dit ook al geregeld gebruikt. Wanneer je tekst op het scherm wilt tonen dan roep je de ``WriteLine`` methode aan en geef je 1 parameter mee, namelijk hetgeen dat op het scherm moet komen: ``Console.WriteLine(myName);`` of ``Console.WriteLine(666)`;``. Bij de ``Math`` bibliotheek waren er bijvoorbeeld methoden waar je 2 parameters aan kon meegeven, waarbij duidelijk was dat de volgorde belangrijk was: ``Math.Pow(6,3);`` 6 tot de 3e is niet hetzelfde als 3 tot de 6e wat je als volgt zou schrijven ``Math.Pow(3, 6);``.
+
 Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
 
-1. Wanneer een parameter **by value** wordt meegegeven aan een methode, dan wordt een kopie gemaakt van de huidige waarde die wordt meegegeven.
-2. Wanneer echter een parameter **by reference** wordt meegegeven dan zal een pointer worden meegegeven aan de methode. Deze pointer bevat het adres van de eigenlijke variabele die we meegeven. Aanpassingen aan de parameters zullen daardoor ook zichtbaar zijn binnen de scope van de originele variabele.
+1. Wanneer een parameter **by value** wordt meegegeven aan een methode, dan wordt **een kopie gemaakt van de huidige waarde** die wordt meegegeven.
+2. Wanneer echter een parameter **by reference** wordt meegegeven dan zal een pointer worden meegegeven aan de methode. Deze pointer bevat het **adres van de eigenlijke variabele** die we meegeven. Aanpassingen aan de parameters zullen daardoor ook zichtbaar zijn binnen de scope van de originele variabele. Parameters *by reference* worden niet in dit boek behandeld, wel in het volgende deel.
 
-{% hint style='tip' %}
-Parameters *by reference* zullen we in het tweede deel van dit boek veel nodig hebben.
-{% endhint %}
+### Methoden met parameters
+Om zelf een methode te definiëren die 1 of meerdere parameters aanvaardt, dien je per parameter het datatype en een tijdelijk naam (identifier) te definiëren in de methode-signatuur.
 
-### Parameters doorgeven by value
-
-Om parameters aan een methode mee te geven moet je per parameter het datatype en een naam (identifier) definieren in de methode-signatuur.
+Als volgt:
 
 ```csharp
 static returntype MethodeNaam(type parameter1, type parameter2)
@@ -267,6 +286,11 @@ int getal= 5;
 int resultaat= BerekenFaculteit(getal);
 ```
 
+Of sneller:
+
+```csharp
+int resultaat= BerekenFaculteit(5);
+```
 
 
 Als we even later ``resultaat`` dan zouden gebruiken zal de waarde ``120`` er in zitten.
@@ -396,9 +420,7 @@ Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische 
 ![Hoe comment getoond wordt](../assets/4_methoden/comment.png)
 
 {% hint style='tip' %}
-### Een Nuttige methode
-
-Vaak moet je code waarin je een getal aan de gebruiker vraagt:
+Vaak moet je code schrijven waarin je een getal aan de gebruiker vraagt:
 
 ```csharp
 Console.WriteLine("Geef leeftijd");
@@ -422,6 +444,8 @@ De code van zonet kan je dan nu herschrijven naar:
 ```csharp
 int leeftijd= VraagInt("Geef leeftijd");
 ```
+
+Het voorgaande voorbeeld toont ook ineens aan waar om methoden helpen om je code leesbaarder en onderhoudbaarder te maken. Je main blijft gevrijwaard van veel repeterende lijnen code en heeft aanroepen naar (hopelijk) goed benoemde methode die ieder een heel specifiek ding doen. Dit maakt het debuggen ook eenvoudiger: je ziet in één oogopslag meestal wat een methode doet (als je ze niet te lang hebt gemaakt natuurlijk).
 {% endhint %}
 
 

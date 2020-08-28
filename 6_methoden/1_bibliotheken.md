@@ -18,10 +18,8 @@ Voor ``WriteLine`` geeft dit:
 
 In de *overload list* zien we de verschillende manieren waarop je de methode in kwestie kan aanroepen. Je kan op iedere methode klikken voor meer informatie en een codevoorbeeld.
 
-
-{% hint style='tip' %}
 ### Intellisense
-"Hoe kan je deze methode nu gebruiken?" is een veelgestelde vraag. Zeker wanneer je de basis van C# onder knie hebt en je stilletjes aan met bestaande .NET bibliotheken wil gaan werken. Wat volgt is een essentieel onderdeel van VS dat veel gevloek en tandengeknars zal voorkomen.
+*"Hoe kan je deze methode nu gebruiken?"* is een veelgestelde vraag. Zeker wanneer je de basis van C# onder knie hebt en je stilletjes aan met bestaande .NET bibliotheken wil gaan werken. Wat volgt is een essentieel onderdeel van VS dat veel gevloek en tandengeknars zal voorkomen.
 
 De help-files van VS zijn zeer uitgebreid en dankzij IntelliSense krijg je ook aardig wat informatie tijdens het typen van de code zelf.
 
@@ -31,11 +29,7 @@ Type daarom onder vorige WriteLine-zin het volgende:
 System.Console.
 ```
 
-Wacht nu even en er zal na het punt (``.``) een lijst komen van methoden en fields die beschikbaar zijn. Je kan hier met de muis doorheen scrollen en zo zien welke methoden allemaal bij de Console klasse horen.
+Wacht nu even en er zal na het punt (``.``) een lijst komen van methoden en fields die beschikbaar zijn. Je kan hier met de muis doorheen scrollen en zo zien welke methoden allemaal bij de Console klasse horen. Indien gewenst kan je vervolgens de gewenste methode selecteren en op spatie duwen zodat deze in je code verschijnt.
 
 ![De icoontjes geven aan of het om een methode (kubus), een eigenschap (engelse sleutel) of een "event" (bliksem) gaat. Events behandelen we niet in dit boek](../assets/4_methoden/methoden4.png)
 
-Dit geldt idem voor andere bestaande bibliotheken. Nu snappen we ook eindelijk wat al die informatie bij ``Math.Pow`` wil zeggen:
-
-![Pow staat voor Power, het Engelse voor "macht". Had je niet verwacht he.](../assets/4_methoden/methoden8.png)
-{% endhint %}

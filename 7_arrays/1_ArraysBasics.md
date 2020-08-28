@@ -277,7 +277,7 @@ Soms kan het nodig zijn dat je in een later stadium van je programma de lengte v
 
 ```csharp
 string[] myColors = {"red", "green", "yellow", "orange", "blue"};
-Console.WriteLine("Length of array = {0}", myColors.Length);
+Console.WriteLine($"Length of array = {myColors.Length}" );
 ```
 De ``Length``-eigenschap wordt vaak gebruikt in for/while loops waarmee je de hele array wenst te doorlopen. Door de ``Length``-eigenschap te gebruiken als grenscontrole verzekeren we er ons van dat we nooit buiten de grenzen van de array zullen lezen of schrijven:
 

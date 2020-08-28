@@ -46,7 +46,7 @@ Voor de *setup*-variabele kiest men meestal ``i``, maar dat is niet noodzakelijk
 Als je in Visual Studio ``for`` typt en dan tweemaal op [tab] duwt krijg je  kant en klare for-loop code.
 {% endhint %}
 
-### continue
+### continue en break
 
 Het ``continue`` keyword laat toe om in een loop de huidige iteratie te eindigen en weer naar de start van de volgende iteratie te gaan. In het volgende voorbeeld gebruiken we ``continue`` om alle getallen van 1 tot 10 te tonen waarbij we echter het getal 5 zullen overslaan:
 
@@ -61,21 +61,7 @@ for (int i = 1; i <= 10; i++)
 }
 ```
 
-<!---NOBOOKSTART--->
-{% hint style='warning' %}
-<!---NOBOOKEND--->
-<!---{aside}--->
-<!--- {float:right, width:50%} --->
-![](../assets/gotopolice.png)
-Wie we daar hebben. Ik merk dat u ``goto`` flink links laat liggen. Maar uw blik op die ``continue`` baart me zorgen. Probeer dat keyword ook maar te vergeten. Het is een nuttig iets, maar kan ook verdomd misbruikt worden en ``goto``-achtige bugs genereren. Denk dus dubbel na wanneer je denkt ``continue`` nodig te hebben.
-<!---{/aside}--->
-<!---NOBOOKSTART--->
-{% endhint %}
-<!---NOBOOKEND--->
-
-
-### Break
-Je kan loops (alle types) altijd vroegtijdig stopzetten door het ``break`` keyword. 
+En met ``break``  kan je loops (alle types) altijd vroegtijdig stopzetten. Je springt dan als het ware ogenblikkelijk uit de loop. Je ziet het aankomen zeker? Yups, daar is ie.... 
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -83,11 +69,10 @@ Je kan loops (alle types) altijd vroegtijdig stopzetten door het ``break`` keywo
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/gotopolice.png)
-Olla!? Wat denken we dat we aan het doen zijn? Gelieve dat keyword ogenblikkelijk terug uit je code te verwijderen. Bedankt. 
+Olla!? Wat denken we dat we aan het doen zijn? Gelieve die keywords ogenblikkelijk terug uit je code te verwijderen. Bedankt. 
 
-``break`` is de meer subtiele vriend van ``goto``. Hij leeft, net als  ``continue`` meer in de schemerzone tussen wat mag en niet mag. Dat maakt hem extra gevaarlijk. Voor je ``break`` als oplossing wilt gebruiken probeer je best eerst of je de loop niet mooier kan afsluiten door bijvoorbeeld de juiste booleaanse expressie te beschrijven in de test-conditie.
+``break`` en ``continue`` zijn de meer subtiele vrienden van ``goto``. Ze leven, net als  ``continue`` meer in de schemerzone tussen wat mag en niet mag. Dat maakt hen extra gevaarlijk. Voor je ``break`` als oplossing wilt gebruiken probeer je best eerst of je de loop niet mooier kan afsluiten door bijvoorbeeld de juiste booleaanse expressie te beschrijven in de test-conditie. Hetzelfde geldt voor ``continue`` dat ook snel ``goto``-achtige bugs tot gevolg kan hebben. 
 
-Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break).
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}

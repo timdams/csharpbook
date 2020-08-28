@@ -219,7 +219,7 @@ DateTime borodino_battle = new DateTime(1812, 9, 7);
 
 TimeSpan diff = today - borodino_battle;
 
-WriteLine("{0} days have passed since the Battle of Borodino.", diff.TotalDays);
+WriteLine($"{diff.TotalDays} days have passed since the Battle of Borodino.");
 ```
 
 # Oefening
