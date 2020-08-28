@@ -25,24 +25,10 @@ Van zodra je dezelfde lijn(en) code onder elkaar in je code ziet staan (door bij
 Er zijn 3 standaard manieren om zogenaamde loops te maken in C#:
 * **``while``**: zal 0 of meerdere keren uitgevoerd worden.
 * **`` do while``**: zal minimaal 1 keer uitgevoerd worden.
-* **``for``**: een alternatieve iets compactere manier om loops te beschrijven wanneer je exact weet hoe vaak de loop zal moeten herhalen.
+* **``for``**: een alternatieve, iets compactere manier om loops te beschrijven wanneer je exact weet hoe vaak de loop zal moeten herhalen.
 
-Voorts zullen we ook een speciale loop variant zien in het volgende deel wanneer we arrays en objecten leren kennen:
-* [**``foreach``**](../11_arraysvanklassen/3_foreach.md)
-
-
-<!---NOBOOKSTART--->
-{% hint style='warning' %}
-<!---NOBOOKEND--->
-<!---{aside}--->
-<!--- {float:right, width:50%} --->
-![](../assets/gotopolice.png)
-
-Wie we daar hebben. Ik merk dat u ``goto`` flink links laat liggen. Maar uw blik op die ``continue`` baart me zorgen. Probeer dat keyword ook maar te vergeten. Het is een nuttig iets, maar kan ook verdomd misbruikt worden en ``goto``-achtige bugs genereren. Denk dus dubbel na wanneer je denkt ``continue`` nodig te hebben.
-<!---{/aside}--->
-<!---NOBOOKSTART--->
-{% endhint %}
-<!---NOBOOKEND--->
+Voorts zullen we ook een speciale loop variant zien in het volgende boekdeel wanneer we arrays en objecten leren kennen:
+* [**``foreach``**]: een iets leesbaardere manier van loopen die vooral nuttig is wanneer je met objecten gaat werken.
 
 
 

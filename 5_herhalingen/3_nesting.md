@@ -6,7 +6,7 @@ Geneste loops komen vaak voor, maar zijn wel een ander paar mouwen wanneer je de
 <!--- {width:50%} --->
 ![Voorbeeld van geneste loops](../assets/3_loops/nesting.png)
 
-We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loops de **inner loop(s)** zijn. 
+We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loop(s) de **inner loop(s)** is. 
 
 
 Volgende code toont bijvoorbeeld 2 loops die genest werden:
@@ -29,7 +29,25 @@ while(tellerA < 3 )  //outer loop
 
 De uitvoer hiervan zal als volgt zijn:
 
-![Merk het 'ritme' in de uitvoer. De linkse teller gaat een pak trager dan de rechtse](../assets/3_loops/nestedoutput.png)
+```text
+Teller: 1, Teller 2:1
+Teller: 1, Teller 2:2
+Teller: 1, Teller 2:3
+Teller: 1, Teller 2:4
+Teller: 1, Teller 2:5
+Teller: 2, Teller 2:1
+Teller: 2, Teller 2:2
+Teller: 2, Teller 2:3
+Teller: 2, Teller 2:4
+Teller: 2, Teller 2:5
+Teller: 3, Teller 2:1
+Teller: 3, Teller 2:2
+Teller: 3, Teller 2:3
+Teller: 3, Teller 2:4
+Teller: 3, Teller 2:5
+
+```
+Merk het 'ritme' in de uitvoer. De linkse teller gaat een pak trager dan de rechtse.
 
 {% hint style='tip' %}
 **Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner en outer loop apart)**

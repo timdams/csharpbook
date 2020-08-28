@@ -75,7 +75,7 @@ Probeer er altijd zeker van te zijn dat de variabele(n) die je gebruikt in je te
 {% endhint %}
 
 ### Scope van variabelen in loops
-Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je een variabele binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende cyclus van de loop start.
+Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je een variabele binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende iteratie van de loop start.
 Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen (1+2+3+...+10) zou maken:
 
 ```csharp
@@ -89,13 +89,10 @@ while(teller <= 10)
 Console.WriteLine(som); //deze lijn zal een fout genereren
 ```
 
-{% hint style='tip' %}
-Voorgaande code zal volgende VS error geven:
+Voorgaande code zal volgende VS error geven: *The name `som`does not exist in the current context*.
 
-![Deze fout zal je nog tegenkomen](../assets/3_loops/unasigned.png)
-{% endhint %}
 
-De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden. Hier de oplossing:
+De **correcte** manier om dit op te lossen is te beseffen dat de variabele ``som`` enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden. Hier de oplossing:
 
 ```csharp
 int teller= 1;
@@ -127,7 +124,7 @@ do{
 ```
 
 {% hint style='danger' %}
-Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
+Merk op dat achteraan de testconditie een puntkomma na het ronde haakje staat. **Deze vergeten is een véél voorkomende fout. Bij een while is dit niet!**
 {% endhint %}
 
 Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop:
@@ -141,7 +138,7 @@ do
 } while (i > 0);
 ```
 
-Begrijp je wat dit programma zal doen?
+Begrijp je wat dit programma zal doen? Inderdaad dit zal alle getallen 9 tot en met 0 onder elkaar op het scherm zetten.
 
 ### Foute input van gebruiker met loops verwerken
 Dankzij loops kunnen we nu ook eenvoudiger omgaan met foutieve input van de gebruiker. Stel dat we volgende vraag hebben:
