@@ -1,14 +1,16 @@
 ## Debuggen
 
-Joepie!! M'n code werkt! Je ontkurkt de champagne, doet een vreugdedansje en laat je programma door duizenden gebruikers ontdekken. Enkele seconden later staat er een meute met hooivorken en toortsen voor je kantoor. Helaas! Er zaten nog 'enkele bugs' in je code. 
+"Joepie!! M'n code werkt!" Je ontkurkt de champagne/bier/melk/frisdrank/water, doet een Fortnite danske en laat je programma door duizenden, neen miljoenen gebruikers ontdekken. Nog geen uur later staat er een meute met hooivorken en toortsen voor je kantoor. 
+
+Helaas, er zaten nog "een paar bugs" in je code...
+
 Tijd dus om je **debugger** boven te halen en die (logische) fouten uit je code te halen.
 
-### Debuggen is veel werk
+### Logische fouten vs C# fouten
 
 Code die compileert is enkel code die foutloos geschreven is volgens de C# afspraken qua grammatica en syntax. De code zal met andere woorden gecompileerd worden, maar wat er daarna gebeurt is volledig afhankelijk van wat juist de betekenis is van wat je hebt geschreven.
 
-{% hint style='tip' %}
-Volgende "code" is perfecte Nederlandstalige code. Het uitvoeren is echter niet aan te raden:
+Volgende algoritme bijvoorbeeld is perfecte Nederlandstalige code en zal dus door een fictieve compiler kunnen gecompileerd worden. Het vervolgens uitvoeren is echter niet aan te raden (natrium en water samen geeft een stevige exotherme reactie):
 <!---{line-numbers:false}--->
 ```text
 Neem natrium
@@ -16,32 +18,31 @@ Neem water
 Voeg beide samen
 ```
 
-Dit is dus een logische fout, oftewel bug.
-{% endhint %}
+Dit is dus een logische fout, oftewel bug (in dit geval een **BOEM!!!!*).
+
 
 ### Debuggen met Visual Studio
 
-Standaard wanneer je je code uitvoert met de grote groene playknop start jouw programma in zogenaamde "debug modus". Dit laat je toe om je code ten allen tijde te onderbreken en naar de huidige staat van je programma te kijken.
+Standaard wanneer je je code uitvoert met de grote groene playknop start jouw programma in zogenaamde "debug modus". Dit laat je toe om je code ten allen tijde te onderbreken en naar de huidige staat van je programma te kijken. Je kan dan bijvoorbeeld onderzoeken wat de waarden van bepaalde variabelen zijn op dat moment en of die wel correct zijn. Dit is bughunting en zal je héél vaak doen in je programmeer-carrière. 
 
-Om dit te doen moet je een **breakpoint** (of meerdere) in je code plaatsen. Breakpoint zet je aan een lijn code en wanneer je programma dan aan deze lijn komt zal de debugger alles pauzeren.
+Om dit te doen moet je een **breakpoint** (of meerdere) in je code plaatsen. Breakpoint zet je aan een lijn code en wanneer je programma dan aan deze lijn komt tijdens de uitvoer zal de debugger alles pauzeren.
 
-Een breakpoint plaats je door op het grijze gedeelte links van de lijn code te klikken. Als alles goed gaat verschijnt er dan een grote rode "breakpointbol".
+Een breakpoint plaats je door op het grijze gedeelte links van de lijn code te klikken. Als alles goed gaat verschijnt er dan een grote rode "breakpointbol":
 <!--- {height:30%} --->
-![Een breakpoint aan lijn 11. De code uitvoer zal dus nog wel lijn 10 uitvoeren, maar niet lijn 11](../assets/1_csharpbasics/breakpoint.png)
+![](../assets/1_csharpbasics/breakpoint.png)
 
-Als je nu je project uitvoert zal de code pauzeren aan die lijn en zal VS in "debug modus" openspringen:
-![VS in debug mode](../assets/1_csharpbasics/debugmode.png)
+In bovenstaande figuur plaatsen we een breakpoint aan lijn 11. De code uitvoer zal dus nog wel lijn 10 uitvoeren, maar niet lijn 11.
+
+Als je nu je project uitvoert zal de code pauzeren aan die lijn en zal VS in "debug modus" openspringen wat er vervolgens als volgt uit ziet:
+![](../assets/1_csharpbasics/debugmode.png)
 
 In dit "nieuwe" scherm zijn er momenteel 2 belangrijke delen:
-* Onderaan zie je de **autos** en **locals** . In deze tabs kan je de waarden van iedere variabele in je huidige code zien op het moment van pauzeren. Ideaal om te onderzoeken waarom een bepaalde berekening of expressie niet doet wat ze moet doen
-* Bovenaan zijn enkele debug-knoppen verschenen. Deze lichten we in de volgende sectie toe
+* Onderaan zie je de **autos** en **locals** . In deze tabs kan je de waarden van iedere variabele in je huidige code zien op het moment van pauzeren. Ideaal om te onderzoeken waarom een bepaalde berekening of expressie niet doet wat ze moet doen.
+* Bovenaan zijn enkele debug-knoppen verschenen. Deze lichten we in de volgende sectie toe.
+* Voorts kan je in debug-modus kan  met je muis over eender welke variabele of expressie *hoveren* om het resultaat van dat element te bekijken wat we in volgende afbeeldingen tonen
 
-{% hint style='tip' %}
-Wanneer je gepauzeerd bent in debug-modus kan je met je muis over eender welke variabele of expressie *hoveren* om het resultaat van dat element te bekijken.
+![Kan je trouwens verklaren waarom deze deling 0 blijkbaar geeft en niet 1.667.](../assets/1_csharpbasics/debugbug.png)
 
-Kan je verklaren waarom deze deling 0 zal geven?!
-![0? Nul?! NUL?!!!](../assets/1_csharpbasics/debugbug.png)
-{% endhint %}
 
 ### Door je code steppen
 
@@ -65,19 +66,17 @@ Voorman Tim hier. Even je oren open zetten aub, ik ga iets roepen:**"Debugging i
  
  Zorg dus dat je vlot breakpoints kunt plaatsen om zo tijdens de uitvoer te pauzeren om de inhoud van je variabelen te bekijken (via het zogenaamde watch-venster). Gebruik vervolgens de "step"-buttons om door je code te 'stappen', lijn per lijn.
 
-Neem volgende korte demonstratie van debugging door: [Debugging in Visual Studio](https://tutorials.visualstudio.com/vs-get-started/debugging).
+ Is that al?!
+
+ NEEN! Een goede programmeur zal telkens **eerst voorspellen** wat er gaat gebeuren: welke waarden zullen de variabelen hebben als ik naar de volgende lijn ga? Wat gaar er op het scherm komen? Etc. Als je dan vervolgens naar de volgende lijn gaat of breakpoint gaat en er gebeuren dingen die je niet voorspeld had, dan is de kans groot dat je een bug hebt gevonden.
+
+ De grootste fout die je kunt doen is gewoon door je code te "steppen" en hopen dat de bug magisch zal tevoorschijn komen. Neen, zo werkt het dus niet. Je moet actief mee denken of dat je programma effectief op een logische manier, zoals jij het voor ogen had, werkt. 
+
+ Dit geldt trouwens ook wanneer je niet aan het debuggen bent, maar gewoon je programma uitvoert om het te testen. Eigenlijk ben je dan ook aan het debuggen. Ook dan moet je voorspellen wat het eindresultaat zal zijn en of dit overeen komt met wat er op het scherm gebeurt. **Wees kritisch!**
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->
-
-
-{% hint style='tip' %}
-Over de oorsprong van het woord *bug* en de term *debugging* is er wat onzekerheid. Maar [Wikipedia](https://en.wikipedia.org/wiki/Debugging) weet dit te vertellen:
-
-> "The terms "bug" and "debugging" are popularly attributed to Admiral Grace Hopper in the 1940s. While she was working on a Mark II computer at Harvard University, her associates discovered a moth stuck in a relay and thereby impeding operation, whereupon she remarked that they were "debugging" the system. However, the term "bug", in the sense of "technical error", dates back at least to 1878 and Thomas Edison."
-
-{% endhint %}
 
 <!---NOBOOKSTART--->
 ### Kennisclip

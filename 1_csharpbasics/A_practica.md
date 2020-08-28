@@ -71,7 +71,7 @@ Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typ
 
 
 {% hint style='warning' %}
-**Begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de waarschuwing van Voorman Tim bij Expressies zeker nog eens na... Of test eens wat er gebeurt indien je met ``int`` zou werken.
+**Begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de waarschuwing van de voorman bij Expressies zeker nog eens na... Of test eens wat er gebeurt indien je met ``int`` zou werken.
 {% endhint %}
 
 #### BTW
