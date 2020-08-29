@@ -30,8 +30,8 @@ Volgende operators kan je gebruiken [bron](https://www.tutorialspoint.com/csharp
 
 |Operator|	Beschrijving|	Voorbeeld|
 |---|---|---|
-| ``&``|	Binary AND Operator copies a bit to the result if it exists in both operands. (De Binaire AND Operator kopieerd een bit naar het resultaat indien de bit bestaat in beide factoren.) |	``(A & B) = 12``, which is 0000 1100|
-| <code>&#124;</code> |	Binary OR Operator copies a bit if it exists in either operand. (De Binaire OR Operator kopieerd een bit naar het resultaat als het in één of beide van de factoren voorkomt.) |	<code>(A &#124; B) = 61</code>, which is 0011 1101|
+| ``&``|	Binary AND Operator copies a bit to the result if it exists in both operands. (De Binaire AND Operator kopiëert een bit naar het resultaat indien de bit bestaat in beide factoren.) |	``(A & B) = 12``, which is 0000 1100|
+| <code>&#124;</code> |	Binary OR Operator copies a bit if it exists in either operand. (De Binaire OR Operator kopiëert een bit naar het resultaat als het in één of beide van de factoren voorkomt.) |	<code>(A &#124; B) = 61</code>, which is 0011 1101|
 |``^``	|Binary XOR Operator copies the bit if it is set in one operand but not both.	(De Binaire XOR Operator  kopieert en bit naar het resultaat indien het in slechts één van de twee factoren voorkomt.) |``(A ^ B) = 49``, which is 0011 0001|
 |``~``|	Binary Ones Complement Operator is unary and has the effect of 'flipping' bits. (De Binaire Ones Complement Operator is unair en 'draait de bits om'.) |	``(~A ) = -61``, which is 1100 0011 in 2's complement due to a signed binary number.|
 |``<<``	|Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand. (De Binaire Links Shift Operator. De linkse factor zijn waarde wordt naar links verschoven met dezelfde hoeveelheid als de waarde van de rechterfactor.) |	``A << 2 = 240``, which is 1111 0000|

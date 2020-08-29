@@ -23,7 +23,7 @@ static void MyIntro()
 Basic 2:
 
 ```csharp
-static void MyIntro(string name, int age, string adsress)
+static void MyIntro(string name, int age, string address)
 {
     Console.WriteLine($"Ik ben {name}, ik ben {age} jaar oud en woon in de {address}");
 }

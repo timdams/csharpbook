@@ -65,7 +65,7 @@ Voel je toch de drang: **don't!** Simpelweg, don't. Het is het niet waard. Geloo
 
 **NEVER USE GOTO**.
 
-Eneuh, ik hou je in't oog hoor!
+Enneuh, ik hou je in't oog hoor!
 
 <!---{/aside}--->
 <!---NOBOOKSTART--->
@@ -124,7 +124,7 @@ Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
 
 ### Naamgeving afspraken
 
-Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding guidelines**:
+Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding richtlijnen**:
 
 * **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever ``gewicht`` of ``leeftijd`` in plaats van ``a`` of ``meuh``.
 * **Camel casing**: gebruik camel casing indien je meerdere woorden in je identifier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn ``leeftijdTimDams`` of ``aantalLeerlingenKlas1EA``. Merk op dat we liefst het eerste woord met kleine letter starten. Uiteraard zijn er geen spaties toegelaten.

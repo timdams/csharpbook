@@ -1,6 +1,6 @@
 # Herhalingen, herhalingen, herhaling
 
-In het vorige hoofdstuk leerden we hoe we met behulp van beslissingen onze code konden aftakken (**branchen**) zodat andere code werd uitgevoerd afhankelijk van de staat van bepaalde variabelen of invoer van de gebruiker. 
+In het vorige hoofdstuk leerden we hoe we met behulp van beslissingen onze code konden aftakken (**branching**) zodat andere code werd uitgevoerd afhankelijk van de staat van bepaalde variabelen of invoer van de gebruiker. 
 
 Wat we nog niet konden was **terug naar boven** vertakken. Soms willen we dat een heel stuk code 2 of meerdere keren moet uitgevoerd worden tot aan een bepaalde conditie wordt voldaan. *"Voer volgende code uit tot dat de gebruiker 666 invoert."* 
 

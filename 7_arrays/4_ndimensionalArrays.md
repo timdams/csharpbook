@@ -1,5 +1,5 @@
 ## Meer-dimensionale Arrays
-Voorlopig hebben we enkel met zogenaamde 1-dimensionale arrays gewerkt. Je kan er echter ook meerdimensionale array maken. Denk maar aan een n-bij-m array om een matrix voor te stellen. Denk maar aan het voorbeeld aand e start van dit hoofdstuk waarin we de regenval gedurende 7 dagen wilden meten. Wat als we dit gedurende 4 weken wensen te doen, maar wel niet alle data in één lange willen plaatsen? We zouden dan een 2-dimensionale array kunnen maken als volgt:
+Voorlopig hebben we enkel met zogenaamde 1-dimensionale arrays gewerkt. Je kan er echter ook meerdimensionale array maken. Denk maar aan een n-bij-m array om een matrix voor te stellen. Denk maar aan het voorbeeld aan de start van dit hoofdstuk waarin we de regenval gedurende 7 dagen wilden meten. Wat als we dit gedurende 4 weken wensen te doen, maar wel niet alle data in één lange willen plaatsen? We zouden dan een 2-dimensionale array kunnen maken als volgt:
 
 ```csharp
 int[,] regen = {

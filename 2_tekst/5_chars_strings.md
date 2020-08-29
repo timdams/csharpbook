@@ -25,11 +25,11 @@ Ieder teken dat je op je toetsenbord kunt intypen is een ``char``. Je toetsenbor
 
 Unicode is een standaard die de zogenaamde Ascii-standaard opvolgt omdat die te klein (qua aantal bits) bleek te zijn om naar de toekomst toe de ontelbare nieuwe tekens in voor te stellen. De Ascii standaard kan 128 karakters voorstellen (mbv 7 bit), wat uiteraard in het niets valt in vergelijking met de meer dan 1 miljoen tekens in Unicode. Uiteraard heeft de Unicode-standaard die eerste 128 van Ascii als eerste gezet en zijn beide tabellen dus compatibel (Unicode is een superset van Ascii). 
 
-Voor de statistieknerds onder ons: er zijn 1,111,998 unicode karakters mogelijk. Momenteel zijn er daarvan 137,929 gedefiniëerd. We hebben dus nog wel wat plek.
+Voor de statistieknerds onder ons: er zijn 1,111,998 Unicode karakters mogelijk. Momenteel zijn er daarvan 137,929 gedefiniëerd. We hebben dus nog wel wat plek.
 
 ![De eerste 128 karakters met hun waarden (Bron Wikipedia)](../assets/1_csharpbasics/ascii.png)
 
-De eerste 1F karaters zijn "onzichtbare" karakters die een historische reden hebben om in de lijst te staan, maar sommige ervan zijn ondertussen niet meer erg nuttig. Origineel werd Ascii ontwikkeld als standaard om via de telegraaf te combineren. Vandaar dat vele van deze karakters commando's lijken om oude typemachines aan te sturen (line feed, bell, form feed, etc) want dat zijn ze dus ook effectief!
+De eerste 1F karakters zijn "onzichtbare" karakters die een historische reden hebben om in de lijst te staan, maar sommige ervan zijn ondertussen niet meer erg nuttig. Origineel werd Ascii ontwikkeld als standaard om via de telegraaf te combineren. Vandaar dat vele van deze karakters commando's lijken om oude typemachines aan te sturen (line feed, bell, form feed, etc) want dat zijn ze dus ook effectief!
 
 ## String
 Een ``string`` is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
@@ -39,7 +39,7 @@ Een ``string`` is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook 
 We gebruiken het ``string`` datatype om tekst mee voor te stellen. Je begrijpt waarschijnlijk zelf wel waarom het ``string`` datatype een belangrijk en veelgebruikt type is in eender welke programmeertaal: er zijn maar weinig applicaties die niet minstens enkele lijnen tekst vertonen (ja, zelfs Flappy Bird had tekst, of hoe denk je dat je score werd voorgesteld op het scherm?).
 
 {% hint style='tip' %}
-In deel 2 van deze boekenreeks zullen we ontdekken dat strings eigenlijk zogenaamde arrays zijn. Wat dit juist inhoudt laten we nog even lekker mystereus achterwege (ik probeer alles om je dat volgende deel te doen lezen nietwaar).
+In deel 2 van deze boekenreeks zullen we ontdekken dat strings eigenlijk zogenaamde arrays zijn. Wat dit juist inhoudt laten we nog even lekker mysterieus achterwege (ik probeer alles om je dat volgende deel te doen lezen nietwaar).
 {% endhint %}
 
 ### Strings declareren

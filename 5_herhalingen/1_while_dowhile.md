@@ -66,7 +66,7 @@ int teller = 0;
 while(teller<10)
 {
   Console.WriteLine(teller);
-  teller--;    //oops, dit had teller++ moeten zijn
+  teller--;    //oeps, dit had teller++ moeten zijn
 }
 ```
 

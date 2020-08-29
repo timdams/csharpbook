@@ -19,7 +19,7 @@ De wereld draait op data,en dus ook de meeste applicaties die wij gaan schrijven
 <!---NOBOOKEND--->
 
 Wanneer je de waarde van een variabele wilt toekennen aan een variabele van een ander type mag dit dus niet zomaar. 
-Volgende code zal bijvoorbeeld een dikke eror geven:
+Volgende code zal bijvoorbeeld een dikke error geven:
 
 ```csharp
 int age = 4.3;
@@ -195,7 +195,7 @@ var2 = (double) var1;
 ```
 
 ## Conversie
-Casting is de 'oldschool' manier van data omzetten die vooral zeer nuttig is daar deze compacte code geeft en ook werkt in andere C#-related programmeertalen zoals C, C++ en Java. 
+Casting is de 'oldschool' manier van data omzetten die vooral zeer nuttig is daar deze compacte code geeft en ook werkt in andere C#-gerelateerde programmeertalen zoals C, C++ en Java. 
 
 Echter, .NET heeft ook  ingebouwde conversie-methoden die je kunnen helpen om data van het ene type naar het andere te brengen. Het nadeel is dat ze iets meer typwerk (en dus meer code) vereisen dan bij casting. 
 

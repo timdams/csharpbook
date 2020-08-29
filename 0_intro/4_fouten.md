@@ -4,7 +4,7 @@ Je code zal pas compileren indien deze foutloos is geschreven. Herinner je dat c
 
 Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder kan. Gelukkig helpt VS je daarmee op 2 manieren:
 
-* Fouten in code worden met een rode squigly onderlijnt.
+* Fouten in code worden met een rode squiggly onderlijnt.
 * Onderaan zie je in de statusbalk of je fouten hebt.
 
 ![Zie je de fout?](../assets/0_intro/error.PNG)
@@ -20,7 +20,7 @@ Dit zal de "error list" openen (een schermdeel van VS dat we aanraden om altijd 
 
 In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correcte lijn te gaan.
 
-Zou je toch willen compileren en je hbet nog fouten dan zal VS je proberen tegen te houden. **Lees nu onmiddellijk wat de voorman hierover te vertellen heeft.**
+Zou je toch willen compileren en je hebt nog fouten dan zal VS je proberen tegen te houden. **Lees nu onmiddellijk wat de voorman hierover te vertellen heeft.**
 
 ![OPLETTEN!](../assets/0_intro/errorwarning.PNG)
 

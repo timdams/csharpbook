@@ -18,7 +18,7 @@ else
 
 ```
 
-Met een ``switch`` kan dit eenvoudiger wat we zo meteen zullen tonen. Eerst bekijken we hoe ``switch`` juist werkt. De syntax van een ``switch`` is een beetje specialer dan de andere programma flow-elementen (``if``, ``while``, etc.), namelijk als volgt:
+Met een ``switch`` kan dit eenvoudiger wat we zo meteen zullen tonen. Eerst bekijken we hoe ``switch`` juist werkt. De syntax van een ``switch`` is een beetje meer speciaal dan de andere programma flow-elementen (``if``, ``while``, etc.), namelijk als volgt:
 
 ```csharp
 switch (value)
@@ -67,7 +67,7 @@ De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Consta
 {% endhint %}
 
 
-### Falthrough
+### Fallthrough
 
 Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
 

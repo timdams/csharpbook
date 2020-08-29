@@ -1,6 +1,6 @@
 ## String en arrays
 
-Het type ``string`` is niet meer dan een arrays van karakters, ``char[]``. Het is dan ook logisch dat we dit erg belangrijke datatype even apart toelichten en enkele truukjes tonen om strings aan te passen.
+Het type ``string`` is niet meer dan een arrays van karakters, ``char[]``. Het is dan ook logisch dat we dit erg belangrijke datatype even apart toelichten en enkele nuttige methoden tonen om strings te manipuleren.
 
 ### String naar char array
 

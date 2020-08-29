@@ -29,7 +29,7 @@ Als  we je nu vragen om de gemiddelde neerslag te berekenen dan krijg je al een 
 double gemiddelde= (dag1+dag2+dag3+dag4+dag5+dag6+dag7)/7.0;
 ```
 
-Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Of een millenium?! Dat is niet werkbaar zonder een nieuw concept, dat van arrays, te introduceren. Van zodra je een bepaalde soort informatie hebt die je veelvuldig wenst te bewaren dan zijn arrays dus oplossing.
+Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Of een millennium?! Dat is niet werkbaar zonder een nieuw concept, dat van arrays, te introduceren. Van zodra je een bepaalde soort informatie hebt die je veelvuldig wenst te bewaren dan zijn arrays dus oplossing.
 
 Voorgaande lijst van 7 aparte variabelen kunnen we eenvoudiger definiëren met 1 array (we bespreken de details verderop), genaamd ``regen``:
 
@@ -37,7 +37,7 @@ Voorgaande lijst van 7 aparte variabelen kunnen we eenvoudiger definiëren met 1
 ```csharp
 int[] regen  = {34, 45, 0, 34, 12, 0, 23}; 
 ```
-![Een schematische voorstelling van een lijst van aparate variabelen en het equivalent met een arrays](../assets/5_arrays/intro.png)
+![Een schematische voorstelling van een lijst van aparte variabelen en het equivalent met een arrays](../assets/5_arrays/intro.png)
 
 Het gemiddelde berekenen kan dan als volgt:
 

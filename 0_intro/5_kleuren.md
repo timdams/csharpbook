@@ -35,7 +35,7 @@ Als je deze code uitvoert krijg je als resultaat:
 ![Resultaat voorgaande code](../assets/0_intro/kleuren.PNG)
 
 {% hint style='tip' %}
-Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen. Let er wel op dat je applicatie geen aarstlelijk, op psychedelische producten geschreven programma lijkt.
+Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen. Let er wel op dat je applicatie geen aartslelijk, op psychedelische producten geschreven programma lijkt.
 {% endhint %}
 
 ### Kleur resetten

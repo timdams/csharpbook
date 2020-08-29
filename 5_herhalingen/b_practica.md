@@ -32,7 +32,7 @@ Je houdt volgende zaken bij:
 * De som van alle positieve invoeren. Als de gebruiker dus 4, -10, 8 en -6 invoerde dan zal dit getal op +12 staan (= 4 + 8). 
 * Het gemiddelde van alle ingevoerde getallen.
 
-Deze 4 getallen worden steeds geüpdate en getoond wanneer de gebruiker een nieuw getal invoert en op enter duwt.
+Deze 4 getallen worden steeds geüpdatet en getoond wanneer de gebruiker een nieuw getal invoert en op enter duwt.
 
 #### Hoger Lager
 

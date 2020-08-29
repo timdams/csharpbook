@@ -10,7 +10,7 @@ Dit doen we met de zogenaamde **relationele operators** en **logische operators*
 
 ### Relationele operators
 
-Relationele operators zijn het hart van booleanse expressies. En guess what, je kent die al van uit het lager onderwijs ("de mond van holle bolle Gijs"). Enkel de "gelijk aan" ziet er iets anders uit dan we gewoon zijn:
+Relationele operators zijn het hart van booleaanse expressies. En guess what, je kent die al van uit het lager onderwijs ("de mond van holle bolle Gijs"). Enkel de "gelijk aan" ziet er iets anders uit dan we gewoon zijn:
 
 | Operator| Betekenis| 
 | ---------| ---------|
@@ -37,7 +37,7 @@ Er zal `false` als output op het scherm verschijnen.
 {% endhint %}
 
 {% hint style='warning' %}
-Er is een groot verschil tussen de ``=``-operator en de ``==`` operator. De eerste is de toekenningsoperator en zal de rechtse operand aan de linkse operand toewijzen. De tweede zal de linkse met de rechtse operant op gelijkheid vergelijken en een ``bool`` teruggeven.
+Er is een groot verschil tussen de ``=``-operator en de ``==`` operator. De eerste is de toekenningsoperator en zal de rechtse operand aan de linkse operand toewijzen. De tweede zal de linkse met de rechtse operand op gelijkheid vergelijken en een ``bool`` teruggeven.
 {% endhint %}
 
 ### Logische operators

@@ -11,7 +11,7 @@ Je toetsenbord heeft maar een beperkt aantal toetsen. Er zijn echter tal van and
 
 Dit gaat als volgt in z'n werk:
 
-1. Zoek het teken\(s\) dat je nodig hebt in een UNICODE-tabel \([deze is handig](https://unicode-table.com/en/)\)
+1. Zoek het teken\(s\) dat je nodig hebt in een Unicode-tabel \([deze is handig](https://Unicode-table.com/en/)\)
 2. Plaats bovenaan je Main: `Console.OutputEncoding = System.Text.Encoding.UTF8;`
 3. Je kan nu op 2 manieren dit teken in console plaatsen
 

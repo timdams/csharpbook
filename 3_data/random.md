@@ -62,7 +62,7 @@ Stel dat je een getal tussen 0.0 en 10.0 nodig hebt, dan schrijf je:
 Random myran= new Random();
 double randomgetal= myran.NextDouble() * 10.0;
 ```
-Je vermenigvuldigt eenvoudigweg je gegenereert getal met het bereik dat je wenst (10.0 in dit geval)
+Je vermenigvuldigt eenvoudigweg je gegenereerde getal met het bereik dat je wenst (10.0 in dit geval)
 
 En wat als je een kommagetal tussen 5.0 en 12.5 wenst?  Als volgt:
 ```csharp

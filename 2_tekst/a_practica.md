@@ -92,7 +92,7 @@ Test dat je rekening klopt om gebaseerd op 2 (of 3) ringen de weerstandswaarde t
 
 ##### Deel 2
 
-Plaats het geheel in een mooie UNICODE-tabel
+Plaats het geheel in een mooie Unicode-tabel
 
 Hier enkele nuttige tekens:
 

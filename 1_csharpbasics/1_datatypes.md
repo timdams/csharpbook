@@ -113,7 +113,7 @@ Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken ter
 {% endhint %}
 
 ### Tekst/String datatype
-We besteden verderop een heel apart hoofdstuk aan tonen hoe je tekst en enkele karakters kan bewaren in variabelen. Sneak preview: 
+We besteden verderop een heel apart hoofdstuk aan tonen hoe je tekst en enkele karakters kan bewaren in variabelen. Sneakpreview: 
 * Tekst kan bewaard worden in het ``string`` datatype
 * Een enkel karakter wordt bewaard in het ``char`` datatype dat we ook hierboven al even hebben zien passeren.
 

@@ -110,7 +110,7 @@ Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zul
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Gegroet! Zet je helm op en let alsjebelieft goed op. Als je het volgende stuk goed begrijpt (en blijft begrijpen) dan heb je al een grote stap vooruit gezet in de wondere wereld van C#. 
+Gegroet! Zet je helm op en let alsjeblieft goed op. Als je het volgende stuk goed begrijpt (en blijft begrijpen) dan heb je al een grote stap vooruit gezet in de wondere wereld van C#. 
 
 We vertelden al dat variabelen het hart van programmeren zijn. Wel, expressies zijn het bloedvatensysteem dat ervoor zorgt dat al je variabelen ook effectief gecombineerd kunnen worden tot wondermooie nieuwe dingen. 
 

@@ -27,7 +27,7 @@ In dit boek zullen de voorbeelden steeds met de **Community** editie van VS gema
 
 Het is belangrijk bij de installatie dat je minimaal volgende zaken selecteert:
 * de **.NET desktop development** en **.NET Core cross-platform development**  workload. 
-* bij individual components de "**Class Designer**" aanduiden
+* bij "individual components" de "**Class Designer**" aanduiden
 
 Uiteraard ben je vrij om meerdere zaken te installeren.
 
@@ -62,7 +62,7 @@ We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
 {% endhint %}
 
-In dit boek zullen we altijd het  Project Type  **Console App (.NET Core)** gebruiken. Een console applicatie is een programma dat alle uitvoer naar een zogenaamde ‘console’ stuurt, een shell. M.a.w., je kan enkel tekst (Unicode) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
+In dit boek zullen we altijd het  Project Type  **Console App (.NET Core)** gebruiken. Een console applicatie is een programma dat alle uitvoer naar een zogenaamde *console* stuurt, een shell. M.a.w., je kan enkel tekst (Unicode) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
 
 Kies dit type en klik 'Next'.
 
@@ -131,7 +131,7 @@ Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af 
 
 ### Is dit alles?
 
-Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als gehoopt? Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in het linkermenu om verder te lezen [https://tutorials.visualstudio.com/vs-get-started/intro](https://tutorials.visualstudio.com/vs-get-started/intro)).
+Nee hoor. Visual Studio is lekker groot, maar laat je dat niet afschrikken. Net zoals voor het eerst op een nieuwe reisbbestemming komen, kan deze in het begin overweldigend zijn, tot je weet waar het zwembad en de pingpongtafel staat en je van daaruit je weg stilletjes aan leert kennen.
 
 <!---NOBOOKSTART--->
 

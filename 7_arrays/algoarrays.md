@@ -114,5 +114,5 @@ else
 ```
 
 {% hint style='tip' %}
-Dat was het? Er zijn tal van andere algoritmes. Denk maar aan de verschillende manieren om arrays te sorteren (bijvoorbeeld de fameuze ``bubblesort`` en ``quicksort`` algoritmes). Al deze algortimes hier bespreken zou een boek apart vereisen. We toonden daarom enkele ter illustratie.
+Dat was het? Er zijn tal van andere algoritmes. Denk maar aan de verschillende manieren om arrays te sorteren (bijvoorbeeld de fameuze ``bubblesort`` en ``quicksort`` algoritmes). Al deze algoritmes hier bespreken zou een boek apart vereisen. We toonden daarom enkele ter illustratie.
 {% endhint %}

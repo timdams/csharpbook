@@ -141,7 +141,7 @@ string zonderAt = "C\\Temp\\Myfile.txt";
 string metaAt = @"C\Temp\Myfile.txt";
 ```
 
-Merk op dat aanhalingstekens nog steeds ge-escape'd moeten worden. Heb je dus een stuk tekst met een aanhalingsteken in dan zal je zonder het apenstaartje moeten werken.
+Merk op dat aanhalingstekens nog steeds *ge-escape'd* moeten worden. Heb je dus een stuk tekst met een aanhalingsteken in dan zal je zonder het apenstaartje moeten werken.
 
 ## Optellen van char variabelen
 
@@ -172,6 +172,6 @@ dan zal de compiler deze twee waarden letterlijk optellen en het nieuw verkregen
 
 
 {% hint style='tip' %}
-Je zou misschien verwachten dat C# vervolgens het element op plaats 131 in de unicode tabel zou tonen. Dat is niet zo: omdat de ``+`` operator niet is gedefinieerd voor het ``char`` datatype maar wel voor het ``int`` datatype, besluit de compiler om de twee operanden (``letter1`` en ``letter2``) als ``int`` operanden te hanteren. Aangezien ``int+int`` een ``int`` als resultaat geeft, krijgen we dus ``131`` op het scherm en niet het Unicode element 131 ``ƒ`` (we zien verderop hoe je dit wel kunt doen).
+Je zou misschien verwachten dat C# vervolgens het element op plaats 131 in de Unicode tabel zou tonen. Dat is niet zo: omdat de ``+`` operator niet is gedefinieerd voor het ``char`` datatype maar wel voor het ``int`` datatype, besluit de compiler om de twee operanden (``letter1`` en ``letter2``) als ``int`` operanden te hanteren. Aangezien ``int+int`` een ``int`` als resultaat geeft, krijgen we dus ``131`` op het scherm en niet het Unicode element 131 ``ƒ`` (we zien verderop hoe je dit wel kunt doen).
 {% endhint %}
 

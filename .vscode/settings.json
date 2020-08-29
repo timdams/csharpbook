@@ -1,2 +1,22 @@
 {
+    "cSpell.ignoreWords": [
+        "arduino",
+        "char",
+        "framework",
+        "height",
+        "hello",
+        "length",
+        "lightweight",
+        "nobookend",
+        "nobookstart",
+        "notepad",
+        "o",
+        "visual",
+        "void",
+        "width"
+    ],
+    "cSpell.words": [
+        "false",
+        "true"
+    ]
 }

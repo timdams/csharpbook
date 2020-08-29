@@ -63,7 +63,7 @@ Je geef aan dat een parameter optioneel is door deze een default waarde te geven
 
 **Optionele parameters worden steeds achteraan de parameterlijst van de methode geplaatst** .
 
-In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters (``optName`` en ``age``) optioneel zijn door er met de toekenninsoperator een default waarde aan te geven:
+In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters (``optName`` en ``age``) optioneel zijn door er met de toekenningsoperator een default waarde aan te geven:
 ```csharp
 
 static void BookFile(int required, string optName = "unknown", int age = 10)
@@ -185,7 +185,7 @@ static void Toonverhouding(double a, int b) //versie B
 
 Indien ook die regel niet werkt dan zal een fout optreden zoals hier wat zal resulteren in een fout:
 
-![We zien aan de foutboodschap duidelijk dat er eerst naar de eerste parameter wordt gekeken bij twijel.](../assets/4_methoden/overl.png)
+![We zien aan de foutboodschap duidelijk dat er eerst naar de eerste parameter wordt gekeken bij twijfel.](../assets/4_methoden/overl.png)
 
 ```csharp
 static void Main(string[] args)

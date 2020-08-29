@@ -10,7 +10,7 @@ In C# heb je twee soorten variabelen die we nu kort toelichten maar in het volge
 * **Reference** types: deze variabelen bewaren een geheugenadres naar een andere plek in het geheugen waar de effectieve waarde(n) van de variabele te vinden is. Reference types zijn als het ware een wegwijzer en worden ook soms *pointers* genoemd.
 
 {% hint style='tip' %}
-Alle datatypes die we tot nog toe zagen (``string`` is een speciaal geval en negeren we om nachtmeries te vermijden) werken steevast *by value*. Momenteel zijn het enkel arrays die we kennen die *by reference* werken in C#. In het volgende deel zullen we zien dat er echter nog een hele hoop andere mysterieuze dingen (genaamd *objecten*) zijn die ook *by reference* werken.
+Alle datatypes die we tot nog toe zagen (``string`` is een speciaal geval en negeren we om nachtmerries te vermijden) werken steevast *by value*. Momenteel zijn het enkel arrays die we kennen die *by reference* werken in C#. In het volgende deel zullen we zien dat er echter nog een hele hoop andere mysterieuze dingen (genaamd *objecten*) zijn die ook *by reference* werken.
 {% endhint %}
 
 ### Arrays kopiëren

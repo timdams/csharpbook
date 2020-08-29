@@ -41,7 +41,7 @@ Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scher
 
 ### if met een block
 
-Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.**
+Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleaanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.**
 
 Een voorbeeld:
 ```csharp
@@ -53,11 +53,6 @@ if ( number < 5 )
 ```
 
 ![Accolades zijn duidelijk belangrijk](../assets/2_beslissingen/iffflowblock.png)
-
-
-{% endhint %}
-
-
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -88,7 +83,7 @@ if ( number < 5 )
 
 Merk ook op dat je code anders uitlijnen géén invloed heeft op de uitvoer (wat bijvoorbeeld wel zo is bij de programmeertaal Python).
 
-**Een puntkomma plaatsen na de booleanse expressie.** 
+**Een puntkomma plaatsen na de booleaanse expressie.** 
 
 Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de ``if`` hoort en je dus een nietszeggende ``if`` hebt geschreven. De code na het puntkomma zal uitgevoerd worden ongeacht de ``if``:
 
@@ -105,7 +100,7 @@ if ( number < 5 );
 
 ### Gebruik relationele en logische operators
 
-We kunnen ook meerdere booleanse expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operators (``&&``, ``||``, ``!``) .
+We kunnen ook meerdere booleaanse expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operators (``&&``, ``||``, ``!``) .
 
 Een voorbeeld:
 
@@ -165,7 +160,7 @@ else
 ![Flowchart van bovenstaande code](../assets/2_beslissingen/ifelseflow.png)
 
 {% hint style='warning' %}
-Een veel gemaakte fout is bij de ``else`` sectie ook een booleanse expressie plaatsen. Dit kan niet: de ``else`` sectie zal gewoon uitgevoerd worden indien de ``if`` sectie NIET uitgevoerd werd. 
+Een veel gemaakte fout is bij de ``else`` sectie ook een booleaanse expressie plaatsen. Dit kan niet: de ``else`` sectie zal gewoon uitgevoerd worden indien de ``if`` sectie NIET uitgevoerd werd. 
 
 Volgende code MAG DUS NIET:
 ```csharp

@@ -27,7 +27,7 @@ Dit document staat ook in de lijst onderaan bij de [nuttige extra's](../_intro/n
 1. Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken de som en druk die af.
 2. Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Druk het aantal strikt positieve en het aantal strikt negatieve getallen af.
 3. Lees een willekeurig aantal getallen in met als afsluitwaarde -32768. Bepaal het aantal strikt positieve getallen, het aantal strikt negatieve getallen en het aantal getallen gelijk aan nul. Druk deze aantallen af.
-4. Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken het produkt en druk dit af.
+4. Lees een willekeurig aantal getallen in met als afsluitwaarde 0. Bereken het product en druk dit af.
 5. Lees een getal in en druk de som van zijn cijfers af.
 6. Lees een willekeurig aantal positieve getallen in en bereken het (afgekapt) gemiddelde ervan. De afsluitwaarde is een willekeurig negatief getal.
 7. Lees een willekeurig aantal getallen in met afsluitwaarde -32768. Druk het kleinste getal af en het aantal keer dat het voorkomt.
