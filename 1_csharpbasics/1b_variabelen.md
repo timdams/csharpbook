@@ -191,7 +191,6 @@ double kdRating = 3.4;
 ```
 
 ![De foutboodschap vertelt duidelijk wat het probleem is.](../assets/1_csharpbasics/kdratingexists.jpg)
-{% endhint %}
 
 Lijn 3 moet dus worden:
  

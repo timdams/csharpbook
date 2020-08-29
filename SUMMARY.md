@@ -10,7 +10,7 @@
 
 ## Semester 1: Programming Principles
 
-* H0: Werken met Visual Studio
+* H1: De eerste stappen
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
@@ -18,13 +18,13 @@
   * [Fouten in je code](0_intro/4_fouten.md)
   * [Kleuren in Console](0_intro/5_kleuren.md)
   * [_Oefeningen](0_intro/A_Practica.md)
-* H1: Variabelen en datatypes
+* H2: De basisconcepten van C#
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Variabelen](1_csharpbasics/1b_variabelen.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
   * [_Oefeningen](1_csharpbasics/A_practica.md)
-* H2: Tekst in code
+* H3: Tekst gebruiken in code
   * [Strings en chars](2_tekst/5_chars_strings.md)
   * [Escape characters](2_tekst/escapechars.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
@@ -32,14 +32,14 @@
   * [Environment bibliotheek](2_tekst/8_environment.md) 
   * [Je applicatie delen](2_tekst/delen.md)
   * [_Oefeningen](2_tekst/a_practica.md)
-* H3: Werken met data
+* H4: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
   * [Math-library en berekeningen](3_data/4c_math.md)
   * [Random](3_data/random.md)
   * [Debuggen](3_data/5_debuggen.md)
   * [_Oefeningen](3_data/A_Practica.md)
-* H4: Beslissingen
+* H5: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)
   * [Booleanse logica en operators](4_beslissingen/1_logic_and_relationsoperator.md)
   * [If](4_beslissingen/0_if.md)
@@ -53,7 +53,7 @@
   * [Opgave 3: vaardigheidsproef deel 18-19](EindeTests/Mod1/Opgave_1819.md)
   * [Bespreking en oplossing Opgave 2](EindeTests/Mod1/Oplossing_1920.md)
   * [Bespreking en oplossing Opgave 3](EindeTests/Mod1/Oplossing_1819.md)
-* H5: Loops
+* H6: Herhalingen, herhalingen, herhalingen
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
   * [For](5_herhalingen/2_for.md)
@@ -61,13 +61,13 @@
   * [_Oefeningen deel 1](5_herhalingen/A_practica.md)
   * [_Oefeningen deel 2](5_herhalingen/c_practica.md)
   * [_Oefeningen deel 3](5_herhalingen/b_practica.md)
-* H6: Methoden
+* H7: Methoden
   * [Methoden intro](6_methoden/0_intromethods.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Geavanceerde methodetechnieken](6_methoden/3_advancedmethod.md)  
   * [_Oefeningen deel 1](6_methoden/b_practica.md)
   * [_Oefeningen deel 2](6_methoden/c_practica.md)
-* H7: Arrays
+* H8: Arrays
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Arrays en geheugen](7_arrays/arraysgeheugen.md)
   * [System.Array](7_arrays/systemarray.md)
@@ -91,25 +91,25 @@
 
 ## Semester 2 : OOP
 
-* H8: Klassen en objecten
+* H9: Klassen en objecten
   * [OOP Intro](8_klassen/0_oop_intro.md)
   * [Klassen en objecten in C#](8_klassen/0b_oopincs.md)
   * [Methoden en access modifiers](8_klassen/0c_simpleobjects.md)
   * [Properties](8_klassen/2_properties.md)
   * [DateTime: leren werken met objecten](8_klassen/datetime.md)
   * [_Oefeningen](8_klassen/A_practica.md)
-* H9: Geheugenmanagement bij klassen
+* H10: Geheugenmanagement bij klassen
   * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
   * [Stack en Heap](9_meminoop/6_memorymanagement.md)
   * [Null en NullReferenceException](9_meminoop/nullreference.md)
   * [_Oefeningen](9_meminoop/A_poke1.md)
-* H10: Advanced klassen en objecten
+* H11: Advanced klassen en objecten
   * [Default Constructors](10_advancedklassen/1_constructors.md)
   * [Overloaded Constructors](10_advancedklassen/2_overloadedconstructor.md)
   * [Object Initializer Syntax](10_advancedklassen/2_objectinitsyntax.md)
   * [Static](10_advancedklassen/5_static.md)
   * [_Oefeningen](10_advancedklassen/A_practica3.md)
-* H11: Arrays en klassen
+* H12: Arrays en klassen
   * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
   * [Foreach en var](11_arraysvanklassen/3_foreach.md)
   * [List](11_arraysvanklassen/4_list.md)
@@ -124,37 +124,37 @@
   * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
   * [Bespreking vaardigheidsproef mod 3 1819](EindeTests/Mod3/Oplossing_1819.md)
   * [Opgave vaardigheidsproef mod 3 1920](EindeTests/Mod3/Opgave_1920.md)
-* H12: Overerving
+* H13: Overerving
   * [Overerving intro](12_overerving/0_overerving_intro.MD)
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
   * [Virtual en override](12_overerving/1_virtual_override.md)
   * [Base keyword](12_overerving/2_base.md)
   * [_Oefeningen](12_overerving/A_PracticaSimpel.md)
   * [_Corona Missie](12_overerving/coronamissieoverering.md)
-* H13: Advanced overerving
+* H14: Advanced overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
   * [_Oefeningen](13_advancedovererving/A_Practica.md)
   * [_Corona Missie](13_advancedovererving/coronamissie.md)
-* H14: Compositie
+* H15: Compositie
   * [Compositie](14_compositie/0_compositie_intro.MD)
   * [_Oefeningen](14_compositie/A_PracticaComp.md)
   * [_Corona Missie](14_compositie/coronamissie.md)
-* H15: Polymorfisme
+* H16: Polymorfisme
   * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
   * [Polymorfisme in de praktijk](15_polymorfisme/polypraktijd.md)
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Objecten vergelijken: alles komt samen](18_IsAs/6_equals.md)
   * [_Oefeningen](15_polymorfisme/A_Practica.md)
   * [_Corona Missie](15_polymorfisme/coronamissie.md)
-* H16: Interfaces
+* H17: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
   * [Interfaces voorbeeld met president](16_interfaces/presidentinterfaces.md)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Final chapter: we brengen alles samen](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [_Oefeningen](16_interfaces/A_practica.md)
   * [_Corona Missie](16_interfaces/coronamissie.md)
-* H17: Exception handling
+* H18: Exception handling
   * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
   * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
   * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)

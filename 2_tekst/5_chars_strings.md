@@ -19,7 +19,7 @@ Je kan eender welk [Unicode-teken](https://en.wikipedia.org/wiki/Unicode) in een
 
 Merk dus op dat volgende lijn: ``char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal.
 
-# Unicode en Ascii
+## Unicode en Ascii
 
 Ieder teken dat je op je toetsenbord kunt intypen is een ``char``. Je toetsenbord bevat echter maar een kleine selectie van alle mogelijkheden (vergelijk jouw toetsenbord bijvoorbeeld maar eens met dat van iemand in Rusland of China).
 
@@ -31,7 +31,7 @@ Voor de statistieknerds onder ons: er zijn 1,111,998 unicode karakters mogelijk.
 
 De eerste 1F karaters zijn "onzichtbare" karakters die een historische reden hebben om in de lijst te staan, maar sommige ervan zijn ondertussen niet meer erg nuttig. Origineel werd Ascii ontwikkeld als standaard om via de telegraaf te combineren. Vandaar dat vele van deze karakters commando's lijken om oude typemachines aan te sturen (line feed, bell, form feed, etc) want dat zijn ze dus ook effectief!
 
-### String
+## String
 Een ``string`` is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
 
 ![IntelliSense is de krachtige technologie in VS die je behulpzame informatie geeft tijdens het programmeren](../assets/1_csharpbasics/stringenchars.png)
@@ -42,7 +42,7 @@ We gebruiken het ``string`` datatype om tekst mee voor te stellen. Je begrijpt w
 In deel 2 van deze boekenreeks zullen we ontdekken dat strings eigenlijk zogenaamde arrays zijn. Wat dit juist inhoudt laten we nog even lekker mystereus achterwege (ik probeer alles om je dat volgende deel te doen lezen nietwaar).
 {% endhint %}
 
-#### Strings declareren
+### Strings declareren
 Merk op dat we bij een ``string`` literal gebruik maken van aanhalingstekens (`"`) terwijl bij een ``char`` literal we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te onderscheiden (naast het feit dat een string uit meer dan 1 element kan bestaan uiteraard)
 
 Volgende uiterst boeiende code geeft drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer gaat het om het een ``char`` (enkelvoudig teken), dan een een ``string`` (reeks van tekens) en dan een ``int`` (effectief getal):
