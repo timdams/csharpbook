@@ -11,7 +11,7 @@ Er zijn tal basistypes in C# gedeclareerd (zogenaamde **primitieve datatypes**).
 * Kommagetallen: `double, float, decimal`
 * Tekst: `char, string`
 * Booleans: `bool`
-* Enums (een speciaal soort datatype dat een beetje een combinatie van meerdere datatypes is én dat je zelf deels kan definieren.)
+* Enums (een speciaal soort datatype dat een beetje een combinatie van meerdere datatypes is én dat je zelf deels kan definiëren.)
 
 
 Ieder datatype wordt gedefinieerd door minstens volgende eigenschappen:

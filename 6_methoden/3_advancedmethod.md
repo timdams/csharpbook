@@ -23,7 +23,7 @@ Zonder named parameters zou een aanroep van deze methode als volgt kunnen zijn:
 PrintDetails("Gift Shop", 31, "Red Mug");
 ```
 
-We kunnen named parameters aangeven door de naam van de parameter gevolg door een dubbel punt en de waarde. Als we dus bovenstaande methode willen aanroepen kan dat ook als volgt met named parameters:
+We kunnen named parameters aangeven door de naam van de parameter gevolgd door een dubbel punt en de waarde. Als we dus bovenstaande methode willen aanroepen kan dat ook als volgt met named parameters:
 
 ```csharp
  PrintDetails(orderNum: 31, product: "Red Mug", seller: "Gift Shop");
@@ -34,14 +34,12 @@ We kunnen named parameters aangeven door de naam van de parameter gevolg door ee
  PrintDetails(product: "Red Mug", seller: "Gift Shop", orderNum: 31);
  ```
 
-Kortom, op deze manier maakt de volgorde van parameter niets uit. Dit werkt enkel als je **alle** parameters als zo gebruikt. Z
+Kortom, op deze manier maakt de volgorde van parameter niets uit. Dit werkt enkel als je **alle** parameters zo gebruikt.
 
 #### Named en unnamed mixen: volgorde wél belangrijk
 
-Je mag echter ook een combinatie doen van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).
+Je mag echter ook een combinatie gebruiken van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren). 
 
-
-{% hint style='tip' %}
 Enkele **geldige** voorbeelden:
 ```csharp
 PrintDetails("Gift Shop", 31, product: "Red Mug");
@@ -55,7 +53,7 @@ PrintDetails(product: "Red Mug", 31, "Gift Shop");
 PrintDetails(31, seller: "Gift Shop", "Red Mug");
 PrintDetails(31, "Red Mug", seller: "Gift Shop");
 ```
-{% endhint %}
+
 
 ### Optionele parameters
 
@@ -65,18 +63,16 @@ Je geef aan dat een parameter optioneel is door deze een default waarde te geven
 
 **Optionele parameters worden steeds achteraan de parameterlijst van de methode geplaatst** .
 
-#### Voorbeeld optionele parameters
-
-In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters (``optName`` en ``age``) optioneel zijn:
+In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters (``optName`` en ``age``) optioneel zijn door er met de toekenninsoperator een default waarde aan te geven:
 ```csharp
 
 static void BookFile(int required, string optName = "unknown", int age = 10)
 ```
 
-Volgende manieren zijn nu geldige manieren om de methode aan te roepen:
+Wanneer nu een parameter niet wordt meegegeven, dan zal deze default waarde in de plaats gebruikt worden. Volgende manieren zijn nu geldige manieren om de methode aan te roepen:
 ```csharp
-BookFile(15, "tim", 25); //klassieke aanroep
-BookFile(20, "dams"); //age zal 10 zijn
+BookFile(15, "tim", 25); //klassieke aanroep, age zal 25 zijn, optName zal "tim" zijn
+BookFile(20, "dams"); //age zal 10 zijn, optName "dams"
 BookFile(35); //optName zal "default string" en age zal 10 zijn
 ```
 
@@ -96,7 +92,7 @@ BookFile(3, age: 4);
 
 ### Method overloading
 
-Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere parameters qua datatype en aantal*. De compiler zal dan zelf bepalen welke methode moet aangeroepen worden gebaseerd op het aantal en type parameters dat je meegeeft.
+Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere parameters qua datatype en aantal*. De compiler zal dan zelf bepalen welke versie moet aangeroepen worden gebaseerd op het aantal en type parameters dat je meegeeft.
 
 Volgende methoden zijn overloaded:
 
@@ -116,8 +112,8 @@ static int ComputeArea(int radius)
 
 Afhankelijk van de aanroep zal dus de ene of andere uitgevoerd worden. Volgende code zal dus werken:
 ```csharp
-            Console.WriteLine($"Rechthoek: {ComputeArea(5, 6)}");
-            Console.WriteLine($"Circle: {ComputeArea(7)}");
+Console.WriteLine($"Rechthoek: {ComputeArea(5, 6)}");
+Console.WriteLine($"Circle: {ComputeArea(7)}");
 ```
 
 #### Betterness rule
@@ -140,7 +136,7 @@ static int ComputeArea(double radius) //versie B
 }
 ```
 
-Volgende aanroepen zullen dus als volgt uitgevoerd worden:
+Volgende aanroepen zullen dus als volgt uitgevoerd worden, gebaseerd op de betterness rule:
 
 ```csharp
 Console.WriteLine($"Circle 1: {ComputeArea(7)}"); //versie A
@@ -148,7 +144,7 @@ Console.WriteLine($"Circle 2: {ComputeArea(7.5)}"); //versie B
 Console.WriteLine($"Circle 3: {ComputeArea(7.3f)}"); //versie B
 ```
 
-De betterness rule is als volgt:
+Volgende tabel geeft de betternes rule weer. In de linkse kolom staat het datatype van de parameter die wordt meegegeven. De rechtse kolom toont welk datatype het argument in de methodesignatuur meer voorkeur heeft van links naar rechts.
 
 | Paramatertype  | Voorkeur van meeste voorkeur naar minste |
 | ---------- | --------------- | 
@@ -163,9 +159,9 @@ De betterness rule is als volgt:
 | ``float`` | ``double`` |
 | ``char`` | ``ushort, int, uint, long, ulong, float, double, decimal`` |
 
-Als je dus bijvoorbeeld een parameter van het type ``int`` meegeeft bij een methode aanroep (eerste kolom), dan zal een ``long`` geprefereerd worden boven een ``float``, enz.
+Als je dus bijvoorbeeld een parameter van het type ``int`` meegeeft bij een methode aanroep (eerste kolom), dan zal een methode waar het argument een``long`` verwacht geprefereerd worden boven een methode die voor datzelfde argument een ``float`` verwacht, enz.
 
-Indien de betterness regel niet werkt, dan zal de eerste parameter bepalen wat er gebruikt wordt. Dat zien we in volgende voorbeeld:
+Indien de betterness rule niet werkt, dan zal de eerste parameter bepalen wat er gebruikt wordt. Dat zien we in volgende voorbeeld:
 
 ```csharp
 static void Main(string[] args)
@@ -187,9 +183,9 @@ static void Toonverhouding(double a, int b) //versie B
 }
 ```
 
-Indien ook die regel niet werkt dan zal een error optreden zoals hier wat zal resulteren in een fout:
+Indien ook die regel niet werkt dan zal een fout optreden zoals hier wat zal resulteren in een fout:
 
-![We zien aan de foutboodschap duidelijk dat er eerst naar de eerste parameter wordt gekeken bij twijel](../assets/4_methoden/overl.png)
+![We zien aan de foutboodschap duidelijk dat er eerst naar de eerste parameter wordt gekeken bij twijel.](../assets/4_methoden/overl.png)
 
 ```csharp
 static void Main(string[] args)

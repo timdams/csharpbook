@@ -87,7 +87,7 @@ Laat je niet afschrikken door wat er nu volgt. Ik gooi je even in het diepe gede
 ![](../assets/care.png)
 Jawadde...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Ik snap het zelf ook niet. Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
 
-Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
+Laat deze info rustig inzinken en onthoud alvast volgende belangrijke zaken:
 
 * Al je eigen code komt momenteel enkel tussen de ``Main`` accolades.
 * Eindig iedere lijn code daar met een puntkomma ( ; ).

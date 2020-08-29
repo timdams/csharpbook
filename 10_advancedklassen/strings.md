@@ -39,17 +39,6 @@ string joined = String.Join(";", gesplitst);
 
 Voorgaande methoden zijn ``static`` en moet je dus via de klasse ``String`` doen en niet via de objecten zelf.
 
-## Andere nuttige methoden
-
-
-Volgende methoden kan je rechtstreeks op de string-objecten aanroepen (i.e. niet ``static`` methoden)
-
-* ``int Length``: geeft totaal aantal karakters in de string
-* ``IndexOf(string para)``: geeft ``int`` terug die de index bevat waar de string die je als parameter meegaf begint
-* ``Trim()``: verwijdersd alle onnodige spaties vooraan en achteraan de string en geeft de opgekuiste string terug
-* ``ToUpper()``: zal de meegegeven string naar ALLCAPS omzetten en geeft de nieuwe string als resultaat terug
-* ``ToLower()``: idem maar dan naar kleine letters
-* ``Replace(string old, string news)``: zal in de string alle substring die gelijk zijn aan ``old`` vervangen door de meegegeven ``news`` string
 
 ## Arrays vergelijken
 

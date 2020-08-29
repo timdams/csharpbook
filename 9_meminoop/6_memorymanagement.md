@@ -52,7 +52,7 @@ Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, in
 
 ## = operator bij value types
 
-Wanneer we een value-type willen kopieren dan kopieren de echte waarde:
+Wanneer we een value-type willen kopiëren dan kopiëren de echte waarde:
 
 ```csharp
 int getal=3;
@@ -89,7 +89,7 @@ Na methode 5
 * arrays
 
 ## = operator bij reference types
-Wanneer we de = operator gebruiken bij een reference type dan kopieren we de referentie naar de waarde, niet de waarde zelf.
+Wanneer we de = operator gebruiken bij een reference type dan kopiëren we de referentie naar de waarde, niet de waarde zelf.
 
 ### Bij objecten
 

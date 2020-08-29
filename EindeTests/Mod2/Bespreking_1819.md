@@ -54,7 +54,7 @@ else if(raad > juist)
 }
 ```
 
-Je kan dit reduceren tot 1 ``if(raad!=juist)`` en dus niet je code moet kopieren.
+Je kan dit reduceren tot 1 ``if(raad!=juist)`` en dus niet je code moet kopiëren.
 
 ## Onnodige check
 
