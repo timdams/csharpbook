@@ -6,12 +6,12 @@ Je kan parameters op 2 manieren by reference doorgeven:
 
 Je geeft parameters by reference door door het keyword ref voor de parameter in kwestie te zetten, zowel in de methode-declaratie als in de aanroep van de methode zelf.
 
-**Opgelet**:Het dient opgemerkt te worden dat parameters by reference doorgeven vaak tot problemen kan leiden indien je niet goed oplet, daar je rechtstreeks werkt met geheugenlocaties. Als je bijvoorbeeld verkeerdelijk een referentie optelt bij een value dan krijg je een nieuwe referentie die echter naar, mogelijk, een onbestaand stuk geheugen wijst. De ontwikkelaars van Visual Studio raden het gebruik van ref en out dan ook af, zeker indien je een beginnende programmeur bent. .
+**Opgelet**:Het dient opgemerkt te worden dat parameters by reference doorgeven vaak tot problemen kan leiden indien je niet goed oplet, daar je rechtstreeks werkt met geheugenlocaties. Als je bijvoorbeeld verkeerdelijk een referentie optelt bij een value dan krijg je een nieuwe referentie die echter naar, mogelijk, een onbestaand stuk geheugen wijst. De ontwikkelaars van Visual Studio raden het gebruik van ``ref`` en ``out`` dan ook af, zeker indien je een beginnende programmeur bent. .
 
-#Out en ref
-Via de keywords out en ref kunnen we parameters by reference dooregeven (ipv by value), het verschil daarbij is:
+# Out en ref
+Via de keywords ``out`` en ``ref`` kunnen we parameters by reference doorgeven (ipv by value), het verschil daarbij is:
 * ``ref``: de parameter bevat reeds een waarde wanneer deze naar de methode wordt gestuurd
-* ``out``: de parameter bevat nog geen parameter en er wordt verwacht dat deze een waarde krijgt in de methode 
+* ``out``: de parameter bevat nog geen waarde en er wordt verwacht dat deze een waarde krijgt in de methode zelf 
 
 Het verschil tussen het gebruik van ``out`` of ``ref`` keyword tonen we aan in het volgende voorbeeld. 
 
@@ -32,7 +32,7 @@ Dan krijgen we volgende, terechte, foutmelding:
 
 ![Deze foutboodschap zal je nog al zijn tegengekomen](../assets/4_methoden/outref1.png)
 
-Door nu het out keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen.
+Door nu het ``out`` keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen.
 
 We zouden dus ons programma kunnen herschrijven met deze parameter. Hierbij moeten we ons ervan vergewissen dat we zeker de parameter getal2 een waarde toekennen in de methode!
 
@@ -59,7 +59,7 @@ static void Main(string[] args)
 
 Dit geeft terug als output:
 
-```
+```text
 Getal1 bedraagt in method:6
 Getal2 bedraagt in method:12
 Eerste bedraagt na method:5
@@ -115,11 +115,13 @@ De types ``int``, ``double``, ``float`` etc hebben allemaal een ``TryParse`` met
 ```csharp
 bool gelukt = int.TryParse(invoer,out int leeftijd);
 ```
+
 De methode ``TryParse`` zal de string in de eerste parameter (``invoer`` in dit voorbeeld) trachten naar een ``int`` te converteren. Als dit lukt dan zal het resultaat in de variabele ``int leeftijd`` geplaatst worden. Merk op dat we ``out`` voor de parameter moeten zetten zoals we ook hierboven hebben gezien. 
 
-Het return resultaat van de methode is ``bool```: indien de conversie gelukt is dan zal deze ``true`` teruggeven, anders ``false``.
+Het return resultaat van de methode is ``bool``: indien de conversie gelukt is dan zal deze ``true`` teruggeven, anders ``false``.
 
 We kunnen nu onze applicatie herschrijven en minder foutgevoelig maken voor slechte invoer van de gebruiker:
+
 ```csharp
 Console.WriteLine("Geef je leeftijd");
 string invoer = Console.ReadLine();
@@ -150,7 +152,7 @@ do
 
 //enkel verdergaan van zodra temperatuur een geldige waarde heeft gekregen
 ```
-> Let er op dat de scope hier van belang is: ``invoer`` en ``temperatuur`` moet gekend zijn buiten de loop waar technisch gezien ook de ``TryParse`` zal gebeuren. 
 
-
-[Meer info en voorbeelden over TryParse nodig?](https://www.dotnetperls.com/parse)
+{% hint style='tip' %}
+Let er op dat de scope hier van belang is: ``invoer`` en ``temperatuur`` moet gekend zijn buiten de loop waar technisch gezien ook de ``TryParse`` zal gebeuren. 
+{% endhint %}

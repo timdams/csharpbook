@@ -47,7 +47,7 @@ Vaak wil je meer complexe keuzes maken ("ga verder indien ik honger heb EN genoe
 | Operator| Betekenis| Werking|
 | ---------|---------|---------|
 | ``&&`` | EN | Geeft enkel ``true`` als beide operands ``true`` zijn|
-| ``||`` | OF| Geeft  ``true`` indien minstens 1 operand ``true`` is|
+| <code>&#124;&#124;</code> | OF| Geeft  ``true`` indien minstens 1 operand ``true`` is|
 | ``!``  | NIET| inverteert de waarde van de expressie (``true`` wordt ``false en omgekeerd)
 
 De logische operators geven ook steeds een ``bool`` terug maar verwachten enkel operanden van het type **``bool``**. Als je dus schrijft ``true||false``  ("true OF false") zal het resultaat ``true`` zijn.
