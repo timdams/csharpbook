@@ -389,6 +389,107 @@ Deze is **FOUT** en zal niet compileren:
 ToonInfo(37, "Tim");
 ```
 
+#### Methoden nesten
+
+In het begin ga je vooral vanuit je ``main`` methoden aanroepen, maar dat is geen verplichting. Je kan ook vanuit methoden andere methoden aanroepen, en van daaruit weer andere, en zo voort. Volgende (nutteloze) programma'tje toont dit in actie:
+
+```csharp
+	public static void Main()
+	{
+		SchrijfNaam();
+	}
+	static  void SchrijfNaam()
+	{
+		SchrijfT();
+		SchrijfI();
+		SchrijfM();
+		SchrijfM();
+		SchrijfI();
+	}
+	static void SchrijfT()
+	{
+		Console.WriteLine("T");
+	}
+    static void SchrijfI()
+	{
+		Console.WriteLine("I");
+	}
+	static void SchrijfM()
+	{
+		Console.WriteLine("M");
+	}
+```
+
+![Visualisatie van bovenstaande code zonder terugkerende pijlen](../assets/4_methoden/mmethods.png)
+
+{% hint style='tip' %}
+Merk op dat dit een heel dom programma is en we misschien beter met parameters hadden gewerkt daar de 3 methoden eigenlijk altijd hetzelfde doen.
+{% endhint %}
+
+#### Bugs met methoden
+
+Wanneer je programma's complexer worden moet je zeker opletten dat je geen oneindige lussen creëert, zonder dat je loop-code gebruikt. Zie je de fout in volgende code?
+
+```csharp
+public static void Main()
+{
+    SchrijfNaam();
+}
+static  void SchrijfNaam()
+{
+    SchrijfNaam();
+    Console.WriteLine("Klaar?");
+}
+```
+
+Deze code heeft een methode die zichzelf aanroept, zonder dat deze ooit afsluit, waardoor we dus in een oneindige aanroep van de methode komen. Dit programma zal een leeg scherm tonen (daar er nooit aan de tweede lijn in de methode wordt geraakt) en dan crashen wanneer het werkgeheugen van de computer op is (daar de methoden nooit afsluit en telkens een kopie aanroept).
+
+![Deze keer zijn er bewust geen terugkerende pijlen getekend: ze zijn er niet](../assets/4_methoden/oneindig.png)
+
+
+
+
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/attention.png)
+Even ingrijpen en je attenderen op recursie zodat je code niet in je gezicht blijft ontploffen.
+
+**Recursie** is een geavanceerd programmeerconcept wat niet in dit boek wordt besproken, maar laten we het hier kort toelichten. Recursieve methoden zijn methoden die zichzelf aanroepen maar wél op een gegeven moment stoppen wanneer dat moet gebeuren.
+
+Volgende voorbeeld is een recursieve methode om de som van alle getallen tussen ``start`` en ``stop`` te berekenen:
+
+```csharp
+static int BerekenSomRecursief(int start, int stop)
+{
+    int som = start;
+    if(start < stop)
+    {
+        start++;
+        return som += BerekenSomRecursief(start, stop);
+    }
+    return som;
+}
+```
+Je herkent recursie aan het feit dat de methode zichzelf aanroept. Maar een controle voorkomt dat die aanroep blijft gebeuren zonder dat er ooit een methode wordt afgesloten.
+
+Als we deze methode aanroepen als volgt:
+
+```csharp
+int einde = BerekenSomRecursief(1,3);
+```
+
+Dan zal ``einde`` finaal de waarde 6 hebben (1+2+3). Volgende afbeelding visualiseert dit:
+![Flow van de recursie](../assets/4_methoden/recursie.png)
+
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
+
+
 #### Commentaar toevoegen
 
 Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen als volgt (dit werkt enkel bij methoden): ``///``
