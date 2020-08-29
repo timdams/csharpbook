@@ -4,7 +4,7 @@ Met de console kan je met een handvol methoden reeds een aantal interessante din
 
 Zo kan je bijvoorbeeld input van de gebruiker inlezen en bewaren in een variabele als volgt:
 
-```csharp
+```java
 string result;
 result = Console.ReadLine();
 ```
@@ -25,7 +25,7 @@ Merk op dat de toekenning in C# van rechts naar links gebeurt. Vandaar dat ``res
 
 Je programma zou nu moeten zijn:
 
-```csharp
+```java
 
 Console.WriteLine("Hello World!");
 Console.WriteLine("Hoi, ik ben het!");
@@ -40,7 +40,7 @@ Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont 
 
 We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``,  gebruiken en tonen op het scherm. 
 
-```csharp
+```java
 Console.WriteLine("Dag ");
 Console.WriteLine(result);
 Console.WriteLine(" hoe gaat het met je?");
@@ -52,7 +52,7 @@ Met andere woorden: de ``WriteLine`` methode zal op het scherm tonen wat de gebr
 
 Je volledige programma ziet er dus nu zo uit:
 
-```csharp
+```java
 Console.WriteLine("Hello World!");
 Console.WriteLine("Hoi, ik ben het!");
 Console.WriteLine("Wie ben jij?!");
@@ -107,7 +107,7 @@ De ``Write``-methode zal geen enter aan het einde van de lijn toevoegen. Als je 
 
 Vervang daarom eens in de laatste 3 lijnen code in je project alle ``WriteLine`` door ``Write``:
 
-```csharp
+```java
 Console.Write("Dag");
 Console.Write(result);
 Console.Write("hoe gaat het met je?");
@@ -115,7 +115,7 @@ Console.Write("hoe gaat het met je?");
 
 Voer je programma uit en test het resultaat. Je krijgt nu:
 
-```csharp
+```java
 Hoi, ik ben het!
 Wie ben jij?!
 tim [enter]
@@ -124,7 +124,7 @@ Dagtimhoe gaat het met je?
 
 Wat is er verkeerd gelopen? Al je tekst van de laatste lijn plakt zo dicht bij elkaar? Inderdaad, we zijn spaties vergeten toe te voegen. Spaties zijn ook tekens die op scherm moeten komen (ook al zien we ze niet) en je dient dus binnen de aanhalingstekens spaties toe  te voegen. Namelijk:
 
-```csharp
+```java
 Console.Write("Dag ");
 Console.Write(result);
 Console.Write(" hoe gaat het met je?");
@@ -132,7 +132,7 @@ Console.Write(" hoe gaat het met je?");
 
 Je uitvoer wordt nu:
 
-```csharp
+```java
 Hoi, ik ben het!
 Wie ben jij?!
 tim [enter]
@@ -153,7 +153,7 @@ Let goed op hoe je spaties gebruikt bij ``WriteLine`` Indien je dus spaties buit
 
 Hier een fout gebruik van spaties (de code zal werken maar je spaties worden genegeerd):
 
-```csharp
+```java
 Console.Write("Dag"_);
 Console.Write(result_);
 Console.Write("hoe gaat het met je?");
@@ -161,7 +161,7 @@ Console.Write("hoe gaat het met je?");
 
 En een correct gebruik:
 
-```csharp
+```java
 Console.Write("Dag_");
 Console.Write(result);
 Console.Write("_hoe gaat het met je?");
@@ -173,7 +173,7 @@ Console.Write("_hoe gaat het met je?");
 
 We kunnen dit allemaal nog een pak korter tonen zonder dat de code onleesbaar wordt. De plus-operator (``+``) in C# kan je namelijk gebruiken om tekst aan elkaar te plakken. De laatste 3 lijnen code kunnen dan korter geschreven worden  als volgt:
 
-```csharp
+```java
 Console.WriteLine("Dag " + result + " hoe gaat het met je?");
 ```
 
@@ -181,11 +181,11 @@ Console.WriteLine("Dag " + result + " hoe gaat het met je?");
 Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling tot de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
 
 Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code:
-```csharp
+```java
 Console.WriteLine("Dag "+ result + " hoe gaat het met je?");
 ```
 Vervangt door: 
-```csharp
+```java
 Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 ```
 
@@ -194,7 +194,7 @@ Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 
 Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:
 
-```csharp
+```java
 Console.WriteLine("Geef leeftijd");
 string leeftijd;  //eerste geheugenplekje aanmaken
 leeftijd = Console.ReadLine();
@@ -206,7 +206,7 @@ adres = Console.ReadLine();
 Je mag echter ook de geheugenplekken al vroeger maken. In C# zet men de geheugenplek creatie zo dicht mogelijk bij de code waar je die plek gebruikt (zoals vorig voorbeeld), maar dat is geen verplichting. Dit mag dus ook:
 
 
-```csharp
+```java
 string leeftijd;  //eerste geheugenplekje aanmaken
 string adres; //tweede geheugenplekje aanmaken
 Console.WriteLine("Geef leeftijd");

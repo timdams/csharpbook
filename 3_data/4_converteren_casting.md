@@ -12,7 +12,7 @@ Aah, Data, een geliefkoosd personage uit Star Trek. Maar daar gaan we het niet o
 
 De wereld draait op data,en dus ook de meeste applicaties die wij gaan schrijven. Echter, we hebben al gezien dat C# met verschillende datatypes werkt, dus wat gebeurt er als we data van twee verschillende datatypes willen combineren?! In Star Trek resulteerde dat 50% van de tijd in een aanval van de Borg, 20% van de tijd van de Klingons en in de overige 30% in een oersaaie aflevering (Star Wars for life!). Ahum, sorry. I got carried away.Laten we eens onderzoeken hoe we data van 'vorm' kunnen veranderen.  
 
-"May the force be with you!". Euh, ik bedoel: "Make it so!".
+*May the force be with you!* Euh, ik bedoel: *Make it so!*
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}
@@ -21,7 +21,7 @@ De wereld draait op data,en dus ook de meeste applicaties die wij gaan schrijven
 Wanneer je de waarde van een variabele wilt toekennen aan een variabele van een ander type mag dit dus niet zomaar. 
 Volgende code zal bijvoorbeeld een dikke error geven:
 
-```csharp
+```java
 int age = 4.3;
 ```
 
@@ -51,13 +51,13 @@ Het is belangrijk in te zien dat het casten van een variabele naar een ander typ
 
 Casting duid je aan door voor de variabele of literal het datatype tussen haakjes te plaatsen naar wat het omgezet moet worden:
 
-```csharp
+```java
 int mijngetal = (int)3.5;
 ```
 
 of
 
-```csharp
+```java
 double kommagetal = 13.8;
 int kommaNietWelkom = (int)kommagetal;
 ```
@@ -73,7 +73,7 @@ Casting doe je  wanneer je een variabele wilt toekennen aan een andere variabele
 
 Bekijk eens het volgende voorbeeld:
 
-```csharp
+```java
 double var1;
 int var2;
  
@@ -87,7 +87,7 @@ Dit gaat enkel als je expliciet aan de compiler zegt: *het is goed, je mag infor
 
 En je lost dit op door voor de variabele die tijdelijk dienst moet doen als een ander type, het nieuwe type, tussen ronde haakjes te typen, als volgt:
 
-```csharp
+```java
 double var1;
 int var2;
  
@@ -119,7 +119,7 @@ Wel, dit concept gaan we hier nog eens bekijken, maar nu in combinatie met casti
 
 Stel dat ``tempGisteren`` en ``tempVandaag`` van het type ``int`` zijn, maar dat we nu de gemiddelde temperatuur willen weten. De formule voor gemiddelde temperatuur over 2 dagen is:
 
-```csharp
+```java
 int tempGemiddeld = (tempGisteren + tempVandaag)/2;
 ```
 
@@ -130,7 +130,7 @@ Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel g
 
 Hoe krijgen we de correctere uitslag te zien? Eens testen wat er gebeurt als we ``tempGemiddeld`` als ``double`` declareren:
 
-```csharp
+```java
 double tempGemiddeld = (tempGisteren + tempVandaag)/2;
 ```
 
@@ -138,7 +138,7 @@ Als we dit testen zal nog steeds de waarde ``22`` aan ``tempGemiddeld`` toegewez
 
 We moeten dus ook de rechterkant van de toekenning als ``double`` beschouwen. *We doen dit, zoals eerder vermeld, door middel van **casting***, als volgt:
 
-```csharp
+```java
 double tempGemiddeld = ((double)tempGisteren + (double)tempVandaag)/2;
 ```
 Nu zal tempGemiddeld wel de waarde 22.5 bevatten.
@@ -146,7 +146,7 @@ Nu zal tempGemiddeld wel de waarde 22.5 bevatten.
 {% hint style='warning' %}
 Er zijn ook andere oplossingen die het gewenste resultaat geven, namelijk:
 
-```csharp
+```java
 (tempGisteren + tempVandaag)/2.0;
 ((double)(tempGisteren + tempVandaag))/2;
 ((double)tempGisteren + tempVandaag)/2;
@@ -165,7 +165,7 @@ Let echter op dat niet alle oplossingen bij dit soort oefeningen steeds dezelfde
 
 {% hint style='warning' %}
 Merk op dat er een subtiel verschil is tussen volgende 2 lijnen code:
-```csharp
+```java
 (double)(tempGisteren + tempVandaag)/2; //geeft 22.5
 (double)((tempGisteren + tempVandaag))/2); //geeft 22
 ```
@@ -176,7 +176,7 @@ In het eerste zullen we het resultaat van de som naar `double`` omzetten. In het
 ### Widening
 Casting is  niet nodig als je aan **widening** doet: een *kleiner* type in een *groter* type steken (met groter/kleiner wordt meestal het aantal bits bedoeld die het datatype per variabele van dit type nodig heeft), als volgt:
 
-```csharp
+```java
 int var1;
 double var2;
  
@@ -190,7 +190,7 @@ Er gaat **geen** inhoud verloren echter. Je hoeft dus niet expliciet de casting-
 
 Merk op dat je perfect casting hier mag gebruiken, maar daar de conversie impliciet zonder problemen kan plaatsvinden hoeft dit dus niet. Deze code is echter even juist (en soms een veilige gewoonte om te doen, better safe than sorry):
 
-```csharp
+```java
 var2 = (double) var1;
 ```
 
@@ -203,7 +203,7 @@ Al deze methoden zitten binnen de **Convert**-bibliotheek van .NET.
 
 Het gebruik hiervan is zeer eenvoudig. Enkele voorbeelden:
 
-```csharp
+```java
 int getal= Convert.ToInt32(3.2); //double to int
 double anderGetal= Convert.ToDouble(5); //int to double
 bool isWaar= Convert.ToBoolean(1); //int to bool
@@ -238,7 +238,7 @@ Ieder ingebouwd datatype in C# heeft een ``.Parse()`` methode die je kan aanroep
 
 Voorbeeld van parsing:
 
-```csharp
+```java
 int numVal = Int32.Parse("-105");
 Console.WriteLine(numVal);
 ```

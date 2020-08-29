@@ -17,7 +17,7 @@ Zonder het keyword heeft ieder object z'n eigen variabelen en aanpassingen binne
 
 Gegeven volgende klasse:
 
-```csharp
+```java
 class Mens
 {
     private int leeftijd=1;
@@ -35,7 +35,7 @@ class Mens
 
 Als we dit doen:
 
-```csharp
+```java
 Mens m1= new Mens();
 Mens m2= new Mens();
 
@@ -64,7 +64,7 @@ We maken de variabele ``private int leeftijd`` static als volgt: ``private stati
 
 We krijgen dan:
 
-```csharp
+```java
 class Mens
 {
     private static int leeftijd=1;
@@ -84,7 +84,7 @@ class Mens
 
 Voeren we nu terug volgende code uit:
 
-```csharp
+```java
 Mens m1= new Mens();
 Mens m2= new Mens();
 
@@ -117,7 +117,7 @@ Math.Pow(3,2);
 
 Zonder dat we objecten moeten aanmaken in de trend van:
 
-```csharp
+```java
 Math myMath= new Math(); //dit mag niet!
 myMath.Pow(3,2)
 ```
@@ -128,7 +128,7 @@ De reden dat je de math-bibliotheken kan aanroepen rechtsreeks **op de klasse** 
 
 Stel dat we enkele veelgebruikte methoden willen groeperen en deze gebruiken zonder telkens een object te moeten aanmaken dan doen we dit als volgt:
 
-```csharp
+```java
 class EpicLibray
 {
     static public void ToonInfo()
@@ -145,7 +145,7 @@ class EpicLibray
 
 We kunnen deze methoden nu als volgt aanroepen:
 
-```csharp
+```java
 EpicLibrary.ToonInfo();
 
 int opgeteld= EpicLibrary.TelOp(3,5);
@@ -157,7 +157,7 @@ Mooi toch.
 
 In het volgende voorbeeld gebruiken we een ``static`` variabele om bij te houden hoeveel objecten (via de constructor) er van de klasse reeds zijn aangemaakt:
 
-```csharp
+```java
 class Fiets
 {
     private static int aantalFietsen = 0;
@@ -176,7 +176,7 @@ class Fiets
 
 Merk op dat we de methoden ``VerminderFiets`` enkel via de klasse kunnen aanroepen:
 
-```csharp
+```java
 Fiets.VerminderFiets();
 ```
 
@@ -186,7 +186,7 @@ Van zodra je een methode hebt die ``static`` is dan zal deze methode enkel ander
 
 Volgende code zal dus een error geven:
 
-```csharp
+```java
 class Mens
 {
 	private int gewicht=50;
@@ -205,7 +205,7 @@ Een eenvoudige regel is te onthouden dat van zodra je in een static omgeving (me
 
 Dit verklaart ook waarom je bij console applicaties in Program.cs steeds alle methoden ``static`` moet maken. Een console-applicatie is als volgt beschreven wanneer je het aanmaakt:
 
-```csharp
+```java
 public class Program
 {
 		public static void Main()
@@ -225,7 +225,7 @@ Beeld je in dat je (weer) een pong-variant moet maken waarbij meerdere balletjes
 
 We gaan dit oplossen met een static property waarin we de grenzen voor alle balletjes bijhouden. Onze basis-klasse wordt dan al vast:
 
-```csharp
+```java
 class Mover
 {
     static public int Width { get; set; }
@@ -245,7 +245,7 @@ class Mover
 
 Elders kunnen we nu dit doen:
 
-```csharp
+```java
 Mover.Height = Console.WindowHeight;
 Mover.Width = Console.WindowWidth;
 
@@ -255,7 +255,7 @@ Mover m2= new Mover();
 
 Maar dat hoeft dus niet, even goed maken we de grenzen voor alle balletjes kleiner:
 
-```csharp
+```java
 Mover.Height = 20;
 Mover.Width = 10;
 
@@ -266,7 +266,7 @@ Mover m2= new Mover();
 De interne werking van de balletjes hoeft dus geen rekening meer te houden met de grenzen van het scherm.
 De klasse ``Mover`` bereiden we nu uit naar de standaard "beweeg" en "teken jezelf" code:
 
-```csharp
+```java
 class Mover
 {
     public Mover(int xi, int yi, int dxi, int dyi)
@@ -312,7 +312,7 @@ class Mover
 
 En nu kunnen we vlot balletjes laten rondbewegen op het scherm:
 
-```csharp
+```java
 static void Main(string[] args)
 {
     Console.CursorVisible = false; //handig dit hoor
@@ -339,7 +339,7 @@ static void Main(string[] args)
 
 Stel dat we nu elke seconden het speelveld met 1 willen vergroten, dan hoeven we hiervoor enkel een extra variabele ``int count=0`` voor de loop te zetten en dan in de loop het volgende te doen:
 
-```csharp
+```java
  if(count%20==0) //iedere seconde (daar we telkens 50ms slapen (1seconde =1000 ms => 1000ms/50ms == 20))
 {
     Mover.Width++;
@@ -353,14 +353,14 @@ Als je voorgaande code zou runnen zal je zien dat je redelijk snel een error kri
 
 We kunnen dit opvangen door in de klasse ``Mover`` volgende twee autoproperties:
 
-```csharp
+```java
     static public int Width { get; set; }
     static public int Height { get; set; }
 ```
 
 Te vervangen door fullproperties die controleren of er niet over de grenzen wordt gegaan mbv ``Console.LargestWindowWidth`` en ``Console.LargestWindowHeight``. Voor ``Width`krijgen we dan:
 
-```csharp
+```java
 private static int width;
 
 public static int Width

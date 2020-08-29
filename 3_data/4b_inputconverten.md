@@ -12,7 +12,7 @@ En applicatie die geen input van de gebruiker vergt kan even goed een screensave
 
 **De uitdaging met ``ReadLine`` is dat deze ALTIJD een string teruggeeft:**
 
-```csharp
+```java
 string userInput= Console.ReadLine();
 ```
 
@@ -29,7 +29,7 @@ Om strings naar een ander type te converteren gebruiken we best de Convert.-bibl
 
 Stel dat we aan de gebruiker z'n gewicht vragen, dan moeten we dus doen:
 
-```csharp
+```java
 Console.WriteLine("Geef je gewicht:");
 string inputGewicht= Console.ReadLine();
 double gewicht= Convert.ToDouble(inputGewicht);
@@ -37,7 +37,7 @@ double gewicht= Convert.ToDouble(inputGewicht);
 
 Voorgaande code kan nog 1 lijntje sneller door ``ReadLine`` ogenblikkelijk als invoer aan de Convert-methode te geven:
 
-```csharp
+```java
 Console.WriteLine("Geef je gewicht:");
 double gewicht= Convert.ToDouble(Console.ReadLine());
 ```

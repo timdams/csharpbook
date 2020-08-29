@@ -15,7 +15,7 @@ Dit wordt vaak gebruikt om een filepath iets leesbaarder te maken.
 
 Aan het einde van dit hoofdstuk willen we een csv-bestand (comma separated value) splitsen. De ``Split`` methode laat toe een string te splitsen op een bepaald teken. Het resultaat is steeds een **array van strings**.
 
-```csharp
+```java
 string data= "12,13,20";
 string[] gesplitst= data.Split(',');
 
@@ -33,7 +33,7 @@ Via ``Join`` kunnen we array van string terug samenvoegen. Het resultaat is een 
 
 Volgende voorbeeld zal de eerder array van het vorige voorbeeld opnieuw samenvoegen maar nu met telkens een ``;`` tussen iedere string:
 
-```csharp
+```java
 string joined = String.Join(";", gesplitst);
 ```
 
@@ -53,13 +53,13 @@ De correcte manier om strings te vergelijken is met de ``Compare(string s1, stri
 De ``System.IO`` namespace bevat tal van nuttige methoden en klassen om met bestanden te werken.
 Om gebruik hiervan te maken plaats je bovenaan je file:
 
-```csharp
+```java
 using System.IO;
 ```
 
 Via ``System.File.ReadAllLines()`` kunnen we een tekstbestand uitlezen. De methode geeft een array van string terug. Per lijn die eindigt met een newline (``\r\n``) zal een nieuwe string aan de array toegevoegd worden.
 
-```csharp
+```java
 string[] lines = File.ReadAllLines(@"c:\mypoem.txt");
 for (int i = 0; i < lines.Length; i++)
 {
@@ -82,7 +82,7 @@ Stoffels;José;1950
 
 Volgende code zal dit bestand uitlezen en de individuele data op het scherm tonen:
 
-```csharp
+```java
 string[] lines = File.ReadAllLines(@"c:\soccerstars.csv");
 for (int i = 0; i < lines.Length; i++)
 {
@@ -98,26 +98,26 @@ for (int i = 0; i < lines.Length; i++)
 
 Vaak zal je een online bestand willen verwerken. De ``WebClient`` klasse heeft tal van manieren om met online bronnen te werken. Deze klasse bevindt zich in de ``System.Net`` namespace en vereist dus dat je bovenaan je code volgende lijn toevoegt:
 
-```csharp
+```java
 using System.Net
 ```
 
 Volgende code toont hoe we een bestand van een specifieke locatie kunnen downloaden:
 
-```csharp
+```java
 WebClient wc = new WebClient();
 string csv = wc.DownloadString("www.fakeaddress.com/mydata.csv");
 ```
 
 Dit bestand is 1 platte tekst. Willen we deze vervolgens verwerken dan moeten we deze splitsen in lijnen:
 
-```csharp
+```java
 string[] split = csv.Split('\n');
 ```
 
 We hebben nu een ``for`` nodig die lijn per lijn zal splitsen:
 
-```csharp
+```java
 for (int i = 1; i < splitted.Length; i++)
 {
     string[] lijnsplit = splitted[i].Split(',');
@@ -141,7 +141,7 @@ Je kan tekst uit een bestand lezen, maar uiteraard kan je ook naar een bestand w
 
 Een voorbeeld:
 
-```csharp
+```java
 string[] stringArray = new string[]
     {
         "cat",
@@ -157,7 +157,7 @@ File.WriteAllLines("file.txt", stringArray);
 
 Wil je CSV-bestand maken dan zal je eerst met ``String.Join`` een komma-separated lijst maken, bijvoorbeeld:
 
-```csharp
+```java
 string[] namen = { "Tim", "Jos", "Mo" };
 int[] leeftijden = { 34, 76, 23 };
 
@@ -174,7 +174,7 @@ System.IO.File.WriteAllLines("ages.csv", lines);
 # Uitgewerkt met Pokémon
 
 
-```csharp
+```java
 System.Net.WebClient wc = new System.Net.WebClient();
 string downloaded = wc.DownloadString("https://bit.ly/2tE4CB0"); //laatste is een nul
 string[] lines = downloaded.Split('\n');
@@ -215,7 +215,7 @@ We herbekijken het voorbeeld van de csv-parser.
 
 We maken nu een klasse Speler:
 
-```csharp
+```java
 class Speler
 {
     public string Voornaam { get;set;}
@@ -226,7 +226,7 @@ class Speler
 
 We herschrijven dan het parsen naar:
 
-```csharp
+```java
 string[] lines = File.ReadAllLines(@"c:\soccerstars.csv");
 Speler[] spelers= new Speler[lines.Length];
 

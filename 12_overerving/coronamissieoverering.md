@@ -26,7 +26,7 @@ We gaan de centra over de 7 continenten verspreiden. Maar we gaan hiervoor een n
 
 Maak de Dictionary als volgt:
 
-```csharp
+```java
 Dictionary<string,VaccinatieCentrum> centraDB = new Dictionary<string,VaccinatieCentrum>();
 ```
 
@@ -34,13 +34,13 @@ Dictionary<string,VaccinatieCentrum> centraDB = new Dictionary<string,Vaccinatie
 
 Voeg centra aan de dicht als volgt toe.Dit centrum geven we als key frankrijk:
 
-```csharp
+```java
 centraDB.Add("frankrijk", new VaccinatieCentrum());
 ```
 
 Volgende code toont bijvoorbeeld hoe je een vaccin nu aan het centrum met key frankrijk verkrijgt
 
-```csharp
+```java
 Vaccin vac= centraDB["frankrijk"].GeefVaccin();
 ```
 
@@ -50,7 +50,7 @@ Maak een programma dat aan de "operator" vraagt in welke landen een centrum moet
 
 De operator kan uit het menu ook kiezen om een overzicht van alle centra te krijgen. Volgende code toont hoe dit kan:
 
-```csharp
+```java
 Console.WriteLine("Centra in volgende landen:")
 foreach (VaccinatieCentrum item in centraDV)
 {

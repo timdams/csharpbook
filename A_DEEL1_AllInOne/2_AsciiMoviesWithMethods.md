@@ -11,7 +11,7 @@ We zullen een uiterst boeiend filmpje maken waarin een mannetje naar z’n auto 
 ## Karakter op scherm tekenen
 We maken een methode die 1 karakter op het scherm kan plaatsen op een positie naar keuze. Omdat we willen voorkomen dat dit mislukt indien de coördinaten buiten het scherm vallen, zullen we in deze methode eerst controleren of de coördinaten geldig zijn.
 
-```csharp
+```java
 static void DrawChar(char drawchar, int posX, int posY)
 {
     if (posX >= 0 && posX < Console.WindowWidth)
@@ -35,7 +35,7 @@ De methode aanvaardt naast het karakter dat we willen tekenen ook nog :
 1. De positie van de linkerbovenhoek van rechthoek op het scherm
 2. De lengte en de breedte van de rechthoek
 
-```csharp
+```java
 static void DrawRectangle(char drawchar, int posX, int PosY, int width, int height)
 {
     for (int i = posX; i < posX + width; i++)
@@ -52,7 +52,7 @@ We kunnen dus deze methode aanroepen als volgt:``DrawRectangle('*',4,6,3,6);``
 ## Gezicht tekenen
 Het hek is van de dam. We kunnen nu allerlei complexere zaken tekenen bestaande uit combinaties van rechthoeken en karakters. Een gezicht kan bijvoorbeeld bestaan uit 1 grote rechthoek voor het gezicht. Met daarin 2 aparte ogen, voorgesteld door het karakter ‘0’ (dus mbv DrawChar) en een neus 'b'. Alsook een mond die bestaat uit een korte rechthoek bestaande uit underscores:
 
-```csharp
+```java
 static void DrawFace(int posX, int posY)
 {
     DrawRectangle('.', posX, posY, 7, 8);
@@ -67,7 +67,7 @@ Denk er ook aan dat we de volgorde van methode-aanroepen hier relevant is.Indien
 
 ## Auto tekenen
 
-```csharp
+```java
 static void DrawCar(int posX, int posY)
 {
     DrawRectangle('█', posX, posY + 5, 20, 4);
@@ -80,7 +80,7 @@ static void DrawCar(int posX, int posY)
 ## Mannetje tekenen
 Een mannetje tekenen bestaat dan uit een gezicht een lijf (rechthoek) en 2 benen (rechthoek). Z’n armen is hij kwijtgeraakt:
 
-```csharp
+```java
 static void DrawMan(int posX, int posY)
 {
     DrawFace(posX + 4, posY);
@@ -91,7 +91,7 @@ static void DrawMan(int posX, int posY)
 ```
 Of een mannetje dat spring?
 
-```csharp
+```java
 static void DrawJumpingMan(int posX, int posY)
 {
     DrawFace(posX + 4, posY);
@@ -102,7 +102,7 @@ static void DrawJumpingMan(int posX, int posY)
 ```
 Volgende code zal een animatie afspeelt van een mannetje dat springt en staat afwisselend:
 
-```csharp
+```java
 int teller = 0;
 while (true)
 {
@@ -119,7 +119,7 @@ while (true)
 ## Man in auto
 We kunnen weer een niveau hoge gaan: we combineren onze ``DrawMan`` en ``DrawCar`` methode om zo een mannetje in een auto te krijgen:
 
-```csharp
+```java
 static void DrawManInCar(int posX, int posY)
 {
     DrawMan(posX + 2, posY);
@@ -130,7 +130,7 @@ static void DrawManInCar(int posX, int posY)
 ## Film maken
 We kunnen nu een uber-boeiend filmpje maken waarin het mannetje naar de auto loopt en dan er in wegrijdt.We zullen dit stukje top-down benaderen. Eerst maken we een methode ``PlayMovie()`` die frame per frame het filmpje zal afspelen.Afhankelijk van het framenummer zal een andere scene getoond worden (lijnen 6,8):
 
-```csharp
+```java
 private static void PlayMovie()
 {
     for (int i = 0; i < 60; i++)
@@ -147,7 +147,7 @@ private static void PlayMovie()
 ```
 Merk op dat we ``i`` gebruiken als framenummer en zo weten wanneer welke scene moet afgespeeld worden. Voorts geven we het framenummer door naar de scene-methoden voor het geval ze deze nodig hebben om bijvoorbeeld de correcte positie te bepalen:
 
-```csharp
+```java
 private static void RideAwayScene(int framenumber)
 {
     DrawManInCar(40+framenumber*2,5);

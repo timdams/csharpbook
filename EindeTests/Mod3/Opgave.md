@@ -21,7 +21,7 @@ Plaat alle logica uit deel 1 in een nieuwe ``PokeManager``klasse. Plaats je arra
 
 De idee van deze klasse is dat er in je hoofdprogramma zeer weinig code nog steeds, maar die wel zeer duidelijk is. Iets in trend van:
 
-```csharp
+```java
 while(true)
 {
     PokeManager.ToonMenu();

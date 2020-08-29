@@ -5,12 +5,12 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 ## Opgaven
 
 1. Wat is er mis? 
-   ```csharp
+   ```java
    int keuze = Convert.ToInt16(Console.ReadLine());
    ```
 
 2. 
-  ```csharp
+  ```java
   switch (keuze) {
     case 1:
         totaal += 5;
@@ -37,7 +37,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 
 3. Zie je de fout?
 
-   ```csharp
+   ```java
    Console.WriteLine("Laten we starten met de bestelling. Druk op 1 voor de pizzabodem, daarna 2 voor de topping, vervolgens 3 voor de chefs extra en tot slot 4 voor het afleveradres.");
    keuze = Convert.ToInt32(Console.ReadLine());
    pizzabodem = Convert.ToString(Console.ReadLine());
@@ -52,13 +52,13 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
    ```
 
 4. Cringy...
-   ```csharp            
+   ```java            
    int toegestaanleeftijd = 1;     //  0 is nee en 1 is ja.
    int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
    ```
 
 5. aiaiai...
-   ```csharp
+   ```java
    if (ToppingsKeuzeBodem1 == 1)
    {
     Console.WriteLine("Wat is de afstand van het afleveradres in lichtjaren?");
@@ -86,7 +86,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
    ```
 
 6.  
-   ```csharp
+   ```java
    PizzaTotaal = 25 + 5 + 10;
 
    //Verder:
@@ -98,26 +98,26 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 
 7. 
    Volgende commentaar, of een variant, kwam bij vele studenten voor. Hoe had dit voorkomen kunnen worden?
-   ```csharp
+   ```java
    // Eindbedrag -> Had de pizzabodem en toppingprijzen niet apart opgeslagen
    // en kon het niet meer veranderen wegens tijdstekort.
    ```
 
 8. 
-   ```csharp
+   ```java
    Console.WriteLine("Oei, hier ging iets mis.");
    Console.Clear();
    Console.WriteLine("ERROR");
    ```
 
 9. lesigh
-   ```csharp
+   ```java
    goto end;
    ```
 
 10. 
 
-   ```csharp
+   ```java
    double tussenkomst = adres / 5;
    int Tonnen = 0;
 
@@ -146,7 +146,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 
 11. Onderaan de code van een oplossing stond volgende commentaar:
 
-   ```csharp 
+   ```java 
    // TE WEINIG TIJD AKA MISSCHIEN TE TRAAG GEWERKT SORRY
    ```
 
@@ -176,7 +176,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 6. Dit is uiteraard een perfect legale zin. Maar niet als deze op verschillende plaatsen in de code deze vorm zo terugkomt. Wat als later de prijs van het ding dat nu ``25`` kost moet veranderen. De programmeur moet dan op alle plekken in z'n code dit manueel gaan aanpassen. En wat zijn die verschillende getallen eigenlijk?
 Veel beter is om bovenaan je code de nodige variabelen (met goede namen) aan te maken waarin je de prijzen bewaard. De code wordt ook ogenblikkelijk veel begrijpbaarder:
 
-    ```csharp
+    ```java
     int hawai=25;
     int ketchup=5;
     int noedels=6;
@@ -198,14 +198,14 @@ Veel beter is om bovenaan je code de nodige variabelen (met goede namen) aan te 
 9.  Goto hell! PS ``Environment.Exit(0);``en  ``return`` waren in deze opgave de makkelijkste manieren om het programma af te sluiten. 
 
 10. De programmeur wil hier z'n komma-getal naar boven afronden. Dit is duidelijk géén goede oplossing (gaat de programmeur voor alle ints die er bestaan een if bijschrijven?). De juiste manier om dit op te lossen is gebruik maken van de ``Math.Ceiling()`` methode die een getal naar boven zal afronden. De code kan dan herschreven worden naar 1 lijn:
-    ```csharp
+    ```java
     int Tonnen = (int)Math.Ceiling(adres / 5);
     ```
 
 11. De student heeft véél te veel dezelfde code geschreven (niet zichtbaar op de screenshot) en dus niet goed nagedacht over de if/else structuur die moet gemaakt worden. Maak steeds eerst een flowchart om te bepalen welke delen wanneer moeten gebeuren en zet 'gemeenschappelijke' code verderop in het verhaal. Het heeft bijvoorbeeld geen nut om overaal de ticket-visualisatie code te tonen daar deze voor alle mogelijkheden dezelfde is en dan onderaan de code gemeenschappelijk kan uitgevoerd worden.  Ook hier dus de opmerking die we ook in puntje 7 aanhaalden: stel eerst een aanvalsplan op voor je aan je aanval begint.
 
 # Oplossing Vaardigheidsproef 1819
-```csharp
+```java
 while (true)
     {
         //Prijzen

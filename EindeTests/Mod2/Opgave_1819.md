@@ -57,7 +57,7 @@ Indien de CasinoSetup is gelukt dan zal deze loop gestart worden.
 
 Deze loop heeft volgende code:
 
-```csharp
+```java
    int keuze = 0;
    int geld = 0;
    while (keuze != -1)
@@ -94,7 +94,7 @@ Deze loop heeft volgende code:
 # ToonMenu()  (0 punten)
 
 Bevat volgende code:
-```csharp
+```java
 int keuze = 0;
 
 do

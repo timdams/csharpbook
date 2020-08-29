@@ -40,7 +40,7 @@ Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
 
 
 ### StudentKlasse
-```csharp
+```java
 enum Klassen { EA1, EA2, EA3, EA4}
 
 class Student
@@ -91,7 +91,7 @@ Je opdracht:
 Enkele zaken die je nodig hebt:
 
 **BookMark klasse:**
-```csharp
+```java
 class BookMark
 {
 
@@ -111,7 +111,7 @@ Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Z
 
 Voorbeeld van hoe de bookmark klasse zal werken:
 
-```csharp
+```java
 BookMark u = new BookMark();
 u.Naam = "Windows";
 u.URL = "www.google.be";

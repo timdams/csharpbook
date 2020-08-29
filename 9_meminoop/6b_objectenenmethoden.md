@@ -5,7 +5,7 @@ Het enige verschil is dat we objecten **by reference** meegeven aan een methode.
 
 Een voorbeeld. Stel dat we volgende klasse hebben waarin we metingen willen opslaan, alsook wie de meting heeft gedaan:
 
-```csharp
+```java
 class Meting
 {
     public int Temperatuur { get; set; }
@@ -15,7 +15,7 @@ class Meting
 
 In ons hoofdprogramma schrijven we een methode ``ToonMetingInKleur`` die ons toelaat om deze meting op het scherm te tonen in een bepaalde kleur. Het gebruik en de methode zelf zouden er zo kunnen uitzien:
 
-```csharp
+```java
 static void Main(string[] args)
 {
     Meting m1 = new Meting();
@@ -41,7 +41,7 @@ static void ToonMetingInKleur (Meting inmeting, ConsoleColor kleur)
 
 Je kan dus ook methoden schrijven die meegegeven objecten aanpassen daar we deze **by reference** doorsturen. Een voorbeeld:
 
-```csharp
+```java
 static void ToonMetingEnVerhoog(Meting inmeting)
 {
     ToonMetingInKleur(inmeting, ConsoleColor.Green);
@@ -51,7 +51,7 @@ static void ToonMetingEnVerhoog(Meting inmeting)
 ```
 
 Als we deze methode als volgt aanroepen:
-```csharp
+```java
 Meting m1 = new Meting();
 m1.Temperatuur = 26; m1.OpgemetenDoor = "Elon Musk";
 
@@ -64,7 +64,7 @@ Dan zullen we zien dat de temperatuur in ``m1`` effectief met 1 werd verhoogd.
 
 Dit gedrag zouden we NIET zien bij volgende methode daar ``int`` **by value** wordt doorgegeven:
 
-```csharp
+```java
 static void VerhoogGetal(int inmeting)
 {
     inmeting++;
@@ -75,7 +75,7 @@ static void VerhoogGetal(int inmeting)
 
 Stel dat we volgende methode hebben
 
-```csharp
+```java
 static double Gemiddelde(double getal1, double getal2)
 {
     return (getal1 + getal2) / 2;
@@ -84,7 +84,7 @@ static double Gemiddelde(double getal1, double getal2)
 
 Je mag deze methode dus ook oproepen als volgt (we gebruiken de ``Meting`` objecten ``m1`` en ``m2`` uit vorige paragraaf):
 
-```csharp
+```java
 double result= Gemiddelde(m1.Temperatuur, m2.Temperatuur);
 ```
 
@@ -94,7 +94,7 @@ Het type van de property ``Temperatuur`` is ``int`` en mag je dus als parameter 
 
 Weer hetzelfde verhaal: ook klassen mogen het resultaat van een methoden zijn.
 
-```csharp
+```java
 static Meting GenereerRandomMeting()
 {
     Meting result = new Meting();
@@ -108,13 +108,13 @@ static Meting GenereerRandomMeting()
 
 Deze methode kan je dan als volgt gebruiken:
 
-```csharp
+```java
 Meting m3 = GenereerRandomMeting();
 ```
 
 Merk op dat het dus kan zijn dat een methode ``null`` teruggeeft. Het kan dus zeker geen kwaad om steeds in je code te controleren of je effectief iets hebt terug gekregen:
 
-```csharp
+```java
 Meting m3 = GenereerRandomMeting();
 if(m3 != null)
 {

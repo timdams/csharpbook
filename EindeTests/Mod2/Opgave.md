@@ -8,7 +8,7 @@ De ``Console.Beep()`` methode laat ons toe om tonen te genereren op een bepaalde
 
 We kunnen dus de computer de toonladder afspelen, elke noot 1 seconde langs, als volgt:
 
-```csharp
+```java
 Console.Beep(264, 1000);
 Console.Beep(297, 1000);
 Console.Beep(330, 1000);
@@ -23,7 +23,7 @@ Console.Beep(528, 1000);
 
 Zorg ervoor dat je de toonladder van hierboven als volgt kunt aanroepen:
 
-```csharp
+```java
 Do();
 Re();
 Mi();
@@ -39,7 +39,7 @@ Iedere methode zal dus de correcte toon afspelen gedurende 1s (je mag dit ook sn
 Iedere "noot-methode" zal ook steeds op het scherm tonen welke noot wordt afgespeeld (doe dit als eerste in de methode)
 De uitvoer van voorgaande code wordt dan (het geluid moet je er maar even bij verzinnen):
 
-```csharp
+```java
 Do
 Re
 Mi
@@ -60,7 +60,7 @@ Pas de ‘noot-methoden’ aan zodat 2 parameters kunnen meegeven worden:
 2. De octaaf van de toon: 1 = basis octaaf die we al hadden, 2= 2e octaaf (dus frequentie x2) 3= 3e octaaf (frequentie x 4) etc.
 
 Als je dus de tweede octaaf wil spelen (met iedere toon om de 500ms)  moet je deze als volgt kunnen aanroepen:
-```csharp
+```java
 Do(500,2);
 Re(500,2);
 Mi(500,2);
@@ -109,7 +109,7 @@ Wanneer een liedje werd afgespeeld dan dient de methode terug te geven (als doub
 
 Je kan de duur van een methode heel eenvoudig methoden als volgt, gebruikmakende van de StopWatch:
 
-```csharp
+```java
 //Start
 var stopwatch = System.Diagnostics.Stopwatch.StartNew();
 //Voer te meten code uit

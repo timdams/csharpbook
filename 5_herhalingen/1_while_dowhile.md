@@ -2,7 +2,7 @@
 
 De syntax van een while loop is eenvoudig:
 
-```csharp
+```java
 while (booleaanse expressie) 
 {
   // C# die zal uitgevoegd worden zolang de booleaanse expressie waar is
@@ -22,7 +22,7 @@ Het diagramma is duidelijk:
 
 Een voorbeeld van een eenvoudige while loop:
 
-```csharp
+```java
 int myCount = 0;
  
 while (myCount < 100)
@@ -42,7 +42,7 @@ Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door midd
 
 Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang ``teller`` groter is dan 5 én de variabele ``naam`` van het type ``string`` niet gelijk is aan "tim":
 
-```csharp
+```java
 while(teller > 5 && naam != "tim")
 {
   //Keep repeating
@@ -54,14 +54,14 @@ Indien de loop-conditie nooit ``false`` wordt dan heb je een oneindige loop gema
 
 Volgende twee voorbeelden tonen dit:
 * Een bewust oneindige loop:
-```csharp
+```java
 while(true)
 {
  //See you in infinity
 }
 ```
 * Een bug die een oneindige loop veroorzaakt:
-```csharp
+```java
 int teller = 0; 
 while(teller<10)
 {
@@ -78,7 +78,7 @@ Probeer er altijd zeker van te zijn dat de variabele(n) die je gebruikt in je te
 Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je een variabele binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende iteratie van de loop start.
 Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen (1+2+3+...+10) zou maken:
 
-```csharp
+```java
 int teller= 1;
 while(teller <= 10)
 {
@@ -94,7 +94,7 @@ Voorgaande code zal volgende VS error geven: *The name `som`does not exist in th
 
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele ``som`` enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden. Hier de oplossing:
 
-```csharp
+```java
 int teller= 1;
 int som=0;  
 while(teller <= 10)
@@ -117,7 +117,7 @@ met die hierboven van de ``while``.
 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
-```csharp
+```java
 do{
       // code indien booleaanse expressie waar is
 } while (booleaanse expressie);
@@ -129,7 +129,7 @@ Merk op dat achteraan de testconditie een puntkomma na het ronde haakje staat. *
 
 Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop:
 
-```csharp
+```java
 int i = 10;
 do
 {
@@ -143,14 +143,14 @@ Begrijp je wat dit programma zal doen? Inderdaad dit zal alle getallen 9 tot en 
 ### Foute input van gebruiker met loops verwerken
 Dankzij loops kunnen we nu ook eenvoudiger omgaan met foutieve input van de gebruiker. Stel dat we volgende vraag hebben:
 
-```csharp
+```java
 Console.WriteLine("Geef uw keuze in: a, b of c");
 string input= Console.ReadLine();
 ```
 
 Met een loop kunnen we nu deze vragen blijven stellen tot de gebruiker een geldige input geeft:
 
-```csharp
+```java
 string input;
 do
 {

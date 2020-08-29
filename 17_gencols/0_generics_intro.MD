@@ -6,7 +6,7 @@ Run-time fouten zijn lastiger te detecteren, omdat deze alleen optreden op het m
 # Generieke methoden
 Vaak schrijf je methoden die hetzelfde doen, maar waarvan enkel het type van de parameters en/of het returntype verschilt. Stel dat je een methode hebt die de elementen in een array onder elkaar toont. Je wil dit werkende hebben voor arays van ints, string, etc. Zonder generics moeten we dan per type een methode schrijven:
 
-```csharp
+```java
 public static void ToonArray(int[] array)
 {
     foreach (var i in array)
@@ -25,7 +25,7 @@ public static void ToonArray(string[] array)
 ```
 Dankzij generics kunnen we nu het deel dat *generiek* moet zijn aanduiden (in dit geval met ``T``) en onze methode eenmalig definiëren:
 
-```csharp
+```java
 public static void ToonArray<T>(T[] array)
 {
     foreach (T i in array)
@@ -49,7 +49,7 @@ We wensen een ``struct`` te maken die de locatie in X,Y,Z richting kan bewaren. 
 
 
 
-```csharp
+```java
 struct Location<T>
 {
     public T X;
@@ -59,7 +59,7 @@ struct Location<T>
 ```
 We kunnen deze struct nu als volgt gebruiken:
 
-```csharp
+```java
 static void Main(string[] args)
 {
     Location<int> plaats;

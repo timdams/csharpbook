@@ -2,7 +2,7 @@
 
 Zoals nu duidelijk is bevatten variabelen steeds een referentie naar een object. Maar wat als we dit schrijven:
 
-```csharp
+```java
 Student stud1;
 stud1.Naam= "Test";
 ```
@@ -17,7 +17,7 @@ Een veel voorkomende foutboodschap tijdens de uitvoer van je applicatie is de zo
 
 Laten we dit eens simuleren:
 
-```csharp
+```java
 Student stud1 = null;
 
 Console.WriteLine(stud1.Name);
@@ -39,7 +39,7 @@ Voorts kan het ook soms by design zijn dat een object voorlopig ``null`` is.
 
 Gelukkig kan je controleren of een object ``null`` is als volgt:
 
-```csharp
+```java
 if(stud1 == null)
     Console.WriteLine("Oei. Object bestaat niet.")
 ```
@@ -48,7 +48,7 @@ if(stud1 == null)
 
 Vaak moet je dit soort code schrijven:
 
-```csharp
+```java
 if(stud1 != null)
 {
     Console.WriteLine(stud1.Name)
@@ -57,7 +57,7 @@ if(stud1 != null)
 
 Op die manier voorkom je ``NullReferenceException``. Het is uiteraard omslachtig om steeds die check te doen. Je mag daarom ook schrijven:
 
-```csharp
+```java
 Console.WriteLine(stud1?.Name)
 ```
 
@@ -72,7 +72,7 @@ Uiteraard mag je dus ook expliciet soms ``null`` teruggeven als resultaat van ee
 Volgende methode zoekt in een array van studenten naar een student met een specifieke naam en geeft deze terug als resultaat. Enkel als de hele array werd doorlopen en er geen match is wordt er ``null`` teruggegeven 
 (de werking van arrays van objecten worden later besproken): 
 
-```csharp
+```java
 static Student ZoekStudent(Student[] array, string naam)
 {
     for (int i = 0; i < array.Length; i++)

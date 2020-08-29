@@ -13,7 +13,7 @@ Kan je zelf een simulator maken die telkens generatie per generatie op het scher
 
 # Oplossing
 
-```csharp
+```java
 static void Main(string[] args)
 {
   

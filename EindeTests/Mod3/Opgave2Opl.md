@@ -2,7 +2,7 @@ Onderstaande oplossing is niet 100% conform de opgave. Deze oplossing werd gemaa
 
 # Program.cs
 
-```csharp
+```java
 List<Mens> mensen = new List<Mens>();
 
 for (int i = 0; i < 100000; i++)
@@ -19,7 +19,7 @@ Mens.Simuleer(mensen, 10);
 
 # Mens.cs
 
-```csharp
+```java
 using System;
 using System.Collections.Generic;
 using System.Text;

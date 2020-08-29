@@ -6,7 +6,7 @@ We vallen in herhaling: ook arrays van objecten zijn mogelijk, net zoals je arra
 
 Een array van objecten gebeurt als volgt:
 
-```csharp
+```java
 Student[] mijnKlas = new Student[20];
 ```
 
@@ -17,7 +17,7 @@ Je zou kunnen zeggen dat we enkel nog maar de parkeerlijnen hebben aangemaakt.
 
 Willen we nu elementen in deze array plaatsen dan moeten dit ook expliciet doen:
 
-```csharp
+```java
 mijnKlas[0]= new Student();
 mijnKlas[7]= new Student();
 ```
@@ -30,7 +30,7 @@ Probeer je objecten te benaderen die nog niet bestaan dan zal je uiteraard een `
 
 Je kan ook een variant op de object initializer syntax gebruiken waarbij de objecten reeds van bij de start in de array worden aangemaakt. Als extra'tje zorgt dit er ook voor dat we geen lengte moeten meegeven, de compiler zal deze zelf bepalen. Volgende voorbeeld maakt een nieuwe array aan die bestaat uit 2 nieuwe studenten, alsook 1 bestaande (``jos``):
 
-```csharp
+```java
 Student jos=new Student();
 Student[] mijnKlas = new Student[]
     {
@@ -47,7 +47,7 @@ Let op de puntkomma helemaal achteraan. Die wordt als eens vergeten.
 
 Van zodra een object in de array staat kan je deze vanuit de array aanspreken d.m.v. de index :
 
-```csharp
+```java
 mijnKlas[3].Name= "Vincent Lagasse";
 ```
 
@@ -55,7 +55,7 @@ mijnKlas[3].Name= "Vincent Lagasse";
 
 Ook hier kan je met ``?`` een null check schrijven:
 
-```csharp
+```java
 mijnKlas?[3]?.Name= "Romeo Montague ";
 ```
 Merk op dat het eerste vraagteken controleer of de array niet ``null``is. Het tweede vraagteken, na de index, is om te controleren of het element op die index niet ``null`` is.

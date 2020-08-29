@@ -2,7 +2,7 @@
 
 De plaats in je code waar je je exceptions zal opvangen, heeft invloed op de totale werking van je code. Stel dat je volgende stukje code hebt waarin je een methode hebt die een lijst van strings zal beschouwen als urls die moeten gedownload worden. Indien er echter fouten in de string staan dan zal er een uitzondering optreden bij lijn 16:
 
-```csharp
+```java
 static void Main(string[] args)
 {
     string[] urllist= new string[3];
@@ -29,7 +29,7 @@ We bekijken nu een aantal mogelijk try/catch locaties in deze code en zien welke
 
 ## Rondom methode-aanroep in z'n geheel
 
-```csharp
+```java
 try
 {
     DownloadAllUris(urllist);
@@ -52,7 +52,7 @@ Met andere woorden, zolang de urls geldig zijn zal de download lukken. Bij de ee
 
 ## Rond afzonderlijke elementen in de loop
 
-```csharp
+```java
 foreach (string url in urlstodownload)
 {
     try

@@ -3,7 +3,7 @@
 ## Werking new operator
 Objecten die je aanmaakt komen niet zomaar tot leven. Nieuwe objecten maken we aan met behulp van de ``new`` operator zoals we al gezien hebben:
 
-```csharp
+```java
 Student FrankVermeulen = new Student();
 
 private int leeftijd= 35;
@@ -46,7 +46,7 @@ De default constructor is een constructor die geen extra parameters aanvaardt. E
 
 Stel dat we een klasse ``Student`` hebben:
 
-```csharp
+```java
 class Student
 {
     private int age;
@@ -58,7 +58,7 @@ We willen telkens een Student-object wordt aangemaakt dat deze een random leefti
 
 Eerst schrijven de default constructor, deze ziet er als volgt uit:
 
-```csharp
+```java
 class Student
 {
     public Student()
@@ -75,7 +75,7 @@ Zoals verteld moet de constructor de naam van de klasse hebben, public zijn en g
 
 Vervolgens voegen we de code toe die we nodig hebben:
 
-```csharp
+```java
 class Student
 {
     public Student()
@@ -96,7 +96,7 @@ Telkens we nu een object zouden aanmaken met ``new Student()`` zal deze een will
 
 * Als je twee of meerdere Studenten snel in je code na mekaar aanmaakt zullen deze dezelfde leeftijd hebben. Dit is omdat ieder object z'n eigen ``Random`` aanmaakt en zoals we weten zal een random generator dezelfde getallen genereren als deze vlak na mekaar (in tijd) zijn aangemaakt. Een oplossing zullen we hier later voor zien. Spoiler, ``static`` is de oplossing hiervoor:
 
-```csharp
+```java
 class Student
 {
     static Random r= new Random();

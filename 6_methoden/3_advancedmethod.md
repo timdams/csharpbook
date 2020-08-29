@@ -11,7 +11,7 @@ Wanneer je een methode aanroept is de volgorde van je argumenten belangrijk: dez
 Met behulp van **named parameters** kan je echter expliciet aangeven welke argument aan welke methode-parameter moet meegegeven worden. 
 
 Stel dat we een methode hebben met volgende signatuur:
-```csharp
+```java
 static void PrintDetails(string seller, int orderNum, string product)
 {
     //do stuff
@@ -19,18 +19,18 @@ static void PrintDetails(string seller, int orderNum, string product)
 ```
 
 Zonder named parameters zou een aanroep van deze methode als volgt kunnen zijn:
-```csharp
+```java
 PrintDetails("Gift Shop", 31, "Red Mug");
 ```
 
 We kunnen named parameters aangeven door de naam van de parameter gevolgd door een dubbel punt en de waarde. Als we dus bovenstaande methode willen aanroepen kan dat ook als volgt met named parameters:
 
-```csharp
+```java
  PrintDetails(orderNum: 31, product: "Red Mug", seller: "Gift Shop");
  ```
  of ook:
 
- ```csharp
+ ```java
  PrintDetails(product: "Red Mug", seller: "Gift Shop", orderNum: 31);
  ```
 
@@ -41,14 +41,14 @@ Kortom, op deze manier maakt de volgorde van parameter niets uit. Dit werkt enke
 Je mag echter ook een combinatie gebruiken van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren). 
 
 Enkele **geldige** voorbeelden:
-```csharp
+```java
 PrintDetails("Gift Shop", 31, product: "Red Mug");
 PrintDetails(seller: "Gift Shop", 31, product: "Red Mug");
 PrintDetails("Gift Shop", orderNum: 31, "Red Mug");    
 ```
 
 Enkele **niet geldige** voorbeelden:
-```csharp
+```java
 PrintDetails(product: "Red Mug", 31, "Gift Shop");
 PrintDetails(31, seller: "Gift Shop", "Red Mug");
 PrintDetails(31, "Red Mug", seller: "Gift Shop");
@@ -64,13 +64,13 @@ Je geef aan dat een parameter optioneel is door deze een default waarde te geven
 **Optionele parameters worden steeds achteraan de parameterlijst van de methode geplaatst** .
 
 In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters (``optName`` en ``age``) optioneel zijn door er met de toekenningsoperator een default waarde aan te geven:
-```csharp
+```java
 
 static void BookFile(int required, string optName = "unknown", int age = 10)
 ```
 
 Wanneer nu een parameter niet wordt meegegeven, dan zal deze default waarde in de plaats gebruikt worden. Volgende manieren zijn nu geldige manieren om de methode aan te roepen:
-```csharp
+```java
 BookFile(15, "tim", 25); //klassieke aanroep, age zal 25 zijn, optName zal "tim" zijn
 BookFile(20, "dams"); //age zal 10 zijn, optName "dams"
 BookFile(35); //optName zal "default string" en age zal 10 zijn
@@ -78,14 +78,14 @@ BookFile(35); //optName zal "default string" en age zal 10 zijn
 
 **Je mag enkel de optionele parameters van achter naar voor weglaten. Volgende aanroepen zijn dus niet geldig**:
 
-```csharp
+```java
 BookFile(3, 4); //daar de tweede param een string moet zijn
 BookFile(3, ,4); //lege parameters mag nooit
 ```
 
 {% hint style='tip' %}
 Met optionele parameters kunnen we dit echter, indien gewenst, omzeilen. Volgende aanroep is wel geldig:
-```csharp
+```java
 BookFile(3, age: 4);
 ```
 {% endhint %}
@@ -96,7 +96,7 @@ Method overloading wil zeggen dat je een **methode met dezelfde naam en returnty
 
 Volgende methoden zijn overloaded:
 
-```csharp
+```java
 static int ComputeArea(int lengte, int breedte)
 {
     int opp = lengte*breedte;
@@ -111,7 +111,7 @@ static int ComputeArea(int radius)
 ```
 
 Afhankelijk van de aanroep zal dus de ene of andere uitgevoerd worden. Volgende code zal dus werken:
-```csharp
+```java
 Console.WriteLine($"Rechthoek: {ComputeArea(5, 6)}");
 Console.WriteLine($"Circle: {ComputeArea(7)}");
 ```
@@ -122,7 +122,7 @@ Indien de compiler twijfelt tijdens de **overload resolution** (welke versie moe
 
 Stel dat we volgende overloaded methoden hebben:
 
-```csharp
+```java
 static int ComputeArea(int radius) //versie A
 {
     int opp = (int)(Math.PI*radius*radius);
@@ -138,7 +138,7 @@ static int ComputeArea(double radius) //versie B
 
 Volgende aanroepen zullen dus als volgt uitgevoerd worden, gebaseerd op de betterness rule:
 
-```csharp
+```java
 Console.WriteLine($"Circle 1: {ComputeArea(7)}"); //versie A
 Console.WriteLine($"Circle 2: {ComputeArea(7.5)}"); //versie B
 Console.WriteLine($"Circle 3: {ComputeArea(7.3f)}"); //versie B
@@ -163,7 +163,7 @@ Als je dus bijvoorbeeld een parameter van het type ``int`` meegeeft bij een meth
 
 Indien de betterness rule niet werkt, dan zal de eerste parameter bepalen wat er gebruikt wordt. Dat zien we in volgende voorbeeld:
 
-```csharp
+```java
 static void Main(string[] args)
 {
     Toonverhouding(5, 3.4); //versie A
@@ -187,7 +187,7 @@ Indien ook die regel niet werkt dan zal een fout optreden zoals hier wat zal res
 
 ![We zien aan de foutboodschap duidelijk dat er eerst naar de eerste parameter wordt gekeken bij twijfel.](../assets/4_methoden/overl.png)
 
-```csharp
+```java
 static void Main(string[] args)
 { 
     Toonverhouding(5.6, 3.4);  

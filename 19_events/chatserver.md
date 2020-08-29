@@ -33,7 +33,7 @@ Als je nu je programma start (F5) of debugt dan zullen steeds beide projecten ui
 
 Telkens de server een string krijgt die eindigt op een enter zal de server deze boodschap op het scherm tonen. Om te voorkomen dat de server afsluit van zodra hij lijn 2 heeft uitgevoerd plaatsen we een ``ReadLine```achteraan. Op die manier zal de server blijven reageren op events tot de gebruiker op enter duwt om alles af te sluiten:
 
-```csharp
+```java
 
 static void Main(string[] args)
 {
@@ -50,7 +50,7 @@ private static void Server_DelimiterDataReceived(object sender, SimpleTCP.Messag
 
 # Client-code
 
-```csharp
+```java
 static void Main(string[] args)
 {
     var client = new SimpleTcpClient().Connect("127.0.0.1", 1111);

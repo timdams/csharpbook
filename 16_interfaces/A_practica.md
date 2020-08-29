@@ -96,7 +96,7 @@ Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functi
 ![Klasse-schema](../assets/9_interfaces/practgame.png)
 
 ``Location`` is van het type ``Point`` (compositie). ``Point`` is een zelfgemaakte mini klasse die er als volgt uit (minimaal uitziet): 
-```csharp
+```java
 class Point
 {
   public int X{get;set;}

@@ -11,7 +11,7 @@ Het ``is`` keyword is een operator die je kan gebruiken om te weten te komen of:
 
 ### Is voorbeeld 1
 Stel dat we volgende drie klassen hebben:
-```csharp
+```java
 class Vehicle {}
 
 class Car: Vehicle{}
@@ -22,13 +22,13 @@ Een Car **is** een Vehicle.
 Een Person **is geen** Vehicle.
 
 Stel dat we enkele variabelen hebben als volgt:
-```csharp
+```java
 Car myCar= new Car();
 Person rambo= new Person();
 ```
 
 We kunnen nu de objecten met ``is`` bevragen of ze van een bepaalde type zijn:
-```csharp
+```java
 if(myCar is Vehicle)
 {
     Console.WriteLine("The first object is a Vehicle");
@@ -43,7 +43,7 @@ De uitvoer zal worden:``The first object is a Vehicle``.
 
 ## As keyword met voorbeeld
 Wanneer we objecten van het ene naar het andere type willen omzetten dan doen we dit vaak met behulp van [casting](../3_data/4_converteren_casting.md):
-```csharp
+```java
 Student fritz= new Student();
 Mens jos = (Mens)fritz;
 ```
@@ -54,14 +54,14 @@ Mens jos = (Mens)fritz;
  
  De code van daarnet herschrijven we dan naar:
 
- ```csharp
+ ```java
 Student fritz= new Student();
 Mens jos =fritz as Mens;
 ```
 Indien nu de casting niet lukt (omdat ´´Student´´ misschien geen childklasse van ´´Mens´´ blijkt te zijn) dan zal ``jos`` de waarde ``null`` hebben gekregen.
 
 We kunnen dan vervolgens bijvoorbeeld schrijven:
- ```csharp
+ ```java
 Student fritz= new Student();
 Mens jos =fritz as Mens;
 if(jos!=null)

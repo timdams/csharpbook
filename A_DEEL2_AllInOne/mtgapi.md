@@ -18,12 +18,12 @@ We maken een applicatie die aan de gebruiker alle edities van Magic toont. De ge
 
 Voeg zeker bovenaan toe:
 
-```csharp
+```java
 using MtgApiManager.Lib.Service;
 ```
 ## Stap 1 : Set tonen
 
-```csharp
+```java
  SetService service = new SetService();
 var result = service.All();
 foreach (var set in result.Value)
@@ -33,7 +33,7 @@ foreach (var set in result.Value)
 ```
 
 ## Stap 2: Controleren op geldige set
-```csharp
+```java
 Console.WriteLine("Voor welke set wil je booster (voer code tussen haakjes in)?");
 
 string code = Console.ReadLine().ToLower();
@@ -49,7 +49,7 @@ foreach (var set in result.Value)
 ```
 ## Stap 3: Boosterpack generen en tonen
 
-```csharp
+```java
 var boosterresult = service.GenerateBooster(code);
 var boosterpack = boosterresult.Value;
 if (boosterpack != null)
@@ -65,7 +65,7 @@ if (boosterpack != null)
 ## Stap 4: kaart tonen
 Vragen welke kaart getoond moet worden
 
-```csharp
+```java
  Console.WriteLine("Welke kaart wenst u meer info");
 int keuze = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
@@ -80,7 +80,7 @@ System.Diagnostics.Process.Start(chosenCard.ImageUrl.ToString());
 
 # Alle code samen
 
-```csharp
+```java
 SetService service = new SetService();
 var result = service.All();
 foreach (var set in result.Value)

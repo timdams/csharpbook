@@ -7,7 +7,7 @@
 
 ## Oplossing Rommelzin
 
-```csharp
+```java
 Console.WriteLine("Wat is je favoriete kleur?");
 string favkleur = Console.ReadLine();
 Console.WriteLine("Wat is je favoriete eten?");
@@ -23,7 +23,7 @@ Console.WriteLine("Je favoriete kleur is"+ faveten +". Je eet graag"+ favauto +"
 
 ## Met kleuren
 
-```csharp
+```java
 //...
 //Op het einde
 Console.BackgroundColor = ConsoleColor.Blue;
@@ -38,7 +38,7 @@ Console.WriteLine("en je favoriete boek is "+ favkleur);
 
 Of per woord:
 
-```csharp
+```java
 //...
 //Op het einde
 Console.BackgroundColor = ConsoleColor.Blue;

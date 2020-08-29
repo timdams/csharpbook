@@ -19,7 +19,7 @@ Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week 
 #### Slechte oplossing 1: Met ``int``
 De waarde van de dag staat in een variabele ``int dagKeuze``. We bewaren er 1 in voor Maandag, 2 voor dinsdag, enzovoort. Vervolgens kunnen we dan schrijven: 
 
-```csharp
+```java
 if(dagKeuze==1)
 {
     Console.WriteLine("We doen de maandag dingen");
@@ -41,7 +41,7 @@ Deze oplossing heeft 2 grote nadelen:
 
 Laten we tweede manier eens bekijken: de waarde van de dag bewaren we in een variabele ``string dagKeuze``. We bewaren de dagen als ``"maandag"``, ``"dinsdag"``, etc.
 
-```csharp
+```java
 if(dagKeuze=="maandag")
 {
     Console.WriteLine("We doen de maandag dingen");
@@ -77,13 +77,13 @@ Zelf een ``enum`` type maken gebeurt in 2 stappen:
 
 #### Stap 1: het nieuwe datatype definiëren
 We maken eerst een enum type aan. **In je console-applicaties moet dit binnen ``class Program`` gebeuren, maar niét binnen de (``main``) methoden**:
-```csharp
+```java
 enum Weekdagen{Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag};
 ```
 
 Als volgt dus:
 
-```csharp
+```java
 enum Weekdagen{Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag};
 
 static void Main(string[] args)
@@ -97,14 +97,14 @@ We hebben nu letterlijk een nieuwe datatype aangemaakt, genaamd ``Weekdagen``. N
 #### Stap 2: variabelen van het nieuwe datatype aanmaken en gebruiken
 
 We kunnen nu variabelen van het type ``Weekdagen`` aanmaken. Bijvoorbeeld:
-```csharp
+```java
 Weekdagen dagKeuze;
 Weekdagen andereKeuze;
 ```
 
 En vervolgens kunnen we waarden aan deze variabelen toewijzen als volgt:
 
-```csharp
+```java
 dagKeuze = Weekdagen.Donderdag;
 ```
 
@@ -112,11 +112,11 @@ Kortom: we hebben variabelen zoals we gewoon zijn, het enige verschil is dat we 
 
 ### Enums en beslissingen werken graag samen
 Ook de beslissingsstructuren worden leesbaarder:
-```csharp
+```java
 if(dagKeuze == Weekdagen.Woensdag)
 ```
 of een switch:
-```csharp
+```java
 switch(dagKeuze)
 {
     case Weekdagen.Maandag:
@@ -142,7 +142,7 @@ Intern worden de enum-variabelen als ints bewaard. In het geval van de ``Weekdag
 
 Volgende conversies met behulp van **casting** zijn dan ook perfect toegelaten:
 
-```csharp
+```java
 int keuze = 3;
 
 Weekdagen dagKeuze = (Weekdagen)keuze;
@@ -152,7 +152,7 @@ Weekdagen dagKeuze = (Weekdagen)keuze;
 
 Wil je dus bijvoorbeeld 1 dag bijtellen dan kan je schrijven:
 
-```csharp
+```java
 Weekdagen dagKeuze= Weekdagen.Dinsdag;
 int extradag= (int)dagKeuze + 1;
 Weekdagen nieuweDag= (Weekdagen)extradag;
@@ -165,14 +165,14 @@ Let er wel op dat je geen extra dag op Zondag probeert bij te tellen. Dat zal ni
 
 Standaard worden de enum waarden intern dus genummerd beginnende bij 0. Je kan dit ook manueel veranderen door bij het maken van de ``enum`` expliciet aan te geven wat de interne waarde moet zijn, als volgt:
 
-```csharp
+```java
 enum WeekDagen 
     {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
 ```
 De dagen zullen nu vanaf 1 genummerd worden, dus ``WeekDagen.Woensdag`` zal de waarde 3 hebben.
 
 We kunnen ook nog meer informatie meegeven, bijvoorbeeld:
-```csharp
+```java
 enum WeekDagen 
     {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
 ```
@@ -187,7 +187,7 @@ Heel vaak zal je een programma schrijven waarbij de gebruiker een keuze moet mak
 
 Volgende code toont hoe je dit kunt doen:
 
-```csharp
+```java
 enum Menu {Demo=1, Start, Einde}
 static void Main(string[] args)
 {
@@ -222,12 +222,12 @@ Bij game development willen we bijhouden in welke staat het programma zich bevin
 
 Dit is een typisch ``enum`` verhaal. We definiëren hiervoor het volgende type:
 
-```csharp
+```java
 enum gamestate {intro, startmenu, ingame, gameover, optionsscreen}
 ```
 En vervolgens kunnen we dan met een eenvoudige switch in ons hoofdprogramma snel de relevante code uitvoeren:
 
-```csharp
+```java
 //Bij opstart:
 gamestate playerGameState= gamestate.intro;
 
@@ -245,13 +245,13 @@ switch(playerGameState)
 
 Een ander typisch voorbeeld is schaken. We maken een enum om de speelstukken voor te stellen (``Pion, Koning, Toren`` etc.) en kunnen hen dan laten bewegen en vechten in uiterst leesbare code:
 
-```csharp
+```java
 if(spelstuk== Schaakstuk.Paard)
 ```
 
 En zoals reeds vermeld, je hebt al met enums gewerkt in het eerste hoofdstuk van dit boek toen je met ``ConsoleColor`` speelde. Vanaf nu kan je dus dit soort toffe dingen doen:
 
-```csharp
+```java
 ConsoleColor mijnLievelingsKleur = ConsoleColor.Green;
 
 //Verderop...

@@ -23,7 +23,7 @@ Via de ``Add()`` methode kan je elementen toevoegen aan de lijst. Je dient als p
 
 In volgende voorbeeld maken we een List aan die objecten van het type string mag bevatten en vervolgens plaatsen we er twee elementen in.
 
-```csharp
+```java
 List<String> myStringList = new List<String>();
 myStringList.Add("This is the first item in my list!");
 myStringList.Add("And another one!");
@@ -33,14 +33,14 @@ myStringList.Add("And another one!");
 
 **Het leuke van een List is dat je deze ook kan gebruiken als een gewone array**, waarbij je mbv de indexer elementen kan aanroepen. Stel bijvoorbeeld dat we een lijst hebben met minstens 4 strings in. Volgende code toont hoe we de string op positie 3 kunnen uitlezen en hoe we die op positie 2 overschrijven:
 
-```csharp
+```java
 Console.WriteLine(myStringList[3]);
 myStringList[2] = "andere zin";`
 ```
 
 Ook de klassieke werking met ``for`` blijft gelden. De enige aanpassing is dat ``List<>`` niet met ``Length`` werkt maar met **``Count``**.
 
-```csharp
+```java
 for(int i = 0 ; i < myStringList.Count; i++)
 {
     Console.WriteLine(myStringList[i])
@@ -53,7 +53,7 @@ Interessante methoden en properties voorts zijn:
 
 * ``Clear()`` :methode die de volledige lijst leegmaakt
 * ``Insert()``: methode om element op specifieke plaats in lijst toe te voegen, bijvoorbeeld:
-```csharp
+```java
 myStringList.Insert(1,"A fourth sentence");
 ```
 voegt de string toe op de tweede plek en schuift de rest naar achter
@@ -67,7 +67,7 @@ Je kan met een eenvoudige ``for`` of while-loop over een lijst itereren, maar he
 
 Dit is dan ook de meestgebruikte operatie om eenvoudig ([Pro's: je kan ook Linq overwegen!](https://www.tutorialspoint.com/linq/)) en snel een bepaald stuk code toe te passen op ieder element van de lijst:
 
-```csharp
+```java
 List<int> integerList=new List<int>();
 integerList.Add(2);
 integerList.Add(3);

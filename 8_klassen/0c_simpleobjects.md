@@ -8,7 +8,7 @@ Stel dat we een klasse willen maken die ons toelaat om objecten te maken die ver
 
 We maken een nieuwe klasse ``Mens`` en maken een methode ``Praat`` die iets op het scherm zet:
 
-```csharp
+```java
 class Mens
 {
     public void Praat()
@@ -25,7 +25,7 @@ We zien twee nieuwe aspecten:
 
 Je kan nu elders objecten aanmaken en ieder object z'n methode ``Praat`` aanroepen:
 
-```csharp
+```java
 Mens joske = new Mens();
 Mens alfons = new Mens();
 
@@ -46,7 +46,7 @@ De reden: **wanneer je voor een methode (of klasse) niet expliciet ``public`` ze
 
 Test volgende klasse eens, kan je de methode ``VertelGeheim`` vanuit de Main op ``joske`` aanroepen?
 
-```csharp
+```java
 class Mens
 {
     public void Praat()
@@ -70,7 +70,7 @@ Waarom zou je bepaalde zaken ``private`` maken?
 Stel dat we in de klasse extra (hulp)methoden willen gebruiken die enkel intern nodig zijn, dan doen we dit. Volgende voorbeeld toont hoe we in de methode ``Praat`` de private methode ``VertelGeheim`` gebruiken:
 
 
-```csharp
+```java
 class Mens
 {
     public void Praat()
@@ -88,7 +88,7 @@ class Mens
 
 Als we nu elders een object laten praten als volgt:
 
-```csharp
+```java
 Mens rachid = new Mens();
 rachid.Praat();
 ```
@@ -105,7 +105,7 @@ Mijn geheim is dat ik leef!
 
 We maken onze klasse wat groter, we willen dat een object een leeftijd heeft die we kunnen verhogen via een methode ``VerjaardagVieren`` (we hebben de methode ``VertelGeheim`` even weggelaten):
 
-```csharp
+```java
 class Mens
 {
     private int leeftijd = 1;
@@ -137,7 +137,7 @@ Die laatste opmerking is een kernconcept van OOP: ieder object heeft z'n eigen i
 
 We zullen dit testen in volgende voorbeeld waarin we 2 objecten maken en enkel 1 ervan laten verjaren. Kijk wat er gebeurt:
 
-```csharp
+```java
 Mens Elvis = new Mens();
 Mens Bono = new Mens();
 
@@ -152,7 +152,7 @@ Als je deze code zou uitvoeren zal je zien dat de leeftijd van Elvis verhoogt en
 ## Initiële waarde van een instantievariabele
 Bekijk opnieuw het voorbeeld:
 
-```csharp
+```java
 class Mens
 {
     private int leeftijd = 1;

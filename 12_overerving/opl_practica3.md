@@ -1,6 +1,6 @@
 # Dierenrijk
 
-```csharp
+```java
 var alleBeestjes = new List<Animal>();
 alleBeestjes.Add(new Animal() {NaamBeest="Dodo", IsUitgestorven=true });
 alleBeestjes.Add(new Cow() {NaamBeest="Milkakoe", KleurVlekken="Paars" } );
@@ -13,7 +13,7 @@ foreach (var beest in alleBeestjes)
 }
 ```
 
-```csharp
+```java
 class Animal
 {
     public string NaamBeest { get; set; }
@@ -71,7 +71,7 @@ class Iguana : Reptile { }
 
 # HiddenBookmark
 
-```csharp
+```java
 class HiddenBookMark: BookMark
 {
     public override void OpenSite()
@@ -85,7 +85,7 @@ class HiddenBookMark: BookMark
 
 ## Deel 1
 
-```csharp
+```java
 class Patient
 {
     public string Naam { get; set; }
@@ -108,7 +108,7 @@ class Patient
 
 ## Deel 2
 
-```csharp
+```java
 class VerzekerdePatient : Patient
 {
     private const double korting = 0.1;
@@ -124,7 +124,7 @@ Aantonen werking:
 
 Eenvoudig:
 
-```csharp
+```java
 Patient JosFromUSA = new Patient() 
     { Naam = "American Jos", UrenInZiekenhuis = 10 };
 VerzekerdePatient JosFromBelgium = new VerzekerdePatient() 
@@ -135,7 +135,7 @@ JosFromBelgium.ToonInfo();
 
 Complexer:
 
-```csharp
+```java
 List<Patient> allePatienten = new List<Patient>()
 {
     new Patient() { Naam = "American Jos", UrenInZiekenhuis = 10 },

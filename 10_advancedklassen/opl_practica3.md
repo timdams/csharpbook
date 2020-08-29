@@ -1,7 +1,7 @@
 # Meetlab
 
 
-```csharp
+```java
 class Meetlat
 {
     public Meetlat(int lengtestart)
@@ -36,7 +36,7 @@ class Meetlat
 
 # Sport simulator
 
-```csharp
+```java
 class Waterpolospeler
 {
     private string spelersNaam;
@@ -157,7 +157,7 @@ Reeks: {Reeks}
 # Pokemon met deel 2
 
 We laten de reeds bestaande properties en methoden niet meer zien in deze oplossing:
-```csharp
+```java
 
 class Pokemon
 {
@@ -245,7 +245,7 @@ class Pokemon
 
 # Digitale kluis
 
-```csharp
+```java
 class DigitaleKluis
 {
     private int code=0x0000;

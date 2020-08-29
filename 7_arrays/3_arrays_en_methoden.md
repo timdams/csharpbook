@@ -9,7 +9,7 @@ Herinner je dat arrays *by reference* werken. Je werkt dus steeds met de origine
 
 Stel dat je bijvoorbeeld een methode hebt die als parameter 1 array van ints meekrijgt. De methode zou er dan als volgt uitzien.
 
-```csharp
+```java
 static void EenVoorbeeldMethode(int[] inArray)
 {
  
@@ -18,7 +18,7 @@ static void EenVoorbeeldMethode(int[] inArray)
 
 Om deze methode aan te roepen volstaat het om een bestaande array als parameter mee te geven:
 
-```csharp
+```java
 int[] getallen = {1, 2, 3};
 EenVoorbeeldMethode(getallen);
 ```
@@ -28,7 +28,7 @@ Een array als parameter meegeven kan dus, maar een ander aspect waar rekening me
 
 Volgende methodesignatuur is dus **FOUT**!
 
-```csharp 
+```java 
 static void EenVoorbeeldMethode(ref int[6] inArray)
 {
  
@@ -42,7 +42,7 @@ En zal volgende error genereren:
 
 Volgend voorbeeld toont een methode die alle getallen van de meegegeven array op het scherm zal tonen:
 
-```csharp
+```java
 static void ToonArray(int[] getalArray)
 {
     Console.WriteLine("Array output:");
@@ -56,7 +56,7 @@ static void ToonArray(int[] getalArray)
 
 De ``ToonArray`` methode aanroepen kan dan als volgt:
 
-```csharp
+```java
 int[] leeftijden = {2, 5, 1, 6};
 ToonArray(leeftijden);
 ``` 
@@ -79,7 +79,7 @@ Volgend programma toont hoe we verschillende onderdelen van de code in methoden 
 
 Begrijp je wat dit programma doet? En kan je voorspellen wat er op het scherm zal komen? 
 
-```csharp
+```java
 static void VulArray(int[] getalArray)
 {
     for (int i = 0; i < getalArray.Length; i++)
@@ -120,7 +120,7 @@ Een array kan ook gebruikt worden als het returntype van een array. Hiervoor zet
 
 Stel bijvoorbeeld dat je een methode hebt die een int-array aanmaakt van een gegeven grootte waarbij ieder element van de array reeds een beginwaarde heeft die je ook als parameter meegeeft:
 
-```csharp
+```java
 static int[] MaakArray(int lengte, int beginwaarde)
 {
     int[] resultArray = new int[lengte];
@@ -133,7 +133,7 @@ static int[] MaakArray(int lengte, int beginwaarde)
 ```
 De aanroep van deze methode vereist dan dat je het resultaat opvangt in een nieuwe variabele, als volgt:
 
-```csharp
+```java
 int[] mijnNieuweArray= MaakArray(4,666);
 ```
 
@@ -149,7 +149,7 @@ Onthoud dat arrays altijd **by reference** naar en van methoden komen. Je werkt 
 ![](../assets/attention.png)
 Snel, zet je helm op, voor er ongelukken gebeuren! We hadden al enkele keren gezegd dat arrays *by reference* worden meegegeven, maar wat is daar nu het gevolg van? Wel, laten we eens naar volgende programma'tje kijken dat ik heb geschreven om de nummering van de appartementen in een flatgebouw aan te passen. Zoals je weet is het gelijkvloers in sommige landen 0, terwijl in andere dit 1 is. Volgende programma past de "naam" van het gelijkvloers aan:
 
-```csharp
+```java
 public static void Main()
 {
     int[] getallen= {1,2,3};
@@ -173,7 +173,7 @@ NA:-1
 
 Vergelijk dit met volgende voorbeeld waar we een ``int`` als parameter meegeven die *by value* en niét *by reference* wordt meegegeven:
 
-```csharp
+```java
 	public static void Main()
 	{
 		int[] getallen= {1,2,3};

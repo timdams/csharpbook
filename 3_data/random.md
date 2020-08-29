@@ -9,7 +9,7 @@ De ``Random``-bibliotheek (eigenlijk klasse) laat je toe om  willekeurige gehele
 2. Roep de ``Next`` methode aan op dit object telkens je een nieuw willekeurige getal nodig hebt.
 
 Als volgt: 
-```csharp
+```java
 Random randomGenerator= new Random();
 int mijnLeeftijd= randomGenerator.Next();
 ```
@@ -20,7 +20,7 @@ Vanaf nu kan je telkens aan het generatorobject een nieuw getal vragen m.b.v. de
 
 Volgende code toont bijvoorbeeld 3 random getallen op het scherm:
 
-```csharp
+```java
 Random mygen= new Random();
 
 int getal1= mygen.Next();
@@ -33,7 +33,7 @@ Console.WriteLine(getal3);
 
 Uiteraard mag dit ook
 
-```csharp
+```java
 Console.WriteLine(mygen.Next());
 Console.WriteLine($"Nog een getal: {mygen.Next()}");
 ```
@@ -46,7 +46,7 @@ De ``new Random()`` code is iets wat in het tweede deel van deze boekenreeks vol
 Je kan de ``Next`` methode ook 2 parameters meegeven, namelijk de grenzen waarbinnen het getal moet gegenereerd worden. De tweede parameter is exclusief dit getal zelf. Wil je dus een willekeurig geheel getal tot en met 10 dan schrijf je 11, niet 10, als tweede parameter:
 
 Enkele voorbeelden:
-```csharp
+```java
 Random somegenerator = new Random();
 int a= somegenerator.Next(0,11);  //getal tussen 0 tot en met 10
 int b= somegenerator.Next(55,100);  //getal tussen 55 tot en met 99
@@ -58,14 +58,14 @@ Met de ``NextDouble`` methode kan je kommagetallen genereren tussen ``0.0`` en `
 
 Wil je een groter kommagetal dan zal je dit gegenereerde getal moeten vermenigvuldigen naar de range die je nodig hebt.
 Stel dat je een getal tussen 0.0 en 10.0 nodig hebt, dan schrijf je:
-```csharp
+```java
 Random myran= new Random();
 double randomgetal= myran.NextDouble() * 10.0;
 ```
 Je vermenigvuldigt eenvoudigweg je gegenereerde getal met het bereik dat je wenst (10.0 in dit geval)
 
 En wat als je een kommagetal tussen 5.0 en 12.5 wenst?  Als volgt:
-```csharp
+```java
 Random myran= new Random();
 double randomgetal= 5.0+  (myran.NextDouble() * 7.5);
 ```
@@ -85,7 +85,7 @@ Wel wel, wie we hier hebben. Werkt je Random generator niet naar behoren? Wil je
 
 Wanneer je twee ``Random`` objecten aanmaakt op quasi hetzelfde tijdstip in je code, dan zullen deze twee generators ook dezelfde getallen genereren:
 
-```csharp
+```java
 Random a = new Random();
 Random b = new Random();
 Console.WriteLine(a.Next());
@@ -100,7 +100,7 @@ Wil je toch dezelfde willekeurige reeks getallen na elkaar genereren telkens je 
 
 In volgende voorbeeld zal generator ``a`` steeds dezelfde reeks willekeurige getallen genereren, telkens je je programma uitvoert. De waarde die je meegeeft moet uiteraard niet ``666`` zijn. Ieder getal dat je meegeeft is een andere seed:
 
-```csharp
+```java
 Random a = new Random(666);
 ```
 <!---{/aside}--->

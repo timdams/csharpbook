@@ -6,7 +6,7 @@ In C# kunnen we geen objecten aanmaken voor we een klasse hebben gedefinieerd da
 
 Een klasse heeft de volgende vorm:
 
-```csharp
+```java
 [optionele access modifier] class className
 {
 
@@ -15,7 +15,7 @@ Een klasse heeft de volgende vorm:
 
 Volgende code beschrijft de klasse auto in C#
 
-```csharp
+```java
 class Auto
 {
 
@@ -46,7 +46,7 @@ Je kan "eender waar" een klasse aanmaken, maar het is een goede gewoonte om per 
 Je kan nu objecten aanmaken van de klasse die je hebt gedefinieerd.
 Je doet dit door eerst een variabele te definiëren en vervolgens een object te **instantiëren** met behulp van het ``new`` keyword:
 
-```csharp
+```java
 Auto mijnEerste = new Auto();
 Auto mijnAndereAuto = new Auto();
 ```

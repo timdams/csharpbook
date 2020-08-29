@@ -1,6 +1,6 @@
 # UML naar code
 
-```csharp
+```java
 class Head {}
 class Hand {}
 class Leg{}
@@ -13,7 +13,7 @@ class Person
 }
 ```
 
-```csharp
+```java
 class Wheel{}
 class Crankshaft{}
 class Piston{}
@@ -51,7 +51,7 @@ class Boat
 
 # Politiek
 
-```csharp
+```java
 static void Main(string[] args)
 {
     President ikke = new President() { Naam = "Tim" };
@@ -72,7 +72,7 @@ static void Main(string[] args)
 }
 ```
 
-```csharp
+```java
 class Land
 {
     private President President;
@@ -141,14 +141,14 @@ Je hebt nog 2 vrij ramsloten
 Er zijn geen andere componenten aanwezig
 ```
 
-```csharp
+```java
 Moederbord Z390E_GAMING = new Moederbord(3);
 Z390E_GAMING.CPUSlot = new CPU("IntelCorei9_9900K",4);
 Z390E_GAMING.Ramslots.Add(new RamMemory("Corsair", 8));
 Z390E_GAMING.TestMoederbord();
 ```
 
-```csharp
+```java
 class Moederbord
 {
     public Moederbord(int aantalRamsloten)
@@ -213,7 +213,7 @@ class CPU : PCComponent
 
 ## Main:
 
-```csharp
+```java
 Huis myHuis = new Huis();
 myHuis.Kamers.Add(new Salon() { HeeftSchouw = true });
 myHuis.Kamers.Add(new Gang() {Oppervlakte=20 });
@@ -227,7 +227,7 @@ Console.WriteLine(myHuis.BerekenPrijs());
 
 (In sommige hanteer ik de [EDM-schrijftstijl](B_appendix/6_exprbody.md) bij de override van properties.)
 
-```csharp
+```java
 class Huis
     {
         public List<Kamer> Kamers { get; set; } = new List<Kamer>();

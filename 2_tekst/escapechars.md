@@ -24,7 +24,7 @@ Escape characters worden met een backslash (`\`) aangeduid, gevolgd door het kar
 Laten we eens kijken naar de werking van het afkappingsteken als voorbeeld (de zogenaamde apostrof, gebruik in om bijvoorbeeld ``'s avonds`` te schrijven)
 Volgende code zal de compiler verkeerd interpreteren, daar hij denkt dat we een leeg karakter wensen op te slaan:
 
-```csharp
+```java
 char apostrof= ''';
 ```
 
@@ -34,7 +34,7 @@ Het gevolg is een litanie aan vreemde foutboodschappen omdat er na de sluitende 
 
 De juiste manier is om dus een escape character te gebruiken. We gaan met de backslash aanduiden dat het volgende teken (de tweede apostrof) een ``char`` voorstelt en niet het sluitende teken in de code.
 
-```csharp
+```java
 char apostrof= '\'';
 ```
 
@@ -56,20 +56,20 @@ Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de bel
 
 Aangezien strings eigenlijk bestaan uit 1 of meerdere char-elementen, is het logisch dat je ook in een string met escape characters kunt werken. Het woord "'s avonds" schrijf je bijvoorbeeld als volgt:
 
-```csharp
+```java
 string woord= "\'s avonds";
 ```
 
 Idem met aanhalngstekens. Stel je voor dat je een programma wilt schrijven dat C# code op het scherm toont. Dat doe je dan met volgende, nogal Inception-achtige, manier:
 
-```csharp
+```java
 string inceptionCode= "Console.WriteLine(\"Cool he\");";
 Console.WriteLine(inceptionCode);
 ```
 
 Merk op dat we voorgaande code nog meer Inception-like kunnen maken door de string ineens in de WriteLine methode te plaatsen:
 
-```csharp
+```java
 Console.WriteLine("Console.WriteLine(\"Cool he\");");
 ```
 
@@ -84,14 +84,14 @@ Console.WriteLine("Cool he");
 
 We gebruiken vooral escape characters in strings om bijvoorbeeld witregels (`\n`) en tabulaties(`\t`) aan te geven. Test bijvoorbeeld volgende lijn code eens:
 
-```csharp
+```java
 string eenString = "Een zin.\t na een tab \nDan eentje op een nieuwe regel";
 Console.WriteLine(eenString);
 ```
 
 Dit zal als output geven:
 
-```csharp
+```java
 Een zin.         na een tab
 Dan eentje op een nieuwe regel
 ```
@@ -115,7 +115,7 @@ Als je het niet gewoon bent de tab-toets op je toetsenbord te gebruiken dan is d
 
 Bovenstaande uitvoer werd als volgt gemaakt:
 
-```csharp
+```java
 Console.WriteLine("01234567890123456789012345678901234567890123456789");
 Console.WriteLine("\t1\t2\t3\t4\t5");
 ```
@@ -128,7 +128,7 @@ Console.WriteLine("\t1\t2\t3\t4\t5");
 
 Volgende codevoorbeeld zal, als alles goed gaat, een zin op het scherm tonen en dan ogenblikkelijk erna een biepje:
 
-```csharp
+```java
 Console.WriteLine("Een zin en dan nu de biep\a");
 ```
 
@@ -136,7 +136,7 @@ Console.WriteLine("Een zin en dan nu de biep\a");
 
 Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerkadres wilt schrijven en niet iedere ``\`` wilt escapen:
 
-```csharp
+```java
 string zonderAt = "C\\Temp\\Myfile.txt";
 string metaAt = @"C\Temp\Myfile.txt";
 ```
@@ -147,14 +147,14 @@ Merk op dat aanhalingstekens nog steeds *ge-escape'd* moeten worden. Heb je dus 
 
 We hebben al gezien dat intern een ``char`` als een geheel getal (de Unicode) wordt voorgesteld. Stel dat we volgende char-variabelen aanmaken. 
 
-```csharp
+```java
 char letter1 = 'A';
 char letter2 = 'B';
 ```
 
 Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. **Bij char mag dat niet!** Of beter, dit mag maar zal niet het resultaat geven dat je mogelijk verwacht wanneer je voor het eerst hiermee leert werken. Oordeel zelf:
 
-```csharp
+```java
 Console.WriteLine(letter1 + letter2);
 ```
 

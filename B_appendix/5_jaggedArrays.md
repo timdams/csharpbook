@@ -10,7 +10,7 @@ Bij jagged arrays hoeft dat dus niet:
 
 Het grote verschil bij het aanmaken van bijvoorbeeld een 2D jagged arrays is het gebruik van de vierkante haken:
 
-```csharp
+```java
 double[][]tickets;
 ```
 
@@ -18,7 +18,7 @@ double[][]tickets;
 
 Vanaf nu kan je dan individuele arrays toewijzen aan ieder element van ```tickets``:
 
-```csharp
+```java
 tickets={
    new double[] {3.0, 40, 24},
    new double[] {123 , 31.3 },

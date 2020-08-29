@@ -41,7 +41,7 @@ Toon de werking aan van deze klasse.
 Afhankelijk van de browser die je wilt aanroepen moet je de incognito parameter iets anders doorgeven:
 **Let op de spatie na "-private ", deze moet er staan anders plak je je url aan de parameter:**
 
-```csharp
+```java
 Process.Start("iexplore.exe", "-private " + url);
 Process.Start("chrome.exe", "-incognito " + url);
 Process.Start("firefox.exe", "-private-window " + url);
@@ -61,7 +61,7 @@ We maken een klasse ``Ball`` die via ``Update`` en ``Draw`` zichzelf over het co
 * We maken sommige variabelen ``protected`` zodat later de overgeërfde klasse er aan kunnen
 * Een ``static`` methode ``CheckHit`` laat ons toe te ontdekken of twee ``Ball``objecten mekaar raken
 
-```csharp
+```java
 class Ball
 {
    public int X { get { return x; } }
@@ -120,7 +120,7 @@ class Ball
 
 De overgeërfde klasse ``PlayerBall`` is een ``Ball`` maar zal z'n ``vx`` en ``vy`` updaten gebaseerd op input via de ``ChangeVelocity`` methode:
 
-```csharp
+```java
 class PlayerBall : Ball
 {
    public PlayerBall(int xin, int yin, int vxin, int vyin) : base(xin, yin, vxin, vyin)
@@ -156,7 +156,7 @@ class PlayerBall : Ball
 
 We maken nu een rudimentair spel waarin de gebruiker een bal moet proberen te raken. 
 
-```csharp
+```java
 static void Main(string[] args)
 {
    Console.CursorVisible = false;

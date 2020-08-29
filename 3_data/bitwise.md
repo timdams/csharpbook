@@ -6,7 +6,7 @@ Je kan ook met binaire getallen werken in C#. Dit kan nuttig zijn wanneer je bij
 
 Je kan een string die een binair getal voorstelt eenvoudig naar een getal omzetten m.b.v. 
 
-```csharp
+```java
 string data = "0101";
 int output = Convert.ToInt32(data, 2);
 ```
@@ -16,7 +16,7 @@ De tweede parameter ``2`` bij de Convert geeft aan van welke base het getal komt
 
 Ook in de andere richting kan, maar dan met behulp van de ``Convert.ToString`` methode:
 
-```csharp
+```java
 int value = 8;
 string binary = Convert.ToString(value, 2);
 ```
@@ -44,7 +44,7 @@ Volgende operators kan je gebruiken [bron](https://www.tutorialspoint.com/csharp
 
 Een uitgewerkt voorbeeld (ook van [hier](https://www.tutorialspoint.com/csharp/csharp_bitwise_operators.htm)):
 
-```csharp
+```java
 int a = 60;            /* 60 = 0011 1100 */ 
 int b = 13;            /* 13 = 0000 1101 */
 int c = 0; 

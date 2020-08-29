@@ -5,7 +5,7 @@
 
 # Oplossing practica deel 1
 ## Oplossing Tafels van vermenigvuldiging:
-```csharp
+```java
 int teller= 1;
 while(teller <= 10)
 {
@@ -16,7 +16,7 @@ while(teller <= 10)
 ```
 
 ## Oplossing DNA Transscriptie
-```csharp
+```java
 string inp= "", DNA= "", RNA= "";
 do
 {
@@ -52,7 +52,7 @@ Console.WriteLine(RNA);
 ```
 
 ## Oplossing Armstrong nummer
-```csharp
+```java
     Console.WriteLine("Voer getal in:");
     int getal= Convert.ToInt32(Console.ReadLine());
     //1° Aantal cijfers ontdekken
@@ -87,7 +87,7 @@ Console.WriteLine(RNA);
 ```
 
 ## Oplossing Euler project
-```csharp
+```java
 int som= 0;
 for (int i= 0; i <= 1000; i++)
 {
@@ -100,7 +100,7 @@ Console.WriteLine($"Som:{som}");
 ```
 
 ## Oplossing for doordenker
-```csharp
+```java
 int rows= 4;
 for (int i= 1; i <= rows; i++)
 {
@@ -123,7 +123,7 @@ for (int i= 1; i <= rows-1; i++)
 
 ## Oplossing pro for doordenker extra
 
-```csharp
+```java
 int rows= 6;
 int k= 0;
 int space= 0;
@@ -154,7 +154,7 @@ for (int i= 1; i <= rows; i++,  k = 0)
 
 ## Oplossing grootste getal
 Toe te voegen lijnen aangeduid met ``//NEW``.
-```csharp
+```java
 int x= 0;
 int y= 0;
 int grootste= int.MinValue; //NEW
@@ -172,7 +172,7 @@ Console.WriteLine($"Grootste getal is {grootste}");//NEW
 ```
 
 ## Oplossing Boekhouder
-```csharp
+```java
 int som= 0, negsom= 0, plussom= 0, aantalingevoerd= 0;
 Console.WriteLine("Voer getallen in. Dit programma stopt nooit.");
 while (true)
@@ -194,7 +194,7 @@ while (true)
 ```
 
 ## Oplossing BeerSong
-```csharp
+```java
 for (int i= 99; i > 2; i--)
 {
     Console.WriteLine($"{i} bottles of beers on the wall, {i} bottles of beer.");

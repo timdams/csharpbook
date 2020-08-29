@@ -4,7 +4,7 @@ In een dictionary wordt ieder element voorgesteld door een index en de waarde va
 
 Bij de declaratie van de dictionary dien je op te geven wat het type van de key zal zijn , alsook het type van de waarde (value). In het volgende voorbeeld maken we een dictionary van klanten, iedere klant heeft een unieke ID (de key) alsook een naam (die niet noodzakelijk uniek is):
 
-```csharp
+```java
 Dictionary<int, string> customers = new Dictionary<int, string>();
 customers.Add(123, "Tim Dams");
 customers.Add(6463, "James Bond");
@@ -16,7 +16,7 @@ Merk op dat je niet verplicht bent om een int als key te gebruiken, dit mag eend
 
 We kunnen nu met behulp van een foreach-loop alle elementen tonen (merk op dat de foreach-constructie voor eender welke type collectie kan gebruikt worden om doorheen een array te lopen):
 
-```csharp
+```java
 foreach (var item in customers)
 {
     Console.WriteLine(item.Key+ "\t:"+item.Value);
@@ -25,7 +25,7 @@ foreach (var item in customers)
 
 We kunnen echter ook een specifiek element opvragen aan de hand van de key. Stel dat we de waarde (naam) van de klant met key (id) gelijk aan 123 willen tonen:
 
-```csharp
+```java
 Console.WriteLine(customers[123]);
 ```
 
@@ -35,7 +35,7 @@ De key werkt dus net als de index bij gewone arrays, alleen heeft de key nu geen
 
 De key kan zelfs een string zijn en de waarde een ander type. In het volgende voorbeeld hebben we eerder een klasse Student aangemaakt. We maken nu een student aan en voegen deze toe aan de studentenLijst. Vervolgens willen we de leeftijd van een bepaalde student tonen op het scherm en vervolgens verwijderen we deze student:
 
-```csharp
+```java
 Dictionary<string, Student> studentenLijst = new Dictionary<string, Student>();
 Student stud= new Student();
 stud.Naam= "Tim";stud.Leeftijd=24;

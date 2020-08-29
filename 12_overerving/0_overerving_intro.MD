@@ -21,7 +21,7 @@ Overving duid je aan met behulp van het dubbele punt(:)  bij de klassedefinitie:
 
 Een voorbeeld:
 
-```csharp
+```java
 class Paard: Dier
 {
    public bool KanHinnikken{get;set;}
@@ -38,7 +38,7 @@ class Dier
 
 Objecten van het type Dier kunnen enkel de Eet-methode aanroepen. Objecten van het type Paard kunnen de Eet-methode aanroepen én ze hebben ook een property KanHinnikken:
 
-```csharp
+```java
 Dier aDier= new Dier();
 Paard bPaard= new Paard();
 aDier.Eet();
@@ -59,7 +59,7 @@ Overerving in C# is transitief, dit wil zeggen dat de child-klasse ALLES overerf
 
 Ook al is overevring transitief, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechtsreeks aanroepbaar zijn in de child-klasse. Private geeft aan dat het element enkel in de klasse zichtbaar is:
 
-```csharp
+```java
 class Paard: Dier
 {
    public void MaakOuder()
@@ -76,7 +76,7 @@ class Dier
 
 Je kan dit oplossen door de **protected** access modifier ipv private te gebruiken. Met protected geef je aan dat het element enkel zichtbaar is binnen de klasse **en** binnen child-klassen:
 
-```csharp
+```java
 class Paard: Dier
 {
    public void MaakOuder()
@@ -95,7 +95,7 @@ class Dier
 
 Soms wil je niet dat van een klasse nog nieuwe klasse kunnen overgeërfd worden. Je lost dit op door het keyword ``sealed`` voor de klasse te zetten:
 
-```csharp
+```java
 sealed class DoNotInheritMe
 {
    //...
@@ -104,7 +104,7 @@ sealed class DoNotInheritMe
 
 Als je later dan dit probeert:
 
-```csharp
+```java
 class ChildClass:DoNotInheritMe
 {
    //...

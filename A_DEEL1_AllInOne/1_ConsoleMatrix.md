@@ -1,7 +1,7 @@
 # Matrix Console
 In de vorige eeuw was The Matrix een uiterst memorabele film. In volgende code tonen we hoe je het "bekende" computer-beeld kunnen nadoen waarin groene, random letters op het scherm verschijnen.
 
-```csharp
+```java
 Random rangen = new Random();
 Console.ForegroundColor = ConsoleColor.Green;
 while (true)

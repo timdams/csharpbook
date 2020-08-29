@@ -15,7 +15,7 @@ We tonen telkens een voorbeeld hoe deze origineel is en hoe deze naar EBM syntax
 
 Origineel:
 
-```csharp
+```java
 public void ToonLeeftijd(int age)
 {
     Console.WriteLine(age);
@@ -24,13 +24,13 @@ public void ToonLeeftijd(int age)
 
 Met EBM:
 
-```csharp
+```java
 public void ToonLeetijd(int age) => Console.WriteLine(age);
 ```
 
 Nog een voorbeeld, nu met een return. Merk op dat we return niet moeten schrijven:
 
-```csharp
+```java
 public int GeefGewicht()
 {
     return 4* 34;
@@ -38,14 +38,14 @@ public int GeefGewicht()
 ```
 
 Met EBM:
-```csharp
+```java
 public int GeefGewicht() => 4*34;
 ```
 
 ## Constructors en EBM
 Ook constructors die maar 1 expressie bevatten kunnen korter nu.
 Origineel:
-```csharp
+```java
 class Student
 {
     private int age;
@@ -57,7 +57,7 @@ class Student
 ```
 
 Met EBM:
-```csharp
+```java
 class Student
 {
     private int age;
@@ -68,7 +68,7 @@ class Student
 ## Full Properties met EBM
 Properties worden een een soort blend tussen full en autoproperties.
 Originele full property:
-```csharp
+```java
 private int name;
 public int Name
 {
@@ -85,7 +85,7 @@ public int Name
 ```
 
 Met EBM:
-```csharp
+```java
 private int name;
 public int Name
 {
@@ -98,7 +98,7 @@ Bij read-only properies hoeft het ``get`` keyword zelfs niet meer getypt te word
 
 Origineel:
 
-```csharp
+```java
 private int name;
 public int Name
 {
@@ -110,7 +110,7 @@ public int Name
 ```
 
 Met EBM:
-```csharp
+```java
 private int name;
 public int Name => name;
 ```

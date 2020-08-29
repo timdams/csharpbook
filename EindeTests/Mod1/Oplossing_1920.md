@@ -5,7 +5,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 ## Opgaven
 
 1. 
-    ```csharp
+    ```java
     if (!(e >= 0 && e <= 9))
     {
         Console.WriteLine("Los het dan zelf op he!");
@@ -14,7 +14,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
     {
     ```
 2. 
-    ```csharp
+    ```java
     if ( Foutcode < 0 )
         Console.WriteLine("Los het dan zelf op he!");
     if (Foutcode > 9)
@@ -22,23 +22,23 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
     ```
 
 3. 
-    ```csharp
+    ```java
     if (Foutcodex >= 0 && < 10)
     ```
 4. 
-    ```csharp
+    ```java
     if ("0" == Answer || "1" == Answer || "2" == Answer || "3" == Answer || "4" == Answer || "5" == Answer || "6" == Answer || "7" == Answer || "8" == Answer || "9" == Answer)
     {
         int Foutcode = Convert.ToInt32(Answer);
     ```
 
 5. 
-    ```csharp
+    ```java
     double aantalMin = Convert.ToDouble(Math.Sqrt(foutcode));
     ``` 
 
 6. 
-    ```csharp
+    ```java
     int prijs = nummer.Next(0, 100);
     if (prijs <= 25)
     {
@@ -47,23 +47,23 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
     else if (prijs >= 26 && prijs <= 100)"
     ```
 7. 
-    ```csharp
+    ```java
     aantalMin = Math.Round(Math.Sqrt((foutcode * 3 + 0.0)), 1);
     ```
 
 8. 
-    ```csharp
+    ```java
     if (fout <0 && fout>=9 )
     {
         Console.WriteLine( " los het zelf op");
     ```
 
 9. 
-    ```csharp
+    ```java
     computer = Convert.ToString(Console.ReadLine());
     ```
 10. 
-    ```csharp
+    ```java
     else if (Computer == "nee")
     {
         Console.WriteLine("Gaat het power light aan?");
@@ -76,7 +76,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
     ```
 
 11. 
-    ```csharp
+    ```java
     if (proccount == 1)
     {
         Console.WriteLine("50 euro");
@@ -96,7 +96,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
     ```
 
 12. 
-    ```csharp 
+    ```java 
     if (is64bit)
     {
         Console.WriteLine("Hier een bon!");
@@ -108,7 +108,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
     ```
 
 13. 
-    ```csharp
+    ```java
     if (kans == 1)
     {
         Console.WriteLine("Mooi zo, alles werkt.");
@@ -121,7 +121,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
     ```
 
 14. 
-    ```csharp
+    ```java
     if(!! Environment.Is64BitProcess)               
     ```
 
@@ -163,7 +163,7 @@ Oplossing hier met ``enum`` , maar dit had je uiteraard ook met een ``string`` (
 
 
 
-```csharp
+```java
 enum fases { A, B, C, Onbekend }
 
 static void Main(string[] args)

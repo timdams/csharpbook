@@ -6,7 +6,7 @@ Net zoals we hebben gezien dat de Math-klasse een heleboel nuttige methoden in z
 Om deze methoden te kunnen gebruiken moet je bovenaan je file de volgende lijn toevoegen: ``using System.Linq;``:
 {% endhint %}
 
-```csharp
+```java
 Console.WriteLine(getallen.Sum());
 ```
 
@@ -21,6 +21,6 @@ Al deze methoden hier beschrijven zal ons te ver nemen. De volgende methoden zij
 ``Max()``, ``Min()``, ``Sum()`` en ``Average()``.
 
 Volgende code geeft bijvoorbeeld het grootste getal terug uit een array genaamd "leeftijden":
-```csharp
+```java
 int oudsteleeftijd = leeftijden.Max();
 ```

@@ -35,7 +35,7 @@ Het mechanisme om exceptions af te handelen in C# bestaat uit 2 delen:
 
 De syntax is als volgt (let er op dat de catch blok onmiddellijk na het try-blok komt!):
 
-```csharp
+```java
 try
 {
     //code waar exception mogelijk kan optreden
@@ -50,7 +50,7 @@ catch (Exception e)
 
 In volgend stukje code kunnen uitzonderingen optreden:
 
-```csharp
+```java
 string input = Console.ReadLine();
 int converted = Convert.ToInt32(input)
 ```
@@ -59,7 +59,7 @@ Een `FormatException` zal optreden wanneer de gebruiker tekst invoert of wanneer
 
 We tonen nu hoe we dit met exception handling kunnen opvangen:
 
-```csharp
+```java
 try
 {
     string input = Console.ReadLine();
@@ -86,7 +86,7 @@ Indien er nu een uitzondering optreedt dan zal de tekst “Verkeerde invoer” g
 
 Je kan in het catch blok aangeven welke soort exceptions je wil vangen in dat blok. In het voorbeeld hiervoor stond:
 
-```csharp
+```java
 catch (Exception e)
 {
 }
@@ -96,7 +96,7 @@ Hiermee vangen we dus **alle** Exceptions op, daar alle Exceptions van de klasse
 
 We kunnen nu echter ook specifieke exceptions opvangen. De truk is om de meest algemene exception onderaan te zetten en naar boven toe steeds specifieker te worden. Stel bijvoorbeeld dat we weten dat de `FormatException` kan voorkomen en we willen daar iets mee doen. Volgende code toont hoe dit kan:
 
-```csharp
+```java
 try
 {
     //...
@@ -139,7 +139,7 @@ Omdat alle exception van Exception afgeleid zijn bevatten ze allemaal minstens:
 
 We kunnen via deze parameter meer informatie uit de opgeworpen uitzondering uitlezen en bijvoorbeeld aan de gebruiker tonen
 
-```csharp
+```java
 catch (Exception e)
 {
     Console.WriteLine("Exception opgetreden");

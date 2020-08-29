@@ -9,7 +9,7 @@ Het tweede gedeelte, waarin je landen van centra moet voorzien wordt niét bespr
 # Code
 ## Main
 
-```csharp
+```java
 Dictionary<string, VaccinatieCentrum> centraDB = new Dictionary<string, VaccinatieCentrum>();
 
 while (true)
@@ -63,7 +63,7 @@ while (true)
 
 ## SlimVaccin
 
-```csharp
+```java
 class SlimVaccin: Vaccin
 {
     public SlimVaccin(string naamin): base(naamin)
@@ -90,7 +90,7 @@ class SlimVaccin: Vaccin
 
 ## DomVirus
 
-```csharp
+```java
 class DomVirus: Virus
 {
     static Random r = new Random();

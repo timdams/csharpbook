@@ -11,7 +11,7 @@ Properties (*eigenschappen*) zijn de C# manier om objecten hun interne staat in 
 Ze zorgen voor een gecontroleerde toegang tot de interne structuur van je objecten.
 
 Stel dat we volgende klasse hebben:
-```csharp
+```java
 class SithLord
 {
     private int energy;
@@ -22,7 +22,7 @@ class SithLord
 Een ``SithLord`` heeft steeds een verborgen Sith Name en ook een hoeveelheid energie die hij nodig heeft om te strijden.
 **Het is uit den boze dat we eenvoudige data fields (``energy`` en ``name``) ``public`` maken.** Zouden we dat wel doen dan kunnen externe objecten deze geheime informatie uitlezen!
 
-```csharp
+```java
 SithLord Palpatine= new SithLord();
 Console.WriteLine(Palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
 ```
@@ -35,7 +35,7 @@ We willen echter wel van buiten uit het energy-level van een sithLord kunnen ins
 # Full properties
 
 Een **full property** ziet er als volgt uit:
-```csharp
+```java
 class SithLord
 {
     private int energy;
@@ -57,7 +57,7 @@ class SithLord
 
 Dankzij deze code kunnen we nu elders dit doen:
 
-```csharp
+```java
 SithLord Vader= new SithLord();
 Vader.Energy= 20; //set
 Console.WriteLine($"Vaders energy is {Vader.Energy}"); //get
@@ -87,7 +87,7 @@ De full property ``Energy`` heeft nog steeds het probleem dat we negatieve waard
 
 We kunnen in de ``set`` code extra controles inbouwen. Als volgt:
 
-```csharp
+```java
    public int Energy
     {
         get
@@ -111,7 +111,7 @@ We kunnen de code binnen ``set`` (en ``get``) zo complex maken als we willen.
 We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property te schrijven. 
 
 ### Write-only property
-```csharp
+```java
    public int Energy
     {
         set
@@ -124,7 +124,7 @@ We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property t
 We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitlezen.
 
 ### Read-only property
-```csharp
+```java
    public int Energy
     {
         get
@@ -143,7 +143,7 @@ We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 ### Read-only property met private set
 Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only willen maken. We willen echter intern (in de klasse zelf) nog steeds controleren dat er geen illegale waarden aan private datafields worden gegeven. Op dat moment definiëren we een read-only property met een private setter:
 
-```csharp
+```java
    public int Energy
     {
         get
@@ -163,7 +163,7 @@ Van buitenuit zal enkel code werken die de ``get`` van deze property aanroept: `
 **Nu goed opletten**: indien we in het object de property willen gebruiken dan moeten we deze dus ook effectief aanroepen, anders omzeilen we hem als we rechtstreeks ``energy`` instellen.
 
 Kijk zelf naar volgende **slechte** code:
-```csharp
+```java
 class SithLord
 {
     private int energy;
@@ -193,7 +193,7 @@ De nieuw toegevoegde methode ``ResetLord`` willen we gebruiken om de lord z'n en
 
 We moeten dus in de methode ook expliciet via de property gaan en dus schrijven:
 
-```csharp
+```java
 public void ResetLord()
 {
     Energy=-1; // Energy i.p.v. energy
@@ -208,7 +208,7 @@ public void ResetLord()
 Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
 
 Stel dat we volgende klasse hebben
-```csharp
+```java
 class Persoon
 {
     private string voornaam;
@@ -216,7 +216,7 @@ class Persoon
 }
 ```
 We willen echter ook soms de volledige naam op het scherm tonen ("Voornaam + Achternaam"). Via een read-only property kan dit supereenvoudig:
-```csharp
+```java
 class Persoon
 {
     private string voornaam;
@@ -236,7 +236,7 @@ class Persoon
 ```
 
 Of nog eentje:
-```csharp
+```java
 class Aarde
 {
     public double ZwaarteKracht
@@ -251,7 +251,7 @@ class Aarde
 
 Nog een voorbeeldje:
 
-```csharp
+```java
 class Persoon
 {
     private int age;
@@ -268,7 +268,7 @@ class Persoon
 ```
 
 Vaak gebruiken we dit soort read-only properties om data te transformeren. Stel bijvoorbeeld dat we volgende klasse hebben:
-```csharp
+```java
 class Persoon
 {
     private int age; //in jaren
@@ -288,7 +288,7 @@ Automatische eigenschappen (autoproperties) in C# staan toe om eigenschappen (pr
 
 Zo kan je eenvoudige de klasse Person herschrijven met behulp van autoproperties. De originele klasse:
 
-```csharp
+```java
 public class Person
     {
  
@@ -334,7 +334,7 @@ public class Person
     }
 ```
 De herschreven klasse met autoproperties (autoprops):
-```csharp
+```java
 public class Person
     {
  
@@ -351,7 +351,7 @@ Beide klassen hebben exact dezelfde functionaliteit, echter is de laatste klasse
 
 Je mag autoproperties beginwaarden geven door de waarde achter de property te geven, als volgt:
 
-```csharp
+```java
 public int Age {get;set;} = 45;
 ```
 
@@ -359,7 +359,7 @@ public int Age {get;set;} = 45;
 Merk op dat je dit enkel kan doen indien er geen extra logica in de property aanwezig is.
 Stel dat je bij de setter van age wil controleren op een negatieve waarde, dan zal je dit zoals voorheen moeten schrijven en kan dit niet met een automatic property:
 
-```csharp
+```java
 set
 {
     if( value > 0)
@@ -372,7 +372,7 @@ set
 Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definiëren. Als volgt:
 
 Originele klasse:
-```csharp
+```java
 public string FirstName
 {
     get
@@ -382,12 +382,12 @@ public string FirstName
 }
 ```
 Met autoprops:
-```csharp
+```java
 public string FirstName { get; private set; }
 ```
 
 En andere manier die ook kan is als volgt:
-```csharp
+```java
 public string FirstName { get; }
 ```
 De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren. [Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)

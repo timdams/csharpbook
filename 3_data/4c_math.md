@@ -8,7 +8,7 @@ De Math-bibliotheek bevat methoden voor een groot aantal typische wiskundige bew
 
 Stel dat je de derde macht van een variabel ``getal`` wenst te berekenen. *zonder* de Math-bibliotheek zou dat er zou uitzien:
 
-```csharp
+```java
 double result= getal * getal * getal;  //SLECHTE MANIER
 ```
 
@@ -16,7 +16,7 @@ Dit valt nog mee, maar wat als je 3 tot de zevende macht moest berekenen? Kortom
 
 
 *Met* de Math-bibliotheek kunnen we gebruik maken van de ``Pow`` (**Power**) methode:
-```csharp
+```java
 double result= Math.Pow(getal, 3);
 ```
 
@@ -39,7 +39,7 @@ De meeste methoden zijn zeer makkelijk in gebruik en werken bijna allemaal op ee
 
 Enkele voorbeelden:
 
-```csharp
+```java
 double sineHoekA= Math.Sin(345); //IN RADIALEN!
 double DerdeMachtVan20= Math.Pow(20, 3);
 double complexer= 3 + DerdeMachtVan20 * Math.Round(sineHoekA);
@@ -56,13 +56,13 @@ Twijfel je over de werking van een methode, gebruik dan de help als volgt:
 
 Ook het getal Pi  (``3.141...``) is beschikbaar in de Math-bibliotheek. Het witte icoontje voor PI bij Intellisense toont aan dat het hier om een *field* gaat: een eenvoudige variabele met een specifieke waarde. In dit geval gaat het zelfs om een ``const`` field, met de waarde van Pi van het type double.
 
-```csharp
+```java
 public const double PI;
 ```
 
 Je kan deze als volgt gebruiken in berekeningen:
 
-```csharp
+```java
 double straal= 5.5;
 double omtrek= Math.PI * 2 * straal;
 ```
@@ -71,7 +71,7 @@ double omtrek= Math.PI * 2 * straal;
 
 Je zal het ``const`` keyword hier en daar in codevoorbeelden zien staan. Je kan dit gebruiken om aan te geven dat een variabele onveranderlijk is én niet per ongeluk kan aangepast worden. Je mag dit dus ook zelf gebruiken zoals in volgende voorbeeld:
 
-```csharp
+```java
 const double gAarde= 9.81;
 gAarde= 10.48; //ZAL ERROR GEVEN
 ```

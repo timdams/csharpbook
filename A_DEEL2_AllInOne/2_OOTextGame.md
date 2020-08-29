@@ -13,7 +13,7 @@ We willen de ``Main()`` methode van Program.cs zo leeg mogelijk laten. Daarom zu
 
 In code behelst dit:
 
-```csharp
+```java
 static void Main(string[] args)
 {
     Console.WriteLine("Welkom bij AP Adventure. Een avontuur voor moedige en minder moedige studenten. Ben je er klaar voor?");
@@ -38,7 +38,7 @@ Een bool property ``Exit``  binnen het GameManager object zal ons toelaten om de
 ## GameObject
 Doorheen de verschillende locaties zullen elementen te vinden zijn. We beschrijven deze als GameObjects:
 
-```csharp
+```java
 class GameObjects
 {
     public string Name { get; set; }
@@ -58,7 +58,7 @@ De gebruiker kan van locatie naar locatie gaan. Een locatie bestaat uit een aant
 * Een lijst van Exits, namelijk de richtingen waar de gebruiker naar toe kan gaan die aansluiten op een andere locatie
 * Een eerste versie van onze locatie klasse is dan:
 
-```csharp
+```java
 class Location
 {
     public Location()
@@ -97,7 +97,7 @@ Iedere exit in een locatie definieert minstens 2 zaken:
 
 We krijgen dus al:
 
-```csharp
+```java
 class Exit
 {
     public Exit()
@@ -112,7 +112,7 @@ class Exit
 ```
 Waarbij ``Directions`` een eigen gemaakt enum-type is:
 
-```csharp
+```java
 enum Directions
 {
     North, South, West, East
@@ -121,7 +121,7 @@ enum Directions
 ## Van locatie veranderen
 Binnen de locatie klasse voegen we een methode toe die de GameManager kan gebruiken om te weten te komen naar welke locatie de gebruiker gaat. De methode aanvaardt een ``Direction`` (i.e. de richting waarin de gebruiker wenst te gaan) en zal een referentie naar het location-object teruggeven waarnaar de gebruiker zal bewegen. Indien de richting waarin hij wenst te bewegen niet geldig is dan tonen we dit op het scherm:
 
-```csharp
+```java
 public Location GettLocationOnMove(Directions direction)
 {
     foreach (var exit in Exits)
@@ -147,7 +147,7 @@ Stel nu dat we soms willen dat een bepaalde locatie pas bereikt kan worden indie
 
 De nieuwe, volledige ``Exit`` klasse wordt dan:
 
-```csharp
+```java
 class Exit
 {
     public Exit()
@@ -181,7 +181,7 @@ In deze ietwat knullige code tellen we dus of de speler alle GameObjecten in z�
 
 Deze methode ``TestPassCondition`` gebruiken we nu in de ``GetLocationOnMove()``-methode in de Location klasse om te bepalen of de exit mag gebruikt worden. De methode wordt dan:
 
-```csharp
+```java
 public Location GettLocationOnMove(Directions direction, List<GameObjects> playerInventory )
 {
     foreach (var exit in Exits)
@@ -208,7 +208,7 @@ public Location GettLocationOnMove(Directions direction, List<GameObjects> playe
 Rest ons nu enkel nog  de ``GameManager`` klasse te maken. Ruw gezien is deze als volgt:
 
 
-```csharp
+```java
 class GameManager
 {
  
@@ -255,7 +255,7 @@ Wat ogenblikkelijk opvalt zijn:
 We zullen nu de afzonderlijke methoden invullen:
 
 ### DescribeLocation()
-```csharp
+```java
 public void DescribeLocation()
 {
     this.currentLocation.Describe();
@@ -264,7 +264,7 @@ public void DescribeLocation()
 
 ### VerwerkActie()
 
-```csharp
+```java
 string actie = Console.ReadLine();
 bool error = false;
 if (actie == "n")
@@ -289,7 +289,7 @@ if(error)
 We laten de speler dus toe door ``n,o,w,z`` in te typen dat gecontroleerd wordt naar welke nieuwe locatie zal gegaan worden. We passen hierbij de ``currentLocation`` property van de GameManager aan naar de, al dan niet nieuwe, locatie.
 
 ### ToonActies()
-```csharp
+```java
 public  void ToonActies()
 {
     Console.WriteLine("Mogelijke acties: (typ bijvoorbeeld n indien u naar het noorden wil)");
@@ -305,7 +305,7 @@ public  void ToonActies()
 ### InitGame()
 In deze methode definiëren nu de volledige spelinhoud. Wil je dus bijvoorbeeld dit spel uitbreiden met extra kamers en objecten, dan doe je dat in deze methode. Ter illustratie tonen we eerst hoe we 2 locaties aanmaken en deze aan elkaar hangen mbv de Exits (waarbij kamer één zich ten zuiden van kamer 2 bevindt)
 
-```csharp
+```java
 private  void InitGame()
  {
      //Maak Locaties
@@ -342,7 +342,7 @@ Vergeet niet op het einde de 2 kamers toe te voegen aan de ``GameLocation`` lijs
 Stel dat we even later in een kamer een sleutel plaatsen die als conditie dient om een andere kamer te kunnen openen. We schrijven dan in de ``GameInit()`` methode:
 
 
-```csharp
+```java
     Location l6 = new Location()
     {
         Title = "Gang",
@@ -375,7 +375,7 @@ Stel dat we even later in een kamer een sleutel plaatsen die als conditie dient 
 We hebben nu de belangrijkste onderdelen geschreven. We tonen daarom een iets uitgebreider spel, demo zeg maar, waar in we alles gecombineerd in actie zien:
 
 
-```csharp
+```java
 private  void InitGame()
 {
     //Maak Locaties

@@ -8,7 +8,7 @@ Object initializer syntax laat je toe om tijdens (eigenlijk direct er na) creati
 
 Stel dat we volgende klasse hebben:
 
-```csharp
+```java
 class TemperatuurMeting
 {
     public double Temperatuur {get;set;}
@@ -19,7 +19,7 @@ class TemperatuurMeting
 
 We kunnen deze properties beginwaarden geven via volgende initializer syntax:
 
-```csharp
+```java
 TemperatuurMeting eenMeting = new TemperatuurMeting { Temperatuur= 3.4, IsGeconfirmeerd=true};
 ```
 
@@ -27,7 +27,7 @@ Enkele opmerkingen hierbij:
 
 * Je ziet het niet, maar sowieso wordt eerst nu de (onzichtbare) default constructor aangeroepen. Pas wanneer die klaar is zullen de properties de waarden krijgen die je meegeeft. Als je dus zelf een default constructor in ``TemperatuurMeting`` had geschreven dan had eerst die code uitgevoerd zijn geweest. Voorgaande voorbeeld zal intern eigenlijk als volgt plaatsvinden:
 
-```csharp
+```java
 TemperatuurMeting eenMeting = new TemperatuurMeting();
 eenMeting.Temperatuur = 3.4;
 eenMeting.IsGeconfirmeerd = true;

@@ -29,7 +29,7 @@ Bekijk zeker eens een complexer UML-diagramma zoals bijvoorbeeld van schaken [hi
 ## In de praktijk
 
 We bekijken het voorbeeld van de computer en de harde schijf. We hebben twee klassen
-```csharp
+```java
 class PC
 {
 }
@@ -40,7 +40,7 @@ class Disk
 ```
 
 Een PC heeft een Disk, dit wil zeggen dat we in de klasse PC een object van het type Disk zullen definiëren:
-```csharp
+```java
 class PC
 {
     private Disk cDisk;
@@ -51,7 +51,7 @@ Uiteraard moeten we deze Disk nog instantiaren, dit kan op verschillende mogelij
 
 ### Manier 1
 Ogenblikkelijk:
-```csharp
+```java
 class PC
 {
     private Disk cDisk=new Disk();
@@ -60,7 +60,7 @@ class PC
 
 ### Manier 2
 Ogenblikkelijk, maar in constructor:
-```csharp
+```java
 class PC
 {
     public PC()
@@ -73,7 +73,7 @@ class PC
 
 ### Manier 3
 Door een extern object, bv via een property:
-```csharp
+```java
 class PC
 {
     public Disk CDisk
@@ -102,7 +102,7 @@ Wanneer een object meerdere objecten van een specifiek type heeft (denk maar aan
 
 Voorbeeld:
 
-```csharp
+```java
 class Page{}
 
 class Boek
@@ -113,7 +113,7 @@ class Boek
 
 Indien je nu een pagina wenst toe te voegen dan moet je ook deze individuele array-elementen nog instantieren. Een voorbeeld waarbij men van buitenuit het object bestaande pagina's kan toevoegen:
 
-```csharp
+```java
 class Book
 {
    public void InsertPage(Page toAdd, int Position)
@@ -132,7 +132,7 @@ myBook.InsertPage(myThirdPage, 2);
 
 Of een voorbeeld met List:
 
-```csharp
+```java
 class Book
 {
     public List<Page> AllPages{get;set;} = new List<Page>();

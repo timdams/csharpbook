@@ -3,7 +3,7 @@ Volgende tutorial toont hoe je een eenvoudig filmpje kan maken dat je, mits wat 
 
 ## Basisloop voor het filmpje
 Volgende voorbeeld toont wat je bijvoorbeeld kan doen. Kopieer dit alles naar een eigen project tussen de accolades van de main:
-```csharp
+```java
  int framenummer = 0;
 int sleeptime = 1000; // in milliseconden
 while (true)
@@ -59,21 +59,21 @@ while (true)
 
 Deze code zal een teller (framenummer) per seconde (instelbaar via sleeptime) met 1 verhogen. Vervolgens zal de code uitgevoerd worden binnen de else-if clausule die overeenkomt met de huidige framenummer.
 De eerste keer staat de teller op 1 en wordt dus de code tussen volgende if uitgevoerd.
-```csharp
+```java
 if (framenummer == 1)
 {
     Console.WriteLine("Het begin");
 }
 ```
 Vervolgens wordt deze met 1 verhoogd en wordt deze code uitgevoerd:
-```csharp
+```java
 else if  (framenummer == 2)
 {
     Console.WriteLine("Tweede frame");
 }
 ```
 En zo voort. Je kan dus zelf frames toevoegen door steeds een constructie als de volgende toevoegen waar de commentaar  ``//Code om uit te voeren in dit frame`` staat:
-```csharp
+```java
 else if  (framenummer == x)
 {
     //Code om uit te voeren in dit frame
@@ -91,7 +91,7 @@ Mogelijke uitbreidingen kunnen zijn:
 ## Geavanceerde uitbreidingen
 ### Niet-sequentiële flow
 Je kan ook bepalen wat het volgende frame moet zijn door de variabele framenummer aan te passen naar het framenummer dat je nodig hebt -1 . Stel dat je bijvoorbeeld in frame 8 wenst dat na dit frame frame 3 wordt uitgevoerd, dan schrijf je:
-```csharp
+```java
 else if (framenummer == 8)
 {
     framenummer = 2;
@@ -103,7 +103,7 @@ else if (framenummer == 8)
 Via de methode ``ConsoleSetCursorPosition`` kan je instellen waar de cursor moet gezet worden. Je geeft tussen de haakjes van deze methode de x,y coördinaten (integers) mee waar de cursor moet gezet worden.
 Als je vervolgens tekst schrijft dan wordt die weggeschreven vanaf dat punt. De coördinaten zijn x,y coördinaten, waarbij het punt (1,1) het eerste karakter linksboven in de console is.
 Volgende frame zet bijvoorbeeld een "X" 10 letters naar rechts, 20 lijnen naar beneden
-```csharp
+```java
 else if (framenummer == 9)
 {
     Console.SetCursorPosition(10, 20);

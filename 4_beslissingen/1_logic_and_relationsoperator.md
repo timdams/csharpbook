@@ -28,7 +28,7 @@ Daar dit operators zijn kan je deze dus gebruiken in eender welke expressie. Het
 {% hint style='tip' %}
 We weten al dat je het resultaat van een expressie altijd in een variabele kunt bewaren. Ook bij het gebruik van relationele operators kan dat dus:
 
-```csharp
+```java
 bool isKleiner = 65 > 67 ;
 Console.WriteLine(isKleiner);
 ```
@@ -54,7 +54,7 @@ De logische operators geven ook steeds een ``bool`` terug maar verwachten enkel 
 
 Aangezien onze relationele operators ``bool`` als resultaat geven, kunnen we dus de uitvoer van deze operators gebruiken als operanden voor de logische operators. We gebruiken hierbij haakjes om zeker de volgorde juist te krijgen:
 
-```csharp
+```java
 bool result= (4 < 6) && ("ja" == "nee");
 ```
 
@@ -62,7 +62,7 @@ In voorgaande code zal het achterste deel ``false`` teruggeven( "ja is niet geli
 
 Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te draaien. Bijvoorbeeld:
 
-```csharp
+```java
 bool result = !(0==2)  //zal true geven in result
 ```
 

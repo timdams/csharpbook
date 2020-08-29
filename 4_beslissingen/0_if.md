@@ -4,7 +4,7 @@ De ``if`` (*als*) uitdrukking is één van de meest elementaire uitdrukking in e
 
 De syntax is als volgt:
 
-```csharp
+```java
 if (booleaanse expressie) 
 {
     //deze code wordt uitgevoerd indien
@@ -19,7 +19,7 @@ Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heef
 
 Een voorbeeld:
 
-```csharp
+```java
 int number = 3;
 if ( number < 5 )
 {
@@ -44,7 +44,7 @@ Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scher
 Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleaanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.**
 
 Een voorbeeld:
-```csharp
+```java
 if ( number < 5 )
 {
     Console.WriteLine ("C");
@@ -67,7 +67,7 @@ Voorman hier! Je hebt me gemist. Ik merk het. Het ging goed de laatste tijd. Maa
 **Appelen en peren vergelijken**
 De types in je booleaanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: 
 
-```csharp
+```java
 if( "4" > 3)
 ```
 daar we hier een ``string`` met een ``int`` vergelijken.
@@ -75,7 +75,7 @@ daar we hier een ``string`` met een ``int`` vergelijken.
 **Accolades vergeten**
 Accolades vergeten plaatsen om een codeblock aan te duiden, maar je code toch zodanig uitlijnen (met tabs of spaties) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true``. Gebruiken we de ``if`` met block van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de ``if``:
 
-```csharp
+```java
 if ( number < 5 )
     Console.WriteLine ("C");
     Console.WriteLine ("D");
@@ -87,7 +87,7 @@ Merk ook op dat je code anders uitlijnen géén invloed heeft op de uitvoer (wat
 
 Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de ``if`` hoort en je dus een nietszeggende ``if`` hebt geschreven. De code na het puntkomma zal uitgevoerd worden ongeacht de ``if``:
 
-```csharp
+```java
 if ( number < 5 );
     Console.WriteLine ("C");
     Console.WriteLine ("D");
@@ -104,7 +104,7 @@ We kunnen ook meerdere booleaanse expressie combineren zodat we complexere uitdr
 
 Een voorbeeld:
 
-```csharp
+```java
 Console.WriteLine("Voer a in");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Voer b in");
@@ -142,7 +142,7 @@ Uitvoer van dit programma zal zijn:
 
 Met ``if``/``else`` kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is **maar ook welke specifieke code moet uitgevoerd indien de conditie niet waar is**. Volgend voorbeeld geeft een typisch gebruik van een ``if``/``else`` structuur om 2 waarden met elkaar te vergelijken:
 
-```csharp
+```java
 int nummer = 10;
 int max=5;
  
@@ -163,7 +163,7 @@ else
 Een veel gemaakte fout is bij de ``else`` sectie ook een booleaanse expressie plaatsen. Dit kan niet: de ``else`` sectie zal gewoon uitgevoerd worden indien de ``if`` sectie NIET uitgevoerd werd. 
 
 Volgende code MAG DUS NIET:
-```csharp
+```java
 if(a > b)
 {
     //...
@@ -183,7 +183,7 @@ Sowieso begint men steeds met een ``if``. Als men vervolgens een ``else if`` pla
 
 Een voorbeeld:
 
-```csharp
+```java
 int x = 9;
  
 if (x == 10)
@@ -202,7 +202,7 @@ else if (x == 8)
 
 Voorts mag men ook steeds nog afsluiten met een finale ``else`` die zal uitgevoerd worden indien geen enkele andere expressie ervoor waar bleek te zijn:
 
-```csharp
+```java
 if(x>10)
 {
     Console.WriteLine("Groter dan 10");
@@ -224,7 +224,7 @@ We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij g
 
 Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan ``closed`` gelijkstelt):
 
-```csharp
+```java
 int reactorTemp = 1500;
 string emergencyValve = " ";
  

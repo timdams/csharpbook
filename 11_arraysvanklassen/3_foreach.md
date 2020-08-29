@@ -4,7 +4,7 @@ Wanneer je geen indexering nodig hebt, maar toch snel over alle elementen in een
 Een foreach loop zal ieder element in de array een voor een in een tijdelijke variabele plaatsen (de **iteration variable**).
 Volgende code toont de werking waarbij we een array van doubles hebben en alle elementen er in op het scherm willen tonen:
 
-```csharp
+```java
 double[] killdeathRates= {1.2, 0.89, 3.15, 0.1};
 foreach (double kdrate in killdeathRates)
 {
@@ -27,7 +27,7 @@ Het voordeel is dat je dus geen teller/index nodig hebt en dat foreach zelf de l
 
 C# heeft een **``var``** keyword. Je mag dit keyword gebruiken ter vervanging van het type (bv int) op voorwaarde dat de compiler kan achterhalen wat het type moet zijn.
 
-```csharp
+```java
 var getal= 5; //var zal int zijn
 var myArray= new double[20]; //var zal double[] zijn
 var tekst= "Hi there handsome"; //var zal string zijn
@@ -46,7 +46,7 @@ Bij javascript heeft var een totaal andere functie: het zegt eigenlijk "het type
 Wanneer je de Visual Studio [code snippet](https://msdn.microsoft.com/en-us/library/z41h7fat.aspx) voor foreach gebruikt ``foreach [tab][tab]`` dan zal deze code ook een var gebruiken voor de iteration variabele. De compiler kan aan de te gebruiken array zien wat het type van een individueel element in de array moet zijn.
 De foreach van zonet kan dus herschreven worden naar:
 
-```csharp
+```java
 foreach (var kdrate in killdeathRates)
 {
    Console.WriteLine($"Kill/Death rate is {kdrate}");

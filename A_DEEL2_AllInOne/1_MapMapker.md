@@ -7,7 +7,7 @@ Volgende hoofdstuk toont het gebruik van van de belangrijkste OO concepten in ee
 ## Abstracte klasse
 
 Eerst definiëren we een kleine hulpklasse Point die een punt in de ruimte voorstelt. We kunnen deze klasse ook gebruiken om een vector voor te stellen:
-```csharp
+```java
     class Point
     {
         public Point(int inx, int iny)
@@ -30,7 +30,7 @@ Eerst definiëren we een kleine hulpklasse Point die een punt in de ruimte voors
 ```
 We maken nu  een abstracte klasse MapObject, die we vervolgens zullen gebruiken om over te erven zodat nieuwe klassen aangemaakt kunnen worden. 
 
-```csharp
+```java
     abstract class MapObject
     {
         private Point location;
@@ -55,7 +55,7 @@ Indien je dit project dus in de praktijk wenst te gebruiken dan zal je nog zelf 
 We maken de ``MapObject`` klasse expres abstract, we willen voorkomen dat deze klasse rechtstreeks als object in het programma kan gebruikt worden. 
 
 Laten we nu een nieuwe klasse aanmaken dat overerft van de abstract klasse MapObject 
-```csharp
+```java
     class WallElement: MapObject
     {
         public override void Paint()
@@ -63,7 +63,7 @@ Laten we nu een nieuwe klasse aanmaken dat overerft van de abstract klasse MapOb
     }
 ```
 De methode van Paint moeten we verplicht overriden (daar ze abstract was in de base klasse), voorts is het aan te raden om een default constructor te maken. De Paint-methode bevat zeer eenvoudigweg volgende 2 lijntjes code:
-```csharp
+```java
             Console.SetCursorPosition(Location.X, Location.Y);
             Console.Write(DrawChar);
 ```
@@ -71,7 +71,7 @@ De methode van Paint moeten we verplicht overriden (daar ze abstract was in de b
 ### Elementen op het scherm
 We kunnen nu in ons hoofdprogramma (main-methode) al direct elementen op het scherm brengen met bijvoorbeeld volgende code:
 
-```csharp
+```java
             WallElement steen1= new WallElement();
             steen1.Paint();
 ```
@@ -82,7 +82,7 @@ We zouden dus nu bijvoorbeeld meerdere stenen kunnen plaatsen (met verschillende
 ### Grotere objecten
 We hebben nu een basis om andere zaken te maken. Stel dat we grotere objecten op het scherm wensen. We zouden dan kunnen definiëren dat de variabele Location het punt linksboven van het object bepaalt. Volgende nieuwe object erft over van de MapObject en geeft een grotere figuur weer (vierkant, maar je kan natuurlijk je fantasie de vrije loop laten gaan):
 
-```csharp
+```java
     class FurnitureElement: MapObject
     {
 
@@ -111,7 +111,7 @@ We hebben nu een basis om andere zaken te maken. Stel dat we grotere objecten op
 ```
 We kunnen dan eenvoudig weg allerlei meubels definiëren, zoals een zetel:
 
-```csharp
+```java
     class ZetelElement: FurnitureElement
     {
         public ZetelElement()
@@ -123,7 +123,7 @@ We kunnen dan eenvoudig weg allerlei meubels definiëren, zoals een zetel:
     }
 ```
 Of als je de zetel anders wil getekend zien (geen rechthoek bijvoorbeeld, maar iets dat meer op zetel trekt, dan voeg je nog volgende code toe:
-```csharp
+```java
         public override void Paint()
         {
             //Code om complexere zetel op scherm te tonen
@@ -131,7 +131,7 @@ Of als je de zetel anders wil getekend zien (geen rechthoek bijvoorbeeld, maar i
  ```
 ## Polymorfisme
 We kunnen nu ongelooflijk veel objecten op het scherm tonen (laten we veronderstellen dat je een overloaded constructor telkens hebt geschreven), met behulp van een List-object, als volgt:
-```csharp
+```java
             List<MapObject> allObjects= new List<MapObject>(); //lang leve polymorfisme
             
             //Muurtje
@@ -161,7 +161,7 @@ Het maken van een semi-grafisch menu is verrassend eenvoudig.
 
 ### Menu Tekenen
 Volgende klasse toont een kadertje met wat tekst in:
- ```csharp
+ ```java
     class Menu
     {
         public Menu()
@@ -195,7 +195,7 @@ Volgende klasse toont een kadertje met wat tekst in:
 ```
 Je kan dit dan als volgt oproepen in je main:
 
-```csharp
+```java
 Menu menu= new Menu();
 menu.ShowMenu();
 ```
@@ -203,7 +203,7 @@ menu.ShowMenu();
 ### Tekstverwerken van Menu
 We geven onze lijst van objecten mee aan ons Menu zodat het Menu object nieuwe zaken aan de map kan toevoegen:
 
-```csharp
+```java
         public void GetInput(List<MapObject> list)
         {
             string input=Console.ReadLine();
@@ -219,7 +219,7 @@ We geven onze lijst van objecten mee aan ons Menu zodat het Menu object nieuwe z
 ```
 	
 We kunnen dan in de main volgende code plaatsen die constant het scherm hertekent en telkens op input van de gebruiker wacht:
-```csharp
+```java
             List<MapObject> allObjects = new List<MapObject>();
             Menu menu= new Menu();
             do
@@ -237,7 +237,7 @@ We kunnen dan in de main volgende code plaatsen die constant het scherm herteken
 ### Map verplaatsen
 De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar beneden wenst te verplaatsen als de B wordt ingedrukt; Je update gewoon de locatie van ieder object waarbij de y-positie gewoon met 1 wordt verhoogd:
 
-```csharp
+```java
         if (input == "B" || input == "b")
         {
             //Beweeg kaart naar beneder
@@ -254,7 +254,7 @@ De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar ben
  
 ## Composiet-klassen
 Voorts kunnen we bijvoorbeeld nu meerdere klassen aanmaken (tafels, stoelen, deuren, etc) en dan een composiet-klasse aanmaken die bijvoorbeeld een volledig salon beschrijft, de code zou er dan als volgt kunnen uitzien:
-```csharp
+```java
     class SalonElement: MapObject
     {
         private List<MapObject> elementen= new List<MapObject>();
@@ -280,7 +280,7 @@ Voorts kunnen we bijvoorbeeld nu meerdere klassen aanmaken (tafels, stoelen, deu
 ```
 Merk op dat we rekening moeten houden met het feit dat de locatie van het salon het punt linksboven is, en dat dus de nieuwe locaties van de zetels vanaf dit punt hun oorsprong hebben. Althans dat willen we.. Als we in het main-programma dan schrijven:
 
-```csharp
+```java
             SalonElement salon1= new SalonElement(new Point(6,5));
             salon1.Paint();
 ```
@@ -291,7 +291,7 @@ Dan verschijnen onze zetels wel, maar niet op de locatie zoals we wilden (nu ver
 ## Interface 
 We willen nu ervoor zorgen dat wanneer we volgende code schrijven, dat ook alle elementen van het Salon mee verhuizen naar de nieuwe locatie:
 
-```csharp
+```java
             List<MapObject> allObjects = new List<MapObject>();
             allObjects.Add(new SalonElement(new Point(5, 5)));
             allObjects[0].Paint();
@@ -305,7 +305,7 @@ Echter, dat gebeurt niet. De oplossing is een gevorderd principe, maar eentje da
 
 We leggen een nieuwe interface IComposite vast die iedere composietklasse moet implementeren:
 
-```csharp
+```java
     interface IComposite
     {
         void UpdateElements(Point offset);
@@ -314,7 +314,7 @@ We leggen een nieuwe interface IComposite vast die iedere composietklasse moet i
 
 Ons SalonElement wordt krijgt dan volgende aanpassing:
 
-```csharp
+```java
     class SalonElement: MapObject,IComposite
     {
         private List<MapObject> elementen= new List<MapObject>();
@@ -337,7 +337,7 @@ Ons SalonElement wordt krijgt dan volgende aanpassing:
 ```
 De UpdateElements methode zou er dan als volgt kunnen uitzien:
 
-```csharp
+```java
             for (int i = 0; i < elementen.Count; i++)
             {
                 Point elementLoc = elementen[i].Location;
@@ -352,7 +352,7 @@ Telkens we dus UpdateElements aanroepen dan worden alle elementen die bij het ob
 Nu rest ons nog één aanpassing, dat is ervoor zorgen dat deze methode ook effectief telkens wordt aangeroepen. De methode moet aangeroepen worden telkens we een aanpassing aan de Location van het SalonElement doen. Hierbij controleren we eerst of de locatie überhaupt al geïnitialiseerd is (anders is deze waarde gelijk aan ‘null’). Vervolgens berekenen we de offset, dit is het verschil tussen de huidige en de nieuwe locatie van de composietklasse.
 Daar Location bij MapObject hoort, moeten we dus in die klasse een aanpassing doen. We bereiden daarom de Locationproperty uit als volgt:
 
-```csharp
+```java
         public Point Location
         {
             get { return location; }

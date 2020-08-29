@@ -2,7 +2,7 @@
 Soms willen we aangeven dat de implementatie (code) van een property of methode in een parent-klasse door child-klassen mag aangepast worden.
 Dit geven we aan met het  **virtual** keyword:
 
-```csharp
+```java
 class Vliegtuig
 {
    public virtual void Vlieg()
@@ -18,7 +18,7 @@ class Raket: Vliegtuig
 ```
 Stel dat we 2 objecten aanmaken en laten vliegen:
 
-```csharp
+```java
 Vliegtuig f1 = new Vliegtuig();
 Raket spaceX1 = new Raket();
 f1.Vlieg();
@@ -35,7 +35,7 @@ Het vliegtuig vliegt rustig door de wolken.
 Een raket is een vliegtuig, toch vliegt het anders. We willen dus de methode Vlieg anders uitvoeren voor een raket. Daar hebben we **override** voor nodig. Door override voor een methode in de child-klasse te plaatsen zeggen we "gebruik deze implementatie en niet die van de parent klasse."
 **Je kan enkel overriden indien de respectievelijke methode of property in de parent-klasse als virtual werd aangeduid**
 
-```csharp
+```java
 class Raket:Vliegtuig
 {
    public override void Vlieg()
@@ -46,7 +46,7 @@ class Raket:Vliegtuig
 ```
 
 De uitvoer van volgende code zal nu anders zijn:
-```csharp
+```java
 Vliegtuig f1= new Vliegtuig();
 Raket spaceX1= new Raket();
 f1.Vlieg();
@@ -66,7 +66,7 @@ Ook properties kan je virtual instellen en override'n.
 
 Stel dat je volgende klasse hebt:
 
-```csharp
+```java
     class Auto
     {
         virtual public int Fuel { get; set; }
@@ -76,7 +76,7 @@ Stel dat je volgende klasse hebt:
 We maken nu een meer luxueuze auto die een lichtje heeft dat aangaat wanneer de benzine-tank vol genoeg is, dit kan via override.
 
 
-```csharp
+```java
 class LuxeAuto : Auto
 {
    public bool HeeftVolleTank { get; set; }

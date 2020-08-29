@@ -17,7 +17,7 @@ Alle datatypes die we tot nog toe zagen (``string`` is een speciaal geval en neg
 
 #### Het probleem als je arrays wil kopiëren
 Arrays worden 'by reference' gebruikt in C#. Dit wil zeggen dat als we schrijven:
-```csharp
+```java
 int[] getallen = {5,42,2};
 ```
 
@@ -28,7 +28,7 @@ We in ``getallen`` enkel een geheugenadres bewaren dat wijst naar de plek waar d
 
 Het gevolg van voorgaande is dat volgende code niet zal doen wat je vermoedelijk wenst:
 
-```csharp
+```java
 string[] ploegen= {"Beerschot", "Antwerp"};
 string[] nieuwePloegen = {"Anderlecht", "Brugge"};
 nieuwePloegen = ploegen;
@@ -47,13 +47,13 @@ De derde lijn(``nieuwePloegen = ploegen;``) zal perfect werken. Wat er er echter
 
 Als je vervolgens schrijft:
 
-```csharp
+```java
 nieuwePloegen[1] = "Beerschot";
 ```
 
 Dan is dat hetzelfde als onderstaande schrijven daar beide variabele naar dezelfde array-inhoud verwijzen. Het effect zal dus hetzelfde zijn.
 
-```csharp
+```java
 ploegen[1] = "Beerschot";
 ```
 
@@ -63,7 +63,7 @@ En waar staan de ploegen in de nieuwePloegen array (``"Anderlecht"`` en ``"Brugg
 
 Wil je dus arrays kopiëren dan kan dat niet op deze manier: **je moet manueel ieder element van de ene naar de andere array kopiëren** als volgt:
 
-```csharp
+```java
 for(int i = 0; i < ploegen.Length; i++)
 {
     nieuwePloegen[i] = ploegen[i];

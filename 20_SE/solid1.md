@@ -142,7 +142,7 @@ Klassen mogen maar een beperkt aantal instantievariabelen hebben. De methoden va
 
 Een klasse met hoge cohesie:
 
-```csharp
+```java
 class EmailMessage
 {
     private string sendTo;
@@ -163,7 +163,7 @@ class EmailMessage
 
 Een voorbeeld van lage cohesie :
 
-```csharp
+```java
 class EmailMessage
 {
     private string sendTo;
@@ -204,7 +204,7 @@ Bijvoorbeeld iPods. Eens de batterij kapot is moet je een nieuwe iPod kopen, wan
 
 Een voorbeeld van high coupling:
 
-```csharp
+```java
 class A
 {
     elementA;
@@ -236,7 +236,7 @@ Waarom high coupling? Klasse A instantiëert objecten van klasse B, en heeft toe
 
 We kunnen tight coupling oplossen door de dependencies te inverteren. Dit is het toevoegen van een extra laag. Bijvoorbeeld een interface toevoegen. Op deze manier zal klasseA enkel afhankelijk zijn van de interface en niet van de actuele implementatie van klasse B.
 
-```csharp
+```java
 class A
 {
     elementA;
@@ -268,7 +268,7 @@ interface ISomeInterface
 
 ### SRP voorbeeld
 
-```csharp
+```java
 public class Werknemer
 {
     Database db;
@@ -306,7 +306,7 @@ De werknemer klasse is nu verantwoordelijk voor CRUD operaties, maar ook voor he
 
 Daarom is het beter om dit als volgt te coderen:
 
-```csharp
+```java
 public class Werknemer
 {
     Database db;
@@ -334,7 +334,7 @@ public class Werknemer
 
 De klasse ``FileLogger``:
 
-```csharp
+```java
 public class FileLogger
 {
     public void Log(string error)
@@ -347,7 +347,7 @@ public class FileLogger
 Met deze ``FileLogger`` verhoog je de "coupling" graad, en moet je een extra
 laag toevoegen, bijvoorbeeld een interface.
 
-```csharp
+```java
 public interface ILogger
 {
     void Log(string error);
@@ -388,7 +388,7 @@ Er is je gevraagd om software te schrijven voor  een online video shop. Het prog
  
 (altijd goed om je architectuur uit te testen door in je main een voorbeeld applicatie te laten draaien) 
 
-```csharp
+```java
 static void Main(string[] args) 
 { 
     List<Customer> _list = new List<Customer>(); 
@@ -421,7 +421,7 @@ static void Main(string[] args)
  
 ### Movie klasse .. een simpele klasse 
 
-```csharp
+```java
 public class Movie 
 { 
     public  const int CHILDRENS = 2; 
@@ -444,7 +444,7 @@ public class Movie
 
 Deze klasse stelt voor hoe lang een klant een bepaalde film gehuurd heeft. 
 
-```csharp
+```java
 public class Rental 
 { 
     private Movie _movie; 
@@ -468,7 +468,7 @@ public class Rental
 
 Deze klasse stelt de klant van de winkel voor 
 
-```csharp
+```java
 public class Customer
 {
 
@@ -558,7 +558,7 @@ Tracht steeds korte functies/methodes te schrijven. Tracht lange functies onder 
  
 We zoeken in onze statement() functie naar deze lijnen code: 
 
-```csharp
+```java
 switch( r.GetMovie().PriceCode ) 
 { 
     case Movie.REGULAR: 
@@ -585,7 +585,7 @@ switch( r.GetMovie().PriceCode )
 
 En maken hiervoor een aparte functie: 
 
-```csharp
+```java
 private double AmountFor(Rental r) 
 { 
     double thisAmount=0; 
@@ -617,7 +617,7 @@ private double AmountFor(Rental r)
  
 Terwijl we in de statement functie deze verandering maken: 
 
-```csharp
+```java
 foreach (Rental r in _rentals) 
 { 
     double thisAmount = 0; 
@@ -630,7 +630,7 @@ foreach (Rental r in _rentals)
 
 Als we naar onze nieuwe AmountFor(Rental r) functie kijken, valt het op dat we hier met Rental data werken, en eigenlijk geen data van de customer klasse gebruiken.  In de meeste gevallen moeten functies/methodes in die klasse staan vanwaar ze data gebruiken, dus in dit geval van de Rental klasse. 
 
-```csharp
+```java
 public double GetCharge() 
 { 
     double result = 0; 
@@ -663,7 +663,7 @@ public double GetCharge()
 Bij deze heb ik ook de naam van de functie veranderd in GetCharge(),  omwille van de duidelijkheid. Tracht altijd naamgevingen te gebruiken die direct duidelijk maken wat je programmeert. 
 Dus in de Customer klasse staat nu 
 
-```csharp
+```java
 public string Statement() 
 { 
     double totalAmount = 0; 
@@ -686,7 +686,7 @@ Het klasse diagramma is nu veranderd naar:
 
 Als we terug naar de statement() functie kijken dan is de variabele thisAmount redundant, en veranderen we naar: 
 
-```csharp
+```java
 public string Statement() 
 { 
     double totalAmount = 0; 
@@ -714,7 +714,7 @@ Best is om tijdelijke variabelen te verwijderen, omdat  je makkelijk vergeet waa
  
 In de Customer klasse: 
 
-```csharp
+```java
 private double getTotalCharge() 
 { 
     double result = 0; 
@@ -730,7 +730,7 @@ private double getTotalCharge()
  
 Met de statement functie als: 
 
-```csharp
+```java
 public string Statement() 
 { 
     string result = "Rental Record for " + GetName() + "\n"; 
@@ -756,7 +756,7 @@ public string Statement()
 
 In plaats van tekst te loggen wil ik mijn prijsberekening naar een HTML pagina schrijven. Dit is nu vrij simpel, en bij veranderingen in de prijsberekening moet ik de customer klasse niet meer aanpassen!
  
-```csharp
+```java
 public string HtmlStatement() 
 { 
     string result = "<h1>Rental Record for " + GetName() + "</h1>"; 
@@ -778,7 +778,7 @@ public string HtmlStatement()
 Bij een verandering aan de berekening, of toevoeging van nieuwe types films worden de statement functies niet meer gewijzigd, waardoor we duidelijk meer onderhoudvriendelijke code hebben geschreven. 
 
 
-```csharp
+```java
 public double GetCharge() 
 { 
     double thisAmount = 0; 
@@ -815,7 +815,7 @@ We moeten dan wel het aantal huurdagen meegeven als parameter van deze nieuwe fu
 
 De Rental klasse: 
 
-```csharp
+```java
 public double GetCharge() 
 { 
     return GetMovie().GetCharge(DaysRented);              
@@ -824,7 +824,7 @@ public double GetCharge()
 
 In de klasse Movie zit nu: 
 
-```csharp
+```java
 public double GetCharge(int daysRented) 
 { 
     double result = 0; 
@@ -875,7 +875,7 @@ Gesloten voor wijziging betekent dat het gedrag mag veranderd worden zonder de b
 
 Een typisch voorbeeld:
 
-```csharp
+```java
 public class Rectangle
 {
     public double Width { get; set; }
@@ -886,7 +886,7 @@ public class Rectangle
 
 Nu bouwen we een applicatie die de oppervlakte van een collectie rechthoeken zal berekenen.
 
-```csharp
+```java
 public class OppBerekenaar
 {
 
@@ -905,7 +905,7 @@ public class OppBerekenaar
 
 En we schrijven ons testprogramma:
 
-```csharp
+```java
 static void Main(string[] args)
 {
 
@@ -931,7 +931,7 @@ De volgende vraag komt op: kunnen we het programma uitbreiden zodat we ook de op
 
 We passsen de code als volgt aan:
 
-```csharp
+```java
 public double Opp(Object[] shapes)
 {
     double opp = 0;
@@ -976,7 +976,7 @@ Om aan het OPC principe te voldoen moeten we als volgt te werk gaan:
 
 We maken een basis klasse voor rechthoeken, cirkels, driehoeken, andere vormen, en deze definieert een abstracte methode om de oppervlakte te berekenen.
 
-```csharp
+```java
 public abstract class Vorm
 {
     public abstract double Oppervlakte();
@@ -985,7 +985,7 @@ public abstract class Vorm
 
 De andere klassen leiden af van vorm:
 
-```csharp 
+```java 
 public class Rechthoek: Vorm
 {
     public int Width { get; set; }
@@ -998,7 +998,7 @@ public class Rechthoek: Vorm
 }
 ```
 
-```csharp
+```java
 public class Cirkel:Vorm
 {
 
@@ -1013,7 +1013,7 @@ public class Cirkel:Vorm
 
 De berekening gebeurt nu als volgt:
 
-```csharp
+```java
 public class OppBerekenaar
 {
 
@@ -1050,7 +1050,7 @@ TOPROCESS:
 
 Als voorbeeld werken we met een klasse vierkant die overerft van Rechthoek. De klasse Rechthoek heeft eigenschappen als "width" en "height", en vierkant erft deze over. Maar als voor de klasse vierkant de width OF height gekend is, ken je de waarde van de andere ook. En dit is tegen het principe van Liskov.
 
-```csharp
+```java
 public class Rechthoek
 {
     public virtual int Width { get; set; }
@@ -1066,7 +1066,7 @@ public class Rechthoek
 De klasse Vierkant erft over van Rechthoek (maar is in programmeren een vierkant wel een rechthoek?)
 Een vierkant is een rechthoek met gelijke breedte en hoogte, en we kunnen de properties virtual maken in de klasse Rechthoek om dit te realiseren. Rare implementatie, niet? Maar kijk nu naar de client code..
 
-```csharp
+```java
 public class Vierkant:Rechthoek
 {
     public override int Width
@@ -1102,7 +1102,7 @@ public class Vierkant:Rechthoek
 
 Client code:
 
-```csharp
+```java
  static void Main(string[] args)
 {
     Rechthoek r = new Vierkant();
@@ -1124,7 +1124,7 @@ De gebruiker weet dat r een Rechthoek is dus is hij in de veronderstelling dat h
 - Het oplossen van LSP door switch cases zorgt voor een onderhoudsnachtmerrie!
 
 
-```csharp
+```java
 public abstract class Shape
 {
     public abstract int BerekenOpp();
@@ -1171,7 +1171,7 @@ public class OppBerekenaar
 
 Een ander voorbeeld:
 
-```csharp
+```java
 public interface ICar 
 {
      void drive();
@@ -1182,7 +1182,7 @@ public interface ICar
 
 Wat gebeurt er als we een Formule 1 auto hebben:
 
-```csharp
+```java
 public class FormulaOneCar: ICar 
 {
     public void drive() 
@@ -1215,7 +1215,7 @@ Dit is de essentie van het open closed principe. Maar wanneer je subklassen gebr
 
 Bijvoorbeeld:
 
-```csharp
+```java
 public void DoeIets(Bird b)
 {
     if(b is Pinguin) {
@@ -1235,7 +1235,7 @@ Clients mogen niet gedwongen worden om interfaces te implementeren die operaties
 
 In plaats van een fat interface is het beter om deze verder op te delen in meer specifieke interfaces.
 
-```csharp
+```java
 public interface ILog
 {
     void Log(string message);
@@ -1287,7 +1287,7 @@ public class FileLogger : ILog
     
 ## Hoe ISP oplossen:
     
-```csharp    
+```java    
 public interface ILog
 {
     void Log(string message);     
@@ -1352,7 +1352,7 @@ Er zijn verschillende redenen waarom interface moeten gesegregeerd zijn. Om func
 
 > Kom je code tegen waarbij methoden afgeleid van een basis klasse niet geïmplementeerd worden: vb. 
  
- ```csharp
+ ```java
 public void addLuggage() 
 {
     throw new NotSupportedException("No room to carry luggage, sorry."); 
@@ -1390,7 +1390,7 @@ Dependency injection is een techniek om  een dependency (afhankelijkheid) te inj
 
 Een voorbeeld:
 
-```csharp
+```java
 class EventLogWriter
 {
     public void Write(string message)
@@ -1425,7 +1425,7 @@ Als we een klasse schrijven voor het versturen van emails, moet de Printer klass
 
 Onderstaande code laat zien hoe je verandering op een ondynamische manier injecteert:
 
-```csharp
+```java
 class EventLogWriter
 {
     public void Write(string message)
@@ -1477,7 +1477,7 @@ class Printer
 Dus onze printer klasse moet een instantie van al onze loggers bijhouden. Volgens het dependency inversion principe moeten we ons systeem ontkoppelen zodat de higher level modules, dus de Printer module afhankelijk is van een abstracte klasse of interface.
 Deze abstractie zal gemapt worden (polymorf gedrag) naar een concrete klasse die de juiste actie zal ondernemen.
 
-```csharp
+```java
 interface INotification
 {
     void Notify(string message);
@@ -1536,7 +1536,7 @@ Constructor Injection
 
 We geven het object van de concrete klasse mee met de constructor van de afhankelijke klasse.
 
-```csharp
+```java
 class Printer
 {
     INotification writer;
@@ -1552,7 +1552,7 @@ class Printer
 }   
 ```
 
-```csharp  
+```java  
 static void Main(string[] args)
 {
 
@@ -1567,7 +1567,7 @@ static void Main(string[] args)
 In constructor injection wordt de concrete klasse gedurende de volledige levenscyclus van de Printer gebruikt. Als je 
 verschillende concrete klassen moet aanroepen, moet je deze in de methode zelf injecteren.
 
-```csharp
+```java
 static void Main(string[] args)
 {
     EventLogWriter log = new EventLogWriter();
@@ -1581,7 +1581,7 @@ static void Main(string[] args)
 
 We geven het object van de concrete klasse mee via een set property.
 
-```csharp
+```java
 class Printer
 {
     // Handle to EventLog writer to write to the logs
@@ -1596,7 +1596,7 @@ class Printer
 }  
 ```
 
-```csharp
+```java
  static void Main(string[] args)
 {
     EventLogWriter log = new EventLogWriter();
@@ -1611,7 +1611,7 @@ class Printer
 
 Bepaal de dependencies:
 
-```csharp
+```java
 public class Order
 {
     public void Checkout(Cart cart, PaymentDetails paymentDetails, bool notifyCustomer)
@@ -1718,14 +1718,14 @@ Het toepassen van dependency injection zorgt typisch voor heel wat interfaces di
 
 De MailMessage en SmtpClient zorgt voor een eventuele  verandering. Stel je wil later de klant niet via email een notificatie sturen, maar via facebook messenger, dan zal je deze code moeten aanpassen. Door dit in interface te duwen, zal je veel flexibelere code schrijven:
 
-```csharp 
+```java 
  public interface INotifyCustomer
 {
     void NotifyCustomer(Cart cart);
 }
 ```
 
-```csharp
+```java
 public class NotifyCustomerService : INotifyCustomer
 {
     /**
@@ -1760,7 +1760,7 @@ public class NotifyCustomerService : INotifyCustomer
 
 In de order klasse zie je de flexibiliteit terugkomen:
 
-```csharp
+```java
  public class Order
 {
     INotifyCustomer _notifier;
@@ -1799,7 +1799,7 @@ Klassediagramma:
 
 Op deze manier heb je het switch statement (getCharge() functie) in de klasse Movie niet meer nodig! 
 
-```csharp 
+```java 
 switch (GetPriceCode()) 
 { 
     case Movie.REGULAR: 
@@ -1826,7 +1826,7 @@ switch (GetPriceCode())
 
 Maar elke subklasse zal een implementatie maken van getCharge(). Voorbeeldcode: 
 
-```csharp
+```java
 
 public abstract class Movie 
 { 
@@ -1859,13 +1859,13 @@ class NewReleaseMovie : Movie
 
 Aan deze implementatie zit wel een zeer groot nadeel. Het is niet mogelijk om een film van classificatie te wisselen. Dus stel dat je de film “Rundskop” maakt als een NewReleaseMovie, dan is het later niet mogelijk om van deze film een RegularMovie te maken.  
 
-```csharp
+```java
 Movie m2 = new NewReleaseMovie ("Rundskop");            
  ```
  
 Indien je nu van m2 een RegularMovie wil maken, zal je de variabele opnieuw moeten instantiëren, met als gevolg dat je alle originele data kwijt bent. 
  
-```csharp
+```java
 m2 = new RegularMovie ("Rundskop"); 
  ```
  
@@ -1880,7 +1880,7 @@ Het strategy pattern is dus in staat om een status/ of om in realtime algoritme 
 De strategy klassen 
  
  
-```csharp
+```java
 public abstract class Price 
 { 
     public abstract double getCharge(int daysRented); 
@@ -1931,7 +1931,7 @@ public class NewReleasePrice:Price
 We maken nu een abstracte klasse price met zijn subklassen. De getCharge() functie in de superklasse is abstract, zodat de afgeleide klassen verplicht zijn een eigen implementatie te geven aan deze functie. 
 In de Movie klasse zal je in plaats van de int _priceCode een member van het type Price moeten definiëren.  In runtime beslis je dan of deze member de constructor van NewReleasePrice, ChildrensPrice of RegularPrice oproept. 
 
-```csharp
+```java
 private Price _priceCode; 
 
 public Movie(string title, Price priceCode) 
@@ -1954,7 +1954,7 @@ public void SetPriceCode(Price arg)
 
 De volgende stap is om de getCharge() functie in de klasse Movie over te dragen naar de juiste Price klasse. (de implementatie van getCharge() in de desbetreffende klassen kan je reeds zien op de vorige pagina). De getCharge() functie van de Movie klasse wordt dan: 
 
-```csharp
+```java
 public double GetCharge(int daysRented) 
 { 
     return _priceCode.getCharge(daysRented);             
@@ -1966,7 +1966,7 @@ Hierbij is ook de conditionele logica in de functie verdwenen (want deze is over
  
 We kunnen dit nu ook doen voor de getFrequentRenterPoints(int daysRented). We moeten deze functie in de superclasse ‘Price’ niet abstract maken maar geven er hier reeds een implementatie aan. We maken deze wel virtual zodat de afgeleide kunnen bepalen of ze er een eigen definitie aan geven. 
 
-```csharp
+```java
 public abstract class Price 
 { 
     public abstract double getCharge(int daysRented); 
@@ -1980,7 +1980,7 @@ public abstract class Price
 
 Enkel de NewReleasePrice geeft een eigen implementatie aan de getFrequentRenterPoints(int daysRented) functie: 
 
-```csharp
+```java
 public class NewReleasePrice:Price 
 { 
     public override double getCharge(int daysRented) 

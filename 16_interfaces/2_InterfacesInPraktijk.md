@@ -20,7 +20,7 @@ Indien je een array van objecten hebt en je wenst deze te sorteren via ``Array.S
 We willen een array van landen kunnen sorteren op grootte van oppervlakte.
 
 Stel dat we de klasse ``Land`` hebben:
-```csharp
+```java
 class Land
 {
     public string Naam {get;set;}
@@ -29,14 +29,14 @@ class Land
 }
 ```
 We plaatsen 3 landen in een array:
-```csharp
+```java
 Land[] eurolanden = new Land[3];
 eurolanden[0]= new Land() {Naam="Belgie", Oppervlakte= 5, Inwoners=2000};
 eurolanden[1]= new Land() {Naam="France", Oppervlakte= 7, Inwoners=2500};
 eurolanden[2]= new Land() {Naam="Nederland", Oppervlakte= 6, Inwoners=1800};
 ```
 Wanneer we nu proberen:
-```csharp
+```java
 Array.Sort(eurolanden);
 ```
 Dan treedt er een uitzondering op:``InvalidOperationException: Failed to compare two elements in the array`` 
@@ -48,7 +48,7 @@ We kunnen dit oplossen door de ``IComparable`` interface in de klasse ``Land`` t
 
 De interface is beschreven als:
 
-```csharp
+```java
 interface IComparable
 {
     int CompareTo(Object obj);
@@ -70,7 +70,7 @@ Daarbij moet de methode een int  teruggeven als volgt:
 
 ## Stap 3: IComparable in Land implementeren
 We zorgen er nu voor dat ``Land`` deze interface implementeert. Daarbij willen we dat de landen volgens oppervlakte worden gesorteerd :
-```csharp
+```java
 class Land: IComparable
 {
     //....
@@ -90,7 +90,7 @@ class Land: IComparable
 Nu zal de Sort werken! ``Array.Sort(eurolanden);``
 
 Stel dat vervolgens nog beter willen sorteren: we willen dat landen met een gelijke oppervlakte, op hun inwoners gesorteerd worden:
-```csharp
+```java
 public int CompareTo(object obj)
 {
     Land temp= (Land)obj; //Zetten de parameter om naar land

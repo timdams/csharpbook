@@ -5,7 +5,7 @@ In het hoofdstuk Polymorfisme bespraken we een voorbeeld van een klasse ``Presid
 Een nadeel van die voorgaande aanpak is dat al onze Advisors maar 1 "job" kunnen hebben: ze erven allemaal over van ``Advisor`` en kunnen nergens anders van overerven (geen multiple inheritance is toegestaan in C#). Via interfaces kunnen we dit oplossen. Een advisor gaan we dan eerder als een "bij-job" beschouwen en niet de hoofdreden van een klasse.
 
 We definiëren daarom eerst een nieuwe interface ``IAdvisor``:
-```csharp
+```java
 interface IAdvisor
 {
     void Advise();
@@ -13,7 +13,7 @@ interface IAdvisor
 ```
 
 Vanaf nu kan eender *wie* die deze interface implementeert de President advies geven.Hoera! En daarnaast kan die klasse echter ook nog tal van andere zaken doen. Beeld je bijvoorbeeld een CEO van een bedrijf in die ook adviseur van de President wilt zijn. De bestaande klasse is bijvoorbeeld:
-```csharp
+```java
 class MicrosoftCEO: CEO   //CEO kan een parentklasse zijn die elders bijvoorbeeld algemene CEO-concepten beschrijft
 {
     public void EarnBigBucks()
@@ -27,7 +27,7 @@ class MicrosoftCEO: CEO   //CEO kan een parentklasse zijn die elders bijvoorbeel
 }
 ```
 Nu we de interface ``IAdvisor`` hebben kunnen we deze klasse aanvullen met deze interface:
-```csharp
+```java
 class MicrosoftCEO: CEO, IAdvisor
 {
      
@@ -49,7 +49,7 @@ class MicrosoftCEO: CEO, IAdvisor
 De CEO kan dus z'n bestaande job blijven uitoefenen maar ook als adviseur optreden. 
 
 Ook de ``President`` moet aangepast worden om nu met een lijst van ``IAdvisor`` ipv ``Advisor`` te werken:
-```csharp
+```java
 public class MisterPresident
 {
     public void RunTheCountry()
@@ -68,7 +68,7 @@ public class MisterPresident
 
 De eerder beschreven ``MilitaryAdvisor``,``ScienceAdvisor`` en ``EconomyAdvisor`` dienen ook niet meer van de abstracte klasse ``Advisor``(deze zou je kunnen verwijderen) over te erven en kunnen gewoon de interface implementeren:
 
-```csharp
+```java
 class MilitaryAdvisor:IAdvisor
 {
     public void Advise()

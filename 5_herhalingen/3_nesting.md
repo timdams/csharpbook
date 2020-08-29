@@ -11,7 +11,7 @@ We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. W
 
 Volgende code toont bijvoorbeeld 2 loops die genest werden:
 
-```csharp
+```java
 int tellerA= 0;
 int tellerB= 0;
 
@@ -47,7 +47,7 @@ Teller: 3, Teller 2:4
 Teller: 3, Teller 2:5
 
 ```
-Merk het 'ritme' in de uitvoer. De linkse teller gaat een pak trager dan de rechtse.
+Merk het 'ritme' op in de uitvoer. De linkse teller gaat een pak trager dan de rechtse.
 
 {% hint style='tip' %}
 **Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner en outer loop apart)**
@@ -57,7 +57,7 @@ Merk het 'ritme' in de uitvoer. De linkse teller gaat een pak trager dan de rech
 Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenigvuldig je al deze getallen met elkaar.
 
 Een voorbeeld: Hoe vaak zal het woord ``Hallo`` op het scherm verschijnen bij volgende code?
-```csharp
+```java
 for (int i = 0; i < 10; i++)
 {
     for (int j = 0; j < 5; j++)

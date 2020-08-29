@@ -7,14 +7,14 @@ We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 
 ## Polymorfisme in de praktijk: Dieren
 Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk ([abstracte klassen in overerving](../13_advancedovererving/5_abstract.md)):
-```csharp
+```java
 abstract class  Dier
 {
    public abstract string MaakGeluid();
 }
 ```
 Twee child-klassen:
-```csharp
+```java
 class Paard: Dier
 {
   public override string MaakGeluid()
@@ -33,7 +33,7 @@ class Varken: Dier
 ```
 
 Dankzij polymorfisme kunnen we nu elders objecten van Paard en Varken in een ``Dier`` bewaren, maar toch hun eigen geluid laten reproduceren:
-```csharp
+```java
 Dier someAnimal = new Varken();
 Dier anotherAnimal = new Paard();
 Console.WriteLine(someAnimal.MaakGeluid()); //Oinkoink
@@ -48,7 +48,7 @@ Arrays en lijsten laten heel krachtige code toe. Je kan een lijst van de basis-k
 
 Een voorbeeld:
 
-```csharp
+```java
 List<Dier> zoo = new List<Dier>();
 zoo.Add(new Varken());
 zoo.Add(new Paard());

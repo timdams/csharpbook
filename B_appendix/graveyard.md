@@ -46,7 +46,7 @@ Toon de werking van je klasse aan door enkele objecten aan te maken met zowel de
 Pas de klasse ``Job`` aan zodat de + operator kan gebruikt worden om 2 job-objecten bij elkaar op te tellen.
 Bv:
 
-```csharp
+```java
 Job epicDuoJob= jobOne+jobTwo;  //jobOne en jobTwo zijn ook van het type Job
 ```
 
@@ -185,7 +185,7 @@ Maak een basis-versie van het spel.
 
 ## Card
 
-```csharp
+```java
 abstract class Card
 {
     public Card(string naamin)
@@ -208,7 +208,7 @@ abstract class Card
 
 ## IPointGenerator
 
-```csharp
+```java
 interface IPointGenerator
 {
     int GeneratePoints(int payedmana);
@@ -216,7 +216,7 @@ interface IPointGenerator
 ```
 
 # Oplossing
-```csharp
+```java
     abstract class Card
     {
         public Card(string naamin)
@@ -418,7 +418,7 @@ interface IPointGenerator
     }
 ```
 
-```csharp
+```java
 static void Main(string[] args)
 {
     //deck genereren

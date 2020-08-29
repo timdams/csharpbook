@@ -18,7 +18,7 @@ Een interface is niet meer dan een belofte: het zegt enkel welke publieke method
 # Interface voorbeeld
 
 Volgende code toont hoe we een interface definiëren:
-```csharp
+```java
 interface ISuperHeld
 {
     void SchietLasers();
@@ -55,7 +55,7 @@ Het is in de klassen dat we nu vervolgens verplicht zijn deze methode en propert
 We kunnen nu aan klassen de stempel ISuperHeld geven zodat programmeurs weten dat die klasse geagarandeert de methoden ``SchietLasers``, ``VerlaagKracht`` en de property ``Power`` zal hebben.
 
 Volgende code toont dit:
-```csharp
+```java
 class Zorro: ISuperHeld
 {
     public void RoepPaard(){...}
@@ -84,7 +84,7 @@ Een "lolly" op een klein geeft aan dat deze een bepaalde interface heeft. In vol
 We kunnen ``is`` gebruiken om te weten of een klasse een specifieke interface heeft.
 
 Stel:
-```csharp
+```java
 interface IDeletable{ ...};
 
 class Book: IDeletable { ... };
@@ -93,7 +93,7 @@ class Person { ... };
 ```
 
 In actie:
-```csharp
+```java
 Person tim= new Person();
 Book gameofthrones = new Book();
 
@@ -112,7 +112,7 @@ Ouput: ``I can delete game of thrones``.
 
 # Meerder interfaces
 Een nadeel van overerving is dat een klasse maar van 1 klasse kan overerven. Een klasse mag echter wel meerdere interfaces met zich meedragen:
-```csharp
+```java
 interface ISuperHeld{...}
 interface ICoureur{...} 
 class Man {...}
@@ -125,7 +125,7 @@ class Batman:Man, ISuperHeld, ICoureur
 ```
 
 Ook mogen interfaces van elkaar overerven:
-```csharp
+```java
 interface IGod:ISuperHeld
 {...}
 ```
@@ -164,7 +164,7 @@ Volgende code toont dit.
 
 Eerst maken we de nodige writers:
 
-```csharp
+```java
         interface IData
         {
             void ReadData();
@@ -172,7 +172,7 @@ Eerst maken we de nodige writers:
         }
 ```
 
-```csharp
+```java
        class DiskWriter : IData
         {
             public void ReadData()
@@ -189,7 +189,7 @@ Eerst maken we de nodige writers:
         }
 ```
 
-```csharp
+```java
         class InternetWriter: IData
         {
             public void ReadData()
@@ -207,7 +207,7 @@ Eerst maken we de nodige writers:
 Vervolgens maken we een klasse die effectief die writer gebruikt. De "truuk" zit hem er nu in dat deze klasse met ``IData`` werkt via compositie en dus niet weet naar waar alles zal geschreven worden. 
 Je kan vervolgens volgens de compositie regels instellen welk object ``IData`` krijgt. In volgende voorbeeld stellen we dit in via de constructor, maar je zou ook van ``datadoel`` een property kunnen maken:
 
-```csharp
+```java
         class Logbook
         {
             private IData datadoel;
@@ -224,7 +224,7 @@ Je kan vervolgens volgens de compositie regels instellen welk object ``IData`` k
 ```
 Vanaf nu kan je logbook-objecten aanmaken die naar verschillende plekken schrijven/lezen zonder dat je IN  ``logbook`` moet weten naar waar dat gebeurt:
 
-```csharp
+```java
             Logbook naarlokalefile = new Logbook(new DiskWriter());
             naarlokalefile.Schrijf();
 

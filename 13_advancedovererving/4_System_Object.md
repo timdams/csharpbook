@@ -16,7 +16,7 @@ Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse 
 
 ## GetType()
 Stel dat je een klasse Student hebt gemaakt in je project. Je kan dan op een object van deze klasse de GetType() -methode aanroepen om te weten wat het type van dit object is:
-```csharp
+```java
 Student stud1= new Student();
 Console.WriteLine(stud1.GetType());
 ```
@@ -24,7 +24,7 @@ Dit zal als uitvoer de namespace gevolgd door het type op het scherm geven. Als 
 
 Wil je enkel het type zonder namespace dan is het nuttig te beseffen dat GetType() een object teruggeeft van het type ``Type`` met meerdere eigenschappen, waaronder ``Name``. Volgende code zal dus enkel ``Student`` op het scherm tonen:
 
-```csharp
+```java
 Student stud1= new Student();
 Console.WriteLine(stud1.GetType().Name);
 ```
@@ -32,15 +32,15 @@ Console.WriteLine(stud1.GetType().Name);
 ## ToString()
 Deze is de nuttigste waar je al direct leuke dingen mee kan doen. 
 Wanneer je schrijft:
-```csharp
+```java
 Console.WriteLine(stud1);
 ```
 Wordt je code eigenlijk herschreven naar:
-```csharp
+```java
 Console.WriteLine(stud1.ToString());
 ```
 Op het scherm verschijnt dan ``StudentManager.Student``. Waarom? Wel, de methode ToString() wordt in System.Object() ongeveer als volgt beschreven:
-```csharp
+```java
 public virtual string ToString()
  { return GetType(); }
  ```
@@ -53,7 +53,7 @@ public virtual string ToString()
  
  ### ToString() overriden
  Het zou natuurlijk fijner zijn dat de ToString() van onze student nuttigere info teruggeeft, zoals bv de interne Naam (string autoprop) en Leeftijd (int autoprop). We kunnen dat eenvoudig krijgen door gewoon ToString to overriden:
- ```csharp
+ ```java
  class Student
  {
    public int Leeftijd {get;set;}
@@ -70,7 +70,7 @@ public virtual string ToString()
  
  ## Equals()
  Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van dit boek](../18_IsAs/6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
- ```csharp
+ ```java
 if(stud1.Equals(stud2))
    //...
 ```
@@ -81,7 +81,7 @@ Twee objecten zijn gelijk voor .NET als aan volgende afspraken wordt voldaan:
 * Het moet ``false`` teruggeven indien het argument o ``null`` is
 * Het moet ``true`` teruggeven indien je het object met zichzelf vergelijkt (bv ``stud1.Equals(stud1)``)
 * Het mag enkel ``true`` teruggeven als volgende statements beide waar zijn:
-```csharp
+```java
 stud1.Equals(stud2);
 stud2.Equals(stud1);
 ```
@@ -91,7 +91,7 @@ stud2.Equals(stud1);
 
 Stel dat we vinden dat een student gelijk is aan een andere student indien z'n Naam en Leeftijd dezelfde is, we kunnen dan de Equals-methode overriden als volgt:
 
-```csharp
+```java
 //In de Student class
 public override bool Equals(Object o)
 {

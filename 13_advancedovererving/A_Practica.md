@@ -4,7 +4,7 @@ Voeg ToString toe aan bestaande van volgende projecten. Ik raad aan dat je dit e
 ## Pokémon extra
 
 Implementeer de ToString() methode in je ``Pokemon`` klasse zodat deze z'n full stats toont wanneer je schrijft:
-```csharp
+```java
 Console.WriteLine(myPokemon);
 ```
 
@@ -27,7 +27,7 @@ Zorg ervoor dat er géén dubbele code in HiddenBookmark staat (tip: ``base()``)
 
 Test door volgende code in een eenvoudig programma uit te voeren:
 
-```csharp
+```java
 HiddenBookmark hbm=new HiddenBookmark();
 //extra props invullen
 Bookmark bm = new Bookmark();

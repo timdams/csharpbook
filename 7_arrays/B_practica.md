@@ -19,7 +19,7 @@ Voorbeeldoutput:
 Maak een programma dat een methode VisualiseerArray implementeert. De methode zal een array (type int) als parameter hebben en niets teruggeven (``void``). Echter, de methode zal met behulp van Write() de array, van eender welke grootte, op het scherm tonen. Tussen ieder element van dezelfde rij dient een tab (``\t``) gezet te worden. Je dient in de methode gebruik te maken van een for-loop.
 Voorbeeld van main:
 
-```csharp
+```java
 int[] array={15, 6, 9};
 int[] array2={0, 1, 2, 3, 4, 5, 6};
 VisualiseerArray(array);
@@ -85,7 +85,7 @@ Er volgen nu enkele meer-dimensionale array oefeningen
 Schrijf een programma dat een methode BerekenDeterminant heeft. Deze methode heeft één paramater als input: een 2 bij 2 array van integers. Als resultaat geeft de methode de determinant als integer terug. Zoek zelf op hoe je de determinant van een matrix kunt berekenen.
 
 Volgende voorbeeld-main dient te werken, 
-```csharp
+```java
 int[,] aMatrix = { 
                   {2, 4},
                   {3, 5}
@@ -106,7 +106,7 @@ Breid uit zodat de BerekenDeterminant-methode ook werkt voor 3-bij-3 matrices. D
 Breid het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de ``GetLength()``-methode van een array).
 
 Voorbeeld van main:
-```csharp
+```java
 int [,] array = { {15, 6, 9}, {1, 2, 3}, {6, 9, 12}};
 VisualiseerArray(array);
 ```

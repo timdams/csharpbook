@@ -6,7 +6,7 @@ In volgende kennisclip werk ik de oplossing stap voor stap uit.
 
 
 # Program.cs
-```csharp
+```java
 Virus v = new Virus();
 
 List<Vaccin> vaccins = new List<Vaccin>();
@@ -69,7 +69,7 @@ else
 
 # Vaccin
 
-```csharp
+```java
 class Vaccin
 {
     public string Naam { get; private set; }
@@ -104,7 +104,7 @@ class Vaccin
 
 # Virus
 
-```csharp
+```java
 class Virus
 {
     public string Naam { get; private set; }
@@ -154,7 +154,7 @@ class Virus
 
 # VaccinatieCentrum
 
-```csharp
+```java
 class VaccinatieCentrum
 {
     public static int Oplossing { get; set; } = -1;

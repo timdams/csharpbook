@@ -6,7 +6,7 @@
 
 Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
 
-```csharp
+```java
 public class President
 {
     MilitaryMinister Petraeus= new MilitaryMinister();
@@ -38,7 +38,7 @@ public class President
 ```
 
 De MilitaryMinister zou er zo kunnen uitzien:
-```csharp
+```java
 class MilitaryMinister
 {
   public void IncreaseTroopNumbers()
@@ -61,7 +61,7 @@ Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
 
 1. We verplichten alle adviseurs dat ze overerven van de abstracte klasse ``Advisor`` die maar 1 abstracte methode heeft ``Advise``:
 
-```csharp
+```java
 abstract class Advisor
 {
   abstract public void Advise();
@@ -93,7 +93,7 @@ class HealthOfficial:Advisor
 
 2° Het leven van de President wordt plots véél makkelijker:
 
-```csharp
+```java
 public class MisterPresident
 {
     public void RunTheCountry()
@@ -110,7 +110,7 @@ public class MisterPresident
 
 3° En we kunnen hem nog helpen door met een array of ``List<Advisor>`` te werken zodat hij ook niet steeds de "namen" van z'n adviseurs moet kennen:
 
-```csharp
+```java
 public class MisterPresident
 {
     public void RunTheCountry()

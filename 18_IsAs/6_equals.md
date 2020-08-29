@@ -12,7 +12,7 @@ C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdst
 De volledige werking van deze geheugens gaan we niet terug herhalen. Voor ons belangrijk is te weten dat variabelen van built-in .NET types (int , char, etc.) in de stack worden bewaard.
 Objecten daarentegen worden in de heap bewaard. Indien je een object aanmaakt met de new operator en deze bewaard in een lokale variabele zoals hier:
 
-```csharp
+```java
 Point punt1 = new Point();
 ```
  
@@ -22,7 +22,7 @@ dan zal in de heap een ``Point`` object worden aangemaakt. Vervolgens krijgt een
 # Objecten vergelijken
 ## Value types en de == operator
 Wanneer we twee variabele van een van de ingebouwde .NET types (behalve string) met elkaar vergelijken (int, char, etc.) dan kunnen we schrijven:
-```csharp
+```java
 int getal1 = 4;
 int getal2= 5;
 if(getal1 == getal2)
@@ -36,7 +36,7 @@ Dit werkt omdat de variabelen ``getal1`` en ``getal2`` in het geheugen de effect
 
 ## Objecten en de == operator
 Stel dat we een klasse Point hebben dat we gebruiken om een 2-dimensionaal punt voor te stellen:
-```csharp
+```java
 class Point
 {
     public int X {get;set;}
@@ -45,7 +45,7 @@ class Point
 ```
 We zouden nu kunnen denken dat volgende code ``Punten zijn gelijk`` op het scherm zal tonen:
 
-```csharp
+```java
 Point punt1= new Point();
 punt1.X=3;
 punt1.Y=5;
@@ -64,7 +64,7 @@ Echter, objecten worden we weten dat objecten "by reference" in het geheugen wor
 
 Wanneer we dus de expressie ``punt1==punt2`` schrijven dan zal de inhoud van die 2 variabelen worden vergeleken, zijnde de 2 adressen. Daar beide variabelen naar een ander adres wijzen zal deze test dus fout teruggeven.
 Als we 1 extra lijn voor de if toevoegen:
-```csharp
+```java
 punt1 = punt2;
 
 if(punt1==punt2)
@@ -79,13 +79,13 @@ De variabelen ``punt1`` en ``punt2`` zijn nu dus wel gelijk: ze hebben dezelfde 
 
 ## Objecten vergelijken zonder overerving
 Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle properties en private fields te vergelijken met elkaar van beide objecten. Althans, jij als programmeur moet beslissen wanneer 2 objecten gelijk zijn. Mogelijk vind je dat 2 punten gelijk zijn als ze beide dezelfde X-waarde hebben ongeacht de Y-waarde. Maar wij prefereren natuurlijk dat zowel de X als de Y-waarde dezelfde is en kunnen dus schrijven:
-```csharp
+```java
 if(punt1.X== punt2.X && punt1.Y== punt2.Y)
 ```
 
 We zouden dit dan in een handige [static methode](../10_advancedklassen/5_static.md) kunnen plaatsen :
 
-```csharp
+```java
 static bool VergelijkPunten(Point p1, Point p2)
 {
     if(punt1.X== punt2.X && punt1.Y== punt2.Y)
@@ -99,7 +99,7 @@ static bool VergelijkPunten(Point p1, Point p2)
 Nog leuker zou natuurlijk zijn als we de vergelijking **in** het object zelf kunnen doen. We zouden dan aan een object kunnen vragen "beste punt1, is het volgende punt dat ik als parameter meegeef gelijk aan jou of niet?". Hiermee leggen we de verantwoordelijkheid bij het object en zorgen we dat alles mooi geëncapsuleerd en samen blijft. 
 Onze uitgebreide Point-klasse wordt dan:
 
-```csharp
+```java
 class Point
 {
     public int X {get;set;}
@@ -119,7 +119,7 @@ class Point
 Ieder object van het type Point bevat dus nu een methode ``IsDitPuntGelijk`` waarbij we een ander punt meegeven als parameter. Daar de test in het punt zelf wordt gedaan hebben we onmiddellijke toegang tot alle, al dan niet, private variabelen van het punt in kwestie.
 
 Elders kunnen we dus schrijven:
-```csharp
+```java
 if(punt1.IsDitPuntGelijk(punt2))
 ```
 
@@ -132,7 +132,7 @@ Wat we vorige keer niet zagen is dat er twee versies van de ``Equals`` methode b
 * Een static versie
 * Een gewone object-methode versie
 
-```csharp
+```java
 object object1= new object();
 object object2= new object();
 
@@ -148,14 +148,14 @@ if(Object.Equals(object1, object2))
 ## Equals als virtual methode
 Wij gaan ons nu concentreren op de eerste, niet-statische, ``Equals`` methode.
 Bekijken we de signature van de Equals methode in System.Object dan zien we:
-```csharp
+```java
 public virtual bool Equals(Object obj)
 ```
  
 Met andere woorden, deze methode is ``virtual`` gemaakt zodat andere klasse deze methode kunnen override'n. 
 Laten we dit eerst eens **niet** doen. Daar Point van ``System.Object`` overerft kunnen we schrijven:
 
-```csharp
+```java
 Point punt1= new Point();
 punt1.X=3;
 punt1.Y=5;
@@ -172,7 +172,7 @@ if(punt1.Equals(punt2))
 
 Standaard zal de ``Equals`` methode van ``System.Object`` simpelweg kijken of beide objecten naar hetzelfde geheugenadres wijzen (zoals eerder reeds aangehaald). Dit is hier niet het geval.
 Volgende code uitvoeren zal wél ``Punten zijn gelijk´´ op het scherm tonen:
-```csharp
+```java
 punt1=punt2;
 if(punt1.Equals(punt2))
 {
@@ -186,7 +186,7 @@ Wanneer we een bestaande methode willen overriden dan moeten we **EXACT DEZELFDE
 
 We zijn dus verplicht om deze methode zo over te nemen in onze Point klasse, waarbij we het virtual keyword natuurlijk vervangen door ``override``:
 
-```csharp
+```java
 class Point: System.Object
 {
     public int X {get;set;}
@@ -200,7 +200,7 @@ class Point: System.Object
 ```
 
 Daar we steevast ``true`` returnen hierboven zal onderstaande code altijd in de if gaan. Alle Point objecten zouden gelijk zijn, ongeacht of dat nu is of niet:
-```csharp
+```java
 if(punt1.Equals(punt2))
 ```
 
@@ -212,7 +212,7 @@ We krijgen binnen de Equals methode een parameter van het type ``Object`` binnen
 
 Als we het volgende schrijven dan begint Visual Studio te huilen:
 
-```csharp
+```java
 public override bool Equals (object obj)
 {
     if(X==obj.X && Y== obj.Y) //BAAAAD CODE
@@ -228,7 +228,7 @@ Dit kan op twee manieren:
 
 Laten we even veronderstellen dat we de Equals methode in onze Point klasse altijd gebruiken om 2 Points te vergelijken niets anders: we weten dan dat de obj parameter ook kan aanschouwd worden als een Point. En we kunnen dus de obj parameter casten naar een (tijdelijk) Point:
 
-```csharp
+```java
 public override bool Equals (object obj)
 {
     Point tijdelijk= (Point)obj;
@@ -249,7 +249,7 @@ Dan zal de ``Equals`` methode *op het ``punt1``* uitgevoerd worden. ``X`` en ``Y
 
 Het is natuurlijk gevaarlijk om te veronderstellen dat we de ``Equals`` methode op de ``Point´´ klasse altijd correct gaan gebruiken.
 Stel dat we zouden schrijven:
-```csharp
+```java
 if(punt1.Equals("mijn locatie is hier"))
 ```
  
@@ -259,7 +259,7 @@ Het is dus aan te raden om een controle(s) in te bouwen in de ``Equals`` methode
 
 **Met andere woorden: we gaan vragen wat het echte type van obj is.**
 
-```csharp
+```java
 public override bool Equals (object obj)
 {
     if(obj is Point)
@@ -273,7 +273,7 @@ public override bool Equals (object obj)
 ```
 
 Enkel indien het type van ``obj`` dezelfde is als het type van het object waarbinnen we de ``Equals´´ methode aanroepen zullen we verder werken. Als we deze controle niet zouden doen dan zou deze lijn:
-```csharp
+```java
 Point tijdelijk = (Point)obj;
 ```
  
@@ -283,7 +283,7 @@ proberen om ``"mijn locatie is hier"``  om te zetten (casten) naar een Point, wa
 Als finale check moeten we ook controleren of we geen null-object als parameter aan de methode meegeven. Mogelijk probeer je een bestaand object te vergelijken met een nog niet geïnstantieerd object en dan krijgen we een ``NullReferenceException``. 
 
 Onze finale ``Equals`` methode wordt:
-```csharp
+```java
 public override bool Equals (object obj)
 {
     if(obj != null)

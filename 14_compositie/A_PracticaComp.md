@@ -61,7 +61,7 @@ Maak een methode ``TestMoederbord`` in de klasse ``Moederbord``. Wanneer je deze
 
 Iedere module moet via een property langs buiten ingesteld worden. (beeld je in dat je effectief een moederbord ineenknutselt):
 
-```csharp
+```java
 Moederbord Z390E_GAMING = new Moederbord();
 Z390E_GAMING.AGP= new AGPSlot("GeForceRTX2080");
 Z390E_GAMING.CPU= new CPUSlot("IntelCorei9_9900K");

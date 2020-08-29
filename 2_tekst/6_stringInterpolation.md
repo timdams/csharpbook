@@ -18,7 +18,7 @@ Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 ### Manier 1: String samenvoegen met de +-operator
 Je kan string en variabelen eenvoudig bij elkaar 'optellen' zoals we in het begin van dit boek hebben gezien. Ze worden dan achter elkaar geplakt als het ware. 
 
-```csharp
+```java
 string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud.";
 ```
 
@@ -27,7 +27,7 @@ Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indie
 {% hint style='warning' %}
 Toch even goed opletten hier. De volgorde van strings met andere types samenvoegen (**concateneren**) bepaalt wat de uitvoer zal zijn! Kijk zelf:
 
-```csharp
+```java
 Console.WriteLine("1"+1+1);
 Console.WriteLine(1+1+"1");
 Console.WriteLine("1" + (1 + 1));
@@ -58,7 +58,7 @@ Dankzij *string interpolation* kan dit wel **waarbij we het ``$``-teken gebruike
 
 Door het $-teken **VOOR** de string te plaatsen geef je aan dat alle delen in de string die *tussen accolades staan* als code mogen beschouwd worden. Een voorbeeld maakt dit duidelijk:
 
-```csharp
+```java
 string result= $"Ik ben {name} en ik ben {age} jaar oud.";
 ```
 
@@ -69,14 +69,14 @@ Het resultaat zal dan worden: ```Ik ben Finkelstein en ik ben 13 jaar oud.```
 
 #### Berekeningen doen bij string interpolatie
 Je mag eender welke *expressie* tussen de accolades zetten bij string interpolation, denk maar aan:
-```csharp
+```java
 string result= $"Ik ben {name} en ik ben {age+4} jaar oud.";
 ```
 
 Alle expressies tussen de accolades zullen eerst uitgevoerd worden voor ze tussen de string worden geplaatst. De uitvoer wordt nu dus:  ```Ik ben Finkelstein en ik ben 17 jaar oud.```
 
 Eender welke expressie is toegelaten, dus je kan ook complexe berekeningen of zelfs andere methoden aanroepen:
-```csharp
+```java
 string result= $"Ik ben {age*age+(3%2)} jaar oud.";
 ```
 
@@ -84,7 +84,7 @@ string result= $"Ik ben {age*age+(3%2)} jaar oud.";
 Uiteraard mag je dit dus ook gebruiken wanneer je eenvoudiger zaken naar het scherm wenst te sturen gebruik makende van ``Console.WriteLine`` en interpolatie:
 
 <!---{line-numbers:false}--->
-```csharp
+```java
 Console.WriteLine($"3 maal 9 is  {3*9}");
 ```
 {% endhint %}
@@ -95,7 +95,7 @@ Zowel bij string interpolation (manier 2) als de manier hierna kan je ook bepale
 
 Wil je bijvoorbeeld een kommagetal tonen met maar 2 cijfers na de komma dan schrijf je:
 
-```csharp
+```java
 double number = 12.345;
 Console.WriteLine($"{number:F2}");
 ```
@@ -124,14 +124,14 @@ String interpolatie met het $-teken is een nieuwe C# aanwinst. Je zal echter nog
 
 ``String.Format`` is een ingebouwde methode die string-interpolatie toelaat op een iets minder intuïtieve manier, als volgt:
 
-```csharp
+```java
 string result= String.Format("Ik ben {0} en ik ben {1} jaar oud.",name,age);
 ```
 
 Het getal tussen de accolades geeft telkens aan de hoeveelste parameter na de string hier in de plaats moet gezet worden (0= de eerste, 1= de tweede, enz). De eerste parameter is ``name``, de tweede is ``age``.
 
 Volgende code zal een ander resultaat geven:
-```csharp
+```java
 string result= String.Format("Ik ben {1} en ben {1} jaar.",name,age);
 ```
 

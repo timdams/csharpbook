@@ -23,7 +23,7 @@ Stel je voor dat we volgende "omgekeerde t" wensen te gebruiken in onze applicat
 
 Kopieer het karakter zelf en plaats het in je code waar je het nodig hebt, bijvoorbeeld:
 
-```csharp
+```java
 Console.WriteLine("˧"); //eigenlijk staat hier die omgekeerde t
 ```
 
@@ -33,7 +33,7 @@ Helaas zal dit teken als een vierkantje in de meeste boeken getoond worden omdat
 
 Noteer de hexadecimale code van het karakter dat in de tabel staat. In dit geval is de code 0x02e7. Om dit teken te tonen schrijf je dan:
 
-```csharp
+```java
 char blokje = (char)0x02e7;
 Console.WriteLine(blokje);
 ```
@@ -42,7 +42,7 @@ In C# schrijf je hexadecimale getallen als volgt als je ze rechtsreeks in een st
 
 Wil je dus bovenstaande teken schrijven dan kan dan ook als volgt:
 
-```csharp
+```java
 Console.WriteLine("\u02e7");
 ```
 
@@ -56,7 +56,7 @@ Je kan het resultaat eenvoudig naar je klembord kopiëren en vervolgens in je C#
 
 Bijvoorbeeld:
 
-```csharp
+```java
 string myname=@"
 ___________________   
 \__    ___/\______ \  
@@ -71,7 +71,7 @@ Console.WriteLine(myname);
 {% hint style='tip' %}
 Zowel de $-notatie (voor string interpolatie) als het  @-teken kan je gecombineerd gebruiken bij een string:
 
-```csharp
+```java
 Console.WriteLine($@"1/1={1+1}. \tGeen tab");
 ```
 

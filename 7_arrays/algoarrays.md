@@ -12,7 +12,7 @@ Het nadeel van BinarySearch is dat deze vereist dat je array-elementen gesorteer
 
 Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgend programmatje gaat zoeken of het getal 12 aanwezig is in de array (de wielrenners werken met rugnummers). Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
-```csharp
+```java
 int teZoekenGetal = 12;
  
 int[] top5 = {5, 10, 12, 25, 16};
@@ -42,21 +42,21 @@ Voorgaande stukje code is de meest naïeve oplossing. Bedenk echter wat er gebeu
 
 We tonen nu twee voorbeelden van hoe je kan zoeken in een array wanneer we bijvoorbeeld 2 arrays hebben die 'synchroon' zijn. Daarmee bedoelen we: de eerste array bevat producten, de tweede array bevat de prijs van ieder product. De prijs van de producten staat steeds op dezelfde index in de andere array:
 
-```csharp
+```java
 string[] producten = {"appelen", "peren", "meloenen"};
 double[] prijzen = {3.3, 6.2, 2.9};
 ```
 
 We vragen nu aan de gebruiker van welk product de prijs getoond moet worden:
 
-```csharp
+```java
 Console.WriteLine("Welke productprijs wenst u?");
 string keuzeGebruiker = Console.ReadLine();
 ```
 
 We tonen nu hoe we met ``for`` eerst het juiste product zoeken en dan vervolgens die index bewaren en gebruiken om de prijs te tonen:
 
-```csharp
+```java
 bool gevonden = false;
 int productIndex = -1;
 
@@ -87,7 +87,7 @@ Een nadeel van deze oplossing is dat we steeds de hele ``for`` doorlopen (we geb
 
 Volgende oplossing met een ``while`` toont een performantere oplossing:
 
-```csharp
+```java
 bool gevonden = false;
 int productIndex = -1;
 

@@ -12,7 +12,7 @@ Wil je een programma dus testen dat deze bibliotheek gebruikt is het aangeraden 
 
 Hier enkele voorbeelden hoe je deze bibliotheek kunt gebruiken (kijk zelf of er nog nuttige properties over je computer in staan):
 
-```csharp
+```java
 bool is64bit = Environment.Is64BitOperatingSystem;
 string pcname = Environment.MachineName;
 int proccount = Environment.ProcessorCount;
@@ -22,7 +22,7 @@ long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 
 Vervolgens zou je dan de inhoud van die variabelen kunnen gebruiken om bijvoorbeeld aan de gebruiker te tonen wat z'n machine naam is:
 
-```csharp
+```java
 Console.WriteLine($"Je computernaam is {pcName}");
 Console.WriteLine($"en dit programma gebruikt {memory} Mb geheugen");
 Console.WriteLine($"En je usernaam is {Environment.UserName}");

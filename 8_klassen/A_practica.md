@@ -14,7 +14,7 @@ Ontwerp een klasse ``Resultaat`` die je zal tonen wat je graad is gegeven een be
 Test je klasse door enkele objecten in je main aan te maken en de verschillende properties waarden te geven en methoden aan te roepen.
 Deze code zou moeten werken:
 
-```csharp
+```java
 Resultaat mijnpunten= new Resultaat();
 mijnpunten.Percentage=65;
 mijnpunten.PrintGraad();
@@ -33,7 +33,7 @@ Toon in je main aan dat je code werkt.
 
 Volgende code zou bijvoorbeeld onderstaande output moeten geven:
 
-```csharp
+```java
     Nummers paar1 = new Nummers();
     paar1.Getal1 = 12;
     paar1.Getal2 = 34;
@@ -76,7 +76,7 @@ Voeg aan de klasse  ook de methode ``GeefOverzicht`` toe. Deze methode zal een v
 
 Test je programma door enkele studenten aan te maken en in te stellen. Volgende main zou dan de bijhorende output moeten krijgen:
 
-```csharp
+```java
     Student student1= new Student();
     student1.Klas = Klassen.EA2;
     student1.Leeftijd = 21;
@@ -148,7 +148,7 @@ Methoden: ``GooiBal``, ``Watertrappen``, ``StelIn``
 
 De methode ``StelIn`` zou dan zou kunnen aangeroepen worden:
 
-```csharp
+```java
 speler1.StelIn("Tim", 5, false, true, "tweedeklas");
 ```
 
@@ -190,7 +190,7 @@ Pas de ``WithdrawFunds`` methode aan zodat als returntype het bedrag (int) wordt
 
 Maak 2 instanties van het type ``Account`` aan en toon aan dat je geld van de ene account aan de andere kunt geven, als volgt:
 
-```csharp
+```java
 BankAccount rekening1=new BankAccount();
 BankAccount rekening2=new BankAccount();
 ```

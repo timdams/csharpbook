@@ -3,7 +3,7 @@
 Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. 
 Met andere woorden, stel dat we dit willen schrijven:
 
-```csharp
+```java
 Student jos= new Student(19);
 ```
 
@@ -11,7 +11,7 @@ Als we dit met voorgaande klasse , die enkel een default constructor heeft, uitv
 
 [Net zoals bij overloading van methoden](../6_methoden/3_advancedmethod.md) kunnen we ook constructors overloaden. De code is verrassen gelijkaardig als bij method overloading:
 
-```csharp
+```java
 class Student
 {
     public Student(int startage)
@@ -30,7 +30,7 @@ Dat was eenvoudig he.
 Je kan nu enkel je objecten met ``new Student(25)`` aanmaken. Schrijf je ``new Student()`` dan zal je een error krijgen. Wil je die constructor, de default constructor, nog hebben dan zal je die dus ook moeten schrijven, bijvoorbeeld:
 
 
-```csharp
+```java
 class Student
 {
     public Student(int startage) //overloaded
@@ -52,7 +52,7 @@ class Student
 ### Meerdere overloaded constructor
 Wil je meerdere overloaded constructors dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
 
-```csharp
+```java
 class Student
 {
     public Student(int startage) //overloaded

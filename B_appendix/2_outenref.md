@@ -17,7 +17,7 @@ Het verschil tussen het gebruik van ``out`` of ``ref`` keyword tonen we aan in h
 
 Laten we dit aantonen met een voorbeeld. Stel dat we het vorige voorbeeld herschreven maar ‘vergeten’ om de parameter tweede een begin-waarde te geven:
 
-```csharp
+```java
 static void Main(string[] args)
 {
     int eerste = 5;
@@ -36,7 +36,7 @@ Door nu het ``out`` keyword te gebruiken geven we expliciet aan dat we beseffen 
 
 We zouden dus ons programma kunnen herschrijven met deze parameter. Hierbij moeten we ons ervan vergewissen dat we zeker de parameter getal2 een waarde toekennen in de methode!
 
-```csharp
+```java
 static void RefValueVerschil(int getal1, out int getal2)
 {
     getal2 = 10;
@@ -68,7 +68,7 @@ Tweede bedraagt na method:12
 
 Volgende methode zal 2 parameters meekrijgen. De eerste wordt bij value gebruikt, de tweede by reference:
 
-```csharp
+```java
 static void RefValueVerschil(int getal1, ref int getal2)
 {
     getal1 = getal1 + 1;
@@ -100,7 +100,7 @@ Merk dus op dat enkel de variabele tweede aangepast wordt buiten de methode door
 
 # Foute invoer van de gebruiker opvangen
 Vaak wil je de invoer van de gebruiker verwerken/omzetten naar een getal. Denk maar aan volgende applicatie:
-```csharp
+```java
  Console.WriteLine("Geef je leeftijd");
 string invoer = Console.ReadLine();
 int leeftijd = Convert.ToInt32(invoer);
@@ -112,7 +112,7 @@ Deze applicatie zal falen indien de gebruiker iets invoert dat niet kan geconver
 ## TryParse
 De types ``int``, ``double``, ``float`` etc hebben allemaal een ``TryParse`` methode. Je kan deze gebruiken om de invoer van een gebruikeren **te proberen om te zetten** als deze niet lukt dan kan je dit ook weten zonder dat je programma crasht. De werking van ``TryParse`` is als volgt:
 
-```csharp
+```java
 bool gelukt = int.TryParse(invoer,out int leeftijd);
 ```
 
@@ -122,7 +122,7 @@ Het return resultaat van de methode is ``bool``: indien de conversie gelukt is d
 
 We kunnen nu onze applicatie herschrijven en minder foutgevoelig maken voor slechte invoer van de gebruiker:
 
-```csharp
+```java
 Console.WriteLine("Geef je leeftijd");
 string invoer = Console.ReadLine();
 bool gelukt = int.TryParse(invoer,out int leeftijd);
@@ -140,7 +140,7 @@ else
 ## TryParse en loops
 Daar ``TryParse`` een ``bool`` teruggeeft kunnen we deze ook gebruiken in loops als logische expressie. Volgende applicatie zal aan de gebruiker een komma getal vragen en pas verder gaan indien de gebruiker een geldige invoer heeft gegeven:
 
-```csharp
+```java
 double temperatuur;
 string invoer = "";
 do

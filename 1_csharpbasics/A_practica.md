@@ -55,7 +55,7 @@ Druk op enter voor de volgende lijn.
 
 Je kan wachten tot de gebruiker op enter duwt door gewoon een lege ``Console.ReadLine`` te doen, zoals volgende voorbeeld toont:
 
-```csharp
+```java
 Console.WriteLine("Eerste beeld");
 Console.WriteLine("Druk enter om voort te gaan.");
 Console.ReadLine();

@@ -6,7 +6,7 @@ Het type ``string`` is niet meer dan een arrays van karakters, ``char[]``. Het i
 
  Om een ``string`` per karakter te bewerken is het aanbevolen om deze naar een *char-array* om te zetten en nadien terug naar een string. Dit kan gebruikmakend van ``.ToCharArray()`` als volgt:
 
-```csharp
+```java
 string origineleZin = "Ik ben Tom";
 char[] karakters = origineleZin.ToCharArray();
 karakters[8] = 'i';
@@ -18,7 +18,7 @@ De uitvoer zal worden:``Ik ben Tim``.
 
 Ook de omgekeerde weg is mogelijk.  De werking is iets anders en maakt gebruikt van ``new string()``, let vooral op hoe we de char array doorgeven als argument bij het aanmaken van een nieuwe ``string`` in lijn 3:
 
-```csharp
+```java
 char[] arrayOfLetters = {'h', 'a', 'l', 'l', 'o'};
 arrayOfLetters[2] = 'x';
 string word = new string(arrayOfLetters);
@@ -34,7 +34,7 @@ Volgende methoden kan je rechtstreeks op string-variabelen oproepen:
 #### Length
 Geeft  het totaal aantal karakters in de string wat logisch is, daar het om een arrays gaat:
 
-```csharp
+```java
 string myName="Tim";
 Console.WriteLine(myName.Length); //er verschijnt 3 op het scherm
 ```
@@ -43,7 +43,7 @@ Console.WriteLine(myName.Length); //er verschijnt 3 op het scherm
 
 Deze methode geeft  een ``int`` terug die de index bevat waar de string die je als parameter meegaf begint. Kan je gebruiken om te ontdekken of een bepaald woord bijvoorbeeld in een grote lap tekst voorkomt zoals volgende voorbeeld toont:
 
-```csharp
+```java
 string boek="Ik ben Reinhardt";
 int index= boek.IndexOf("ben");
 Console.WriteLine(index); 
@@ -54,7 +54,7 @@ Er zal ``3`` verschijnen, daar "ben" start op positie 3 ("ik" staat op positie 0
 
 ``Trim()`` verwijderd alle onnodige spaties vooraan en achteraan de string en geeft de opgekuiste string terug. Deze methode geeft de opgekuiste string terug als resultaat, je moet deze dus bewaren. In het volgende voorbeeld overschrijven we de originele string met z'n opgekuiste versie:
 
-```csharp
+```java
 string boek="   Ik ben Reinhardt   ";
 Console.WriteLine(boek);
 boek=boek.Trim();
@@ -73,7 +73,7 @@ Ik ben Reinhardt
 
 ``ToUpper`` zal de meegegeven string naar ALLCAPS omzetten en geeft de nieuwe string als resultaat terug. ``ToLower()``doet het omgekeerde.
 
-```csharp
+```java
 string boek="Ik ben Reinhardt";
 Console.WriteLine(boek.ToUpper());
 Console.WriteLine(boek.ToLower());
@@ -82,7 +82,7 @@ Console.WriteLine(boek.ToLower());
 Output op het scherm:
 
 <!---{line-numbers:false}--->
-```csharp
+```java
 IK BEN REINHARDT
 ik ben reinhardt
 ```
@@ -93,7 +93,7 @@ ik ben reinhardt
 
 Volgende voorbeeld toont dit en zal dus "Mercy" vervangen door "Reinhardt":
 
-```csharp
+```java
 string boek="Ik ben Mercy";
 boek=boek.Replace("Mercy","Reinhardt");
 Console.WriteLine(boek);
@@ -102,7 +102,7 @@ Console.WriteLine(boek);
 {% hint style='tip' %}
 ``Replace`` kan je ook misbruiken om bijvoorbeeld alle woorden uit een stuk tekst te verwijderen door deze te vervangen door een lege ``string`` met de waarde ``""``. Volgende code zal alle ``"e"``'s uit de tekst verwijderen:
 
-```csharp
+```java
 string boek="Ik ben Mercy";
 boek=boek.Replace("e", "");
 Console.WriteLine(boek);
@@ -117,7 +117,7 @@ Waardoor we ``Ik bn Mrcy`` op het scherm krijgen.
 
 Volgende voorbeeld zal het stukje "ben " uit de ``string`` weghalen:
 
-```csharp
+```java
 string boek="Ik ben Mercy";
 boek=boek.Remove(3,4);
 Console.WriteLine(boek);
@@ -126,6 +126,6 @@ Console.WriteLine(boek);
 Output op het scherm:
 
 <!---{line-numbers:false}--->
-```csharp
+```java
 Ik Mercy
 ```

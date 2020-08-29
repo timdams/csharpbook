@@ -12,7 +12,7 @@
 ## BMI met if
 
 Voeg volgende code toe aan het bestaande BMI programma:
-```csharp
+```java
 if(bmi < 18.5)
 {
     Console.ForegroundColor = ConsoleColor.Red;
@@ -44,7 +44,7 @@ else
 
 ### a
 
-```csharp
+```java
 Console.WriteLine("Hoeveel schoenen koopt de klant?");
 int aantal = Convert.ToInt32(Console.ReadLine());
 int kortingboven = 9;
@@ -62,7 +62,7 @@ Console.WriteLine($"Prijs is {prijs}");
 ```
 
 ### b
-```csharp
+```java
 Console.WriteLine("Hoeveel schoenen koopt de klant?");
 int aantal = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Boven hoeveel schoenen wordt de korting gegeven?");
@@ -81,11 +81,11 @@ Console.WriteLine($"Prijs is {prijs}");
 ```
 ## Enum seizoenen
 
-```csharp
+```java
 enum Seizoenen { Winter, Lente, Zomer, Herfst, Onbekend}     
 ```
 
-```csharp
+```java
 Console.WriteLine("Geef een maandnummer (1 tot 12)");
 int maand = Convert.ToInt32(Console.ReadLine());
 Seizoenen huidigSeizoen = Seizoenen.Onbekend;

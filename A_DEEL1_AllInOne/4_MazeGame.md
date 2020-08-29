@@ -26,7 +26,7 @@ Telkens de gebruiker op enter drukt verschijnt de volgende kamer.
 
 Merk op dat de array-lengte geen invloed heeft op de forloop. We kunnen dus eenvoudig kamers toevoegen zonder dat dit invloed heeft op de werking van het programma. We zullen blijven behouden doorheen het hele programma (de speciale kaart uitgezonder in fase 8).
 
-```csharp
+```java
 string[] Kamers = new string[]
     {
         "Je staat voor de ingang.",
@@ -49,7 +49,7 @@ We bieden de mogelijkheid aan aan de gebruiker om zelf te kiezen naar welke kame
 
 Telkens de gebruiker zich wil verplaatsen controleren we of deze verplaatsen toegestaan is. De ``Huidigekamer`` variabele is dus automatisch ook de index van de te tonen kamer in de string-array.
 
-```csharp
+```java
 string[] Kamers = new string[]
     {
         "Je staat voor de ingang.",
@@ -87,7 +87,7 @@ Vervolgens willen we de mogelijkheid om een 2D wereld aan te bieden. Hierbij geb
 
 Eerste definiëren we de verschillende kamers die er bestaan:
 
-```csharp
+```java
 string[] Kamers =
     {
         "Onbekend terrein", //0
@@ -101,7 +101,7 @@ string[] Kamers =
 
 Vervolgens maken we 2D-array die onze kaart voorstelt. De array is van het type ``int``. Iedere cijfer in de array zal de index bevatten van de kamer die op die plek moet komen. Dit is dus een zogenaamde look-up-table of Lut (meer info: [wiki](http://en.wikipedia.org/wiki/Lookup_table)):
 
-```csharp
+```java
             int[,] Kaart =
                 {
                     {1, 2, 1, 3},
@@ -118,7 +118,7 @@ Merk op dat we dus onze *wereld* zo groot of zo klein kunnen maken als we zelf w
 ### Stap 2: Wandelen op de kaart 
 Daar we ons nu op een 2D-kaart bevinden hebben we 2 variabelen nodig om onze huidige positie te onthouden:
 
-```csharp
+```java
 int posX = 0;
 int posY = 0;
 ```
@@ -133,7 +133,7 @@ We maken een oneindige loop die steeds de volgende stappen zal doen:
 4.  Terug naar 1.
 
 Eerst gebruiken we dus de lut om de huidige kamer beschrijving te tonen. We gebruiker de huidige spelerlocatie als index’s in de Kaart-array en vragen zo de kamerindex op. Die kamerindex gebruiken we om de tekst uit de Kamers-array te tonen.
-```csharp
+```java
 while (true)
 {
     int kamerindex = Kaart[posX, posY];
@@ -141,7 +141,7 @@ while (true)
 ```
 De gebruiker kan zich naar het noorden, oosten, zuiden of westen begeven (respectievelijk naar boven, links, onder, rechts op de kaart). We vragen dus telkens de gebruiker naar waar hij:
 
-```csharp
+```java
 Console.WriteLine("NOZW? Naar waar wil je?");
 char inp = Convert.ToChar(Console.ReadLine().ToUpper());
 
@@ -150,7 +150,7 @@ char inp = Convert.ToChar(Console.ReadLine().ToUpper());
 ### Stap 3: Positie aanpassen 
 
 We verwerken de richting in een switch:
-```csharp
+```java
 switch (inp)
 {
 ```
@@ -168,7 +168,7 @@ Indien aan deze 2 voorwaarden niet is voldaan dan mogen we de huidige locatie va
 
 We krijgen in de switch dus:
 
-```csharp
+```java
     case 'N':
         if (posX != 0 && Kaart[posX - 1, posY] != 0)
             posX--;
@@ -196,7 +196,7 @@ We krijgen in de switch dus:
 
 De volledige code van deze fase is dus geworden:
 
-```csharp
+```java
 int[,] Kaart =
     {
         {1, 2, 1, 3},
@@ -255,7 +255,7 @@ while (true)
 
 We wensen een visuele indicatie van de kaart te tonen aan de gebruiker (zonder dat hij ziet wat voor kamer het is). We voegen daarom een methode ``DrawMap()`` toe die de kaart iedere keer opnieuw zal tekenen. Deze methode gaat ook de positie van de gebruiker duidelijk maken a.d.h.v. een "X" op de kaart. Onze *game-loop* veranderen we dus naar:
 
-```csharp
+```java
 while (true)
 {
     Console.Clear();
@@ -271,7 +271,7 @@ De ``DrawMap()`` methode toont dus de huidige locatie als een "X". Voorts willen
 
 We doorlopen in de ``DrawMap()`` methode de volledige kaart. Lijn per lijn. Hiervoor gebruiken we 2 geneste for-loops. De outer-loop (index ``i``) zal de X-coördinaat aflopen, oftewel lijn per lijn. De inner loop (index j) zal de Y-coördinaat aflopen, oftewel kolom per kolom:
 
-```csharp
+```java
 private static void DrawMap(int[,] Kaart, int posX, int posY)
 {
     for (int i = 0; i < Kaart.GetLength(0); i++)
@@ -283,32 +283,32 @@ private static void DrawMap(int[,] Kaart, int posX, int posY)
 Merk op dat ook deze methode geen *hardcoded* array-grenzen bevat. We kunnen dus eender welke kaart aan deze methode aanbieden.
 
 Binnen de inner-for gaan we nu element per element van 1 rij op het scherm tonen. Eerst controleren we of de speler zich bevindt in het element dat we op het punt staan te tekenen. Als dat zo is dan plaatsen we een "X":
-```csharp
+```java
 if (posX == i & posY == j)
     Console.Write("X");
 ```
 
 Anders plaatsen we een "o" indien het gaat om gebied waar de speler toegelaten is:
-```csharp
+```java
 else if (Kaart[i, j] != 0)
     Console.Write("o");
 ```
 
 Niet toegelaten gebied tonen we niet, we zetten dus een spatie in de plaats:
-```csharp
+```java
 else
     Console.Write(" ");
 ```
 
 Na iedere inner-loop moeten we vervolgens een newline toevoegen, anders worden alle rijen van de kaart naast elkaar gezet. Finaal krijgen we dus:
-```csharp
+```java
     }
     Console.Write('\n');
 }
 ```
 
 Dit resulteert in volgende finale code voor deze fase:
-```csharp
+```java
 static void Main()
 {
     int[,] Kaart ={ {1, 2, 1, 3},{0, 1, 0, 1},{0, 4, 0, 5}};
@@ -376,7 +376,7 @@ private static void DrawMap(int[,] Kaart, int posX, int posY)
 Zoals reeds aangehaald staat niets je in de weg om je spel-wereld groter te maken. Hiervoor hoef je enkel (momenteel) de Kamers en Kaart arrays aan te passen. Alle code zal blijven werken.
 
 Bijvoorbeeld:
-```csharp
+```java
 int[,] Kaart =
     {
         {1, 2, 1, 3, 0, 0},
@@ -407,7 +407,7 @@ string[] Kamers =
 Het principe van een lut verschilt eigenlijk weinig van een eenvoudige database. We zouden dus meerdere look-up-tables (tabellen) kunnen definiëren en deze gebruiken om meer *informatie* in onze spelwereld te plaatsen.
 
 We kunnen bijvoorbeeld per kamer ook een beschrijving tonen van die kamer. Daar we nog niets kennen van ``struct`` en ``class`` (zogenaamde datastructuren) moeten we ons dus behelpen als volgt: we definiëren een nieuwe array ``Beschrijving`` waarbij ieder element de index heeft van de respectievelijke kamer:
-```csharp
+```java
 
 int[,] Kaart =
     {
@@ -449,7 +449,7 @@ string[] Beschrijving =
 ```
 
 Door 1 extra lijntje (+ eentje voor een visuele scheiding tussen beschrijving en kamertitel) plaatsen we nu steeds de kamerbeschrijving onder de kamertype:
-```csharp
+```java
 Console.WriteLine(Kamers[kamerindex]);
 Console.WriteLine("******");
 Console.WriteLine(Beschrijving[kamerindex]);
@@ -462,7 +462,7 @@ Na iedere actie van de speler verwerken we steeds weer de kaart in zowel de ``Dr
 Je met de kennis die we zo meteen tonen bijvoorbeeld aan de start van het programma met een lege kaart: naargelang de speler zich verplaatst in de wereld zal de kaart aangevuld worden. (tip: gebruik hiervoor een array ``VolledigeKaart`` en een array ``ReedsOntdekteKaart`` of iets dergelijks. De speler krijgt steeds de ``ReedsOntdekteKaart`` te zien in ``DrawMap()``. Naargelang acties van de speler kopieer je dan bepaalde elementen uit VolledigeKaart naar ReedsOntdekteKaart).
 
 We definiëren onze kaart (merk op dat we de folterkamer en geheime gang verwijderen rechts onderaan):
-```csharp
+```java
 int[,] Kaart =
     {
         {1, 2, 1, 3, 0, 0},
@@ -478,7 +478,7 @@ We willen volgende functionaliteit inbouwen:
 
 De actie gaan we nu even eenvoudig beschouwen als volgt: de gebruiker kan in alle kamers "G" als opdracht doorgeven. Echter, enkel wanneer de gebruiker zich in de kamer met index 6 bevind dan zal de geheime kamer zichtbaar worden.
 We voegen daarom een extra case toe aan onze switch:
-```csharp
+```java
 case 'G':
     if (kamerindex != 6)
     {
@@ -488,7 +488,7 @@ case 'G':
     {
 ```
 Als de speler wél in de securityroom is dan gaan we de kaart-array aanpassen. We voegen rechtsonder in de array de 2 nieuwe kamers toe:
-```csharp
+```java
 Console.WriteLine("Je ontdekt een geheime ruimte");
 Kaart[4, 4] = 1;
 Kaart[4, 5] = 8;
@@ -497,7 +497,7 @@ Kaart[4, 5] = 8;
 Wanneer we nu de kaart hertekenen dan deze nieuwe ruimte verschijnen en weet de gebruiker dat hij zich daar kan begeven.
 
 De volledige code wordt dan (we laten de DrawMap()-methode even achterwege):
-```csharp
+```java
 static void Main()
 {
     int[,] Kaart =
@@ -597,7 +597,7 @@ Vanaf dit punt kun je nu al een relatief eenvoudig, toch leuk spel maken, op voo
 ### Stap 1: Kaart initialiseren in aparte methode 
 
 Beeld je in dat je de kaart(en) voor je spel uit een bestand laadt. Op zich is dat niet zo moeilijk , maar het vereist natuurlijk extra lijnen code in je, reeds overbevolkte, Main-methode. We verhuizen daarom de code waarin we onze kaarten initialiseren naar een aparte methode. In onze Main schrijven we dan (merk het gebruik van het ``out`` keyword op!):
-```csharp
+```java
 int[,] Kaart;
 string[] Kamers;
 string[] Beschrijving;
@@ -606,7 +606,7 @@ InitialiseerSpel(out Kaart, out Kamers, out Beschrijving);
 ```
 
 Deze methode bevat dan gewoon de code van daarnet, mooi verpakt en afgeschermd:
-```csharp
+```java
 private static void InitialiseerSpel(
     out int[,] Kaart, 
     out string[] Kamers, 
@@ -628,7 +628,7 @@ private static void InitialiseerSpel(
 
 Het verwerken van de userinput kunnen we ook makkelijk extraheren naar aparte methode zodat onze while-loop overzichtelijker wordt :
 
-```csharp
+```java
 while (true)
 {
     Console.Clear();
@@ -647,7 +647,7 @@ while (true)
 ```
 Merk op dat we zelfs de volledige loop naar een aparte methode op zijn beurt kunnen extraheren. Maar dat laten we aan de lezer over. We dienen de posities van de speler by reference mee te geven, daar we de posities onmiddellijk willen updaten in de ``VerwerkInput()``-methode.
 
-```csharp
+```java
 private static void VerwerkInput(
     int[,] Kaart, 
     int kamerindex, 
@@ -670,7 +670,7 @@ Als kers op de taart tonen we snel hoe je het kaartje *sexier* kan tonen op het 
 
 We definiëren de nieuwe Methode en voegen als eerste actie Unicode-art toe van een kaart:
 
-```csharp
+```java
 private static void DrawMapCool(int[,] Kaart, int posX, int posY)
 {
     string background =
@@ -694,7 +694,7 @@ Daar we gaan spelen met de kleuren is het aan te raden om steeds volgende acties
 4.	Kleur terug naar de huidige kleur aanpassen.
 We tonen dit in de volgende code waarin we de background array (die de Unicode-art bevat) op het scherm willen tekenen. Daarbij willen we dat de karakters donker-cyaan zijn en dat enkel karakters die geen spatie of liggenstreepje zijn een donkergele achtergrond hebben. De commentaar toont de zonet beschreven stappen:
 
-```csharp
+```java
 ConsoleColor oll = Console.ForegroundColor; //1
 Console.ForegroundColor = ConsoleColor.DarkCyan; //2
 for (int i = 0; i < background.Length; i++)
@@ -714,7 +714,7 @@ Console.ForegroundColor = oll;//4
 
 ```
 Vervolgens gebruiken we SetCursorPosition om onze spelerskaart ‘over’ de Unicode-art te tekenen. Hierbij voegen we nog wat extra kleurtje toe, de speler-X wordt rood gekleurd:
-```csharp
+```java
 ConsoleColor bll2 = Console.BackgroundColor;
 Console.BackgroundColor = ConsoleColor.DarkYellow;
 
@@ -751,7 +751,7 @@ De while-loop in de Main()-methode passen we nu nog aan zodat:
 3.	De beschrijving en andere tekst steeds onder map komt en niet erover
 
 
-```csharp
+```java
 while (true)
 {
     Console.Clear();
@@ -776,7 +776,7 @@ We zijn er!
 ![](../assets/Aallinone/mazegame/7.png)
 De volledige code voor dit extra-ordinaire spel wordt dan:
 ### Main-methode
-```csharp
+```java
 static void Main()
 {
     int[,] Kaart;
@@ -808,7 +808,7 @@ static void Main()
 }
 ```
 ### InitialiseerSpel-methode
-```csharp
+```java
 private static void InitialiseerSpel(
     out int[,] Kaart, 
     out string[] Kamers, 
@@ -844,7 +844,7 @@ private static void InitialiseerSpel(
 ```
 
 ### VerwerkInput-methode
-```csharp
+```java
 private static void VerwerkInput(
     int[,] Kaart, 
     int kamerindex, 
@@ -892,7 +892,7 @@ private static void VerwerkInput(
 }
 ```
 ### DrawMapCool-methode
-```csharp
+```java
 private static void DrawMapCool(int[,] Kaart, int posX, int posY)
 {
     string background =

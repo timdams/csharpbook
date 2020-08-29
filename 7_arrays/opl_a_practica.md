@@ -2,7 +2,7 @@
 
 
 ## Opwarmers 
-```csharp
+```java
 //Maak een array gevuld met de getallen 0 tot 100
 int[] getallen = new int[10];
 for(int i = 0; i < 10; i++)
@@ -54,7 +54,7 @@ for(int i = 0; i < binary.Length; i++)
 
 ## ArrayOefener1
 
-```csharp
+```java
 int[] getallen = new int[10];
 //Invoer
 Console.WriteLine("Voer 10 gehele getallen in");
@@ -93,7 +93,7 @@ else
 
 ## ArrayOefener2
 
-```csharp
+```java
 static void Main(string[] args)
 {
     int length = 5;
@@ -122,7 +122,7 @@ static int[] VraagVulArray(int lengte)
 ```
 
 ## Vraag Array
-```csharp
+```java
 string[] vragen =
 {
     "Hoe oud ben je?",
@@ -150,7 +150,7 @@ for (int i = 0; i < vragen.Length; i++)
 ## Array Zoeker
 Om niet steeds 10 getallen tijdens testen te moeten invullen gebruik ik ``Random`` om snel 10 getallen willekeurig te genereren:
 
-```csharp
+```java
 int[] ar = new int[10];
 Random rand = new Random();
 for (int i = 0; i < ar.Length; i++)
@@ -194,7 +194,7 @@ for (int i = 0; i < ar.Length; i++)
 
 Je kan dit ook oplossen met ``BinarySearch`` maar dan moet je wel de postcodes gesorteerd plaatsen in de array (sorteren via ``Array.Sort`` in code zal niet werken daar dan de relatie met ``kgpergemeente`` verloren gaat).
 
-```csharp
+```java
 int[] postcodes = {1000, 2020, 2013, 4500, 2340, 1200, 9999, 6666, 2362, 2340};
 
 int[] kgpergemeente = {12, 214, 3, 15, 56, 900, 13, 5, 111, 43};
@@ -227,7 +227,7 @@ else
 
 ## Hamming Distance
 Methode ``IsRealDNA`` hoorde niet bij opgave, maar is handig als om extra gebruiksvriendelijkheid aan te bieden:
-```csharp
+```java
 static void Main(string[] args)
 {
     Console.WriteLine("Geef DNA string 1");
@@ -266,7 +266,7 @@ static bool IsRealDNA(char[] dna)
 
 ## Parkeergarage
 
-```csharp
+```java
 static void Main()
 {
     Console.WriteLine("Geef aantal auto's in:");
@@ -320,7 +320,7 @@ static double berekenKosten(double duur)
 
 ## ArrayViewer
 
-```csharp
+```java
 static void VisualiseerArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -333,7 +333,7 @@ static void VisualiseerArray(int[] array)
 
 ## Caesar Encryptie
 
-```csharp
+```java
 static char[] DeCrypt(char[] cipertext, int key)
 {
     return Encrypt(cipertext, -key);
@@ -364,7 +364,7 @@ static char[] Encrypt(char[] plaintext, int key)
 
 ## Determinant
 
-```csharp
+```java
 static int BerekenDeterminant(int[,] aMatrix)
 {
     return aMatrix[0, 0] * aMatrix[1, 1] - aMatrix[0, 1] * aMatrix[1, 0];
@@ -373,7 +373,7 @@ static int BerekenDeterminant(int[,] aMatrix)
 
 ## Robot simulator
 
-```csharp
+```java
 enum richtingen {Noord, Oost, Zuid, West};
 static void Main(string[] args)
 {

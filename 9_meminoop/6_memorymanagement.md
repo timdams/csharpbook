@@ -54,7 +54,7 @@ Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, in
 
 Wanneer we een value-type willen kopiëren dan kopiëren de echte waarde:
 
-```csharp
+```java
 int getal=3;
 int anderGetal= getal;
 ```
@@ -63,7 +63,7 @@ Vanaf nu zal ``anderGetal`` de waarde ``3`` hebben. Als we nu een van beide vari
 
 We zien hetzelfde effect wanneer we een methode maken die een parameter van het value type aanvaardt - we geven een kopie van de variabele mee:
 
-```csharp
+```java
 void DoeIets(int a)
 {
     a++;
@@ -94,7 +94,7 @@ Wanneer we de = operator gebruiken bij een reference type dan kopiëren we de re
 ### Bij objecten
 
 We zien dit gedrag bij alle reference types, zoals objecten:
-```csharp
+```java
 Student stud= new Student();
 ```
 
@@ -109,7 +109,7 @@ Wat gebeurt er hier?
 
 Maar ook bij arrays:
 
-```csharp
+```java
 int[] nummers= {4,5,10};
 int[] andereNummers= nummers;
 ```
@@ -117,7 +117,7 @@ int[] andereNummers= nummers;
 In dit voorbeeld zal ``andereNummers`` nu dus ook verwijzen naar de array in de heap waar de actuele waarden staan.
 
 Als we dus volgende code uitvoeren dan ontdekken we dat beide variabele naar dezelfde array verwijzen:
-```csharp
+```java
 andereNummers[0]=999;
 Console.WriteLine(andereNummers[0]);
 Console.WriteLine(nummers[0]);
@@ -132,7 +132,7 @@ We zullen dus als output krijgen:
 
 Hetzelfde gedrag zien we bij objecten:
 
-```csharp
+```java
 Student a= new Student("Abba");
 Student b= new Student("Queen");
 a=b;
@@ -144,7 +144,7 @@ We zullen in dit geval dus ``Queen`` op het scherm zien omdat zowel ``b`` als ``
 ## Methoden en reference parameters
 
 Ook bij methoden geven we de dus de referentie naar de waarde mee. In de methode kunnen we dus zaken aanpassen van de parameter en dan passen we eigenlijk de originele variabele aan:
-```csharp
+```java
 void DoeIets(int[] a)
 {
    a[0]++;
@@ -167,7 +167,7 @@ Na methode 6
 **Opgelet:** Wanneer we een methode hebben die een value type aanvaardt en we geven één element van de array mee dan geven we dus een kopie van de actuele waarde mee!
 {% endhint %}
 
-```csharp
+```java
 void DoeIets(int a)
 {
     a++;
@@ -193,7 +193,7 @@ De GC zal geregeld het geheugen doorlopen en kijken of er in de heap data staat 
 
 In dit voorbeeld zien we dit in actie:
 
-```csharp
+```java
 int[] array1= {1,2,3};
 int[] array2= {3,4,5};
 array2=array1;
@@ -203,7 +203,7 @@ Vanaf de laatste lijn zal er geen referentie meer naar ``{3,4,5}`` zijn in de he
 
 Wil je dat niet dan zal je dus minstens 1 variabele moeten hebben die naar de data verwijst. Volgend voorbeeld toont dit:
 
-```csharp
+```java
 int[] array1= {1,2,3};
 int[] array2= {3,4,5};
 int[] bewaarArray= array2;

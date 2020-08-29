@@ -12,7 +12,7 @@ We zullen deze nu deel per deel apart schrijven en testen:
 
 ### Het menu-systeem
 Het menusysteem vraagt een getal aan de gebruiker en zal dan code uitvoerne afhankelijk van die keuze. We zouden dit met een reeks ``if``-statements kunnen oplossen maar gaan het eens met een ``switch``. We krijgen dan:
-```csharp
+```java
 Console.WriteLine("Welkom bij de multitool applicatie. Maak uw keuze:");
 Console.WriteLine("1.Rekenmachine");
 Console.WriteLine("2.Password tester");
@@ -46,7 +46,7 @@ De rekenmachine zal eerste 2 getallen vragen alsook welke bewerking. Dan zal die
 
 Dit ziet er dan zo uit, waarbij we deze keer een ``if-else``-structuur kiezen om het probleem op te lossen (maar kan ook met een ``switch``).
 
-```csharp
+```java
 Console.WriteLine("Geef getal 1");
 int getal1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Geef getal 2");
@@ -74,7 +74,7 @@ Console.WriteLine($"Uitkomst is:{result}");
 
 ### De password-tester
 Deze is een eenvoudige ``if-else`` structuur. Als extra'tje zetten we het correct passwoord in een constante (``const``) bovenaan in een variabele, zodat we in de toekomst snel het passwoord kunnen veranderen:
-```csharp
+```java
 const string MAINPASS = "TrumpSux";
 Console.WriteLine("Geef paswoord");
 string inputPass = Console.ReadLine();
@@ -97,7 +97,7 @@ Kies eender welke oefening uit het verleden en copy paste alles binnen de ``Main
 Dit los je best stap voor stap op. We gaan er hierbij van uit dat als de gebruiker iets anders dan ``y`` invoert hij ``n`` (NO) bedoeld. Uiteraard moet dat niet.
 
 We beginnen bovenaan, dan krijgen we:
-```csharp
+```java
 Console.WriteLine("Does the computer turn on?(y/n)");
 string inp = Console.ReadLine();
 if(inp=="y")
@@ -111,7 +111,7 @@ else
 ```
 
 Nu lossen we de linkervraag indien de eerste vraag ``YES`` was op. We herbruiken daarbij de ``inp`` variabele:
-```csharp
+```java
 Console.WriteLine("Does the computer turn on?(y/n)");
 string inp = Console.ReadLine();
 if(inp=="y")
@@ -134,7 +134,7 @@ else
 ```
 
 Nu de "andere zijde", namelijk de  ``else`` indien de eerste vraag ``NO`` was en dus krijgen we voor dit deel als finale code:
-```csharp
+```java
 Console.WriteLine("Does the computer turn on?(y/n)");
 string inp = Console.ReadLine();
 if(inp=="y")
@@ -167,7 +167,7 @@ else
 
 ## Alles samenvoegen 
 Voegen we nu deze bovenstaande 5 stukken code samen (door de 4 laatste delen in de juiste case van deel 1 (het menu) te plaatsen), dan krijgen wel als finale oplossing:
-```csharp
+```java
 Console.WriteLine("Welkom bij de multitool applicatie. Maak uw keuze:");
 Console.WriteLine("1.Rekenmachine");
 Console.WriteLine("2.Password tester");

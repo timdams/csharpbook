@@ -4,7 +4,7 @@ De locatie waar je een variabele aanmaakt bepaalt de **scope**, oftewel de zicht
 Eenvoudig gezegd zullen steeds de omliggende accolades de scope van de variabele bevatten. Indien je de variabele dus buiten die accolades nodig hebt dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
 
 Zeker wanneer je begint met ``if``, loops, methoden, etc. zal de scope belangrijk zijn: deze code-constructies gebruiken steeds accolades om codeblocks aan te tonen. Een variabele die je dus binnen een if-blok aanmaakt zal enkel binnen dit blok bestaan, niet erbuiten.
-```csharp
+```java
 if( something == true)
 {
     int getal = 0 ;  //Start scope getal
@@ -16,7 +16,7 @@ Console.WriteLine(getal); // FOUT! getal niet in deze scope
 
 Wil je dus getal ook nog buiten de ``if`` gebruiken zal je je code moeten herschrijven zodat ``getal`` VOOR de ``if`` wordt aangemaakt:
 
-```csharp
+```java
 {
     int getal = 0 ;  //Start scope getal
     if( something == true)
@@ -32,7 +32,7 @@ Wil je dus getal ook nog buiten de ``if`` gebruiken zal je je code moeten hersch
 Zolang je in de scope van een variabele bent kan je geen nieuwe variabele met dezelfde naam aanmaken:
 
 Volgende code is dus niet toegestaan:
-```csharp
+```java
 int getal = 0;
 {
     int getal = 5; //Deze lijn is niet toegestaan
@@ -44,7 +44,7 @@ Je krijgt de error:
 Enkel de tweede variabele een andere naam geven is toegestaan in het voorgaande geval.
 
 In volgende voorbeeld is dit dus wel geldig, daar de scope van de eerste variabele afgesloten wordt door de accolades:
-```csharp
+```java
 {
     int getal = 0 ;
     //....

@@ -70,7 +70,7 @@ Voeg extra eigenschappen aan je ``Mens`` toe die je ook betrekt als genetische e
 
 Volgende code toont hoe je je lijst kunt sorteren op Geslacht, veronderstellende dat de lijst ``mensen`` heet:
 
-```csharp
+```java
  //using System.Linq  (toevoegen bovenaan)
  mensen = mensen.OrderBy(p => (int)p.Geslacht).ToList();
 ```

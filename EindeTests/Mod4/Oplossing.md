@@ -1,6 +1,6 @@
 ## Stap 1
 
-```csharp
+```java
     abstract class Vorm
     {
         public int X { get; set; }
@@ -18,7 +18,7 @@
 
 ## Stap 2
 
-```csharp
+```java
     class Lijn : Vorm
     {
 
@@ -81,7 +81,7 @@
 
 ## Stap 3
 
-```csharp
+```java
     class Vliegtuig:Vorm,IBeweegbaar
     {
         private Rechthoek r;
@@ -104,7 +104,7 @@
 
 ## Stap 4
 
-```csharp
+```java
     class Vloot:Vorm, IBeweegbaar
     {
         private List<Vliegtuig> vliegtuitenInVloot = new List<Vliegtuig>();
@@ -127,7 +127,7 @@
 
 ## Stap 5
 
-```csharp
+```java
     enum Richting { Links,Rechts,Boven,Beneden }
     interface IBeweegbaar
     {
@@ -137,7 +137,7 @@
 
 In vliegtuig:
 
-```csharp
+```java
         public void Beweeg(Richting rkeuze)
         {
             switch (rkeuze)
@@ -174,7 +174,7 @@ In vliegtuig:
 
 In vloot:
 
-```csharp
+```java
         public void Beweeg(Richting rkeuze)
         {
             switch (rkeuze)
@@ -204,7 +204,7 @@ In vloot:
 
 ## Stap 6
 
-```csharp
+```java
 static void Main(string[] args)
         {
             List<Vorm> vormen = new List<Vorm>();
@@ -301,7 +301,7 @@ static void Main(string[] args)
 
 ## Stap 7
 In vloot:
-```csharp
+```java
         public void VergrootVloot()
         {
             Vliegtuig toadd = new Vliegtuig(X, Y + 5 * vliegtuitenInVloot.Count);
@@ -312,7 +312,7 @@ In vloot:
 ## Stap 8
 
 In Vorm:
-```csharp
+```java
     abstract class Vorm: IComparable
     {
         \\..

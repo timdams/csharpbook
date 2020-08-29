@@ -21,13 +21,13 @@ Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs besta
 
 Voeg onder de lijn ``Console.WriteLine("Hello World!");`` volgende code toe:
 
-```csharp
+```java
 Console.WriteLine("Hoi, ik ben het!");
 ```
 
 Zodat je dus volgende code krijgt:
 
-```csharp
+```java
 using System;
 
 namespace Demo1
@@ -112,7 +112,7 @@ De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zo
 
 Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
 
-```csharp
+```java
 Console.WriteLine("Wie ben jij?!");
 ```
 
@@ -120,7 +120,7 @@ De WriteLine methode zal alle tekst tonen die tussen de aanhalingstekens (``"  "
 
 Je code binnen de ``Main`` accolades zou nu moeten zijn:
 
-```csharp
+```java
 Console.WriteLine("Hello World!");
 Console.WriteLine("Hoi, ik ben het");
 Console.WriteLine("Wie ben jij?!");

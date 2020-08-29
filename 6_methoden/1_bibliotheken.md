@@ -25,7 +25,7 @@ De help-files van VS zijn zeer uitgebreid en dankzij IntelliSense krijg je ook a
 
 Type daarom onder vorige WriteLine-zin het volgende:
 
-```csharp
+```java
 System.Console.
 ```
 

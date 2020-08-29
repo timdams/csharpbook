@@ -1,6 +1,6 @@
 # Prijzen met foreach
 
-```csharp
+```java
 int[] prijzen = new int[20];
 for (int i = 0; i < prijzen.Length; i++)
 {
@@ -25,7 +25,7 @@ Console.WriteLine($"Gemiddelde is {((double)som)/prijzen.Length}");
 # Speelkaarten
 
 Main:
-```csharp
+```java
 List<Speelkaart> BoekKaarten = new List<Speelkaart>();
 for (int i = 0; i < 4; i++)
 {
@@ -48,7 +48,7 @@ while (BoekKaarten.Count > 0)
 
 Speelkaart klasse:
 
-```csharp
+```java
 enum Suit {Schoppen, Harten, Klaveren, Ruiten}
 
 class Speelkaart
@@ -67,7 +67,7 @@ Bounty: wie wil z'n oplossing hier? ;)
 
 Merk het (her)gebruik van methoden op, alsook het gebruik van enum om de leesbaarheid van de code te verbeteren in de ``ToonHoofdMenu`` switch
 
-```csharp
+```java
  enum Keuzes { List,Show,Edit,Delete}
 
 static void Main(string[] args)

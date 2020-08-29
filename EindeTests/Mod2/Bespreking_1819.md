@@ -8,7 +8,7 @@ We bespreken en tonen hier kort de meest voorkomende fouten in de vaardigheidspr
 
 Ongeacht hoeveel willekeurige getallen je nodig hebt in een stuk code, je hebt nooit meer dan 1 ``Random`` number generator nodig, volgende code is er dus 1 te veel:
 
-```csharp
+```java
 Random rekengetal1 = new Random();
 Random rekengetal2 = new Random();
 ```
@@ -17,7 +17,7 @@ Random rekengetal2 = new Random();
 
 Voorgaande fout zal dus twee generators maken die mooi synchroon dezelfde getallen genereren, wat we waarschijnlijk niet wensen. De oplossing is er maar 1 gebruiken...of volgende originele, maar niet erg goede manier:
 
-```csharp
+```java
 Random get1 = new Random();
 Thread.Sleep(250); //250ms wachten voor de volgende random te generen. Anders altijd hetzelfde getal.
 Random get2 = new Random();
@@ -31,7 +31,7 @@ Een bewuste vertraging in je code inbouwen is nooit erg goed, zeker niet voor je
 
 Nooit in een if een enkele ``=`` gebruiken, je hebt er altijd twee nodig wanneer je een test op gelijkheid wenst te doen:
 
-```csharp
+```java
 if(getal=4)
 ```
 
@@ -39,7 +39,7 @@ if(getal=4)
 
 Àls je bij twee checks identieke code moet schrijven dan heb je een verkeerde voorwaarde geschreven:
 
-```csharp
+```java
 if (raad < juist)
 {
     pogingen++;
@@ -60,7 +60,7 @@ Je kan dit reduceren tot 1 ``if(raad!=juist)`` en dus niet je code moet kopiëre
 
 Soms heb je een tweede of derde else if check niet meer nodig als die reeds alle voorwaarden bevat die nog overblijven:
 
-```csharp
+```java
 if (geld <0)
 {
     Console.WriteLine(""bankroet..... dasss no good"");
@@ -76,7 +76,7 @@ else if (geld > 0)
 ```
 
 Je kan dus even goed dit schrijven:
-```csharp
+```java
 if (geld <0)
 {
     Console.WriteLine(""bankroet..... dasss no good"");
@@ -107,7 +107,7 @@ Wanneer je methoden in de opgave krijgt volgende bepaalde specificaties qua retu
 
 Code schrijven na een ``return`` is code schrijven die NOOIT zal uitgevoerd, en heeft dus 0 komma 0 nut:
 
-```csharp
+```java
 return getal;
 Console.WriteLine("Klaar");
 ```
@@ -116,7 +116,7 @@ Console.WriteLine("Klaar");
 
 Wanneer je iets wil return...return het dan. Je hoeft er niet eerst een variabele voor aan te maken:
 
-```csharp
+```java
 scherm = false;
 return scherm;
 
@@ -124,13 +124,13 @@ return scherm;
 
 Dit kan je dus beter schrijven als:
 
-```csharp
+```java
 return false;
 ```
 
 Dit kwam in de buurt, maar is dus even nutteloos:
 
-```csharp
+```java
 return scherm = true;
 ```
 
@@ -138,7 +138,7 @@ return scherm = true;
 
 Als je in je methode-definitie een parameter vraagt dan is het onbeleefd (en nutteloos) om deze direct bij de start van de methode van waarde te veranderen. Waarom heb je ze dan gevraagd? Of begrijp je misschien nog niet goed hoe parameters bij methoden werken?
 
-```csharp
+```java
 static int ShowEnding(int input_geld)
 {
 
@@ -151,7 +151,7 @@ static int ShowEnding(int input_geld)
 
 Loops en array zijne r voor je om dit soort code nooit te moeten schrijven:
 
-```csharp
+```java
 int maal1 = 1;
 int maal2 = 2;
 int maal3 = 3;
@@ -166,7 +166,7 @@ int maal10 = 10;
 
 ## Echt waar ze hebben een nut
 
-```csharp
+```java
 bool[] RandomBool = new bool[10];
 Random Random = new Random();
 bool RandomBoolke0 = Convert.ToBoolean(Random.Next()); //NEEE

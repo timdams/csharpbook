@@ -2,7 +2,7 @@
 
 Een ``switch`` statement is een program-flow element om een veelvoorkomende constructie van ``if``/``if else``...``else`` elementen eenvoudiger te schrijven. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken (bijvoorbeeld een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma), zoals:
 
-```csharp
+```java
 int option;
 Console.WriteLine("Kies: 1)afbreken\n2)opslaan\n3)laden:");
 option = Convert.ToInt32(Console.ReadLine());
@@ -20,7 +20,7 @@ else
 
 Met een ``switch`` kan dit eenvoudiger wat we zo meteen zullen tonen. Eerst bekijken we hoe ``switch`` juist werkt. De syntax van een ``switch`` is een beetje meer speciaal dan de andere programma flow-elementen (``if``, ``while``, etc.), namelijk als volgt:
 
-```csharp
+```java
 switch (value)
 {
     case constant:
@@ -40,7 +40,7 @@ switch (value)
 Tijdens de uitvoer zal het programma ``value`` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan ``value`` dan zal de code binnen de ``default``-case uitgevoerd worden (de ``else`` achteraan indien alle vorige ``if else``-tests negatief waren).
 
 Het menu van zonet kunnen we nu herschrijven naar een ``switch``:
-```csharp
+```java
 int option;
 Console.WriteLine("Kies: 1)afbreken\n2)opslaan\n3)laden:");
 option = Convert.ToInt32(Console.ReadLine());
@@ -71,7 +71,7 @@ De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Consta
 
 Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
 
-```csharp
+```java
 switch (option)
 {
     case 1:

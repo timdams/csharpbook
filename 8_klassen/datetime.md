@@ -15,7 +15,7 @@ Er zijn 2 manieren om ``DateTime`` objecten aan te maken:
 
 Volgend voorbeeld toont hoe we een object kunnen maken dat de huidige datum tijd van het systeem bevat. Vervolgens printen we dit op het scherm:
 
-```csharp
+```java
         DateTime currentTime = DateTime.Now;
         Console.WriteLine(currentTime);
 ```
@@ -26,7 +26,7 @@ Via de constructor kunnen we beginwaarden meegeven bij het maken van een nieuw o
 
 Enkele voorbeelden:
 
-```csharp
+```java
 DateTime birthday = new DateTime(1982, 3, 18); //year, month, day
 
 DateTime someMomentInTime = new DateTime(2017, 1, 18, 10, 16,34 ); //year, month, day, hour, min, sec
@@ -52,7 +52,7 @@ Deze methoden kan je gebruiken om een bepaalde aantal dagen, uren, minuten en zo
 
 Een voorbeeld:
 
-```csharp
+```java
 DateTime timeNow= DateTime.Now;
 
 DateTime nextWeek= timeNow.AddDays(7);
@@ -62,7 +62,7 @@ DateTime nextWeek= timeNow.AddDays(7);
 
 Uiteraard mag je ook een bestaand object overschrijven met het resultaat van deze methoden:
 
-```csharp
+```java
 DateTime someTime= new DateTime(2019, 4, 1);
 
 //much later...
@@ -104,7 +104,7 @@ Enkele nuttige properties van ``DateTime`` zijn:
 
 Een voorbeeld:
 
-```csharp
+```java
 DateTime moment = new DateTime(1999, 1, 13, 3, 57, 32, 11);
 
 // Year gets 1999.
@@ -131,7 +131,7 @@ int millisecond = moment.Millisecond;
 
 Uiteraard mag je ook deze properties gebruiken om direct naar het scherm te schrijven:
 
-```csharp
+```java
 DateTime now = DateTime.Now;
 
 Console.WriteLine($"The current day is {now.DayOfWeek}");
@@ -142,7 +142,7 @@ Je hebt een invloed op hoe DateTime objecten naar string worden opgezet. Je kan 
 
 Dit zie je in volgende voorbeeld:
 
-```csharp
+```java
 DateTime now = DateTime.Now;
         
 WriteLine(now.ToString("d")); // short date 
@@ -169,7 +169,7 @@ De manier waarop ``DateTime`` objecten worden getoond (via ToString) is afhankel
 
 Dit vereist dat je eerst een ``CultureInfo`` aanmaakt en dat je dan meegeeft:
 
-```csharp
+```java
 DateTime now = DateTime.Now;
 CultureInfo russianCI = new CultureInfo("ru-RU");
 
@@ -190,7 +190,7 @@ Sommige methoden zijn ``static`` dat wil zeggen dat je ze enkel rechtstreeks op 
 
 Parsen laat toe dat je strings omzet naar ``DateTime``. Dit is handig als je bijvoorbeeld de gebruiker via ``ReadLine`` tijd en datum wilt laten invoeren:
 
-```csharp
+```java
 string date_string = "8/11/2016"; //dit zou dus ook door gebruiker kunnen ingetypt zijn
 DateTime dt = DateTime.Parse(date_string);
 Console.WriteLine(dt);
@@ -202,7 +202,7 @@ Zoals je ziet roepen we ``Parse`` aan op ``DateTime`` en dus niet op een specifi
 
 Deze nuttige methode geeft een ``bool`` terug om aan te geven het meegegeven object eens schrikkeljaar is of niet:
 
-```csharp
+```java
 DateTime today= DateTime.Now;
 bool isLeap= DateTime.IsLeapYear(today.Year);
 if(isLeap==true)
@@ -213,7 +213,7 @@ if(isLeap==true)
 
 Je kan DateTime objecten ook bij mekaar optellen en aftrekken. Het resultaat van deze bewerking geeft echter NIET een DateTime object terug, maar een ``TimeSpan`` object. Dit is een object dat dus aangeeft hoe groot het verschil is tussen de 2 DateTime objecten:
 
-```csharp
+```java
 DateTime today = DateTime.Today;
 DateTime borodino_battle = new DateTime(1812, 9, 7);
 

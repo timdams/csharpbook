@@ -10,7 +10,7 @@ Meestal zal je expressies schrijven waarin je bewerkingen op en met variabelen u
 
 Voorbeeld van **expressie**-resultaat toekennen:
 
-```csharp
+```java
 int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
 ```
 
@@ -18,20 +18,20 @@ Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van el
 
 De voorgaande code kan ook langer geschreven worden als:
 
-```csharp
+```java
 int tussenResultaat = temperatuurGisteren - temperatuurVandaag;
 int temperatuursVerschil = tussenResultaat;
 ```
 
 Een ander voorbeeld van een **expressie**-resultaat toewijzen maar nu met literals:
 
-```csharp
+```java
 int temperatuursVerschil = 21 - 25;
 ```
 
 Uiteraard mag je ook combinaties van literals en variabelen gebruiken in je expressies:
 
-```csharp
+```java
 int breedte = 15;
 int hoogte = 20 * breedte;
 ```
@@ -52,13 +52,13 @@ Er bestaan ook **unaire operators** die maar 1 operand hebben. Denk bijvoorbeeld
 
 Net zoals in de wiskunde kan je in C# met behulp van de haakjes verplichten het deel tussen de haakjes eerst te doen, ongeacht de andere operators en hun volgorde van berekeningen:
 
-```csharp
+```java
 3+5*2 // zal 13 (type int) als resultaat geven
 (3+5)*2  // zal 16 (type int) geven
 ``` 
 
 Je kan nu complexe berekeningen doen door literals, operators en variabelen samen te voegen. Bijvoorbeeld om te weten hoeveel je op Mars zou wegen:
-```csharp
+```java
 double gewichtOpAarde= 80.3;        //kg
 double gAarde= 9.81;    //m/s² 
 double gMars= 3.711;    //m/s²
@@ -70,7 +70,7 @@ Console.WriteLine("Je weeg op Mars" + gewichtOpMars + " kg");
 #### Modulo operator ``%``
 De modulo operator die we in C# aanduiden met ``%`` verdient wat meer uitleg. Deze operator zal als resultaat de gehele rest teruggeven wanneer we het linkse getal door het rechtse getal delen:
 
-```csharp
+```java
 7%2  // zal 1 geven, daar 7 gedeeld door 2,  3 met rest 1 geeft 
 10%5 // zal 0 geven, daar 10 gedeeld door 5, 2 met rest 0 geeft 
 ```
@@ -78,7 +78,7 @@ De modulo operator die we in C# aanduiden met ``%`` verdient wat meer uitleg. De
 De modulo-operator zal je geregeld gebruiken om bijvoorbeeld te weten of een getal een veelvoud van iets is. Als de rest dan 0 is weet je dat het getal een veelvoud is van het getal waar je het door deelde.
 
 Bijvoorbeeld om te testen of getal even is gebruiken we ``%2``:
-```csharp
+```java
 int getal= 1234234;
 int rest= getal%2;
 Console.WriteLine("Indien het getal als rest 0 geeft is deze even."); 
@@ -122,12 +122,12 @@ Succes!
 
 Lees deze zin enkele keren luidop voor, voor je verder gaat: **De types die je in je expressies gebruikt bepalen ook het type van het resultaat.** Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven (klink logisch, maar lees aandachtig verder):
 
-```csharp
+```java
 int result= 3 + 4;
 ```
 
 Je kan echter geen kommagetallen aan ``int`` toewijzen. Als je dus twee ``double`` variabelen deelt is het resultaat terug een ``double`` en zal deze lijn een fout geven daar je probeert een ``double`` aan een ``int`` toe te wijzen:
-```csharp
+```java
 int otherResult= 3.1 / 45.2;  //dit is fout!!!
 ```
 
@@ -139,7 +139,7 @@ Bovenstaande code geeft volgende fout:
 #### But wait... it gets worse! 
 
 Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. Je bent echter alle informatie na de komma kwijt. Kijk maar:
-```csharp
+```java
 int getal1= 9;
 int getal2= 2;
 int result= getal1/getal2;
@@ -152,11 +152,11 @@ Console.WriteLine(result);
 Wat als je datatypes mengt? Als je een berekening doet met bijvoorbeeld een ``int`` en een ``double`` dan zal C# het 'grootste' datatype kiezen. In dit geval een double. 
 
 Volgende code zal dus werken:
-```csharp
+```java
 double result= 3/5.6;
 ```
 Volgende code niet:
-```csharp
+```java
 int result= 3/5.6;
 ```
 En zal weer dezelfde fout genereren:
@@ -166,7 +166,7 @@ En zal weer dezelfde fout genereren:
 Wil je dus het probleem oplossen om 9 te delen door 2 en toch 4.5 te krijgen (en niet 4) dan zal je minstens 1 van de 2 literals of variabelen naar een double moeten omzetten. 
 
 Het voorbeeld van hierboven herschrijven we daarom naar:
-```csharp
+```java
 int getal1= 9;
 double getal2= 2.0; //see what we do here!
 double result= getal1/getal2;
@@ -184,7 +184,7 @@ En nu krijgen we wel ``4.5`` aangezien we nu een ``int`` door een ``double`` del
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Begrijp je nu waarom dit een belangrijke deel was? Je kan erg snel erg foute berekeningen en ongewenste afrondingen krijgen indien je niet erg bewust omgaat met je datatypes. 
+Begrijp je nu waarom dit een belangrijk deel was? Je kan erg snel erg foute berekeningen en ongewenste afrondingen krijgen indien je niet erg bewust omgaat met je datatypes. 
 
 Laten we eens kijken of je goed hebt opgelet, het kan kan namelijk subtiel en ambetant worden in grotere berekeningen.
 
@@ -192,7 +192,7 @@ Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien 
 
 Ik stel je voor om volgende expressie te gebruiken om te berekenen wat je van mij krijgt:
 
-```csharp
+```java
 double helft= 10000.0 * (1 / 2);
 ```
 Hoeveel krijg je van me? 
@@ -204,7 +204,7 @@ Begrijp je waarom? De volgorde van berekeningen zal eerst het gedeelte tussen de
 * Vervolgens zullen we deze ``0`` vermenigvuldigen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een ``double`` (het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
 
 Als ik dus effectief de helft van m'n salaris wil afstaan dan moet ik de expressie aanpassen naar bijvoorbeeld: 
-```csharp
+```java
 double helft = 10000.0 * (1.0 / 2);
 ```
 

@@ -4,7 +4,7 @@ Je kan ook in je eigen code uitzonderingen ‘opgooien’, zodat deze elders opg
 
 Een voorbeeld:
 
-```csharp
+```java
 static int DoeIets(int getal)
 {
     if (getal == 0)
@@ -39,7 +39,7 @@ De lijn ``throw new DivideByZeroException("Getal equals 0.You shouldn't do that!
 
 Je kan ook eigen klassen afleiden van Exception zodat je eigen uitzonderingen kan maken en gooien in je programma. Je maakt hiervoor gewoon een nieuwe klasse aan die je laat overerven van de Exception-klasse. Een voorbeeld:
 
-```csharp
+```java
 class MyException: Exception
 {
     public override string ToString()
@@ -52,7 +52,7 @@ class MyException: Exception
 
 Om deze exception nu zelf op te ‘gooien’ gebruiken we het keyword `throw`. In volgende voorbeeld gooien we onze eigen exception op een bepaald punt in de code en vangen deze dan op (de reden van de exception moet je zelf verzinnen, het is maar een onnozel voorbeeld):
 
-```csharp
+```java
 static void Main(string[] args)
 {
     try

@@ -34,7 +34,7 @@ Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan 
 Maak een methode die jezelf voorstelt op het scherm in de vorm van "Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666".
 Deze informatie mag hardcoded in je methode staan. Bedoeling is dat je de methode kan aanroepen als volgt:
 
-```csharp
+```java
 MyIntro();
 ```
 
@@ -46,7 +46,7 @@ Deze methode toont enkel zaken op het scherm en heeft dus als returntype ``void`
 
 Zorg er voor dat je nu je naam, leeftijd en adres via parameters kan meegeven en dus de methode als volgt kunt aanhouden:
 
-```csharp
+```java
 MyIntro("Jos", 34, "Trammezantlei 21");
 ```
 
