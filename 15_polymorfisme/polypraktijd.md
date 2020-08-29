@@ -1,7 +1,7 @@
 # Polymorfisme in de praktijk: Presidenten
 
 {% hint style='tip' %}
-![Gezocht: wie weet waar deze still vandaan komt? Ik heb geen flauw benul. We zien Robert Redford en Bush Senior, uit een film ofzo?](../assets/9_interfaces/president.jpg)
+![Gezocht: wie weet waar deze still vandaan komt? We hebben geen flauw benul. We zien Robert Redford en Bush Senior, uit een film ofzo?](../assets/9_interfaces/president.jpg)
 {% endhint %}
 
 Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:

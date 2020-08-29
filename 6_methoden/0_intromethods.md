@@ -56,7 +56,7 @@ static void ToonTitel()
 Het **void** keyword geeft aan dat deze methode niets "teruggeeft" van resultaat. **Zaken naar het scherm sturen heeft hier niets mee te maken.**
 {% endhint %}
 
-Vanaf nu kan ik eender waar in m'n programma deze methode aanroepen door te schrijven:
+Vanaf nu kan je eender waar in je programma deze methode aanroepen door te schrijven:
 
 ```csharp
 ToonTitel();

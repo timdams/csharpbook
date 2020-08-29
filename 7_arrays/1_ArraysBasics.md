@@ -22,7 +22,7 @@ int dag6 = 0;
 int dag7 = 23;
 ```
 
-Als ik je nu vraag om de gemiddelde neerslag te berekenen dan krijg je al een redelijk lang statement:
+Als  we je nu vragen om de gemiddelde neerslag te berekenen dan krijg je al een redelijk lang statement:
 
 <!---{line-numbers:false}--->
 ```csharp

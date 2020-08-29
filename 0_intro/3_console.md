@@ -216,7 +216,7 @@ adres = Console.ReadLine();
 ```
 
 {% hint style='tip' %}
-Je zal vaak ``Console.WriteLine`` moeten schrijven als je dit boek volgt. Ik heb echter goed nieuws voor je: er zit een ingebouwde "snippet" in VS om sneller ``Console.WriteLine op het scherm te toveren. Ik zal je niet langer in spanning houden...of toch... nog even. Ben je benieuwd? Ik ook. Spannend he!
+Je zal vaak ``Console.WriteLine`` moeten schrijven als je dit boek volgt. We hebben echter goed nieuws voor je: er zit een ingebouwde "snippet" in VS om sneller ``Console.WriteLine op het scherm te toveren. We gaan je niet langer in spanning houden...of toch... nog even. Ben je benieuwd?  Spannend he!
 
 Hier gaan we: ``cw [tab] [tab]``
 

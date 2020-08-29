@@ -111,7 +111,7 @@ public int CompareTo(object obj)
 <!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
-Als ik niet overtuigend genoeg was over het nut van interfaces in het vorige hoofdstuk, dan hoop ik dat bovenstaande voorbeelden je al een beetje hebben kunnen doen proeven van de kracht van interfaces. Gedaan met ons druk te maken wat er allemaal in een klasse gebeurt. Werk gewoon 'tegen' de interfaces van een klasse en we krijgen de ultieme black-box revelatie (see what I did there? :p )!
+Als je niet overtuigd genoeg bent over het nut van interfaces in het vorige hoofdstuk, dan zullen bovenstaande voorbeelden je hopelijk  al een beetje hebben kunnen doen proeven van de kracht van interfaces. Gedaan met ons druk te maken wat er allemaal in een klasse gebeurt. Werk gewoon 'tegen' de interfaces van een klasse en we krijgen de ultieme black-box revelatie (see what we did there? :p )!
 
 <!---{/aside}--->
 <!---NOBOOKSTART--->

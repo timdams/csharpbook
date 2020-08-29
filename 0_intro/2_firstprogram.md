@@ -63,7 +63,7 @@ Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.
 We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tijd niet belangrijk zijn.  Onthoud nu alvast dat: **alle belangrijke code staat tussen de accolades onder de lijn ``static void Main(string[] args)``**!
 
 {% hint style='warning' %}
-Laat je niet afschrikken door wat er nu volgt. Ik gooi je even in het diepe gedeelte van het zwembad maar zal je er op tijd uithalen zodat we vervolgens terug in het babybadje rustig op de glijbaan kunnen gaan spelen en C# op een rustiger tempo kunnen ontdekken.
+Laat je niet afschrikken door wat er nu volgt. We gooien je even in het diepe gedeelte van het zwembad maar zal je er op tijd uithalen zodat we vervolgens terug in het babybadje rustig op de glijbaan kunnen gaan spelen en C# op een rustiger tempo kunnen ontdekken.
 {% endhint %}
 
 * **``using System;``** :  Alle ``Console``-commando's die we verderop gebruiken zitten in de ``System`` bibliotheek. Als we deze lijn (een zogenaamde **directive**) niet zouden schrijven dan moesten we ``System.Console.WriteLine`` i.p.v. ``Console.WriteLine`` schrijven verderop in de code. 

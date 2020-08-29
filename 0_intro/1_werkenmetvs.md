@@ -79,7 +79,7 @@ Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld ge
 {% endhint %}
 Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen).
 
-![Instellingen van een project. Ik raad af om de checkbox onderaan aan te vinken](../assets/0_intro/vsprojectname.PNG)
+![Instellingen van een project. We raden af om de checkbox onderaan aan te vinken](../assets/0_intro/vsprojectname.PNG)
 
 **Klik nu op create**.
 
@@ -131,7 +131,7 @@ Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af 
 
 ### Is dit alles?
 
-Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte? Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in het linkermenu om verder te lezen [https://tutorials.visualstudio.com/vs-get-started/intro](https://tutorials.visualstudio.com/vs-get-started/intro)).
+Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als gehoopt? Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in het linkermenu om verder te lezen [https://tutorials.visualstudio.com/vs-get-started/intro](https://tutorials.visualstudio.com/vs-get-started/intro)).
 
 <!---NOBOOKSTART--->
 
