@@ -1,104 +1,54 @@
-# Parameters by reference doorgeven
-Je kan parameters op 2 manieren by reference doorgeven:
+## Out en ref keywords
 
-* Indien de parameters reeds een waarde heeft dan kan je het ref keyword gebruiken. Dit gebruik je dus voor in/out-parameters.
-* Indien de parameter pas in de methode een waarde krijgt toegekend dan wordt het out keyword gebruikt. Dit gebruik je dus voor out-parameter.
+Zoals verteld kun je parameters aan een methode doorgeven *by value* (de waarde) of *by reference* (het geheugenadres) afhankelijk van het datatype dat je meegeeft(de primitieve datatypes zoals ``int`` en ``double`` worden *by value* meegegeven, arrays by reference). Je kan echter de primitieve datatypes ook *by reference* meegeven zodat de methode rechtstreeks toegang tot de meegegeven variabele heeft en niet met een kopie moet werken. Dit kan soms handig zijn, maar zorgt ook voor ongewenste bugs. Opletten dus.
 
-Je geeft parameters by reference door door het keyword ref voor de parameter in kwestie te zetten, zowel in de methode-declaratie als in de aanroep van de methode zelf.
 
-**Opgelet**:Het dient opgemerkt te worden dat parameters by reference doorgeven vaak tot problemen kan leiden indien je niet goed oplet, daar je rechtstreeks werkt met geheugenlocaties. Als je bijvoorbeeld verkeerdelijk een referentie optelt bij een value dan krijg je een nieuwe referentie die echter naar, mogelijk, een onbestaand stuk geheugen wijst. De ontwikkelaars van Visual Studio raden het gebruik van ``ref`` en ``out`` dan ook af, zeker indien je een beginnende programmeur bent. .
+### Parameters by reference doorgeven
 
-# Out en ref
-Via de keywords ``out`` en ``ref`` kunnen we parameters by reference doorgeven (ipv by value), het verschil daarbij is:
-* ``ref``: de parameter bevat reeds een waarde wanneer deze naar de methode wordt gestuurd
-* ``out``: de parameter bevat nog geen waarde en er wordt verwacht dat deze een waarde krijgt in de methode zelf 
+Je kan parameters op 2 manieren by reference doorgeven aan een methode:
 
-Het verschil tussen het gebruik van ``out`` of ``ref`` keyword tonen we aan in het volgende voorbeeld. 
+* Indien de parameters **reeds een waarde** heeft dan kan je het **``ref``** keyword gebruiken. Dit gebruik je dus voor in/out-parameters.
+* Indien de parameter **pas in de methode een waarde** krijgt toegekend dan wordt het **``out``** keyword gebruikt. Dit gebruik je dus voor out-parameters.
 
-Laten we dit aantonen met een voorbeeld. Stel dat we het vorige voorbeeld herschreven maar ‘vergeten’ om de parameter tweede een begin-waarde te geven:
+### Ref
+Je plaatst het ``ref`` keyword in de methode signatuur voor het argument dat *by reference* moet meegegeven worden. Vanaf dan heeft de methode toegang tot de originele parameter en dus niet de kopie. Je dient ook expliciet het keyword voor de paratemeter bij de aanroep van de methode te plaatsen:
+
 
 ```java
-static void Main(string[] args)
+static void VerhoogWaarde(ref int getal)
 {
-    int eerste = 5;
-    int tweede;
-    RefValueVerschil(eerste, ref tweede);
- 
-    Console.WriteLine($"Eerste bedraagt na method:{eerste}");
-    Console.WriteLine($"Tweede bedraagt na method:{tweede}");
-}
-```
-Dan krijgen we volgende, terechte, foutmelding:
-
-![Deze foutboodschap zal je nog al zijn tegengekomen](../assets/4_methoden/outref1.png)
-
-Door nu het ``out`` keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen.
-
-We zouden dus ons programma kunnen herschrijven met deze parameter. Hierbij moeten we ons ervan vergewissen dat we zeker de parameter getal2 een waarde toekennen in de methode!
-
-```java
-static void RefValueVerschil(int getal1, out int getal2)
-{
-    getal2 = 10;
-    getal1 = getal1 + 1;
-    getal2 = getal2 + 2;
-    Console.WriteLine($"Getal1 bedraagt in method:{getal1}");
-    Console.WriteLine($"Getal2 bedraagt in method:{getal2}");
- 
+    getal++;
 }
  
 static void Main(string[] args)
 {
-    int eerste = 5;
-    RefValueVerschil(eerste, out int tweede);
- 
-    Console.WriteLine($"Eerste bedraagt na method:{eerste}");
-    Console.WriteLine($"Tweede bedraagt na method:{tweede}");
+    int eerste=1;
+    Console.WriteLine(eerste); //er verschijnt 1 op het scherm
+    VerhoogWaarde(ref eerste); //let op het ref keyword!
+    Console.WriteLine(eerste); //er verschijnt 2 op het scherm
 }
 ```
 
-Dit geeft terug als output:
+### Out
+Door het ``out`` keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen. Wat we hier tonen:
 
-```text
-Getal1 bedraagt in method:6
-Getal2 bedraagt in method:12
-Eerste bedraagt na method:5
-Tweede bedraagt na method:12
-```
-
-Volgende methode zal 2 parameters meekrijgen. De eerste wordt bij value gebruikt, de tweede by reference:
 
 ```java
-static void RefValueVerschil(int getal1, ref int getal2)
+static void GeefWaarde(out int getal)
 {
-    getal1 = getal1 + 1;
-    getal2 = getal2 + 2;
-    Console.WriteLine($"Getal1 bedraagt in methode:{getal1}");
-    Console.WriteLine($"Getal2 bedraagt in methode:{getal2}");
+    getal= 5;
 }
  
 static void Main(string[] args)
 {
-    int eerste = 5;
-    int tweede = 10;
-    RefValueVerschil(eerste, ref tweede);
-    Console.WriteLine($"Eerste bedraagt na methode:{eerste}");
-    Console.WriteLine($"Tweede bedraagt na methode:{tweede}");
+    int eerste;
+    GeefWaarde(out eerste);
+    Console.WriteLine(eerste); //er verschijnt 5 op het scherm
 }
 ```
-De uitvoer is de volgende, zoals verwacht: :
-```
-Getal1 bedraagt in method:6
-Getal2 bedraagt in method:12
-Eerste bedraagt na method:5
-Tweede bedraagt na method:12
-```
 
+## Foute invoer van de gebruiker opvangen mbv ``TryParse``
 
-Merk dus op dat enkel de variabele tweede aangepast wordt buiten de methode doordat we deze by reference doorgeven.
-
-
-# Foute invoer van de gebruiker opvangen
 Vaak wil je de invoer van de gebruiker verwerken/omzetten naar een getal. Denk maar aan volgende applicatie:
 ```java
  Console.WriteLine("Geef je leeftijd");
@@ -108,15 +58,18 @@ leeftijd += 10;
 Console.WriteLine($"Over 10 jaar ben je {leeftijd} jaar oud");
 ```
 
-Deze applicatie zal falen indien de gebruiker iets invoert dat niet kan geconverteerd worden naar een ``int``.
-## TryParse
-De types ``int``, ``double``, ``float`` etc hebben allemaal een ``TryParse`` methode. Je kan deze gebruiken om de invoer van een gebruikeren **te proberen om te zetten** als deze niet lukt dan kan je dit ook weten zonder dat je programma crasht. De werking van ``TryParse`` is als volgt:
+Deze applicatie zal falen indien de gebruiker iets invoert dat niet kan geconverteerd worden naar een ``int``. We lossen dit op met behulp van ``TryParse``.
+### Werking ``TryParse``
+
+De primitieve datatypes ``int``, ``double``, ``float`` etc hebben allemaal een ``TryParse`` methode. Je kan deze gebruiken om de invoer van een gebruiker **te proberen om te zetten**, als deze niet lukt dan kan je dit ook weten zonder dat je programma crasht door een exception op te werpen. 
+
+De werking van ``TryParse`` is als volgt:
 
 ```java
 bool gelukt = int.TryParse(invoer,out int leeftijd);
 ```
 
-De methode ``TryParse`` zal de string in de eerste parameter (``invoer`` in dit voorbeeld) trachten naar een ``int`` te converteren. Als dit lukt dan zal het resultaat in de variabele ``int leeftijd`` geplaatst worden. Merk op dat we ``out`` voor de parameter moeten zetten zoals we ook hierboven hebben gezien. 
+De methode ``TryParse`` zal de string in de eerste parameter (``invoer`` in dit voorbeeld) trachten naar een ``int`` te converteren. Als dit lukt dan zal het resultaat in de variabele ``int leeftijd`` geplaatst worden. Merk op dat we ``out`` voor de parameter moeten zetten zoals besproken in de vorige sectie van de appendix. 
 
 Het return resultaat van de methode is ``bool``: indien de conversie gelukt is dan zal deze ``true`` teruggeven, anders ``false``.
 
@@ -137,7 +90,8 @@ else
 }
 ```
 
-## TryParse en loops
+### ``TryParse`` en loops
+
 Daar ``TryParse`` een ``bool`` teruggeeft kunnen we deze ook gebruiken in loops als logische expressie. Volgende applicatie zal aan de gebruiker een komma getal vragen en pas verder gaan indien de gebruiker een geldige invoer heeft gegeven:
 
 ```java

@@ -227,7 +227,7 @@ Je kan [alle conversie-mogelijkheden hier bekijken](https://msdn.microsoft.com/e
 
 ## Parsing
 {% hint style='tip' %}
-Voorlopig zullen we parsing niet nodig hebben. Voor de volledigheid plaatsen we deze informatie hier echter. Ben je toch benieuwd: bekijk zeker eens de werking van ``TryParse``. Dit is een erg krachtige manier van werken.
+Voorlopig zullen we parsing niet nodig hebben. Voor de volledigheid plaatsen we deze informatie hier echter. Ben je toch benieuwd: bekijk zeker eens de werking van ``TryParse`` in de appendix. Dit is een erg krachtige manier van werken.
 {% endhint %}
 
 Naast conversie en casting bestaat er ook nog **parsing**.
@@ -246,4 +246,4 @@ Console.WriteLine(numVal);
 Gebruik parsing enkel wanneer je:
 
 1. een ``string`` hebt waarvan je weet dat deze altijd van een specifiek type zal zijn, bv een ``int``, dan kan je ``Int32.Parse()`` gebruiken.
-2. input van de gebruiker vraagt (bv via ``Console.ReadLine``) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()``. ([info](https://msdn.microsoft.com/en-us/library/f02979c7.aspx))
+2. input van de gebruiker vraagt (bv via ``Console.ReadLine``) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()``. (meer info in de appendix)).

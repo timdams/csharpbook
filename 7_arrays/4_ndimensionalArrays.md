@@ -19,8 +19,7 @@ We behandelen meerdimensionale arrays maar komt om de eenvoudige reden dat je di
 De arrays die we nu behandelen zullen steeds "rechthoekig" zijn. Daarmee bedoelen we dat ze steeds per rij of kolom evenveel elementen zullen bevatten als in de andere rijen of kolommen. 
 
 {% hint style='tip' %}
-Arrays die per rij of kolom een andere hoeveelheid elementen hebben zijn zogenaamde **jagged arrays**, welke in dit boek niet aan bod komen.
-![Voorbeeld van een jagged array](../assets/5_arrays/jaggedt.png)
+Arrays die per rij of kolom een andere hoeveelheid elementen hebben zijn zogenaamde **jagged arrays**, welke we kort hierna bespreken.
 {% endhint %}
 
 ### n-dimensionale arrays aanmaken

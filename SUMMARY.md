@@ -75,6 +75,7 @@
   * [Strings en arrays](7_arrays/stringarray.md)
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
+  * [Jagged arrays](7_arrays/5_jaggedArrays.md) 
   * [_Oefeningen deel 1](7_arrays/A_practica.md)
   * [_Oefeningen deel 2](7_arrays/B_practica.md)
 * Module 2 eindetest
@@ -173,8 +174,7 @@
 ## Semester 1 appendix
 
 * [Nice to know stuff](B_appendix/prostuff.md)
-  * [Out en Ref parameters](B_appendix/2_outenref.md)
-  * [Jagged arrays](B_appendix/5_jaggedArrays.md) 
+  * [Out,Ref en TryParse](B_appendix/2_outenref.md)
   * [Nuttige array methoden](7_arrays/2_werken_met_arrays.md)
 * Oplossingen oefeningen
   * [H0 - Werken met VS](0_intro/opl_apractica.md)

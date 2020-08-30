@@ -60,5 +60,5 @@ De invoer van kommagetallen door de gebruiker is afhankelijk van de landinstelli
 {% endhint %}
 
 {% hint style='tip' %}
-En wat als je toch foute invoer wilt opvangen? Zoals eerder aangegeven: dan is ``TryParse`` je vriend. [Lees hier alles over TryParse](https://www.dotnetperls.com/parse).
+En wat als je toch foute invoer wilt opvangen? Zoals eerder aangegeven: dan is ``TryParse`` je vriend (zie appendix).
 {% endhint %}
