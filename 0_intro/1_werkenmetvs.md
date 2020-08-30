@@ -31,6 +31,7 @@ Het is belangrijk bij de installatie dat je minimaal volgende zaken selecteert:
 
 Uiteraard ben je vrij om meerdere zaken te installeren.
 
+<!---{pagebreak} --->
 
 ### Visual studio opstarten
 
@@ -47,7 +48,7 @@ De allereerste keer dat je VS opstart krijg je 2 extra schermen te zien:
 #### Project keuze
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaan aanmaken zullen deze in de toekomst ook op dit scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 
 
-<!--- {height=30%} --->
+<!--- {height:20%} --->
 ![Keuze van je projecttype](../assets/0_intro/vsstart.png)
 
 
@@ -55,8 +56,8 @@ Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschi
 
 We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 
-<!--- {height=30%} --->
-![VS Start scherm](../assets/0_intro/proj.jpg)
+<!--- {height:50%} --->
+![Kies je projectype](../assets/0_intro/proj.jpg)
 
 {% hint style='tip' %}
 Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
@@ -84,6 +85,8 @@ Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je a
 **Klik nu op create**.
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
+
+<!---{pagebreak} --->
 
 ### IDE Layout
 

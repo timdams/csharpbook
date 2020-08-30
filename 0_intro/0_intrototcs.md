@@ -4,8 +4,6 @@ Wel, wel, wie we hier hebben?! Iemand die de edele kunst van het programmeren wi
 
 De eerste stappen zijn nooit eenvoudig. We gaan proberen het aantal dure woorden, vreemde afkortingen en ingewikkelde schema's tot een minimum te houden. Maar toch, als je een nieuwe kunst wil leren zal je je handen (én toetsenbord) vuil moeten maken. Wat er ook gebeurt de komende hoofdstukken: blijf volhouden. Leren programmeren is een beetje als een berg leren beklimmen waarvan je nooit de top lijkt te kunnen bereiken. Wat ook zo is. Er is geen "top", en dat is net het mooie van dit alles. Er valt altijd iets nieuws te leren! De zaken waar je de komende pagina's op gaat vloeken zullen over enkele hoofdstukken al kinderspel lijken. Hou dus vol, blijf oefenen, vloek gerust af en toe en vooral: geniet van nieuwe dingen ontdekken! 
 
-<!--- {height:30%} --->
-![Ooit zijn ze misschien onze robot overlords, maar voorlopig hebben ze je toch nodig geprogrammeerd te worden! (bron afbeelding: Owen Beard, Unsplash)](../assets/0_intro/introrobot.jpg)
 
 ## Wat is programmeren?
 
@@ -70,6 +68,7 @@ Rechtstreeks onze algoritmen tegen de computer vertellen vereist dat we machinet
 
 Uiteraard hebben we een vertaler nodig die onze code zal vertalen naar de machinetaal van het apparaat waarop ons programma moet draaien. Deze vertaler is de **compiler** die aardig wat complex werkt op zich neemt, maar dus in essentie onze code gebruiksklaar maakt voor de computer.
 
+<!--- {width:80%} --->
 ![Vereenvoudigd compiler overzicht](../assets/1_csharpbasics/compilersimple.png)
 
 Merk op dat we hier veel details van de compiler achterwege laten. De compiler is een uitermate complex element, maar in deze fase van je (prille) programmeursleven hoeven we enkel de kern van de compiler te begrijpen: **het omzetten van C# code naar een uitvoerbaar bestand geschreven in IL code**.
