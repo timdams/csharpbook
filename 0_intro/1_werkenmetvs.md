@@ -42,8 +42,22 @@ De allereerste keer dat je VS opstart krijg je 2 extra schermen te zien:
 * Het "sign in" scherm mag je overslaan (kies "Not now, maybe later")
 * Vervolgens kan je je kleurenthema kiezen. Dit heeft geen invloed op de manier van werken.  
 
+
+
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/neotim.png)
+Dark is uiteraard het coolste thema om in te coderen. Je voelt je ogenblikkelijk Neo uit The Matrix. Het nadeel van dit thema is dat het meer meer inkt verbruikt indien je screenshots in een boek zoals dit wilt plaatsen. De keuze voor Development Setting kan je naar  "Visual C#" veranderen, maar General is even goed (je zal geen verschil merken in eerste instantie). Je kan dit achteraf nog aanpassen in VS via "Tools", dan "Import and Export Settings" en kiezen voor "Import and Export Settings Wizard".
 <!--- {height:30%} --->
-![Dark is uiteraard het coolste om in te coderen maar verbruikt meer inkt indien je screenshots in een boek zoals dit wilt plaatsen](../assets/0_intro/vstheme.jpg)
+![](../assets/0_intro/vstheme.jpg)
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
+
 
 #### Project keuze
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaan aanmaken zullen deze in de toekomst ook op dit scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 
