@@ -15,6 +15,8 @@ De eerste lijn code:
 * Concreet zeggen we hiermee aan de compiler: maak in het geheugen een plekje vrij waar enkel data van het type string in mag bewaard worden (wat deze zin exact betekent komt later. Onthoud nu dat geheugen van het type ``string`` enkel "tekst" kan bevatten).
 * Noem deze geheugenplek ``result``  zodat we deze later makkelijk kunnen in en uitlezen.
 
+<!---{pagebreak} --->
+
 Tweede lijn code:
 * Vervolgens roepen we de ``ReadLine`` methode aan. Deze methode zal de invoer van de gebruiker uitlezen tot de gebruiker op enter drukt.
 * Het resultaat van de ingevoerde tekst wordt bewaard in de variabele ``result``.
@@ -49,6 +51,8 @@ Console.WriteLine(" hoe gaat het met je?");
 In de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. 
 
 Met andere woorden: de ``WriteLine`` methode zal op het scherm tonen wat de gebruiker even daarvoor heeft ingevoerd.
+
+<!---{pagebreak} --->
 
 Je volledige programma ziet er dus nu zo uit:
 
@@ -97,6 +101,8 @@ hoe gaat het met je?
 ```
 {% endhint %}
 
+<!---{pagebreak} --->
+
 ### Write en WriteLine
 
 Naast ``WriteLine`` bestaat er ook ``Write``.
@@ -139,12 +145,14 @@ tim [enter]
 Dag tim hoe gaat het met je?
 ```
 
-{% hint style='warning' %}
-C# trekt zich niets aan van witregels (zowel spaties als enters) die niét binnen aanhalingstekens staan. Met andere woorden: je kan het voorgaande programma perfect in één lange lijn code typen, zonder enters. DIt is echter niet aangeraden want het maakt je code een pak onleesbaarder.
+<!---{pagebreak} --->
 
-<!--- {width:80%} --->
+### Witregels in C#
+
+C# trekt zich niets aan van witregels (zowel spaties, enters en tabs) die niét binnen aanhalingstekens staan. Met andere woorden: je kan het voorgaande programma perfect in één lange lijn code typen, zonder enters. Dit is echter niet aangeraden want het maakt je code een pak onleesbaarder.
+
+<!--- {width:90%} --->
 ![Voorgaande programma in exact 1 lijn. Cool? Ja, in sommige kringen. Dom en onleesbaar? Ook ja.](../assets/1_csharpbasics/online.png)
-{% endhint %}
 
 {% hint style='tip' %}
 **Opletten met spaties**
@@ -168,6 +176,7 @@ Console.Write("_hoe gaat het met je?");
 ```
 {% endhint %}
 
+<!---{pagebreak} --->
 
 ### Zinnen aan elkaar plakken
 
@@ -177,7 +186,6 @@ We kunnen dit allemaal nog een pak korter tonen zonder dat de code onleesbaar wo
 Console.WriteLine("Dag " + result + " hoe gaat het met je?");
 ```
 
-{% hint style='tip' %}
 Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling tot de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
 
 Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code:
@@ -189,7 +197,6 @@ Vervangt door:
 Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 ```
 
-{% endhint %}
 #### Meer input vragen
 
 Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:

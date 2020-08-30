@@ -15,10 +15,9 @@ if (booleaanse expressie)
 
 Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heeft, zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie niet waar is (``false``) dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
 
-![](../assets/2_beslissingen/ifflow.png)
+
 
 Een voorbeeld:
-
 ```java
 int number = 3;
 if ( number < 5 )
@@ -36,8 +35,14 @@ A
 B
 ```
 
-Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B");`` zal sowieso uitgevoerd worden zoals je ook kan zien aan de flowchart.
+Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B");`` zal sowieso uitgevoerd worden zoals je ook kan zien aan de flowchart op volgende pagina.
 
+<!---{pagebreak} --->
+
+<!---{ height:110%} --->
+![De flowchart van voorgaande code](../assets/2_beslissingen/ifflow.png)
+
+<!---{pagebreak} --->
 
 ### if met een block
 
@@ -53,6 +58,8 @@ if ( number < 5 )
 ```
 
 ![Accolades zijn duidelijk belangrijk](../assets/2_beslissingen/iffflowblock.png)
+
+<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -98,6 +105,8 @@ if ( number < 5 );
 {% endhint %}
 <!---NOBOOKEND--->
 
+<!---{pagebreak} --->
+
 ### Gebruik relationele en logische operators
 
 We kunnen ook meerdere booleaanse expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operators (``&&``, ``||``, ``!``) .
@@ -138,6 +147,8 @@ Uitvoer van dit programma zal zijn:
 5
 ```
 
+<!---{pagebreak} --->
+
 ### If/else
 
 Met ``if``/``else`` kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is **maar ook welke specifieke code moet uitgevoerd indien de conditie niet waar is**. Volgend voorbeeld geeft een typisch gebruik van een ``if``/``else`` structuur om 2 waarden met elkaar te vergelijken:
@@ -160,18 +171,12 @@ else
 ![Flowchart van bovenstaande code](../assets/2_beslissingen/ifelseflow.png)
 
 {% hint style='warning' %}
-Een veel gemaakte fout is bij de ``else`` sectie ook een booleaanse expressie plaatsen. Dit kan niet: de ``else`` sectie zal gewoon uitgevoerd worden indien de ``if`` sectie NIET uitgevoerd werd. 
-
-Volgende code MAG DUS NIET:
+Een veel gemaakte fout is bij de ``else`` sectie ook een booleaanse expressie plaatsen. Dit kan niet: de ``else`` sectie zal gewoon uitgevoerd worden indien de ``if`` sectie NIET uitgevoerd werd. Volgende code MAG DUS NIET:
 ```java
-if(a > b)
-{
-    //...
-}
-else (a <= b)   //<=FOUT!
-{
-    //...
-}
+if(a > b) 
+{...}
+else (a <= b)   //<FOUT!
+{...}
 ```
 
 {% endhint %}
@@ -217,7 +222,7 @@ else
 }
 
 ```
-
+<!---{pagebreak} --->
 
 ### Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een ``if``/``else if``/``else`` hoort. Binnen dit blok kunnen nu echter opnieuw ``if``/``else if``/``else`` structuren worden aangemaakt.

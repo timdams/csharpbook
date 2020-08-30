@@ -16,12 +16,14 @@ Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de erro
 
 Dit zal de "error list" openen (een schermdeel van VS dat we aanraden om altijd open te laten én dus niet weg te klikken):
 
+<!--- {width:70%} --->
 ![De error list](../assets/0_intro/errorlist.PNG)
 
 In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correcte lijn te gaan.
 
 Zou je toch willen compileren en je hebt nog fouten dan zal VS je proberen tegen te houden. **Lees nu onmiddellijk wat de voorman hierover te vertellen heeft.**
 
+<!--- {width:70%} --->
 ![OPLETTEN!](../assets/0_intro/errorwarning.PNG)
 
 <!---NOBOOKSTART--->

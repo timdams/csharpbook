@@ -12,10 +12,7 @@ Stel dat je de derde macht van een variabel ``getal`` wenst te berekenen. *zonde
 double result= getal * getal * getal;  //SLECHTE MANIER
 ```
 
-Dit valt nog mee, maar wat als je 3 tot de zevende macht moest berekenen? Kortom, laten we eens kijken hoe ``Math`` ons kan helpen. 
-
-
-*Met* de Math-bibliotheek kunnen we gebruik maken van de ``Pow`` (**Power**) methode:
+Dit valt nog mee, maar wat als je 3 tot de zevende macht moest berekenen? Kortom, laten we eens kijken hoe ``Math`` ons kan helpen. *Met* de Math-bibliotheek kunnen we gebruik maken van de ``Pow`` (**Power**) methode:
 ```java
 double result= Math.Pow(getal, 3);
 ```
@@ -28,6 +25,7 @@ Deze methode vereist twee parameters:
 
 Als je in Visual Studio ``Math`` schrijft in je code, gevolgd door een punt (``.``) krijg je alles te zien wat de Math-bibliotheek kan doen:
 
+<!--- {width:50%} --->
 ![De sterretjes geven de meestgebruikte methoden in deze bibliotheek aan. Vervolgens verschijnen alle overige methoden alfabetisch.](../assets/4_methoden/methoden3.png)
 
 

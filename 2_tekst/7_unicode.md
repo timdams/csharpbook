@@ -2,7 +2,7 @@
 
 Niets is zo leuk als de vreemdste Unicode tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om complexe tekeningen op het scherm te tonen. Om je ietwat saaie applicaties dus wat toffer te maken leggen we daarom uit hoe je dit kan doen.
 
-<!---{width:50%} --->
+<!---{width:70%} --->
 ![Dwarf fortress: een van de bekendste (én meest complexe) console-games ooit waar nog steeds aan ontwikkeld wordt gebruikt ongelooflijk veel bizarre karakters om zo een erg 'cool' ogende user interface te maken](../assets/0_intro/kerosenethunder_mockup.png)
 
 ### Unicode karakters tonen
@@ -13,7 +13,9 @@ Dit gaat als volgt in z'n werk:
 
 1. Zoek het teken\(s\) dat je nodig hebt in een Unicode-tabel \([deze is handig](https://Unicode-table.com/en/)\)
 2. Plaats bovenaan je Main: `Console.OutputEncoding = System.Text.Encoding.UTF8;`
-3. Je kan nu op 2 manieren dit teken in console plaatsen
+3. Je kan nu op 2 manieren dit teken in console plaatsen.
+
+<!---{pagebreak} --->
 
 Stel je voor dat we volgende "omgekeerde t" wensen te gebruiken in onze applicatie:
 <!---{height:30%} --->

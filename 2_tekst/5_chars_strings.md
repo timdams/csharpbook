@@ -56,19 +56,5 @@ Console.WriteLine(eenKarakter);
 Console.WriteLine(eenString);
 Console.WriteLine(eenGetal);
 ```
-De output van dit briljant onnuttige programma zal dan zijn:
 
-<!---{line-numbers:false}--->
-```text
-1
-1
-1
-```
-
-Fout gebruik van literals zal code geven die uiteraard niet zal gecompileerd worden:
-
-```java
-char eenKarakter = "1"; //fout
-string eenString = '1'; //fout
-int eenGetal = '1'; //fout
-```
+Het programma zal driemaal een ``1`` onder elkaar tonen. Boeiend programma hoor.

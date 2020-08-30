@@ -100,7 +100,9 @@ Het resultaat in `var2` zal `20` zijn (alles na de komma wordt weggegooid bij ca
 Merk op dat `var1` nooit van datatype is veranderd; enkel de inhoud ervan (`20.4`) werd eruit gehaald, omgezet ("gecast") naar `20` en dan aan ``var2`` toegewezen dat enkel `int` aanvaardt.
 {% endhint %}
 
-### Narowing in de praktijk
+<!---{pagebreak} --->
+
+### Narrowing in de praktijk
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -172,6 +174,7 @@ Merk op dat er een subtiel verschil is tussen volgende 2 lijnen code:
 In het eerste zullen we het resultaat van de som naar `double`` omzetten. In het tweede, door de volgorde van berekeningen door de haakjes, zullen we de casting pas doen **na de deling** en zal dus 22 in plaats van 22.5 als resultaat geven.
 {% endhint %}
 
+<!---{pagebreak} --->
 
 ### Widening
 Casting is  niet nodig als je aan **widening** doet: een *kleiner* type in een *groter* type steken (met groter/kleiner wordt meestal het aantal bits bedoeld die het datatype per variabele van dit type nodig heeft), als volgt:

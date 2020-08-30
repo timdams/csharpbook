@@ -17,13 +17,18 @@ Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# meth
 
 ### Je eerste console programma
 
-Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het nog niet open is). **Veeg de code die hier reeds staat niet weg!**
+Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het nog niet open is). 
 
-Voeg onder de lijn ``Console.WriteLine("Hello World!");`` volgende code toe:
+
+**Veeg de code die hier reeds staat niet weg!**
+
+Voeg onder de lijn ``Console.WriteLine("Hello World!");`` volgende code toe (vergeet de puntkomma niet):
 
 ```java
 Console.WriteLine("Hoi, ik ben het!");
 ```
+
+<!---{pagebreak} --->
 
 Zodat je dus volgende code krijgt:
 
@@ -46,16 +51,9 @@ namespace Demo1
 Compileer deze code en voer ze uit: **druk hiervoor weer op het groene driehoekje**. Of via het menu Debug en dan Start Debugging.
 
 {% hint style='danger' %}
-**Let erop dat je iedere 'zin' eindigt met een puntkomma.**
-{% endhint %}
-
-
-{% hint style='danger' %}
 **Moet ik niets bewaren?**
 
-Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen bewaard. Trouwens: **Kies nooit voor "save as..."!**
-
-Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.
+Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen automatisch bewaard. Trouwens: **Kies nooit voor "save as..."!** want dan bestaat de kans dat je project niet meer compileert. Dit zal aardig wat problemen in je project voorkomen, geloof me maar.
 {% endhint %}
 
 #### Analyse van de code
@@ -74,18 +72,13 @@ Laat je niet afschrikken door wat er nu volgt. We gooien je even in het diepe ge
 * **``Console.WriteLine("Hoi ik ben het");``**: en ook deze lijn komt op het scherm.
 * **Accolades**: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
 
-{% hint style='tip' %}
-"Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt op [helloworldcollection.de](http://helloworldcollection.de/). Deze site toont in honderden programmeertalen hoe je "Hello world" moet programmeren.
-{% endhint %}
-
-
 <!---NOBOOKSTART--->
 {% hint style='tip' %}
 <!---NOBOOKEND--->
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/care.png)
-Jawadde...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Ik snap het zelf ook niet. Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
+Jawadde...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen".  Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
 
 Laat deze info rustig inzinken en onthoud alvast volgende belangrijke zaken:
 
@@ -105,6 +98,10 @@ De oerman verschijnt wanneer we een stevige stap gezet hebben en je mogelijk eve
 {% hint style='tip' %}
 "Hello world" op het scherm laten verschijnen wanneer je een nieuwe programmeertaal leert is ondertussen een traditie bij programmeurs. Er is zelfs een website die dit verzamelt op [helloworldcollection.de](http://helloworldcollection.de/). Deze site toont in honderden programmeertalen hoe je "Hello world" moet programmeren.
 {% endhint %}
+
+
+<!---{pagebreak} --->
+
 
 ### WriteLine: Tekst op het scherm
 

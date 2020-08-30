@@ -1,17 +1,6 @@
 ## Variabelen
 
 
-<!---NOBOOKSTART--->
-{% hint style='warning' %}
-<!---NOBOOKEND--->
-<!---{aside}--->
-<!--- {float:right, width:50%} --->
-![](../assets/attention.png)
-Wat een gortdroge tekst was me dat nu net? Waarom moeten we al deze datatypes kennen? Wel, we hebben deze nodig om **variabelen** aan te maken. En variabelen zijn het hart van ieder programma. Zonder variabelen ben je aan het programmeren aan een programma dat een soort vergevorderde vorm van dementie heeft en hoegenaamd niets kan onthouden. 
-<!---{/aside}--->
-<!---NOBOOKSTART--->
-{% endhint %}
-<!---NOBOOKEND--->
 
 De data die we in een programma gebruiken bewaren we in een **variabele van een bepaald datatype**. Een variabele is een plekje in het geheugen dat in je programma zal gereserveerd worden om daarin data te bewaren van het type dat je aan de variabele hebt toegekend. Een variabele zal intern een geheugenadres hebben (waar de data in het geheugen staat) maar dat zou lastig programmeren zijn indien je steeds dit adres moest gebruiken. Daarom moeten we ook steeds een naam oftewel **identifier** aan de variabele geven zodat we makkelijk de geheugenplek kunnen aanduiden en niet moeten werken met een lang hexadecimaal geheugen adres (bv 0x4234FE13EF1).
 
@@ -115,6 +104,8 @@ Wil je echter andere getaltypes dan ``int`` of ``double `` een waarde geven dan 
 * ``F`` of ``f`` voor ``float``, vb: ``12.5f``.
 * ``M`` of ``m`` voor ``decimal``, vb: ``12.5M``.
 
+<!---{pagebreak} --->
+
 Naast getallen zijn er uiteraard ook nog andere datatypes waar we de literals van moeten kunnen schrijven:
 
 * Voor **``bool``** is dit enkel ``true``  of ``false``.
@@ -154,6 +145,8 @@ byte myByteValue =  0b‭00100100‬1;
 ``` 
 
 Deze schrijfwijzen kan handig zijn wanneer jet met binaire of hexadecimale data wilt werken die je bijvoorbeeld uit een stuk hardware hebt uitgelezen (bijvoorbeeld een Arduino of Raspberry Pi).
+
+<!---{pagebreak} --->
 
 ### Nieuwe waarden overschrijven oude waarden
 

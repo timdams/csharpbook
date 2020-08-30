@@ -1,10 +1,5 @@
 ## Invoer van de gebruiker verwerken
 
-{% hint style='tip' %}
-Deze sectie is niet lang, maar het is wel een zeer belangrijk aspect van console-applicaties!
-{% endhint %}
-
-
 En applicatie die geen input van de gebruiker vergt kan even goed een screensaver zijn. We hebben reeds gezien hoe we met ``Console.ReadLine()`` de gebruiker tekst kunnen laten invoeren en die we dan vervolgens kunnen verwerken om bijvoorbeeld z'n naam op het scherm te tonen:
 
 
@@ -34,6 +29,8 @@ Console.WriteLine("Geef je gewicht:");
 string inputGewicht= Console.ReadLine();
 double gewicht= Convert.ToDouble(inputGewicht);
 ```
+
+<!---{pagebreak} --->
 
 Voorgaande code kan nog 1 lijntje sneller door ``ReadLine`` ogenblikkelijk als invoer aan de Convert-methode te geven:
 

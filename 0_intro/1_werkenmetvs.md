@@ -50,8 +50,10 @@ De allereerste keer dat je VS opstart krijg je 2 extra schermen te zien:
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/neotim.png)
-Dark is uiteraard het coolste thema om in te coderen. Je voelt je ogenblikkelijk Neo uit The Matrix. Het nadeel van dit thema is dat het meer meer inkt verbruikt indien je screenshots in een boek zoals dit wilt plaatsen. De keuze voor Development Setting kan je naar  "Visual C#" veranderen, maar General is even goed (je zal geen verschil merken in eerste instantie). Je kan dit achteraf nog aanpassen in VS via "Tools", dan "Import and Export Settings" en kiezen voor "Import and Export Settings Wizard".
-<!--- {height:30%} --->
+Dark is uiteraard het coolste thema om in te coderen. Je voelt je ogenblikkelijk Neo uit The Matrix. Het nadeel van dit thema is dat het meer meer inkt verbruikt indien je screenshots in een boek zoals dit wilt plaatsen. De keuze voor Development Setting kan je naar  "Visual C#" veranderen, maar General is even goed (je zal geen verschil merken in eerste instantie). 
+
+Je kan dit achteraf nog aanpassen in VS via "Tools" in de menubalk, dan "Import and Export Settings" en kiezen voor "Import and Export Settings Wizard".
+<!---{height:40%} --->
 ![](../assets/0_intro/vstheme.jpg)
 <!---{/aside}--->
 <!---NOBOOKSTART--->
@@ -62,16 +64,16 @@ Dark is uiteraard het coolste thema om in te coderen. Je voelt je ogenblikkelijk
 #### Project keuze
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaan aanmaken zullen deze in de toekomst ook op dit scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 
 
-<!--- {height:20%} --->
-![Keuze van je projecttype](../assets/0_intro/vsstart.png)
+<!--- {height:30%} --->
+![Het startscherm](../assets/0_intro/vsstart.png)
 
 
 #### Een nieuw project aanmaken
 
 We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 
-<!--- {height:50%} --->
-![Kies je projectype](../assets/0_intro/proj.jpg)
+<!--- {height:30%} --->
+![Kies je projecttype](../assets/0_intro/proj.jpg)
 
 {% hint style='tip' %}
 Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
@@ -81,6 +83,7 @@ In dit boek zullen we altijd het  Project Type  **Console App (.NET Core)** gebr
 
 Kies dit type en klik 'Next'.
 
+<!--- {height:10%} --->
 ![Een VS project aanmaken. Zoals je ziet zal dit soort applicatie op alle gekende computer besturingssystemen werken (Windows, Linux, Mac)](../assets/0_intro/vsproject.png)
 
 Op het volgende scherm kan je een naam ingeven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoud waar je je project aanmaakt zodat je dit later terugvindt**.
@@ -92,11 +95,12 @@ Op het volgende scherm kan je een naam ingeven voor je project alsook de locatie
 {% hint style='tip' %}
 Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld geraakt met projecten zoals Project201, etc. waarvan je niet meer weet welke belangrijk zijn en welke niet.
 {% endhint %}
-Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen).
+Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen). We raden af om de checkbox onderaan aan te vinken. In de toekomst zal het nuttig zijn dat je meer dan 1 project per solution zal kunnen hebben. Lig er nog niet van wakker. **Klik nu op create**.
 
-![Instellingen van een project. We raden af om de checkbox onderaan aan te vinken](../assets/0_intro/vsprojectname.PNG)
-
-**Klik nu op create**.
+<!---NOBOOKSTART--->
+<!--- {height:35%} --->
+![Instellingen van een project. ](../assets/0_intro/vsprojectname.PNG)
+<!---NOBOOKEND--->
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
 
@@ -112,13 +116,19 @@ Laat je niet afschrikken door VS. Het is een imponerend programma, maar je zal e
 
 We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van een nieuw programma.
 
-![VS Ide Overzicht](../assets/0_intro/vside.png)
+![VS IDE Overzicht](../assets/0_intro/vside.png)
 
 * Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z'n eigen **tab** krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt. Merk op dat enkel open bestanden een tab krijgen. Je kan deze tabbladen ook "lostrekken" om bijvoorbeeld enkel dat tabblad op een ander scherm te plaatsen.
 
 * De "**solution explorer**" toont alle bestanden en elementen die tot het huidige project behoren. Als we dus later nieuwe bestanden toevoegen dan kan je die hier zien (en openen). Verwijder hier géén bestanden zonder dat je zeker weet wat je aan het doen bent.
 
 * Het **properties** venster (eigenschappen) is een belangrijk venster. Hier komen alle eigenschappen van het huidige geselecteerde element. Selecteer bijvoorbeeld maar eens Program.cs in de solution explorer en merk op dat er allerlei eigenschappen getoond worden. Onderaan het Properties venster wordt steeds meer informatie getoond over de huidig geselecteerde eigenschap.
+
+{% hint style='danger' %}
+Indien je een nieuw project hebt aangemaakt en de code die je te zien krijgt lijkt in de verste verte niet op de code die je hierboven ziet dan heb je vermoedelijk een verkeerd projecttype aangemaakt. De meest gemaakte fout in deze fase is dat je een Visual Basic (VB) Console applicatie hebt gekozen en dus niet Visual C# versie. Deze staan vlak onder elkaar bij het keuzemenu en je ziet het verschil amper. (Je ziet het verschil onder andere aan het kleine VB logo in het icoontje).
+
+![VB en C#: vrienden voor het leven, met een lang, kleurrijk, bewogen verleden](../assets/1_csharpbasics/vbcs.png)
+{% endhint %}
 
 {% hint style='tip' %}
 
@@ -129,9 +139,11 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 * Om eenvoudig een venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu).
 * Je kan ook altijd je layout in z'n geheel **resetten**: ga naar "Window" en kies "Reset window layout".
 
-
+<!---NOBOOKSTART--->
 <!--- {width:40%} --->
 ![De layout resetten, een optie die in het echte leven ook soms handig zou zijn, denk je niet?](../assets/0_intro/vsreset.png)
+
+<!---NOBOOKEND--->
 {% endhint %}
 
 ### Je programma starten
@@ -149,6 +161,8 @@ Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af 
 ### Is dit alles?
 
 Nee hoor. Visual Studio is lekker groot, maar laat je dat niet afschrikken. Net zoals voor het eerst op een nieuwe reisbbestemming komen, kan deze in het begin overweldigend zijn, tot je weet waar het zwembad en de pingpongtafel staat en je van daaruit je weg stilletjes aan leert kennen.
+
+<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 

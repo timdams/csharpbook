@@ -72,6 +72,7 @@ double randomgetal= 5.0+  (myran.NextDouble() * 7.5);
 
 Je bereik is 7.5, namelijk ``12.5 - 5.0`` en vermenigvuldig je het resultaat van je generator hiermee. Vervolgens verschuif je dat bereik naar 5 en verder door er 5 bij op te tellen. Merk op dat we de volgorde van berekeningen *sturen* met onze ronde haakjes.
 
+<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -79,7 +80,7 @@ Je bereik is 7.5, namelijk ``12.5 - 5.0`` en vermenigvuldig je het resultaat van
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-**"HelpIk krijg dezelfde random getallen? Wat nu?"**
+**"Help! Ik krijg dezelfde random getallen? Wat nu?"**
 
 Wel wel, wie we hier hebben. Werkt je Random generator niet naar behoren? Wil je het ding in de vuilbak gooien omdat het niet zo willekeurige lijkt te werken als je hoopte?  Gelukkig ben ik er! Zet je helm dus op en luister.
 

@@ -15,9 +15,7 @@ De voorman hier! Escape characters zijn niet de boeiendste materie om te besprek
 
 Naast letters en tekens mogen in string en chars ook escape characters staan.  In C# hebben bepaalde tekens namelijk een speciale functie, zoals de dubbele aanhalingstekens (`"`) om het begin of einde van een string-literal aan te geven. We hebben dus een manier nodig om aan te duiden wanneer de compiler het eerstvolgende teken als een ``char`` moet beschouwen, of als een teken dat deel uitmaakt van de code zelf.
 
-Zonder aan te geven dat we letterlijk dat teken willen tonen, en het niet in z’n C# functie gebruiken, zouden we problemen krijgen. 
-
-Escape characters worden met een backslash (`\`) aangeduid, gevolgd door het karakter dat we wensen te tonen.
+Zonder aan te geven dat we letterlijk dat teken willen tonen, en het niet in z’n C# functie gebruiken, zouden we problemen krijgen.  **Escape characters worden met een backslash (`\`) aangeduid, gevolgd door het karakter dat we wensen te tonen.**
 
 ### Voorbeeld van escape chars
 
@@ -30,6 +28,7 @@ char apostrof= ''';
 
 Het gevolg is een litanie aan vreemde foutboodschappen omdat er na de sluitende apostrof (het tweede) plots nog een apostrof (het derde) verschijnt. VS is volledig in de war zo!
 
+<!--- {width:35%} --->
 ![Hulp! VS snapt er niets van](../assets/1_csharpbasics/escape.png)
 
 De juiste manier is om dus een escape character te gebruiken. We gaan met de backslash aanduiden dat het volgende teken (de tweede apostrof) een ``char`` voorstelt en niet het sluitende teken in de code.
@@ -46,7 +45,7 @@ Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de bel
 
 * `\'` : de apostrof zoals zonet besproken
 * `\"` : een aanhalingsteken zodat je dat ook in je string kunt gebruiken zonder deze af te sluiten
-* `\\` : een backslash in je tekst tonen. Want een enkele backslash is natuurlijk de start van een escape character.
+* `\\` : een backslash in je tekst tonen. Hoe toon je dan twee backslashes? ``"\\\\"``.
 * `\n` : New line (zogenaamde 'enter')
 * `\t` : Horizontal tab 
 * `\uxxxx` – Unicode escape sequence for character with hex value xxxx
@@ -73,12 +72,9 @@ Merk op dat we voorgaande code nog meer Inception-like kunnen maken door de stri
 Console.WriteLine("Console.WriteLine(\"Cool he\");");
 ```
 
-Beide voorbeelden zullen dus volgende tekst op het scherm geven:
+Beide voorbeelden zullen dus volgende tekst op het scherm geven: ``Console.WriteLine("Cool he");``
 
-<!---{line-numbers:false}--->
-```text
-Console.WriteLine("Cool he");
-```
+<!---{pagebreak} --->
 
 ### Witregels en tabs
 
@@ -96,16 +92,13 @@ Een zin.         na een tab
 Dan eentje op een nieuwe regel
 ```
 
-{% hint style='warning' %}
-Het is belangrijk dat je vlot kan werken met escape characters in string, daar we dit geregeld nodig zullen hebben.
+### Over tabstops
 
-**De belangrijkste escape chars zijn: `` \t \n \" \' \\``**
-{% endhint %}
+Als je het niet gewoon bent de tab-toets op je toetsenbord te gebruiken dan is de eerste werking van ``\t`` mogelijk verwarrend. Nochtans is ``\t`` in een string gebruiken exact hetzelfde als op de tab-toets te duwen. 
 
+In je console-scherm zijn de tab stops vooraf bepaald. Wanneer je dus een tab invoegt zal de cursor zich verplaatsen naar de eerstvolgende tab stop. 
 
-{% hint style='tip' %}
-**Tab stop**
-Als je het niet gewoon bent de tab-toets op je toetsenbord te gebruiken dan is de eerste werking van ``\t`` mogelijk verwarrend. Nochtans is ``\t`` in een string gebruiken exact hetzelfde als op de tab-toets te duwen. In je console-scherm zijn de tab stops vooraf bepaald. Wanneer je dus een tab invoegt zal de cursor zich verplaatsen naar de eerstvolgende tab stop. In volgende tekstuitvoer zie je de tabstops op de 2 lijn "gevisualiseerd":
+In volgende tekstuitvoer zie je de tabstops op de tweede lijn "gevisualiseerd":
 
 <!---{line-numbers:false}--->
 ```text
@@ -120,7 +113,7 @@ Console.WriteLine("01234567890123456789012345678901234567890123456789");
 Console.WriteLine("\t1\t2\t3\t4\t5");
 ```
 
-{% endhint %}
+
 
 ### Biep biep
 
@@ -131,6 +124,8 @@ Volgende codevoorbeeld zal, als alles goed gaat, een zin op het scherm tonen en 
 ```java
 Console.WriteLine("Een zin en dan nu de biep\a");
 ```
+
+<!---{pagebreak} --->
 
 ### Het apenstaartje om escape characters te negeren
 

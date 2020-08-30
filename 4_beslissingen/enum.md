@@ -110,6 +110,8 @@ dagKeuze = Weekdagen.Donderdag;
 
 Kortom: we hebben variabelen zoals we gewoon zijn, het enige verschil is dat we nu beperkt zijn in de waarden die we kunnen toewijzen. Deze kunnen enkel de waarden krijgen die in het type gedefiniëerd werden. De code is nu ook een pak leesbaarder geworden.
 
+<!---{pagebreak} --->
+
 ### Enums en beslissingen werken graag samen
 Ook de beslissingsstructuren worden leesbaarder:
 ```java
@@ -136,6 +138,8 @@ Hoe?
 * Klik nu met de muis eender waar binnen de accolades van de ``switch``
 * Profit!
 {% endhint %}
+
+<!---{pagebreak} --->
 
 ### Conversie van en naar enum variabelen
 Intern worden de enum-variabelen als ints bewaard. In het geval van de ``Weekdagen`` zal maandag standaard de waarde 0 krijgen, dinsdag 1, etc.
@@ -205,6 +209,8 @@ static void Main(string[] args)
 ```
 {% endhint %}
 
+<!---{pagebreak} --->
+
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
 <!---NOBOOKEND--->
@@ -249,15 +255,6 @@ Een ander typisch voorbeeld is schaken. We maken een enum om de speelstukken voo
 if(spelstuk== Schaakstuk.Paard)
 ```
 
-En zoals reeds vermeld, je hebt al met enums gewerkt in het eerste hoofdstuk van dit boek toen je met ``ConsoleColor`` speelde. Vanaf nu kan je dus dit soort toffe dingen doen:
-
-```java
-ConsoleColor mijnLievelingsKleur = ConsoleColor.Green;
-
-//Verderop...
-if(Console.BackgroundColor != mijnLievelingsKleur)
-    Console.BackgroundColor = mijnLievelingskleur;
-```
 
 <!---{/aside}--->
 <!---NOBOOKSTART--->

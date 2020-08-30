@@ -6,17 +6,13 @@ Het resultaat van deze expressie is  **``5``** (en dus van type ``int``).
 
 ### Expressie-resultaat toewijzen
 
-Meestal zal je expressies schrijven waarin je bewerkingen op en met variabelen uitvoert. Vervolgens zal je het resultaat van die expressie willen bewaren voor verder gebruik in je code.
-
-Voorbeeld van **expressie**-resultaat toekennen:
+Meestal zal je expressies schrijven waarin je bewerkingen op en met variabelen uitvoert. Vervolgens zal je het resultaat van die expressie willen bewaren voor verder gebruik in je code. In de volgende code kennen we het **expressie**-resultaat toe aan een variabele:
 
 ```java
 int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
 ```
 
-Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van elkaar wordt afgetrokken en vervolgens bewaard worden in ``temperatuursVerschil``.
-
-De voorgaande code kan ook langer geschreven worden als:
+Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van elkaar wordt afgetrokken en vervolgens bewaard worden in ``temperatuursVerschil``. De voorgaande code kan echter ook langer geschreven worden als:
 
 ```java
 int tussenResultaat = temperatuurGisteren - temperatuurVandaag;
@@ -41,8 +37,7 @@ Om expressies te gebruiken hebben we ook zogenaamde **operators** nodig. Operato
 
 1. **Haakjes**
 2. **Vermenigvuldigen, delen en modulo**: ``*`` (vermenigvuldigen), ``/`` (delen) en ``%`` (rest na deling, ook modulo genoemd)
-3. **Optellen en aftrekken**: `+` en `-`
-(etc.)
+3. **Optellen en aftrekken**: `+` en `-`, enz.
 
 {% hint style='tip' %}
 We spreken over operators en **operands**. Een operand is het element dat we links en/of rechts van een operator zetten. In de som ``3+2`` zijn ``3`` en ``2`` de operanden, en ``+`` de operator. In dit voorbeeld spreken we van een **binaire operator** omdat er twee operanden zijn.
@@ -85,6 +80,8 @@ Console.WriteLine("Indien het getal als rest 0 geeft is deze even.");
 Console.WriteLine("De rest is: "+ rest);
 ```
 
+<!---{pagebreak} --->
+
 #### Verkorte operator notaties
 Heel vaak wil je de inhoud van een variabele bewerken en dan terug bewaren in de variabele zelf. Bijvoorbeeld een variabele vermenigvuldigen met 10 en het resultaat ervan terug in de variabele plaatsen. Hiervoor zijn enkele verkorte notaties in C#.
 Stel dat we een variabele ``int getal`` hebben:
@@ -102,7 +99,7 @@ Stel dat we een variabele ``int getal`` hebben:
 Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter zijn om te lezen. Bij twijfel, gebruik gewoon de lange notatie. 
 {% endhint %}
 
-###  Expressiedatatypes 
+##  Expressiedatatypes 
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -136,7 +133,9 @@ Bovenstaande code geeft volgende fout:
 
 **Let hier op!**
 
-#### But wait... it gets worse! 
+<!---{pagebreak} --->
+
+### But wait... it gets worse! 
 
 Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. Je bent echter alle informatie na de komma kwijt. Kijk maar:
 ```java
@@ -147,7 +146,7 @@ Console.WriteLine(result);
 ```
 **Er zal ``4`` op het scherm verschijnen!** (niet ``4.5`` daar dat geen ``int`` is). 
 
-#### Datatypes mengen in een expressie 
+### Datatypes mengen in een expressie 
 
 Wat als je datatypes mengt? Als je een berekening doet met bijvoorbeeld een ``int`` en een ``double`` dan zal C# het 'grootste' datatype kiezen. In dit geval een double. 
 
@@ -174,9 +173,7 @@ Console.WriteLine(result);
 ```
 En nu krijgen we wel ``4.5`` aangezien we nu een ``int`` door een ``double`` delen en C# dus ook het resultaat dan als een ``double`` zal teruggeven.
 
-
-
-
+<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -216,7 +213,7 @@ Nu krijgt het gedeelte tussen de haakjes een ``double`` als resultaat, namelijk 
 
 
 <!---NOBOOKSTART--->
-### Kennisclip
+## Kennisclip
 ![](../assets/infoclip.png)
 * [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3a0370ef-b3da-4642-aeaa-a9660083e329)
 <!---NOBOOKEND--->

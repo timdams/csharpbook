@@ -66,6 +66,7 @@ switch (option)
 De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.). Uiteraard moeten de case waarden van hetzelfde datatype zijn als die van de testwaarde.
 {% endhint %}
 
+<!---{pagebreak} --->
 
 ### Fallthrough
 

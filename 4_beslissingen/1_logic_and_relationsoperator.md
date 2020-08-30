@@ -44,11 +44,9 @@ Er is een groot verschil tussen de ``=``-operator en de ``==`` operator. De eers
 
 Vaak wil je meer complexe keuzes maken ("ga verder indien ik honger heb EN genoeg geld bij heb). Dit doen we met de zogenaamde  **logische operators**. Er zijn 3 operators die je hiervoor kunt gebruiken: de EN-, OF- en NIET-operators (*and, or, not*). Deze ken je mogelijk ook nog van de booleaanse algebra:
 
-| Operator| Betekenis| Werking|
-| ---------|---------|---------|
-| ``&&`` | EN | Geeft enkel ``true`` als beide operands ``true`` zijn|
-| <code>&#124;&#124;</code> | OF| Geeft  ``true`` indien minstens 1 operand ``true`` is|
-| ``!``  | NIET| inverteert de waarde van de expressie (``true`` wordt ``false en omgekeerd)
+* ``&&`` (*En*) : Geeft enkel ``true`` als beide operands ``true`` zijn
+* ``||`` (*Of*) :  Geeft  ``true`` indien minstens 1 operand ``true`` is
+* ``!``  (*Niet*) : Inverteert de waarde van de expressie (``true`` wordt ``false en omgekeerd)
 
 De logische operators geven ook steeds een ``bool`` terug maar verwachten enkel operanden van het type **``bool``**. Als je dus schrijft ``true||false``  ("true OF false") zal het resultaat ``true`` zijn.
 

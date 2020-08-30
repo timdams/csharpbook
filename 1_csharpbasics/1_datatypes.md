@@ -102,6 +102,8 @@ Bij twijfel opteren we meestal voor kommagetallen om het **``double``** datatype
 De precisie van een getal is het aantal beduidende of significante cijfers. 2.2345 (precisie van 5) heeft bijvoorbeeld een hogere precisie dan 2.23 (precisie van 3).
 {% endhint %}
 
+<!---{pagebreak} --->
+
 ### Boolean datatype
 
 ``bool`` (**boolean**) is het eenvoudigste datatype van C#. Het kan maar 2 mogelijke waarden bevatten: ``true`` of ``false``. 0 of 1 met andere woorden. 
@@ -113,8 +115,21 @@ Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken ter
 {% endhint %}
 
 ### Tekst/String datatype
-We besteden verderop een heel apart hoofdstuk aan tonen hoe je tekst en enkele karakters kan bewaren in variabelen. Sneakpreview: 
+We besteden verderop een heel apart hoofdstuk aan tonen hoe je een enkel karakter of volledige flarden tekst kan bewaren in variabelen. 
+
+Hier alvast een sneakpreview: 
 * Tekst kan bewaard worden in het ``string`` datatype
 * Een enkel karakter wordt bewaard in het ``char`` datatype dat we ook hierboven al even hebben zien passeren.
 
 
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/attention.png)
+Wat een gortdroge tekst was me dat nu net? Waarom moeten we al deze datatypes kennen? Wel, we hebben deze nodig om **variabelen** aan te maken. En variabelen zijn het hart van ieder programma. Zonder variabelen ben je aan het programmeren aan een programma dat een soort vergevorderde vorm van dementie heeft en hoegenaamd niets kan onthouden. 
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->

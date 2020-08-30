@@ -67,6 +67,8 @@ Zoals je kan zien is dit veel meer leesbare code dan de eerste manier.
 
 Het resultaat zal dan worden: ```Ik ben Finkelstein en ik ben 13 jaar oud.```
 
+<!---{pagebreak} --->
+
 #### Berekeningen doen bij string interpolatie
 Je mag eender welke *expressie* tussen de accolades zetten bij string interpolation, denk maar aan:
 ```java
@@ -100,12 +102,7 @@ double number = 12.345;
 Console.WriteLine($"{number:F2}");
 ```
 
-Er zal op het scherm verschijnen:
-
-<!---{line-numbers:false}--->
-```text
-12.34
-```
+Er zal ``12.34`` op het scherm verschijnen: 
 
 Merk op dat bij string formatting er **niet afgerond** wordt. C# zal eenvoudiger weg alle decimalen wegkappen die niet gewenst zijn, ongeacht hun waarde.
 

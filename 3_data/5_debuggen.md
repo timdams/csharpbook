@@ -19,7 +19,7 @@ Neem water
 Voeg beide samen
 ```
 
-Dit is dus een logische fout, oftewel bug (in dit geval een **BOEM!!!!*).
+Dit is dus een logische fout, oftewel bug (in dit geval een **BOEM!!!!**).
 
 
 ### Debuggen met Visual Studio

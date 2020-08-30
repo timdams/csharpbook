@@ -50,6 +50,8 @@ Deze keywords zijn:
 De keywords in vet zijn keywords die we in het eerste deel van dit boek zullen bekijken. Die in cursief in het tweede deel. De overige zal je zelf moeten ontdekken (of mogelijk zelfs nooit in je carrière gebruiken vanwege hun obscure nut).
 {% endhint %}
 
+<!---{pagebreak} --->
+
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
 <!---NOBOOKEND--->
@@ -98,12 +100,13 @@ De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in on
   * een cijfer (``0`` tot en met ``9``)
 * **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houd het best leesbaar.
 
+<!---{pagebreak} --->
 
-{% hint style='warning' %}
-Volg je deze regels niet dan zal je code niet gecompileerd worden en zal VS de identifiers in kwestie als een error aanduiden. Of beter, als een hele hoop errors. Schrik dus niet als je bijvoorbeeld het volgende ziet:
+Volg je voorgaande regels niet dan zal je code niet gecompileerd worden en zal VS de identifiers in kwestie als een error aanduiden. Of beter, als een hele hoop errors. Schrik dus niet als je bijvoorbeeld het volgende ziet:
 
+<!--- {width:70%} --->
 ![Zoals je ziet raakt VS volledig de kluts kwijt als je je niet houdt aan de identifier regels](../assets/1_csharpbasics/frerror.jpg)
-{% endhint %}
+
 
 #### Enkele voorbeelden
 
