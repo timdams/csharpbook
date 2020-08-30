@@ -131,33 +131,33 @@
   * [Base keyword](12_overerving/2_base.md)
   * [_Oefeningen](12_overerving/A_PracticaSimpel.md)
   * [_Corona Missie](12_overerving/coronamissieoverering.md)
-* H14: Advanced overerving
+* H14: Exception handling
+  * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
+  * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
+  * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)
+* H15: Advanced overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
   * [_Oefeningen](13_advancedovererving/A_Practica.md)
   * [_Corona Missie](13_advancedovererving/coronamissie.md)
-* H15: Compositie
+* H16: Compositie
   * [Compositie](14_compositie/0_compositie_intro.MD)
   * [_Oefeningen](14_compositie/A_PracticaComp.md)
   * [_Corona Missie](14_compositie/coronamissie.md)
-* H16: Polymorfisme
+* H17: Polymorfisme
   * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
   * [Polymorfisme in de praktijk](15_polymorfisme/polypraktijd.md)
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Objecten vergelijken: alles komt samen](18_IsAs/6_equals.md)
   * [_Oefeningen](15_polymorfisme/A_Practica.md)
   * [_Corona Missie](15_polymorfisme/coronamissie.md)
-* H17: Interfaces
+* H18: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
   * [Interfaces voorbeeld met president](16_interfaces/presidentinterfaces.md)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Final chapter: we brengen alles samen](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [_Oefeningen](16_interfaces/A_practica.md)
   * [_Corona Missie](16_interfaces/coronamissie.md)
-* H18: Exception handling
-  * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
-  * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
-  * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
