@@ -1,6 +1,6 @@
 # Zelf exceptions opwerpen
 
-Je kan ook in je eigen code uitzonderingen ‘opgooien’, zodat deze elders opgevangen worden. Je kan hierbij zelf exceptions maken (zie volgende hoofdstukje) of gewoon gebruik maken van een bestaande Exception-klasse.
+Je kan ook in je eigen code uitzonderingen  opwerpen, zodat deze elders opgevangen worden. Je kan hierbij zelf exceptions maken (zie volgende sectie) of gewoon gebruik maken van een bestaande Exception-klasse.
 
 Een voorbeeld:
 
@@ -20,7 +20,7 @@ static void Main(string[] args)
     {
         Console.WriteLine(DoeIets(0));
     }
-    catch(Exception e)
+    catch(DivideByZeroException e)
     {
         Console.WriteLine(e.Message);
     }
@@ -29,11 +29,9 @@ static void Main(string[] args)
 
 De uitvoer zal zijn:
 
-![Het is geen goede gewoontje om je foutboodschappen uit meerdere talen te laten bestaan](../assets/20_exceptions/eigenex.png)
+![Het is geen goede gewoonte om je foutboodschappen uit meerdere talen te laten bestaan](../assets/20_exceptions/eigenex.png)
 
-De lijn ``throw new DivideByZeroException("Getal equals 0.You shouldn't do that!");`` zorgt er dus voor dat we een eigen boodschap 'verpakken'
-
-> Merk op dat het zelden aangeraden is om je foutboodschappen te hardcoden in je moedertaal.
+De lijn ``throw new DivideByZeroException("Getal equals 0.You shouldn't do that!");`` zorgt er dus voor dat we een eigen foutboodschap 'verpakken'
 
 # Een eigen exception ontwerpen
 
@@ -50,7 +48,9 @@ class MyException: Exception
 }
 ```
 
-Om deze exception nu zelf op te ‘gooien’ gebruiken we het keyword `throw`. In volgende voorbeeld gooien we onze eigen exception op een bepaald punt in de code en vangen deze dan op (de reden van de exception moet je zelf verzinnen, het is maar een onnozel voorbeeld):
+Om deze exception nu zelf op te werpen gebruiken we het keyword **``throw``**. 
+
+In volgende voorbeeld gooien we onze eigen exception op een bepaald punt in de code op en vangen deze dan op (de reden van de exception moet je zelf verzinnen, het is maar een onnozel voorbeeld):
 
 ```java
 static void Main(string[] args)
@@ -60,7 +60,7 @@ static void Main(string[] args)
         TimsMethod();
     }
  
-    catch (Exception e)
+    catch (MyException e)
     {
        Console.WriteLine(e.ToString());
     }     
