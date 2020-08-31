@@ -10,11 +10,12 @@ De slides zijn grotendeels de mijne, toch zal je hier en daar nog stukken vinden
 
 # Ultra editors Hall of Fame
 
-Eerst wil ik vier studenten apart bedankt voor hun hardcore input in dit boek, namelijk:
+Eerst wil ik vijf studenten apart bedankt voor hun hardcore input in dit boek, namelijk:
 
 * Claeys Ailko
 * Van Driel Kevin
 * Van Riel Lennert
+* Simons Ruben
 * Hattas Zeno
 
 Zonder jullie zou dit boek een pak meer fouten, onduidelijkheden en Pokemons in plaats van Pokémons bevatten. Merci heren!
