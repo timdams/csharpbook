@@ -71,6 +71,8 @@ Array output:
 6
 ```
 
+<!---{pagebreak} --->
+
 ### Voorbeeldprogramma met methoden
 Volgend programma toont hoe we verschillende onderdelen van de code in methoden hebben geplaatst zodat:
 
@@ -114,6 +116,8 @@ static void Main(string[] args)
 } 
 ```
 
+<!---{pagebreak} --->
+
 ### Array als return-type bij een methode
 
 Een array kan ook gebruikt worden als het returntype van een array. Hiervoor zet je gewoon het type array als returntype (wederom zonder de grootte) in de methode-signature.
@@ -141,21 +145,23 @@ int[] mijnNieuweArray= MaakArray(4,666);
 Onthoud dat arrays altijd **by reference** naar en van methoden komen. Je werkt dus op de originele array, niet op een kopie er van!
 {% endhint %}
 
+<!---{pagebreak} --->
+
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
 <!---NOBOOKEND--->
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Snel, zet je helm op, voor er ongelukken gebeuren! We hadden al enkele keren gezegd dat arrays *by reference* worden meegegeven, maar wat is daar nu het gevolg van? Wel, laten we eens naar volgende programma'tje kijken dat ik heb geschreven om de nummering van de appartementen in een flatgebouw aan te passen. Zoals je weet is het gelijkvloers in sommige landen 0, terwijl in andere dit 1 is. Volgende programma past de "naam" van het gelijkvloers aan:
+Snel, zet je helm op, voor er ongelukken gebeuren! We hadden al enkele keren gezegd dat arrays *by reference* worden meegegeven, maar wat is daar nu het gevolg van? Wel, laten we eens naar volgende programma'tje kijken dat ik heb geschreven om de nummering van de appartementen in een flatgebouw aan te passen. Zoals je weet is het gelijkvloers in sommige landen 0, terwijl in andere dit 1 is. Volgende programma past het nummer van het gelijkvloers aan:
 
 ```java
 public static void Main()
 {
-    int[] getallen= {1,2,3};
-    Console.WriteLine($"VOOR:{getallen[0]}");
-    PasAan(getallen);
-    Console.WriteLine($"NA:{getallen[0]}");
+    int[] verdiepnummers= {1,2,3};
+    Console.WriteLine($"VOOR:{verdiepnummers[0]}"); // VOOR:1
+    PasAan(verdiepnummers);
+    Console.WriteLine($"NA:{verdiepnummers[0]}"); // NA:-1
 }
 
 static void PasAan(int[] inarr)
@@ -164,12 +170,7 @@ static void PasAan(int[] inarr)
 }
 ```
 
-Dankzij het feit dat we aan ``PasAan`` een array meegeven *by reference* zal de methode werken op de originele array en is deze code dus mogelijk. Kijk zelf maar naar de uitvoer:
-
-```text
-VOOR:1
-NA:-1
-```
+Dankzij het feit dat we aan ``PasAan`` een array meegeven *by reference* zal de methode werken op de originele array en is deze code dus mogelijk. 
 
 Vergelijk dit met volgende voorbeeld waar we een ``int`` als parameter meegeven die *by value* en niét *by reference* wordt meegegeven:
 
@@ -178,21 +179,16 @@ Vergelijk dit met volgende voorbeeld waar we een ``int`` als parameter meegeven 
 	{
 		int[] getallen= {1,2,3};
 		PasAan(getallen[0]);
-		Console.WriteLine(getallen[0]);
+		Console.WriteLine(getallen[0]); // NA:1
 	}
 	
 	static void PasAan(int inarr)
 	{
-	      inarr= -1;
+	      inarr= -1; //inarr wordt -1
 	}
 ```
 
-Daar de methode nu werkt met een kopie, zal de aanpassing in de methode dus geen invloed hebben op de origineel meegegeven ``int`` (ongeacht dat die deel uitmaakt van een array):
-
-```text
-VOOR:1
-NA:1
-```
+Daar de methode nu werkt met een kopie, zal de aanpassing in de methode dus geen invloed hebben op de origineel meegegeven ``int`` (ongeacht dat die deel uitmaakt van een array).
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}

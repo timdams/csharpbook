@@ -9,22 +9,20 @@ while (booleaanse expressie)
 }
 ```
 
-Waarbij, net als bij een ``if`` statement, de **conditie** uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators.
-
-**Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden.** Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de ``while``-loop nooit worden uitgevoerd.
+Waarbij, net als bij een ``if`` statement, de **conditie** uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators. **Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden.** Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de ``while``-loop nooit worden uitgevoerd.
 
 Telkens wanneer het programma aan het einde van het ``while`` codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer ``true`` dan wordt de code weer uitgevoerd. Van zodra de test ``false`` is zal de code voorbij het codeblock springen en na het ``while`` codeblok doorgaan.
 
 Het diagramma is duidelijk:
 
-<!---{width:80%}--->
+<!---{width:30%}--->
 ![While flowchart](../assets/3_loops/while.png)
+
 
 Een voorbeeld van een eenvoudige while loop:
 
 ```java
 int myCount = 0;
- 
 while (myCount < 100)
 {
     myCount++;
@@ -32,13 +30,13 @@ while (myCount < 100)
 }
 ```
 
-Zolang ``myCount`` kleiner is dan 100 (``myCount < 100``) zal myCount met 1 verhoogd worden en zal de huidige waarde van myCount getoond worden. We krijgen met dit programma dus alle getallen van 1 tot en met 100 op het scherm onder elkaar te zien.
+Zolang ``myCount`` kleiner is dan 100 (``myCount < 100``) zal myCount met 1 verhoogd worden en zal de huidige waarde van myCount getoond worden. We krijgen met dit programma dus alle getallen van 1 tot en met 100 op het scherm onder elkaar te zien. Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 nog wel getoond zal worden. **Begrijp je waarom?** Test dit zelf!
 
-Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 nog wel getoond zal worden. **Begrijp je waarom?** Test dit zelf!
+
 
 ### Complexe condities
 
-Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operators.
+Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operators. 
 
 Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang ``teller`` groter is dan 5 én de variabele ``naam`` van het type ``string`` niet gelijk is aan "tim":
 
@@ -53,14 +51,16 @@ while(teller > 5 && naam != "tim")
 Indien de loop-conditie nooit ``false`` wordt dan heb je een oneindige loop gemaakt. Soms is dit gewenst gedrag (bijvoorbeeld bij de gameloop) soms is dit een bug en zal je dit moeten debuggen.
 
 Volgende twee voorbeelden tonen dit:
-* Een bewust oneindige loop:
+
+Een **bewust oneindige loop**:
 ```java
 while(true)
 {
  //See you in infinity
 }
 ```
-* Een bug die een oneindige loop veroorzaakt:
+
+**Een bug die een oneindige loop veroorzaakt**:
 ```java
 int teller = 0; 
 while(teller<10)
@@ -73,6 +73,8 @@ while(teller<10)
 {% hint style='tip' %}
 Probeer er altijd zeker van te zijn dat de variabele(n) die je gebruikt in je test-conditie ook in de loop aangepast worden. Als deze in de loop constant blijft dan zal ook de test-conditie dezelfde blijven en heb je dus een oneindige loop gemaakt.
 {% endhint %}
+
+<!---{pagebreak} --->
 
 ### Scope van variabelen in loops
 Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je een variabele binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende iteratie van de loop start.
@@ -109,11 +111,11 @@ Console.WriteLine(som);
 
 In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 keer uitgevoerd worden**. Ongeacht de opgegeven conditie zal de do-while loop zijn code 1 keer uitvoeren. We herhalen deze zin uitdrukkelijk 2x zodat het verschil tussen beide type loops duidelijk blijft.
 
-Vergelijk volgende diagramma van de ``do while``:
+Vergelijk volgende diagramma van de ``do while`` met die hierboven van de ``while``:
 
 ![Do while flowchart](../assets/3_loops/dowhile.png)
 
-met die hierboven van de ``while``.
+
 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
@@ -127,7 +129,13 @@ do{
 Merk op dat achteraan de testconditie een puntkomma na het ronde haakje staat. **Deze vergeten is een véél voorkomende fout. Bij een while is dit niet!**
 {% endhint %}
 
-Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop:
+
+
+Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. 
+
+<!---{pagebreak} --->
+
+Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop:
 
 ```java
 int i = 10;

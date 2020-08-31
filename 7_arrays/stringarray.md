@@ -39,6 +39,8 @@ string myName="Tim";
 Console.WriteLine(myName.Length); //er verschijnt 3 op het scherm
 ```
 
+<!---{pagebreak} --->
+
 #### IndexOf
 
 Deze methode geeft  een ``int`` terug die de index bevat waar de string die je als parameter meegaf begint. Kan je gebruiken om te ontdekken of een bepaald woord bijvoorbeeld in een grote lap tekst voorkomt zoals volgende voorbeeld toont:

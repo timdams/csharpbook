@@ -52,19 +52,13 @@ static void ToonTitel()
 }
 ```
 
-{% hint style='tip' %}
-Het **void** keyword geeft aan dat deze methode niets "teruggeeft" van resultaat. **Zaken naar het scherm sturen heeft hier niets mee te maken.**
-{% endhint %}
+
 
 Vanaf nu kan je eender waar in je programma deze methode aanroepen door te schrijven:
 
 ```java
 ToonTitel();
 ```
-
-{% hint style='tip' %}
-Zoals je misschien al begint te vermoeden is dus de ``main`` waar we steeds onze code schrijven ook een methode.
-{% endhint %}
 
 Volgende programma'tje toont dit:
 
@@ -92,17 +86,35 @@ namespace Demo1
 }
 ```
 
+Volgende afbeelding toont hoe je programma doorheen de code loopt. De pijlen geven de flow aan:
 ![Visualisatie van bovenstaande code](../assets/4_methoden/timsoft.png)
 
+### Main is ook een methode
 
-### Returntypes, ``void`` en ``return``
+Zoals je misschien al begint te vermoeden is dus de ``main`` waar we steeds onze code schrijven ook een methode. Een console-applicatie heeft een startpunt nodig en daarom begint ieder programma in deze methode, maar in principe kan je even goed je programma op een andere plek laten starten.
 
-Voorgaande methode gaf niets terug. Dat kon je zien aan het keyword **``void``** (letterlijk: *leegte*). Vaak willen we echter wel dat de methode iets teruggeeft. Bijvoorbeeld het resultaat van een berekening.
+Wat denk je trouwens dat je dit doet?
+
+```csharp
+static void Main(string[] args)
+{
+    Main();
+}
+
+```
+
+<!---{pagebreak} --->
+
+
+## Returntypes van methoden
+
+Voorgaande methode gaf niets terug. Dat kon je zien aan het keyword **``void``** (letterlijk: *leegte*). 
+
+Vaak willen we echter wel dat de methode iets teruggeeft. Bijvoorbeeld het resultaat van een berekening.
 
 Het returntype van een methode geeft aan wat het type is van de data die de methode als resultaat teruggeeft bij het beëindigen ervan. Eender welk type dat je kent kan hiervoor gebruikt worden, zoals ``int``, ``string``, ``char``, ``float``, etc. Ook zelfgemaakte (of bestaande) ``enum`` datatypes kunnen als returnwaarde door het leven.
 
-Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegeven, dit doe je met het keyword **``return``**
-gevolgd door de variabele die moet teruggeven worden. 
+Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegeven, dit doe je met het keyword **``return``** gevolgd door de variabele die moet teruggeven worden. 
 
 Denk er dus aan dat deze variabele van het type is dat je hebt opgegeven als zijnde het returntype. Van zodra je ``return`` gebruikt zal je op die plek uit de methode 'vliegen'.
 
@@ -114,24 +126,18 @@ Volgend voorbeeld bestaat uit een methode die de naam van de auteur van je progr
 static string GetNameAuthor()
 {
     string name = "Tim Dams";
- 
     return name;
 }
 ```
 
-Mogelijke manieren om deze methode in je programma te gebruiken zouden kunnen zijn:
+Een mogelijke manier om deze methode in je programma te gebruiken zou nu kunnen zijn:
 
 ```java
 string myName = GetNameAuthor();
 ```
-
+<!---{width:60%}--->
 ![Visualisatie van de flow](../assets/4_methoden/return.png)
 
-Of bijvoorbeeld ook:
-
-```java
-Console.WriteLine($"This program is written by {GetNameAuthor()}");
-```
 
 {% hint style='tip' %}
 Zoals je merkt is er niet veel verschil met wat je al wist aangaande het gebruik van variabelen. Als je dus twijfelt wat methoden kunnen, beschouw ze als een soort "slimme variabelen" die finaal ook gewoon een waarde hebben, maar deze waarde kan het resultaat van een complex stuk code in the methode zijn.
@@ -172,7 +178,9 @@ class Program
 }
 ```
 
-#### Void returntype
+<!---{pagebreak} --->
+
+#### ``Void`` 
 
 Indien je methode niets teruggeeft wanneer de methode eindigt (bijvoorbeeld indien de methode enkel tekst op het scherm toont) dan dien je dit ook aan te geven. Hiervoor gebruik je het keyword void. Een voorbeeld:
 
@@ -184,7 +192,12 @@ static void ShowProgramVersion()
 }
 ```
 
-#### return eender waar
+{% hint style='tip' %}
+Het **void** keyword geeft aan dat deze methode niets "teruggeeft" van resultaat aan de code die de methode aanriep. **Zaken naar het scherm sturen met ``Console.WriteLine()`` heeft hier niets mee te maken.** 
+{% endhint %}
+
+
+#### ``return`` 
 
 Je mag het ``return`` keyword eender waar in je methode gebruiken. Weet wel dat van zodra een statement met ``return`` wordt bereikt de methode ogenblikkelijk afsluit en het resultaat achter ``return`` teruggeeft. Soms is dit handig zoals in volgende voorbeeld:
 
@@ -231,7 +244,7 @@ Bovenstaande error zal je vaak krijgen en geeft altijd aan dat er bepaalde delen
 {% endhint %}
 <!---NOBOOKEND--->
 
-### Parameters doorgeven
+## Parameters doorgeven
 
 Methoden zijn handig vanwege de herbruikbaarheid. Wanneer je een methode hebt geschreven om de sinus van een hoek te berekenen, dan is het echter ook handig dat je de hoek als parameter kunt meegeven zodat de methode kan gebruikt worden voor eender welke hoekwaarde. 
 
@@ -249,8 +262,8 @@ Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
 1. Wanneer een parameter **by value** wordt meegegeven aan een methode, dan wordt **een kopie gemaakt van de huidige waarde** die wordt meegegeven.
 2. Wanneer echter een parameter **by reference** wordt meegegeven dan zal een pointer worden meegegeven aan de methode. Deze pointer bevat het **adres van de eigenlijke variabele** die we meegeven. Aanpassingen aan de parameters zullen daardoor ook zichtbaar zijn binnen de scope van de originele variabele. Parameters *by reference* worden niet in dit boek behandeld, wel in het volgende deel.
 
-### Methoden met parameters
-Om zelf een methode te definiëren die 1 of meerdere parameters aanvaardt, dien je per parameter het datatype en een tijdelijk naam (identifier) te definiëren in de methode-signatuur.
+### Methoden met argumenten
+Om zelf een methode te definiëren die 1 of meerdere parameters aanvaardt, dien je per parameter het datatype en een tijdelijk naam (identifier) te definiëren (*argument*) in de methode-signatuur
 
 Als volgt:
 
@@ -262,6 +275,8 @@ static returntype MethodeNaam(type parameter1, type parameter2)
 ```
 
 Deze parameters zijn nu beschikbaar binnen de methode om mee te werken naar believen.
+
+<!---{pagebreak} --->
 
 Stel bijvoorbeeld dat we onze FaculteitVan5 willen veralgemenen naar een methode die voor alle getallen werkt, dan zou je volgende methode kunnen schrijven:
 
@@ -307,6 +322,8 @@ Veel beginnende programmeurs zijn soms verward dat de naam van de parameter in d
 Het is echter logisch dat deze niet noodzakelijk gelijk moeten zijn: het enige dat er gebeurt is dat de methodeparameter de waarde krijgt die je meegeeft, ongeacht van waar de parameter komt.
 {% endhint %}
 
+<!---{pagebreak} --->
+
 Stel bijvoorbeeld dat je de faculteiten wenst te kennen van alle getallen tussen 1 en 10, dan zou je schrijven:
 
 ```java
@@ -336,6 +353,8 @@ Faculteit van 10 is 3628800
 {% hint style='tip' %}
 Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven, wat de kans op fouten verlaagt.
 {% endhint %}
+
+<!---{pagebreak} --->
 
 #### Volgorde van parameters
 
@@ -389,42 +408,41 @@ Deze is **FOUT** en zal niet compileren:
 ToonInfo(37, "Tim");
 ```
 
+<!---{pagebreak} --->
+
 #### Methoden nesten
 
 In het begin ga je vooral vanuit je ``main`` methoden aanroepen, maar dat is geen verplichting. Je kan ook vanuit methoden andere methoden aanroepen, en van daaruit weer andere, en zo voort. Volgende (nutteloze) programma'tje toont dit in actie:
 
 ```java
-	public static void Main()
-	{
-		SchrijfNaam();
-	}
-	static  void SchrijfNaam()
-	{
-		SchrijfT();
-		SchrijfI();
-		SchrijfM();
-		SchrijfM();
-		SchrijfI();
-	}
-	static void SchrijfT()
-	{
-		Console.WriteLine("T");
-	}
-    static void SchrijfI()
-	{
-		Console.WriteLine("I");
-	}
-	static void SchrijfM()
-	{
-		Console.WriteLine("M");
-	}
+public static void Main()
+{
+    SchrijfNaam();
+}
+static  void SchrijfNaam()
+{
+    SchrijfT();
+    SchrijfI();
+    SchrijfM();
+    SchrijfM();
+    SchrijfI();
+}
+static void SchrijfT()
+{
+    Console.WriteLine("T");
+}
+static void SchrijfI()
+{
+    Console.WriteLine("I");
+}
+static void SchrijfM()
+{
+    Console.WriteLine("M");
+}
 ```
-
+<!--- {width:50%} --->
 ![Visualisatie van bovenstaande code zonder terugkerende pijlen](../assets/4_methoden/mmethods.png)
 
-{% hint style='tip' %}
-Merk op dat dit een heel dom programma is en we misschien beter met parameters hadden gewerkt daar de 3 methoden eigenlijk altijd hetzelfde doen.
-{% endhint %}
 
 #### Bugs met methoden
 
@@ -447,7 +465,7 @@ Deze code heeft een methode die zichzelf aanroept, zonder dat deze ooit afsluit,
 ![Deze keer zijn er bewust geen terugkerende pijlen getekend: ze zijn er niet](../assets/4_methoden/oneindig.png)
 
 
-
+<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -455,11 +473,7 @@ Deze code heeft een methode die zichzelf aanroept, zonder dat deze ooit afsluit,
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Even ingrijpen en je attenderen op recursie zodat je code niet in je gezicht blijft ontploffen.
-
-**Recursie** is een geavanceerd programmeerconcept wat niet in dit boek wordt besproken, maar laten we het hier kort toelichten. Recursieve methoden zijn methoden die zichzelf aanroepen maar wél op een gegeven moment stoppen wanneer dat moet gebeuren.
-
-Volgende voorbeeld is een recursieve methode om de som van alle getallen tussen ``start`` en ``stop`` te berekenen:
+Even ingrijpen en je attenderen op recursie zodat je code niet in je gezicht blijft ontploffen. **Recursie** is een geavanceerd programmeerconcept wat niet in dit boek wordt besproken, maar laten we het hier kort toelichten. Recursieve methoden zijn methoden die zichzelf aanroepen maar wél op een gegeven moment stoppen wanneer dat moet gebeuren.Volgende voorbeeld is een recursieve methode om de som van alle getallen tussen ``start`` en ``stop`` te berekenen:
 
 ```java
 static int BerekenSomRecursief(int start, int stop)
@@ -473,15 +487,13 @@ static int BerekenSomRecursief(int start, int stop)
     return som;
 }
 ```
-Je herkent recursie aan het feit dat de methode zichzelf aanroept. Maar een controle voorkomt dat die aanroep blijft gebeuren zonder dat er ooit een methode wordt afgesloten.
-
-Als we deze methode aanroepen als volgt:
+Je herkent recursie aan het feit dat de methode zichzelf aanroept. Maar een controle voorkomt dat die aanroep blijft gebeuren zonder dat er ooit een methode wordt afgesloten. We krijgen 6 terug (1+2+3) als we de methode als volgt aanroepen:
 
 ```java
 int einde = BerekenSomRecursief(1,3);
-```
+``` 
 
-Dan zal ``einde`` finaal de waarde 6 hebben (1+2+3). Volgende afbeelding visualiseert dit:
+<!--- {width:50%} --->
 ![Flow van de recursie](../assets/4_methoden/recursie.png)
 
 <!---{/aside}--->
@@ -518,6 +530,7 @@ static int Macht(int grondtal, int exponent)
 
 Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische extra informatie:
 
+<!--- {width:50%} --->
 ![Hoe comment getoond wordt](../assets/4_methoden/comment.png)
 
 {% hint style='tip' %}
@@ -546,7 +559,7 @@ De code van zonet kan je dan nu herschrijven naar:
 int leeftijd= VraagInt("Geef leeftijd");
 ```
 
-Het voorgaande voorbeeld toont ook ineens aan waar om methoden helpen om je code leesbaarder en onderhoudbaarder te maken. Je main blijft gevrijwaard van veel repeterende lijnen code en heeft aanroepen naar (hopelijk) goed benoemde methode die ieder een heel specifiek ding doen. Dit maakt het debuggen ook eenvoudiger: je ziet in één oogopslag meestal wat een methode doet (als je ze niet te lang hebt gemaakt natuurlijk).
+Het voorgaande voorbeeld toont ook ineens aan waarom methoden helpen om je code leesbaarder en onderhoudbaarder te maken. Je ``main`` blijft gevrijwaard van veel repeterende lijnen code en heeft aanroepen naar (hopelijk) goed benoemde methoden die ieder een specifiek ding doen. Dit maakt het debuggen ook eenvoudiger: je ziet in één oogopslag meestal wat een methode doet (als je ze niet te lang hebt gemaakt natuurlijk).
 {% endhint %}
 
 

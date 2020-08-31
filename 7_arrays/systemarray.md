@@ -3,7 +3,7 @@
 Je kan de ``System.Array`` bibliotheek gebruiken om je array-code te vereenvoudigen.Deze bibliotheek bevat naast de ``.Length`` eigenschap, ook enkele nuttige methoden zoals ``BinarySearch()``, ``Sort()``, ``Copy`` en ``Reverse()``. Het gebruik hiervan is bijna steeds dezelfde zoals volgende voorbeelden tonen.
 
 {% hint style='tip' %}
-De eerste zin is een vereenvouding, wat we in het volgende boekdeel zullen ontdekken. Technisch gezien erven alle arrays over van ``System.Array``, daarom kan je met bovenstaande methoden werken. ``System.Array`` is dus niet een bibliotheek, maar een *klasse*. Maar daar moet je nu niet van wakker liggen.
+De eerste zin is een vereenvoudiging, wat we in het volgende boekdeel zullen ontdekken. Technisch gezien erven alle arrays over van ``System.Array`` omdat dit niet een bibliotheek, maar een *klasse* is.
 {% endhint %}
 
 ### Sort: Arrays sorteren
@@ -11,9 +11,7 @@ Om arrays te sorteren roep je de ``Sort()``-methode op en geef je als parameter 
 
 ```java
 string[] myColors = {"red", "green", "yellow", "orange", "blue"};
-//Sorteren maar:
-Array.Sort(myColors);
- 
+Array.Sort(myColors); //Sorteren maar
 //Toon resultaat van sorteren
 for (int i = 0; i < myColors.Length; i++)
 {
@@ -30,6 +28,8 @@ Met de ``Array.Reverse()``-methode kunnen we dan weer de volgorde van de element
 ```java
 Array.Reverse(myColors);
 ```
+
+<!---{pagebreak} --->
 
 ### Clear: Arrays leegmaken
 Een array volledig leegmaken (alle elementen op hun standaard waarde zetten (bv. ``0`` bij ``int`` of ``false`` bij ``bool``)) doe je met de ``Array.Clear()``-methode, als volgt:
@@ -61,6 +61,8 @@ Array.Copy(myColors, copyColors, 2);
 {% hint style='tip' %}
 Bekijk zeker ook de overloaded versies die de ``.Copy()`` methode heeft. Zo kan je ook een bepaald stuk van een array kopiëren en ook bepalen waar in de doel array dit stuk moet komen.
 {% endhint %}
+
+<!---{pagebreak} --->
 
 ### BinarySeach: Zoeken in arrays
 

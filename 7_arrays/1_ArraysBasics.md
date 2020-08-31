@@ -8,7 +8,7 @@ Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, 
 
 De nadelen zullen we echter met plezier erbij nemen wanneer we programma's beginnen schrijven die werken met véél data van dezelfde soort. Eenvoudigweg kan je stellen dat van zodra je 3 of meer variabelen heeft die dezelfde soort data bevatten, arrays altijd de oplossing zullen zijn.
 
-### Nut van arrays
+## Nut van arrays
 
 Stel dat je de dagelijkse neerslag wenst te bewaren om zo later de gemiddelde regen te berekenen. Dit kan je zonder arrays eenvoudig:
 
@@ -31,13 +31,18 @@ double gemiddelde= (dag1+dag2+dag3+dag4+dag5+dag6+dag7)/7.0;
 
 Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Of een millennium?! Dat is niet werkbaar zonder een nieuw concept, dat van arrays, te introduceren. Van zodra je een bepaalde soort informatie hebt die je veelvuldig wenst te bewaren dan zijn arrays dus oplossing.
 
+
 Voorgaande lijst van 7 aparte variabelen kunnen we eenvoudiger definiëren met 1 array (we bespreken de details verderop), genaamd ``regen``:
 
 <!---{line-numbers:false}--->
 ```java
 int[] regen  = {34, 45, 0, 34, 12, 0, 23}; 
 ```
+
+<!--- {width:50%} --->
 ![Een schematische voorstelling van een lijst van aparte variabelen en het equivalent met een arrays](../assets/5_arrays/intro.png)
+
+<!---{pagebreak} --->
 
 Het gemiddelde berekenen kan dan als volgt:
 
@@ -46,7 +51,9 @@ Het gemiddelde berekenen kan dan als volgt:
 double gemiddelde= (dag[0]+dag[1]+dag[2]+dag[3]+dag[4]+dag[5]+dag[6])/7.0;
 ```
 
-Dat lijkt niet veel beter, integendeel, we zitten nu ook nog met een hoop vierkante haakjes (``[]``). De kracht van arrays komt nu: het getal tussen die vierkante haakjes (de index) kan je als een variabele beschouwen en dus ook dynamisch genereren in een loop. Volgende voorbeeld toont hoe we bijvoorbeeld een langere array van elementen met een for-loop overlopen om de som van alle elementen te berekenen:
+Dat lijkt niet veel beter, integendeel, we zitten nu ook nog met een hoop vierkante haakjes (``[]``). 
+
+De kracht van arrays komt nu: het getal tussen die vierkante haakjes (de index) kan je als een variabele beschouwen en dus ook dynamisch genereren in een loop. Volgende voorbeeld toont hoe we bijvoorbeeld een langere array van elementen met een for-loop overlopen om de som van alle elementen te berekenen:
 
 ```java
 int[] regen  = {34, 45, 0, 34, 12, 0, 23, 7 , 20, 34 , 7 , 42}; //aanmaken array
@@ -59,10 +66,43 @@ double gemiddelde=som/regen.Length;
 ```
 
 
-### Arrays declareren
+
+<!---NOBOOKSTART--->
+{% hint style='warning' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/care.png)
+
+Sorry dat we weer even in het diepe water zijn gedoken. Het leek ons nuttig om even het totaalplaatje van arrays alvast uit de doeken te doen, zodat je snapt waarom er zo enthousiast over arrays wordt gedaan hier. 
+
+A propos, kijk eens achterom! Schrik je van he. Je hebt al een aardige weg afgelegd als we vergelijken met de eerste keer toen ik je in het zwembad gooide. Herinner je je nog dat ik volgende code liet zien En je vervolgens moest gerust stellen?
+
+```java
+using System;
+namespace Demo1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            // enz.
+```
+
+Alles wordt kinderspel, als je maar lang genoeg met iets bezig bent. Zelfs de code die we net toonden met die arrays zou je niet meer zo erg mogen afschrikken als die eerste keer. Ok, er staan wat nieuwe termen tussen, maar al bij al zouden de grote lijnen van het algoritme en de werking ervan duidelijk moeten zijn.
+
+Blijf dus maar hier lekker in het diep dobberen en ontdek verder waarom arrays zo'n krachtig concept zijn.
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
+
+
+## Arrays declareren
 Een array creëren (declareren) kan op verschillende manieren.
 
-#### Manier 1
+### Manier 1
 De eenvoudigste variant is deze waarbij je een array variabele aanmaakt, maar deze nog niet initialiseert (i.e. je maakt enkel een identifier in aan). De syntax is als volgt:
 
 <!---{line-numbers:false}--->
@@ -81,9 +121,6 @@ ConsoleColor[] mijnKleuren;
 
 Op dit punt bestaan de arrays nog niet ect. **Hun lengte ligt nog niet vast.**
 
-{% hint style='tip' %}
-Arrays hebben een vaste grootte van zodra je ze vult met beginwaarden. Hou hier rekening mee.
-{% endhint %}
 
 Stel dat je dus een array van strings wenst waarin je verschillende kleuren zal plaatsen dan schrijf je:
 
@@ -100,7 +137,7 @@ myColors = {"red", "green", "yellow", "orange", "blue"};
 Je array zal vanaf dit punt **een lengte van 5 hebben en kan niet meer groeien**.
 
 
-#### Manier 2
+### Manier 2
 Indien je ogenblikkelijk waarden wilt toekennen (*initialiseren*) tijdens het aanmaken van de array zelf dan mag dit ook als volgt:
 
 ```java
@@ -111,7 +148,7 @@ Ook hier zal dus vanaf dit punt je array een vaste lengte van 5 elementen hebben
 
 Merk op dat deze manier dus enkel werkt indien je reeds weet welke waarden in de array moeten. In manier 1 kunnen we perfect een array aanmaken en pas veel later in programma ook effectief waarden toekennen (bijvoorbeeld door ze stuk per stuk door een gebruiker te laten invoeren).
 
-#### Manier 3
+### Manier 3
 Nog een andere manier om arrays aan te maken is de volgende, waarbij je aangeeft hoe groot de array moet zijn, zonder reeds effectief waarden toe te kennen:
 
 ```java
@@ -131,7 +168,7 @@ Ook hier geldt dat de lengte vanaf dan vastligt en niet meer kan veranderen.
 {% endhint %}
 
 
-### Elementen van een array aanpassen en uitlezen
+## Elementen van een array aanpassen en uitlezen
 Van zodra er waarden in een array staan of moeten bijgeplaatst worden kan je deze benaderen met de zogenaamde **array accessor** notatie. Deze notatie is heel eenvoudigweg de volgende:
 
 ```java
@@ -143,7 +180,7 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal , 2
 {% hint style='tip' %}
 **De index van een C#-array start steeds bij 0.** Indien je dus een array aanmaakt met lengte 5 dan heb je de indices 0 tot en met 4.
 
-<!--- {width:80%} --->
+<!--- {width:45%} --->
 ![Lengte is 5, index laatste element is 4, eerste element is 0](../assets/5_arrays/arrays1.png)
 {% endhint %}
 
@@ -166,16 +203,6 @@ De regels zijn duidelijk:
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->
-
-
-{% hint style='tip' %}
-Je kan de lengte van een array altijd weten via de ``.Length`` eigenschap die alle arrays hebben. We komen hier later op terug, maar tonen het hier al even:
-
-<!---{line-numbers:false}--->
-```java
-Console.WriteLine(myColors.Length);
-```
-{% endhint %}
 
 ### Lezen
 
@@ -218,6 +245,8 @@ for(int i = 0 ; i<myColors.Length;i++)
 }
 ```
 {% endhint %}
+
+<!---{pagebreak} --->
 
 Stel dat we een array van getallen hebben, dan kunnen we dus bijvoorbeeld 2 waarden uit die array optellen en opslaan in een andere variabele als volgt:
 
@@ -262,6 +291,8 @@ for(int teller = 0; teller < numbers.Length; teller++)
 Zoals je merkt zijn loops en arrays dikke vrienden.
 {% endhint %}
 
+<!---{pagebreak} --->
+
 ### Schrijven
 Ook schrijven van waarden naar de array gebruikt dezelfde notatie. Enkel moet je dus deze keer de array accessor-notatie links van de toekenningsoperator plaatsen. Stel dat we bijvoorbeeld de waarde van het eerste element uit de myColors array willen veranderen van ``red`` naar ``indigo``, dan gebruiken we volgende notatie:
 
@@ -304,7 +335,7 @@ for(int i=1; i<=7; i++)
 **Dat gaat niet!** Van zodra je van plan bent om variabele-namen "dynamisch" in je code te proberen aan te roepen moeten er tal van alarmbelletjes afgaan. De kans is dan héél groot dat je probleem beter met een array wordt opgelost dan met een boel variabelen met soortgelijke namen.
 {% endhint %}
 
-### De lengte van de array te weten komen
+## De lengte van de array te weten komen
 
 Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De ``Length``-eigenschap van iedere array geeft dit weer. Volgend voorbeeld toen dit:
 
@@ -351,7 +382,7 @@ Deze fout zegt exact wat er mis is: je probeert elementen in een arrays te benad
 {% endhint %}
 <!---NOBOOKEND--->
 
-### Volledig voorbeeldprogramma met arrays
+## Volledig voorbeeldprogramma met arrays
 
 Met al de voorgaande informatie is het nu mogelijk om vlot complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-loop om een bepaalde operatie over de hele array toe te passen.
 

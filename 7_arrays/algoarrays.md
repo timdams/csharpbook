@@ -14,12 +14,9 @@ Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgen
 
 ```java
 int teZoekenGetal = 12;
- 
 int[] top5 = {5, 10, 12, 25, 16};
- 
 bool gevonden = false;
 int index = -1;
- 
 for (int i = 0; i < top5.Length; i++)
 {
     if (top5[i] == teZoekenGetal)
@@ -31,8 +28,7 @@ for (int i = 0; i < top5.Length; i++)
 if(gevonden = true)
 {
     Console.WriteLine($"Rugnummer {teZoekenGetal} eindigde op plek {index+1}");
-    // We tellen 1 bij omdat de indexering vanaf 0 telt, 
-    // wat de gebruiker niet moet weten. 
+    // +1 omdat de indexering vanaf 0 telt, wat de gebruiker niet moet weten. 
 }
 ```
 
@@ -59,20 +55,16 @@ We tonen nu hoe we met ``for`` eerst het juiste product zoeken en dan vervolgens
 ```java
 bool gevonden = false;
 int productIndex = -1;
-
 int teller = 0;
 while (teller < producten.Length && keuzeGebruiker != producten[teller])
 {
     teller++;
 }
-
 if (teller != producten.Length) //product gevonden!
 {
     gevonden = true;
     productIndex = teller;
 }
-
-
 if (gevonden == true)
 {
     Console.WriteLine($"Prijs van {keuzeGebruiker} is {prijzen[productIndex]}");
@@ -85,24 +77,23 @@ else
 
 Een nadeel van deze oplossing is dat we steeds de hele ``for`` doorlopen (we gebruiken geen ``break`` vanwege een allergie hiervoor bij de auteur). Bij heel lange arrays is dit dus niet erg performant.
 
+<!---{pagebreak} --->
+
 Volgende oplossing met een ``while`` toont een performantere oplossing:
 
 ```java
 bool gevonden = false;
 int productIndex = -1;
-
 int teller = 0;
 while (teller < producten.Length && keuzeGebruiker != producten[teller])
 {
     teller++;
 }
-
 if (teller != producten.Length) //product gevonden!
 {
     gevonden = true;
     productIndex = teller;
 }
-
 if (gevonden == true)
 {
     Console.WriteLine($"Prijs van {keuzeGebruiker} is {prijzen[productIndex]}");

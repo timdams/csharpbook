@@ -28,7 +28,7 @@ Er zijn 3 standaard manieren om zogenaamde loops te maken in C#:
 * **``for``**: een alternatieve, iets compactere manier om loops te beschrijven wanneer je exact weet hoe vaak de loop zal moeten herhalen.
 
 Voorts zullen we ook een speciale loop variant zien in het volgende boekdeel wanneer we arrays en objecten leren kennen:
-* [**``foreach``**]: een iets leesbaardere manier van loopen die vooral nuttig is wanneer je met objecten gaat werken.
+* **``foreach``**: een iets leesbaardere manier van loopen die vooral nuttig is wanneer je met objecten gaat werken.
 
 
 

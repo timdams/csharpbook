@@ -49,10 +49,6 @@ Teller: 3, Teller 2:5
 ```
 Merk het 'ritme' op in de uitvoer. De linkse teller gaat een pak trager dan de rechtse.
 
-{% hint style='tip' %}
-**Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner en outer loop apart)**
-{% endhint %}
-
 ### Geneste loops tellen
 Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenigvuldig je al deze getallen met elkaar.
 

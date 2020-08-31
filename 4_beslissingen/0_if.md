@@ -133,18 +133,9 @@ if ((a > c) || (a == b))
  
 if ((a >= c) && (b <= c))
 {
-    Console.WriteLine("A is groter dan of gelijk aan C");
-    Console.WriteLine("EN");
+    Console.WriteLine("A is groter dan of gelijk aan C en");
     Console.WriteLine("B is kleiner of gelijk aan C")
 }
-```
-
-Uitvoer van dit programma zal zijn:
-
-<!---{line-numbers:false}--->
-```text
-5
-5
 ```
 
 <!---{pagebreak} --->

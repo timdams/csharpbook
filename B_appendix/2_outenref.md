@@ -29,6 +29,8 @@ static void Main(string[] args)
 }
 ```
 
+<!---{pagebreak} --->
+
 ### Out
 Door het ``out`` keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen. Wat we hier tonen:
 
@@ -59,6 +61,7 @@ Console.WriteLine($"Over 10 jaar ben je {leeftijd} jaar oud");
 ```
 
 Deze applicatie zal falen indien de gebruiker iets invoert dat niet kan geconverteerd worden naar een ``int``. We lossen dit op met behulp van ``TryParse``.
+
 ### Werking ``TryParse``
 
 De primitieve datatypes ``int``, ``double``, ``float`` etc hebben allemaal een ``TryParse`` methode. Je kan deze gebruiken om de invoer van een gebruiker **te proberen om te zetten**, als deze niet lukt dan kan je dit ook weten zonder dat je programma crasht door een exception op te werpen. 

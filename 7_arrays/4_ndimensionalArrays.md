@@ -10,7 +10,8 @@ int[,] regen = {
         };
 ```
 
-![Een tweedimensionale](../assets/5_arrays/2d.png)
+<!--- {width:60%} --->
+![Een tweedimensionale array](../assets/5_arrays/2d.png)
 
 {% hint style='tip' %}
 We behandelen meerdimensionale arrays maar komt om de eenvoudige reden dat je die in de praktijk minder vaak zal nodig hebben.
@@ -72,6 +73,8 @@ string[,] boeken = {
 
 Merk op dat we dus nu een 3 bij 4 array maken maar dat dit dus nog steeds een 2D-array is. Iedere rij bestaat uit 3 elementen. We maken letterlijk een array van arrays.
 
+<!---{pagebreak} --->
+
 Of bij een 3D:
 ```java
 int[,,] temperaturen= {
@@ -89,6 +92,7 @@ int[,,] temperaturen= {
 
 Die we als volgt kunnen visualiseren:
 
+<!--- {width:65%} --->
 ![De derde dimensie bestaat uit 3 2-dimensionale 2 bij 2 arrays...](../assets/5_arrays/3D.png)
 
 {% hint style='tip' %}
@@ -96,6 +100,8 @@ Zoals je ziet worden meerdimensionale arrays snel een kluwen van komma's, accola
 
 De regel is eenvoudig: als je een 7-dimensionale array nodig hebt is de kans groot dat je een  volledig verkeerd algoritme hebt verzonnen, of dat je nog niet aan het volgende boekdeel bent begonnen of een topwetenschapper in CERN bent. Choose your reason!
 {% endhint %}
+
+<!---{pagebreak} --->
 
 Stel dat we uit de boeken-array de auteur van het derde boek wensen te tonen dan kunnen we schrijven:
 

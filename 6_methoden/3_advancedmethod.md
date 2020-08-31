@@ -36,32 +36,26 @@ We kunnen named parameters aangeven door de naam van de parameter gevolgd door e
 
 Kortom, op deze manier maakt de volgorde van parameter niets uit. Dit werkt enkel als je **alle** parameters zo gebruikt.
 
+<!---{pagebreak} --->
+
 #### Named en unnamed mixen: volgorde wél belangrijk
 
-Je mag echter ook een combinatie gebruiken van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren). 
-
-Enkele **geldige** voorbeelden:
+Je mag echter ook een combinatie gebruiken van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).  Enkele **geldige** voorbeelden:
 ```java
 PrintDetails("Gift Shop", 31, product: "Red Mug");
-PrintDetails(seller: "Gift Shop", 31, product: "Red Mug");
-PrintDetails("Gift Shop", orderNum: 31, "Red Mug");    
+PrintDetails(seller: "Gift Shop", 31, product: "Red Mug");   
 ```
 
 Enkele **niet geldige** voorbeelden:
 ```java
 PrintDetails(product: "Red Mug", 31, "Gift Shop");
 PrintDetails(31, seller: "Gift Shop", "Red Mug");
-PrintDetails(31, "Red Mug", seller: "Gift Shop");
 ```
 
 
 ### Optionele parameters
 
-Soms wil je dat een methode een standaard waarde voor een parameter gebruikt indien de programmeur in z'n aanroep geen waarde meegaf. Dat kan met behulp zogenaamde van **optionele of default parameters**.
-
-Je geef aan dat een parameter optioneel is door deze een default waarde te geven in de methode-signatuur. Deze waarde zal dan gebruikt worden indien de parameter geen waarde van de aanroeper heeft gekregen.
-
-**Optionele parameters worden steeds achteraan de parameterlijst van de methode geplaatst** .
+Soms wil je dat een methode een standaard waarde voor een parameter gebruikt indien de programmeur in z'n aanroep geen waarde meegaf. Dat kan met behulp zogenaamde van **optionele of default parameters**. Je geeft aan dat een parameter optioneel is door deze een default waarde te geven in de methode-signatuur. Deze waarde zal dan gebruikt worden indien de parameter geen waarde van de aanroeper heeft gekregen. Let er op: **Optionele parameters worden steeds achteraan de parameterlijst van de methode geplaatst** .
 
 In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters (``optName`` en ``age``) optioneel zijn door er met de toekenningsoperator een default waarde aan te geven:
 ```java
@@ -69,7 +63,7 @@ In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de la
 static void BookFile(int required, string optName = "unknown", int age = 10)
 ```
 
-Wanneer nu een parameter niet wordt meegegeven, dan zal deze default waarde in de plaats gebruikt worden. Volgende manieren zijn nu geldige manieren om de methode aan te roepen:
+Wanneer nu een parameter niet wordt meegegeven, dan zal deze default waarde in de plaats gebruikt worden:
 ```java
 BookFile(15, "tim", 25); //klassieke aanroep, age zal 25 zijn, optName zal "tim" zijn
 BookFile(20, "dams"); //age zal 10 zijn, optName "dams"
@@ -80,15 +74,15 @@ BookFile(35); //optName zal "default string" en age zal 10 zijn
 
 ```java
 BookFile(3, 4); //daar de tweede param een string moet zijn
-BookFile(3, ,4); //lege parameters mag nooit
 ```
 
-{% hint style='tip' %}
 Met optionele parameters kunnen we dit echter, indien gewenst, omzeilen. Volgende aanroep is wel geldig:
 ```java
 BookFile(3, age: 4);
 ```
-{% endhint %}
+
+
+<!---{pagebreak} --->
 
 ### Method overloading
 
@@ -97,24 +91,25 @@ Method overloading wil zeggen dat je een **methode met dezelfde naam en returnty
 Volgende methoden zijn overloaded:
 
 ```java
-static int ComputeArea(int lengte, int breedte)
+static int BerekenOppervlakte(int lengte, int breedte)
 {
     int opp = lengte*breedte;
     return opp;
 }
 
-static int ComputeArea(int radius)
+static int BerekenOppervlakte(int straal)
 {
-    int opp = (int)(Math.PI*radius*radius);
+    int opp = (int)(Math.PI*straal*straal);
     return opp;
 }
 ```
 
 Afhankelijk van de aanroep zal dus de ene of andere uitgevoerd worden. Volgende code zal dus werken:
 ```java
-Console.WriteLine($"Rechthoek: {ComputeArea(5, 6)}");
-Console.WriteLine($"Circle: {ComputeArea(7)}");
+Console.WriteLine($"Rechthoek: {BerekenOppervlakte(5, 6)}");
+Console.WriteLine($"Cirkel: {BerekenOppervlakte(7)}");
 ```
+
 
 #### Betterness rule
 
@@ -123,25 +118,27 @@ Indien de compiler twijfelt tijdens de **overload resolution** (welke versie moe
 Stel dat we volgende overloaded methoden hebben:
 
 ```java
-static int ComputeArea(int radius) //versie A
+static int BerekenOppervlakte(int straal) //versie A
 {
-    int opp = (int)(Math.PI*radius*radius);
+    int opp = (int)(Math.PI*straal*straal);
     return opp;
 }
 
-static int ComputeArea(double radius) //versie B
+static int BerekenOppervlakte(double straal) //versie B
 {
-    int opp = (int)(Math.PI * radius * radius);
+    int opp = (int)(Math.PI * straal * straal);
     return opp;
 }
 ```
 
+<!---{pagebreak} --->
+
 Volgende aanroepen zullen dus als volgt uitgevoerd worden, gebaseerd op de betterness rule:
 
 ```java
-Console.WriteLine($"Circle 1: {ComputeArea(7)}"); //versie A
-Console.WriteLine($"Circle 2: {ComputeArea(7.5)}"); //versie B
-Console.WriteLine($"Circle 3: {ComputeArea(7.3f)}"); //versie B
+Console.WriteLine($"Cirkel 1: {BerekenOppervlakte(7)}"); //versie A
+Console.WriteLine($"Cirkel 2: {BerekenOppervlakte(7.5)}"); //versie B
+Console.WriteLine($"Cirkel 3: {BerekenOppervlakte(7.3f)}"); //versie B
 ```
 
 Volgende tabel geeft de betternes rule weer. In de linkse kolom staat het datatype van de parameter die wordt meegegeven. De rechtse kolom toont welk datatype het argument in de methodesignatuur meer voorkeur heeft van links naar rechts.
@@ -170,18 +167,18 @@ static void Main(string[] args)
     Toonverhouding(6.2, 3); //versie B
 }
 
-
 static void Toonverhouding(int a, double b) //versie A
 {
     Console.WriteLine($"{a}/{b}");
 }
-
 
 static void Toonverhouding(double a, int b) //versie B
 {
     Console.WriteLine($"{a}/{b}");
 }
 ```
+
+<!---{pagebreak} --->
 
 Indien ook die regel niet werkt dan zal een fout optreden zoals hier wat zal resulteren in een fout:
 
