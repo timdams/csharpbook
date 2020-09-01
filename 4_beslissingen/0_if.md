@@ -39,7 +39,7 @@ Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scher
 
 <!---{pagebreak} --->
 
-<!---{ height:110%} --->
+<!---{ height:90%} --->
 ![De flowchart van voorgaande code](../assets/2_beslissingen/ifflow.png)
 
 <!---{pagebreak} --->

@@ -1,4 +1,4 @@
-# Methode
+# Methoden
 
 Ene Bill Gates, je weet wel, de oprichter van een bedrijfje genaamd Microsoft zei ooit: "I will always choose a lazy person to do a difficult job. Because, he will find an easy way to do it."
 
@@ -253,7 +253,7 @@ Indien er wel parameters nodig zijn dan geef je die mee als volgt:
 MethodeNaam(parameter1, parameter2, …);
 ```
 
-Je hebt dit ook al geregeld gebruikt. Wanneer je tekst op het scherm wilt tonen dan roep je de ``WriteLine`` methode aan en geef je 1 parameter mee, namelijk hetgeen dat op het scherm moet komen: ``Console.WriteLine(myName);`` of ``Console.WriteLine(666)`;``. Bij de ``Math`` bibliotheek waren er bijvoorbeeld methoden waar je 2 parameters aan kon meegeven, waarbij duidelijk was dat de volgorde belangrijk was: ``Math.Pow(6,3);`` 6 tot de 3e is niet hetzelfde als 3 tot de 6e wat je als volgt zou schrijven ``Math.Pow(3, 6);``.
+Je hebt dit ook al geregeld gebruikt. Wanneer je tekst op het scherm wilt tonen dan roep je de ``WriteLine`` methode aan en geef je 1 parameter mee, namelijk hetgeen dat op het scherm moet komen. Bij de ``Math`` bibliotheek waren er bijvoorbeeld methoden waar je 2 parameters aan kon meegeven, waarbij duidelijk was dat de volgorde belangrijk was: ``Math.Pow(6,3);`` 6 tot de 3e is niet hetzelfde als 3 tot de 6e wat je als volgt zou schrijven ``Math.Pow(3, 6);``.
 
 Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
 

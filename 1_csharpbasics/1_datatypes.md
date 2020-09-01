@@ -49,7 +49,7 @@ Ieder type hierboven heeft een bepaald bereik en hoeveelheid geheugen nodig. Je 
 #### Gehele getallen
 Voor de gehele getallen zijn er volgende datatypes:
 
-| **Type** | **Geheugen** | **Bereik** | 
+| **Type** | **Geheugen** | **Bereik (waardenverzameling)** | 
 | :--- | :--- | :--- | :--|
 | `sbyte` | 8 bits | -128 tot 127 | 
 | `byte` | 8 bits | 0 tot 255 | 
@@ -60,6 +60,8 @@ Voor de gehele getallen zijn er volgende datatypes:
 | `long` | 64 bits | -9 223 372 036 854 775 808 tot 9 223 372 036 854 775 807 | 
 | `ulong` | 64 bits | 0 tot 18 446 744 073 709 551 615 | 
 | `char` | 16 bits | 0 tot 65535 | 
+
+Het bereik van ieder datatype is een rechtstreeks gevolg van het aantal bits waarmee het getal in dit type wordt voorgesteld. De ``short`` bijvoorbeeld wordt voorgesteld door 16 bits, 1 bit daarvan wordt gebruikt voor het teken (0 of 1, + of -). De overige 15 bits worden gebruikt voor de waarde: van 0 tot 2^15 (= 32767) en van 0 tot -2^15 (= -32768)
 
 Enkele opmerkingen bij deze tabel:
 * De `s` vooraan `sbyte` staat voor ``signed``: m.a.w. 1 bit wordt gebruikt om het + of - teken te bewaren. 
@@ -77,6 +79,8 @@ Enkele opmerkingen bij deze tabel:
 "Wow. Moet je al die datatypes uit het hoofd kennen? Ik was al blij dat ik tekst op het scherm kon tonen."
 
 Uiteraard kan het geen kwaad dat je de belangrijkste datatypes onthoud, anderzijds zul je zelf merken dat door gewoon veel te programmeren je vanzelf wel zult ontdekken welke datatypes je waar kunt gebruiken. Laat je dus niet afschrikken door de ellenlange tabellen met datatypes in dit hoofdstuk, we gaan er maar een handvol effectief van gebruiken.
+
+
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}
@@ -102,7 +106,7 @@ Bij twijfel opteren we meestal voor kommagetallen om het **``double``** datatype
 De precisie van een getal is het aantal beduidende of significante cijfers. 2.2345 (precisie van 5) heeft bijvoorbeeld een hogere precisie dan 2.23 (precisie van 3).
 {% endhint %}
 
-<!---{pagebreak} --->
+
 
 ### Boolean datatype
 
