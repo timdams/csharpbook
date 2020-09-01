@@ -36,7 +36,7 @@ In de laatste lijn code tonen we dat je uiteraard ook rechtstreeks de variabelen
 
 Je kan [hier](https://docs.microsoft.com/en-us/dotnet/api/system.environment) opzoeken welke nuttige zaken je nog met de bibliotheek kunt doen.
 
-## Programma afsluiten
+### Programma afsluiten
 
 De ``Enviroment`` bibliotheek heeft ook een methode om je applicatie af te sluiten. Je doet dit met behulp van ``Environment.Exit(0);`` Het getal tussen haakjes mag je zelf bepalen en is de zogenaamde foutcode die je wilt meegeven bij het afsluiten (als je dan later via logbestanden wilt onderzoeken waarom het programma stopte dan kan je opzoeken weke foutcode er werd opgeworpen via de logs van je besturingssysteem).
 

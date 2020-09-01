@@ -1,4 +1,4 @@
-## Jagged Arrays
+### Jagged Arrays
 
 Jagged arrays (letterlijk *gekartelde arrays*) zijn *arrays van arrays* maar van verschillende lengte.
 In tegenstelling tot de eerdere meer-dimensionale arrays moeten de interne arrays steeds dezelfde lengte hebben, bijvoorbeeld 3 bij 2 bij 4. Bij jagged arrays hoeft dat dus niet.
@@ -6,7 +6,7 @@ In tegenstelling tot de eerdere meer-dimensionale arrays moeten de interne array
 <!--- {width:40%} --->
 ![Voorbeeld van een jagged array](../assets/5_arrays/jaggedt.png)
 
-### Jagged arrays aanmaken
+#### Jagged arrays aanmaken
 
 Het grote verschil bij het aanmaken van bijvoorbeeld een 2D jagged arrays is het gebruik van de vierkante haken (en dus niet bijvoorbeeld ``tickets[,]``):
 
@@ -27,7 +27,7 @@ tickets={
 
 
 
-### Indexering
+#### Indexering bij jagged arrays
 
 De indexering blijft dezelfde, maar ook hier dus niet met komma's, maar met vierkante haken (bijvoorbeeld ``ticket[0][1][0]``).
 

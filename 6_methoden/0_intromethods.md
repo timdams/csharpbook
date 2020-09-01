@@ -1,18 +1,14 @@
-# Methoden
-
-## Hoe werken methoden
-
-Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoudbaarheid van de code wordt verhoogd.
-
-{% hint style='tip' %}
-**Goede programmeurs zijn luie programmeurs**
+# Methode
 
 Ene Bill Gates, je weet wel, de oprichter van een bedrijfje genaamd Microsoft zei ooit: "I will always choose a lazy person to do a difficult job. Because, he will find an easy way to do it."
 
 Het is je misschien nog niet opgevallen, maar sinds het vorige hoofdstuk zijn we de jacht begonnen op zo weinig mogelijk code schrijven met zoveel mogelijk rendement. Loops was een eerste stap in de goede richting. De volgende zijn methoden! Tijd om nog luier te worden.
-{% endhint %}
 
-### Wat is een methode
+Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoudbaarheid van de code wordt verhoogd.
+
+
+
+## Werking van methoden
 
 Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerdere statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet met extra parameters, en kan ook een resultaat terug geven. Een methode kan van eender waar in je code aangeroepen worden.
 
@@ -38,6 +34,8 @@ MethodeNaam();
 ```
 
 Dat is een mondvol. We gaan daarom de methoden even stapsgewijs leren kennen. Let's go!
+
+<!---{pagebreak} --->
 
 ### Een eenvoudige methode
 

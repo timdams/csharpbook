@@ -98,11 +98,12 @@ Blijf dus maar hier lekker in het diep dobberen en ontdek verder waarom arrays z
 {% endhint %}
 <!---NOBOOKEND--->
 
+## Werken met arrays
 
-## Arrays declareren
+### Arrays declareren
 Een array creëren (declareren) kan op verschillende manieren.
 
-### Manier 1
+#### Manier 1
 De eenvoudigste variant is deze waarbij je een array variabele aanmaakt, maar deze nog niet initialiseert (i.e. je maakt enkel een identifier in aan). De syntax is als volgt:
 
 <!---{line-numbers:false}--->
@@ -137,7 +138,7 @@ myColors = {"red", "green", "yellow", "orange", "blue"};
 Je array zal vanaf dit punt **een lengte van 5 hebben en kan niet meer groeien**.
 
 
-### Manier 2
+#### Manier 2
 Indien je ogenblikkelijk waarden wilt toekennen (*initialiseren*) tijdens het aanmaken van de array zelf dan mag dit ook als volgt:
 
 ```java
@@ -148,7 +149,7 @@ Ook hier zal dus vanaf dit punt je array een vaste lengte van 5 elementen hebben
 
 Merk op dat deze manier dus enkel werkt indien je reeds weet welke waarden in de array moeten. In manier 1 kunnen we perfect een array aanmaken en pas veel later in programma ook effectief waarden toekennen (bijvoorbeeld door ze stuk per stuk door een gebruiker te laten invoeren).
 
-### Manier 3
+#### Manier 3
 Nog een andere manier om arrays aan te maken is de volgende, waarbij je aangeeft hoe groot de array moet zijn, zonder reeds effectief waarden toe te kennen:
 
 ```java
@@ -168,7 +169,7 @@ Ook hier geldt dat de lengte vanaf dan vastligt en niet meer kan veranderen.
 {% endhint %}
 
 
-## Elementen van een array aanpassen en uitlezen
+### Elementen van een array aanpassen en uitlezen
 Van zodra er waarden in een array staan of moeten bijgeplaatst worden kan je deze benaderen met de zogenaamde **array accessor** notatie. Deze notatie is heel eenvoudigweg de volgende:
 
 ```java
@@ -204,7 +205,7 @@ De regels zijn duidelijk:
 {% endhint %}
 <!---NOBOOKEND--->
 
-### Lezen
+#### Lezen
 
 We weten nu hoe we individuele waarden in een array kunnen benaderen. Ze gebruiken is dus exact hetzelfde zoals we in het verleden al met eender welke andere variabele hebben gedaan. Het enige verschil is dat de identifier dus vierkante haken met een index in bevat om aan te geven welke element we nodig hebben van de arrays.
 
@@ -246,7 +247,6 @@ for(int i = 0 ; i<myColors.Length;i++)
 ```
 {% endhint %}
 
-<!---{pagebreak} --->
 
 Stel dat we een array van getallen hebben, dan kunnen we dus bijvoorbeeld 2 waarden uit die array optellen en opslaan in een andere variabele als volgt:
 
@@ -278,6 +278,8 @@ while (teller < numbers.Length)
 }
 ```
 
+<!---{pagebreak} --->
+
 Of het equivalent met een for-loop:
 
 ```java
@@ -293,7 +295,7 @@ Zoals je merkt zijn loops en arrays dikke vrienden.
 
 <!---{pagebreak} --->
 
-### Schrijven
+#### Schrijven
 Ook schrijven van waarden naar de array gebruikt dezelfde notatie. Enkel moet je dus deze keer de array accessor-notatie links van de toekenningsoperator plaatsen. Stel dat we bijvoorbeeld de waarde van het eerste element uit de myColors array willen veranderen van ``red`` naar ``indigo``, dan gebruiken we volgende notatie:
 
 <!---{line-numbers:false}--->
@@ -335,7 +337,9 @@ for(int i=1; i<=7; i++)
 **Dat gaat niet!** Van zodra je van plan bent om variabele-namen "dynamisch" in je code te proberen aan te roepen moeten er tal van alarmbelletjes afgaan. De kans is dan héél groot dat je probleem beter met een array wordt opgelost dan met een boel variabelen met soortgelijke namen.
 {% endhint %}
 
-## De lengte van de array te weten komen
+<!---{pagebreak} --->
+
+### De lengte van de array te weten komen
 
 Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De ``Length``-eigenschap van iedere array geeft dit weer. Volgend voorbeeld toen dit:
 
@@ -382,7 +386,7 @@ Deze fout zegt exact wat er mis is: je probeert elementen in een arrays te benad
 {% endhint %}
 <!---NOBOOKEND--->
 
-## Volledig voorbeeldprogramma met arrays
+### Volledig voorbeeldprogramma met arrays
 
 Met al de voorgaande informatie is het nu mogelijk om vlot complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-loop om een bepaalde operatie over de hele array toe te passen.
 
@@ -390,20 +394,17 @@ Het volgende programma zal een array van integers aanmaken die alle gehele getal
 
 ```java
 //Array aanmaken
-int[] getallen = new int[100];
- 
+int[] getallen = new int[100]; 
 //Array vullen
 for (int i = 0; i < getallen.Length; i++)
 {
     getallen[i] = i;
 }
- 
 //Alle elementen met 3 vermenigvuldigen
 for (int i = 0; i < getallen.Length; i++)
 {
     getallen[i] = getallen[i] * 3;
 }
- 
 //Enkel veelvouden van 4 op het scherm tonen
 for (int i = 0; i < getallen.Length; i++)
 {
