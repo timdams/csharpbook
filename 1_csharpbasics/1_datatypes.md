@@ -31,7 +31,7 @@ result = Console.ReadLine();
 
 
 ### Basistypen voor getallen
-Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaard zou dat voor ons niet erg handig werken. C# heeft daarom een hoop datatypes gedefinieerd om te werken met getallen zoals wij ze kennen, gehele en kommagetallen. Intern zullen deze getallen nog steeds binair bewaard worden, maar dat is tijdens het programmeren zelden een probleem.
+Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaart zou dat voor ons niet erg handig werken. C# heeft daarom een hoop datatypes gedefinieerd om te werken met getallen zoals wij ze kennen, gehele en kommagetallen. Intern zullen deze getallen nog steeds binair bewaard worden, maar dat is tijdens het programmeren zelden een probleem.
 
 De basistypen van C\# om getallen in op te slaan zijn:
 
@@ -61,12 +61,12 @@ Voor de gehele getallen zijn er volgende datatypes:
 | `ulong` | 64 bits | 0 tot 18 446 744 073 709 551 615 | 
 | `char` | 16 bits | 0 tot 65535 | 
 
-Het bereik van ieder datatype is een rechtstreeks gevolg van het aantal bits waarmee het getal in dit type wordt voorgesteld. De ``short`` bijvoorbeeld wordt voorgesteld door 16 bits, 1 bit daarvan wordt gebruikt voor het teken (0 of 1, + of -). De overige 15 bits worden gebruikt voor de waarde: van 0 tot 2^15 (= 32767) en van 0 tot -2^15 (= -32768)
+Het bereik van ieder datatype is een rechtstreeks gevolg van het aantal bits waarmee het getal in dit type wordt voorgesteld. De ``short`` bijvoorbeeld wordt voorgesteld door 16 bits, 1 bit daarvan wordt gebruikt voor het teken (0 of 1, + of -). De overige 15 bits worden gebruikt voor de waarde: van 0 tot 2^15^ (= 32767) en van 0 tot -2^15^ (= -32768)
 
 Enkele opmerkingen bij deze tabel:
 * De `s` vooraan `sbyte` staat voor ``signed``: m.a.w. 1 bit wordt gebruikt om het + of - teken te bewaren. 
 * De `u` vooraan `ushort`, `uint` en `ulong` staat voor `unsigned`. Het omgekeerde van signed dus. Kwestie van het ingewikkeld te maken. Deze twee datatypes hebben dus geen teken en zijn **altijd positief**.
-* `char` bewaard karakters. We zullen verderop dit datatype uitspitten en ontdekken dat karakters (alle tekens op het toetsenbord, inclusief getallen, leesteken, etc.) als gehele, binaire getallen worden bewaard. Daarom staat `char` in deze lijst.
+* `char` bewaart karakters. We zullen verderop dit datatype uitspitten en ontdekken dat karakters (alle tekens op het toetsenbord, inclusief getallen, leesteken, etc.) als gehele, binaire getallen worden bewaard. Daarom staat `char` in deze lijst.
 * Het grootste getal bij `long` is 2 tot de 63ste (negen triljoen tweehonderddrieëntwintig biljard driehonderd tweeënzeventig biljoen zesendertig miljard achthonderdvierenvijftig miljoen zevenhonderdvijfenzeventigduizend achthonderd en zeven). Dit zijn maar 63 bits?! Inderaad, de laatste bit wordt gebruikt om het teken te bewaren.
 
 <!---NOBOOKSTART--->
@@ -78,7 +78,7 @@ Enkele opmerkingen bij deze tabel:
 
 "Wow. Moet je al die datatypes uit het hoofd kennen? Ik was al blij dat ik tekst op het scherm kon tonen."
 
-Uiteraard kan het geen kwaad dat je de belangrijkste datatypes onthoud, anderzijds zul je zelf merken dat door gewoon veel te programmeren je vanzelf wel zult ontdekken welke datatypes je waar kunt gebruiken. Laat je dus niet afschrikken door de ellenlange tabellen met datatypes in dit hoofdstuk, we gaan er maar een handvol effectief van gebruiken.
+Uiteraard kan het geen kwaad dat je de belangrijkste datatypes onthoudt, anderzijds zul je zelf merken dat door gewoon veel te programmeren je vanzelf wel zult ontdekken welke datatypes je waar kunt gebruiken. Laat je dus niet afschrikken door de ellenlange tabellen met datatypes in dit hoofdstuk, we gaan er maar een handvol effectief van gebruiken.
 
 
 <!---{/aside}--->
@@ -87,7 +87,7 @@ Uiteraard kan het geen kwaad dat je de belangrijkste datatypes onthoud, anderzij
 <!---NOBOOKEND--->
 
 #### Kommagetallen
-Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voordeel' tegenover de 2 andere, dit voordeel staat vet in de tabel:
+Voor de kommagetallen zijn er maar 3 mogelijkheden. Ieder datatype heeft een 'voordeel' tegenover de 2 andere, dit voordeel staat vet in de tabel:
 
 | **Type** | **Geheugen** | **Bereik** | **Precisie** |
 | :--- | :--- | :--- | :--- |
