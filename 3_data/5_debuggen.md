@@ -69,7 +69,7 @@ Even je oren open zetten aub, ik ga iets roepen:**"Debugging is een ESSENTIËLE 
  
  Zorg dus dat je vlot breakpoints kunt plaatsen om zo tijdens de uitvoer te pauzeren om de inhoud van je variabelen te bekijken (via het zogenaamde watch-venster). Gebruik vervolgens de "step"-buttons om door je code te 'stappen', lijn per lijn.
 
- Is that al?!
+ Is that all?!
 
  NEEN! Een goede programmeur zal telkens **eerst voorspellen** wat er gaat gebeuren: welke waarden zullen de variabelen hebben als ik naar de volgende lijn ga? Wat gaar er op het scherm komen? Etc. Als je dan vervolgens naar de volgende lijn gaat of breakpoint gaat en er gebeuren dingen die je niet voorspeld had, dan is de kans groot dat je een bug hebt gevonden.
 
