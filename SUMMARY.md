@@ -9,7 +9,7 @@
 * [Oplijsting videos](allvideos.md)
 * [Oefeningen](oefeningen.md)
 
-## Semester 1: Programming Principles
+## Zie Scherp (Semester 1)
 
 * H1: De eerste stappen
   * [Introductie tot C#](0_intro/0_intrototcs.md)
@@ -60,8 +60,13 @@
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
   * [Jagged arrays](7_arrays/5_jaggedArrays.md) 
+* Appendix Zie Scherp
+  * [Nuttige weetjes](B_appendix/prostuff.md)
+  * [Out,Ref en TryParse](B_appendix/2_outenref.md)
+  * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+  * [Programma flow analyse](5_herhalingen/4_programflow.md)
 
-## Semester 2 : OOP
+## Zie Scherper (Semester 2)
 
 * H9: Klassen en objecten
   * [OOP Intro](8_klassen/0_oop_intro.md)
@@ -107,40 +112,11 @@
   * [Interfaces voorbeeld met president](16_interfaces/presidentinterfaces.md)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Final chapter: we brengen alles samen](18_IsAs/2_Polymorfisme_Interfaces.md)
-  
-## Appendix
-
-* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
-* [Programma flow analyse](5_herhalingen/4_programflow.md)
-* [Oefeningen kerkhof](B_appendix/graveyard.md)
-  
-## Semester 1 appendix
-
-* [Nice to know stuff](B_appendix/prostuff.md)
-  * [Out,Ref en TryParse](B_appendix/2_outenref.md)
-  * [Nuttige array methoden](7_arrays/2_werken_met_arrays.md)
-* All-In-Projecten
-  * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
-  * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
-  * [Unicode filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
-  * [Unicode filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
-  * [Fun with methods: een verhaalgenerator](A_DEEL1_AllInOne/3_verhaalgenerator.md)
-  * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
-  * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
-
-## Semester 2 appendix
-
-* Nice to know stuff
+* Appendix Zie Scherper 
   * [Klassen herbruiken](B_appendix/namespaces.md)
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
   * [Expression bodied members](B_appendix/6_exprbody.md)
   * [Werken met git (in opbouw)](B_appendix/git.md)
   * [Spelen met strings](10_advancedklassen/strings.md)
 
-* All-In-Projecten
-  * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
-  * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
-  * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
-  * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)
-  * [Magic The Gathering API](A_DEEL2_AllInOne/mtgapi.md)
 

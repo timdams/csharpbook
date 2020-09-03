@@ -1,4 +1,3 @@
-
 # Handige Visual Studio code snippets
 
 Bepaalde code zal je vaak opnieuw schrijven. Er zitten in VS tal van shortcuts om deze typische lijnen code sneller te schrijven. Schrijf een van volgende stukken code en druk dan 2x op de [tab]-toets
