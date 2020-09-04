@@ -35,7 +35,7 @@ switch (value)
 }
 ```
 
-``value`` is de variabele die wordt gebruikt als booleaanse test in de switch (``option`` in ons voorbeeld hier boven) . Iedere case begint met het ``case`` keyword gevolgd door de waarde die ``value`` moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze ``case``. De ``case`` zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het ``break`` keyword.
+``value`` is de variabele die wordt gebruikt als booleaanse test in de switch (``option`` in ons voorbeeld hier boven). Iedere case begint met het ``case`` keyword gevolgd door de waarde die ``value`` moet hebben om in deze case te *springen*. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze ``case``. De ``case`` zelf mag eender welke code bevatten (methoden, nieuwe program flow elementen, etc.), maar moet zeker afgesloten worden met het ``break`` keyword.
 
 Tijdens de uitvoer zal het programma ``value`` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan ``value`` dan zal de code binnen de ``default``-case uitgevoerd worden (de ``else`` achteraan indien alle vorige ``if else``-tests negatief waren).
 

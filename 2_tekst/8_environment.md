@@ -7,7 +7,7 @@ Een andere nuttige bibliotheek is de ``Environment``-bibliotheek. Deze geeft je 
 {% hint style='tip' %}
 De laatste zin in vorige alinea is belangrijk: als je jouw programma dus op een andere computer laat uitvoeren zal je mogelijk andere informatie verkrijgen. 
 
-Wil je een programma dus testen dat deze bibliotheek gebruikt is het aangeraden om het op meerdere systemen met verschillende eigenschappen te testen.
+Wil je een programma dus testen dat deze bibliotheek gebruikt, is het aangeraden om het op meerdere systemen met verschillende eigenschappen te testen.
 {% endhint %}
 
 Hier enkele voorbeelden hoe je deze bibliotheek kunt gebruiken (kijk zelf of er nog nuttige properties over je computer in staan):
@@ -28,7 +28,7 @@ Console.WriteLine($"en dit programma gebruikt {memory} Mb geheugen");
 Console.WriteLine($"En je usernaam is {Environment.UserName}");
 ```
 
-In de laatste lijn code tonen we dat je uiteraard ook rechtstreeks de variabelen uit``Environment`` in je string interpolatie kunt gebruiken en dus niet met een tussenvariabele moet werken.
+In de laatste lijn code tonen we dat je uiteraard ook rechtstreeks de variabelen uit ``Environment`` in je string interpolatie kunt gebruiken en dus niet met een tussenvariabele moet werken.
 
 {% hint style='tip' %}
 **WorkingSet** geeft terug hoeveel geheugen het programma van Windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (Wat een vreemde lange zin.). Test maar eens wat er gebeurt als je programma maakt dat uit meer lijnen code bestaat.

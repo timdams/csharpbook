@@ -31,7 +31,7 @@ Wil je dus getal ook nog buiten de ``if`` gebruiken zal je je code moeten hersch
 <!---{pagebreak} --->
 
 ### Variabelen met zelfde naam
-Zolang je in de scope van een variabele bent kan je geen nieuwe variabele met dezelfde naam aanmaken:
+Zolang je in de scope van een variabele bent, kan je geen nieuwe variabele met dezelfde naam aanmaken:
 
 Volgende code is dus niet toegestaan:
 ```java

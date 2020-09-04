@@ -16,7 +16,7 @@ De uitvoer zal worden:``Ik ben Tim``.
 
 ### Char array naar string
 
-Ook de omgekeerde weg is mogelijk.  De werking is iets anders en maakt gebruikt van ``new string()``, let vooral op hoe we de char array doorgeven als argument bij het aanmaken van een nieuwe ``string`` in lijn 3:
+Ook de omgekeerde weg is mogelijk.  De werking is iets anders en maakt gebruik van ``new string()``, let vooral op hoe we de char array doorgeven als argument bij het aanmaken van een nieuwe ``string`` in lijn 3:
 
 ```java
 char[] arrayOfLetters = {'h', 'a', 'l', 'l', 'o'};
@@ -32,7 +32,7 @@ De uitvoer van deze code zal zijn: ``haxlo``.
 Volgende methoden kan je rechtstreeks op string-variabelen oproepen:
 
 #### Length
-Geeft  het totaal aantal karakters in de string wat logisch is, daar het om een arrays gaat:
+Geeft  het totaal aantal karakters in de string wat logisch is, daar het om een array gaat:
 
 ```java
 string myName="Tim";
@@ -43,7 +43,7 @@ Console.WriteLine(myName.Length); //er verschijnt 3 op het scherm
 
 #### IndexOf
 
-Deze methode geeft  een ``int`` terug die de index bevat waar de string die je als parameter meegaf begint. Kan je gebruiken om te ontdekken of een bepaald woord bijvoorbeeld in een grote lap tekst voorkomt zoals volgende voorbeeld toont:
+Deze methode geeft  een ``int`` terug die de index bevat waar de string die je als parameter meegaf begint. Kan je gebruiken om te ontdekken of een bepaald woord bijvoorbeeld in een grote lap tekst voorkomt zoals volgend voorbeeld toont:
 
 ```java
 string boek="Ik ben Reinhardt";
@@ -54,7 +54,7 @@ Er zal ``3`` verschijnen, daar "ben" start op positie 3 ("ik" staat op positie 0
 
 #### Trim
 
-``Trim()`` verwijderd alle onnodige spaties vooraan en achteraan de string en geeft de opgekuiste string terug. Deze methode geeft de opgekuiste string terug als resultaat, je moet deze dus bewaren. In het volgende voorbeeld overschrijven we de originele string met z'n opgekuiste versie:
+``Trim()`` verwijdert alle onnodige spaties vooraan en achteraan de string en geeft de opgekuiste string terug. Deze methode geeft de opgekuiste string terug als resultaat, je moet deze dus bewaren. In het volgende voorbeeld overschrijven we de originele string met z'n opgekuiste versie:
 
 ```java
 string boek="   Ik ben Reinhardt   ";

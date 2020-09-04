@@ -17,20 +17,19 @@ Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week 
 2. Met een ``string`` die de naam van de dag bevat (bv. ``woensdag``)
 
 #### Slechte oplossing 1: Met ``int``
-De waarde van de dag staat in een variabele ``int dagKeuze``. We bewaren er 1 in voor Maandag, 2 voor dinsdag, enzovoort. Vervolgens kunnen we dan schrijven: 
+De waarde van de dag staat in een variabele ``int dagKeuze``. We bewaren er 1 in voor maandag, 2 voor dinsdag, enzovoort. Vervolgens kunnen we dan schrijven: 
 
 ```java
 if(dagKeuze==1)
 {
     Console.WriteLine("We doen de maandag dingen");
 }
-else 
-if (dagKeuze==2)
+else if (dagKeuze==2)
 {
     Console.WriteLine("We doen de dinsdag dingen");
 }
-else 
-if //enz.
+else if 
+//enz.
 ```
 
 Deze oplossing heeft 2 grote nadelen:
@@ -46,28 +45,26 @@ if(dagKeuze=="maandag")
 {
     Console.WriteLine("We doen de maandag dingen");
 }
-else 
-if (dagKeuze=="dinsdag")
+else if (dagKeuze=="dinsdag")
 {
     Console.WriteLine("We doen de dinsdag dingen");
 }
-else 
-if //enz.
+else if //enz.
 ```
 
 De code wordt nu wel leesbaarder, maar toch is ook hier 1 groot nadeel:
-* De code is veel foutgevoeliger voor typfouten. Wanneer je ``"Maandag"`` i.p.v. ``"maandag"`` bewaard dan zal de if al niet werken. Iedere schrijffout of variant zal falen. 
+* De code is veel foutgevoeliger voor typefouten. Wanneer je ``"Maandag"`` i.p.v. ``"maandag"`` bewaart dan zal de if al niet werken. Iedere schrijffout of variant zal falen. 
 
-### Enumeraties: het beste van beide wereld.
+### Enumeraties: het beste van beide werelden.
 Enumeraties (**enum**) zijn een C# syntax dat bovenstaand probleem oplost en het beste van beide slechte oplossingen samenvoegt : 
-1. **leesbaardere code**.
+1. **Leesbaardere code**.
 2. Minder foutgevoelige code, en dus minder potentiële bugs.
-3. VS kan je helpen met met sneller de nodige code te schrijven.
+3. VS kan je helpen met sneller de nodige code te schrijven.
 
-Het keyword ``enum`` geeft aan dat we een nieuw datatype maken dat maar enkele mogelijke waarden kan hebben. Nadat we dit nieuwe datatype hebben gedefiniëerd kunnen we variabele van dit nieuwe datatype aanmaken. Deze variabele zal enkel waarden mogen bevatten die in het datatype werden gedefinieerd. Ook zal IntelliSense van Visual Studio je de mogelijke waarden helpen invullen.
+Het keyword ``enum`` geeft aan dat we een nieuw datatype maken dat maar enkele mogelijke waarden kan hebben. Nadat we dit nieuwe datatype hebben gedefinieerd kunnen we een variabele van dit nieuwe datatype aanmaken. Deze variabele zal enkel waarden mogen bevatten die in het datatype werden gedefinieerd. Ook zal IntelliSense van Visual Studio je de mogelijke waarden helpen invullen.
 
 {% hint style='tip' %}
-In C# zitten al veel Enum-types ingebouwd. Denk maar aan ``ConsoleColor``: wanneer je de kleur van het lettertype van de console wilt veranderen gebruiken we een enum-type. Er werd reeds gedefinieerd wat de toegelaten waarden zijn, bijvoorbeeld: ``Console.ForegroundColor = ConsoleColor.Red;`` 
+In C# zitten al veel enum-types ingebouwd. Denk maar aan ``ConsoleColor``: wanneer je de kleur van het lettertype van de console wilt veranderen gebruiken we een enum-type. Er werd reeds gedefinieerd wat de toegelaten waarden zijn, bijvoorbeeld: ``Console.ForegroundColor = ConsoleColor.Red;`` 
 {% endhint %}
 
 ### Zelf enum maken
@@ -91,7 +88,7 @@ static void Main(string[] args)
     Console.WriteLine("Hello enum");
 }
 ```
-We hebben nu letterlijk een nieuwe datatype aangemaakt, genaamd ``Weekdagen``. Net zoals ``int``, ``double`` etc. kan je nu ook variabelen van het type ``Weekdagen`` aanmaken. Hoe cool is dat?!
+We hebben nu letterlijk een nieuw datatype aangemaakt, genaamd ``Weekdagen``. Net zoals ``int``, ``double`` etc. kan je nu ook variabelen van het type ``Weekdagen`` aanmaken. Hoe cool is dat?!
 
 
 #### Stap 2: variabelen van het nieuwe datatype aanmaken en gebruiken
@@ -108,7 +105,7 @@ En vervolgens kunnen we waarden aan deze variabelen toewijzen als volgt:
 dagKeuze = Weekdagen.Donderdag;
 ```
 
-Kortom: we hebben variabelen zoals we gewoon zijn, het enige verschil is dat we nu beperkt zijn in de waarden die we kunnen toewijzen. Deze kunnen enkel de waarden krijgen die in het type gedefiniëerd werden. De code is nu ook een pak leesbaarder geworden.
+Kortom: we hebben variabelen zoals we gewoon zijn, het enige verschil is dat we nu beperkt zijn in de waarden die we kunnen toewijzen. Deze kunnen enkel de waarden krijgen die in het type gedefinieerd werden. De code is nu ook een pak leesbaarder geworden.
 
 <!---{pagebreak} --->
 
@@ -183,6 +180,11 @@ enum WeekDagen
 
 In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden, Zaterdag als 50, en Zondag als 60.
 
+
+{% hint style='tip' %}
+De individuele enum waarden moeten steeds met een hoofdletter starten. 
+{% endhint %}
+
 {% hint style='tip' %}
 
 ### Gebruikersinvoer naar enum
@@ -209,6 +211,8 @@ static void Main(string[] args)
 ```
 {% endhint %}
 
+
+
 <!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
@@ -224,26 +228,26 @@ De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen
 
 Wanneer gebruik je ``enum``? Telkens je een variabele (of meerdere) nodig hebt waarvan je perfect op voorhand weet welke (handvol) mogelijke waarden ze mogen hebben. Ze worden bijvoorbeeld vaak gebruikt in **finite state machines**. 
 
-Bij game development willen we bijhouden in welke staat het programma zich bevindt: ``intro``, ``startmenu``, ``ingame``, ``gameover``, ``optionsscreen``, etc.
+Bij game development willen we bijhouden in welke staat het programma zich bevindt: ``Intro``, ``Startmenu``, ``Ingame``, ``Gameover``, ``Optionsscreen``, etc.
 
 Dit is een typisch ``enum`` verhaal. We definiëren hiervoor het volgende type:
 
 ```java
-enum gamestate {intro, startmenu, ingame, gameover, optionsscreen}
+enum gamestate {Intro, Startmenu, Ingame, Gameover, Optionsscreen}
 ```
 En vervolgens kunnen we dan met een eenvoudige switch in ons hoofdprogramma snel de relevante code uitvoeren:
 
 ```java
 //Bij opstart:
-gamestate playerGameState= gamestate.intro;
+gamestate playerGameState= gamestate.Intro;
 
 //later:
 switch(playerGameState)
 {
-    case gamestate.intro:
+    case gamestate.Intro:
         //show fancy movie
         break;
-    case gamestate.startmenu:
+    case gamestate.Startmenu:
         //show start menu
         break;
     //etc...

@@ -7,7 +7,7 @@ De eerste zin is een vereenvoudiging, wat we in het volgende boekdeel zullen ont
 {% endhint %}
 
 ### Sort: Arrays sorteren
-Om arrays te sorteren roep je de ``Sort()``-methode op en geef je als parameter de array mee die gesorteerd moet worden. Volgende voorbeeld toont hier het gebruik van:
+Om arrays te sorteren roep je de ``Sort()``-methode op en geef je als parameter de array mee die gesorteerd moet worden. Volgend voorbeeld toont hier het gebruik van:
 
 ```java
 string[] myColors = {"red", "green", "yellow", "orange", "blue"};
@@ -42,10 +42,10 @@ Array.Clear(myColors);
 ### Copy : array by value kopiëren
 
 De ``.Copy()`` behelst iets meer werk, daar deze methode
-* een reeds aangemaakte, nieuwe array nodig heeft waar naar gekopiëerd moet worden.
+* een reeds aangemaakte, nieuwe array nodig heeft, waar naar gekopiëerd moet worden.
 * moet meekrijgen hoe lang de bronarray (*source*) is, of hoeveel elementen uit de bronarray moeten gekopiëerd worden.
 
-Volgende voorbeeld toont hoe we alle elementen uit ``myColors`` kunnen kopiëren naar een nieuwe array ``copyColors``. De eerste parameter is de bron-array, dan de doel-array en finaal het aantal elementen dat moet gekopiëerd worden:
+Volgend voorbeeld toont hoe we alle elementen uit ``myColors`` kunnen kopiëren naar een nieuwe array ``copyColors``. De eerste parameter is de bron-array, dan de doel-array en finaal het aantal elementen dat moet gekopiëerd worden:
 
 ```java
 string[] myColors = { "red", "green", "yellow", "orange", "blue" };

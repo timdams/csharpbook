@@ -40,7 +40,7 @@ Kortom, op deze manier maakt de volgorde van parameter niets uit. Dit werkt enke
 
 #### Named en unnamed mixen: volgorde wél belangrijk
 
-Je mag echter ook een combinatie gebruiken van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).  Enkele **geldige** voorbeelden:
+Je mag echter ook een combinatie gebruiken van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbetert hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).  Enkele **geldige** voorbeelden:
 ```java
 PrintDetails("Gift Shop", 31, product: "Red Mug");
 PrintDetails(seller: "Gift Shop", 31, product: "Red Mug");   
@@ -86,7 +86,7 @@ BookFile(3, age: 4);
 
 ### Method overloading
 
-Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere parameters qua datatype en aantal*. De compiler zal dan zelf bepalen welke versie moet aangeroepen worden gebaseerd op het aantal en type parameters dat je meegeeft.
+Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere parameters qua datatype en aantal*. De compiler zal dan zelf bepalen welke versie moet aangeroepen worden, gebaseerd op het aantal en type parameters dat je meegeeft.
 
 Volgende methoden zijn overloaded:
 
@@ -104,7 +104,7 @@ static int BerekenOppervlakte(int straal)
 }
 ```
 
-Afhankelijk van de aanroep zal dus de ene of andere uitgevoerd worden. Volgende code zal dus werken:
+Afhankelijk van de aanroep zal dus het ene of andere uitgevoerd worden. Volgende code zal dus werken:
 ```java
 Console.WriteLine($"Rechthoek: {BerekenOppervlakte(5, 6)}");
 Console.WriteLine($"Cirkel: {BerekenOppervlakte(7)}");
@@ -180,7 +180,7 @@ static void Toonverhouding(double a, int b) //versie B
 
 <!---{pagebreak} --->
 
-Indien ook die regel niet werkt dan zal een fout optreden zoals hier wat zal resulteren in een fout:
+Indien ook die regel niet werkt dan zal een fout optreden zoals hier, wat zal resulteren in een fout:
 
 ![We zien aan de foutboodschap duidelijk dat er eerst naar de eerste parameter wordt gekeken bij twijfel.](../assets/4_methoden/overl.png)
 

@@ -91,7 +91,7 @@ while(teller <= 10)
 Console.WriteLine(som); //deze lijn zal een fout genereren
 ```
 
-Voorgaande code zal volgende VS error geven: *The name `som`does not exist in the current context*.
+Voorgaande code zal volgende VS error geven: *The name 'som' does not exist in the current context*.
 
 
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele ``som`` enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden. Hier de oplossing:

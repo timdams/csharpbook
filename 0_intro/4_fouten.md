@@ -4,7 +4,7 @@ Je code zal pas compileren indien deze foutloos is geschreven. Herinner je dat c
 
 Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder kan. Gelukkig helpt VS je daarmee op 2 manieren:
 
-* Fouten in code worden met een rode squiggly onderlijnt.
+* Fouten in code worden met een rode squiggly onderlijnd.
 * Onderaan zie je in de statusbalk of je fouten hebt.
 
 ![Zie je de fout?](../assets/0_intro/error.PNG)
@@ -65,6 +65,6 @@ De meest voorkomende fouten die je als beginnende C# programmeur maakt zijn:
 
 * **Puntkomma** vergeten.
 * **Schrijffouten** in je code, bijvoorbeeld ``RaedLine`` i.p.v. ``ReadLine``.
-* Geen rekening gehouden met **hoofdletter gevoeligheid van #** ``Readline`` i.p.v. ``ReadLine`` (zie verder).
+* Geen rekening gehouden met **hoofdletter gevoeligheid van C#**, bijvoorbeeld ``Readline`` i.p.v. ``ReadLine`` (zie verder).
 * Per ongeluk **accolades verwijderd**.
 * Code geschreven op plekken waar dat niet mag (je mag momenteel enkel binnen de accolades van ``Main`` schrijven).

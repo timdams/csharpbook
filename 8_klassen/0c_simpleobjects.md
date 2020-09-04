@@ -1,8 +1,8 @@
-# Een eenvoudige klasse
+## Een eenvoudige klasse
 
 We zullen nu enkele basisconcepten van klassen en objecten toelichten aan de hand van praktische voorbeelden.
 
-## Object methoden
+### Object methoden
 
 Stel dat we een klasse willen maken die ons toelaat om objecten te maken die verschillende mensen voorstellen. We willen aan iedere mens kunnen vragen waar deze woont en die zal dat dan op het scherm tonen.
 
@@ -35,7 +35,7 @@ alfons.Praat();
 
 Er zal 2x ``Ik ben een mens!`` op het scherm verschijnen. Waarbij telkens ieder object (``joske`` en ``alfons``) zelf verantwoordelijk ervoor waren dat dit gebeurde.
 
-## Public en private access modifiers
+### Public en private access modifiers
 
 
 De **access modifier** geeft aan hoe zichtbaar een bepaald deel van de klasse is. Wanneer je niet wilt dat "van buitenuit" (bv objecten van je klasse in de Main) een bepaalde methode kan aangeroepen worden, dan dien je deze als ``private`` in te stellen. Wil je dit net wel dat moet je er expliciet ``public`` voor zetten.
@@ -63,7 +63,7 @@ class Mens
 
 Als je duidelijk wil maken dat bepaalde code niet van buitenaf aangeroepen kan worden, schrijf dan ``private`` in plaats van ``public``. Als je geen van beide schrijft, zit je code ergens tussenin ``public`` en ``private`` (zie later). Als beginnende programmeur maak je er best een gewoonte van duidelijk te kiezen voor ``public`` of ``private``.
 
-### Reden van private
+#### Reden van private
 
 Waarom zou je bepaalde zaken ``private`` maken? 
 
@@ -95,13 +95,13 @@ rachid.Praat();
 
 Dan zal de uitvoer worden:
 
-<!---{line-numbers:false}--->
+{line-numbers:false}
 ```text
 Ik ben een mens!
 Mijn geheim is dat ik leef!
 ```
 
-# Instantievariabelen
+### Instantievariabelen
 
 We maken onze klasse wat groter, we willen dat een object een leeftijd heeft die we kunnen verhogen via een methode ``VerjaardagVieren`` (we hebben de methode ``VertelGeheim`` even weggelaten):
 
@@ -149,7 +149,7 @@ Bono.VerjaardagVieren();
 
 Als je deze code zou uitvoeren zal je zien dat de leeftijd van Elvis verhoogt en niet die van Bono wanneer we ``VerjaardagVieren`` aanroepen. Zoals het hoort!
 
-## Initiële waarde van een instantievariabele
+#### Initiële waarde van een instantievariabele
 Bekijk opnieuw het voorbeeld:
 
 ```java

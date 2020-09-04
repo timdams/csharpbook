@@ -117,15 +117,15 @@ Om samen te vatten, even de belangrijkste literal schrijfwijzen op een rijtje:
 ```java
 int getal= 5;
 double anderGetal= 5.5;
-uint noganderGetal= 15u;
-float kleinkommagetal= 158.9m;
+uint nogAnderGetal= 15u;
+float kleinKommaGetal= 158.9m;
 char letter = `k`
 bool isDitCool= true;
 string zin= "Ja hoor";
 ```
 {% endhint %}
   
-De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduiding. Er wordt vanuit gegaan wanneer je een literal probeert toe te wijzen aan een van deze datatypes dat dit zonder problemen zal gaan (ze worden impliciet geconverteerd). Bijvoorbeeld ``sbyte start = 127;`` wordt toegestaan, de ``int`` literal 127 zal geconverteerd worden achter de schermen naar een ``sbyte`` en dan toegewezen worden.
+De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduiding. Er wordt vanuit gegaan wanneer je een literal probeert toe te wijzen aan één van deze datatypes dat dit zonder problemen zal gaan (ze worden impliciet geconverteerd). Bijvoorbeeld ``sbyte start = 127;`` wordt toegestaan, de ``int`` literal 127 zal geconverteerd worden achter de schermen naar een ``sbyte`` en dan toegewezen worden.
 
 
 
@@ -139,12 +139,12 @@ byte myByteValue = 0x00C9; //201
 
 Ook binaire notatie (starten met ``0b`` of ``0B``) kan:
 ```java
-int myAge= 0b001001000; //90
+int myAge= 0b001001000; //72
 int otherAge= 0b0001_0110_0011_0100_0010 //idem, maar met _ als seperator
 byte myByteValue =  0b‭00100100‬1;
 ``` 
 
-Deze schrijfwijzen kan handig zijn wanneer jet met binaire of hexadecimale data wilt werken die je bijvoorbeeld uit een stuk hardware hebt uitgelezen (bijvoorbeeld een Arduino of Raspberry Pi).
+Deze schrijfwijzen kunnen handig zijn wanneer je met binaire of hexadecimale data wilt werken die je bijvoorbeeld uit een stuk hardware hebt uitgelezen (bijvoorbeeld een Arduino of Raspberry Pi).
 
 <!---{pagebreak} --->
 
@@ -163,14 +163,14 @@ Volgende code toont hoe je bijvoorbeeld eerst de vorige waarde kunt bewaren en d
 
 ```java
 int temperatuurGisteren= 20;
-//Doe vanalles
+//Doe van alles
 //...
 //Vervolgens: vorige temperatuur in eergisteren bewaren
 int temperatuurEerGisteren= temperatuurGisteren; 
 //temperatuur nu overschrijven
 temperatuurGisteren = 25; 
 ```
-We hebben dus aan het einde van het programma zowel de temperatuur van eergisteren, ``20``, als die van vandaag, ``25``.
+We hebben dus aan het einde van het programma zowel de temperatuur van eergisteren, ``20``, als die van gisteren, ``25``.
 
 
 {% hint style='warning' %}

@@ -61,14 +61,14 @@ Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen
 We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tijd niet belangrijk zijn.  Onthoud nu alvast dat: **alle belangrijke code staat tussen de accolades onder de lijn ``static void Main(string[] args)``**!
 
 {% hint style='warning' %}
-Laat je niet afschrikken door wat er nu volgt. We gooien je even in het diepe gedeelte van het zwembad maar zal je er op tijd uithalen zodat we vervolgens terug in het babybadje rustig op de glijbaan kunnen gaan spelen en C# op een rustiger tempo kunnen ontdekken.
+Laat je niet afschrikken door wat er nu volgt. We gooien je even in het diepe gedeelte van het zwembad maar zullen je er op tijd uithalen zodat we vervolgens terug in het babybadje rustig op de glijbaan kunnen gaan spelen en C# op een rustiger tempo kunnen ontdekken.
 {% endhint %}
 
 * **``using System;``** :  Alle ``Console``-commando's die we verderop gebruiken zitten in de ``System`` bibliotheek. Als we deze lijn (een zogenaamde **directive**) niet zouden schrijven dan moesten we ``System.Console.WriteLine`` i.p.v. ``Console.WriteLine`` schrijven verderop in de code. 
 * **``namespace Demo1``**: Dit is de unieke naam waarbinnen we ons programma zullen steken, en het is niet toevallig de naam van je project. Verander dit nooit tenzij je weet wat je aan het doen bent.
 * **``class Program``**: Hier start je echte programma. Alle code binnen deze Program accolades zullen gecompileerd worden naar een uitvoerbaar bestand.
 * **``static void Main(string[] args)``**: Het startpunt van iedere console-applicatie. Wat hier gemaakt wordt is een **methode** genaamd ``Main``. Je programma kan meerdere methoden (of functies) bevatten, maar enkel degene genaamd ``Main`` zal door de compiler als het startpunt van het programma gemaakt worden.
-* **``Console.WriteLine("Hello world");``**: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
+* **``Console.WriteLine("Hello World!");``**: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
 * **``Console.WriteLine("Hoi ik ben het");``**: en ook deze lijn komt op het scherm.
 * **Accolades**: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
 
@@ -113,7 +113,7 @@ Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
 Console.WriteLine("Wie ben jij?!");
 ```
 
-De WriteLine methode zal alle tekst tonen die tussen de aanhalingstekens (``"  "``) staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het puntkomma helemaal achteraan.**
+De WriteLine methode zal alle tekst tonen die tussen de aanhalingstekens (``"  "``) staat tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het puntkomma helemaal achteraan.**
 
 Je code binnen de ``Main`` accolades zou nu moeten zijn:
 

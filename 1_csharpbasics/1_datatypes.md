@@ -4,11 +4,11 @@
 Een essentieel onderdeel van C# is kennis van datatypes. Binnen C# zijn een aantal types gedefinieerd die je kan gebruiken om data in op te slaan. Wanneer je data wenst te bewaren in je applicatie dan zal je je moeten afvragen wat voor soort data het is. Gaat het om een getal, een geheel getal, een kommagetal, een stuk tekst of misschien een binaire reeks? Ieder datatype in C# kan één welbepaald soort data bewaren en dit zal telkens een bepaalde hoeveelheid computergeheugen vereisen. 
 
 {% hint style='warning' %}
-Datatypes zijn een belangrijk concept in C# omdat deze taal een zogenaamde **"strongly typed language"** is (in tegenstelling dat bijvoorbeeld Javascript). Wanneer je in C# data wenst te bewaren (in een variabele) zal je van bij de start moeten aangeven wat voor data dit zal zijn. Vanaf dan zal de data op die geheugenplek op dezelfde manier verwerkt worden en niet zo maar van 'vorm' kunnen veranderen zonder extra input van de programmeur. 
+Datatypes zijn een belangrijk concept in C# omdat deze taal een zogenaamde **"strongly typed language"** is (in tegenstelling tot bijvoorbeeld JavaScript). Wanneer je in C# data wenst te bewaren (in een variabele) zal je van bij de start moeten aangeven wat voor data dit zal zijn. Vanaf dan zal de data op die geheugenplek op dezelfde manier verwerkt worden en niet zo maar van 'vorm' kunnen veranderen zonder extra input van de programmeur. 
 {% endhint %}
 
 Er zijn tal basistypes in C# gedeclareerd (zogenaamde **primitieve datatypes**). In dit boek leren we werken met datatypes voor:
-* Gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
+* Gehele getallen: `sbyte, byte, short, ushort, int, uint, long, ulong`
 * Kommagetallen: `double, float, decimal`
 * Tekst: `char, string`
 * Booleans: `bool`
@@ -23,7 +23,7 @@ Ieder datatype wordt gedefinieerd door minstens volgende eigenschappen:
 {% hint style='tip' %}
 Het datatype ``string`` heb je al gezien in het vorig hoofdstuk. Je hebt toen een variabele aangemaakt van het type string door de zin ``string result;``. 
 
-Verderop plaatsten we dan iets waar de gebruiker iets kan intypen in die variabele: 
+Verderop plaatsen we dan iets waar de gebruiker iets kan intypen in die variabele: 
 
 ```java
 result = Console.ReadLine();
@@ -36,7 +36,7 @@ Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaart zou dat voor on
 
 De basistypen van C\# om getallen in op te slaan zijn:
 
-* Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
+* Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long, ulong`
 * Voor kommagetallen: `double, float, decimal`
 
 Deze datatypes hebben allemaal een verschillend bereik, wat een rechtstreekse invloed heeft op de hoeveelheid geheugen die ze innemen.
@@ -54,21 +54,23 @@ Voor de gehele getallen zijn er volgende datatypes:
 | :--- | :--- | :--- | :--|
 | `sbyte` | 8 bits | -128 tot 127 | 
 | `byte` | 8 bits | 0 tot 255 | 
-| `short` | 16 bits | -32768 tot 32767 | 
+| `short` | 16 bits | -32 768 tot 32 767 | 
 | `ushort` | 16 bits | 0 tot 65535 |
 | `int` | 32 bits | -2 147 483 648 tot 2 147 483 647 |
-| `uint` | 32 bits | 0 tot 4294967295 | 
+| `uint` | 32 bits | 0 tot 4 294 967 295 | 
 | `long` | 64 bits | -9 223 372 036 854 775 808 tot 9 223 372 036 854 775 807 | 
 | `ulong` | 64 bits | 0 tot 18 446 744 073 709 551 615 | 
-| `char` | 16 bits | 0 tot 65535 | 
+| `char` | 16 bits | 0 tot 65 535 | 
 
-Het bereik van ieder datatype is een rechtstreeks gevolg van het aantal bits waarmee het getal in dit type wordt voorgesteld. De ``short`` bijvoorbeeld wordt voorgesteld door 16 bits, 1 bit daarvan wordt gebruikt voor het teken (0 of 1, + of -). De overige 15 bits worden gebruikt voor de waarde: van 0 tot 2^15^ (= 32767) en van 0 tot -2^15^ (= -32768)
+Het bereik van ieder datatype is een rechtstreeks gevolg van het aantal bits waarmee het getal in dit type wordt voorgesteld. De ``short`` bijvoorbeeld wordt voorgesteld door 16 bits, 1 bit daarvan wordt gebruikt voor het teken (0 of 1, + of -). De overige 15 bits worden gebruikt voor de waarde: van 0 tot 2^15^-1 (= 32767) en van -1 tot -2^15^ (= -32768)
+
+<!---{pagebreak} --->
 
 Enkele opmerkingen bij deze tabel:
 * De `s` vooraan `sbyte` staat voor ``signed``: m.a.w. 1 bit wordt gebruikt om het + of - teken te bewaren. 
 * De `u` vooraan `ushort`, `uint` en `ulong` staat voor `unsigned`. Het omgekeerde van signed dus. Kwestie van het ingewikkeld te maken. Deze twee datatypes hebben dus geen teken en zijn **altijd positief**.
 * `char` bewaart karakters. We zullen verderop dit datatype uitspitten en ontdekken dat karakters (alle tekens op het toetsenbord, inclusief getallen, leesteken, etc.) als gehele, binaire getallen worden bewaard. Daarom staat `char` in deze lijst.
-* Het grootste getal bij `long` is 2 tot de 63ste (negen triljoen tweehonderddrieëntwintig biljard driehonderd tweeënzeventig biljoen zesendertig miljard achthonderdvierenvijftig miljoen zevenhonderdvijfenzeventigduizend achthonderd en zeven). Dit zijn maar 63 bits?! Inderaad, de laatste bit wordt gebruikt om het teken te bewaren.
+* Het grootste getal bij `long` is 2^63^-1 ("negen triljoen tweehonderddrieëntwintig biljard driehonderd tweeënzeventig biljoen zesendertig miljard achthonderdvierenvijftig miljoen zevenhonderdvijfenzeventigduizend achthonderd en zeven"). Dit zijn maar 63 bits?! Inderaad, de laatste bit wordt wederom gebruikt om het teken te bewaren.
 
 <!---NOBOOKSTART--->
 {% hint style='tip' %}
@@ -120,7 +122,7 @@ Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken ter
 {% endhint %}
 
 ### Tekst/String datatype
-We besteden verderop een heel apart hoofdstuk aan tonen hoe je een enkel karakter of volledige flarden tekst kan bewaren in variabelen. 
+We besteden verderop een heel apart hoofdstuk om te tonen hoe je één enkel karakter of volledige flarden tekst kan bewaren in variabelen. 
 
 Hier alvast een sneakpreview: 
 * Tekst kan bewaard worden in het ``string`` datatype

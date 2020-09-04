@@ -8,9 +8,9 @@ Tijd dus om je **debugger** boven te halen en die (logische) fouten uit je code 
 
 ### Logische fouten vs C# fouten
 
-Code die compileert is enkel code die foutloos geschreven is volgens de C# afspraken qua grammatica en syntax. De code zal met andere woorden gecompileerd worden, maar wat er daarna gebeurt is volledig afhankelijk van wat juist de betekenis is van wat je hebt geschreven.
+Code die compileert is enkel code die foutloos geschreven is volgens de C# afspraken qua grammatica en syntax. De code zal met andere woorden gecompileerd worden, maar wat er daarna gebeurd is volledig afhankelijk van wat juist de betekenis is van wat je hebt geschreven.
 
-Volgende algoritme bijvoorbeeld is perfecte Nederlandstalige code en zal dus door een fictieve compiler kunnen gecompileerd worden. Het vervolgens uitvoeren is echter niet aan te raden (natrium en water samen geeft een stevige exotherme reactie):
+Volgend algoritme bijvoorbeeld is perfecte Nederlandstalige code en zal dus door een fictieve compiler kunnen gecompileerd worden. Het vervolgens uitvoeren is echter niet aan te raden (natrium en water samen geeft een stevige exotherme reactie):
 
 <!---{line-numbers:false}--->
 ```text
@@ -40,7 +40,7 @@ Als je nu je project uitvoert zal de code pauzeren aan die lijn en zal VS in "de
 In dit "nieuwe" scherm zijn er momenteel 2 belangrijke delen:
 * Onderaan zie je de **autos** en **locals** . In deze tabs kan je de waarden van iedere variabele in je huidige code zien op het moment van pauzeren. Ideaal om te onderzoeken waarom een bepaalde berekening of expressie niet doet wat ze moet doen.
 * Bovenaan zijn enkele debug-knoppen verschenen. Deze lichten we in de volgende sectie toe.
-* Voorts kan je in debug-modus kan  met je muis over eender welke variabele of expressie *hoveren* om het resultaat van dat element te bekijken wat we in volgende afbeeldingen tonen
+* Voorts kan je in debug-modus met je muis over eender welke variabele of expressie *hoveren* om het resultaat van dat element te bekijken wat we in volgende afbeeldingen tonen
 
 ![Kan je trouwens verklaren waarom deze deling 0 blijkbaar geeft en niet 1.667.](../assets/1_csharpbasics/debugbug.png)
 
@@ -71,7 +71,7 @@ Even je oren open zetten aub, ik ga iets roepen:**"Debugging is een ESSENTIËLE 
 
  Is that all?!
 
- NEEN! Een goede programmeur zal telkens **eerst voorspellen** wat er gaat gebeuren: welke waarden zullen de variabelen hebben als ik naar de volgende lijn ga? Wat gaar er op het scherm komen? Etc. Als je dan vervolgens naar de volgende lijn gaat of breakpoint gaat en er gebeuren dingen die je niet voorspeld had, dan is de kans groot dat je een bug hebt gevonden.
+ NEEN! Een goede programmeur zal telkens **eerst voorspellen** wat er gaat gebeuren: welke waarden zullen de variabelen hebben als ik naar de volgende lijn ga? Wat gaat er op het scherm komen? Etc. Als je dan vervolgens naar de volgende lijn gaat of breakpoint gaat en er gebeuren dingen die je niet voorspeld had, dan is de kans groot dat je een bug hebt gevonden.
 
  De grootste fout die je kunt doen is gewoon door je code te "steppen" en hopen dat de bug magisch zal tevoorschijn komen. Neen, zo werkt het dus niet. Je moet actief mee denken of dat je programma effectief op een logische manier, zoals jij het voor ogen had, werkt. 
 

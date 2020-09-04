@@ -2,7 +2,7 @@
 
 Ene Bill Gates, je weet wel, de oprichter van een bedrijfje genaamd Microsoft zei ooit: "I will always choose a lazy person to do a difficult job. Because, he will find an easy way to do it."
 
-Het is je misschien nog niet opgevallen, maar sinds het vorige hoofdstuk zijn we de jacht begonnen op zo weinig mogelijk code schrijven met zoveel mogelijk rendement. Loops was een eerste stap in de goede richting. De volgende zijn methoden! Tijd om nog luier te worden.
+Het is je misschien nog niet opgevallen, maar sinds het vorige hoofdstuk zijn we de jacht begonnen op zo weinig mogelijk code te schrijven met zoveel mogelijk rendement. Loops was een eerste stap in de goede richting. De volgende zijn methoden! Tijd om nog luier te worden.
 
 Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoudbaarheid van de code wordt verhoogd.
 
@@ -58,13 +58,17 @@ Vanaf nu kan je eender waar in je programma deze methode aanroepen door te schri
 ToonTitel();
 ```
 
-Volgende programma'tje toont dit:
+Volgend programma'tje toont dit:
 
 ```java
 namespace Demo1
 {
     class Program
     {
+        static void ToonTitel()
+        {
+            Console.WriteLine("Timsoft XP");
+        }
 
         static void Main(string[] args)
         {
@@ -75,11 +79,6 @@ namespace Demo1
             Console.WriteLine("Vaarwel");
             ToonTitel();
         }
-
-        static void ToonTitel()
-        {
-            Console.WriteLine("Timsoft XP");
-        }
     }
 }
 ```
@@ -89,7 +88,7 @@ Volgende afbeelding toont hoe je programma doorheen de code loopt. De pijlen gev
 
 ### Main is ook een methode
 
-Zoals je misschien al begint te vermoeden is dus de ``main`` waar we steeds onze code schrijven ook een methode. Een console-applicatie heeft een startpunt nodig en daarom begint ieder programma in deze methode, maar in principe kan je even goed je programma op een andere plek laten starten.
+Zoals je misschien al begint te vermoeden is dus de ``Main`` waar we steeds onze code schrijven ook een methode. Een console-applicatie heeft een startpunt nodig en daarom begint ieder programma in deze methode, maar in principe kan je even goed je programma op een andere plek laten starten.
 
 Wat denk je trouwens dat je dit doet?
 
@@ -100,6 +99,10 @@ static void Main(string[] args)
 }
 
 ```
+
+{% hint style='tip' %}
+``string[] args`` is een verhaal apart, wat niet in dit boek aan de orde is. Weet gewoon dat ja via deze ``args`` opstartparameters aan je programma kan meegeven tijdens het opstarten (bijvoorbeeld ``explorer.exe google.com``) zodat je code hier iets kan doen.
+{% endhint %}
 
 <!---{pagebreak} --->
 
@@ -116,7 +119,7 @@ Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegev
 
 Denk er dus aan dat deze variabele van het type is dat je hebt opgegeven als zijnde het returntype. Van zodra je ``return`` gebruikt zal je op die plek uit de methode 'vliegen'.
 
-Wanneer je een methode maakt die iets teruggeeft (dus ander returntype dan ``void``) is het ook de bedoeling dat je resultaat van die methode opvangt en gebruikt. Je kan bijvoorbeeld het resultaat van de methode in een variabele bewaren. Dit vereist dat die variabele dan van hetzelfde returntype is! 
+Wanneer je een methode maakt die iets teruggeeft (dus ander returntype dan ``void``) is het ook de bedoeling dat je het resultaat van die methode opvangt en gebruikt. Je kan bijvoorbeeld het resultaat van de methode in een variabele bewaren. Dit vereist dat die variabele dan van hetzelfde returntype is! 
 
 Volgend voorbeeld bestaat uit een methode die de naam van de auteur van je programma teruggeeft:
 
@@ -138,7 +141,7 @@ string myName = GetNameAuthor();
 
 
 {% hint style='tip' %}
-Zoals je merkt is er niet veel verschil met wat je al wist aangaande het gebruik van variabelen. Als je dus twijfelt wat methoden kunnen, beschouw ze als een soort "slimme variabelen" die finaal ook gewoon een waarde hebben, maar deze waarde kan het resultaat van een complex stuk code in the methode zijn.
+Zoals je merkt is er niet veel verschil met wat je al wist aangaande het gebruik van variabelen. Als je dus twijfelt wat methoden kunnen, beschouw ze als een soort "slimme variabelen" die finaal ook gewoon een waarde hebben, maar deze waarde kan het resultaat van een complex stuk code in de methode zijn.
 {% endhint %}
 
 
@@ -223,6 +226,34 @@ static string WindRichting()
 ```
 
 Merk op dat de onderste ``return "onbekend";`` nooit zal bereikt worden. Toch vereist C# dit!
+
+{% hint style='warning' %}
+Meerdere ``return`` statement in een methode worden afgeraden (maar zijn wel toegestaan). Indien mogelijk kan je dus beter met een extra lokale variabele werken waarin je het resultaat van de methode bewaard en deze dan finaal via één ``return`` teruggeeft. Voorgaand voorbeeld wordt dan:
+
+```java
+static string WindRichting()
+{
+    Random r = new Random();
+    string result= "onbekend";
+    switch (r.Next(0,4))
+    {
+        case 0:
+            result = "noord";
+            break;
+        case 1:
+            result = "oost";
+            break;
+        case 2:
+           result = "zuid";
+            break;
+        case 3:
+            result = "west";
+            break;
+    }
+    return result;
+}
+```
+{% endhint %}
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -413,18 +444,6 @@ ToonInfo(37, "Tim");
 In het begin ga je vooral vanuit je ``main`` methoden aanroepen, maar dat is geen verplichting. Je kan ook vanuit methoden andere methoden aanroepen, en van daaruit weer andere, en zo voort. Volgende (nutteloze) programma'tje toont dit in actie:
 
 ```java
-public static void Main()
-{
-    SchrijfNaam();
-}
-static  void SchrijfNaam()
-{
-    SchrijfT();
-    SchrijfI();
-    SchrijfM();
-    SchrijfM();
-    SchrijfI();
-}
 static void SchrijfT()
 {
     Console.WriteLine("T");
@@ -436,6 +455,18 @@ static void SchrijfI()
 static void SchrijfM()
 {
     Console.WriteLine("M");
+}
+static  void SchrijfNaam()
+{
+    SchrijfT();
+    SchrijfI();
+    SchrijfM();
+    SchrijfM();
+    SchrijfI();
+}
+public static void Main()
+{
+    SchrijfNaam();
 }
 ```
 <!--- {width:50%} --->
@@ -471,7 +502,7 @@ Deze code heeft een methode die zichzelf aanroept, zonder dat deze ooit afsluit,
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Even ingrijpen en je attenderen op recursie zodat je code niet in je gezicht blijft ontploffen. **Recursie** is een geavanceerd programmeerconcept wat niet in dit boek wordt besproken, maar laten we het hier kort toelichten. Recursieve methoden zijn methoden die zichzelf aanroepen maar wél op een gegeven moment stoppen wanneer dat moet gebeuren.Volgende voorbeeld is een recursieve methode om de som van alle getallen tussen ``start`` en ``stop`` te berekenen:
+Even ingrijpen en je attenderen op recursie zodat je code niet in je gezicht blijft ontploffen. **Recursie** is een geavanceerd programmeerconcept wat niet in dit boek wordt besproken, maar laten we het hier kort toelichten. Recursieve methoden zijn methoden die zichzelf aanroepen maar wél op een gegeven moment stoppen wanneer dat moet gebeuren.Volgend voorbeeld is een recursieve methode om de som van alle getallen tussen ``start`` en ``stop`` te berekenen:
 
 ```java
 static int BerekenSomRecursief(int start, int stop)
@@ -544,7 +575,7 @@ Waarbij je eerst een zinnetje toont aan de gebruiker en dan z'n input omzet naar
 Als deze constructie op meerdere plekken in een project voorkomt dan is het nuttig om deze twee lijnen naar een methode te verhuizen die er dan zo kan uitzien:
 
 ```java
-static VraagInt(string zin)
+static int VraagInt(string zin)
 {
     Console.WriteLine(zin);
     return  Convert.ToInt32(Console.ReadLine());
@@ -557,7 +588,7 @@ De code van zonet kan je dan nu herschrijven naar:
 int leeftijd= VraagInt("Geef leeftijd");
 ```
 
-Het voorgaande voorbeeld toont ook ineens aan waarom methoden helpen om je code leesbaarder en onderhoudbaarder te maken. Je ``main`` blijft gevrijwaard van veel repeterende lijnen code en heeft aanroepen naar (hopelijk) goed benoemde methoden die ieder een specifiek ding doen. Dit maakt het debuggen ook eenvoudiger: je ziet in één oogopslag meestal wat een methode doet (als je ze niet te lang hebt gemaakt natuurlijk).
+Het voorgaande voorbeeld toont ook ineens aan waarom methoden helpen om je code leesbaarder en onderhoudbaarder te maken. Je ``Main`` blijft gevrijwaard van veel repeterende lijnen code en heeft aanroepen naar (hopelijk) goed benoemde methoden die ieder een specifiek ding doen. Dit maakt het debuggen ook eenvoudiger: je ziet in één oogopslag meestal wat een methode doet (als je ze niet te lang hebt gemaakt natuurlijk).
 {% endhint %}
 
 

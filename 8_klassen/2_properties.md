@@ -1,4 +1,4 @@
-# Properties
+## Properties
 
 In dit hoofdstuk bespreken we eerst waarom properties nodig zijn. Vervolgens bespreken we de 2 soorten properties die er bestaan:
 
@@ -6,7 +6,7 @@ In dit hoofdstuk bespreken we eerst waarom properties nodig zijn. Vervolgens bes
 2. Auto properties
 
 
-## In een wereld zonder properties 
+### In een wereld zonder properties 
 Properties (*eigenschappen*) zijn de C# manier om objecten hun interne staat in en uit te lezen.
 Ze zorgen voor een gecontroleerde toegang tot de interne structuur van je objecten.
 
@@ -32,7 +32,7 @@ We willen echter wel van buiten uit het energy-level van een sithLord kunnen ins
 **Properties** lossen dit probleem op*
 
 
-# Full properties
+### Full properties
 
 Een **full property** ziet er als volgt uit:
 ```java
@@ -74,13 +74,14 @@ We zullen de property nu stuk per stuk analyseren:
 * set{}: in het set-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een interne variabele aan te passen. De waarde die we van buitenuit krijgen (als een parameter zeg maar) zal **altijd** in een lokale variabele ``value`` worden bewaard. Deze zal van het type van de property zijn. Vervolgens kunnen we ``value`` toewijzen aan de interne variabele indien gewenst: ``energy=value`` 
     * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo ``energy`` toch bereiken: ``Palpatine.Energy=50``.
 
-{% hint style='tip' %}
+{blurb, class: tip}
 **Snel properties schrijven**
 
 Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief een bijhorende private dataveld, te schrijven. **Typ ``propfull`` gevolgd door twee tabs!**
-{% endhint %}
+{/blurb}
 
-## Full property met toegangscontrole
+
+### Full property met toegangscontrole
 De full property ``Energy`` heeft nog steeds het probleem dat we negatieve waarden kunnen toewijzen (via de ``set``) die dan vervolgens zal toegewezen worden aan ``energy``.
 
 **Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.**
@@ -107,10 +108,10 @@ Volgende lijn zal dus geen effect hebben:
 
 We kunnen de code binnen ``set`` (en ``get``) zo complex maken als we willen.
 
-## Property variaties
+### Property variaties
 We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property te schrijven. 
 
-### Write-only property
+#### Write-only property
 ```java
    public int Energy
     {
@@ -123,7 +124,7 @@ We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property t
 ```
 We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitlezen.
 
-### Read-only property
+#### Read-only property
 ```java
    public int Energy
     {
@@ -135,12 +136,13 @@ We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitleze
 ```
 We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 
-{% hint style='warning' %}
+{blurb, class: warning}
 **Opgelet: het ``readonly`` keyword heeft andere doelen en wordt NIET gebruikt in C# om een readonly property te maken**
-{% endhint %}
+{/blurb}
 
 
-### Read-only property met private set
+
+#### Read-only property met private set
 Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only willen maken. We willen echter intern (in de klasse zelf) nog steeds controleren dat er geen illegale waarden aan private datafields worden gegeven. Op dat moment definiëren we een read-only property met een private setter:
 
 ```java
@@ -200,11 +202,12 @@ public void ResetLord()
 }
 ```
 
-{% hint style='tip' %}
+{blurb, class: tip}
 > **Het is een goede gewoonte om zo vaak mogelijk via de properties je interne variabele aan te passen en niet rechtstreeks het dataveld zelf.**
-{% endhint %}
+{/blurb}
 
-### Read-only properties die transformeren
+
+#### Read-only properties die transformeren
 Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
 
 Stel dat we volgende klasse hebben
@@ -283,7 +286,7 @@ class Persoon
 }
 ```
 
-# Auto properties
+## Auto properties
 Automatische eigenschappen (autoproperties) in C# staan toe om eigenschappen (properties) die enkel een waarde uit een private variabele lezen en schrijven verkort voor te stellen.
 
 Zo kan je eenvoudige de klasse Person herschrijven met behulp van autoproperties. De originele klasse:
@@ -347,7 +350,7 @@ public class Person
 
 Beide klassen hebben exact dezelfde functionaliteit, echter is de laatste klasse aanzienlijk eenvoudiger om te lezen en te typen. 
 
-## Beginwaarde van autoprops
+### Beginwaarde van autoprops
 
 Je mag autoproperties beginwaarden geven door de waarde achter de property te geven, als volgt:
 
@@ -355,7 +358,7 @@ Je mag autoproperties beginwaarden geven door de waarde achter de property te ge
 public int Age {get;set;} = 45;
 ```
 
-## Altijd auto-properties? 
+### Altijd auto-properties? 
 Merk op dat je dit enkel kan doen indien er geen extra logica in de property aanwezig is.
 Stel dat je bij de setter van age wil controleren op een negatieve waarde, dan zal je dit zoals voorheen moeten schrijven en kan dit niet met een automatic property:
 
@@ -368,7 +371,7 @@ set
 ```
 **Voorgaande property kan dus *NIET* herschreven worden met een automatic property.**
 
-## Alleen-lezen eigenschap
+### Alleen-lezen eigenschap
 Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definiëren. Als volgt:
 
 Originele klasse:
@@ -392,11 +395,12 @@ public string FirstName { get; }
 ```
 De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren. [Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
 
-{% hint style='tip' %}
+{blurb, class: tip}
 **Opgelet: je hebt ook read-only properties die full property zijn. Lees zeker ook de tekst hierboven in ver band met de get-omvormers.**
-{% endhint %}
+{/blurb}
 
-## Snel autoproperties typen in Visual Studio:
+
+### Snel autoproperties typen in Visual Studio:
 Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabtoets indrukt dan verschijnt al de nodige code voor een automatic property. Je hoeft dan enkel nog volgende zaken in orde te brengen:
 
 * Het type van de property
@@ -405,7 +409,7 @@ Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabt
 
 Via ``propg`` krijg je aan autoproperty met private setter.
 
-# Methode of property
+## Methode of property
 
 Een veel gestelde vraag bij beginnende OO-ontwikkelaars is: "Moet dit in een property of in een methode gestoken worden?"
 
@@ -415,11 +419,4 @@ De regel is eenvoudig:
 
 [Hier een iets meer uitgebreid PRO antwoord.](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
 
-<!---NOBOOKSTART--->
-# Kennisclip
-![](../assets/infoclip.png)
-* [Properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=34e326ab-5ee3-4e36-8880-ab6100c13715)
-* [Full properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a9c712ba-5788-4121-aff9-ab6100c3d1ed)
-* [Auto properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9eb70ee5-402d-4c6d-b880-ab6100c5291d)
 
-<!---NOBOOKEND--->

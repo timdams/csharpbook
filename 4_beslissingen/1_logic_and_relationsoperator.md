@@ -21,7 +21,7 @@ Relationele operators zijn het hart van booleaanse expressies. En guess what, je
 | ``<=`` |kleiner dan of gelijk aan| 
 | ``>=`` |groter dan of gelijk aan| 
 
-Deze operators hebben steeds twee operands nodig en geven **een bool als resultaat terug**. Beide operands links en rechts van de operator **moeten van hetzelfde datatype zijn** (je kan geen appelen met peren vergelijken).
+Deze operators hebben steeds twee operanden nodig en geven **een bool als resultaat terug**. Beide operanden links en rechts van de operator **moeten van hetzelfde datatype zijn** (je kan geen appelen met peren vergelijken).
 
 Daar dit operators zijn kan je deze dus gebruiken in eender welke expressie. Het resultaat van de expressie ``12 > 6`` zal ``true`` als resultaat hebben daar 12 inderdaad groter is dan 6. Eenvoudig toch.
 
@@ -37,16 +37,16 @@ Er zal `false` als output op het scherm verschijnen.
 {% endhint %}
 
 {% hint style='warning' %}
-Er is een groot verschil tussen de ``=``-operator en de ``==`` operator. De eerste is de toekenningsoperator en zal de rechtse operand aan de linkse operand toewijzen. De tweede zal de linkse met de rechtse operand op gelijkheid vergelijken en een ``bool`` teruggeven.
+Er is een groot verschil tussen de ``=`` operator en de ``==`` operator. De eerste is de toekenningsoperator en zal de rechtse operand aan de linkse operand toewijzen. De tweede zal de linkse met de rechtse operand op gelijkheid vergelijken en een ``bool`` teruggeven.
 {% endhint %}
 
 ### Logische operators
 
-Vaak wil je meer complexe keuzes maken ("ga verder indien ik honger heb EN genoeg geld bij heb). Dit doen we met de zogenaamde  **logische operators**. Er zijn 3 operators die je hiervoor kunt gebruiken: de EN-, OF- en NIET-operators (*and, or, not*). Deze ken je mogelijk ook nog van de booleaanse algebra:
+Vaak wil je meer complexe keuzes maken ("ga verder indien ik honger heb EN genoeg geld bij heb"). Dit doen we met de zogenaamde  **logische operators**. Er zijn 3 operators die je hiervoor kunt gebruiken: de EN-, OF- en NIET-operators (*and, or, not*). Deze ken je mogelijk ook nog van de booleaanse algebra:
 
-* ``&&`` (*En*) : Geeft enkel ``true`` als beide operands ``true`` zijn
+* ``&&`` (*En*) : Geeft enkel ``true`` als beide operanden ``true`` zijn
 * ``||`` (*Of*) :  Geeft  ``true`` indien minstens 1 operand ``true`` is
-* ``!``  (*Niet*) : Inverteert de waarde van de expressie (``true`` wordt ``false en omgekeerd)
+* ``!``  (*Niet*) : Inverteert de waarde van de expressie (``true`` wordt ``false`` en omgekeerd)
 
 De logische operators geven ook steeds een ``bool`` terug maar verwachten enkel operanden van het type **``bool``**. Als je dus schrijft ``true||false``  ("true OF false") zal het resultaat ``true`` zijn.
 

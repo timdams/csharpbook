@@ -12,7 +12,7 @@ Meestal zal je expressies schrijven waarin je bewerkingen op en met variabelen u
 int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
 ```
 
-Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van elkaar wordt afgetrokken en vervolgens bewaard worden in ``temperatuursVerschil``. De voorgaande code kan echter ook langer geschreven worden als:
+Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van elkaar worden afgetrokken en vervolgens bewaard worden in ``temperatuursVerschil``. De voorgaande code kan echter ook langer geschreven worden als:
 
 ```java
 int tussenResultaat = temperatuurGisteren - temperatuurVandaag;
@@ -40,12 +40,12 @@ Om expressies te gebruiken hebben we ook zogenaamde **operators** nodig. Operato
 3. **Optellen en aftrekken**: `+` en `-`, enz.
 
 {% hint style='tip' %}
-We spreken over operators en **operands**. Een operand is het element dat we links en/of rechts van een operator zetten. In de som ``3+2`` zijn ``3`` en ``2`` de operanden, en ``+`` de operator. In dit voorbeeld spreken we van een **binaire operator** omdat er twee operanden zijn.
+We spreken over operators en **operanden**. Een operand is het element dat we links en/of rechts van een operator zetten. In de som ``3+2`` zijn ``3`` en ``2`` de operanden, en ``+`` de operator. In dit voorbeeld spreken we van een **binaire operator** omdat er twee operanden zijn.
 
 Er bestaan ook **unaire operators** die maar 1 operand hebben. Denk bijvoorbeeld aan de ``-`` operator om het teken van een getal om te wisselen: ``-6``.
 {% endhint %}
 
-Net zoals in de wiskunde kan je in C# met behulp van de haakjes verplichten het deel tussen de haakjes eerst te doen, ongeacht de andere operators en hun volgorde van berekeningen:
+Net zoals in de wiskunde kan je in C# met behulp van de haakjes verplichten het deel tussen de haakjes eerst te berekenen, ongeacht de andere operators en hun volgorde van berekeningen:
 
 ```java
 3+5*2 // zal 13 (type int) als resultaat geven
@@ -59,7 +59,7 @@ double gAarde= 9.81;    //m/s²
 double gMars= 3.711;    //m/s²
 
 double  gewichtOpMars= (gewichtOpAarde/gAarde) * gMars; //kg
-Console.WriteLine("Je weeg op Mars" + gewichtOpMars + " kg");
+Console.WriteLine("Je weegt op Mars " + gewichtOpMars + " kg");
 ```
 
 #### Modulo operator ``%``
@@ -183,7 +183,7 @@ En nu krijgen we wel ``4.5`` aangezien we nu een ``int`` door een ``double`` del
 ![](../assets/attention.png)
 Begrijp je nu waarom dit een belangrijk deel was? Je kan erg snel erg foute berekeningen en ongewenste afrondingen krijgen indien je niet erg bewust omgaat met je datatypes. 
 
-Laten we eens kijken of je goed hebt opgelet, het kan kan namelijk subtiel en ambetant worden in grotere berekeningen.
+Laten we eens kijken of je goed hebt opgelet, het kan namelijk subtiel en ambetant worden in grotere berekeningen.
 
 Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien  10000 euro per maand (I wish).
 
@@ -205,7 +205,7 @@ Als ik dus effectief de helft van m'n salaris wil afstaan dan moet ik de express
 double helft = 10000.0 * (1.0 / 2);
 ```
 
-Nu krijgt het gedeelte tussen de haakjes een ``double`` als resultaat, namelijk ``0.5`` dat we dan kunnen vermenigvuldigen met het salaris om ``5000.0`` te krijgen, wat hij vermoedelijk een fijner resultaat vindt.
+Nu krijgt het gedeelte tussen de haakjes een ``double`` als resultaat, namelijk ``0.5`` dat we dan kunnen vermenigvuldigen met het salaris om ``5000.0`` te krijgen, wat jij vermoedelijk een fijner resultaat vindt.
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}

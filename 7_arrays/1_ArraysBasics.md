@@ -1,12 +1,12 @@
 # Arrays
 
-Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voordeel van arrays is dat je een enkele variabele kunt hebben die een grote groep waarden voorstelt van eenzelfde type. Hierdoor wordt je code leesbaarder en eenvoudiger in onderhoud. Arrays zijn een zeer krachtig hulpmiddel, maar er zitten wel enkele venijnige addertjes onder het gras.
+Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voordeel van arrays is dat je één enkele variabele kunt hebben die een grote groep waarden voorstelt van eenzelfde type. Hierdoor wordt je code leesbaarder en eenvoudiger in onderhoud. Arrays zijn een zeer krachtig hulpmiddel, maar er zitten wel enkele venijnige addertjes onder het gras.
 
-Op papier zijn arrays eenvoudig...helaas programmeren we niet (of zelden) op papier. In essentie is een array is niets meer dan **een verzameling variabelen van hetzelfde type** (bijvoorbeeld een verzameling ints, doubles of chars). Deze waarden kunnen benaderd worden via 1 enkele variabele, de array zelf. Door middel van een *index* kan ieder afzonderlijk element uit de array aangepast of uitgelezen worden.
+Op papier zijn arrays eenvoudig...helaas programmeren we niet (of zelden) op papier. In essentie is een array niets meer dan **een verzameling variabelen van hetzelfde type** (bijvoorbeeld een verzameling ints, doubles of chars). Deze waarden kunnen benaderd worden via 1 enkele variabele, de array zelf. Door middel van een *index* kan ieder afzonderlijk element uit de array aangepast of uitgelezen worden.
 
-Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kan veranderen. In het volgende boekdeel zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben.
+Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kunnen veranderen. In het volgende boekdeel zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben.
 
-De nadelen zullen we echter met plezier erbij nemen wanneer we programma's beginnen schrijven die werken met véél data van dezelfde soort. Eenvoudigweg kan je stellen dat van zodra je 3 of meer variabelen heeft die dezelfde soort data bevatten, arrays altijd de oplossing zullen zijn.
+De nadelen zullen we echter met plezier erbij nemen wanneer we programma's beginnen schrijven die werken met véél data van dezelfde soort. Eenvoudigweg kan je stellen dat van zodra je 3 of meer variabelen hebt die dezelfde soort data bevatten, arrays altijd de oplossing zullen zijn.
 
 ## Nut van arrays
 
@@ -53,7 +53,7 @@ double gemiddelde= (dag[0]+dag[1]+dag[2]+dag[3]+dag[4]+dag[5]+dag[6])/7.0;
 
 Dat lijkt niet veel beter, integendeel, we zitten nu ook nog met een hoop vierkante haakjes (``[]``). 
 
-De kracht van arrays komt nu: het getal tussen die vierkante haakjes (de index) kan je als een variabele beschouwen en dus ook dynamisch genereren in een loop. Volgende voorbeeld toont hoe we bijvoorbeeld een langere array van elementen met een for-loop overlopen om de som van alle elementen te berekenen:
+De kracht van arrays komt nu: het getal tussen die vierkante haakjes (de index) kan je als een variabele beschouwen en dus ook dynamisch genereren in een loop. Volgend voorbeeld toont hoe we bijvoorbeeld een langere array van elementen met een for-loop overlopen om de som van alle elementen te berekenen:
 
 ```java
 int[] regen  = {34, 45, 0, 34, 12, 0, 23, 7 , 20, 34 , 7 , 42}; //aanmaken array
@@ -76,7 +76,7 @@ double gemiddelde=som/regen.Length;
 
 Sorry dat we weer even in het diepe water zijn gedoken. Het leek ons nuttig om even het totaalplaatje van arrays alvast uit de doeken te doen, zodat je snapt waarom er zo enthousiast over arrays wordt gedaan hier. 
 
-A propos, kijk eens achterom! Schrik je van he. Je hebt al een aardige weg afgelegd als we vergelijken met de eerste keer toen ik je in het zwembad gooide. Herinner je je nog dat ik volgende code liet zien En je vervolgens moest gerust stellen?
+A propos, kijk eens achterom! Schrik je van hé. Je hebt al een aardige weg afgelegd als we vergelijken met de eerste keer toen ik je in het zwembad gooide. Herinner je je nog dat ik volgende code liet zien En je vervolgens moest gerust stellen?
 
 ```java
 using System;
@@ -270,19 +270,6 @@ numbers[3] += 5;
 Maar eigenlijk zijn we dan het voordeel van arrays niet aan het gebruiken. Met loops maken we bovenstaande oplossing beter zodat deze zal werken, ongeacht het aantal elementen in de array:
 
 ```java
-int teller = 0;
-while (teller < numbers.Length)
-{
-    numbers[teller] += 5;
-    teller++
-}
-```
-
-<!---{pagebreak} --->
-
-Of het equivalent met een for-loop:
-
-```java
 for(int teller = 0; teller < numbers.Length; teller++)
 {
     numbers[teller] += 5;
@@ -316,7 +303,7 @@ myColors[4] = "blue";
 ```
 
 {% hint style='warning' %}
-Een veel gestelde vraag wanneer een programmeur het nut van arrays nog niet 100% ziet is de volgende. Stel dat je deze code hebt;
+Een veel gestelde vraag wanneer een programmeur het nut van arrays nog niet 100% ziet is het volgende. Stel dat je deze code hebt;
 
 ```java
 int dag1 = 34;
@@ -334,14 +321,14 @@ for(int i=1; i<=7; i++)
     dagi= ...
 ```
 
-**Dat gaat niet!** Van zodra je van plan bent om variabele-namen "dynamisch" in je code te proberen aan te roepen moeten er tal van alarmbelletjes afgaan. De kans is dan héél groot dat je probleem beter met een array wordt opgelost dan met een boel variabelen met soortgelijke namen.
+**Dat gaat niet!** Van zodra je van plan bent om variabele-namen "dynamisch" in je code te proberen aan te roepen, moeten er tal van alarmbelletjes afgaan. De kans is dan héél groot dat je probleem beter met een array wordt opgelost dan met een boel variabelen met soortgelijke namen.
 {% endhint %}
 
 <!---{pagebreak} --->
 
 ### De lengte van de array te weten komen
 
-Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De ``Length``-eigenschap van iedere array geeft dit weer. Volgend voorbeeld toen dit:
+Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De ``Length``-eigenschap van iedere array geeft dit weer. Volgend voorbeeld toont dit:
 
 ```java
 string[] myColors = {"red", "green", "yellow", "orange", "blue"};
@@ -388,9 +375,9 @@ Deze fout zegt exact wat er mis is: je probeert elementen in een arrays te benad
 
 ### Volledig voorbeeldprogramma met arrays
 
-Met al de voorgaande informatie is het nu mogelijk om vlot complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-loop om een bepaalde operatie over de hele array toe te passen.
+Met al de voorgaande informatie is het nu mogelijk om vlot complexere programma's te schrijven, die veel data moeten kunnen verwerken. Meestal gebruikt men een for-loop om een bepaalde operatie over de hele array toe te passen.
 
-Het volgende programma zal een array van integers aanmaken die alle gehele getallen van 0 tot 99 bevat. Vervolgens zal ieder getal met 3 vermenigvuldigd worden. Finaal tonen we tonen we enkel die getallen die een veelvoud van 4 zijn na de bewerking.
+Het volgende programma zal een array van integers aanmaken die alle gehele getallen van 0 tot 99 bevat. Vervolgens zal ieder getal met 3 vermenigvuldigd worden. Finaal tonen we enkel die getallen die een veelvoud van 4 zijn na de bewerking.
 
 ```java
 //Array aanmaken

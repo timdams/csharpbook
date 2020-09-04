@@ -45,7 +45,7 @@ We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``re
 ```java
 Console.WriteLine("Dag ");
 Console.WriteLine(result);
-Console.WriteLine(" hoe gaat het met je?");
+Console.WriteLine(" oe gaat het met je?");
 ```
 
 In de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. 

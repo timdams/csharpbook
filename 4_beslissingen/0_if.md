@@ -1,6 +1,6 @@
 ## If
 
-De ``if`` (*als*) uitdrukking is één van de meest elementaire uitdrukking in een programmeertaal en laat ons toe 'vertakingen' in onze programmaflow in te bouwen. Ze laat om "als dit waar is doe dan dat"-beslissingen te maken.
+De ``if`` (*als*) uitdrukking is één van de meest elementaire uitdrukkingen in een programmeertaal en laat ons toe 'vertakkingen' in onze programmaflow in te bouwen. Ze laat toe om "als dit waar is doe dan dat"-beslissingen te maken.
 
 De syntax is als volgt:
 
@@ -68,7 +68,7 @@ if ( number < 5 )
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
 **Veelgemaakte fouten**
-Voorman hier! Je hebt me gemist. Ik merk het. Het ging goed de laatste tijd. Maar nu wordt het tijd dat ik je weer even wakker schudt want de code die je nu gaat bouwen kan érg vreemde gedragingen krijgen als je niet goed oplet. Luister daarom even naar deze lijst van veel gemaakte fouten wanneer je met ``if`` begint te werken: 
+Voorman hier! Je hebt me gemist. Ik merk het. Het ging goed de laatste tijd. Maar nu wordt het tijd dat ik je weer even wakker schud want de code die je nu gaat bouwen kan érg vreemde gedragingen krijgen als je niet goed oplet. Luister daarom even naar deze lijst van veel gemaakte fouten wanneer je met ``if`` begint te werken: 
 
 
 **Appelen en peren vergelijken**
@@ -128,7 +128,7 @@ if (a == b)
  
 if ((a > c) || (a == b))
 {  
-    Console.WriteLine("A is groter dan C, of gelijk aan B");
+    Console.WriteLine("A is groter dan C en/of gelijk aan B");
 }
  
 if ((a >= c) && (b <= c))
@@ -175,7 +175,7 @@ else (a <= b)   //<FOUT!
 ### If/else if
 
 Met een ``if``/``else if`` constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. 
-Sowieso begint men steeds met een ``if``. Als men vervolgens een ``else if`` plaats dan zal de expressie van deze ``else if`` getest worden enkel en alleen als de eerste expressie (van de ``if``) niet waar was. Als de expressie van deze ``else if`` wel waar is zal de bijhorende code uitgevoerd worden, zo niet wordt deze overgeslagen.
+Sowieso begint men steeds met een ``if``. Als men vervolgens een ``else if`` plaatst dan zal de expressie van deze ``else if`` getest worden enkel en alleen als de eerste expressie (van de ``if``) niet waar was. Als de expressie van deze ``else if`` wel waar is zal de bijhorende code uitgevoerd worden, zo niet wordt deze overgeslagen.
 
 Een voorbeeld:
 
@@ -199,6 +199,27 @@ else if (x == 8)
 Voorts mag men ook steeds nog afsluiten met een finale ``else`` die zal uitgevoerd worden indien geen enkele andere expressie ervoor waar bleek te zijn:
 
 ```java
+if(x>100)
+{
+    Console.WriteLine("Groter dan 100");
+}
+else if(x>10)
+{
+    Console.WriteLine("Groter dan 10");
+}
+else
+{
+    Console.WriteLine("Getal kleiner dan of gelijk 10");
+}
+
+```
+
+
+{% hint style='warning' %}
+
+De volgorde van opeenvolgende if/if-else tests is uiterst belangrijk. Als we in voorgaande code de twee tests omdraaien dan zal er nooit in het tweede block (``x>100``) gekomen worden. Logisch: neem een getal groter dan 100 en laat het door volgende code lopen. Stel, we nemen 110. Al bij de eerste test (``x>10``) is deze ``true`` en verschijnt er dus "Groter dan 10". Alle andere tests worden daarna niet meer gedaan en de code gaat verder na het ``else``-blok.
+```java
+
 if(x>10)
 {
     Console.WriteLine("Groter dan 10");
@@ -208,12 +229,22 @@ else if(x>100)
     Console.WriteLine("Groter dan 100");
 }
 else
-{
-    Console.WriteLine("Getal kleiner dan 10");
-}
-
+//...
+{% endhint %}
 ```
-<!---{pagebreak} --->
+
+{% hint style='tip' %}
+Hoe minder tests de computer moet doen, hoe meer performant de code zal uitgevoerd worden. Voor complexe applicaties die bijvoorbeeld in realtime veel berekeningen moeten doen kan het dus een gigantische invloed hebben of een reeks ``if/if-else`` testen vlot wordt doorlopen. Het is dan ook een goede gewoonte, indien de logica van het algoritme het toelaat, om de meest voorkomende test bovenaan te plaatsen. 
+
+Dit zelfde geldt ook binnen een test zelf wanneer we met logische operators werken. Deze worden altijd volgens de regels van de volgorde van berekeningen uitgevoerd.  Volgende test wordt van bijvoorbeeld van links naar rechts uitgevoerd:
+
+```java
+x > 100 && a != "stop"
+```
+
+Omdat beide operanden van de EN-operatie ``true`` moeten zijn om een juiste test te krijgen, zal de computer de test automatisch stoppen indien reeds de linkse operand (``x > 100``) niet waar is. Bij dit soort tests probeer je dus ervoor te zorgen dat de tests die het minste kans op slagen hebben  (of beter: het vaakst niét zal slagen) eerst te laten testen, zodat de computer geen onnodige extra tests doet.
+{% endhint %}
+```
 
 ### Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een ``if``/``else if``/``else`` hoort. Binnen dit blok kunnen nu echter opnieuw ``if``/``else if``/``else`` structuren worden aangemaakt.
@@ -245,9 +276,9 @@ else
 <!--- {float:right, width:50%} --->
 ![](../assets/care.png)
 
-Laat deze tiental bladzijden uitleg je niet de indruk geven dat code schrijven met ``if``-structuren een eenvoudige job is. Vergelijk het met van je pa leren hoe je met pijl en boog moet jagen, wat vlekkeloos gaat op een stilstaande schijf, tot je in het bos voor een mammoet staat die op je komt afgestormd. *Da's andere kak he?*
+Laat deze tiental bladzijden uitleg je niet de indruk geven dat code schrijven met ``if``-structuren een eenvoudige job is. Vergelijk het met van je pa leren hoe je met pijl en boog moet jagen, wat vlekkeloos gaat op een stilstaande schijf, tot je in het bos voor een mammoet staat die op je komt afgestormd. *Da's andere kak hé?*
 
-Het is dan ook aangeraden om, zeker in het begin, om steeds een flowchart te tekenen van wat je juist wil bereiken. Dit zal je helpen om je code op een juiste manier op te bouwen (denk maar aan nesting en het plaatsen van meerdere ``if\else`` structuren in of na elkaar). *Bezint eer ge begint.*
+Het is dan ook aangeraden om, zeker in het begin, om steeds een flowchart te tekenen van wat je juist wilt bereiken. Dit zal je helpen om je code op een juiste manier op te bouwen (denk maar aan nesting en het plaatsen van meerdere ``if\else`` structuren in of na elkaar). *Bezint eer ge begint.*
 <!---{/aside}--->
 <!---NOBOOKSTART--->
 {% endhint %}

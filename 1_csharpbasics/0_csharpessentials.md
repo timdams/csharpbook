@@ -12,7 +12,7 @@ Enkele belangrijke regels van C#:
 * **Hoofdletter-gevoelig**: C# is hoofdlettergevoelig. Dat wil zeggen dat hoofdletter ``T`` en kleine letter ``t`` totaal verschillende zaken zijn voor C#. ``Reinhardt`` en ``reinhardt`` zijn dus ook niet hetzelfde.
 * **Statements afsluiten met puntkomma**: Iedere C# statement wordt afgesloten moet een puntkomma ( **``;``** ). Doe je dat niet dan zal C# denken dat de regel gewoon op de volgende lijn doorloopt en deze als één (fout) geheel proberen te compileren.
 * **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren. De enige plek waar witruimtes wél een verschil geven is tussen aanhalingstekens ``"      "`` die we later (bij string) zullen leren gebruiken.
-* **Commentaar toevoegen kan**: door ``//`` voor een enkele lijn te zetten zal deze lijn genegeerd worden door de compiler. Je kan ook meerdere lijnen code in commentaar zetten door er ``/*`` voor en  ``*/`` achter te zetten.
+* **Commentaar toevoegen kan**: door ``//`` voor een enkele lijn te zetten zal deze lijn genegeerd worden door de compiler. Je kan ook meerdere lijnen code in commentaar zetten door er ``/*`` voor en  ``*/`` achter te zetten. Voorts zijn er 2 handige knoppen die toelaten om een heel blok code in één keer van commentaar te voorzien of uit commentaar te halen (zie verder).
 
 ## Keywords: de woordenschat
 
@@ -78,7 +78,7 @@ Enneuh, ik hou je in't oog hoor!
 We hebben variabelen nodig om (tijdelijke) data in op te slaan. Wanneer we een statement schrijven dat bijvoorbeeld input van de gebruiker moet vragen, dan willen we ook die input bewaren zodat we verderop in het programma (het algoritme) iets met deze data kunnen doen.
 We doen hetzelfde in ons hoofd wanneer we bijvoorbeeld zeggen "tel 3 en 4 op en vermenigvuldig dat resultaat met 5". Eerst zullen we het resultaat van 3+4 in een variabele moeten bewaren. Vervolgens zullen we de inhoud van die variabele vermenigvuldigen met 5 en dat nieuwe resultaat ook in een nieuwe variabele opslaan (om vervolgens bijvoorbeeld naar het scherm te sturen).
 
-Wanneer we een variabele aanmaken zal deze moeten voldoen aan enkele afspraken. Zo moeten we minstens 2 zaken meegeven:
+Wanneer we een variabele aanmaken, zal deze moeten voldoen aan enkele afspraken. Zo moeten we minstens 2 zaken meegeven:
 
 * De *naam* van de variabele: de **identifier** waarmee we snel aan de variabele-waarde kunnen. 
 * Het *type* van de variabele: het **datatype**  dat aangeeft wat voor data we wensen op te slaan (tekst, getal, afbeelding, etc.). Enkel en alleen dat soort type data zal in deze variabele kunnen bewaard worden. 
@@ -97,7 +97,7 @@ De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in on
   * kleine of grote letter
   * liggend streepje
   * een cijfer (``0`` tot en met ``9``)
-* **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houd het best leesbaar.
+* **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houdt het best leesbaar.
 
 <!---{pagebreak} --->
 
@@ -116,7 +116,7 @@ Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
 |werknemer| ja |  |
 |kerst2018| ja |  |
 |pippo de clown| neen| geen spaties toegestaan|
-|4dPlaats| neen| mag niet starten met getal|
+|4dPlaats| neen| mag niet starten met een cijfer|
 |_ILOVE2019| ja| |
 |Tor+Bjorn| neen| enkel cijfers, letters en liggende streepjes toegestaan|
 |ALLCAPSMAN| ja |  |
@@ -160,3 +160,9 @@ We kunnen een stuk tekst als commentaar aangeven door voor de tekst ``/*`` te pl
 */
 int leeftijd= 0;
 ```
+
+{% hint style='tip' %}
+Je kan ook code in VS selecteren en dan met de comment/uncomment-knoppen in de menubalk heel snel lijnen of hele blokken code van commentaar voorzien, of deze net weghalen:
+
+![Linkse knop voegt comment tags toe, de rechtse verwijdert ze](../assets/1_csharpbasics/comments.png)
+{% endhint %}

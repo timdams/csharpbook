@@ -10,7 +10,7 @@
 
 Aah, Data, een geliefkoosd personage uit Star Trek. Maar daar gaan we het niet over hebben. Het wordt tijd dat we onze werkkledij aantrekken en ons echt vuil gaan maken. 
 
-De wereld draait op data,en dus ook de meeste applicaties die wij gaan schrijven. Echter, we hebben al gezien dat C# met verschillende datatypes werkt, dus wat gebeurt er als we data van twee verschillende datatypes willen combineren?! In Star Trek resulteerde dat 50% van de tijd in een aanval van de Borg, 20% van de tijd van de Klingons en in de overige 30% in een oersaaie aflevering (Star Wars for life!). Ahum, sorry. I got carried away.Laten we eens onderzoeken hoe we data van 'vorm' kunnen veranderen.  
+De wereld draait op data, en dus ook de meeste applicaties die wij gaan schrijven. Echter, we hebben al gezien dat C# met verschillende datatypes werkt, dus wat gebeurt er als we data van twee verschillende datatypes willen combineren?! In Star Trek resulteerde dat 50% van de tijd in een aanval van de Borg, 20% van de tijd van de Klingons en in de overige 30% in een oersaaie aflevering (Star Wars for life!). Ahum, sorry. I got carried away. Laten we eens onderzoeken hoe we data van 'vorm' kunnen veranderen.  
 
 *May the force be with you!* Euh, ik bedoel: *Make it so!*
 <!---{/aside}--->
@@ -62,7 +62,7 @@ double kommagetal = 13.8;
 int kommaNietWelkom = (int)kommagetal;
 ```
 
-Hierbij dien je aan de compiler te zeggen: *"Volgende variabele die van het type ]``double`` is, moet aan deze variabele van het type ``int`` toegekend worden. **Ik besef dat hierbij data verloren kan gaan (namelijk het deel na de komma), maar zet de variabele toch maar om naar het nieuwe type, ik draag alle verantwoordelijkheid voor het verlies"**.
+Hierbij dien je aan de compiler te zeggen: "Volgende variabele die van het type ``double`` is, moet aan deze variabele van het type ``int`` toegekend worden. **Ik besef dat hierbij data verloren kan gaan (namelijk het deel na de komma), maar zet de variabele toch maar om naar het nieuwe type, ik draag alle verantwoordelijkheid voor het verlies"**.
 
 {% hint style='tip' %}
 Het is als het ware een soort Amerikaanse reflex om te voorkomen dat de compiler later door ons kan aangeklaagd worden omdat hij uiterst belangrijke data heeft doen verloren gaan tijdens de omzetting. Via casting geven we aan dat we de compiler niet zullen aanklagen.

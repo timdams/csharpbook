@@ -14,7 +14,7 @@ Een belangrijk concept bij OOP is het **Black-box** principe waarbij we de afzon
 
 Binnen OOP wordt dit blackbox-concept **encapsulatie** genoemd. Het doel van OOP is andere programmeurs (en jezelf) zoveel mogelijk af te schermen van de interne werking van je code. Vergelijk het met de methoden uit vorig semester: "if it works, it works" en dan hoef je niet in de code van de methode te gaan zien wat er juist gebeurt.
 
-# Klassen en objecten
+## Klassen en objecten
 
 Een elementair aspect binnen OOP is het verschil beheersen tussen een klasse en een object.
 
@@ -22,20 +22,22 @@ Wanneer we meerdere objecten gebruiken van dezelfde soort dan kunnen we zeggen d
 
 Zo hebben we bijvoorbeeld de klasse van de auto's. De verschillende auto's die je op de straat ziet rijden zijn allemaal objecten  van die klasse. De klasse zelf is een soort algemene beschrijving waaraan alle objecten van dat type moeten voldoen (bv: alle auto's hebben 4 banden, 1 motor en kunnen sneller en trager rijden).
 
-# Definitie klasse en object
+### Definitie klasse en object
 
 * **Een klasse** is een beschrijving en verzameling van dingen (objecten) met soortgelijke eigenschappen
 * Een individueel **object** is een **instantie** van een klasse
 
-{% hint style='tip' %}Je zou dit kunnen vergelijken met het grondplan voor een huis dat tien keer in een straat zal gebouwd worden. Het plan met alle soortgelijke eigenschappen van ieder huis is de *klasse*. De effectieve huizen die we, gebaseerd op dat grondplan, bouwen zijn de instanties of objecten van deze klasse.{% endhint %}
+{blurb, class: tip}Je zou dit kunnen vergelijken met het grondplan voor een huis dat tien keer in een straat zal gebouwd worden. Het plan met alle soortgelijke eigenschappen van ieder huis is de *klasse*. De effectieve huizen die we, gebaseerd op dat grondplan, bouwen zijn de instanties of objecten van deze klasse.{/blurb}
 
-{% hint style='tip' %}
+
+{blurb, class: tip}
 Nog een andere invalshoek:
 
 Een andere invalshoek is de zogenaamde "dungeons" in veel online games. De makers van het spel hebben iedere dungeon in een klasse beschreven. Wanneer een groep avonturiers nu in zo'n grot gaat dan wordt voor die groep een aparte instantie (*instance*) van die grot gemaakt, gebasseerd op de klasse. Ze doen dit zodat iedere groep spelers mekaar niet voor de voeten loopt in 1 grot.
-{% endhint %}
+{/blurb}
 
-# Objecten in de woorden van Steve Jobs
+
+### Objecten in de woorden van Steve Jobs
 
 Steve Jobs, de oprichter van Apple, was een fervent fan van OOP. In een interview, way back, gaf hij volgende uitstekende uitleg[bron](https://fossbytes.com/steve-jobs-tells-the-best-definition-of-object-oriented-programming/):
 

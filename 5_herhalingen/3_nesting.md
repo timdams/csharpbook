@@ -68,7 +68,7 @@ De outer loop zal 10 maal uitgevoerd worden (i zal de waarden 0 tot en met 9 kri
 {% hint style='warning' %}
 ### Break in nested loops
 
-Let er op dat ``break`` je enkel uit de huidige loop zal halen. Indien je dit dus gebruik in de inner loop dan zal de outer loop nog steeds voortgaan. Nog een reden om zéér voorzichtig om te gaan in het gebruik van ``break``.
+Let er op dat ``break`` je enkel uit de huidige loop zal halen. Indien je dit dus gebruik in de inner loop dan zal de outer loop nog steeds voortgaan. Nog een reden om zéér voorzichtig om te gaan in het gebruik van ``break``. Of beter nog: gewoon niet gebruiken!
 {% endhint %}
 
 

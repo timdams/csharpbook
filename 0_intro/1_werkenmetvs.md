@@ -1,6 +1,6 @@
 ## Kennismaken met C# en Visual Studio
 
-We gaan in dit boek leren programmeren met Microsoft Visual Studio, een softwarepakket waar ook een gratis community versie voor bestaat.Microsoft Visual Studio (vanaf nu **VS**) is een pakket dat een groot deel van de tools samenvoegt die een programmeur nodig heeft (debugger, code editor, compiler, etc).
+We gaan in dit boek leren programmeren met Microsoft Visual Studio 2019, een softwarepakket waar ook een gratis community versie voor bestaat. Microsoft Visual Studio (vanaf nu **VS**) is een pakket dat een groot deel van de tools samenvoegt die een programmeur nodig heeft (debugger, code editor, compiler, etc).
 
 <!--- {height:10%} --->
 ![Het Visual Studio 2019 Logo](../assets/0_intro/vslogo.png)
@@ -8,7 +8,7 @@ We gaan in dit boek leren programmeren met Microsoft Visual Studio, een software
 VS is een zogenaamde IDE ("Integrated Development Environment") en is op maat gemaakt om in C# geschreven applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken. Ook vice versa ben je niet verplicht om VS te gebruiken om te ontwikkelen. Je kan zelfs in notepad code schrijven en vervolgens compileren (zie hierna). Er bestaan zelfs online C# programmeer omgevingen, zoals [dotnetfiddle.net](https://dotnetfiddle.net/).
 
 {% hint style='danger' %} 
-In dit boek zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (makkelijk uitbreidbaar, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
+In dit boek zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (makkelijk uitbreidbaar, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
 {% endhint %}
 
 ### De compiler en Visual Studio
@@ -17,7 +17,7 @@ Zoals gezegd: jouw taak als programmeur is algoritmes in C# taal uitschrijven. W
 
 Ook voor het schrijven van computer code is het handiger om een zogenaamde IDE te gebruiken, een omgeving die ons zal helpen foutloze C# code te schrijven.
 
-Het hart van Visual Studio bestaat uit de compiler die we hiervoor besproken. De compiler zal je C# code omzetten naar de IL-code zodat jij (of anderen) je applicatie op een computer (of ander apparaat) kunnen gebruiken. Zolang de C# niet exact voldoet aan de C# syntax en grammatica zal de compiler het vertikken een uitvoerbaar bestand voor je te genereren. 
+Het hart van Visual Studio bestaat uit de compiler die we hiervoor besproken hebben. De compiler zal je C# code omzetten naar de IL-code zodat jij (of anderen) je applicatie op een computer (of ander apparaat) kunnen gebruiken. Zolang de C# niet exact voldoet aan de C# syntax en grammatica zal de compiler het vertikken een uitvoerbaar bestand voor je te genereren. 
 
 ![Vereenvoudigd compiler overzicht](../assets/0_intro/compilereenvoudig.png)
 
@@ -50,7 +50,7 @@ De allereerste keer dat je VS opstart krijg je 2 extra schermen te zien:
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/neotim.png)
-Dark is uiteraard het coolste thema om in te coderen. Je voelt je ogenblikkelijk Neo uit The Matrix. Het nadeel van dit thema is dat het meer meer inkt verbruikt indien je screenshots in een boek zoals dit wilt plaatsen. De keuze voor Development Setting kan je naar  "Visual C#" veranderen, maar General is even goed (je zal geen verschil merken in eerste instantie). 
+Dark is uiteraard het coolste thema om in te coderen. Je voelt je ogenblikkelijk Neo uit The Matrix. Het nadeel van dit thema is dat het veel meer inkt verbruikt indien je screenshots in een boek zoals dit wilt plaatsen. De keuze voor Development Setting kan je naar  "Visual C#" veranderen, maar General is even goed (je zal geen verschil merken in eerste instantie). 
 
 Je kan dit achteraf nog aanpassen in VS via "Tools" in de menubalk, dan "Import and Export Settings" en kiezen voor "Import and Export Settings Wizard".
 <!---{height:40%} --->
@@ -62,7 +62,7 @@ Je kan dit achteraf nog aanpassen in VS via "Tools" in de menubalk, dan "Import 
 
 
 #### Project keuze
-Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaan aanmaken zullen deze in de toekomst ook op dit scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 
+Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaat aanmaken zullen deze in de toekomst ook op dit scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 
 
 <!--- {height:30%} --->
 ![Het startscherm](../assets/0_intro/vsstart.png)
@@ -120,7 +120,7 @@ We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van 
 
 * Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z'n eigen **tab** krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt. Merk op dat enkel open bestanden een tab krijgen. Je kan deze tabbladen ook "lostrekken" om bijvoorbeeld enkel dat tabblad op een ander scherm te plaatsen.
 
-* De "**solution explorer**" toont alle bestanden en elementen die tot het huidige project behoren. Als we dus later nieuwe bestanden toevoegen dan kan je die hier zien (en openen). Verwijder hier géén bestanden zonder dat je zeker weet wat je aan het doen bent.
+* De "**solution explorer**" toont alle bestanden en elementen die tot het huidige project behoren. Als we dus later nieuwe bestanden toevoegen, dan kan je die hier zien (en openen). Verwijder hier géén bestanden zonder dat je zeker weet wat je aan het doen bent.
 
 * Het **properties** venster (eigenschappen) is een belangrijk venster. Hier komen alle eigenschappen van het huidige geselecteerde element. Selecteer bijvoorbeeld maar eens Program.cs in de solution explorer en merk op dat er allerlei eigenschappen getoond worden. Onderaan het Properties venster wordt steeds meer informatie getoond over de huidig geselecteerde eigenschap.
 
@@ -152,7 +152,7 @@ De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, p
 
 ![Het programma uitvoeren](../assets/0_intro/startprogram.PNG)
 
-Als alles goed gaat krijg je nu "Hello world" te zien en wat extra informatie omtrent het programma dat net werd uitgevoerd:
+Als alles goed gaat krijg je nu "Hello World!" te zien en wat extra informatie omtrent het programma dat net werd uitgevoerd:
 
 ![Uitvoer van het programma](../assets/0_intro/vscmd.png)
 

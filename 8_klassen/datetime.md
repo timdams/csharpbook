@@ -1,17 +1,17 @@
-# DateTime
+## OOP in de praktijk : DateTime
 
 De .NET klasse ``DateTime`` is de ideale manier om te leren werken met objecten. Het is een nuttige en toegankelijk klasse.
 
 Grote delen van deze tekst komen van [zetoode.com](http://zetcode.com/articles/csharpdatetime/).
 
-# DateTime objecten aanmaken
+### DateTime objecten aanmaken
 
 Er zijn 2 manieren om ``DateTime`` objecten aan te maken:
 
 1. Door aan de klasse de huidige datum en tijd te vragen via ``DateTime.Now``
 2. Door manueel de datum en tijd in te stellen via de **constructor** 
 
-## DateTime.Now
+#### DateTime.Now
 
 Volgend voorbeeld toont hoe we een object kunnen maken dat de huidige datum tijd van het systeem bevat. Vervolgens printen we dit op het scherm:
 
@@ -20,7 +20,7 @@ Volgend voorbeeld toont hoe we een object kunnen maken dat de huidige datum tijd
         Console.WriteLine(currentTime);
 ```
 
-## Met constructor
+#### Met constructor
 
 Via de constructor kunnen we beginwaarden meegeven bij het maken van een nieuw object. Er zijn 11 manieren waarop dit kan zoals je [hier kan zien](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.-ctor?view=netframework-4.7.2).
 
@@ -32,11 +32,11 @@ DateTime birthday = new DateTime(1982, 3, 18); //year, month, day
 DateTime someMomentInTime = new DateTime(2017, 1, 18, 10, 16,34 ); //year, month, day, hour, min, sec
 ```
 
-# DateTime methoden
+### DateTime methoden
 
 Ieder ``DateTime`` object dat je aanmaakt heeft en hoop nuttige methoden.
 
-## Add Methods
+#### Add Methods
 
 Deze methoden kan je gebruiken om een bepaalde aantal dagen, uren, minuten en zo voort aan je huidige object toe te voegen. Al deze methoden geven steeds een **nieuw DateTime object** terug dat je moet bewaren wil je er iets mee doen:
 
@@ -70,7 +70,7 @@ someTime = someTime.AddYears(10);
 Console.WriteLine(someTime);
 ```
 
-# DateTime properties
+### DateTime properties
 
 **Properties**  zijn een zeer uniek aspect van C# zoals we in vorig hoofdstuk zagen. We zullen deze nog tot in den treuren leren maken. Via properties kan je de interne staat van objecten uitlezen én aanpassen, dit op een gecontroleerde manier.
 
@@ -98,7 +98,7 @@ Enkele nuttige properties van ``DateTime`` zijn:
 * ``Year``
 
 
-## Properties gebruiken
+#### Properties gebruiken
 
 **Alle properties van DateTime zijn read-only**.
 
@@ -156,14 +156,15 @@ WriteLine(now.ToString("T")); // long time
 WriteLine(now.ToString("Y")); // year and month
 ```
 
-{% hint style='tip' %}
+{blurb, class: tip}
 ## Custom format
 Wil je nog meer controle over de output dan kan je ook zelf je formaat specifieren.
 
 [Dit wordt hier volledig uit de doeken gedaan.](https://www.c-sharpcorner.com/blogs/date-and-time-format-in-c-sharp-programming1)
-{% endhint %}
+{/blurb}
 
-## Localized time
+
+### Localized time
 
 De manier waarop ``DateTime`` objecten worden getoond (via ToString) is afhankelijk van de landinstellingen van je systeem. Soms wil je echter op een andere manier dit tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum getoond moet worden.
 
@@ -176,17 +177,19 @@ CultureInfo russianCI = new CultureInfo("ru-RU");
 Console.WriteLine($"Current time in Russian style is: {now.ToString("F", russianCI)}");
 ```
 
-{% hint style='tip' %}
-### Culture names
+{blurb, class: tip}
+#### Culture names
 
 Een lijst van alle cultures in .NET kan je [hier terugvinden](http://www.csharp-examples.net/culture-names/). 
 
 **Opgelet, enkel indien een specifieke culture op je computer staat geïnstalleerd zal je deze kunnen gebruiken.**
-{% endhint %}
+{/blurb}
 
-# Static method
+
+### Static methods
+
 Sommige methoden zijn ``static`` dat wil zeggen dat je ze enkel rechtstreeks op de klasse kunt aanroepen. Vaak zijn deze methoden hulpmethoden waar de individuele objecten niets aan hebben.
-## Parsing time
+#### Parsing time
 
 Parsen laat toe dat je strings omzet naar ``DateTime``. Dit is handig als je bijvoorbeeld de gebruiker via ``ReadLine`` tijd en datum wilt laten invoeren:
 
@@ -198,7 +201,7 @@ Console.WriteLine(dt);
 
 Zoals je ziet roepen we ``Parse`` aan op ``DateTime`` en dus niet op een specifiek object.
 
-## IsLeapYear
+#### IsLeapYear
 
 Deze nuttige methode geeft een ``bool`` terug om aan te geven het meegegeven object eens schrikkeljaar is of niet:
 
@@ -209,7 +212,7 @@ if(isLeap==true)
     Console.WriteLine("This year is a leap year");
 ```
 
-# TimeSpan (PRO)
+### TimeSpan (PRO)
 
 Je kan DateTime objecten ook bij mekaar optellen en aftrekken. Het resultaat van deze bewerking geeft echter NIET een DateTime object terug, maar een ``TimeSpan`` object. Dit is een object dat dus aangeeft hoe groot het verschil is tussen de 2 DateTime objecten:
 
@@ -222,29 +225,3 @@ TimeSpan diff = today - borodino_battle;
 WriteLine($"{diff.TotalDays} days have passed since the Battle of Borodino.");
 ```
 
-# Oefening
-
-## Klokje
-
-Maak een applicatie die bestaat uit een oneindige loop. De loop zal iedere seconde pauzeren: ``System.Threading.Thread.Sleep(1000);``.
-Vervolgens wordt het scherm leeg gemaakt en wordt de huidige tijd getoond. Merk op dat ENKEL de tijd wordt getoond, niet de datum.
-
-## Verjaardag
-
-Maak een applicatie die aan de gebruiker vraagt op welke dag hij jarig is. Toon vervolgens over hoeveel dagen z'n verjaardag dan zal zijn.
-
-## Countdown
-Schrijf een console applicatie om het aantal dagen te berekenen tussen vandaag en het einde van het jaar.
-
-Druk beide data en het resultaat af.
-Druk bovendien de datum van vandaag op de volgende wijzen af:
-* korte datum zonder tijd
-* lange datum zonder tijd
-* lange datum met korte tijd
-* korte datum met korte tijd
-
-# New York Tijdszone
-
-Onderstel dat een firma een filiaal in Londen en een filiaal in New York heeft. Het tijdsverschil in beide steden bedraagt in de zomer 5 uren. De managers van Londen wensen vandaag een video conferentie te starten om 14 uur. Schrijf een console applicatie om de overeenkomstige tijd in New York te bepalen. 
-
-Geef de optie zodanig dat de stad met het tijdsverschil en de starttijd van de conferentie in Londen worden ingelezen in plaats van New York.

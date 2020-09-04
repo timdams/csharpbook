@@ -3,11 +3,11 @@
 Niets is zo leuk als de vreemdste Unicode tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om complexe tekeningen op het scherm te tonen. Om je ietwat saaie applicaties dus wat toffer te maken leggen we daarom uit hoe je dit kan doen.
 
 <!---{width:70%} --->
-![Dwarf fortress: een van de bekendste (én meest complexe) console-games ooit waar nog steeds aan ontwikkeld wordt gebruikt ongelooflijk veel bizarre karakters om zo een erg 'cool' ogende user interface te maken](../assets/0_intro/kerosenethunder_mockup.png)
+![Dwarf fortress: een van de bekendste (én meest complexe) console-games ooit waar nog steeds aan ontwikkeld, wordt gebruikt ongelooflijk veel bizarre karakters om zo een erg 'cool' ogende user interface te maken](../assets/0_intro/kerosenethunder_mockup.png)
 
 ### Unicode karakters tonen
 
-Je toetsenbord heeft maar een beperkt aantal toetsen. Er zijn echter tal van andere tekens gedefinieerd die console-applicaties ook kunnen gebruiken. We zagen reeds dat al deze tekens, Unicode-karakters, hebben een eigen unieke code die je kan opzoeken om vervolgens dat tekens in je code te gebruiken daar het ``char`` type hiermee werkt.
+Je toetsenbord heeft maar een beperkt aantal toetsen. Er zijn echter tal van andere tekens gedefinieerd die console-applicaties ook kunnen gebruiken. We zagen reeds dat al deze tekens, Unicode-karakters, een eigen unieke code hebben die je kan opzoeken om vervolgens dat teken in je code te gebruiken, daar het ``char`` type hiermee werkt.
 
 Dit gaat als volgt in z'n werk:
 
@@ -29,7 +29,7 @@ Kopieer het karakter zelf en plaats het in je code waar je het nodig hebt, bijvo
 Console.WriteLine("˧"); //eigenlijk staat hier die omgekeerde t
 ```
 
-Helaas zal dit teken als een vierkantje in de meeste boeken getoond worden omdat het lettertype dit teken niet kent. Je zal hetzelfde fenomeen trouwens in je console hebben bij tekens die het Console-lettertype (meestal Courrier) niet kent.
+Helaas zal dit teken als een vierkantje in de meeste boeken getoond worden omdat het lettertype dit teken niet kent. Je zal hetzelfde fenomeen trouwens in je console hebben bij tekens die het Console-lettertype (meestal Courier) niet kent.
 
 #### Manier 2: hexadecimale code casten naar char
 
@@ -42,7 +42,7 @@ Console.WriteLine(blokje);
 
 In C# schrijf je hexadecimale getallen als volgt als je ze rechtsreeks in een string wilt plaatsen: \u02e7
 
-Wil je dus bovenstaande teken schrijven dan kan dan ook als volgt:
+Wil je dus bovenstaande teken schrijven dan kan dat ook als volgt:
 
 ```java
 Console.WriteLine("\u02e7");

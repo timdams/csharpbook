@@ -16,7 +16,7 @@ In de volgende sectie gaan we van volgende informatie uit:
 Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 
 ### Manier 1: String samenvoegen met de +-operator
-Je kan string en variabelen eenvoudig bij elkaar 'optellen' zoals we in het begin van dit boek hebben gezien. Ze worden dan achter elkaar geplakt als het ware. 
+Je kan strings en variabelen eenvoudig bij elkaar 'optellen' zoals we in het begin van dit boek hebben gezien. Ze worden dan achter elkaar geplakt als het ware. 
 
 ```java
 string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud.";
@@ -47,7 +47,7 @@ Was dit de uitvoer die je voorspeld had?
 Ook in dit soort code wordt dus de volgorde van bewerkingen gerespecteerd. De **concatenatie gebeurt van links naar rechts en de linkse operand zal steeds bepalen wat het resultaat van de bewerking zal zijn indien er twijfel is**.  Dit nieuw samengevoegde deel wordt dan de linkse operand voor het volgende deel.
 
 Kijken we dus naar ``"1"+1+1`` dan wordt dit eerst ``"11"+1`` en dus vervolgens de ``string`` ``"111"``.
-Bij ``1+1+"1"`` krijgen we eerste ``2+"1"``, dit geeft vervolgens ``21`` (aangezien C# niet kan bepalen dat de string iets bevat wat een getal kan zijn, en dus besluit om beide operands als een ``string`` te zien wat altijd de veiligste oplossing is).
+Bij ``1+1+"1"`` krijgen we eerste ``2+"1"``, dit geeft vervolgens ``21`` (aangezien C# niet kan bepalen dat de string iets bevat wat een getal kan zijn, en dus besluit om beide operanden als een ``string`` te zien wat altijd de veiligste oplossing is).
 {% endhint %}
 
 

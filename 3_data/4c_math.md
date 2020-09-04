@@ -1,12 +1,12 @@
 ## Berekeningen met System.Math
 
-Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. De ``System.Math`` bibliotheek zal ons hier bij kunnen helpen. Zoals de naam al doet vermoeden staat deze bibliotheek voor *Mathematics**: wiskunde!
+Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. De ``System.Math`` bibliotheek zal ons hier bij kunnen helpen. Zoals de naam al doet vermoeden staat deze bibliotheek voor *Mathematics*: wiskunde!
 
 
 ### De Math-bibliotheek
 De Math-bibliotheek bevat methoden voor een groot aantal typische wiskundige bewerkingen (sinus, cosinus, vierkantswortel, macht, afronden, etc.) en kan je dus helpen om leesbaardere en kortere expressies te schrijven.
 
-Stel dat je de derde macht van een variabel ``getal`` wenst te berekenen. *zonder* de Math-bibliotheek zou dat er zou uitzien:
+Stel dat je de derde macht van een variabel ``getal`` wenst te berekenen. *Zonder* de Math-bibliotheek zou dat er zo uitzien:
 
 ```java
 double result= getal * getal * getal;  //SLECHTE MANIER
@@ -39,8 +39,8 @@ Enkele voorbeelden:
 
 ```java
 double sineHoekA= Math.Sin(345); //IN RADIALEN!
-double DerdeMachtVan20= Math.Pow(20, 3);
-double complexer= 3 + DerdeMachtVan20 * Math.Round(sineHoekA);
+double derdeMachtVan20= Math.Pow(20, 3);
+double complexer= 3 + derdeMachtVan20 * Math.Round(sineHoekA);
 ```
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
@@ -65,14 +65,27 @@ double straal= 5.5;
 double omtrek= Math.PI * 2 * straal;
 ```
 
+<!---{pagebreak} --->
+
 ### Constanten
 
-Je zal het ``const`` keyword hier en daar in codevoorbeelden zien staan. Je kan dit gebruiken om aan te geven dat een variabele onveranderlijk is én niet per ongeluk kan aangepast worden. Je mag dit dus ook zelf gebruiken zoals in volgende voorbeeld:
+Je zal het ``const`` keyword hier en daar in codevoorbeelden zien staan. Je gebruikt dit om aan te geven dat een variabele onveranderlijk is én niet per ongeluk kan aangepast worden. Je **moet** dit dus ook zelf gebruiken zoals in volgende voorbeeld:
 
 ```java
-const double gAarde= 9.81;
-gAarde= 10.48; //ZAL ERROR GEVEN
+const double G_AARDE= 9.81;
+G_AARDE= 10.48; //ZAL ERROR GEVEN
 ```
+
+Merk op de schrijfwijze van ``const`` identifiers: deze zetten we in ALLCAPS, waarbij we liggende streepjes gebruiken om het onderscheid tussen de onderlinge woorden aan te geven ("gaarde" is anders een vreemd woord).
+
+{% hint style='tip' %}
+Constanten in code worden ook soms **magic numbers** genoemd. De reden hiervoor is dat ze vaak plotsklaps ergens in de code voorkomen, maar wel op een heel andere plek werden gedeclareerd. Hierdoor is het voor de ontwikkelaar niet altijd duidelijk wat de variabele juist doet.
+Het is daarom belangrijk dat je goed nadenkt over het gebruik van magic numbers én deze zeer duidelijke namen geeft. 
+
+Er worden heelder filosofische, bijna theologische, strijden gestreden tussen ontwikkelaars over de plek van magic numbers in code. In de C/C++ tijden werden deze steeds aan de start van de code gegroepeerd. Op die manier zag de ontwikkelaar in één oogopslag alle belangrijke variabelen en konden deze ook snel aangepast worden. In C# prefereert men echter om variabelen zo dicht mogelijk bij de plek waar ze nodig zijn te schrijven, dit verhoogt de *modulariteit* van de code: je kan sneller een flard code kopiëren en op een andere plek herbruiken.
+
+De applicaties die wij in dit boek ontwikkelen zijn niet groot genoeg om over te debatteren. Veel bedrijven hanteren hun eigen coding guidelines en het gebruik, naamgeving en plaatsing van magic numbers zal zeker daarin zijn opgenomen. 
+{% endhint %}
 
 <!---NOBOOKSTART--->
 ### Kennisclip

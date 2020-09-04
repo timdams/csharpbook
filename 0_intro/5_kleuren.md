@@ -16,7 +16,7 @@ Alle kleuren die beschikbaar zijn staan beschreven in ``ConsoleColor`` deze zijn
 
 Wens je dus de kleur Red dan zal je deze moeten aanroepen door er ``ConsoleColor.`` voor te zetten: ``ConsoleColor.Red``.
 
-Waarom is dit? ``ConsoleColor is een zogenaamd ``enum``-type, een concept dat we verderop in dit boek zullen bespreken.
+Waarom is dit? ``ConsoleColor`` is een zogenaamd ``enum``-type, een concept dat we verderop in dit boek zullen bespreken.
 {% endhint %}
 
 Een voorbeeld:

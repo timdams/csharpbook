@@ -3,31 +3,32 @@
 Omdat arrays ongelooflijk groot kunnen worden, is het nuttig dat je algoritmes kunt schrijven die vlot met arrays kunnen werken. Je wilt niet dat je programma er 3 minuten over doet om gewoon te ontdekken of een bepaalde waarde in een array voorkomt of niet.
 
 {% hint style='tip' %}
-Bij jobsollicaties voor programmeurs wordt je vaak gevraagd om dergelijke algoritmes zonder hulp uit te schrijven.
+Bij jobsollicaties voor programmeurs word je vaak gevraagd om dergelijke algoritmes zonder hulp uit te schrijven.
 {% endhint %}
 
 #### Manueel zoeken in arrays
 
 Het nadeel van BinarySearch is dat deze vereist dat je array-elementen gesorteerd staan. Uiteraard is dit niet altijd gewenst. Stel je voor dat je een simulatie maakt voor een fietswedstrijd en wilt weten of een bepaalde wielrenner in de top 5 staat.
 
-Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgend programmatje gaat zoeken of het getal 12 aanwezig is in de array (de wielrenners werken met rugnummers). Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
+Het zoeken in arrays kan met behulp van loops tamelijk snel. Volgend programmatje gaat zoeken of het getal 12 aanwezig is in de array (de wielrenners werken met rugnummers). Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
 ```java
 int teZoekenGetal = 12;
-int[] top5 = {5, 10, 12, 25, 16};
+int[] top5 = { 5, 10, 12, 25, 16 };
 bool gevonden = false;
-int index = -1;
-for (int i = 0; i < top5.Length; i++)
+int index = 0;
+do
 {
-    if (top5[i] == teZoekenGetal)
+    if (top5[index] == teZoekenGetal)
     {
         gevonden = true;
-        index = i;
     }
-}
-if(gevonden = true)
+    index++;
+} while (!gevonden && index<top5.Length);
+
+if (gevonden)
 {
-    Console.WriteLine($"Rugnummer {teZoekenGetal} eindigde op plek {index+1}");
+    Console.WriteLine($"Rugnummer {teZoekenGetal} eindigde op plek {index + 1}");
     // +1 omdat de indexering vanaf 0 telt, wat de gebruiker niet moet weten. 
 }
 ```
@@ -65,7 +66,7 @@ if (teller != producten.Length) //product gevonden!
     gevonden = true;
     productIndex = teller;
 }
-if (gevonden == true)
+if (gevonden)
 {
     Console.WriteLine($"Prijs van {keuzeGebruiker} is {prijzen[productIndex]}");
 }
@@ -75,26 +76,26 @@ else
 }
 ```
 
-Een nadeel van deze oplossing is dat we steeds de hele ``for`` doorlopen (we gebruiken geen ``break`` vanwege een allergie hiervoor bij de auteur). Bij heel lange arrays is dit dus niet erg performant.
+Een nadeel van deze oplossing is dat we steeds de hele ``while`` doorlopen (we gebruiken geen ``break`` vanwege een allergie hiervoor bij de auteur). Bij heel lange arrays is dit dus niet erg performant.
 
 <!---{pagebreak} --->
 
-Volgende oplossing met een ``while`` toont een performantere oplossing:
+Volgende oplossing met een ``do while`` toont een performantere oplossing:
 
 ```java
-bool gevonden = false;
-int productIndex = -1;
-int teller = 0;
-while (teller < producten.Length && keuzeGebruiker != producten[teller])
+int teller = -1;
+do
 {
     teller++;
-}
+} while (teller < producten.Length && keuzeGebruiker != producten[teller]);
+bool gevonden = false;
+int productIndex = -1;
 if (teller != producten.Length) //product gevonden!
 {
     gevonden = true;
     productIndex = teller;
 }
-if (gevonden == true)
+if (gevonden)
 {
     Console.WriteLine($"Prijs van {keuzeGebruiker} is {prijzen[productIndex]}");
 }

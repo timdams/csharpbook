@@ -47,7 +47,7 @@ Volgende code zou bijvoorbeeld onderstaande output moeten geven:
 
 Output:
 
-<!---{line-numbers:false}--->
+{line-numbers:false}
 ```text
 Paar: 12, 34
 Som = 46
@@ -90,7 +90,7 @@ Test je programma door enkele studenten aan te maken en in te stellen. Volgende 
 
 Output:
 
-<!---{line-numbers:false}--->
+{line-numbers:false}
 ```text
 Joske Vermeulen, 21 jaar
 Klas: EA2
@@ -162,11 +162,12 @@ Toon maw aan dat je:
 * Instanties (objecten) van deze klasse kunt maken
 * Kunt werken met deze instanties (properties instellen én uitlezen, aanroepen van methoden)
 
-{% hint style='tip' %}
+{blurb, class: tip}
 ### enums
 
 Kan je in voorgaand voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
-{% endhint %}
+{/blurb}
+
 
 
 # Bibliotheek

@@ -1,6 +1,6 @@
 ## Geheugengebruik bij arrays
 
-Met arrays komen we voor het eerst iets dichter tot een van de sterkstes van C#, namelijk het aspect **referenties**. In het volgende boekdeel zullen we hier ongelooflijk veel mee doen, maar laten we nu alvast eens kijken waarom arrays met referenties werken.
+Met arrays komen we voor het eerst iets dichter tot één van de sterkstes van C#, namelijk het aspect **referenties**. In het volgende boekdeel zullen we hier ongelooflijk veel mee doen, maar laten we nu alvast eens kijken waarom arrays met referenties werken.
 
 ### Reference types en value types
 
@@ -17,7 +17,7 @@ Alle datatypes die we tot nog toe zagen (``string`` is een speciaal geval en neg
 
 ### Arrays kopiëren
 
-#### Het probleem als je arrays wil kopiëren
+#### Het probleem als je arrays wilt kopiëren
 Arrays worden 'by reference' gebruikt in C#. Dit wil zeggen dat als we schrijven:
 ```java
 int[] getallen = {5,42,2};
@@ -45,7 +45,7 @@ De situatie wanneer lijn 2 werd uitgevoerd is de volgende:
 
 Zonder het bestaan van *references* zou je verwachten dat op lijn 3 ``nieuwePloegen`` een kopie krijgt van de inhoud van ``ploegen``. 
 
-De derde lijn(``nieuwePloegen = ploegen;``) zal perfect werken. Wat er er echter is gebeurd is dat we de referentie naar ``ploegen`` ook in ``nieuwePloegen`` hebben geplaatst. **Bijgevolg verwijzen beide variabelen naar dezelfde array, namelijk die waar ``ploegen`` al naar verwees.** We hebben een soort alias gemaakt en kunnen nu op twee manieren de array met de Antwerpse voetbalploegen benaderen. De nieuwe situatie na lijn 3 is dus de volgende geworden:
+De derde lijn(``nieuwePloegen = ploegen;``) zal perfect werken. Wat er echter is gebeurd, is dat we de referentie naar ``ploegen`` ook in ``nieuwePloegen`` hebben geplaatst. **Bijgevolg verwijzen beide variabelen naar dezelfde array, namelijk die waar ``ploegen`` al naar verwees.** We hebben een soort alias gemaakt en kunnen nu op twee manieren de array met de Antwerpse voetbalploegen benaderen. De nieuwe situatie na lijn 3 is dus de volgende geworden:
 
 <!--- {width:60%} --->
 ![Beerschot is de ploeg van't stad ;)](../assets/5_arrays/refbeer.png)
@@ -66,7 +66,7 @@ ploegen[1] = "Beerschot";
 
 En waar staan de ploegen in de nieuwePloegen array (``"Anderlecht"`` en ``"Brugge"``)? **Die array in het geheugen bestaat niet meer!**
 
-#### De oplossing als je arrays wil kopiëren
+#### De oplossing als je arrays wilt kopiëren
 
 Wil je dus arrays kopiëren dan kan dat niet op deze manier: **je moet manueel ieder element van de ene naar de andere array kopiëren** als volgt:
 

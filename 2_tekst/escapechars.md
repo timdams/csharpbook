@@ -19,7 +19,7 @@ Zonder aan te geven dat we letterlijk dat teken willen tonen, en het niet in zâ€
 
 ### Voorbeeld van escape chars
 
-Laten we eens kijken naar de werking van het afkappingsteken als voorbeeld (de zogenaamde apostrof, gebruik in om bijvoorbeeld ``'s avonds`` te schrijven)
+Laten we eens kijken naar de werking van het afkappingsteken als voorbeeld (de zogenaamde apostrof, om bijvoorbeeld ``'s avonds`` te schrijven)
 Volgende code zal de compiler verkeerd interpreteren, daar hij denkt dat we een leeg karakter wensen op te slaan:
 
 ```java
@@ -132,8 +132,8 @@ Console.WriteLine("Een zin en dan nu de biep\a");
 Het apenstaartje voor een ``string`` literal plaatsen is zeggen "beschouw alles binnen de aanhalingstekens als effectieve karakters die deel uitmaken van de inhoud van de tekst. **Escape characters zullen dus genegeerd worden.** Dit is vooral handig als je bijvoorbeeld een netwerkadres wilt schrijven en niet iedere ``\`` wilt escapen:
 
 ```java
-string zonderAt = "C\\Temp\\Myfile.txt";
-string metaAt = @"C\Temp\Myfile.txt";
+string zonderAt = "C:\\Temp\\Myfile.txt";
+string metAt = @"C:\Temp\Myfile.txt";
 ```
 
 Merk op dat aanhalingstekens nog steeds *ge-escape'd* moeten worden. Heb je dus een stuk tekst met een aanhalingsteken in dan zal je zonder het apenstaartje moeten werken.
@@ -167,6 +167,6 @@ dan zal de compiler deze twee waarden letterlijk optellen en het nieuw verkregen
 
 
 {% hint style='tip' %}
-Je zou misschien verwachten dat C# vervolgens het element op plaats 131 in de Unicode tabel zou tonen. Dat is niet zo: omdat de ``+`` operator niet is gedefinieerd voor het ``char`` datatype maar wel voor het ``int`` datatype, besluit de compiler om de twee operanden (``letter1`` en ``letter2``) als ``int`` operanden te hanteren. Aangezien ``int+int`` een ``int`` als resultaat geeft, krijgen we dus ``131`` op het scherm en niet het Unicode element 131 ``Æ’`` (we zien verderop hoe je dit wel kunt doen).
+Je zou misschien verwachten dat C# vervolgens het element op plaats 131 in de Unicode tabel zou tonen. Dat is niet zo: omdat de ``+`` operator niet is gedefinieerd voor het ``char`` datatype maar wel voor het ``int`` datatype, besluit de compiler om de twee operanden (``letter1`` en ``letter2``) als ``int`` operanden te hanteren. Aangezien ``int+int`` een ``int`` als resultaat geeft, krijgen we dus ``131`` op het scherm en niet het Unicode element 131 (we zien verderop hoe je dit wel kunt doen).
 {% endhint %}
 
