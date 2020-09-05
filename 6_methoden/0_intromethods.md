@@ -12,7 +12,7 @@ Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschil
 
 Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerdere statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet met extra parameters, en kan ook een resultaat terug geven. Een methode kan van eender waar in je code aangeroepen worden.
 
-Je gebruikt al sinds les 1 methoden. Telkens je ``Console.WriteLine()`` bijvoorbeeld gebruikte, roep je een methode aan. **Methoden in C# zijn namelijk herkenbaar aan de ronde haakjes achteraan, al dan niet met parameters tussen.** Kortom, alles wat we nu gaan zien heb je (onbewust) al gebruikt. Het grote verschil zal zijn dat we nu ook **zelf methoden** gaan definiëren, en niet enkel bestaande methoden gebruiken.
+Je gebruikt al sinds les 1 methoden. Telkens je ``Console.WriteLine()`` bijvoorbeeld gebruikte, roep je een methode aan. **Methoden in C# zijn namelijk herkenbaar aan de ronde haakjes achteraan, al dan niet met actuele parameters tussen.** Kortom, alles wat we nu gaan zien heb je (onbewust) al gebruikt. Het grote verschil zal zijn dat we nu ook **zelf methoden** gaan definiëren, en niet enkel bestaande methoden gebruiken.
 
 Methoden gebruiken hebben als voordeel dat je (kleine) herbruikbare stukken code kunt gebruiken en dus niet steeds deze code overal moet copy pasten. Daarnaast zullen methoden je code ook overzichtelijker maken.
 
@@ -27,7 +27,7 @@ static returntype MethodeNaam(optioneel_parameters)
 }
 ```
 
-Vervolgens kan je deze methode elders oproepen als volgt, indien de methode geen parameters vereist:
+Vervolgens kan je deze methode elders oproepen als volgt, indien de methode geen  parameters vereist:
 
 ```java
 MethodeNaam();
@@ -289,10 +289,10 @@ Je hebt dit ook al geregeld gebruikt. Wanneer je tekst op het scherm wilt tonen 
 Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
 
 1. Wanneer een parameter **by value** wordt meegegeven aan een methode, dan wordt **een kopie gemaakt van de huidige waarde** die wordt meegegeven.
-2. Wanneer echter een parameter **by reference** wordt meegegeven dan zal een pointer worden meegegeven aan de methode. Deze pointer bevat het **adres van de eigenlijke variabele** die we meegeven. Aanpassingen aan de parameters zullen daardoor ook zichtbaar zijn binnen de scope van de originele variabele. Parameters *by reference* worden niet in dit boek behandeld, wel in het volgende deel.
+2. Wanneer echter een parameter **by reference** wordt meegegeven dan zal een pointer worden meegegeven aan de methode. Deze pointer bevat het **adres van de eigenlijke variabele** die we meegeven. Aanpassingen aan de actuele parameters zullen daardoor ook zichtbaar zijn binnen de scope van de originele variabele. Parameters *by reference* worden niet in dit boek behandeld, wel in het volgende deel.
 
-### Methoden met argumenten
-Om zelf een methode te definiëren die 1 of meerdere parameters aanvaardt, dien je per parameter het datatype en een tijdelijk naam (identifier) te definiëren (*argument*) in de methode-signatuur
+### Methoden met formele parameters
+Om zelf een methode te definiëren die 1 of meerdere parameters aanvaardt, dien je per parameter het datatype en een tijdelijk naam (identifier) te definiëren (*formele parameters*) in de methode-signatuur
 
 Als volgt:
 
@@ -303,7 +303,7 @@ static returntype MethodeNaam(type parameter1, type parameter2)
 }
 ```
 
-Deze parameters zijn nu beschikbaar binnen de methode om mee te werken naar believen.
+Deze formele parameters zijn nu beschikbaar binnen de methode om mee te werken naar believen.
 
 <!---{pagebreak} --->
 
@@ -321,7 +321,7 @@ static int BerekenFaculteit(int grens)
 }
 ```
 
-De naam ``grens`` kies je zelf. Maar we geven hier dus aan dat de methode ``BerekenFaculteit`` enkel kan aangeroepen worden indien er 1 parameter van het type ``int`` wordt meegegeven.
+De naam ``grens`` kies je zelf. Maar we geven hier dus aan dat de methode ``BerekenFaculteit`` enkel kan aangeroepen worden indien er 1 actuele parameter van het type ``int`` wordt meegegeven.
 
 Aanroepen van de methode gebeurt dan als volgt:
 
@@ -385,7 +385,7 @@ Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijve
 
 <!---{pagebreak} --->
 
-#### Volgorde van parameters
+#### Volgorde van actuele parameters
 
 De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter toegekend, en zo voort. 
 
@@ -416,7 +416,7 @@ Dit zal een ander resultaat geven dan wanneer we volgende code zouden uitvoeren:
 ToonDeling(t, n);
 ```
 
-Ook de volgorde is belangrijk zeker wanneer je met verschillende types als parameters werkt:
+Ook de volgorde is belangrijk zeker wanneer je met verschillende types als formele parameters werkt:
 
 ```java
 static void ToonInfo(string name, int age)

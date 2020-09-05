@@ -45,7 +45,7 @@ double complexer= 3 + derdeMachtVan20 * Math.Round(sineHoekA);
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
 
-1. Schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de error negeren). 
+1. Schrijf de Methode zonder parameters. Bijvoorbeeld ``Math.Pow()`` (je mag de error negeren). 
 2. Plaats je cursor op ``Pow``.
 3. Druk op ``F1`` op je toetsenbord.
 4. Je krijgt nu de help-files te zien van deze methode.

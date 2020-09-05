@@ -7,8 +7,8 @@ Zoals verteld kun je parameters aan een methode doorgeven *by value* (de waarde)
 
 Je kan parameters op 2 manieren by reference doorgeven aan een methode:
 
-* Indien de parameters **reeds een waarde** heeft dan kan je het **``ref``** keyword gebruiken. Dit gebruik je dus voor in/out-parameters.
-* Indien de parameter **pas in de methode een waarde** krijgt toegekend dan wordt het **``out``** keyword gebruikt. Dit gebruik je dus voor out-parameters.
+* Indien de actuele parameter **reeds een waarde** heeft dan kan je het **``ref``** keyword gebruiken. Dit gebruik je dus voor in/out-parameters.
+* Indien de actuele parameter **pas in de methode een waarde** krijgt toegekend dan wordt het **``out``** keyword gebruikt. Dit gebruik je dus voor out-parameters.
 
 ### Ref
 Je plaatst het ``ref`` keyword in de methode signatuur voor het argument dat *by reference* moet meegegeven worden. Vanaf dan heeft de methode toegang tot de originele parameter en dus niet de kopie. Je dient ook expliciet het keyword voor de paratemeter bij de aanroep van de methode te plaatsen:

@@ -1,6 +1,6 @@
 # Overloaded constructor
 
-Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. 
+Soms wil je parameters aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. 
 Met andere woorden, stel dat we dit willen schrijven:
 
 ```java

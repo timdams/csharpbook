@@ -6,9 +6,9 @@ Wat nu volgt is grotendeels gebaseerd op het volgende [artikel](https://docs.mic
 
 
 ### Named parameters
-Wanneer je een methode aanroept is de volgorde van je argumenten belangrijk: deze moeten meegeven worden in de volgorde zoals de methode parameters ze verwachten.
+Wanneer je een methode aanroept is de volgorde van je actuele parameters belangrijk: deze moeten meegeven worden in de volgorde zoals de methode ze verwacht.
 
-Met behulp van **named parameters** kan je echter expliciet aangeven welke argument aan welke methode-parameter moet meegegeven worden. 
+Met behulp van **named parameters** kan je echter expliciet aangeven welke actuele parameters aan welke formele parameter moet meegegeven worden. 
 
 Stel dat we een methode hebben met volgende signatuur:
 ```java
@@ -86,7 +86,7 @@ BookFile(3, age: 4);
 
 ### Method overloading
 
-Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere parameters qua datatype en aantal*. De compiler zal dan zelf bepalen welke versie moet aangeroepen worden, gebaseerd op het aantal en type parameters dat je meegeeft.
+Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere formele parameters qua datatype en aantal*. De compiler zal dan zelf bepalen welke versie moet aangeroepen worden, gebaseerd op het aantal en type actuele parameters dat je meegeeft.
 
 Volgende methoden zijn overloaded:
 

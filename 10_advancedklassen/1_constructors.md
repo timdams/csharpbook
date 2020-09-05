@@ -24,7 +24,7 @@ Als programmeur van eigen klassen zijn er 3 opties voor je:
 
 * Je gebruikt geen constructors: het leven gaat voort zoals het is. Je kunt objecten aanmaken zoals eerder getoond.
 * Je hebt enkel een **default** constructor nodig. Je kan nog steeds objecten met ``new Student()`` aanmaken, maar je gaat zelf beschrijven wat er moet gebeuren bij de default constructor
-* Je wenst gebruik te maken van een of meerdere **overloaded** constructoren, hierbij zal je dan extra argumenten kunnen meegeven bij de creatie van een object, bijvoorbeeld: ``new Student(24, "Jos")``.
+* Je wenst gebruik te maken van een of meerdere **overloaded** constructoren, hierbij zal je dan actuele parameters kunnen meegeven bij de creatie van een object, bijvoorbeeld: ``new Student(24, "Jos")``.
 
 
 {% hint style='warning' %}

@@ -1,4 +1,4 @@
-# Objecten als argumenten
+# Objecten als actuele parameters
 
 Klassen zijn "gewoon" nieuwe types. Alle regels die we dus al kenden in verband met het doorgeven van variabelen als parameters in een methoden blijven gelden.
 Het enige verschil is dat we objecten **by reference** meegeven aan een methode. Aanpassingen aan het object in de methode zal dus betekenen dat je het originele object aanpast dat aan de methode werd meegegeven. Hier moet je dus zeker rekening mee houden.
