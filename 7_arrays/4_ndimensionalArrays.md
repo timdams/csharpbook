@@ -1,20 +1,21 @@
 ## Meer-dimensionale Arrays
-Voorlopig hebben we enkel met zogenaamde 1-dimensionale arrays gewerkt. Je kan er echter ook meerdimensionale array maken. Denk maar aan een n-bij-m array om een matrix voor te stellen. Denk maar aan het voorbeeld aan de start van dit hoofdstuk waarin we de regenval gedurende 7 dagen wilden meten. Wat als we dit gedurende 4 weken wensen te doen, maar wel niet alle data in één lange willen plaatsen? We zouden dan een 2-dimensionale array kunnen maken als volgt:
+Voorlopig hebben we enkel met zogenaamde 1-dimensionale arrays gewerkt. Je kan echter ook meerdimensionale arrays maken. Denk maar aan een n-bij-m array om een matrix voor te stellen. Denk maar aan het voorbeeld aan de start van dit hoofdstuk waarin we de regenval gedurende 7 dagen wilden meten. Wat als we dit gedurende 4 weken wensen te doen, maar wel niet alle data in één lange array willen plaatsen? We zouden dan een 2-dimensionale array kunnen maken als volgt:
 
 ```java
-int[,] regen = {
-        {34,45,0,34,12,0,23 },
-        {34,5,0,74,1,4,5    },
-        {7,45,8,24,12,12,13 },
-        {34,4,0,34,2,0,23   }
-        };
+int[,] regen = 
+            {
+                {34,45,0,34,12,0,23 },
+                {34,5,0,74,1,4,5    },
+                {7,45,8,24,12,12,13 },
+                {34,4,0,34,2,0,23   }
+            };
 ```
 
 <!--- {width:60%} --->
 ![Een tweedimensionale array](../assets/5_arrays/2d.png)
 
 {% hint style='tip' %}
-We behandelen meerdimensionale arrays maar komt om de eenvoudige reden dat je die in de praktijk minder vaak zal nodig hebben.
+We behandelen meerdimensionale arrays maar kort om de eenvoudige reden dat je die in de praktijk minder vaak zal nodig hebben.
 {% endhint %}
 
 De arrays die we nu behandelen zullen steeds "rechthoekig" zijn. Daarmee bedoelen we dat ze steeds per rij of kolom evenveel elementen zullen bevatten als in de andere rijen of kolommen. 
@@ -24,7 +25,7 @@ Arrays die per rij of kolom een andere hoeveelheid elementen hebben zijn zogenaa
 {% endhint %}
 
 ### n-dimensionale arrays aanmaken
-Door een komma tussen rechte haakjes te plaatsen tijdens de declaratie van een array kunnen we meer-dimensionale arrays maken. 
+Door een komma tussen rechte haakjes te plaatsen tijdens de declaratie van een array, kunnen we meer-dimensionale arrays maken. 
 
 Bijvoorbeeld om een 2D array te maken schrijven we:
 
@@ -44,7 +45,7 @@ Ja, dit kan dus ook een 10-dimensionale array aanmaken. Kan handig zijn als je e
 ```java
 int[,,,,,,,,,] jeBentGekAlsJeHierMeeWiltWerken;
 ```
-Ja, 11 kan ook als je meer in de M-theorie gelooft. En zelfs 26 moest de bosonische snaartheorie meer je ding ding zijn:
+Ja, 11 kan ook als je meer in de M-theorie gelooft. En zelfs 26 moest de bosonische snaartheorie meer je ding zijn:
 <!---{line-numbers:false}--->
 ```java
 int[,,,,,,,,,,,,,,,,,,,,,,,,,] jeBentGekAlsJeHierMeeWiltWerken;
@@ -54,7 +55,7 @@ int[,,,,,,,,,,,,,,,,,,,,,,,,,] jeBentGekAlsJeHierMeeWiltWerken;
 
 ### Initialisatie
 
-Ook om nu effectief een array aan te maken gebruiken we de komma-notatie, alleen moeten we nu ook de effectieve groottes aangeven. Voor en 5 bij 10 array bijvoorbeeld schrijven we (merk op dat dit dus een 2D-array is):
+Ook om nu effectief een array aan te maken gebruiken we de komma-notatie, alleen moeten we nu ook de effectieve groottes aangeven. Voor een 5 bij 10 array bijvoorbeeld schrijven we (merk op dat dit dus een 2D-array is):
 
 ```java
 int[,] matrix= new int[5,10];
@@ -63,7 +64,8 @@ int[,] matrix= new int[5,10];
 Om een array ook onmiddellijk te initialiseren met waarden gebruiken we de volgende uitdrukking :
 
 ```java
-string[,] boeken = {
+string[,] boeken = 
+    {
         {"Macbeth", "Shakespeare", "ID12341"},
         {"Before I Get Old", "Dave Marsh", "ID234234"},
         {"Security+", "Mike Pastore", "ID3422134"},
@@ -77,17 +79,18 @@ Merk op dat we dus nu een 3 bij 4 array maken maar dat dit dus nog steeds een 2D
 
 Of bij een 3D:
 ```java
-int[,,] temperaturen= {
+int[,,] temperaturen= 
     {
-        {3,4}, {5,4}
-    },
-    {
-        {12,34}, {35,24}
-    },
-    {
-        {-12,27}, {3,24}
-    },
-};
+        {
+            {3,4}, {5,4}
+        },
+        {
+            {12,34}, {35,24}
+        },
+        {
+            {-12,27}, {3,24}
+        },
+    };
 ```
 
 Die we als volgt kunnen visualiseren:
@@ -98,7 +101,7 @@ Die we als volgt kunnen visualiseren:
 {% hint style='tip' %}
 Zoals je ziet worden meerdimensionale arrays snel een kluwen van komma's, accolades en haakjes. Probeer dus je dimensies te beperken. Je zal zelden een 3 -of meer dimensionale array nodig hebben. 
 
-De regel is eenvoudig: als je een 7-dimensionale array nodig hebt is de kans groot dat je een  volledig verkeerd algoritme hebt verzonnen, of dat je nog niet aan het volgende boekdeel bent begonnen of een topwetenschapper in CERN bent. Choose your reason!
+De regel is eenvoudig: als je een 7-dimensionale array nodig hebt, is de kans groot dat je een  volledig verkeerd algoritme hebt verzonnen, of dat je nog niet aan het volgende boekdeel bent begonnen of een topwetenschapper in CERN bent. Choose your reason!
 {% endhint %}
 
 <!---{pagebreak} --->

@@ -23,7 +23,7 @@ Arrays worden 'by reference' gebruikt in C#. Dit wil zeggen dat als we schrijven
 int[] getallen = {5,42,2};
 ```
 
-We in ``getallen`` enkel een geheugenadres bewaren dat wijst naar de plek waar de effectieve waarden staan elders in het geheugen. Dit in tegenstelling tot wanneer we ``int age = 5`` schrijven. (de redenen hiervoor zien we in het volgende deel). Volgende afbeelding geeft dit weer:
+we in ``getallen`` enkel een geheugenadres bewaren dat wijst naar de plek waar de effectieve waarden staan elders in het geheugen. Dit in tegenstelling tot wanneer we ``int age = 5`` schrijven. (de redenen hiervoor zien we in het volgende deel). Volgende afbeelding geeft dit weer:
 
 <!--- {width:80%} --->
 ![De wolk stelt het werkgeheugen voor. De geheugenadressen zijn willekeurig](../assets/5_arrays/geheugen.png)
@@ -64,7 +64,7 @@ Dan is dat hetzelfde als onderstaande schrijven daar beide variabele naar dezelf
 ploegen[1] = "Beerschot";
 ```
 
-En waar staan de ploegen in de nieuwePloegen array (``"Anderlecht"`` en ``"Brugge"``)? **Die array in het geheugen bestaat niet meer!**
+En waar staan de ploegen in de nieuwePloegen array (``"Anderlecht"`` en ``"Brugge"``)? **Die array in het geheugen is niet meer bereikbaar** (de garbage collector zal deze ten gepaste verwijderen, wat in het volgende boekdeel zal toegelicht worden).
 
 #### De oplossing als je arrays wilt kopiëren
 
@@ -81,7 +81,6 @@ for(int i = 0; i < ploegen.Length; i++)
 Er is een ingebouwde methode in de ``Array``-bibliotheek (deze bibliotheek zien we in de volgende sectie) die ook toelaat om arrays te kopiëren genaamd ``Copy``. 
 {% endhint %}
 
-
 {% hint style='warning' %}
-Opgelet: wanneer je met arrays van objecten (zie het tweede boekdeel) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu ook de individuele referenties van een object kopiëren!
+Opgelet: wanneer je met arrays van objecten (zie het tweede boekdeel) werkt dan zal bovenstaande mogelijk niet het gewenste resultaat geven daar we nu ook de individuele referenties van een object kopiëren!
 {% endhint %}

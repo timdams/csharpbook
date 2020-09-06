@@ -8,7 +8,7 @@
 ## BMI Berekenaar
 ```java
 Console.WriteLine("Geef je gewicht in kg");
-double gewicht = Convert.ToDouble(Console.ReadLine());
+double gewicht = double.Parse(Console.ReadLine());
 Console.WriteLine("Geef je lengte in cm");
 double lengte = Convert.ToDouble(Console.ReadLine())/100;
 

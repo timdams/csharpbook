@@ -11,7 +11,7 @@ Indien je niet weet wat deze volgorde is kan je altijd Intellisense gebruiken. T
 
 ![Dit soort popups bevat een schat aan informatie.](../assets/4_methoden/methoden1.png)
 
-We zien telkens duidelijke de methode-signatuur: het return type (in dit geval ``void`` gevolgd door de naam van de methode en dan de formele parameters en hun datatype(s). Zoals al herhaardelijk aangehaald: de naam van de formele parameters doet er niet toe! 
+We zien telkens duidelijke de methode-signatuur: het return type (in dit geval ``void``) gevolgd door de naam van de methode en dan de formele parameters en hun datatype(s). Zoals al herhaardelijk aangehaald: de naam van de formele parameters doet er niet toe! 
 
 Merk trouwens op dat je de WriteLine-methode ook mag aanroepen zonder parameters, dit zal resulteren in een lege lijn in de console.
 
@@ -24,9 +24,9 @@ Met behulp van de F1-toets kunnen meer info over de methode in kwestie tonen. Hi
 
 
 ### Intellisense
-*Wat kan deze .NET bibliotheek eigenlijk?* is een veelgestelde vraag. Zeker wanneer je de basis van C# onder knie hebt en je stilletjes aan met bestaande .NET bibliotheken wilt gaan werken. Wat volgt is een essentieel onderdeel van VS dat veel gevloek en tandengeknars zal voorkomen.
+*Wat kan deze .NET bibliotheek eigenlijk?* is een veelgestelde vraag. Zeker wanneer je de basis van C# onder de knie hebt en je stilletjes aan met bestaande .NET bibliotheken wilt gaan werken. Wat volgt is een essentieel onderdeel van VS dat veel gevloek en tandengeknars zal voorkomen.
 
-De online documentatie van VS is zeer uitgebreid en dankzij **IntelliSense** krijg je ook aardig wat informatie tijdens het typen van de code zelf. IntelliSense is de achterliggende technologie in VS die ervoor zorgt dat je minder moet typen. Als een soort assistent probeert IntelliSense een beetje te voorspellen wat je gaat typen en je daarmee helpen. 
+De online documentatie van VS is zeer uitgebreid en dankzij **IntelliSense** krijg je ook aardig wat informatie tijdens het typen van de code zelf. IntelliSense is de achterliggende technologie in VS die ervoor zorgt dat je minder moet typen. Als een soort assistent probeert IntelliSense een beetje te voorspellen wat je gaat typen en zal je daarmee helpen. 
 
 <!---{pagebreak} --->
 

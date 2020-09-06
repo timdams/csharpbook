@@ -115,11 +115,11 @@ Een voorbeeld:
 
 ```java
 Console.WriteLine("Voer a in");
-int a = Convert.ToInt32(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Voer b in");
-int b = Convert.ToInt32(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
 Console.WriteLine("Voer c in");
-int c = Convert.ToInt32(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
  
 if (a == b)
 {

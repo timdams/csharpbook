@@ -547,14 +547,14 @@ Maar bedenk eens wat je allemaal moet doen als één regel in het rekening maken
 
 Nog een andere opmerking. Als de winkel beslist om de classificatie (gewone film, kinder, nieuwe release) te veranderen, maar nog niet zeker is hoe, kan het zijn dat ze je vragen de mogelijke ideeën uit te testen.  Dat heeft dan ook een invloed op hoe kosten voor films en huurpunten worden berekend. Als professionele software ontwikkelaar in spe ga ik je reeds verwittigen dat dergelijke veranderingen heel regelmatig voorkomen! 
 
-De ``statement()`` functie is de plaats waar de veranderingen in classificatie en berekeningen gebeuren. Dus ook niet te vergeten consistente veranderingen te maken in de ``htmlstatement()`` functie. Als de berekeningsmethodes steeds complexer worden, zal het met ons design ook steeds moeilijker worden om deze veranderingen door te voeren. 
+De ``statement()`` functie is de plaats waar de veranderingen in classificatie en berekeningen gebeuren. Dus ook niet te vergeten consistente veranderingen te maken in de ``htmlstatement()`` functie. Als de berekeningsmethoden steeds complexer worden, zal het met ons design ook steeds moeilijker worden om deze veranderingen door te voeren. 
 
 Wat nu volgt zijn voorstellen om onze software architectuur stap voor stap te veranderen totdat we object georiënteerde code hebben geschreven die ons in staat stelt dergelijke veranderingen op een *makkelijke* manier te realiseren. 
  
   
 ### Analyseren van de statement functie 
 
-Tracht steeds korte functies/methodes te schrijven. Tracht lange functies onder te verdelen in kleinere delen. Kleinere stukken code zijn veel eenvoudiger te onderhouden! Om een functie te verdelen tracht je bij elkaar horende blokken te vinden. Een goede manier is om naar lokale scope variabelen te zoeken. Bijvoorbeeld thisAmount en Rental r, waarbij r niet wordt veranderd, terwijl thisAmount wel. Elke variabele die niet wordt veranderd, kunnen we als argument doorgeven. Indien er variabelen zijn die wel worden veranderd kunnen we, indien er maar 1 is, deze terug retourneren. 
+Tracht steeds korte functies/methoden te schrijven. Tracht lange functies onder te verdelen in kleinere delen. Kleinere stukken code zijn veel eenvoudiger te onderhouden! Om een functie te verdelen tracht je bij elkaar horende blokken te vinden. Een goede manier is om naar lokale scope variabelen te zoeken. Bijvoorbeeld thisAmount en Rental r, waarbij r niet wordt veranderd, terwijl thisAmount wel. Elke variabele die niet wordt veranderd, kunnen we als argument doorgeven. Indien er variabelen zijn die wel worden veranderd kunnen we, indien er maar 1 is, deze terug retourneren. 
  
 We zoeken in onze statement() functie naar deze lijnen code: 
 
@@ -628,7 +628,7 @@ foreach (Rental r in _rentals)
 
 #### Analyse van AmountFor functie 
 
-Als we naar onze nieuwe AmountFor(Rental r) functie kijken, valt het op dat we hier met Rental data werken, en eigenlijk geen data van de customer klasse gebruiken.  In de meeste gevallen moeten functies/methodes in die klasse staan vanwaar ze data gebruiken, dus in dit geval van de Rental klasse. 
+Als we naar onze nieuwe AmountFor(Rental r) functie kijken, valt het op dat we hier met Rental data werken, en eigenlijk geen data van de customer klasse gebruiken.  In de meeste gevallen moeten functies/methoden in die klasse staan vanwaar ze data gebruiken, dus in dit geval van de Rental klasse. 
 
 ```java
 public double GetCharge() 
@@ -1344,7 +1344,7 @@ Er zijn verschillende redenen waarom interface moeten gesegregeerd zijn. Om func
 
 ## Hoe ISP detecteren?
 
-1. Implementeer je sommige methodes van een interface niet, dan voldoe je niet aan ISP.
+1. Implementeer je sommige methoden van een interface niet, dan voldoe je niet aan ISP.
 
 2. Als je klasse refereert naar een andere klasse, maar gebruikt in beperkte mate deze gerefereerde klasse, dan voldoe je niet aan ISP.
 

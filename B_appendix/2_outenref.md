@@ -1,6 +1,6 @@
 ## Out en ref keywords
 
-Zoals verteld kun je parameters aan een methode doorgeven *by value* (de waarde) of *by reference* (het geheugenadres) afhankelijk van het datatype dat je meegeeft(de primitieve datatypes zoals ``int`` en ``double`` worden *by value* meegegeven, arrays by reference). Je kan echter de primitieve datatypes ook *by reference* meegeven zodat de methode rechtstreeks toegang tot de meegegeven variabele heeft en niet met een kopie moet werken. Dit kan soms handig zijn, maar zorgt ook voor ongewenste bugs. Opletten dus.
+Zoals verteld kun je parameters aan een methode doorgeven *by value* (de waarde) of *by reference* (het geheugenadres) afhankelijk van het datatype dat je meegeeft (de primitieve datatypes zoals ``int`` en ``double`` worden *by value* meegegeven, arrays by reference). Je kan echter de primitieve datatypes ook *by reference* meegeven zodat de methode rechtstreeks toegang tot de meegegeven variabele heeft en niet met een kopie moet werken. Dit kan soms handig zijn, maar zorgt ook voor ongewenste bugs. Opletten dus.
 
 
 ### Parameters by reference doorgeven
@@ -11,7 +11,7 @@ Je kan parameters op 2 manieren by reference doorgeven aan een methode:
 * Indien de actuele parameter **pas in de methode een waarde** krijgt toegekend dan wordt het **``out``** keyword gebruikt. Dit gebruik je dus voor out-parameters.
 
 ### Ref
-Je plaatst het ``ref`` keyword in de methode signatuur voor het argument dat *by reference* moet meegegeven worden. Vanaf dan heeft de methode toegang tot de originele parameter en dus niet de kopie. Je dient ook expliciet het keyword voor de paratemeter bij de aanroep van de methode te plaatsen:
+Je plaatst het ``ref`` keyword in de methode signatuur voor de formele parameter dat *by reference* moet meegegeven worden. Vanaf dan heeft de methode toegang tot de originele parameter en dus niet tot de kopie. Je dient ook expliciet het keyword voor de actuele parameter bij de aanroep van de methode te plaatsen:
 
 
 ```java
@@ -53,9 +53,9 @@ static void Main(string[] args)
 
 Vaak wil je de invoer van de gebruiker verwerken/omzetten naar een getal. Denk maar aan volgende applicatie:
 ```java
- Console.WriteLine("Geef je leeftijd");
+Console.WriteLine("Geef je leeftijd");
 string invoer = Console.ReadLine();
-int leeftijd = Convert.ToInt32(invoer);
+int leeftijd = int.Parse(invoer);
 leeftijd += 10;
 Console.WriteLine($"Over 10 jaar ben je {leeftijd} jaar oud");
 ```
@@ -82,7 +82,7 @@ We kunnen nu onze applicatie herschrijven en minder foutgevoelig maken voor slec
 Console.WriteLine("Geef je leeftijd");
 string invoer = Console.ReadLine();
 bool gelukt = int.TryParse(invoer,out int leeftijd);
-if (gelukt == true)
+if (gelukt)
 {
     leeftijd += 10;
     Console.WriteLine($"Over 10 jaar ben je {leeftijd} jaar oud");

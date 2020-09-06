@@ -55,7 +55,7 @@ else if //enz.
 De code wordt nu wel leesbaarder, maar toch is ook hier 1 groot nadeel:
 * De code is veel foutgevoeliger voor typefouten. Wanneer je ``"Maandag"`` i.p.v. ``"maandag"`` bewaart dan zal de if al niet werken. Iedere schrijffout of variant zal falen. 
 
-### Enumeraties: het beste van beide werelden.
+### Enumeraties: het beste van beide werelden
 Enumeraties (**enum**) zijn een C# syntax dat bovenstaand probleem oplost en het beste van beide slechte oplossingen samenvoegt : 
 1. **Leesbaardere code**.
 2. Minder foutgevoelige code, en dus minder potentiële bugs.
@@ -201,7 +201,7 @@ static void Main(string[] args)
     Console.WriteLine("1. Demo");
     Console.WriteLine("2. Start");
     Console.WriteLine("3. Einde");
-    int userkeuze = Convert.ToInt32(Console.ReadLine());
+    int userkeuze = int.Parse(Console.ReadLine());
 
     Menu keuze = (Menu)userkeuze;
 

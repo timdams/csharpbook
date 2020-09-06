@@ -12,11 +12,11 @@ char[] karakters = origineleZin.ToCharArray();
 karakters[8] = 'i';
 ```
 
-De uitvoer zal worden:``Ik ben Tim``.
+De array zal nu het volgende bevatten:``Ik ben Tim``.
 
 ### Char array naar string
 
-Ook de omgekeerde weg is mogelijk.  De werking is iets anders en maakt gebruik van ``new string()``, let vooral op hoe we de char array doorgeven als argument bij het aanmaken van een nieuwe ``string`` in lijn 3:
+Ook de omgekeerde weg is mogelijk. De werking is iets anders en maakt gebruik van ``new string()``, let vooral op hoe we de char array doorgeven als argument bij het aanmaken van een nieuwe ``string`` in lijn 3:
 
 ```java
 char[] arrayOfLetters = {'h', 'a', 'l', 'l', 'o'};
@@ -117,7 +117,7 @@ Waardoor we ``Ik bn Mrcy`` op het scherm krijgen.
 
 ``Remove(int start, int lengte)`` zal op de index ``start`` alle ``lengte`` volgende karakters in de ``string`` verwijderen en een nieuwe, kortere ``string`` als resultaat geven.
 
-Volgende voorbeeld zal het stukje "ben " uit de ``string`` weghalen:
+Volgend voorbeeld zal het stukje "ben " uit de ``string`` weghalen:
 
 ```java
 string boek="Ik ben Mercy";

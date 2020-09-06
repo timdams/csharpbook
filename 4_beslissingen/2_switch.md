@@ -5,7 +5,7 @@ Een ``switch`` statement is een program-flow element om een veelvoorkomende cons
 ```java
 int option;
 Console.WriteLine("Kies: 1)afbreken\n2)opslaan\n3)laden:");
-option = Convert.ToInt32(Console.ReadLine());
+option = int.Parse(Console.ReadLine());
  
 if (option == 1)
     Console.WriteLine("Afbreken gekozen");
@@ -43,7 +43,7 @@ Het menu van zonet kunnen we nu herschrijven naar een ``switch``:
 ```java
 int option;
 Console.WriteLine("Kies: 1)afbreken\n2)opslaan\n3)laden:");
-option = Convert.ToInt32(Console.ReadLine());
+option = int.Parse(Console.ReadLine());
 
 switch (option)
 {

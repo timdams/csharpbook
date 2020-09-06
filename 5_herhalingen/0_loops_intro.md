@@ -1,4 +1,4 @@
-# Herhalingen, herhalingen, herhaling
+# Herhalingen Herhalingen Herhalingen
 
 In het vorige hoofdstuk leerden we hoe we met behulp van beslissingen onze code konden aftakken (**branching**) zodat andere code werd uitgevoerd afhankelijk van de staat van bepaalde variabelen of invoer van de gebruiker. 
 

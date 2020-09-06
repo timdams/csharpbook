@@ -592,7 +592,7 @@ static void Main()
 ![](../assets/Aallinone/mazegame/6.png)
 ## Fase 8: Go nuts
 
-Vanaf dit punt kun je nu al een relatief eenvoudig, toch leuk spel maken, op voorwaarde dat je *verhaal* goed zit. Echter, voor we je hierop loslaten gaan we nog enkele zaken *refactoren* zodat de code wat leesbaarder blijft. In hoofzaak willen we bepaalde stukken code uit de main-body halen en naar aparte methodes extraheren.
+Vanaf dit punt kun je nu al een relatief eenvoudig, toch leuk spel maken, op voorwaarde dat je *verhaal* goed zit. Echter, voor we je hierop loslaten gaan we nog enkele zaken *refactoren* zodat de code wat leesbaarder blijft. In hoofzaak willen we bepaalde stukken code uit de main-body halen en naar aparte methoden extraheren.
 
 ### Stap 1: Kaart initialiseren in aparte methode 
 

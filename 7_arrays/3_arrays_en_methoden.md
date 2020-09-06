@@ -77,7 +77,7 @@ Array output:
 Volgend programma toont hoe we verschillende onderdelen van de code in methoden hebben geplaatst zodat:
 
 1. de lezer van de code sneller kan zien wat het programma juist doet
-2. zodat code herbruikbaar is
+2. code herbruikbaar is
 
 Begrijp je wat dit programma doet? En kan je voorspellen wat er op het scherm zal komen? 
 
@@ -120,7 +120,7 @@ static void Main(string[] args)
 
 ### Array als return-type bij een methode
 
-Een array kan ook gebruikt worden als het returntype van een array. Hiervoor zet je gewoon het type array als returntype (wederom zonder de grootte) in de methode-signature.
+Een array kan ook gebruikt worden als het returntype van een methode. Hiervoor zet je gewoon het type array als returntype (wederom zonder de grootte) in de methodesignatuur.
 
 Stel bijvoorbeeld dat je een methode hebt die een int-array aanmaakt van een gegeven grootte waarbij ieder element van de array reeds een beginwaarde heeft die je ook als parameter meegeeft:
 
@@ -153,20 +153,20 @@ Onthoud dat arrays altijd **by reference** naar en van methoden komen. Je werkt 
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Snel, zet je helm op, voor er ongelukken gebeuren! We hadden al enkele keren gezegd dat arrays *by reference* worden meegegeven, maar wat is daar nu het gevolg van? Wel, laten we eens naar volgende programma'tje kijken dat ik heb geschreven om de nummering van de appartementen in een flatgebouw aan te passen. Zoals je weet is het gelijkvloers in sommige landen 0, terwijl in andere dit 1 is. Volgende programma past het nummer van het gelijkvloers aan:
+Snel, zet je helm op, voor er ongelukken gebeuren! We hadden al enkele keren gezegd dat arrays *by reference* worden meegegeven, maar wat is daar nu het gevolg van? Wel, laten we eens naar volgende programmaatje kijken dat ik heb geschreven om de nummering van de appartementen in een flatgebouw aan te passen. Zoals je weet is het gelijkvloers in sommige landen 0, terwijl in andere dit 1 is. Volgende programma past het nummer van het gelijkvloers aan:
 
 ```java
+static void PasAan(int[] inarr)
+{
+        inarr[0]= 0;
+}
+
 public static void Main()
 {
     int[] verdiepnummers= {1,2,3};
     Console.WriteLine($"VOOR:{verdiepnummers[0]}"); // VOOR:1
     PasAan(verdiepnummers);
-    Console.WriteLine($"NA:{verdiepnummers[0]}"); // NA:-1
-}
-
-static void PasAan(int[] inarr)
-{
-        inarr[0]= -1;
+    Console.WriteLine($"NA:{verdiepnummers[0]}"); // NA:0
 }
 ```
 
@@ -175,16 +175,15 @@ Dankzij het feit dat we aan ``PasAan`` een array meegeven *by reference* zal de 
 Vergelijk dit met volgende voorbeeld waar we een ``int`` als parameter meegeven die *by value* en niét *by reference* wordt meegegeven:
 
 ```java
+	static void PasAan(int inarr)
+	{
+	      inarr= 0; //inarr wordt 0
+	}
 	public static void Main()
 	{
 		int[] getallen= {1,2,3};
 		PasAan(getallen[0]);
 		Console.WriteLine(getallen[0]); // NA:1
-	}
-	
-	static void PasAan(int inarr)
-	{
-	      inarr= -1; //inarr wordt -1
 	}
 ```
 

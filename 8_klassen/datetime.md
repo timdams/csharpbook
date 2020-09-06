@@ -208,7 +208,7 @@ Deze nuttige methode geeft een ``bool`` terug om aan te geven het meegegeven obj
 ```java
 DateTime today= DateTime.Now;
 bool isLeap= DateTime.IsLeapYear(today.Year);
-if(isLeap==true)
+if(isLeap)
     Console.WriteLine("This year is a leap year");
 ```
 

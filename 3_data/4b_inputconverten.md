@@ -16,27 +16,27 @@ Willen we dat de gebruiker een getal invoert, bijvoorbeeld zijn of haar leeftijd
 Invoer van de gebruiker verwerken (dat een andere type dan ``string`` moet zijn) zal dus uit 3 stappen bestaan:
 1. Input **uitlezen** met ``Console.ReadLine()``
 2. Input **bewaren** in een ``string`` variabele
-3. De variabele **converteren** met ``Convert.`` bibliotheek naar het gewenste type
+3. De variabele **parsen** met ``.Parse()`` bibliotheek naar het gewenste type
 
 
 ### Input converteren 
-Om strings naar een ander type te converteren gebruiken we best de Convert.-bibliotheek (maar ``.Parse()`` kan ook). De volgende code zal je dus erg vaak moeten schrijven. 
+Om strings naar een ander type te parsen gebruiken we best de ``.Parse`` -methoden (maar ``Convert.To...`` kan ook). De volgende code zal je dus erg vaak moeten schrijven. 
 
 Stel dat we aan de gebruiker z'n gewicht vragen, dan moeten we dus doen:
 
 ```java
 Console.WriteLine("Geef je gewicht:");
 string inputGewicht= Console.ReadLine();
-double gewicht= Convert.ToDouble(inputGewicht);
+double gewicht= double.Parse(inputGewicht);
 ```
 
 <!---{pagebreak} --->
 
-Voorgaande code kan nog 1 lijntje sneller door ``ReadLine`` ogenblikkelijk als invoer aan de Convert-methode te geven:
+Voorgaande code kan nog 1 lijntje sneller door ``ReadLine`` ogenblikkelijk als invoer aan de Parse-methode te geven:
 
 ```java
 Console.WriteLine("Geef je gewicht:");
-double gewicht= Convert.ToDouble(Console.ReadLine());
+double gewicht= double.Parse(Console.ReadLine());
 ```
 
 ![Schematisch overzicht: ReadLine=>Conversie](../assets/2_beslissingen/readline.png)

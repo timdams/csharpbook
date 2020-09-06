@@ -1,6 +1,6 @@
 ## System.Array
 
-Je kan de ``System.Array`` bibliotheek gebruiken om je array-code te vereenvoudigen.Deze bibliotheek bevat naast de ``.Length`` eigenschap, ook enkele nuttige methoden zoals ``BinarySearch()``, ``Sort()``, ``Copy`` en ``Reverse()``. Het gebruik hiervan is bijna steeds dezelfde zoals volgende voorbeelden tonen.
+Je kan de ``System.Array`` bibliotheek gebruiken om je array-code te vereenvoudigen. Deze bibliotheek bevat naast de ``.Length`` eigenschap, ook enkele nuttige methoden zoals ``BinarySearch()``, ``Sort()``, ``Copy`` en ``Reverse()``. Het gebruik hiervan is bijna steeds hetzelfde zoals volgende voorbeelden tonen.
 
 {% hint style='tip' %}
 De eerste zin is een vereenvoudiging, wat we in het volgende boekdeel zullen ontdekken. Technisch gezien erven alle arrays over van ``System.Array`` omdat dit niet een bibliotheek, maar een *klasse* is.
@@ -87,7 +87,7 @@ int[] metingen = {224, 34, 156, 1023, -6};
 Array.Sort(metingen); //anders zal BinarySearch niet werken
 
 Console.WriteLine("Welke meting zoekt u?");
-int keuze = Convert.ToInt32(Console.ReadLine());
+int keuze = int.Parse(Console.ReadLine());
 
 int index = Array.BinarySearch(metingen, keuze);
 if(index >= 0)

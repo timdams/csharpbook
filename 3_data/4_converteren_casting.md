@@ -229,10 +229,6 @@ Je kan [alle conversie-mogelijkheden hier bekijken](https://msdn.microsoft.com/e
 {% endhint %}
 
 ## Parsing
-{% hint style='tip' %}
-Voorlopig zullen we parsing niet nodig hebben. Voor de volledigheid plaatsen we deze informatie hier echter. Ben je toch benieuwd: bekijk zeker eens de werking van ``TryParse`` in de appendix. Dit is een erg krachtige manier van werken.
-{% endhint %}
-
 Naast conversie en casting bestaat er ook nog **parsing**.
 
 Parsing is anders dan conversie en casting. Parsing zal je in dit boek enkel nodig hebben om tekst(``string``) naar getallen om te zetten. Echter, intern zal bijna altijd ``Convert.To...`` gebruikt worden indien je een ``Parse`` methode aanroept.

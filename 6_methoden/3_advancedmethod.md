@@ -67,7 +67,7 @@ Wanneer nu een parameter niet wordt meegegeven, dan zal deze default waarde in d
 ```java
 BookFile(15, "tim", 25); //klassieke aanroep, age zal 25 zijn, optName zal "tim" zijn
 BookFile(20, "dams"); //age zal 10 zijn, optName "dams"
-BookFile(35); //optName zal "default string" en age zal 10 zijn
+BookFile(35); //optName zal "unknown" en age zal 10 zijn
 ```
 
 **Je mag enkel de optionele parameters van achter naar voor weglaten. Volgende aanroepen zijn dus niet geldig**:
@@ -86,7 +86,7 @@ BookFile(3, age: 4);
 
 ### Method overloading
 
-Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere formele parameters qua datatype en aantal*. De compiler zal dan zelf bepalen welke versie moet aangeroepen worden, gebaseerd op het aantal en type actuele parameters dat je meegeeft.
+Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert *maar met andere formele parameters qua datatype en/of aantal*. De compiler zal dan zelf bepalen welke versie moet aangeroepen worden, gebaseerd op het aantal en type actuele parameters dat je meegeeft.
 
 Volgende methoden zijn overloaded:
 
@@ -104,7 +104,7 @@ static int BerekenOppervlakte(int straal)
 }
 ```
 
-Afhankelijk van de aanroep zal dus het ene of andere uitgevoerd worden. Volgende code zal dus werken:
+Afhankelijk van de aanroep zal dus de ene of andere methode uitgevoerd worden. Volgende code zal dus werken:
 ```java
 Console.WriteLine($"Rechthoek: {BerekenOppervlakte(5, 6)}");
 Console.WriteLine($"Cirkel: {BerekenOppervlakte(7)}");
@@ -156,7 +156,7 @@ Volgende tabel geeft de betternes rule weer. In de linkse kolom staat het dataty
 | ``float`` | ``double`` |
 | ``char`` | ``ushort, int, uint, long, ulong, float, double, decimal`` |
 
-Als je dus bijvoorbeeld een parameter van het type ``int`` meegeeft bij een methode aanroep (eerste kolom), dan zal een methode waar het argument een``long`` verwacht geprefereerd worden boven een methode die voor datzelfde argument een ``float`` verwacht, enz.
+Als je dus bijvoorbeeld een parameter van het type ``int`` meegeeft bij een methode aanroep (eerste kolom), dan zal een methode waar het argument een ``long`` verwacht geprefereerd worden boven een methode die voor datzelfde argument een ``float`` verwacht, enz.
 
 Indien de betterness rule niet werkt, dan zal de eerste parameter bepalen wat er gebruikt wordt. Dat zien we in volgende voorbeeld:
 
@@ -180,7 +180,7 @@ static void Toonverhouding(double a, int b) //versie B
 
 <!---{pagebreak} --->
 
-Indien ook die regel niet werkt dan zal een fout optreden zoals hier, wat zal resulteren in een fout:
+Indien ook die regel niet werkt dan zal een fout optreden zoals hier, wat zal resulteren in een foutmelding:
 
 ![We zien aan de foutboodschap duidelijk dat er eerst naar de eerste parameter wordt gekeken bij twijfel.](../assets/4_methoden/overl.png)
 

@@ -71,7 +71,7 @@ En met ``break``  kan je loops (alle types) altijd vroegtijdig stopzetten. Je sp
 ![](../assets/gotopolice.png)
 Olla!? Wat denken we dat we aan het doen zijn? Gelieve die keywords ogenblikkelijk terug uit je code te verwijderen. Bedankt. 
 
-``break`` en ``continue`` zijn de meer subtiele vrienden van ``goto``. Ze leven, net als  ``continue`` meer in de schemerzone tussen wat mag en niet mag. Dat maakt hen extra gevaarlijk. Voor je ``break`` als oplossing wilt gebruiken probeer je best eerst of je de loop niet mooier kan afsluiten door bijvoorbeeld de juiste booleaanse expressie te beschrijven in de test-conditie. Hetzelfde geldt voor ``continue`` dat ook snel ``goto``-achtige bugs tot gevolg kan hebben. 
+``break`` en ``continue`` zijn de meer subtiele vrienden van ``goto``. Ze leven, net als  ``goto`` meer in de schemerzone tussen wat mag en niet mag. Dat maakt hen extra gevaarlijk. Voor je ``break`` als oplossing wilt gebruiken probeer je best eerst of je de loop niet mooier kan afsluiten door bijvoorbeeld de juiste booleaanse expressie te beschrijven in de test-conditie. Hetzelfde geldt voor ``continue`` dat ook snel ``goto``-achtige bugs tot gevolg kan hebben. 
 
 <!---{/aside}--->
 <!---NOBOOKSTART--->

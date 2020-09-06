@@ -10,7 +10,7 @@ Bij jobsollicaties voor programmeurs word je vaak gevraagd om dergelijke algorit
 
 Het nadeel van BinarySearch is dat deze vereist dat je array-elementen gesorteerd staan. Uiteraard is dit niet altijd gewenst. Stel je voor dat je een simulatie maakt voor een fietswedstrijd en wilt weten of een bepaalde wielrenner in de top 5 staat.
 
-Het zoeken in arrays kan met behulp van loops tamelijk snel. Volgend programmatje gaat zoeken of het getal 12 aanwezig is in de array (de wielrenners werken met rugnummers). Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
+Het zoeken in arrays kan met behulp van loops tamelijk snel. Volgend programmaatje gaat zoeken of het getal 12 aanwezig is in de array (de wielrenners werken met rugnummers). Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
 ```java
 int teZoekenGetal = 12;
@@ -51,7 +51,7 @@ Console.WriteLine("Welke productprijs wenst u?");
 string keuzeGebruiker = Console.ReadLine();
 ```
 
-We tonen nu hoe we met ``for`` eerst het juiste product zoeken en dan vervolgens die index bewaren en gebruiken om de prijs te tonen:
+We tonen nu hoe we met ``while`` eerst het juiste product zoeken en dan vervolgens die index bewaren en gebruiken om de prijs te tonen:
 
 ```java
 bool gevonden = false;
@@ -80,29 +80,14 @@ Een nadeel van deze oplossing is dat we steeds de hele ``while`` doorlopen (we g
 
 <!---{pagebreak} --->
 
-Volgende oplossing met een ``do while`` toont een performantere oplossing:
+Volgende oplossing met een ``do while`` toont een performantere oplossing voor het eerste deel van het programma:
 
 ```java
 int teller = -1;
 do
 {
     teller++;
-} while (teller < producten.Length && keuzeGebruiker != producten[teller]);
-bool gevonden = false;
-int productIndex = -1;
-if (teller != producten.Length) //product gevonden!
-{
-    gevonden = true;
-    productIndex = teller;
-}
-if (gevonden)
-{
-    Console.WriteLine($"Prijs van {keuzeGebruiker} is {prijzen[productIndex]}");
-}
-else
-{
-    Console.WriteLine("Niet gevonden");
-}
+}while (teller < producten.Length && keuzeGebruiker != producten[teller]);
 ```
 
 {% hint style='tip' %}

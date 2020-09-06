@@ -4,7 +4,7 @@ Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voorde
 
 Op papier zijn arrays eenvoudig...helaas programmeren we niet (of zelden) op papier. In essentie is een array niets meer dan **een verzameling variabelen van hetzelfde type** (bijvoorbeeld een verzameling ints, doubles of chars). Deze waarden kunnen benaderd worden via 1 enkele variabele, de array zelf. Door middel van een *index* kan ieder afzonderlijk element uit de array aangepast of uitgelezen worden.
 
-Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kunnen veranderen. In het volgende boekdeel zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben.
+Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kan veranderd worden. In het volgende boekdeel zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben.
 
 De nadelen zullen we echter met plezier erbij nemen wanneer we programma's beginnen schrijven die werken met véél data van dezelfde soort. Eenvoudigweg kan je stellen dat van zodra je 3 of meer variabelen hebt die dezelfde soort data bevatten, arrays altijd de oplossing zullen zijn.
 
@@ -29,7 +29,7 @@ Als  we je nu vragen om de gemiddelde neerslag te berekenen dan krijg je al een 
 double gemiddelde= (dag1+dag2+dag3+dag4+dag5+dag6+dag7)/7.0;
 ```
 
-Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Of een millennium?! Dat is niet werkbaar zonder een nieuw concept, dat van arrays, te introduceren. Van zodra je een bepaalde soort informatie hebt die je veelvuldig wenst te bewaren dan zijn arrays dus oplossing.
+Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Of een millennium?! Dat is niet werkbaar zonder een nieuw concept, dat van arrays, te introduceren. Van zodra je een bepaalde soort informatie hebt die je veelvuldig wenst te bewaren dan zijn arrays dus de oplossing.
 
 
 Voorgaande lijst van 7 aparte variabelen kunnen we eenvoudiger definiëren met 1 array (we bespreken de details verderop), genaamd ``regen``:
@@ -40,7 +40,7 @@ int[] regen  = {34, 45, 0, 34, 12, 0, 23};
 ```
 
 <!--- {width:50%} --->
-![Een schematische voorstelling van een lijst van aparte variabelen en het equivalent met een arrays](../assets/5_arrays/intro.png)
+![Een schematische voorstelling van een lijst van aparte variabelen en het equivalent met een array](../assets/5_arrays/intro.png)
 
 <!---{pagebreak} --->
 
@@ -76,7 +76,7 @@ double gemiddelde=som/regen.Length;
 
 Sorry dat we weer even in het diepe water zijn gedoken. Het leek ons nuttig om even het totaalplaatje van arrays alvast uit de doeken te doen, zodat je snapt waarom er zo enthousiast over arrays wordt gedaan hier. 
 
-A propos, kijk eens achterom! Schrik je van hé. Je hebt al een aardige weg afgelegd als we vergelijken met de eerste keer toen ik je in het zwembad gooide. Herinner je je nog dat ik volgende code liet zien En je vervolgens moest gerust stellen?
+A propos, kijk eens achterom! Schrik je van hé. Je hebt al een aardige weg afgelegd als we vergelijken met de eerste keer toen ik je in het zwembad gooide. Herinner je je nog dat ik volgende code liet zien. En ik je vervolgens moest gerust stellen?
 
 ```java
 using System;
@@ -120,7 +120,7 @@ bool[] examenAntwoorden;
 ConsoleColor[] mijnKleuren;
 ```
 
-Op dit punt bestaan de arrays nog niet ect. **Hun lengte ligt nog niet vast.**
+Op dit punt bestaan de arrays nog niet echt. **Hun lengte ligt nog niet vast.**
 
 
 Stel dat je dus een array van strings wenst waarin je verschillende kleuren zal plaatsen dan schrijf je:
@@ -135,7 +135,7 @@ string[] myColors;
 myColors = {"red", "green", "yellow", "orange", "blue"};
 ```
 
-Je array zal vanaf dit punt **een lengte van 5 hebben en kan niet meer groeien**.
+Je array zal vanaf dit punt **een lengte van 5 hebben en kan niet meer groeien of krimpen**.
 
 
 #### Manier 2
@@ -147,7 +147,7 @@ string[] myColors = {"red", "green", "yellow", "orange", "blue"};
 
 Ook hier zal dus vanaf dit punt je array een vaste lengte van 5 elementen hebben. 
 
-Merk op dat deze manier dus enkel werkt indien je reeds weet welke waarden in de array moeten. In manier 1 kunnen we perfect een array aanmaken en pas veel later in programma ook effectief waarden toekennen (bijvoorbeeld door ze stuk per stuk door een gebruiker te laten invoeren).
+Merk op dat deze manier dus enkel werkt indien je reeds weet welke waarden in de array moeten. In manier 1 kunnen we perfect een array aanmaken en pas veel later in het programma ook effectief waarden toekennen (bijvoorbeeld door ze stuk per stuk door een gebruiker te laten invoeren).
 
 #### Manier 3
 Nog een andere manier om arrays aan te maken is de volgende, waarbij je aangeeft hoe groot de array moet zijn, zonder reeds effectief waarden toe te kennen:
@@ -198,7 +198,7 @@ Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmake
 
 De regels zijn duidelijk:
 * Bij het maken van een array is de lengte van een array gelijk aan het aantal elementen dat er in aanwezig is. *Dus een array met 5 elementen heeft als lengte 5.*
-* Bij het schrijven en lezen van individuele elementen uit de array (zie hierna) gebruiken we een indexering die start bij **0**. Bijgevolg is de index **4** van het laatste element in een array met **lengte 5**.
+* Bij het schrijven en lezen van individuele elementen uit de array (zie hierna) gebruiken we een indexering die start bij **0**. Bijgevolg is **4** de index van het laatste element in een array met **lengte 5**.
 
 <!---{/aside}--->
 <!---NOBOOKSTART--->
@@ -207,7 +207,7 @@ De regels zijn duidelijk:
 
 #### Lezen
 
-We weten nu hoe we individuele waarden in een array kunnen benaderen. Ze gebruiken is dus exact hetzelfde zoals we in het verleden al met eender welke andere variabele hebben gedaan. Het enige verschil is dat de identifier dus vierkante haken met een index in bevat om aan te geven welke element we nodig hebben van de arrays.
+We weten nu hoe we individuele waarden in een array kunnen benaderen. Ze gebruiken is dus exact hetzelfde zoals we in het verleden al met eender welke andere variabele hebben gedaan. Het enige verschil is dat de identifier dus vierkante haken met een index in bevat om aan te geven welke element we nodig hebben van de array.
 
 Wanneer je dus het tweede element van een array wenst te gebruiken kan dit bijvoorbeeld als volgt:
 
@@ -237,12 +237,12 @@ Een array proberen te tonen als volgt gaat niet:
 Console.WriteLine(myColors);
 ```
 
-De enige manier alle elementen van een arrays te tonen is door manueel ieder element individueel naar het scherm te sturen. Bijvoorbeeld:
+De enige manier alle elementen van een array te tonen is door manueel ieder element individueel naar het scherm te sturen. Bijvoorbeeld:
 
 ```java
 for(int i = 0 ; i<myColors.Length;i++)
 {
-    Console.Write($"{myColors[i]},");
+    Console.WriteLine($"{myColors[i]}");
 }
 ```
 {% endhint %}
@@ -257,7 +257,7 @@ int som = numbers[0] + numbers[1];
 De variabele som zal dan vervolgens de waarde 15 bevatten (5+10).
 
 
-Stel dat we *alle* elementen uit de array ``numbers`` met 5 willen verhogen, we kunnen dan schrijven:
+Stel dat we *alle* elementen uit de array ``numbers`` met 5 willen verhogen, dan kunnen we schrijven:
 
 ```java
 int[] numbers = {5, 10, 30, 45};
@@ -315,7 +315,7 @@ int dag6 = 0;
 int dag7 = 23;
 ```
 
-*"Kan ik die namen (dag1, dag2, etc.) met een loop genereren/bereiken zodat ik iets kan doen als volgt?"* **TOTAAL FOUTE CODE INCOMING**
+*"Kan ik die namen (dag1, dag2, etc.) met een loop genereren/bereiken zodat ik iets kan doen als volgt?"* **OPGELET! Hier komt een zeer fout voorbeeld aan...**
 ```text
 for(int i=1; i<=7; i++)
     dagi= ...
@@ -345,7 +345,7 @@ for (int i = 0; i < getallen.Length; i++)
 ```
 
 {% hint style='warning' %}
-Elementen benaderen buiten de range van een arrays geeft erg dikke errors. Het jammerlijke is , is dat VS dit soort subtiele 'out of range' bugs niet kan detecteren tijdens het compileren. Je zal ze pas ontdekken bij de uitvoer. Volgende code zal perfect gecompileerd worden, maar bij de uitvoer zal er op lijn 2 een error verschijnen en het programma zal stoppen:
+Elementen benaderen buiten de range van een array geeft erg dikke errors. Het jammerlijke is dat VS dit soort subtiele 'out of range' bugs niet kan detecteren tijdens het compileren. Je zal ze pas ontdekken bij de uitvoer. Volgende code zal perfect gecompileerd worden, maar bij de uitvoer zal er op lijn 2 een error verschijnen en het programma zal stoppen:
 
 ```java
 string[] myColors = { "red", "green", "yellow", "orange", "blue" };
