@@ -61,6 +61,8 @@ Ook om nu effectief een array aan te maken gebruiken we de komma-notatie, alleen
 int[,] matrix= new int[5,10];
 ```
 
+<!---{pagebreak} --->
+
 Om een array ook onmiddellijk te initialiseren met waarden gebruiken we de volgende uitdrukking :
 
 ```java
@@ -93,7 +95,7 @@ int[,,] temperaturen=
 
 Die we als volgt kunnen visualiseren:
 
-<!--- {width:65%} --->
+<!--- {width:45%} --->
 ![De derde dimensie bestaat uit 3 2-dimensionale 2 bij 2 arrays...](../assets/5_arrays/3D.png)
 
 {% hint style='tip' %}
@@ -134,3 +136,4 @@ Console.WriteLine(boeken.Rank); //geeft 2
 Console.WriteLine(temperaturen.Rank); //geeft 3
 ```
 
+<!---{pagebreak} --->

@@ -183,7 +183,7 @@ double kdRating= 2.1;
 double kdRating = 3.4; 
 ```
 
-![De foutboodschap vertelt duidelijk wat het probleem is.](../assets/1_csharpbasics/kdratingexists.jpg)
+De foutboodschap vertelt duidelijk wat het probleem is: *A local variable or function named 'kdRating' is already defined in this scope.*
 
 Lijn 3 moet dus worden:
  
