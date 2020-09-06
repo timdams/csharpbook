@@ -255,6 +255,8 @@ static string WindRichting()
 ```
 {% endhint %}
 
+<!---{pagebreak} --->
+
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
 <!---NOBOOKEND--->
