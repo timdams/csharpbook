@@ -8,9 +8,9 @@ Wil je toch een andere versie dan deze online versie dan kan dat via volgende ka
 * [Leanpub](http://leanpub.com/ziescherp/): hoge-kwaliteits pdf (AP studenten kunnen deze gratis downloaden via digitap.ap.be)
 
 {% hint style='tip' %}
-Wil ik rijk worden hiermee? Neen, maar ik vind het jammer als niet iedereen toegang heeft tot mijn briljante cursus ;) 
+Wil ik rijk worden hiermee? Neen, maar ik vind het jammer dat niet iedereen toegang heeft tot mijn briljante cursus ;) 
 
-Alle gekheid op een stokje: de reden dat ik de cursus ook tegen een prijs(je) aanbiedt is om uit de kosten te geraken voor het schrijven van dit boek tijdens de lockdown 2020 en ik de proefdrukversies zelf moest bekostigen.
+Alle gekheid op een stokje: de reden dat ik de cursus ook tegen een prijs(je) aanbied is om uit de kosten te geraken voor het schrijven van dit boek tijdens de lockdown 2020 en ik de proefdrukversies zelf moest bekostigen.
 {% endhint %}
 
 ![](./assets/cover.png)
