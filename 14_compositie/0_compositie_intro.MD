@@ -1,14 +1,13 @@
 # Compositie
 We spreken over compositie (**composition**) wanneer we een object in een ander object gebruiken. Denk bijvoorbeeld aan een object van het type motor dat je gebruikt in een object van het type auto.
 
-## Heeft een-relatie
 Wanneer twee objecten  een "heeft een"-relatie hebben dan spreken we over compositie:
 * Een auto heeft een motor 
 * Een computer heeft een harde schijf
 
 Het lijdende voorwerp zal steeds het object zijn dat binnen het onderwerp zal geplaatst worden (*motor* in auto, *schijf* in computer).
 
-## Aanduiding
+## UML aanduiding
 
 Compositie duiden we aan met een lijn die begint met een volle ruit aan de kant van de klasse die de objecten in zich heeft:
 
@@ -26,7 +25,7 @@ Herinner je: Overerving duiden we aan met een pijl die wijst naar de parent-klas
 Bekijk zeker eens een complexer UML-diagramma zoals bijvoorbeeld van schaken [hier](https://stackoverflow.com/questions/17631125/trying-to-convert-diagram-of-a-chess-game-to-java-code-abstract)
 {% endhint %}
 
-## In de praktijk
+## Compositie in de praktijk
 
 We bekijken het voorbeeld van de computer en de harde schijf. We hebben twee klassen
 ```java
@@ -88,15 +87,15 @@ class PC
 myPC.CDisk= new Disk();
 ```
 
-## Kortom
+### Kortom
 
 Alle manieren die ja al kende om met bestaande types objecten aan te maken gelden nog steeds. Compositie deed je al de hele tijd wanneer je bijvoorbeeld zij "een student heeft een leeftijd" en dan een variabele ``int age`` aanmaakte. Het grote verschil is echter dat objecten moeten geïnstantieerd worden , wat niet moest met value-types. 
 
-## NullReference is een klassieke fout
+### NullReference is een klassieke fout
 
 Een veelvoorkomende fout bij compositie van objecten is dat je een object aanspreekt dat nooit werd geïnstantieerd. Je krijgt dan een ``NullReferenceException``.
 
-# "Heeft meerdere"- relatie
+## "Heeft meerdere"- relatie
 
 Wanneer een object meerdere objecten van een specifiek type heeft (denk maar aan "een boek heeft meerdere pagina's" of "een boom heeft bladeren") dan zullen we een array of een list als compositie-object gebruiken. 
 
@@ -142,6 +141,9 @@ class Book
 myBook.AllPages.Insert(new Page(), 5); 
 ```
 
+
+
+<!---NOBOOKSTART--->
 # Kennisclip
 ![](../assets/infoclip.png)
 
@@ -150,3 +152,4 @@ myBook.AllPages.Insert(new Page(), 5);
 * [Compositie in praktijk demo met kaartspel deel 1](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d9c2280d-7b1d-4a83-8851-ab9d00e13cca)
 * [Compositie in praktijk demo met kaartspel dee2](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a1009330-272d-4978-a078-aba2012ab2b8)
 * [Compositie in praktijk: Demo met helden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=235d6b90-d246-4529-a911-ab9d00db6f56)
+<!---NOBOOKEND--->

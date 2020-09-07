@@ -1,4 +1,4 @@
-# Operator overloading
+## Operator overloading
 
 Stel, je hebt volgende klasse:
 
@@ -26,7 +26,7 @@ Kassa nieuw= benedenKassa + bovenKassa;
 
 Uiteraard heeft C# geen flauw benul hoe de **+ operator** moet toegepast worden op objecten van klassen die je zelf geschreven hebt.
 
-# Operator overloading to the rescue
+### Operator overloading to the rescue
 
 Je kan in een klasse bestaande operators (``+``,``-``,``*``, etc.) **overloaden**, wat wil zeggen: aan C# vertellen hoe deze operator moet toegepast worden wanneer je die nodig hebt voor instanties van de klasse.
 
@@ -54,7 +54,7 @@ Laten we deze syntax even bekijken:
 
 > Bekijk [deze lijst](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/overloadable-operators) om te zien welke operators je allemaal kan overloaden. Tip: het zijn er veel!
 
-# De operator beschrijven
+### De operator beschrijven
 
 Vervolgens moeten we nu beschrijven hoe de operator moet werken. Finaal zal de methode een nieuw object moeten teruggeven waarin het resultaat van de operatie zit.
 

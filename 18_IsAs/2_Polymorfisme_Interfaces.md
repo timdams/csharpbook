@@ -1,4 +1,4 @@
-# Polymorfisme, interfaces en is/as
+## Polymorfisme, interfaces en is/as
 
 {% hint style='warning' %}
 Bekijk zeker de "Fuifsimulator" onderaan bij de videoclips. Deze wordt niet in de tekst besproken maar heeft wel een erg goed inzicht in deze materie.
@@ -7,7 +7,7 @@ Bekijk zeker de "Fuifsimulator" onderaan bij de videoclips. Deze wordt niet in d
 De eigenschappen van polymorfisme en interfaces combineren kan zeer krachtige tot zeer krachtige code resulteren wanneer we de ``is`` en ``as`` keywords gebruiken.
 We tonen dit in een voorbeeld.
 
-## Vloekende mensen: Opstart
+### Vloekende mensen: Opstart
 De idee is de volgende: mensen kunnen spreken. Leraren, Studenten, Politieker, en ja zelfs Advocaten zijn mensen. Echter, enkel Politiekers en Advocaten hebben ook de interface IVloeker die hen toelaat eens goed te vloeken.  Brave leerkrachten en studenten doen dat niet. We willen een programma dat lijsten van mensen bevat waarbij we de vloekers kunnen doen vloeken zonder complexe code te moeten schrijven.
 
 We hebben volgende klasse-structuur:
@@ -60,7 +60,8 @@ class Advocaat: Mens, IVloeker
     }
 }
 ```
-## Vloekende mensen: Het probleem
+
+### Vloekende mensen: Het probleem
 We maken een array van mensen aan:
 
 ```java
@@ -78,7 +79,7 @@ for(int i =0; i<mensjes.Length; i++)
 
 **Het probleem:** hoe kan ik in de array van mensen (bestaande uit een mix van studenten, leraren, advocaten en politiekers) **enkel de vloekende mensen laten vloeken?**
 
-## Oplossing 1 - Vloekende mensen: ``is`` to the rescue
+### Oplossing 1 - Vloekende mensen: ``is`` to the rescue
 De eerste oplossing is door gebruik te maken van het ``is`` keyword.
 We zullen de lijst doorlopen en steeds aan het huidige object vragen of dit object de ``IVloeker`` interface bezit, als volgt:
 ```java
@@ -103,7 +104,7 @@ if(mensjes[i] is IVloeker)
 }
 ```
 
-## Oplossing 2 - Vloekende mensen: ``as`` to the rescue
+### Oplossing 2 - Vloekende mensen: ``as`` to the rescue
 Het ``as`` keyword kan ook een toffe oplossing geven. Hierbij zullen we het object proberen omzetten via ``as`` naar een IVloeker. Als dit lukt (het object is verschillend van ``null``) dan kunnen we het object laten vloeken:
 ```java
 for(int i =0; i<mensjes.Length; i++)

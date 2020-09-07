@@ -1,4 +1,4 @@
-# Expression bodied members
+## Expression bodied members
 
 Wanneer je methoden, constructors of properties schrijft waar **exact 1 expressie** (*1 lijn code* die een resultaat teruggeeft) nodig is dan kan je gebruik maken van de **expression bodied member syntax** (EBM). Deze is van de vorm:
 
@@ -11,7 +11,7 @@ Dankzij EBM kan je veel kortere code schrijven.
 
 We tonen telkens een voorbeeld hoe deze origineel is en hoe deze naar EBM syntax kan omgezet worden.
 
-## Methoden en EBM
+### Methoden en EBM
 
 Origineel:
 
@@ -42,7 +42,7 @@ Met EBM:
 public int GeefGewicht() => 4*34;
 ```
 
-## Constructors en EBM
+### Constructors en EBM
 Ook constructors die maar 1 expressie bevatten kunnen korter nu.
 Origineel:
 ```java
@@ -65,7 +65,7 @@ class Student
 }
 ```
 
-## Full Properties met EBM
+### Full Properties met EBM
 Properties worden een een soort blend tussen full en autoproperties.
 Originele full property:
 ```java
@@ -93,7 +93,7 @@ public int Name
     set => name=value;
 }
 ```
-## Read-only properties met EBM
+### Read-only properties met EBM
 Bij read-only properies hoeft het ``get`` keyword zelfs niet meer getypt te worden bij EBM.
 
 Origineel:

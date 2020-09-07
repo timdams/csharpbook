@@ -1,5 +1,5 @@
-# Object initializer syntax
-#
+## Object initializer syntax
+
 Uit het vorige hoofdstuk over constructor leren we dat je moet opletten dat je niet tientallen overloaded constructor schrijft voor iedere combinatie van parameters die je mogelijk nodig hebt. Meestal beperken we het tot de default constructor en 1 of 2 heel veel gebruikte overloaded constructor.
 
 Dankzij object initializer syntax kan je namelijk ook parameters aan variabelen meegeven zonder dat je hiervoor een specifieke constructor voor moet schrijven.

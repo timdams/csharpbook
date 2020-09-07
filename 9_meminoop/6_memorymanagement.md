@@ -1,4 +1,4 @@
-# Geheugenmanagement in C-Sharp
+# Geheugenmanagement in C#
 
 Tot nog toe lagen we er niet van wakker wat er achter de schermen van een C# programma gebeurde. We duiken nu dieper in wat er juist gebeurt wanneer we variabelen aanmaken.
 

@@ -1,13 +1,13 @@
-# Git (in opbouw)
+## Git (in opbouw)
 
 In dit hoofdstuk geven we een summier overzicht over git. Bedoeling is dat je git kan gebruiken om versiebeheer van eigen **lokale** projecten te hebben. Met andere woorden, het zal je er toe in staat stellen om een historiek van je project(en) te hebben.
 
 Een [goede uitleg vind je hier](https://www.sitepoint.com/git-for-beginners/).
 
-## File lifecycle
+### File lifecycle
   ![file lifecycle](../assets/b_git/filelife.png)
 
-## Belangrijkste commando's
+### Belangrijkste commando's
 
 * ``git init``: in de huidige folder een git repository aanmaken (een verborgen ``.git`` folder) waarin vanaf nu alle te volgen veranderingen zullen bewaard worden. Indien je deze hoofdfolder verplaatst (inclusief de ``.git`` folder) dan zal deze repository mee verhuizen.
 * ``git add``
