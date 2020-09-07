@@ -1,4 +1,4 @@
-# Constructors bij overerving
+## Constructors bij overerving
 
 Wanneer je een object instantiëert van een child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
 
@@ -36,7 +36,7 @@ Who needs healing?
 
 Er wordt dus verondersteld in dit geval dat er een default constructor in de basis-klasse aanwezig is.
 
-## Overloaded constructors
+### Overloaded constructors
 
 Indien je klasse Soldier een overloaded constructor heeft, dan geeft deze niet automatisch een default constructor. Volgende code zou dus een probleem geven indien je een Medic wilt aanmaken via ``new Medic()``:
 ```java

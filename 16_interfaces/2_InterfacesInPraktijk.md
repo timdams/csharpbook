@@ -1,4 +1,4 @@
-# Bestaande interfaces in .NET
+## Bestaande interfaces in .NET
 De bestaande .NET klassen gebruiken vaak interfaces om bepaalde zaken uit te voeren. Zo heeft .NET tal van interfaces gedefinieerd waar je zelfgemaakte klassen mogelijk aan moeten voldoen indien ze bepaalde bestaande methoden wensen te gebruiken. Een typisch voorbeeld is het gebruik van de ``Array.Sort`` methode. We tonen dit in een voorbeeld zo meteen.
 
 Enkele veelgebruikte interfaces binnen .NET (louter ter info):
@@ -12,9 +12,9 @@ Enkele veelgebruikte interfaces binnen .NET (louter ter info):
 > * IList and ICollection: for mutable collections
 > * IDictionary: for lookup collections
 
-# Sorteren met Array.Sort en de IComparable interface
+### Sorteren met Array.Sort en de IComparable interface
 
-## Stap 1: Het probleem
+#### Stap 1: Het probleem
 Indien je een array van objecten hebt en je wenst deze te sorteren via ``Array.Sort`` dan dienen de objecten de IComparable interface te hebben. 
 
 We willen een array van landen kunnen sorteren op grootte van oppervlakte.
@@ -43,7 +43,7 @@ Dan treedt er een uitzondering op:``InvalidOperationException: Failed to compare
 
 ![InvalidOperationException](../assets/9_interfaces/interfaceexep.png)
 
-## Stap 2: IComparable onderzoeken
+#### Stap 2: IComparable onderzoeken
 We kunnen dit oplossen door de ``IComparable`` interface in de klasse ``Land`` te implementeren. We bekijken daarom eerst de documentatie van deze interface ([hier](https://msdn.microsoft.com/en-us/library/system.icomparable.aspx)).
 
 De interface is beschreven als:
@@ -68,7 +68,7 @@ Daarbij moet de methode een int  teruggeven als volgt:
 |  0      | Huidig object komt op **dezelfde** positie als  ``obj``  werd meegegeven |
 | Getal groter dan 0      | Huidig object komt **na** het ``obj`` dat als parameter werd meegegeven |
 
-## Stap 3: IComparable in Land implementeren
+#### Stap 3: IComparable in Land implementeren
 We zorgen er nu voor dat ``Land`` deze interface implementeert. Daarbij willen we dat de landen volgens oppervlakte worden gesorteerd :
 ```java
 class Land: IComparable

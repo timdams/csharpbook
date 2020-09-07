@@ -1,4 +1,4 @@
-# Static
+## Static
 
 Je hebt het keyword ``static`` al een paar keer zien staan voor methoden het vorige semester. En dit semester werd er dan weer nadrukkelijk verteld géén ``static`` voor methoden te plaatsen. Wat is het nu?
 
@@ -9,11 +9,11 @@ Bij klassen en objecten duidt ``static`` aan dat een methode of variabele "gedee
 1. Bij *variabelen* om een gedeelde variabele aan te maken, over de objecten heen.
 2. Bij *methoden* om zogenaamde methoden-bibliotheken of hulpmethoden aan te maken.
 
-## Variabelen en het static keyword
+### Variabelen en het static keyword
 
 Zonder het keyword heeft ieder object z'n eigen variabelen en aanpassingen binnen het object aan die variabelen heeft geen invloed op andere objecten. We tonen eerst de werking zoals we gewend zijn en vervolgens hoe ``static`` werkt.
 
-### Variabelen ZONDER static
+#### Variabelen ZONDER static
 
 Gegeven volgende klasse:
 
@@ -58,7 +58,7 @@ Dan zien we volgende uitvoer:
 
 Ieder object houdt de stand van z'n eigen variabelen bij. Ze kunne mekaars interne (zowel publieke als private) staat niet veranderen.
 
-### Variabelen MET static
+#### Variabelen MET static
 
 We maken de variabele ``private int leeftijd`` static als volgt: ``private static int leeftijd=1;``.
 
@@ -107,7 +107,7 @@ Dan wordt de uitvoer:
 Static laat je dus toe om informatie over de objecten heen te delen. **Gebruik static niet te pas en te onpas: vaak druist het in tegen de concepten van OO en wordt het vooral misbruikt**
 Ga je dit vaak nodig hebben? Niet zo vaak. Het volgende concept wel.
 
-## Methoden met static
+### Methoden met static
 
 Heb je er al bij stil gestaan waarom je dit kan doen:
 
@@ -124,7 +124,7 @@ myMath.Pow(3,2)
 
 De reden dat je de math-bibliotheken kan aanroepen rechtsreeks **op de klasse** en niet op objecten van die klasse is omdat de methoden in die klasse als ``static`` gedefineerd staan.
 
-## Voorbeeld van static methoden
+#### Voorbeeld van static methoden
 
 Stel dat we enkele veelgebruikte methoden willen groeperen en deze gebruiken zonder telkens een object te moeten aanmaken dan doen we dit als volgt:
 
@@ -153,7 +153,7 @@ int opgeteld= EpicLibrary.TelOp(3,5);
 
 Mooi toch.
 
-## Nog een voorbeeld
+#### Nog een voorbeeld
 
 In het volgende voorbeeld gebruiken we een ``static`` variabele om bij te houden hoeveel objecten (via de constructor) er van de klasse reeds zijn aangemaakt:
 
@@ -180,7 +180,7 @@ Merk op dat we de methoden ``VerminderFiets`` enkel via de klasse kunnen aanroep
 Fiets.VerminderFiets();
 ```
 
-# Static vs non-static
+### Static vs non-static
 
 Van zodra je een methode hebt die ``static`` is dan zal deze methode enkel andere  ``static` methoden en variabelen kunnen aanspreken. Dat is logisch: een static methode heeft geen toegang tot de gewone niet-statische variabelen van een individueel object, want welk object zou hij dan moeten aanpassen?
 
@@ -201,7 +201,7 @@ De error die verschijnt **An object reference is required for the non-static fie
 
 Een eenvoudige regel is te onthouden dat van zodra je in een static omgeving (meestal een methode) bent je niet meer naar de niet-static delen van je code zal geraken.
 
-# Static en main
+### Static en main
 
 Dit verklaart ook waarom je bij console applicaties in Program.cs steeds alle methoden ``static`` moet maken. Een console-applicatie is als volgt beschreven wanneer je het aanmaakt:
 
@@ -219,7 +219,7 @@ Zoals je ziet is de ``Main`` methode als ``static`` gedefinieerd. Willen we dus 
 
 Uiteraard kan je wel niet-static zaken gebruiken en daarom kan je dus gewone objecten etc. in je static methoden aanmaken.
 
-# Een use-case met static
+### Een use-case met static
 
 Beeld je in dat je (weer) een pong-variant moet maken waarbij meerdere balletjes over het scherm moeten botsen. Je wilt echter niet dat de balletjes zelf allemaal apart moeten weten wat de grenzen van het scherm zijn. Mogelijk wil bijvoorbeeld dat je code ook werkt als het speelveld kleiner is dan het eigenlijke Console-scherm.
 
@@ -347,7 +347,7 @@ Stel dat we nu elke seconden het speelveld met 1 willen vergroten, dan hoeven we
 }
 ```
 
-## Maximum grootte
+#### Maximum grootte
 
 Als je voorgaande code zou runnen zal je zien dat je redelijk snel een error krijgt. Dit komt omdat de hoogte en breedte van een Console maar tot bepaalde waardes kunnen verhogen. 
 

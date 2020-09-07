@@ -1,10 +1,12 @@
-# System.Object 
+# Gevorderde overervingsconcepten
+
+## System.Object 
 **Alle** klassen C# zijn afstammelingen van de ``System.Object`` klasse. Indien je een klasse schrijft zonder een expliciete parent dan zal deze steeds System.Object als rechtstreekse parent hebben. Ook afgeleide klassen stammen dus af van System.Object. Concreet wil dit zeggen dat alle klassen System.Object-klassen zijn en dus ook de bijhorende functionaliteit ervan hebben.
 >Because every class descends from ``Object``, every object "is an" ``Object``.
 
 Indien je de System namespace in je project gebruikt door bovenaan ``using System;`` te schrijven dan moet je dus niet altijd ``System.Object`` schrijven maar mag je ook **``Object``** schrijven.
 
-# Hoe ziet System.Object er uit?
+### Hoe ziet System.Object er uit?
 Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse reeds 4 methoden ingebouwd hebben, dit zijn uiteraard de methoden die in de ``System.Object`` klasse staan gedefinieerd:
 
 |Methode| Beschrijving|
@@ -14,7 +16,7 @@ Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse 
 |``GetType()``| Geeft het type (of klasse) van het object terug.|
 |``ToString()``| Geeft een string terug die het object voorstel.|
 
-## GetType()
+### GetType()
 Stel dat je een klasse Student hebt gemaakt in je project. Je kan dan op een object van deze klasse de GetType() -methode aanroepen om te weten wat het type van dit object is:
 ```java
 Student stud1= new Student();
@@ -29,7 +31,7 @@ Student stud1= new Student();
 Console.WriteLine(stud1.GetType().Name);
 ```
 
-## ToString()
+### ToString()
 Deze is de nuttigste waar je al direct leuke dingen mee kan doen. 
 Wanneer je schrijft:
 ```java
@@ -51,7 +53,7 @@ public virtual string ToString()
 
  **Alle 4 methoden in System.Object zijn ``virtual`` , en je kan deze dus ``override``'n!**
  
- ### ToString() overriden
+ #### ToString() overriden
  Het zou natuurlijk fijner zijn dat de ToString() van onze student nuttigere info teruggeeft, zoals bv de interne Naam (string autoprop) en Leeftijd (int autoprop). We kunnen dat eenvoudig krijgen door gewoon ToString to overriden:
  ```java
  class Student
@@ -68,7 +70,7 @@ public virtual string ToString()
  Wanneer je nu ``Console.WriteLine(stud1);`` (gelet dat hij een Naam en Leeftijd heeft) zou schrijven dan wordt je output: ``Student Tim Dams (Leeftijd:35)``.
  
  
- ## Equals()
+ ### Equals()
  Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van dit boek](../18_IsAs/6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
  ```java
 if(stud1.Equals(stud2))
@@ -87,7 +89,7 @@ stud2.Equals(stud1);
 ```
 * Indien ``stud1.Equals(stud2)`` true teruggeeft en ``stud1.Equals(stud3)`` ook true is, dan moet ``stud2.Equals(stud3)`` ook true zijn.
 
-### Equals overriden
+#### Equals overriden
 
 Stel dat we vinden dat een student gelijk is aan een andere student indien z'n Naam en Leeftijd dezelfde is, we kunnen dan de Equals-methode overriden als volgt:
 
@@ -115,7 +117,7 @@ De lijn ``Student temp = (Student)o;`` zal het ``object o`` casten naar een ``St
 [Dit concept heet polymorfisme en wordt later uitgelegd](../15_polymorfisme/11_polymo_intro.MD).
 {% endhint %}
 
-## GetHashcode
+### GetHashcode
 Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. 
 
 Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.

@@ -1,15 +1,15 @@
-# Is en As
+## Is en As
 
 We introduceren twee nieuwe C# keywords: ``is`` en ``as``.
 
-## Is keyword
+### Is keyword
 Het ``is`` keyword is een operator die je kan gebruiken om te weten te komen of:
 * Een object van een bepaalde type is
 * Een object een bepaalde interface bevat
 
 ``is`` geeft een bool terug.
 
-### Is voorbeeld 1
+#### Is voorbeeld 1
 Stel dat we volgende drie klassen hebben:
 ```java
 class Vehicle {}
@@ -41,7 +41,7 @@ if(rambo is Vehicle)
 
 De uitvoer zal worden:``The first object is a Vehicle``.
 
-## As keyword met voorbeeld
+### As keyword met voorbeeld
 Wanneer we objecten van het ene naar het andere type willen omzetten dan doen we dit vaak met behulp van [casting](../3_data/4_converteren_casting.md):
 ```java
 Student fritz= new Student();

@@ -68,17 +68,17 @@
 
 ## Zie Scherper (Semester 2)
 
-* H9: Klassen en objecten
+* H9: Object Oriented Programming
   * [OOP Intro](8_klassen/0_oop_intro.md)
   * [Klassen en objecten in C#](8_klassen/0b_oopincs.md)
   * [Methoden en access modifiers](8_klassen/0c_simpleobjects.md)
   * [Properties](8_klassen/2_properties.md)
   * [DateTime: leren werken met objecten](8_klassen/datetime.md)
-* H10: Geheugenmanagement bij klassen
-  * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
+* H10: Geheugenmanagement 
   * [Stack en Heap](9_meminoop/6_memorymanagement.md)
+  * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
   * [Null en NullReferenceException](9_meminoop/nullreference.md)
-* H11: Advanced klassen en objecten
+* H11: Gevorderde klasseconcepten
   * [Default Constructors](10_advancedklassen/1_constructors.md)
   * [Overloaded Constructors](10_advancedklassen/2_overloadedconstructor.md)
   * [Object Initializer Syntax](10_advancedklassen/2_objectinitsyntax.md)

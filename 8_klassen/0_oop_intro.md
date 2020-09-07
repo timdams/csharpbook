@@ -1,4 +1,4 @@
-# OOP
+# Object Oriented Programming
 Object Oriented Programming of korter OOP is een techniek afkomstig van higher level programmeertalen zoals Java, C#, VB.NET, ... en vindt zijn oorsprong bij Smalltalk die het eerst de term Object Oriented Programming introduceerde.
 
 In recentere jaren heeft deze techniek echter ook zijn weg gevonden naar webscripting talen zoals Python, Ruby, Perl en zelfs PHP.
@@ -9,10 +9,15 @@ Om het concept van objecten te illustreren wordt meestal een voorwerp uit het da
 
 Dus hebben we nu eigenlijk een object met properties en methoden. Zo zit een object in programmeertalen er ook uit. Een mail object heeft bijvoorbeeld als property de ontvanger, de verzender en het bericht en als methode versturen. Dit zijn natuurlijk erg vereenvoudigde voorbeelden en in de praktijk zal het er een stuk ingewikkelder aan toe gaan maar de basisprincipes zijn steeds hetzelfde. [Bron van deze introductie](https://www.inventis.be/blog/webdevelopment/de-voordelen-van-object-georienteerd-programmeren/145/).
 
+
+
+{% hint style='tip' %}
+
 ## Black-box principe
 Een belangrijk concept bij OOP is het **Black-box** principe waarbij we de afzonderlijke objecten en hun werking als kleine zwarte dozen gaan beschouwen. Neem het voorbeeld van de auto: deze is in de echte wereld ontwikkeld volgens het blackbox-principe. De werking van de auto kennen tot in het kleinste detail is niet nodig om met een auto te kunnen rijden. De auto biedt een aantal zaken aan de buitenwereld aan (het stuur, pedalen, het dashboard), wat we de **interface** noemen, die je kan gebruiken om de interne staat van de auto uit te lezen of te manipuleren. Stel je voor dat je moest weten hoe een auto volledig werkte voor je ermee op de baan kon.
 
 Binnen OOP wordt dit blackbox-concept **encapsulatie** genoemd. Het doel van OOP is andere programmeurs (en jezelf) zoveel mogelijk af te schermen van de interne werking van je code. Vergelijk het met de methoden uit vorig semester: "if it works, it works" en dan hoef je niet in de code van de methode te gaan zien wat er juist gebeurt.
+{% endhint %}
 
 ## Klassen en objecten
 
@@ -27,15 +32,19 @@ Zo hebben we bijvoorbeeld de klasse van de auto's. De verschillende auto's die j
 * **Een klasse** is een beschrijving en verzameling van dingen (objecten) met soortgelijke eigenschappen
 * Een individueel **object** is een **instantie** van een klasse
 
-{blurb, class: tip}Je zou dit kunnen vergelijken met het grondplan voor een huis dat tien keer in een straat zal gebouwd worden. Het plan met alle soortgelijke eigenschappen van ieder huis is de *klasse*. De effectieve huizen die we, gebaseerd op dat grondplan, bouwen zijn de instanties of objecten van deze klasse.{/blurb}
+{% hint style='tip' %}
+Je zou dit kunnen vergelijken met het grondplan voor een huis dat tien keer in een straat zal gebouwd worden. Het plan met alle soortgelijke eigenschappen van ieder huis is de *klasse*. De effectieve huizen die we, gebaseerd op dat grondplan, bouwen zijn de instanties of objecten van deze klasse.
+
+{% endhint %}
 
 
-{blurb, class: tip}
+{% hint style='tip' %}
 Nog een andere invalshoek:
 
 Een andere invalshoek is de zogenaamde "dungeons" in veel online games. De makers van het spel hebben iedere dungeon in een klasse beschreven. Wanneer een groep avonturiers nu in zo'n grot gaat dan wordt voor die groep een aparte instantie (*instance*) van die grot gemaakt, gebasseerd op de klasse. Ze doen dit zodat iedere groep spelers mekaar niet voor de voeten loopt in 1 grot.
-{/blurb}
+{% endhint %}
 
+{% hint style='tip' %}
 
 ### Objecten in de woorden van Steve Jobs
 
@@ -55,3 +64,4 @@ En omdat het vloeken in de kerk is om Steve Jobs in een C# boek aan het woord te
 ![Bill Gates](../assets/6_klassen/gates.jpg)
 
 [Bron](https://www.azquotes.com/quote/1470407)
+{% endhint %}

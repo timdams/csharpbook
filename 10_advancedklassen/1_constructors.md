@@ -1,6 +1,8 @@
-# Constructors
+# Gevorrderde klasseconcepten
 
-## Werking new operator
+## Constructors
+
+### Werking new operator
 Objecten die je aanmaakt komen niet zomaar tot leven. Nieuwe objecten maken we aan met behulp van de ``new`` operator zoals we al gezien hebben:
 
 ```java
@@ -18,7 +20,7 @@ Via de constructor van een klasse kunnen we extra code meegeven die moet uitgevo
 
 De constructor is een unieke methode die wordt aangeroepen bij het aanmaken van een object, daarom dat we ronde haakjes zetten bij ``new Student()``.
 
-# Soorten constructors
+### Soorten constructors
 
 Als programmeur van eigen klassen zijn er 3 opties voor je:
 
@@ -28,7 +30,7 @@ Als programmeur van eigen klassen zijn er 3 opties voor je:
 
 
 {% hint style='warning' %}
-## Constructors zijn soms gratis, soms niet
+### Constructors zijn soms gratis, soms niet
 
 Een lege default constructor voor je klasse krijg je standaard wanneer je een nieuwe klasse aanmaakt. Je ziet deze niet en kan deze niet aanpassen. Je kan echter daarom altijd objecten met ``new myClass()`` aanmaken.
 
@@ -36,7 +38,7 @@ Van zodra je echter beslist om zelf een of meerdere constructors te schrijven za
 {% endhint %}
 
 
-## Default constructor
+### Default constructor
 
 De default constructor is een constructor die geen extra parameters aanvaardt. Een constructor bestaat ALTIJD uit volgende vorm:
 
@@ -92,7 +94,7 @@ class Student
 
 Telkens we nu een object zouden aanmaken met ``new Student()`` zal deze een willekeurige leeftijd hebben.
 
-### Opmerking bij voorgaande code
+#### Opmerking bij voorgaande code
 
 * Als je twee of meerdere Studenten snel in je code na mekaar aanmaakt zullen deze dezelfde leeftijd hebben. Dit is omdat ieder object z'n eigen ``Random`` aanmaakt en zoals we weten zal een random generator dezelfde getallen genereren als deze vlak na mekaar (in tijd) zijn aangemaakt. Een oplossing zullen we hier later voor zien. Spoiler, ``static`` is de oplossing hiervoor:
 

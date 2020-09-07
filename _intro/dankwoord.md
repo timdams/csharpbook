@@ -10,10 +10,10 @@ Indien bepaalde hoofdstukken of onderdelen niet duidelijk zijn of fouten bevatte
 # Externe bronnen
 Dit boek is het resultaat van bijna een decennia C# doceren aan de AP Hogeschool (eerst nog Hogeschool Antwerpen, dan Artesis Hogeschool, dan Artesis Plantijn Hogeschool...). De eerste schrijfsels verschenen op een eigen gehoste blog ("Code van 1001 Nacht", die ondertussen ter ziele is gegaan) en vervolgens kreeg deze een iets strakker, eenduidige vorm als gitbook cursus. Deze cursus, alsook een hele resem oefeningen en andere nuttige extra's kan je terugvinden op ([timdams.com/ziescherp](https://timdams.com/ziescherp/)). De inhoud van die cursus loopt integraal gelijk aan die van dit boek. Uiteraard is de kans bestaande dat er in de online versie ondertussen weer wat minder schrijffoutjes staan. 
 
-{blurb, class: tip}
+{% hint style='tip' %}
 Deze cursus wordt onder de Creative Commons 4.0 licentie uitgebracht. Dat wil zeggen dat u gerust die cursus mag 'plunderen' voor eigen gebruik in bijvoorbeeld eigen lessen. Uiteraard mag dit onder de voorwaarde dat u duidelijk de originele bron vermeldt én er niets aan verdient. 
 De volledige in markdown geschreven broncode voor de cursus (en dus ook grotendeels dit boek) kan u forken op [github](https://github.com/timdams/csharpbook).
-{/blurb}
+{% endhint %}
 
 Waarom deze korte historiek? Wel, de kans is bestaande dat er hier en daar in dit boek flarden tekst, code voorbeelden, of oefeningen niet origineel de mijne zijn. Ik heb getracht zo goed mogelijk aan te geven wat van waar komt, maar als ik toch iets vergeten ben, aarzel dan niet om me er op te wijzen. Voor de volledigheid hier enkele van de boeken, sites of andere bronnen waar doorheen de jaren "inspiratie" uit werd gehaald:
 

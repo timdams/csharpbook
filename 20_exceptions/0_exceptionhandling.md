@@ -6,7 +6,7 @@ Het wordt tijd om de olifant in de kamer te benoemen. Het wordt tijd om een beke
 Wat een dramatische start zeg. Waar was dat voor nodig?! De reden is eenvoudig: met exception handling kan je code schrijven die al jouw slecht geschreven als het ware verstopt met een zacht dekentje, waardoor het voor de eindgebruiker zal lijken dat jouw programma vlekkeloos werkt. Niets is echter waar, het dekentje verstopt een smeltkroes van stinkende, gure, code die om de haverklap faalt en meer bugs bevat dan Windows Millennium. Kortom, lees verder: maar besef dat exception handling een tweesnijdend zwaar is.
 {% endhint %}
 
-## Uitzonderingen in je code
+## Waarom exception handling?
 
 Veel fouten in je code zijn het gevolg van:
 
@@ -25,7 +25,7 @@ Indien je aan het debuggen bent en je krijgt een exception dan zal deze anders g
 ![In VS is de foutboodschap iets leesbaarder](../assets/20_exceptions/excepinvs.png)
 {% endhint %}
 
-## Code zonder exception handling
+### Code zonder exception handling
 
 Je zal zelf al geregeld exceptions zijn tegengekomen in je console programma's. Wanneer je je programma gewoon uitvoert en er verschijnt plots een hele hoop tekst (met onder andere het woord "Exception" in) gevolgd door het prompt afsluiten ervan, dan heb je dus een exception gegenereerd die je niet hebt afgehandeld.
 
@@ -59,7 +59,7 @@ catch ()
 }
 ```
 
-## Een try catch voorbeeld
+### Een try catch voorbeeld
 
 In volgend stukje code kunnen uitzonderingen optreden zoal we zonet zagen:
 
@@ -86,7 +86,7 @@ catch ()
 
 Indien er nu een uitzondering optreedt dan zal de tekst "Verkeerde invoer" getoond worden. Vervolgens gaat het programma verder met de code die mogelijk na het catch-blok staat.
 
-## Meerdere catchblokken
+### Meerdere catchblokken
 
 `Exception` is een klasse van het .NET framework. Er zijn van deze basis-klasse meerdere Exception-klassen afgeleid die een specifieke uitzondering behelsen. Enkele veelvoorkomende zijn:
 
@@ -128,13 +128,13 @@ catch (Exception e)
 
 Indien een FormatException optreedt dan zal het eerste catch-blok uitgevoerd worden, anders het tweede. Het tweede blok zal niet uitgevoerd worden indien een FormatException optreedt.
 
-## Welke exceptions worden gegooid?
+### Welke exceptions worden gegooid?
 
 De online .NET documentatie is de manier om te weten te komen welke exceptions een methode mogelijk kan gooien. Gaan we bijvoorbeeld naar de constructor-pagina van de StreamWrite klasse ([hier](https://docs.microsoft.com/en-us/dotnet/api/system.io.streamwriter.-ctor?view=netframework-4.8#System_IO_StreamWriter__ctor_System_String_System_Boolean_System_Text_Encoding_System_Int32_) dan zien we daar een hoofstuk Exception waar klaar en duidelijk wordt beschreven wanneer welke Exception wordt gegooid.
 
 ![Documentatie](../assets/20_exceptions/msdn.png)
 
-## Werken met de exception parameter
+### Werken met de exception parameter
 
 De Exceptions die worden opgegooid door een methode zijn objecten van de Exception-klasse. Deze klasse bevat standaard een aantal interessante zaken, die je kan oproepen in je code.
 

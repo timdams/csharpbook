@@ -74,11 +74,11 @@ We zullen de property nu stuk per stuk analyseren:
 * set{}: in het set-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een interne variabele aan te passen. De waarde die we van buitenuit krijgen (als een parameter zeg maar) zal **altijd** in een lokale variabele ``value`` worden bewaard. Deze zal van het type van de property zijn. Vervolgens kunnen we ``value`` toewijzen aan de interne variabele indien gewenst: ``energy=value`` 
     * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo ``energy`` toch bereiken: ``Palpatine.Energy=50``.
 
-{blurb, class: tip}
+{% hint style='tip' %}
 **Snel properties schrijven**
 
 Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief een bijhorende private dataveld, te schrijven. **Typ ``propfull`` gevolgd door twee tabs!**
-{/blurb}
+{% endhint %}
 
 
 ### Full property met toegangscontrole
@@ -136,9 +136,12 @@ We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitleze
 ```
 We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 
-{blurb, class: warning}
+
+{% hint style='tip' %}
 **Opgelet: het ``readonly`` keyword heeft andere doelen en wordt NIET gebruikt in C# om een readonly property te maken**
-{/blurb}
+{% endhint %}
+
+
 
 
 
@@ -202,9 +205,9 @@ public void ResetLord()
 }
 ```
 
-{blurb, class: tip}
+{% hint style='tip' %}
 > **Het is een goede gewoonte om zo vaak mogelijk via de properties je interne variabele aan te passen en niet rechtstreeks het dataveld zelf.**
-{/blurb}
+{% endhint %}
 
 
 #### Read-only properties die transformeren
@@ -395,9 +398,9 @@ public string FirstName { get; }
 ```
 De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren. [Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
 
-{blurb, class: tip}
+{% hint style='tip' %}
 **Opgelet: je hebt ook read-only properties die full property zijn. Lees zeker ook de tekst hierboven in ver band met de get-omvormers.**
-{/blurb}
+{% endhint %}
 
 
 ### Snel autoproperties typen in Visual Studio:
@@ -409,7 +412,16 @@ Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabt
 
 Via ``propg`` krijg je aan autoproperty met private setter.
 
-## Methode of property
+
+
+
+<!---NOBOOKSTART--->
+{% hint style='tip' %}
+<!---NOBOOKEND--->
+<!---{aside}--->
+<!--- {float:right, width:50%} --->
+![](../assets/care.png)
+**Methode of property?**
 
 Een veel gestelde vraag bij beginnende OO-ontwikkelaars is: "Moet dit in een property of in een methode gestoken worden?"
 
@@ -417,6 +429,8 @@ De regel is eenvoudig:
 * Betreft het een actie, iets dat het object moet doen (tekst tonen, iets berekenen, etc) dan plaats je het in een **methode**
 * Betreft het een eigenschap die een bepaalde waarde heeft, dan gebruik je een **property**
 
-[Hier een iets meer uitgebreid PRO antwoord.](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
-
+<!---{/aside}--->
+<!---NOBOOKSTART--->
+{% endhint %}
+<!---NOBOOKEND--->
 

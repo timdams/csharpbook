@@ -1,4 +1,4 @@
-# Virtual en Override
+## Virtual en Override
 Soms willen we aangeven dat de implementatie (code) van een property of methode in een parent-klasse door child-klassen mag aangepast worden.
 Dit geven we aan met het  **virtual** keyword:
 
@@ -58,7 +58,7 @@ Het vliegtuig vliegt rustig door de wolken.
 De raket verdwijnt in de ruimte.
 ```
 
-# Properties overriden
+### Properties overriden
 
 Ook properties kan je virtual instellen en override'n. 
 

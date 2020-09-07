@@ -1,4 +1,4 @@
-# Zelf exceptions opwerpen
+## Zelf exceptions opwerpen
 
 Je kan ook in je eigen code uitzonderingen  opwerpen, zodat deze elders opgevangen worden. Je kan hierbij zelf exceptions maken (zie volgende sectie) of gewoon gebruik maken van een bestaande Exception-klasse.
 
@@ -33,7 +33,7 @@ De uitvoer zal zijn:
 
 De lijn ``throw new DivideByZeroException("Getal equals 0.You shouldn't do that!");`` zorgt er dus voor dat we een eigen foutboodschap 'verpakken'
 
-# Een eigen exception ontwerpen
+### Een eigen exception ontwerpen
 
 Je kan ook eigen klassen afleiden van Exception zodat je eigen uitzonderingen kan maken en gooien in je programma. Je maakt hiervoor gewoon een nieuwe klasse aan die je laat overerven van de Exception-klasse. Een voorbeeld:
 

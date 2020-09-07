@@ -162,11 +162,11 @@ Toon maw aan dat je:
 * Instanties (objecten) van deze klasse kunt maken
 * Kunt werken met deze instanties (properties instellen én uitlezen, aanroepen van methoden)
 
-{blurb, class: tip}
+{% hint style='tip' %}
 ### enums
 
 Kan je in voorgaand voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
-{/blurb}
+{% endhint %}
 
 
 

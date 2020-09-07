@@ -1,4 +1,4 @@
-# Waar exception handling in code plaatsen?
+## Waar exception handling in code plaatsen?
 
 De plaats in je code waar je je exceptions zal opvangen, heeft invloed op de totale werking van je code. 
 
@@ -33,7 +33,7 @@ De ``WebClient`` is een handige klasse om te interageren met online zaken (websi
 
 We bekijken nu een aantal mogelijk try/catch locaties in deze code en zien welke impact deze hebben op de totale uitvoer van het programma.
 
-## Rondom methode-aanroep in z'n geheel
+### Rondom methode-aanroep in z'n geheel
 
 ```java
 try
@@ -56,7 +56,7 @@ Ongeldige URI: kan de Authority/Host niet parsen.
 
 Met andere woorden, zolang de urls geldig zijn zal de download lukken. Bij de eerste fout die optreedt zal de volledige methode echter stoppen. Dit is waarschijnlijk enkel wenselijk indien de code erna de informatie van ALLE urls nodig heeft.
 
-## Rond afzonderlijke elementen in de loop
+### Rond afzonderlijke elementen in de loop
 
 Mogelijk wil je echter dat je programma blijft werken indien er 1 of meerdere urls niet werken. Wat plaatsen dan de try catch niet rond de methode ``DownloadAllUris`` , maar net binnenin de methode zelf rond het gedeelte dat kan mislukken:
 

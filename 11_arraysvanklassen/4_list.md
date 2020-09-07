@@ -1,4 +1,4 @@
-# List collectie
+## List collectie
 
 Een List<> collectie is de meest standaard collectie die je kan beschouwen als een veiligere variant op een een doodnormale array.
 
@@ -6,7 +6,7 @@ Een List<> collectie is de meest standaard collectie die je kan beschouwen als e
 De Generieke ``List<>`` klasse bevindt zich in de ``System.Collections.Generic`` namespace. Je dient deze namespace dus als ``using`` bovenaan toe te voegen wil je deze klasse kunnen gebruiken.
 {% endhint %}
 
-## List aanmaken
+### List aanmaken
 
 De klasse ``List<>`` is een zogenaamde generieke klasse ([zien we later](../17_gencols/0_generics_intro.MD)). Tussen de ``< >``tekens plaatsen we het type dat de lijst zal moeten gaan bevatten. Bijvoorbeeld:
 
@@ -17,7 +17,7 @@ De klasse ``List<>`` is een zogenaamde generieke klasse ([zien we later](../17_g
 
 Zoals je ziet hoeven we bij het aanmaken van een ``List`` geen begingrootte mee te geven, wat we wel bij arrays moeten doen. Dit is een van de voordelen van ``List``: ze groeien mee.
 
-## Elementen toevoegen
+### Elementen toevoegen
 
 Via de ``Add()`` methode kan je elementen toevoegen aan de lijst. Je dient als parameter aan de methode mee te geven wat je aan de lijst wenst toe te voegen. **Deze parameter moet uiteraard van het type zijn dat de ``List`` verwacht.** 
 
@@ -29,7 +29,7 @@ myStringList.Add("This is the first item in my list!");
 myStringList.Add("And another one!");
 ``` 
 
-## Elementen indexeren
+### Elementen indexeren
 
 **Het leuke van een List is dat je deze ook kan gebruiken als een gewone array**, waarbij je mbv de indexer elementen kan aanroepen. Stel bijvoorbeeld dat we een lijst hebben met minstens 4 strings in. Volgende code toont hoe we de string op positie 3 kunnen uitlezen en hoe we die op positie 2 overschrijven:
 
@@ -47,7 +47,7 @@ for(int i = 0 ; i < myStringList.Count; i++)
 }
 ```
 
-## Wat kan een List nog?
+### Wat kan een List nog?
 
 Interessante methoden en properties voorts zijn:
 
@@ -61,7 +61,7 @@ voegt de string toe op de tweede plek en schuift de rest naar achter
 * ``IndexOf()``: geeft de index terug van het element item in de rij. Indien deze niet in de lijst aanwezig is dan wordt -1 teruggegeven.
 * ``RemoveAt()``: verwijder een element op de index die je als parameter meegeeft.
 
-## Foreach loops
+### Foreach loops
 
 Je kan met een eenvoudige ``for`` of while-loop over een lijst itereren, maar het gebruik van een foreach-loop is toch handiger.
 

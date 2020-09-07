@@ -1,4 +1,4 @@
-# Object references en null
+## Object references en null
 
 Zoals nu duidelijk is bevatten variabelen steeds een referentie naar een object. Maar wat als we dit schrijven:
 
@@ -11,7 +11,7 @@ Dit zal een fout geven. ``stud1`` bevat namelijk nog geen referentie. Maar wat d
 
 Deze variabele bevat de waarde **``null``** . Net zoals bij value types die een default waarde hebben (bv. 0 bij een ``int`` ) als je er geen geeft, zo bevat reference types altijd ``null``.
 
-## NullReferenceException
+### NullReferenceException
 
 Een veel voorkomende foutboodschap tijdens de uitvoer van je applicatie is de zogenaamde ``NullReferenceException`` . Deze zal optreden wanneer je code een object probeert te benaderen wiens waarde ``null`` is.
 
@@ -31,7 +31,7 @@ Dit zal resulteren in volgende foutboodschap:
 We moeten in dit voorbeeld expliciet ``=null`` plaatsen daar Visual Studio slim genoeg is om je te waarschuwen voor eenvoudige potentiele NullReference fouten en je code anders niet zal compileren.
 {% endhint %}
 
-## NullReferenceException voorkomen
+### NullReferenceException voorkomen
 
 Objecten die niet bestaan zullen altijd ``null`` weergeven. Uiteraard kan je niet altijd al je code uitvlooien waar je misschien ``=new SomeObject();`` bent vergeten.
 
@@ -44,7 +44,7 @@ if(stud1 == null)
     Console.WriteLine("Oei. Object bestaat niet.")
 ```
 
-### Verkorte null controle notatie
+#### Verkorte null controle notatie
 
 Vaak moet je dit soort code schrijven:
 
@@ -65,7 +65,7 @@ Het vraagteken direct na het object geeft aan: *"de code na dit vraagteken enkel
 
 Bovenstaande code zal dus gewoon een lege lijn op scherm plaatsen indien ``stud1`` effectief ``null`` is, anders komt de naam op het scherm.
 
-## Return null
+### Return null
 
 Uiteraard mag je dus ook expliciet soms ``null`` teruggeven als resultaat van een methode. Stel dat je een methode hebt die in een array een bepaald object moet zoeken. Wat moet de methode teruggeven als deze niet gevonden wordt? Inderdaad, we geven dan ``null`` terug.
 

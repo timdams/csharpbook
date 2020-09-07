@@ -1,4 +1,4 @@
-## Klassen en objecten aanmaken in CS
+## OOP in C#
 
 In C# kunnen we geen objecten aanmaken voor we een klasse hebben gedefinieerd dat de algemene eigenschappen (properties) en werking (methoden) beschrijft.
 
@@ -35,14 +35,17 @@ Je kan "eender waar" een klasse aanmaken, maar het is een goede gewoonte om per 
 * Kies Class..
 * Geef een goede naam voor je klasse
 
-{blurb, class: warning}
+
+
+
+{% hint style='tip' %}
 **De naam van je klasse moet voldoen aan de identifier regels die ook gelden voor het aanmaken van variabelen!**
-{/blurb}
+{% endhint %}
 
 
 ![Klasse toevoegen in VS](../assets/6_klassen/klassadd.png)
 
-#### Objecten aanmaken
+### Objecten aanmaken
 
 Je kan nu objecten aanmaken van de klasse die je hebt gedefinieerd.
 Je doet dit door eerst een variabele te definiëren en vervolgens een object te **instantiëren** met behulp van het ``new`` keyword:
@@ -61,7 +64,9 @@ Let goed op dat je dus op de juiste plekken dit alles doet (bekijk de onderstaan
 
 ![basics oop same in vv](../assets/6_klassen/allessamen.png)
 
-{blurb, class: tip}
+
+
+{% hint style='tip' %}
 Je hebt dus in het verleden ook al objecten aangemaakt. Telkens je met Random werkt deed je dit al. Dit wil zeggen dat er dus in .NET ergens reeds een voorgeprogrammeerde klasse ``Random`` bestaat met de interne werking.
-{/blurb}
+{% endhint %}
 

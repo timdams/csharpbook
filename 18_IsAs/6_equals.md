@@ -1,10 +1,11 @@
+## Objecten vergelijken
 In dit hoofdstuk gaan we dieper in hoe we objecten kunnen vergelijken op gelijkheid met behulp van de ``Equals`` methode die in ``System.Object`` gedefinieerd wordt. We hebben dit reeds behandeld in het hoofdstuk over [System.Object](../13_advancedovererving/4_System_Object.md). We hebben nu echter voldoende bagage dankzij de voorgaande hoofdstukken om een complete oplossing te vinden.
 
 We zullen stap voor stap opbouwen en motiveren waarom dit de enige correcte manier is. 
 
 Als leuk zij-effect krijgen we het feit dat deze uitleg aardig wat reeds opgedane kennis vereist: we kunnen deze zaken dus ineens herhalen en toelichten in de context van de ``Equals`` methode.
 
-## Heap en stack
+### Heap en stack
 C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdstuk lazen](../9_meminoop/6_memorymanagement.md)
 * De stack
 * De heap
@@ -19,8 +20,8 @@ Point punt1 = new Point();
 dan zal in de heap een ``Point`` object worden aangemaakt. Vervolgens krijgt een kleine variabele genaamd ``punt1`` in de stack het adres naar dat aangemaakt object.
 ``punt1`` zelf bevat dus niet meer dan een geheugenadres én dus niet het eigenlijke punt. We zullen dit verder op nodig hebben.
 
-# Objecten vergelijken
-## Value types en de == operator
+### Objecten vergelijken
+#### Value types en de == operator
 Wanneer we twee variabele van een van de ingebouwde .NET types (behalve string) met elkaar vergelijken (int, char, etc.) dan kunnen we schrijven:
 ```java
 int getal1 = 4;
@@ -34,7 +35,7 @@ if(getal1 == getal2)
 Dit werkt omdat de variabelen ``getal1`` en ``getal2`` in het geheugen de effectieve waarden 4 en 5 bezitten.
 **Maar wat gebeurt er indien we twee objecten met elkaar op deze manier vergelijken?**
 
-## Objecten en de == operator
+#### Objecten en de == operator
 Stel dat we een klasse Point hebben dat we gebruiken om een 2-dimensionaal punt voor te stellen:
 ```java
 class Point
@@ -77,7 +78,7 @@ Dan zal de test wel ``true`` teruggeven: we hebben vlak voor de test gezegd dat 
 Het object met ``Y=5`` zijn we kwijt door de garbage collector: die heeft gezien dat er geen enkele variabele meer wijst naar dat object en heeft het dus verwijderd.
 De variabelen ``punt1`` en ``punt2`` zijn nu dus wel gelijk: ze hebben dezelfde inhoud, namelijk hetzelfde adres naar hetzelfde object.
 
-## Objecten vergelijken zonder overerving
+#### Objecten vergelijken zonder overerving
 Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle properties en private fields te vergelijken met elkaar van beide objecten. Althans, jij als programmeur moet beslissen wanneer 2 objecten gelijk zijn. Mogelijk vind je dat 2 punten gelijk zijn als ze beide dezelfde X-waarde hebben ongeacht de Y-waarde. Maar wij prefereren natuurlijk dat zowel de X als de Y-waarde dezelfde is en kunnen dus schrijven:
 ```java
 if(punt1.X== punt2.X && punt1.Y== punt2.Y)
@@ -125,7 +126,7 @@ if(punt1.IsDitPuntGelijk(punt2))
 
 In de wereld waar we overerving nog niet kennen zou dit een mooi einde zijn van de oefening…maar we kennen overerving en gaan dus een stapje verder.
 
-# System.Object: De grondlegger van alles
+### System.Object: De grondlegger van alles
 Uit een [vorige hoofdstuk](../13_advancedovererving/4_System_Object.md) weten we dat alle klassen overerven van ``System.Object`` en dat deze een methode Equals bevat. Deze werd speciaal toegevoegd om objecten op gelijkheid te testen. We moeten echter de implementatie zelf schrijven, daar .NET niet kan voorspellen hoe jij vindt dat objecten dezelfde zijn.
 
 Wat we vorige keer niet zagen is dat er twee versies van de ``Equals`` methode beschikbaar zijn in ``System.Object``:
@@ -145,7 +146,7 @@ if(Object.Equals(object1, object2))
     Console.WriteLine("gelijk!");
 ```
 
-## Equals als virtual methode
+#### Equals als virtual methode
 Wij gaan ons nu concentreren op de eerste, niet-statische, ``Equals`` methode.
 Bekijken we de signature van de Equals methode in System.Object dan zien we:
 ```java
@@ -206,7 +207,7 @@ if(punt1.Equals(punt2))
 
 Merk op dat dit dezelfde code is als voor we de ``Equals`` methode override’n. Echter, aangezien we de Equals methode *wel* override'n zullen we dus de implementatie uitvoeren die in de Point klasse staat, en niet die van ``System.Object``. 
 
-# Polymorfisme duikt op
+### Polymorfisme duikt op
 Maar nu komt het nieuwe element om de hoek kijken: *hoe kunnen we nu binnen onze nieuwe Equals methode de punten vergelijken?*
 We krijgen binnen de Equals methode een parameter van het type ``Object`` binnen...
 
@@ -245,7 +246,7 @@ We kunnen dus nu obj vergelijken met het punt zelf. Wanneer we dus schrijven: ``
 
 Dan zal de ``Equals`` methode *op het ``punt1``* uitgevoerd worden. ``X`` en ``Y`` bevatten met andere woorden de waarden van ``punt1``. ``Punt2`` in dit geval zal als object ``obj`` de methode binnenkomen.
 
-# Verbetering: is to the rescue
+### Verbetering: is to the rescue
 
 Het is natuurlijk gevaarlijk om te veronderstellen dat we de ``Equals`` methode op de ``Point´´ klasse altijd correct gaan gebruiken.
 Stel dat we zouden schrijven:
@@ -279,7 +280,7 @@ Point tijdelijk = (Point)obj;
  
 proberen om ``"mijn locatie is hier"``  om te zetten (casten) naar een Point, wat zou resulteren in een ``InvalidCastException``.
 
-# Checken op null
+### Checken op null
 Als finale check moeten we ook controleren of we geen null-object als parameter aan de methode meegeven. Mogelijk probeer je een bestaand object te vergelijken met een nog niet geïnstantieerd object en dan krijgen we een ``NullReferenceException``. 
 
 Onze finale ``Equals`` methode wordt:

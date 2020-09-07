@@ -4,18 +4,20 @@ Overerving (**inheritance**) laat ons toe om klassen te specialiseren vanuit een
 
 De child-klasse kan alles wat de parent-klasse kan, maar de nieuwe klasse kan nu ook extra specialisatie code krijgen.
 
+{% hint style='tip' %}
 ## Is-een relatie
 
 Wanneer twee klassen met behulp van een "x is een y"-relatie kunnen beschreven worden dan weet je dat overerving mogelijk.
 
 * Een paard **is een** dier (paard = child-klasse, dier= parent-klasse)
 * Een tulp **is een** plant
+{% endhint %}
 
 {% hint style='warning' %}
 Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over [compositie](../14_compositie/0_compositie_intro.MD).
 {% endhint %}
 
-## Inheritance in CS
+## Overerving in C#
 
 Overving duid je aan met behulp van het dubbele punt(:)  bij de klassedefinitie:
 
@@ -47,17 +49,17 @@ bPaard.KanHinnikken=false;
 aDier.KanHinnikken=false; //!!! zal niet werken!
 ```
 
-## Multiple inheritance
+### Multiple inheritance
 
 In C# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven (zogenaamde multiple inheritance), wat wel mogelijk is in sommige andere object georiënteerde talen.
 
-## Transitive
+### Transitive
 
 Overerving in C# is transitief, dit wil zeggen dat de child-klasse ALLES overerft van de parent-klasse: methoden, properties, etc.
 
-## Protected
+### Protected
 
-Ook al is overevring transitief, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechtsreeks aanroepbaar zijn in de child-klasse. Private geeft aan dat het element enkel in de klasse zichtbaar is:
+Ook al is overerving transitief, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechtsreeks aanroepbaar zijn in de child-klasse. Private geeft aan dat het element enkel in de klasse zichtbaar is:
 
 ```java
 class Paard: Dier
@@ -91,7 +93,7 @@ class Dier
 }
 ```
 
-## Sealed
+### Sealed
 
 Soms wil je niet dat van een klasse nog nieuwe klasse kunnen overgeërfd worden. Je lost dit op door het keyword ``sealed`` voor de klasse te zetten:
 

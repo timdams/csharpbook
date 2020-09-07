@@ -1,9 +1,8 @@
-﻿
+﻿# Interfaces
 {% hint style='tip' %}
 Delen van deze sectie komen uit het voortreffelijke handboek "Programmeren in C#" (2nd Edition door Douglas Bell en Mike Parr, ISBN:9789043032421)
 {% endhint %}
 
-# wat zijn interfaces?
 
 In C# worden interfaces gebruikt om de uitwendige verschijningsvorm van een klasse te beschrijven. Vaak zijn klassen grote, complexe stukken code bestaande uit tientallen tot honderden methoden en properties. Wanneer we een dergelijke klasse moeten gebruiken boeit meestal enkel de uitwendige, of publieke, vorm: dit zijn de enige zaken waar je als externe gebruiker van de klasse mee kunt praten. 
 
@@ -15,7 +14,7 @@ Interfaces zijn als het ware stempels die we op een klasse kunnen plakken om zo 
 
 Een interface is niet meer dan een belofte: het zegt enkel welke publieke methoden en properties de klassen bezit. Het zegt echter niets over de effectieve code/implementatie van deze methoden en properties.
 
-# Interface voorbeeld
+## Interfaces in C#
 
 Volgende code toont hoe we een interface definiëren:
 ```java
@@ -41,7 +40,7 @@ Het is in de klassen dat we nu vervolgens verplicht zijn deze methode en propert
 
 ![Ken je scumbag Steve nog?](../assets/9_interfaces/scuminterface.jpg)
 
-# Interface regels
+### Interface regels
 
 * Je kan geen  membervariabelen (fields) declareren in een interface (dat hoort bij de implementatie)
 * Je kan geen constructor declareren
@@ -50,7 +49,7 @@ Het is in de klassen dat we nu vervolgens verplicht zijn deze methode en propert
 * Een interface kan niet overerven van een klasse, wel van een andere interface.
 
 
-# Interfaces en klassen
+## Interfaces en klassen
 
 We kunnen nu aan klassen de stempel ISuperHeld geven zodat programmeurs weten dat die klasse geagarandeert de methoden ``SchietLasers``, ``VerlaagKracht`` en de property ``Power`` zal hebben.
 
@@ -74,13 +73,13 @@ class Zorro: ISuperHeld
 ```
 Zolang de klasse Zorro niet exact de interface inhoud implementeert zal deze klasse niet gecompileerd kunnen worden.
 
-# Interface notatie
+## Interface UML notatie
 
 Een "lolly" op een klein geeft aan dat deze een bepaalde interface heeft. In volgende tekening hebben we een klasse Meeuw en een interface IVliegt. We gebruiken de UML notatie voor een interface om aan te geven dat de Meeuw klasse de interface IVliegt heeft:
 
 ![Interface uml notatie](../assets/9_interfaces/uml.png)
 
-# Is keyword met interfaces
+## Is keyword met interfaces
 We kunnen ``is`` gebruiken om te weten of een klasse een specifieke interface heeft.
 
 Stel:
@@ -110,7 +109,7 @@ if(tim is IDeletable)
 Ouput: ``I can delete game of thrones``.
 
 
-# Meerder interfaces
+## Meerder interfaces
 Een nadeel van overerving is dat een klasse maar van 1 klasse kan overerven. Een klasse mag echter wel meerdere interfaces met zich meedragen:
 ```java
 interface ISuperHeld{...}

@@ -1,4 +1,4 @@
-# Overloaded constructor
+### Overloaded constructor
 
 Soms wil je parameters aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. 
 Met andere woorden, stel dat we dit willen schrijven:
@@ -49,7 +49,7 @@ class Student
 
 ```
 
-### Meerdere overloaded constructor
+#### Meerdere overloaded constructors
 Wil je meerdere overloaded constructors dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
 
 ```java

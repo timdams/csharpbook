@@ -1,6 +1,7 @@
+## Spelen met strings
 We gebruiken het einde van klassen en objecten om iets dieper in de ``String`` klasse te duiken en aan te tonen dat er tal van nuttige zaken bestaan om met strings te werken.
 
-## Verbatim character
+### Verbatim character
 
 Door een ``@`` (verbatim character) voor een string te plaatsen zeggen we concreet: "de hele string die nu volgt moet je beschouwen zoals hij er staat. Je mag alle escape karakters negeren.
 
@@ -9,9 +10,9 @@ Dit wordt vaak gebruikt om een filepath iets leesbaarder te maken.
 * Zonder verbatim: ``string path= "c:\\Temp\\myfile.txt";``
 * Met verbatim: ``string path= @"c:\Temp\myfile.txt";``
 
-## Splitsen en samenvoegen
+### Splitsen en samenvoegen
 
-### Split
+#### Split
 
 Aan het einde van dit hoofdstuk willen we een csv-bestand (comma separated value) splitsen. De ``Split`` methode laat toe een string te splitsen op een bepaald teken. Het resultaat is steeds een **array van strings**.
 
@@ -27,7 +28,7 @@ for(int i=0; i<gesplitst.Length;i++)
 
 Uiteraard kan je dit dus gebruiken om op eender welk ``char`` te splitsen en dus nit enkel een ``','`` (komma).
 
-### Join
+#### Join
 
 Via ``Join`` kunnen we array van string terug samenvoegen. Het resultaat is een nieuwe string.
 
@@ -40,7 +41,7 @@ string joined = String.Join(";", gesplitst);
 Voorgaande methoden zijn ``static`` en moet je dus via de klasse ``String`` doen en niet via de objecten zelf.
 
 
-## Arrays vergelijken
+### Arrays vergelijken
 
 De correcte manier om strings te vergelijken is met de ``Compare(string s1, string s2)`` methode. Deze zal een ``int terug geven:
 
@@ -48,7 +49,7 @@ De correcte manier om strings te vergelijken is met de ``Compare(string s1, stri
 * 0: beide strings zijn identiek
 * 1: de string ``s2`` komt voor ``s1``
 
-# Tekst files uitlezen
+### Tekst files uitlezen
 
 De ``System.IO`` namespace bevat tal van nuttige methoden en klassen om met bestanden te werken.
 Om gebruik hiervan te maken plaats je bovenaan je file:
@@ -67,7 +68,7 @@ for (int i = 0; i < lines.Length; i++)
 }
 ```
 
-## CSV uitlezen
+#### CSV uitlezen
 
 Dankzij ``ReadAllLines`` en ``Split`` hebben we nu alle bouwstenen om eenvoudig een csv-bestand te verwerken.
 
@@ -94,7 +95,7 @@ for (int i = 0; i < lines.Length; i++)
 }
 ```
 
-## CSV downloaden
+#### CSV downloaden
 
 Vaak zal je een online bestand willen verwerken. De ``WebClient`` klasse heeft tal van manieren om met online bronnen te werken. Deze klasse bevindt zich in de ``System.Net`` namespace en vereist dus dat je bovenaan je code volgende lijn toevoegt:
 
@@ -128,11 +129,11 @@ for (int i = 1; i < splitted.Length; i++)
 
 In dit voorbeeld gaan we er vanuit dat de eerste lijn in het bestand een "header" bevat, die we dus moeten overslaan. Daarom starten we de loop vanaf lijn 1.
 
-## (PRO) WebClient
+##  WebClient
 
 We hebben maar een héél klein stukje van ``WebClient`` bekeken. Deze hoort niet bij de leerstof, maar is toch voor de geïnteresseerden en zeer nuttige klasse. Kijk bijvoorbeeld eens naar volgende [voorbeelden](https://www.dotnetperls.com/webclient).
 
-## CSV wegschrijven
+### CSV wegschrijven
 
 Je kan tekst uit een bestand lezen, maar uiteraard kan je ook naar een bestand wegschrijven. De 2 eenvoudigste manieren zijn:
 
@@ -209,7 +210,7 @@ for (int i = 0; i < pokedex.Count; i++)
 }
 ```
 
-# CSV uitlezen naar klasse
+## CSV uitlezen naar klasse
 
 We herbekijken het voorbeeld van de csv-parser.
 
@@ -243,6 +244,6 @@ for (int i = 0; i < lines.Length; i++)
 }
 ```
 
-## (PRO) CSVHelper 
+###  CSVHelper 
 
 De opensource bibliotheek ``csvhelper`` is een nuttige toevoeging om vorige zaken een deel te automatiseren. Je kan deze eenvoudig als een ``nuget`` installeren. Alle uitleg en werking vind je op de website: [https://joshclose.github.io/CsvHelper/](https://joshclose.github.io/CsvHelper/).

@@ -1,8 +1,10 @@
-# Object arrays
+# Arrays en klassen
+
+## Object arrays
 
 We vallen in herhaling: ook arrays van objecten zijn mogelijk, net zoals je arrays van valuetypes al kon maken. Ook hier is de werking grotendeels dezelfde. Maar ook hier moet je er rekening mee houden dat de individuele objecten in je array **reference** values hebben en dus mogelijk ``null`` zijn.
 
-## Array van objecten aanmaken
+### Array van objecten aanmaken
 
 Een array van objecten gebeurt als volgt:
 
@@ -43,7 +45,7 @@ Student[] mijnKlas = new Student[]
 
 Let op de puntkomma helemaal achteraan. Die wordt als eens vergeten.
 
-## Individueel object benaderen
+### Individueel object benaderen
 
 Van zodra een object in de array staat kan je deze vanuit de array aanspreken d.m.v. de index :
 
@@ -51,7 +53,7 @@ Van zodra een object in de array staat kan je deze vanuit de array aanspreken d.
 mijnKlas[3].Name= "Vincent Lagasse";
 ```
 
-### Null check met ?
+#### Null check met ?
 
 Ook hier kan je met ``?`` een null check schrijven:
 
@@ -60,6 +62,6 @@ mijnKlas?[3]?.Name= "Romeo Montague ";
 ```
 Merk op dat het eerste vraagteken controleer of de array niet ``null``is. Het tweede vraagteken, na de index, is om te controleren of het element op die index niet ``null`` is.
 
-# Arrays als parameters en return
+### Objectarrays als parameters en return
 
 Ook arrays mag je als parameters en returntype gebruiken in methoden. De werking hiervan is identiek aan die van value-types.

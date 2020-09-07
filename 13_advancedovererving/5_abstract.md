@@ -1,6 +1,6 @@
-# Abstract
+## Abstract
 
-## Abstracte klassen
+### Abstracte klassen
 
 Soms maken we een parent-klasse waar op zich geen instanties van kunnen gemaakt worden: denk aan de parent-klasse ``Dier``. Subklassen van Dier kunnen ``Paard``, ``Wolf``, etc zijn. Van Paard en Wolf is het logisch dat je instanties kan maken (echte paardjes en wolfjes) maar van 'een dier'? Hoe zou dat er uit zien.
 
@@ -34,7 +34,7 @@ En dan zal dit wel werken: ``Wolf wolfje= new Wolf();``
 
 En als we polymorfisme gebruiken ([zie verder](../15_polymorfisme/11_polymo_intro.MD)) dan mag dit ook: ``Dier paardje= new Paard();`` 
 
-## Abstracte methoden
+### Abstracte methoden
 Het is logisch dat we mogelijk ook bepaalde zaken in de abstracte klasse als abstract kunnen aanduiden. Beeld je in dat je een Methode "MaakGeluid" hebt in je klasse Dier. Wat voor een geluid maakt 'een dier'? We kunnen dus ook geen implementatie (code) geven in de abstracte parent klasse. 
 
 Via abstracte methoden geven we dit aan: we hoeven enkel de methode signature te geven, met ervoor ``abstract``:
@@ -60,10 +60,10 @@ class Paard: Dier
 ```
 (en idem voor de wolf-klasse uiteraard)
 
-### Abstracte methoden enkel in abstracte klassen
+#### Abstracte methoden enkel in abstracte klassen
 Van zodra een klasse een abstracte methode of property heeft dan ben je, logischerwijs, verplicht om de klasse ook abstract te maken. 
 
-## Abstracte properties
+### Abstracte properties
 
 Properties kunnen virtual gemaakt, en dus ook ``abstract``. Volgende voorbeeld toont hoe dit werkt:
 

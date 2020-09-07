@@ -42,7 +42,7 @@ Console.WriteLine(anotherAnimal.MaakGeluid()); //Hinnikhinnik
 
 Het is belangrijk te beseffen dat  ``someAnimal`` en ``anotherAnimal`` van het type ``Dier`` zijn en dus enkel die dingen kunnen die in ``Dier`` beschreven staan. Enkel zaken die ``override`` zijn in de child-klasse zullen met de specialisatie-code werken.
 
-### Arrays en polymorfisme
+## Arrays en polymorfisme
 
 Arrays en lijsten laten heel krachtige code toe. Je kan een lijst van de basis-klasse maken en deze vullen met allerlei objecten van de basis-klasse **én de child-klassen**. 
 

@@ -137,7 +137,7 @@ DateTime now = DateTime.Now;
 Console.WriteLine($"The current day is {now.DayOfWeek}");
 ```
 
-# Datum en tijd formateren
+#### Datum en tijd formateren
 Je hebt een invloed op hoe DateTime objecten naar string worden opgezet. Je kan dit door door extra *formatter syntax* mee te geven.
 
 Dit zie je in volgende voorbeeld:
@@ -156,15 +156,15 @@ WriteLine(now.ToString("T")); // long time
 WriteLine(now.ToString("Y")); // year and month
 ```
 
-{blurb, class: tip}
-## Custom format
+{% hint style='tip' %}
+##### Custom format
 Wil je nog meer controle over de output dan kan je ook zelf je formaat specifieren.
 
 [Dit wordt hier volledig uit de doeken gedaan.](https://www.c-sharpcorner.com/blogs/date-and-time-format-in-c-sharp-programming1)
-{/blurb}
+{% endhint %}
 
 
-### Localized time
+#### Localized time
 
 De manier waarop ``DateTime`` objecten worden getoond (via ToString) is afhankelijk van de landinstellingen van je systeem. Soms wil je echter op een andere manier dit tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum getoond moet worden.
 
@@ -177,13 +177,13 @@ CultureInfo russianCI = new CultureInfo("ru-RU");
 Console.WriteLine($"Current time in Russian style is: {now.ToString("F", russianCI)}");
 ```
 
-{blurb, class: tip}
+{% hint style='tip' %}
 #### Culture names
 
 Een lijst van alle cultures in .NET kan je [hier terugvinden](http://www.csharp-examples.net/culture-names/). 
 
 **Opgelet, enkel indien een specifieke culture op je computer staat geïnstalleerd zal je deze kunnen gebruiken.**
-{/blurb}
+{% endhint %}
 
 
 ### Static methods
@@ -212,7 +212,7 @@ if(isLeap)
     Console.WriteLine("This year is a leap year");
 ```
 
-### TimeSpan (PRO)
+### TimeSpan 
 
 Je kan DateTime objecten ook bij mekaar optellen en aftrekken. Het resultaat van deze bewerking geeft echter NIET een DateTime object terug, maar een ``TimeSpan`` object. Dit is een object dat dus aangeeft hoe groot het verschil is tussen de 2 DateTime objecten:
 

@@ -1,4 +1,4 @@
-# Polymorfisme in de praktijk: Presidenten
+## Polymorfisme in de praktijk: Presidenten
 
 {% hint style='tip' %}
 ![Gezocht: wie weet waar deze still vandaan komt? We hebben geen flauw benul. We zien Robert Redford en Bush Senior, uit een film ofzo?](../assets/9_interfaces/president.jpg)
@@ -132,7 +132,7 @@ public class MisterPresident
 En wie zei dat het presidentsschap moeilijk was?!
 
 {% hint style='tip' %}
-# Nog voorbeelden van polymorfisme nodig?
+## Nog voorbeelden van polymorfisme nodig?
 
 Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de hand van...wait for it... Zeemeerminnen! :) [Lezen maar!](http://www.techoschool.com/Technology/Dotnet/Csharp-for-Beginners_Csharp-Polymorphism)
 
