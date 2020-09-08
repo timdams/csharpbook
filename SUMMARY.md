@@ -97,7 +97,7 @@
   * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
   * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
   * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)
-* H15: Advanced overerving
+* H15: Gevorderde overervingsconcepten
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
 * H16: Compositie
