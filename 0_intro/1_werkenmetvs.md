@@ -168,7 +168,7 @@ Nee hoor. Visual Studio is lekker groot, maar laat je dat niet afschrikken. Net 
 
 ### Kennisclip
 ![](../assets/infoclip.png)
-* [De VS omgeving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7f6e9867-6b45-4c98-9255-aacd00880111)
-* [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
+* [Werken met VS](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=73b39021-ce17-4dbc-a38e-ac3200cb1090)
+* Optioneel: [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
 
 <!---NOBOOKEND--->

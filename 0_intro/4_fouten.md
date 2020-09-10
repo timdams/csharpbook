@@ -68,3 +68,12 @@ De meest voorkomende fouten die je als beginnende C# programmeur maakt zijn:
 * Geen rekening gehouden met **hoofdletter gevoeligheid van C#**, bijvoorbeeld ``Readline`` i.p.v. ``ReadLine`` (zie verder).
 * Per ongeluk **accolades verwijderd**.
 * Code geschreven op plekken waar dat niet mag (je mag momenteel enkel binnen de accolades van ``Main`` schrijven).
+
+
+
+<!---NOBOOKSTART--->
+### Kennisclip
+![](../assets/infoclip.png)
+
+* [Fouten in je code oplossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1dd4ec60-8782-4bc5-8522-ac3200d629cd)
+<!---NOBOOKEND--->

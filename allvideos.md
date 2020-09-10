@@ -7,29 +7,30 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 ## Semester 1
 
 ### Hoofdstuk 1 - De eerste stappen
-* [De VS omgeving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7f6e9867-6b45-4c98-9255-aacd00880111)
-* [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
+* [Werken met VS](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=73b39021-ce17-4dbc-a38e-ac3200cb1090)
+* Optioneel:[De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
+* [Je eerste programma](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c676809-33a8-4178-84f9-ac3200ce837e)
 * [WriteLine, Write en ReadLine](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=645c1bae-c84d-47c4-89d6-abe3009410c3)
+* [Fouten in je code oplossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1dd4ec60-8782-4bc5-8522-ac3200d629cd)
 * [Werken met kleuren in console](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a0446be7-b8f2-4ce7-ba76-abe30094107e)
-* [Bespreking oplossingen hoofdstuk 0](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1a353c40-e317-4b1d-b81b-a966007b8ed2)
 
 ### Hoofdstuk 2 - De basiconcepten van C#
 
 * [Variabelen en datatypes](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=22d326cf-b619-4cf0-80fc-a966007ffef5)
 * [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3a0370ef-b3da-4642-aeaa-a9660083e329)
-* [Bespreking oplossingen hoofdstuk 1](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=98aec100-00f7-4506-a424-a96800cb6cb3)
+
 
 ### Hoofdstuk 3 - Tekst gebruiken in code
 
 * [String interpolation](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a3d572bc-f72d-4622-9875-abe300b9ecf7)
-* [Bespreking oplossingen hoofdstuk 2](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7e2513f7-7002-4687-a214-a97000751f5e)
+
 
 ### Hoofdstuk 4 - Werken met data
 
 * [Meerdere projecten in 1 solution](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a)
 * [De Math-bibliotheek](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4d790ab9-e3b9-4e4b-bf59-a976007197fa)
 * [Debuggen in VS ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a78b3bf5-ef96-4c2a-8248-a976006fabd1)
-* [Bespreking oplossingen hoofdstuk 3](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0c5972b4-e091-40dc-84dc-a97600d27428)
+
 * [Je resultaat aan iemand anders geven](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b)
 * [Random toepassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ffa0ea68-0b47-4446-9922-a91100d3f61e)
 
@@ -38,10 +39,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Logische operators en expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4602c8f9-1540-427e-8fd8-a91100bc3abb)
 * [Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f)
 * [Enums gebruiken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9273e56b-1bfa-4393-a14a-aaed00bd4eaf)
-* [Bespreking BMI  met if oefening](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8d5602e2-ef82-486c-ba60-a981009b3a61)
-* [Bespreking Ohmberekenaar](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3d9dcd19-a130-4287-8ef2-a981009dc942)
-* [Bespreking Orakeltje van Delphi, part Deux](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d0ff5c46-9839-483f-97dd-a98100a28b9d)
-* [Bespreking Kleurcode weerstand naar Ohm](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a272f856-78cd-44a6-afbd-a981009f7253)
+
 
 ### Hoofdstuk 6 - Herhalingen, herhalingen, herhalingen
 
@@ -49,7 +47,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Do-while loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=82314092-f4bf-408b-bb3f-a99800b6f1c8)
 * [De for loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2df9d5bb-ecc8-489b-a1d4-a99800b79a5c)
 * [Micro-tips om loop-opgaven op te lossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ea69bf95-f828-4b45-afca-f0ae911ab7c4)
-* [Oplossingen practica loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=93c5cd9e-e621-4e9f-a180-ab0a00d9c08f)
+
 
 ### Hoofdstuk 7 - Methoden
 
@@ -57,7 +55,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Sneller methoden schrijven m.b.v. IntelliSense](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b93447e7-88a1-49ec-992f-a9af00b22dde)
 * [Method overloading](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d43a3aa5-2481-4e8a-aef0-a9a700cb2821)
 * [Named en optionele parameters](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e8df8cd1-e83a-4632-b69f-a9a700cd9bc9)
-* [Oplossingen methode oefeningen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7d5b4399-8c6c-4207-8e4d-a9af00b4ac58)
+
 
 ### Hoofdstuk 8 - Arrays
 

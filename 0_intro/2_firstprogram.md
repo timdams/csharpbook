@@ -127,3 +127,12 @@ Kan je voorspellen wat de uitvoer zal zijn? Test het eens!
 {% hint style='tip' %}
 We tonen niet telkens de volledige broncode. Als we dat blijven doen dan wordt dit boek dubbel zo dik. We tonen daarom meestal enkel de code die binnen de ``Main`` (of later ook elders) moet komen.
 {% endhint %}
+
+
+<!---NOBOOKSTART--->
+
+### Kennisclip
+![](../assets/infoclip.png)
+* [Je eerste programma](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c676809-33a8-4178-84f9-ac3200ce837e)
+
+<!---NOBOOKEND--->
