@@ -3,7 +3,7 @@ Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal 
 De gepubliceerde versies zijn identiek aan deze cursus.
 
 Wil je toch een andere versie dan deze online versie dan kan dat via volgende kanalen:
-* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor paperback versie, in groter formaat om aantekeningen bij de tekst te plaatsen. 
+* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor paperback versie, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle.
 * Kobo (soon): ebook versie voor op je e-reader
 * [Leanpub](http://leanpub.com/ziescherp/): hoge-kwaliteits pdf (AP studenten kunnen deze gratis downloaden via digitap.ap.be)
 
@@ -13,4 +13,4 @@ Wil ik rijk worden hiermee? Neen, maar ik vind het jammer dat niet iedereen toeg
 Alle gekheid op een stokje: de reden dat ik de cursus ook tegen een prijs(je) aanbied is om uit de kosten te geraken voor het schrijven van dit boek tijdens de lockdown 2020 en ik de proefdrukversies zelf moest bekostigen.
 {% endhint %}
 
-![](./assets/cover.png)
+![](./assets/boek.png)
