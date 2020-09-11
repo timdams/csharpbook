@@ -166,3 +166,10 @@ Je kan ook code in VS selecteren en dan met de comment/uncomment-knoppen in de m
 
 ![Linkse knop voegt comment tags toe, de rechtse verwijdert ze](../assets/1_csharpbasics/comments.png)
 {% endhint %}
+
+<!---NOBOOKSTART--->
+### Kennisclip
+![](../assets/infoclip.png)
+
+* [Essentie van C#](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5ada7611-488b-4890-94b7-ac3300c413f7)
+<!---NOBOOKEND--->
