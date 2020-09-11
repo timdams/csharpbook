@@ -7,6 +7,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 ## Semester 1
 
 ### Hoofdstuk 1 - De eerste stappen
+* [Introductie tot C#](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f517d032-35b9-4c9f-ba91-ac33007cd2a6)
 * [Werken met VS](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=73b39021-ce17-4dbc-a38e-ac3200cb1090)
 * Optioneel:[De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
 * [Je eerste programma](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c676809-33a8-4178-84f9-ac3200ce837e)
