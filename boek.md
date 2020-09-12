@@ -3,8 +3,8 @@ Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal 
 De gepubliceerde versies zijn identiek aan deze cursus.
 
 Wil je toch een andere versie dan deze online versie dan kan dat via volgende kanalen:
-* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor paperback versie, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle.
-* Kobo (soon): ebook versie voor op je e-reader
+* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor paperback versie, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar.
+* [Kobo](https://www.kobo.com/be/nl/ebook/zie-scherp): ebook versie voor op je e-reader (gratis op kobo plus)
 * [Leanpub](http://leanpub.com/ziescherp/): hoge-kwaliteits pdf (AP studenten kunnen deze gratis downloaden via digitap.ap.be)
 
 {% hint style='tip' %}
