@@ -31,8 +31,8 @@
 * H4: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
-  * [Math-library en berekeningen](3_data/4c_math.md)
-  * [Random](3_data/random.md)
+  * [Berekeningen met System.Math](3_data/4c_math.md)
+  * [Random getallen genereren](3_data/random.md)
   * [Debuggen](3_data/5_debuggen.md)
 * H5: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)

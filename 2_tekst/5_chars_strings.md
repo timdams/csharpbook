@@ -39,7 +39,7 @@ Een ``string`` is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook 
 We gebruiken het ``string`` datatype om tekst voor te stellen. Je begrijpt waarschijnlijk zelf wel waarom het ``string`` datatype een belangrijk en veelgebruikt type is in eender welke programmeertaal: er zijn maar weinig applicaties die niet minstens enkele lijnen tekst vertonen (ja, zelfs Flappy Bird had tekst, of hoe denk je dat je score werd voorgesteld op het scherm?).
 
 {% hint style='tip' %}
-In deel 2 van deze boekenreeks zullen we ontdekken dat strings eigenlijk zogenaamde arrays zijn. Wat dit juist inhoudt laten we nog even lekker mysterieus achterwege (ik probeer alles om je dat volgende deel te doen lezen nietwaar).
+Op het einde van dit boek zullen we ontdekken dat strings eigenlijk zogenaamde arrays zijn. 
 {% endhint %}
 
 ### Strings declareren
