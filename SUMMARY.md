@@ -36,7 +36,7 @@
   * [Debuggen](3_data/5_debuggen.md)
 * H5: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)
-  * [Booleanse logica en operators](4_beslissingen/1_logic_and_relationsoperator.md)
+  * [Relationele en logische operators](4_beslissingen/1_logic_and_relationsoperator.md)
   * [If](4_beslissingen/0_if.md)
   * [Scope van variabelen](4_beslissingen/3_scope.md)
   * [Switch](4_beslissingen/2_switch.md)
@@ -47,7 +47,7 @@
   * [For](5_herhalingen/2_for.md)
   * [Nesting](5_herhalingen/3_nesting.md)
 * H7: Methoden
-  * [Methoden intro](6_methoden/0_intromethods.md)
+  * [Methoden](6_methoden/0_intromethods.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Geavanceerde methodetechnieken](6_methoden/3_advancedmethod.md)  
 * H8: Arrays
