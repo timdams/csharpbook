@@ -11,7 +11,7 @@
 ## Zie Scherp (Semester 1)
 
 * H1: De eerste stappen
-  * [Introductie tot C#](0_intro/0_intrototcs.md)
+  * [Wat is programmeren](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
   * [Input verwerken met ReadLine](0_intro/3_console.md)

@@ -1,4 +1,5 @@
 ## Spelen met strings
+
 We gebruiken het einde van klassen en objecten om iets dieper in de ``String`` klasse te duiken en aan te tonen dat er tal van nuttige zaken bestaan om met strings te werken.
 
 ### Verbatim character
