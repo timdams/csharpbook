@@ -10,7 +10,7 @@ Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programme
 
 # Boek verkrijgen
 
-Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal ten allen tijde beschikbaar blijven onder het Creatieve Commons 4.0 principe (zie onderaan). Wil je de auteur sponsoren dan kan dit door het boek via 1 van volgende versies aan te schaffen (De gepubliceerde versies zijn identiek aan deze cursus)
+Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal ten allen tijde beschikbaar blijven onder het Creatieve Commons 4.0 principe (zie onderaan). Wil je de auteur sponsoren dan kan dit door het eerste deel (Zie Scherp) via 1 van volgende versies aan te schaffen (De gepubliceerde versies zijn identiek aan deze cursus)
 
 * [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor **paperback versie**, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar.
 * [Kobo](https://www.kobo.com/be/nl/ebook/zie-scherp): **ebook versie** voor op je e-reader (gratis op kobo plus)
@@ -18,7 +18,7 @@ Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal 
 
 ![](./assets/boek.png)
 
-
+Deel 2 (Zie Scherper) verschijnt, hopelijk, begin 2021.
 
 # Licensed under Creative Commmons Attribution-NonCommercial 4.0 International \(CC BY-NC 4.0\)
 
