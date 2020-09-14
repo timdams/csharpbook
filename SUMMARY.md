@@ -1,6 +1,6 @@
 # Summary
 
-* [Welkom](README.md)
+* [Welkom](Welkom.md)
 * [Papieren versie nodig?](boek.md)
 * Inleiding
   * [Benodigdheden](_intro/benodigdheden.md)
