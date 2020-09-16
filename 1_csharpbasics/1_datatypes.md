@@ -140,3 +140,13 @@ Wat een gortdroge tekst was me dat nu net? Waarom moeten we al deze datatypes ke
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->
+
+
+
+
+<!---NOBOOKSTART--->
+### Kennisclip
+![](../assets/infoclip.png)
+
+* [Datatypes](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1b40cd70-3224-486b-846a-ac38009741af)
+<!---NOBOOKEND--->
