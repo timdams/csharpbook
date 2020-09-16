@@ -63,5 +63,5 @@ Het programma zal driemaal een ``1`` onder elkaar tonen. Boeiend programma hoor.
 ### Kennisclip
 ![](../assets/infoclip.png)
 
-* [Char en strings](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=dd562363-4aa1-4220-aa57-ac3800860f80)
+* [Char en strings](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=dace7ae4-e4aa-4686-a3aa-ac38008c4f5e)
 <!---NOBOOKEND--->
