@@ -84,3 +84,10 @@ Dit geeft als output (``\t`` wordt door het apenstaartje genegeerd):
 1/1=2. \tGeen tab
 ```
 {% endhint %}
+
+<!---NOBOOKSTART--->
+### Kennisclip
+![](../assets/infoclip.png)
+
+* [Unicode tonen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9b7eb60b-35fd-4f4e-b825-ac3800850087)
+<!---NOBOOKEND--->

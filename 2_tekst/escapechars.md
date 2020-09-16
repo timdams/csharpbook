@@ -170,3 +170,10 @@ dan zal de compiler deze twee waarden letterlijk optellen en het nieuw verkregen
 Je zou misschien verwachten dat C# vervolgens het element op plaats 131 in de Unicode tabel zou tonen. Dat is niet zo: omdat de ``+`` operator niet is gedefinieerd voor het ``char`` datatype maar wel voor het ``int`` datatype, besluit de compiler om de twee operanden (``letter1`` en ``letter2``) als ``int`` operanden te hanteren. Aangezien ``int+int`` een ``int`` als resultaat geeft, krijgen we dus ``131`` op het scherm en niet het Unicode element 131 (we zien verderop hoe je dit wel kunt doen).
 {% endhint %}
 
+<!---NOBOOKSTART--->
+### Kennisclip
+![](../assets/infoclip.png)
+
+
+* [Escape characters](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e80901c9-0baa-47d3-9c18-ac380085c4d1)
+<!---NOBOOKEND--->

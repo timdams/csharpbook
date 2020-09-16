@@ -138,5 +138,6 @@ Namelijk:  ``Ik ben 13 en ik ben 13 jaar oud.``
 ### Kennisclip
 ![](../assets/infoclip.png)
 
-* [String interpolation](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a3d572bc-f72d-4622-9875-abe300b9ecf7)
+
+* [String interpolation](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a054ae85-1e31-44ba-b3fb-ac38008554a1)
 <!---NOBOOKEND--->
