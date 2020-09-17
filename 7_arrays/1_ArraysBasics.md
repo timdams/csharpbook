@@ -363,7 +363,7 @@ Hackers misbruiken dit soort fouten in code om toegang tot delen van het geheuge
 <!---{aside}--->
 <!--- {float:right, width:50%} --->
 ![](../assets/attention.png)
-Sorry dat ik je al weer lastig val. Maar ik wil je nog eens extra goed naar bovestaande fout (*exception*) laten kijken. Prent die fout, **Out of Range exception**, goed in je hoofd. 
+Sorry dat ik je al weer lastig val. Maar ik wil je nog eens extra goed naar bovenstaande fout (*exception*) laten kijken. Prent die fout, **Out of Range exception**, goed in je hoofd. 
 
 Deze fout zegt exact wat er mis is: je probeert elementen in een arrays te benaderen die niet bestaan omdat je buiten het bereik (*range*) van de array bent gegaan. Het is hetzelfde als wanneer ik tegen m'n personeel zeg "ga jij de muur alvast metsen op de zesde verdieping" (``etage[5]``) terwijl we een flatgebouw met maar 3 verdiepingen hebben (``.Length`` is dus 3). 
 <!---{/aside}--->
