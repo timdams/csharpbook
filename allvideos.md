@@ -20,7 +20,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Essentie van C#](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5ada7611-488b-4890-94b7-ac3300c413f7)
 * [Datatypes](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1b40cd70-3224-486b-846a-ac38009741af)
 * [Variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17b14f94-5805-4ce1-a4d6-ac3800a51815)
-* [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3a0370ef-b3da-4642-aeaa-a9660083e329)
+* [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=67287dee-b3b8-49a6-886c-ac3a00a1eb65)
 
 
 ### Hoofdstuk 3 - Tekst gebruiken in code

@@ -214,5 +214,5 @@ Nu krijgt het gedeelte tussen de haakjes een ``double`` als resultaat, namelijk 
 <!---NOBOOKSTART--->
 ## Kennisclip
 ![](../assets/infoclip.png)
-* [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3a0370ef-b3da-4642-aeaa-a9660083e329)
+* [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=67287dee-b3b8-49a6-886c-ac3a00a1eb65)
 <!---NOBOOKEND--->
