@@ -128,8 +128,7 @@ Je kan echter geen kommagetallen aan ``int`` toewijzen. Als je dus twee ``double
 int otherResult= 3.1 / 45.2;  //dit is fout!!!
 ```
 
-Bovenstaande code geeft volgende fout:
-![Voorspelling: deze error zal je vaak tegenkomen.](../assets/1_csharpbasics/casterror.jpg)
+Bovenstaande code geeft volgende fout: ``Cannot implicitly convert double to int.``
 
 **Let hier op!**
 

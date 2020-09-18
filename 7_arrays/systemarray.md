@@ -32,7 +32,7 @@ Array.Reverse(myColors);
 <!---{pagebreak} --->
 
 ### Clear: Arrays leegmaken
-Een array volledig leegmaken (alle elementen op hun standaard waarde zetten (bv. ``0`` bij ``int`` of ``false`` bij ``bool``)) doe je met de ``Array.Clear()``-methode, als volgt:
+Een array volledig leegmaken (alle elementen op hun standaard waarde zetten (bv. ``0`` bij ``int`` of ``false`` bij ``bool``) doe je met de ``Array.Clear()``-methode, als volgt:
 
 ```java
 Array.Clear(myColors);
