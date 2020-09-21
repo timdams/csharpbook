@@ -246,3 +246,9 @@ Gebruik parsing enkel wanneer je:
 
 1. een ``string`` hebt waarvan je weet dat deze altijd van een specifiek type zal zijn, bv een ``int``, dan kan je ``Int32.Parse()`` gebruiken.
 2. input van de gebruiker vraagt (bv via ``Console.ReadLine``) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()``. (meer info in de appendix)).
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [Casting, conversie en parsing](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5a8cecfa-e8fb-41c8-8ec1-ac3d008960a7)
+<!---NOBOOKEND--->

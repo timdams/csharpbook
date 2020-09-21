@@ -110,7 +110,7 @@ Random a = new Random(666);
 <!---NOBOOKEND--->
 
 <!---NOBOOKSTART--->
-### Kennisclip
+## Kennisclip
 ![](../assets/infoclip.png)
-* [Random toepassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ffa0ea68-0b47-4446-9922-a91100d3f61e)
+* [Random](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b3c83c9c-5e84-45b8-949b-ac3d00a41820)
 <!---NOBOOKEND--->

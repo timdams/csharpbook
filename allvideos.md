@@ -32,12 +32,11 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 
 ### Hoofdstuk 4 - Werken met data
 
-* [Meerdere projecten in 1 solution](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a)
-* [De Math-bibliotheek](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4d790ab9-e3b9-4e4b-bf59-a976007197fa)
-* [Debuggen in VS ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a78b3bf5-ef96-4c2a-8248-a976006fabd1)
-
-* [Je resultaat aan iemand anders geven](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b)
-* [Random toepassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ffa0ea68-0b47-4446-9922-a91100d3f61e)
+* [Casting, conversie en parsing](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5a8cecfa-e8fb-41c8-8ec1-ac3d008960a7)
+* [Input verwerken en omzetten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6e8b098-c0ad-40d6-9a29-ac3d008db7ab)
+* [Math-library en berekeningen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3819340c-9222-4814-b1e7-ac3d009788cb)
+* [Afronden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c4dfd175-47ec-4b1a-af7a-ac3d009afb99)
+* [Random](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b3c83c9c-5e84-45b8-949b-ac3d00a41820)
 
 ### Hoofdstuk 5 - Beslissingen
 

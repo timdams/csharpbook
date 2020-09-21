@@ -88,8 +88,8 @@ De applicaties die wij in dit boek ontwikkelen zijn niet groot genoeg om over te
 {% endhint %}
 
 <!---NOBOOKSTART--->
-### Kennisclip
+## Kennisclip
 ![](../assets/infoclip.png)
-* [De Math-bibliotheek](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4d790ab9-e3b9-4e4b-bf59-a976007197fa)
-
+* [Math-library en berekeningen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3819340c-9222-4814-b1e7-ac3d009788cb)
+* [Afronden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c4dfd175-47ec-4b1a-af7a-ac3d009afb99)
 <!---NOBOOKEND--->

@@ -59,3 +59,11 @@ De invoer van kommagetallen door de gebruiker is afhankelijk van de landinstelli
 {% hint style='tip' %}
 En wat als je toch foute invoer wilt opvangen? Zoals eerder aangegeven: dan is ``TryParse`` je vriend (zie appendix).
 {% endhint %}
+
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+
+* [Input verwerken en omzetten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6e8b098-c0ad-40d6-9a29-ac3d008db7ab)
+<!---NOBOOKEND--->
