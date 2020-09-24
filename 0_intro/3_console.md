@@ -38,14 +38,14 @@ result = Console.ReadLine();
 
 Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont en wacht op invoer. Je kan nu eender wat intypen en van zodra je op enter duwt gaat het programma verder (in dit geval stopt het programma hierna dus).
 
-### Input gebruiker verwerken en gebruiken
+### Input gebruiker gebruiken
 
 We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``,  gebruiken en tonen op het scherm. 
 
 ```java
 Console.WriteLine("Dag ");
 Console.WriteLine(result);
-Console.WriteLine(" oe gaat het met je?");
+Console.WriteLine(" hoe gaat het met je?");
 ```
 
 In de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. 
