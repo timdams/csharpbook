@@ -61,5 +61,8 @@ In volgende voorbeeld is dit dus wel geldig, daar de scope van de eerste variabe
 <!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
-* [Scope ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f)
+
+* [Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=16593f9b-a0fa-4b9b-a869-ac4600958190)
+
+
 <!---NOBOOKEND--->

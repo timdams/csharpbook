@@ -283,3 +283,11 @@ Het is dan ook aangeraden om, zeker in het begin, om steeds een flowchart te tek
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->
+
+<!---NOBOOKSTART--->
+### Kennisclip
+![](../assets/infoclip.png)
+
+* [If](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e1565009-be4b-4fed-a1fa-ac46009522dc)
+
+<!---NOBOOKEND--->

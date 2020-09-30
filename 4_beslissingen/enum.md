@@ -268,5 +268,8 @@ if(spelstuk== Schaakstuk.Paard)
 <!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
-* [Enums gebruiken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9273e56b-1bfa-4393-a14a-aaed00bd4eaf)
+
+* [Enum](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=41f45fba-c731-4f0a-9e87-ac4600952274)
+* [Demo: Enums gebruiken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9273e56b-1bfa-4393-a14a-aaed00bd4eaf)
+
 <!---NOBOOKEND--->

@@ -89,3 +89,12 @@ switch (option)
 ```
 
 In dit geval zullen zowel de waarden ``2`` en ``3`` resulteren in de zin "Laden of opslaan gekozen" op het scherm.
+
+<!---NOBOOKSTART--->
+### Kennisclip
+![](../assets/infoclip.png)
+
+* [Switch](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ce2ae654-bd58-45ed-915f-ac460095237f)
+
+
+<!---NOBOOKEND--->

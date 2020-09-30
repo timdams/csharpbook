@@ -79,5 +79,8 @@ Wat zal de uitkomst zijn van volgende expressies?
 <!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
-* [Logische operators en expressies ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4602c8f9-1540-427e-8fd8-a91100bc3abb)
+
+* [Logische operators en expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0cc5ce02-e957-4de0-980b-ac4600952358)
+
+
 <!---NOBOOKEND--->
