@@ -9,7 +9,7 @@ stud1.Naam= "Test";
 
 Dit zal een fout geven. ``stud1`` bevat namelijk nog geen referentie. Maar wat dan wel?
 
-Deze variabele bevat de waarde **``null``** . Net zoals bij value types die een default waarde hebben (bv. 0 bij een ``int`` ) als je er geen geeft, zo bevat reference types altijd ``null``.
+Deze variabele bevat de waarde **``null``** . Net zoals bij value types die een default waarde hebben (bv. 0 bij een ``int`` ) als je er geen geeft, zo bevatten reference type variabelen altijd ``null``. 
 
 ### NullReferenceException
 
@@ -25,7 +25,7 @@ Console.WriteLine(stud1.Name);
 
 Dit zal resulteren in volgende foutboodschap:
  
- ![NullReferenceException error in VS](../assets/6_klassen/nullref.png)
+![NullReferenceException error in VS](../assets/6_klassen/nullref.png)
 
 {% hint style='tip' %}
 We moeten in dit voorbeeld expliciet ``=null`` plaatsen daar Visual Studio slim genoeg is om je te waarschuwen voor eenvoudige potentiele NullReference fouten en je code anders niet zal compileren.

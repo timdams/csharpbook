@@ -1,32 +1,45 @@
 ## Foreach loops
 
+In het vorige boekdeel bespraken we reeds de ``while``, ``do while`` en `` for``-loops. Er is echter een vierde soort loop in C# die vooral bij zijn nut zal bewijzen wanneer we met arrays van objecten werken: de ``foreach`` loop.
+
 Wanneer je geen indexering nodig hebt, maar toch snel over alle elementen in een array wenst te gaan, dan is het **foreach** statement een zeer nuttig is.
-Een foreach loop zal ieder element in de array een voor een in een tijdelijke variabele plaatsen (de **iteration variable**).
-Volgende code toont de werking waarbij we een array van doubles hebben en alle elementen er in op het scherm willen tonen:
+Een ``foreach`` loop zal ieder element in de array één voor één in een tijdelijke variabele plaatsen (de **iteration variable**) zodat binnenin de loop met dit ene element kan gewerkt worden. Het voordeel hierbij is dat je geen teller/index nodig hebt en dat loop zelf de lengte van de array zal bepalen: *je code wordt net iets leesbaarder* voor leken als we dit bijvoorbeeld vergelijken met hoe een ``for`` loop geschreven is.
+
+Volgende code toont de werking waarbij we een array van `doubles` hebben en alle elementen ervan op het scherm willen tonen:
 
 ```java
 double[] killdeathRates= {1.2, 0.89, 3.15, 0.1};
+
 foreach (double kdrate in killdeathRates)
 {
    Console.WriteLine($"Kill/Death rate is {kdrate}");
 }
 ```
 
-De eerste keer dat we in de loop gaan zal het element ``killdeathRates[0]`` aan ``kdrate`` toegewezen worden voor gebruik in de loop-body, vervolgens wordt ``killdeathRates[1]`` toegewezen, enz.
+Het belangrijkste nieuwe concept is de *iteration variable* die we definiëren als ``kdrate``. Deze moet uiteraard van het type zijn van de individuele elementen in de array. Vervolgens schrijven we het nieuwe keyword  ``in`` gevolgd door de array waar we over wensen te itereren. 
 
-Het voordeel is dat je dus geen teller/index nodig hebt en dat foreach zelf de lengte van de array zal bepalen.
+De eerste keer dat we in de loop gaan zal het element ``killdeathRates[0]`` aan ``kdrate`` toegewezen worden voor gebruik in de loop-body, vervolgens wordt ``killdeathRates[1]`` toegewezen, enz. De output zal dan zijn:
 
-{% hint style='warning' %}
+```text
+Kill/Death rate is 1.2
+Kill/Death rate is 0.89
+Kill/Death rate is 3.15
+Kill/Death rate is 0.1
+
+```
+
+
 
 ### Opgelet bij het gebruik van foreach loops
 
-* De foreach iteration variable is *read-only*: je kan dus geen waarden in de array aanpassen, enkel uitlezen.
-* De foreach gebruik je enkel als je alle elementen van een array wenst te benaderen. In alle andere gevallen zal je een ander soort loop (for, while, etc.) moeten gebruiken.
-{% endhint %}
+De foreach loop is weliswaar leesbaarder en eenvoudiger in gebruikt, er zijn ook 2 erg belangrijke nadelen aan:
 
-### var keyword
+* De foreach iteration variable is *read-only*: je kan dus geen waarden in de array aanpassen, enkel uitlezen. Dit ogenschijnlijk eenvoudige zinnetje heeft echter veel gevolgen. Je kan met een ``foreach``-loop dus **nooit de inhoud van de variabele aanpassen**. Wens je dat wel te doen, dan dien je de klassieke ``while``, ``do while`` of ``for`` loops te gebruiken.
+* De foreach loop gebruik je enkel als je **alle elementen van een array wenst te benaderen**. In alle andere gevallen zal je een ander soort loop moeten gebruiken. 
 
-C# heeft een **``var``** keyword. Je mag dit keyword gebruiken ter vervanging van het type (bv int) op voorwaarde dat de compiler kan achterhalen wat het type moet zijn.
+## Het ``var`` keyword
+
+C# heeft een **``var``** keyword. Je mag dit keyword gebruiken ter vervanging van het datatype (bv ``int``) op voorwaarde dat de compiler kan achterhalen wat het type (*implicit type*) moet zijn aan de hand van de expressie rechts van de toekenningsoperator.
 
 ```java
 var getal= 5; //var zal int zijn
@@ -35,17 +48,18 @@ var tekst= "Hi there handsome"; //var zal string zijn
 ```
 
 {% hint style='warning' %}
-**Opgelet**: het ``var`` keyword is gewoon een *lazy programmer syntax toevoeging* om te voorkomen dat je als programmer niet constant het type moet schrijven
+**Opgelet**: het ``var`` keyword is gewoon een *lazy programmer syntax toevoeging* om te voorkomen dat je als programmeur niet constant het type moet schrijven.
+
+
+Bij JavaScript heeft ``var`` een totaal andere functie, daar zegt het eigenlijk: "het type dat je in deze variabele kan steken is...variabel". M.a.w. het kan de ene  keer een ``string`` zijn, dan een int. Bij C# gaat dit niet: eens je een variabele aanmaakt dan zal dat type onveranderbaar zijn en kan je er alleen waarden aan toekennen van dat type. JavaScript is namelijk een *dynamically typed language* terwijl C# een *statically typed language* is (er is één uitzondering bij C# hieromtrent: wanneer je met ``dynamic`` leert werken kan je C# ook tijdelijk als een dynamically typed taal gebruiken, maar dat wordt niet besproken in dit boek).
+
 {% endhint %}
-
-Bij JavaScript heeft var een totaal andere functie: het zegt eigenlijk "het type dat je in deze variabele kan steken is...variabel", m.a.w. het kan de ene  keer een string zijn, dan een int. Bij C# gaat dit niet: eens je een variabele aanmaakt dan zal dat type onveranderbaar zijn.
-
-> JavaScript is a dynamically typed language, while c# is (usually) a statically typed language ([stackoverflow.com](https://stackoverflow.com/questions/8457813/difference-between-the-implementation-of-var-in-JavaScript-and-c-sharp))
 
 ### var en foreach
 
-Wanneer je de Visual Studio [code snippet](https://msdn.microsoft.com/en-us/library/z41h7fat.aspx) voor foreach gebruikt ``foreach [tab][tab]`` dan zal deze code ook een var gebruiken voor de iteration variabele. De compiler kan aan de te gebruiken array zien wat het type van een individueel element in de array moet zijn.
-De foreach van zonet kan dus herschreven worden naar:
+Wanneer je de Visual Studio code snippet voor ``foreach`` gebruikt ``foreach [tab][tab]`` dan zal deze code ook een ``var`` gebruiken voor de iteration variabele. De compiler kan aan de te gebruiken array zien wat het type van een individueel element in de array moet zijn.
+
+De foreach die we zonet gebruikten kan dus herschreven worden naar:
 
 ```java
 foreach (var kdrate in killdeathRates)
@@ -53,6 +67,8 @@ foreach (var kdrate in killdeathRates)
    Console.WriteLine($"Kill/Death rate is {kdrate}");
 }
 ```
+
+Merk op dat dit hoegenaamd geen invloed heeft op je applicatie. Wanneer je code gaat compileren die het keyword ``var`` bevatten dan zal de compiler eerst alle *vars* vervangen door het juiste type, én dan pas beginnen compileren.
 
 <!---NOBOOKSTART--->
 # Kennisclip

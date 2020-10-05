@@ -1,4 +1,4 @@
-# Gevorrderde klasseconcepten
+# Gevorderde klasseconcepten
 
 ## Constructors
 
@@ -38,11 +38,11 @@ Van zodra je echter beslist om zelf een of meerdere constructors te schrijven za
 {% endhint %}
 
 
-### Default constructor
+## Default constructors
 
 De default constructor is een constructor die geen extra parameters aanvaardt. Een constructor bestaat ALTIJD uit volgende vorm:
 
-* Dit semester is iedere constructor altijd ``public`` ([meer info](https://stackoverflow.com/questions/30995942/do-constructors-always-have-to-be-public))
+* Dit semester is iedere constructor altijd ``public``
 * Heeft geen returntype, ook niet ``void``.
 * Heeft als naam de naam van de klasse zelf.
 
@@ -94,7 +94,7 @@ class Student
 
 Telkens we nu een object zouden aanmaken met ``new Student()`` zal deze een willekeurige leeftijd hebben.
 
-#### Opmerking bij voorgaande code
+### Opmerking bij voorgaande code
 
 * Als je twee of meerdere Studenten snel in je code na mekaar aanmaakt zullen deze dezelfde leeftijd hebben. Dit is omdat ieder object z'n eigen ``Random`` aanmaakt en zoals we weten zal een random generator dezelfde getallen genereren als deze vlak na mekaar (in tijd) zijn aangemaakt. Een oplossing zullen we hier later voor zien. Spoiler, ``static`` is de oplossing hiervoor:
 

@@ -1,4 +1,4 @@
-### Overloaded constructor
+## Overloaded constructors
 
 Soms wil je parameters aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. 
 Met andere woorden, stel dat we dit willen schrijven:
@@ -9,7 +9,7 @@ Student jos= new Student(19);
 
 Als we dit met voorgaande klasse , die enkel een default constructor heeft, uitvoeren zal de code een fout geven. C# vindt geen constructor die een int als parameter aanvaardt.
 
-[Net zoals bij overloading van methoden](../6_methoden/3_advancedmethod.md) kunnen we ook constructors overloaden. De code is verrassen gelijkaardig als bij method overloading:
+Net zoals bij overloading van methoden kunnen we ook constructors overloaden. De code is verrassend gelijkaardig aan method overloading:
 
 ```java
 class Student
@@ -24,7 +24,7 @@ class Student
 
 ```
 
-Dat was eenvoudig he.
+Dat was eenvoudig, hé?
 
 **Maar** denk eraan: je hebt een overloaded constructor geschreven en dus heeft C# gezet "ok, je schrijft zelf constructor, trek je plan. Maar de default zal je ook zal moeten schrijven!"
 Je kan nu enkel je objecten met ``new Student(25)`` aanmaken. Schrijf je ``new Student()`` dan zal je een error krijgen. Wil je die constructor, de default constructor, nog hebben dan zal je die dus ook moeten schrijven, bijvoorbeeld:
@@ -49,7 +49,7 @@ class Student
 
 ```
 
-#### Meerdere overloaded constructors
+### Meerdere overloaded constructors
 Wil je meerdere overloaded constructors dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
 
 ```java
