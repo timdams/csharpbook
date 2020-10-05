@@ -179,6 +179,5 @@ Je ziet dat de test achteraan (``while(input...);``) buiten de accolades van de 
 
 ![](../assets/infoclip.png)
 
-* [De while loop en soorten loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3d1f021e-0152-4dcd-9e73-a99800b53707)
-* [Do-while loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=82314092-f4bf-408b-bb3f-a99800b6f1c8)
+* [While en Do-while loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0b11650a-9e8f-4447-99da-ac4b00924061)
 <!---NOBOOKEND--->
