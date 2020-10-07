@@ -1,6 +1,6 @@
 ## Foreach loops
 
-In het vorige boekdeel bespraken we reeds de ``while``, ``do while`` en `` for``-loops. Er is echter een vierde soort loop in C# die vooral bij zijn nut zal bewijzen wanneer we met arrays van objecten werken: de ``foreach`` loop.
+In het vorige boekdeel bespraken we reeds de ``while``, ``do while`` en `` for``-loops. Er is echter een vierde soort loop in C# die vooral zijn nut zal bewijzen wanneer we met arrays van objecten werken: de ``foreach`` loop.
 
 Wanneer je geen indexering nodig hebt, maar toch snel over alle elementen in een array wenst te gaan, dan is het **foreach** statement een zeer nuttig is.
 Een ``foreach`` loop zal ieder element in de array één voor één in een tijdelijke variabele plaatsen (de **iteration variable**) zodat binnenin de loop met dit ene element kan gewerkt worden. Het voordeel hierbij is dat je geen teller/index nodig hebt en dat loop zelf de lengte van de array zal bepalen: *je code wordt net iets leesbaarder* voor leken als we dit bijvoorbeeld vergelijken met hoe een ``for`` loop geschreven is.
@@ -28,14 +28,44 @@ Kill/Death rate is 0.1
 
 ```
 
+Stel dat we een array van Studenten hebben, ``deKlas``, en wensen van deze studenten de naam en geboortejaar op het scherm te tonen, dan kan dat met een ``foreach`` erg eenvoudig:
 
+```java
+foreach(Student eenStudent in deKlas)
+{
+   Console.WriteLine($"{eenStudent.Naam}, Geboortejaar: {eenStudent.GeboorteJaar}");
+}
+
+```
 
 ### Opgelet bij het gebruik van foreach loops
 
 De foreach loop is weliswaar leesbaarder en eenvoudiger in gebruikt, er zijn ook 2 erg belangrijke nadelen aan:
 
-* De foreach iteration variable is *read-only*: je kan dus geen waarden in de array aanpassen, enkel uitlezen. Dit ogenschijnlijk eenvoudige zinnetje heeft echter veel gevolgen. Je kan met een ``foreach``-loop dus **nooit de inhoud van de variabele aanpassen**. Wens je dat wel te doen, dan dien je de klassieke ``while``, ``do while`` of ``for`` loops te gebruiken.
+* De foreach iteration variabele is *read-only*: je kan dus geen waarden in de array aanpassen, enkel uitlezen. Dit ogenschijnlijk eenvoudige zinnetje heeft echter veel gevolgen. Je kan met een ``foreach``-loop dus **nooit de inhoud van de variabele aanpassen**. Wens je dat wel te doen, dan dien je de klassieke ``while``, ``do while`` of ``for`` loops te gebruiken.
 * De foreach loop gebruik je enkel als je **alle elementen van een array wenst te benaderen**. In alle andere gevallen zal je een ander soort loop moeten gebruiken. 
+
+
+{% hint style='warning' %}
+Het feit dat de foreach iteration variabele read-only is wil niet zeggen dat we de inhoud van het onderliggend object niet kunnen aanpassen. De iteration variabele krijgt bij een array van objecten telkens een referentie naar het huidige element. Dit referentie kunnen we niet aanpassen, maar we mogen wel de referentie "volgen" om vervolgens iets in het huidige object aan te passen.
+
+Dit mag dus niét:
+```java
+foreach(Student eenStudent in deKlas)
+{
+   eenStudent= new Student();
+}
+```
+
+Maar dit mag wél:
+```java
+foreach(Student eenStudent in deKlas)
+{
+   eenStudent.Geboortejaar++;
+}
+```
+
+{% endhint %}
 
 ## Het ``var`` keyword
 

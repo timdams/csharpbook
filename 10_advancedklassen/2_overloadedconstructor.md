@@ -9,7 +9,7 @@ Student jos= new Student(19);
 
 Als we dit met voorgaande klasse , die enkel een default constructor heeft, uitvoeren zal de code een fout geven. C# vindt geen constructor die een int als parameter aanvaardt.
 
-Net zoals bij overloading van methoden kunnen we ook constructors overloaden. De code is verrassend gelijkaardig aan method overloading:
+Net zoals bij overloading van methoden  kunnen we ook constructors overloaden. De code is verrassend gelijkaardig aan method overloading:
 
 ```java
 class Student

@@ -127,7 +127,22 @@ Op deze manier hebben we nog steeds een referentie naar ``myDisk`` en zal de GC 
 Kortom, niets nieuws onder de zon. Alle manieren die ja al kende om met bestaande types objecten aan te maken gelden nog steeds. Compositie deed je al de hele tijd wanneer je bijvoorbeeld zei "een student heeft een leeftijd" en dan een variabele ``int age`` aanmaakte. Het grote verschil is echter dat objecten moeten geïnstantieerd worden , wat niet moest met value-types. 
 {/blurb}
 
+## Compositie en aggregatie objecten gebruiken
 
+Stel je voor dat de klasse ``Disk`` ook een autoproperty ``MaxCapacity`` heeft. De klasse ``PC`` kan dankzij compositie dus nu ook die property gebruiken, zoals volgende voorbeeld toond:
+
+```java
+class PC
+{
+    private Disk cDisk=new Disk();
+
+    public void ToonComputerInfo()
+    {
+        Console.WriteLine("Dit is een Intel i9");
+        Console.WriteLine($"De harde schijf heeft een capaciteit van {cDisk.MaxCapacity} Gb");
+    }
+}
+```
 
 {blurb, class: warning}
 ### NullReference is een klassieke fout
