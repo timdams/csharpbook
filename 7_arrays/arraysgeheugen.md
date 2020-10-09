@@ -84,3 +84,10 @@ Er is een ingebouwde methode in de ``Array``-bibliotheek (deze bibliotheek zien 
 {% hint style='warning' %}
 Opgelet: wanneer je met arrays van objecten (zie het tweede boekdeel) werkt dan zal bovenstaande mogelijk niet het gewenste resultaat geven daar we nu ook de individuele referenties van een object kopiëren!
 {% endhint %}
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [Arrays en geheugen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1a57ab27-bb21-4bd8-8b37-ac4f00d3cf97)
+
+<!---NOBOOKEND--->

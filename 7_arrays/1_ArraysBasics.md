@@ -397,3 +397,11 @@ for (int i = 0; i < getallen.Length; i++)
         Console.WriteLine(getallen[i]);
 }
 ```
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [Arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1801903-4bd3-4004-b1cb-ac4f00d3cfdf)
+
+<!---NOBOOKEND--->
+
