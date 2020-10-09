@@ -72,3 +72,15 @@ Let er op dat ``break`` je enkel uit de huidige loop zal halen. Indien je dit du
 {% endhint %}
 
 
+
+
+
+
+<!---NOBOOKSTART--->
+## Kennisclip
+
+![](../assets/infoclip.png)
+
+* [Loop nesting](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c4a0d717-890e-4e74-bd79-ac4f008fdce4)
+* [Micro-tips om loop-opgaven op te lossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f1563c19-3b86-4603-a86d-ac4f00924132)
+<!---NOBOOKEND--->
