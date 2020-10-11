@@ -47,7 +47,7 @@ De foreach loop is weliswaar leesbaarder en eenvoudiger in gebruikt, er zijn ook
 
 
 {% hint style='warning' %}
-Het feit dat de foreach iteration variabele read-only is wil niet zeggen dat we de inhoud van het onderliggend object niet kunnen aanpassen. De iteration variabele krijgt bij een array van objecten telkens een referentie naar het huidige element. Dit referentie kunnen we niet aanpassen, maar we mogen wel de referentie "volgen" om vervolgens iets in het huidige object aan te passen.
+Het feit dat de foreach iteration variabele read-only is wil niet zeggen dat we de inhoud van het onderliggend object niet kunnen aanpassen. De iteration variabele krijgt bij een array van objecten telkens een referentie naar het huidige element. Dit referentie kunnen we niet aanpassen, maar we mogen wel de referentie "volgen" om vervolgens iets in het huidige object zelf aan te passen.
 
 Dit mag dus niét:
 ```java

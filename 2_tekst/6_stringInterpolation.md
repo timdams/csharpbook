@@ -134,6 +134,15 @@ string result= String.Format("Ik ben {1} en ben {1} jaar.",name,age);
 
 Namelijk:  ``Ik ben 13 en ik ben 13 jaar oud.``
 
+{% hint style='tip' %}
+Je kan deze vorm van formateren ook toepassen in ``Console.WriteLine`` zonder dat je expliciet ``String.Format`` hiervoor moet aanroepen:
+
+<!---{line-numbers:false}--->
+```java
+Console.WriteLine("Gratis formateren. {0} maal hoera voor .NET!", 3);
+```
+{% endhint %}
+
 <!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)

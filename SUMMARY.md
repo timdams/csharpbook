@@ -112,6 +112,8 @@
   * [Interfaces voorbeeld met president](16_interfaces/presidentinterfaces.md)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Final chapter: we brengen alles samen](18_IsAs/2_Polymorfisme_Interfaces.md)
+* Conclusie
+  *[En nu](ennu.md)
 * Appendix Zie Scherper 
   * [Klassen herbruiken](B_appendix/namespaces.md)
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
