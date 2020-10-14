@@ -68,7 +68,8 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 
 * [Arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d1801903-4bd3-4004-b1cb-ac4f00d3cfdf)
 * [Arrays en geheugen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1a57ab27-bb21-4bd8-8b37-ac4f00d3cf97)
-* [Zie volgend filmpje op 31 minuten voor uitleg over arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17ce5c87-2b6a-46ea-b7b1-a87e00a7e4e5)
+* [System.Array](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3b587f2c-fc98-42d1-81ed-ac54007d7a4b)
+* [Strings en arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=831314ae-c35f-4d6e-b7c0-ac54007d7abe)
 
 
 ## Semester 2

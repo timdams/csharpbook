@@ -131,3 +131,13 @@ Output op het scherm:
 ```java
 Ik Mercy
 ```
+
+
+
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [Strings en arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=831314ae-c35f-4d6e-b7c0-ac54007d7abe)
+
+<!---NOBOOKEND--->

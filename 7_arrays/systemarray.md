@@ -95,3 +95,11 @@ if(index >= 0)
 else
     Console.WriteLine("Niet gevonden");
 ```
+
+
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [System.Array](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3b587f2c-fc98-42d1-81ed-ac54007d7a4b)
+<!---NOBOOKEND--->
