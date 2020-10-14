@@ -93,3 +93,11 @@ do
 {% hint style='tip' %}
 Dat was het? Er zijn tal van andere algoritmes. Denk maar aan de verschillende manieren om arrays te sorteren (bijvoorbeeld de fameuze ``bubblesort`` en ``quicksort`` algoritmes). Al deze algoritmes hier bespreken zou een boek apart vereisen. We toonden daarom enkele ter illustratie.
 {% endhint %}
+
+
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [Algoritmes en arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=90e32a53-b9ac-4162-a3e9-ac5400879d81)
+<!---NOBOOKEND--->
