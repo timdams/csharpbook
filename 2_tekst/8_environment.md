@@ -23,7 +23,7 @@ long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 Vervolgens zou je dan de inhoud van die variabelen kunnen gebruiken om bijvoorbeeld aan de gebruiker te tonen wat z'n machine naam is:
 
 ```java
-Console.WriteLine($"Je computernaam is {pcName}");
+Console.WriteLine($"Je computernaam is {pcname}");
 Console.WriteLine($"en dit programma gebruikt {memory} byte geheugen");
 Console.WriteLine($"En je usernaam is {Environment.UserName}");
 ```
