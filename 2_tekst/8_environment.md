@@ -24,7 +24,7 @@ Vervolgens zou je dan de inhoud van die variabelen kunnen gebruiken om bijvoorbe
 
 ```java
 Console.WriteLine($"Je computernaam is {pcName}");
-Console.WriteLine($"en dit programma gebruikt {memory} Mb geheugen");
+Console.WriteLine($"en dit programma gebruikt {memory} byte geheugen");
 Console.WriteLine($"En je usernaam is {Environment.UserName}");
 ```
 
