@@ -192,3 +192,14 @@ Daar de methode nu werkt met een kopie, zal de aanpassing in de methode dus geen
 <!---NOBOOKSTART--->
 {% endhint %}
 <!---NOBOOKEND--->
+
+
+
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [Arrays en methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4f1a0fd6-697b-42d5-b44a-ac560097b2aa)
+
+
+<!---NOBOOKEND--->

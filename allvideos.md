@@ -71,6 +71,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [System.Array](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3b587f2c-fc98-42d1-81ed-ac54007d7a4b)
 * [Algoritmes en arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=90e32a53-b9ac-4162-a3e9-ac5400879d81)
 * [Strings en arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=831314ae-c35f-4d6e-b7c0-ac54007d7abe)
+* [Arrays en methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4f1a0fd6-697b-42d5-b44a-ac560097b2aa)
 
 
 
