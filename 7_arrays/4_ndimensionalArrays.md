@@ -137,3 +137,10 @@ Console.WriteLine(temperaturen.Rank); //geeft 3
 ```
 
 <!---{pagebreak} --->
+
+<!---NOBOOKSTART--->
+## Kennisclip
+![](../assets/infoclip.png)
+* [Meer-dimensionale arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9dea3f48-d5b9-4469-823c-ac590085d881)
+
+<!---NOBOOKEND--->
