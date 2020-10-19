@@ -116,6 +116,7 @@
   *[En nu](ennu.md)
 * Appendix Zie Scherper 
   * [Klassen herbruiken](B_appendix/namespaces.md)
+  * [Struct en record](B_appendix/struct.md)
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
   * [Expression bodied members](B_appendix/6_exprbody.md)
   * [Werken met git (in opbouw)](B_appendix/git.md)

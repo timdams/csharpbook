@@ -9,19 +9,21 @@ Wanneer een C# applicatie wordt uitgevoerd krijgt het twee soorten geheugen toeg
 1. Het kleine, maar snelle **stack** geheugen
 2. Het grote, maar tragere **heap** geheugen
 
-Afhankelijk van het soort variabele wordt ofwel de stack, ofwel de heap gebruikt. **Het is uitermate belangrijk dat je weet in welk geheugen de variabele zal bewaard worden!**
+Afhankelijk van het soort variabele wordt ofwel de stack, ofwel de heap gebruikt. **Het is uitermate belangrijk dat je weet in welk geheugen de variabele zal bewaard worden!** 
 
-Er zijn namelijk twee soorten variabelen:
+Er zijn twee soorten variabelen:
 
 1. Value types
 2. Reference types
+
+Afhankelijk van het type variabele zal deze ofwel in de heap oftewel in de stack bewaard worden. 
 
 Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 
 |         | Value types           | Reference types  |
 | ------------- |-------------| -----|
 |Inhoud van de variabele    | De eigenlijke data | Een referentie naar de eigenlijke data |
-|Locatie      | (Data) **Stack**      |   **Heap** (globaal)geheugen |
+|Locatie      |  **Stack**      |   **Heap**  |
 | Beginwaarde | ``0``,``0.0``, ``""``,``false``, etc.      |    ``null`` |
 | Effect van = operator | Kopieert de actuele waarde     |   Kopieert het adres naar de actuele waarde |
 
@@ -29,17 +31,18 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 
 ### Waarom twee geheugens?
 
-Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal berekend worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd weet het OS perfect hoeveel geheugen het minstens moet reserveren. 
+Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal berekend worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd weet het OS perfect hoeveel geheugen het minstens moet reserveren bij het besturingssysteem.
 
-Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Een variabele van het type ``int`` is perfect geweten hoe groot die zal zijn (32 bit). Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen?
-Het zou nutteloos (en zonde) zijn om reeds bij aanvang een bepaalde hoeveelheid voor een array te reserveren als we niet weten hoe groot die zal worden. Beeld je maar eens in dat we 2k byte reserveren om dan te ontdekken dat we maar 5byte ervan nodig hebben. RAM is goedkoop, maar toch...
+Er is echter een probleem: de compiler kan niet alles perfect berekenen of voorspellen. Een variabele van het type ``int`` is perfect geweten hoe groot die zal zijn (32 bit). Maar wat met een string die je aan de gebruiker vraagt? Of wat met een array waarvan we pas tijdens de uitvoer de lengte gaan berekenen gebaseerd op *runtime* informatie. 
 
-De heap laat ons dus toe om geheugen op een wat minder gestructureerde manier in te palmen. Tijdens de uitvoer van het programma zal de heap als het ware dienst doen als een grote zandbak waar eender welke plek kan ingepalmd worden om zaken te bewaren. De stack daarentegen is het kleine bankje naast de zandbak: handig, snel, en perfect geweten hoe groot.
+Het zou nutteloos (en zonde) zijn om reeds bij aanvang een bepaalde hoeveelheid stackgeheugen voor een array te reserveren als we niet weten hoe groot die zal worden. Beeld je in dat alle applicaties op je computer *voor alle zekerheid* een halve gigabyte aan geheugen zouden vragen: "just in case". Je computer zou enkele terrabyte aan geheugen nodig hebben. Het is dus veel realistischer om enkel het geheugen te reserveren waar de compiler 100% zeker van is dat deze zal nodig zijn.
 
-### Value types
+De heap laat ons toe om geheugen op een wat minder gestructureerde manier in te palmen. Tijdens de uitvoer van het programma zal de heap als het ware dienst doen als een grote zandbak waar eender welke plek kan ingepalmd worden om zaken te bewaren (op voorwaarde dat die vrij is natuurlijk) De stack daarentegen is het kleine bankje naast de zandbak: handig, snel, en perfect geweten hoe groot.
 
-**Value** types worden in de stack bewaard. De effectieve waarde van de variabele wordt in de stack bewaard.
-Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, inclusief enums en structs (zie later):
+### Value types in de stack
+
+**Value** type variabelen worden in de stack bewaard. **De effectieve waarde van de variabele wordt in de stack bewaard.**
+Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, inclusief enums en structs:
 * ``sbyte``, ``byte``
 * ``short``, ``ushort``
 * ``int``, ``uint``
@@ -47,19 +50,19 @@ Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, in
 * ``char``
 * ``float``, ``double``, ``decimal``
 * ``bool``
-* structs (zien we niet in dit boek)
-* enums
+* structs (zie appendix)
+* enums (zie het vorige boek)
 
 ### = operator bij value types
 
-Wanneer we een value-type willen kopiëren dan kopiëren de echte waarde:
+Wanneer we een value-type willen kopiëren dan kopiëren de actuele waarde:
 
 ```java
-int getal=3;
-int anderGetal= getal;
+int getal = 3;
+int anderGetal = getal;
 ```
 
-Vanaf nu zal ``anderGetal`` de waarde ``3`` hebben. Als we nu een van beide variabelen aanpassen dan zal dit **geen** effect hebben op de andere variabelen.
+Vanaf nu zal ``anderGetal`` de waarde ``3`` hebben. Als we nu één van beide variabelen aanpassen dan zal dit **geen** effect hebben op de andere variabelen.
 
 We zien hetzelfde effect wanneer we een methode maken die een parameter van het value type aanvaardt - we geven een kopie van de variabele mee:
 
@@ -75,7 +78,9 @@ int getal= 5;
 DoeIets(getal);
 Console.WriteLine($"Na methode {getal}");
 ```
+
 De parameter ``a`` zal de waarde ``5`` gekopieerd krijgen. Maar wanneer we nu zaken aanpassen in ``a`` zal dit geen effect hebben op de waarde van ``getal``.
+
 De output van bovenstaand programma zal zijn:
 ```
 In methode 6
@@ -84,7 +89,7 @@ Na methode 5
 
 ### Reference types
 
-**Reference** types worden in de heap bewaard. De *effectieve waarde* wordt in de heap bewaard, en in de stack zal enkel een **referentie** of **pointer** naar de data in de heap bewaard worden. Een referentie (of pointer) is niet meer dan het geheugenadres naar waar verwezen wordt (bv. ``0xA3B3163``)  Concreet zijn dit alle zaken die vaak redelijk groot zullen zijn:
+**Reference** types worden in de heap bewaard. De *effectieve waarde* wordt in de heap bewaard, en in de stack zal enkel een **referentie** of **pointer** naar de data in de heap bewaard worden. Een referentie (of pointer) is niet meer dan het geheugenadres naar waar verwezen wordt (bv. ``0xA3B3163``)  Concreet zijn dit alle zaken die vaak redelijk groot zullen zijn of waarvan op voorhand niet kan voorspeld worden hoe groot ze *at runtime* zullen zijn:
 * objecten, interfaces en delegates
 * arrays
 
@@ -107,7 +112,7 @@ Wat gebeurt er hier?
 
 #### Bij arrays
 
-Maar ook bij arrays:
+Zoals we in het vorige boek hebben gezien zien we het zelfde gedrag bij arrays:
 
 ```java
 int[] nummers= {4,5,10};
@@ -117,6 +122,7 @@ int[] andereNummers= nummers;
 In dit voorbeeld zal ``andereNummers`` nu dus ook verwijzen naar de array in de heap waar de actuele waarden staan.
 
 Als we dus volgende code uitvoeren dan ontdekken we dat beide variabele naar dezelfde array verwijzen:
+
 ```java
 andereNummers[0]=999;
 Console.WriteLine(andereNummers[0]);
@@ -140,6 +146,10 @@ Console.WriteLine(a.Naam);
 ```
 
 We zullen in dit geval dus ``Queen`` op het scherm zien omdat zowel ``b`` als ``a`` naar het zelfde object in de heap verwijzen. Het originele "abba"-object zijn we kwijt en zal verdwijnen (zie Garbage collector verderop).
+
+{% hint style='warning' %}
+De meeste klassen zullen met value type properties en datavelden werken in zich, toch worden ook samen met het gehele object in de heap bewaard en niet in de stack. Kortom **het hele object** ongeacht de vorm van z'n inhoud wordt in de heap bewaard.
+{% endhint %}
 
 ### Methoden en reference parameters
 
@@ -191,6 +201,8 @@ Na methode 5
 Een essentieel onderdeel van .NET is de zogenaamde GC, de Garbage Collector. Dit is een geautomatiseerd onderdeel van ieder C# programma dat ervoor zorgt dat we geen geheugen nodeloos gereserveerd houden.
 De GC zal geregeld het geheugen doorlopen en kijken of er in de heap data staat waar geen references naar verwijzen. Indien er geen references naar wijzen zal dit stuk data verwijderd worden.
 
+![Data in de heap waar geen referenties naar wijzen zullen ten gepaste tijde verwijderd worden](../assets/5_arrays/gc2.png)
+
 In dit voorbeeld zien we dit in actie:
 
 ```java
@@ -211,9 +223,10 @@ array2=array;
 ```
 De variabele ``bewaarArray`` houdt dus een referentie naar ``{3,4,5}`` bij en we kunnen dus later via deze variabele alsnog aan de originele data.
 
-
-
-
+{% hint style='warning' %}
+De GC werkt niet continue daar dit te veel overhead van je computer zou vereisen. De GC zal gewoon om de zoveel tijd alle gereserveerde geheugenplekken van de applicatie controleren en die delen verwijderen die niet meer nodig zijn.  
+Je kan de GC manueel de opdracht geven om een opkuisbeurt te starten (``GC.Collect()``) maar dit is ten stelligste af te raden! De GC weet meestal beter dan ons wanneer er gekuist moet worden.
+{% endhint %}
 
 <!---NOBOOKSTART--->
 # Meer weten?
