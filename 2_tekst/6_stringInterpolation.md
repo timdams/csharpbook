@@ -102,15 +102,15 @@ double number = 12.345;
 Console.WriteLine($"{number:F2}");
 ```
 
-Er zal ``12.34`` op het scherm verschijnen: 
+Er zal ``12.35`` op het scherm verschijnen: 
 
-Merk op dat bij string formatting er **niet afgerond** wordt. C# zal eenvoudiger weg alle decimalen wegkappen die niet gewenst zijn, ongeacht hun waarde.
+Merk op dat bij string formatting er **afgerond** wordt. 
 
 {% hint style='tip' %}
 Nog enkele nuttige vormen:
 * D5: toon een geheel getal als een 5 cijfer getal (``123`` wordt ``00123``) (werkt uiteraard enkel op gehele getallen!)
 * E2: wetenschappelijke notatie met 2 cijfers precisie (``12000000`` wordt ``1,20E+007`` i.e. *"1 komma 2 maal tien tot de zevende"*)
-* C: geldbedrag (``12,34`` wordt € 12,34: teken van valuta afhankelijk van instellingen pc). 
+* C: geldbedrag (``12,34`` wordt  $ 12,34 : teken van valuta afhankelijk van instellingen pc). Het euro teken zal als een ``?`` getoond worden. In de volgende sectie tonen we hoe je dit kan oplossen.
 
   
 Alle overige format specifiers staan [hier opgelijst](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).

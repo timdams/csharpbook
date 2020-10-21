@@ -85,6 +85,21 @@ Dit geeft als output (``\t`` wordt door het apenstaartje genegeerd):
 ```
 {% endhint %}
 
+{% hint style='tip' %}
+In de vorige sectie legden we uit dat we tekst kunnen formateren als een geld bedrag m.b.v. ``Console.WriteLine($"{12.3456:C}");``. Het probleem was dat het euro-teken als een ``?`` op het scherm verscheen. Dit is omdat het euro-teken een nieuwe karakter is en dus binnen de Unicode tabellen bestaat, maar niet binnen de klassieke ASCII-tabel. Willen we dit teken dus gebruiken dan moeten we dus de regel `Console.OutputEncoding = System.Text.Encoding.UTF8;` gebruiken:
+
+```java
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+Console.WriteLine($"{12.3456:C}")
+```
+
+Zal als uitvoer geven:
+
+```text
+12,35 €
+```
+{% endhint %} 
+
 <!---NOBOOKSTART--->
 ### Kennisclip
 ![](../assets/infoclip.png)
