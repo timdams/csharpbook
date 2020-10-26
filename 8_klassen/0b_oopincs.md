@@ -62,7 +62,7 @@ Let goed op dat je dus op de juiste plekken dit alles doet (bekijk de onderstaan
 * Klassen maak je aan als aparte files in je project
 * Objecten creëer je in je code op de plekken dat je deze nodig hebt, bijvoorbeeld in je ``Main`` methode bij een Console-applicatie
 
-![basics oop same in vv](../assets/6_klassen/allessamen.png)
+![](../assets/6_klassen/allessamen.png)
 
 
 

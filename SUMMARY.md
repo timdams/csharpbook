@@ -6,7 +6,6 @@
   * [Benodigdheden](_intro/benodigdheden.md)
   * [Dankwoord](_intro/dankwoord.md)
 * [Oplijsting videos](allvideos.md)
-* [Oefeningen](oefeningen.md)
 
 ## Zie Scherp (Semester 1)
 
