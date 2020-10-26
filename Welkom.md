@@ -21,10 +21,10 @@ Zomer 2020
 
 Dit boek wordt gebruikt als handboek binnen de opleidingen professionele bachelor Elektronica-ICT en Toegepaste Informatica van de AP Hogeschool.
 
-Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programmeren met C\#':
+Concreet is dit het handboek voor het eerste van 2 semesters omtrent 'leren programmeren met C\#':
 
-* Zie Scherp: Programming Principles, eerste semester
-* Zie Scherper: Object Oriented Programming, tweede semester
+* Zie Scherp: Programming Principles, eerste semester (dit boek)
+* Zie Scherper: Object Oriented Programming, tweede semester (zie bovenaan)
 
 
 # Licensed under Creative Commmons Attribution-NonCommercial 4.0 International \(CC BY-NC 4.0\)

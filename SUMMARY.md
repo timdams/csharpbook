@@ -58,9 +58,10 @@
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
   * [Jagged arrays](7_arrays/5_jaggedArrays.md) 
-* Appendix 
-  * [Nuttige extras](_intro/nuttigeextras.md)
-  * [Wistjedatjes](B_appendix/prostuff.md)
-  * [Out,Ref en TryParse](B_appendix/2_outenref.md)
-  * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
-  * [Programma flow analyse](5_herhalingen/4_programflow.md)
+
+## Appendix 
+* [Nuttige extras](_intro/nuttigeextras.md)
+* [Wistjedatjes](B_appendix/prostuff.md)
+* [Out,Ref en TryParse](B_appendix/2_outenref.md)
+* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+* [Programma flow analyse](5_herhalingen/4_programflow.md)
