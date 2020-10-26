@@ -46,8 +46,8 @@ Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de bel
 * `\'` : de apostrof zoals zonet besproken
 * `\"` : een aanhalingsteken zodat je dat ook in je string kunt gebruiken zonder deze af te sluiten
 * `\\` : een backslash in je tekst tonen. Hoe toon je dan twee backslashes? ``"\\\\"``.
-* `\n` : New line (zogenaamde 'enter')
-* `\t` : Horizontal tab 
+* `\n` : een nieuwe lijn (zogenaamde 'enter' of *newline*)
+* `\t` : Horizontale tab 
 * `\uxxxx` – Unicode escape sequence for character with hex value xxxx
 
 
@@ -59,7 +59,7 @@ Aangezien strings eigenlijk bestaan uit 1 of meerdere char-elementen, is het log
 string woord= "\'s avonds";
 ```
 
-Idem met aanhalngstekens. Stel je voor dat je een programma wilt schrijven dat C# code op het scherm toont. Dat doe je dan met volgende, nogal Inception-achtige, manier:
+Idem met aanhalingstekens. Stel je voor dat je een programma wilt schrijven dat C# code op het scherm toont. Dat doe je dan met volgende, nogal Inception-achtige, manier:
 
 ```java
 string inceptionCode= "Console.WriteLine(\"Cool he\");";

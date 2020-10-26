@@ -43,9 +43,9 @@ Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont 
 We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``,  gebruiken en tonen op het scherm. 
 
 ```java
-Console.WriteLine("Dag ");
+Console.WriteLine("Dag");
 Console.WriteLine(result);
-Console.WriteLine(" hoe gaat het met je?");
+Console.WriteLine("hoe gaat het met je?");
 ```
 
 In de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. 
@@ -60,14 +60,11 @@ Je volledige programma ziet er dus nu zo uit:
 Console.WriteLine("Hello World!");
 Console.WriteLine("Hoi, ik ben het!");
 Console.WriteLine("Wie ben jij?!");
-
 string result;
 result = Console.ReadLine();
-
-Console.WriteLine("Dag");
+Console.WriteLine("Dag ");
 Console.WriteLine(result);
 Console.WriteLine("hoe gaat het met je?");
-
 ```
 
 Test het programma en voer je naam in wanneer de cursor knippert.

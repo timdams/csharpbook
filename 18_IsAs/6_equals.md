@@ -79,7 +79,7 @@ Het object met ``Y=5`` zijn we kwijt door de garbage collector: die heeft gezien
 De variabelen ``punt1`` en ``punt2`` zijn nu dus wel gelijk: ze hebben dezelfde inhoud, namelijk hetzelfde adres naar hetzelfde object.
 
 #### Objecten vergelijken zonder overerving
-Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle properties en private fields te vergelijken met elkaar van beide objecten. Althans, jij als programmeur moet beslissen wanneer 2 objecten gelijk zijn. Mogelijk vind je dat 2 punten gelijk zijn als ze beide dezelfde X-waarde hebben ongeacht de Y-waarde. Maar wij prefereren natuurlijk dat zowel de X als de Y-waarde dezelfde is en kunnen dus schrijven:
+Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle properties en private fields te vergelijken met elkaar van beide objecten. Althans, jij als programmeur moet beslissen wanneer 2 objecten gelijk zijn. Mogelijk vind je dat 2 punten gelijk zijn als ze beide dezelfde X-waarde hebben ongeacht de Y-waarde. Maar wij verkiezen natuurlijk dat zowel de X als de Y-waarde dezelfde is en kunnen dus schrijven:
 ```java
 if(punt1.X== punt2.X && punt1.Y== punt2.Y)
 ```

@@ -36,7 +36,7 @@ Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaart zou dat voor on
 
 De basistypen van C\# om getallen in op te slaan zijn:
 
-* Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long, ulong`
+* Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long, ulong` en `char`.
 * Voor kommagetallen: `double, float, decimal`
 
 Deze datatypes hebben allemaal een verschillend bereik, wat een rechtstreekse invloed heeft op de hoeveelheid geheugen die ze innemen.

@@ -6,7 +6,7 @@ Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassie
 
 Een programma zonder invoer van de gebruiker is niet erg boeiend. De meeste programma's die we leren schrijven vereisen dan ook "input" (**IN**). We moeten echter ook zaken aan de gebruiker kunnen tonen (bijvoorbeeld de uitkomst van een berekening, een foutboodschap, etc) wat dus vereist dat er "output" (**UIT**) naar het scherm kan gestuurd worden.
 
-![In het begin zullen al je applicatie deze opbouw hebben](../assets/1_csharpbasics/inuit.png)
+![In het begin zullen al je applicaties deze opbouw hebben](../assets/1_csharpbasics/inuit.png)
 
 
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:
