@@ -229,8 +229,9 @@ else if(x>100)
 }
 else
 //...
-{% endhint %}
+
 ```
+{% endhint %}
 
 {% hint style='tip' %}
 Hoe minder tests de computer moet doen, hoe meer performant de code zal uitgevoerd worden. Voor complexe applicaties die bijvoorbeeld in realtime veel berekeningen moeten doen kan het dus een gigantische invloed hebben of een reeks ``if/if-else`` testen vlot wordt doorlopen. Het is dan ook een goede gewoonte, indien de logica van het algoritme het toelaat, om de meest voorkomende test bovenaan te plaatsen. 
