@@ -216,7 +216,6 @@ else
 
 
 {% hint style='warning' %}
-
 De volgorde van opeenvolgende if/if-else tests is uiterst belangrijk. Als we in voorgaande code de twee tests omdraaien dan zal er nooit in het tweede block (``x>100``) gekomen worden. Logisch: neem een getal groter dan 100 en laat het door volgende code lopen. Stel, we nemen 110. Al bij de eerste test (``x>10``) is deze ``true`` en verschijnt er dus "Groter dan 10". Alle andere tests worden daarna niet meer gedaan en de code gaat verder na het ``else``-blok.
 ```java
 
