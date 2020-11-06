@@ -9,4 +9,4 @@
 * **Methoden met hoofdletter**: methoden starten steeds met een hoofdletter (bv. ``OpenDataBase``).
 * **Geen afkortingen**: Schrijf ``GetWindowsSize`` in plaats van ``GetWinSz``.
 * **``Enum``**: zowel de naam van het enum-type als de afzonderlijke waarden starten met een hoofdletter
-* **Solution/Project**: je VS solution en project-namen geef je steeds met een hoofdletter en volgt vervolgens de afspraken van identifiers: enkel liggende strepen, getallen en letters, inclusief camelcasing
+* **Solution/Project**: je VS solution en project-namen begin je steeds met een hoofdletter en vervolgens volg je de afspraken van identifiers: enkel liggende strepen, getallen en letters, inclusief camelCasing.
