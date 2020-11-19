@@ -162,10 +162,10 @@ do
 {
   Console.WriteLine("Geef uw keuze in: a, b of c");
   input= Console.ReadLine();
-}while(input != "a"  || input != "b" || input != "c");
+}while(input != "a"  && input != "b" && input != "c");
 ```
 
-**Zolang (while) de gebruiker niet ``"a"`` OF ``"b"`` OF ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
+**Zolang (while) de gebruiker niet ``"a"``, ``"b"`` of ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
 
 Merk op dat we de variabele ``string input`` **voor** de `` do while`` moeten aanmaken. Zouden we die in de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
 
