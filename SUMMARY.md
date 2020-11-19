@@ -63,5 +63,5 @@
 * [Nuttige extras](_intro/nuttigeextras.md)
 * [Wistjedatjes](B_appendix/prostuff.md)
 * [Out,Ref en TryParse](B_appendix/2_outenref.md)
-* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+* [Coding guidelines](B_appendix/codingguidelines.md)
 * [Programma flow analyse](5_herhalingen/4_programflow.md)
