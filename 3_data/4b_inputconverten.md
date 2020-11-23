@@ -11,7 +11,9 @@ En applicatie die geen input van de gebruiker vergt kan even goed een screensave
 string userInput= Console.ReadLine();
 ```
 
-Willen we dat de gebruiker een getal invoert, bijvoorbeeld zijn of haar leeftijd, dan zal dit nog steeds als ``string`` moeten opvangen **en vervolgens CONVERTEREN**  (dit mag dus niet: ``int userInput= Console.ReadLine();`` en zal in een conversion error resulteren).
+Willen we dat de gebruiker een getal invoert, bijvoorbeeld zijn of haar leeftijd, dan zal dit nog steeds als ``string`` moeten opvangen **en vervolgens CONVERTEREN** .
+
+Dit mag dus niet: ``int userInput= Console.ReadLine();`` en zal in een conversion error resulteren.
 
 Invoer van de gebruiker verwerken (dat een andere type dan ``string`` moet zijn) zal dus uit 3 stappen bestaan:
 1. Input **uitlezen** met ``Console.ReadLine()``
