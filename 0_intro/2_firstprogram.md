@@ -1,3 +1,4 @@
+<!---{sample: true}--->
 ## Console-applicaties
 
 Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in dit boek enkel console-applicaties leren maken. Grafische frontends zoals WPF komen in dit boek niet aan bod.
@@ -136,3 +137,4 @@ We tonen niet telkens de volledige broncode. Als we dat blijven doen dan wordt d
 * [Je eerste programma](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8c676809-33a8-4178-84f9-ac3200ce837e)
 
 <!---NOBOOKEND--->
+<!---{sample: false}--->

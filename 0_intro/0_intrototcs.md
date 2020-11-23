@@ -1,3 +1,4 @@
+<!---{sample: true}--->
 # De eerste stappen
 
 Wel, wel, wie we hier hebben?! Iemand die de edele kunst van het programmeren wil leren? Dan ben je op de juiste plaats gekomen. Je gelooft het misschien niet, maar reeds aan het einde van dit hoofdstuk zal je je eerste eigen computer-applicaties kunnen maken. De weg naar eeuwige roem, glorie, véél vloeken en code herbruiken ligt voor je. Ben je er klaar voor? 
@@ -90,3 +91,5 @@ Om een uitvoerbaar bestand te maken (**executable**, vandaar de extensie .exe bi
 * [Introductie tot C#](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f517d032-35b9-4c9f-ba91-ac33007cd2a6)
 
 <!---NOBOOKEND--->
+
+<!---{sample: false}--->

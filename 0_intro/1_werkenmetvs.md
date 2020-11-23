@@ -1,3 +1,4 @@
+<!---{sample: true}--->
 ## Kennismaken met C# en Visual Studio
 
 We gaan in dit boek leren programmeren met Microsoft Visual Studio 2019, een softwarepakket waar ook een gratis community versie voor bestaat. Microsoft Visual Studio (vanaf nu **VS**) is een pakket dat een groot deel van de tools samenvoegt die een programmeur nodig heeft (debugger, code editor, compiler, etc).
@@ -172,3 +173,4 @@ Nee hoor. Visual Studio is lekker groot, maar laat je dat niet afschrikken. Net 
 * Optioneel: [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
 
 <!---NOBOOKEND--->
+<!---{sample: false}--->

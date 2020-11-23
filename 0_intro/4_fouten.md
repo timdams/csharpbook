@@ -1,3 +1,4 @@
+<!---{sample: true}--->
 ## Fouten oplossen
 
 Je code zal pas compileren indien deze foutloos is geschreven. Herinner je dat computers uiterst dom zijn en dus vereisen dat je code 100% foutloos is qua woordenschat en grammatica.
@@ -77,3 +78,4 @@ De meest voorkomende fouten die je als beginnende C# programmeur maakt zijn:
 
 * [Fouten in je code oplossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1dd4ec60-8782-4bc5-8522-ac3200d629cd)
 <!---NOBOOKEND--->
+<!---{sample: false}--->
