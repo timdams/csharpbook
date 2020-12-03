@@ -143,7 +143,7 @@ Console.WriteLine($"Cirkel 3: {BerekenOppervlakte(7.3f)}"); //versie B
 
 Volgende tabel geeft de betternes rule weer. In de linkse kolom staat het datatype van de parameter die wordt meegegeven. De rechtse kolom toont welk datatype het argument in de methodesignatuur meer voorkeur heeft van links naar rechts.
 
-| Paramatertype  | Voorkeur van meeste voorkeur naar minste |
+| Parametertype  | Voorkeur van meeste voorkeur naar minste |
 | ---------- | --------------- | 
 | ``byte`` | ``short, ushort, int, uint, long, ulong, float, double, decimal`` |
 | ``sbyte`` | ``short, int long, float, double, decimal`` |

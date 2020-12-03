@@ -82,7 +82,7 @@ Er volgen nu enkele meer-dimensionale array oefeningen
 {% endhint %}
 
 #### Determinant
-Schrijf een programma dat een methode BerekenDeterminant heeft. Deze methode heeft één paramater als input: een 2 bij 2 array van integers. Als resultaat geeft de methode de determinant als integer terug. Zoek zelf op hoe je de determinant van een matrix kunt berekenen.
+Schrijf een programma dat een methode BerekenDeterminant heeft. Deze methode heeft één parameter als input: een 2 bij 2 array van integers. Als resultaat geeft de methode de determinant als integer terug. Zoek zelf op hoe je de determinant van een matrix kunt berekenen.
 
 Volgende voorbeeld-main dient te werken, 
 ```java

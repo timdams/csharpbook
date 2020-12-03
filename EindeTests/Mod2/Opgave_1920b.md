@@ -25,7 +25,7 @@ Het hoofdprogramma bestaat uit volgende delen:
   * In de weken 1,11,21,31,41 en 51 wordt steeds een testalarm gestart. In deze weken wordt de methode “TestAlarm” aangeroepen (zie verder). 
   * In de andere weken is er 25% kans dat er alarm afgaat. In die weken wordt een methode “StartAlarmGebouw” (zie verder) aangeroepen.
      * Het alarm gaat in een van de 3 willekeurige gebouwen door (=eerste parameter).  De kans is per gebouw even groot.
-     * Via de tweede paramater wordt aangegeven dat het niét om een test gaat
+     * Via de tweede parameter wordt aangegeven dat het niét om een test gaat
   * Een array die 52 elementen kan bevatten  (type int, of enum (zie verder) ) houdt bij per week of er geen (=0), een testalarm (=1) of een echt alarm (=2) is afgegaan. Deze array is het weeklogbook
 * In de hoofdloop nadat 1 jaar werd doorgelopen (dus 52 weken in de weekloop):
   * wordt het weeklogbook getoond via de “ToonLogbook” methode (zie verder), het weeklogbook wordt als parameter meegegeven.

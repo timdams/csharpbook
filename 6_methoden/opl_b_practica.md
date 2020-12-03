@@ -67,10 +67,10 @@ static string PaswoordGenerator(int lengte)
                 resultaat += r.Next(0, 10);
                 break;
             case 1: //kleine letters
-                resultaat += (char)r.Next(97, 123);
+                resultaat += (char)r.Next('a', 'z'+1);
                 break;
             case 2: //hoofdletters
-                resultaat += (char)r.Next(65, 91);
+                resultaat += (char)r.Next('A', 'Z'+1);
                 break;
         }
     }

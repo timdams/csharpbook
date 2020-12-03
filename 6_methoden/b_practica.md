@@ -20,7 +20,7 @@ Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](http
 
 Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
 
-* Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend ( het getal geef je mee als paramater).
+* Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend ( het getal geef je mee als parameter).
 * Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft (de diameter geef je mee als parameter).
 * Idem voor omtrek en oppervlakte.
 * Methode die het grootste van 2 getallen teruggeeft (beide getallen geef je mee als parameter).
