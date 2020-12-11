@@ -597,5 +597,5 @@ Het voorgaande voorbeeld toont ook ineens aan waarom methoden helpen om je code 
 ## Kennisclip
 ![](../assets/infoclip.png)
 * [Methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=61df170d-4f30-486f-a411-ac4f00b06415)
-
+* [Goede methoden schrijven](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=453d817f-0567-4d1a-bd46-ac8c00a27bfa)
 <!---NOBOOKEND--->
