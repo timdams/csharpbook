@@ -354,7 +354,7 @@ Console.WriteLine(myColors[9]);
 
 Dit zal resulteren in een *"Out of Range exception"* fout op lijn 2.
 
-Hackers misbruiken dit soort fouten in code om toegang tot delen van het geheugen te krijgen waar ze eigenlijk niet mochten zijn. Dit zijn zogenaamde *buffer offerflow attacks*.
+Hackers misbruiken dit soort fouten in code om toegang tot delen van het geheugen te krijgen waar ze eigenlijk niet mochten zijn. Dit zijn zogenaamde *buffer overflow attacks*.
 {% endhint %}
 
 <!---NOBOOKSTART--->
