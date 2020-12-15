@@ -73,7 +73,7 @@ De ``BinarySearch``-methode maakt het mogelijk om te zoeken naar de index van ee
 **De ``BinarySeach``-methode werkt enkel indien de elementen in de array gesorteerd staan!**
 {% endhint %}
 
-Je geeft aan de methode 2 parameters mee: enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
+Je geeft aan de methode 2 parameters mee: enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat **negatief** zijn.
 
 Volgende code zal bijvoorbeeld de index teruggeven van de kleur "red" indien deze in de array ``myColors`` staat:
 
