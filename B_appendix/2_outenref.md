@@ -1,4 +1,4 @@
-## Out en ref keywords
+## ``out`` en ``ref`` keywords
 
 Zoals verteld kun je parameters aan een methode doorgeven *by value* (de waarde) of *by reference* (het geheugenadres) afhankelijk van het datatype dat je meegeeft (de primitieve datatypes zoals ``int`` en ``double`` worden *by value* meegegeven, arrays by reference). Je kan echter de primitieve datatypes ook *by reference* meegeven zodat de methode rechtstreeks toegang tot de meegegeven variabele heeft en niet met een kopie moet werken. Dit kan soms handig zijn, maar zorgt ook voor ongewenste bugs. Opletten dus.
 
@@ -10,7 +10,7 @@ Je kan parameters op 2 manieren by reference doorgeven aan een methode:
 * Indien de actuele parameter **reeds een waarde** heeft dan kan je het **``ref``** keyword gebruiken. Dit gebruik je dus voor in/out-parameters.
 * Indien de actuele parameter **pas in de methode een waarde** krijgt toegekend dan wordt het **``out``** keyword gebruikt. Dit gebruik je dus voor out-parameters.
 
-### Ref
+### ``ref``
 Je plaatst het ``ref`` keyword in de methode signatuur voor de formele parameter dat *by reference* moet meegegeven worden. Vanaf dan heeft de methode toegang tot de originele parameter en dus niet tot de kopie. Je dient ook expliciet het keyword voor de actuele parameter bij de aanroep van de methode te plaatsen:
 
 
@@ -31,7 +31,7 @@ static void Main(string[] args)
 
 <!---{pagebreak} --->
 
-### Out
+### ``out``
 Door het ``out`` keyword te gebruiken geven we expliciet aan dat we beseffen dat de parameter in kwestie pas binnen de methode een waarde zal toegekend krijgen. Wat we hier tonen:
 
 
