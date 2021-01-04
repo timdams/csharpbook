@@ -117,7 +117,7 @@ switch(maand)
 
 }
 
-if(huidigSeizoen== Seizoenen.Winter || huidigSeizoen== Seizoenen.Herfst)
+if(huidigSeizoen == Seizoenen.Winter || huidigSeizoen == Seizoenen.Herfst)
     Console.WriteLine("Dat is een koud seizoen!");
 else if(huidigSeizoen == Seizoenen.Zomer || huidigSeizoen == Seizoenen.Lente)
     Console.WriteLine( "Dat is een warm seizoen!");

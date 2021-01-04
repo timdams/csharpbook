@@ -32,7 +32,7 @@ we in ``getallen`` enkel een geheugenadres bewaren dat wijst naar de plek waar d
 Het gevolg van voorgaande is dat volgende code niet zal doen wat je vermoedelijk wenst:
 
 ```java
-string[] ploegen= {"Beerschot", "Antwerp"};
+string[] ploegen = {"Beerschot", "Antwerp"};
 string[] nieuwePloegen = {"Anderlecht", "Brugge"};
 nieuwePloegen = ploegen;
 ```

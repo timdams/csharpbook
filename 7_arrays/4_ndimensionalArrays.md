@@ -58,7 +58,7 @@ int[,,,,,,,,,,,,,,,,,,,,,,,,,] jeBentGekAlsJeHierMeeWiltWerken;
 Ook om nu effectief een array aan te maken gebruiken we de komma-notatie, alleen moeten we nu ook de effectieve groottes aangeven. Voor een 5 bij 10 array bijvoorbeeld schrijven we (merk op dat dit dus een 2D-array is):
 
 ```java
-int[,] matrix= new int[5,10];
+int[,] matrix = new int[5,10];
 ```
 
 <!---{pagebreak} --->
@@ -79,7 +79,7 @@ Merk op dat we dus nu een 3 bij 4 array maken maar dat dit dus nog steeds een 2D
 
 Of bij een 3D:
 ```java
-int[,,] temperaturen= 
+int[,,] temperaturen = 
     {
         {
             {3,4}, {5,4}

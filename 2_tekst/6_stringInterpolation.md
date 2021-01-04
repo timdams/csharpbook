@@ -10,7 +10,7 @@ In dit boek verkiezen we **manier 2**, de string interpolatie. Dit is de meest m
 
 In de volgende sectie gaan we van volgende informatie uit:
 
-* Stel dat je 2 variabelen hebt ``int age=13`` en ``string name="Finkelstein"``.
+* Stel dat je 2 variabelen hebt ``int age  = 13`` en ``string name = "Finkelstein"``.
 * We willen de inhoud van deze variabelen samenvoegen in een nieuwe ``string result`` die zal bestaan uit de tekst: ``Ik ben Finkelstein en ik ben 13 jaar oud.``
 
 Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
@@ -19,7 +19,7 @@ Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 Je kan strings en variabelen eenvoudig bij elkaar 'optellen' zoals we in het begin van dit boek hebben gezien. Ze worden dan achter elkaar geplakt als het ware. 
 
 ```java
-string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud.";
+string result = "Ik ben "+ name + " en ik ben "+ age+ " jaar oud.";
 ```
 
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet tegen het vorige stringstuk wilt 'plakken'.
@@ -59,7 +59,7 @@ Dankzij *string interpolation* kan dit wel **waarbij we het ``$``-teken gebruike
 Door het $-teken **VOOR** de string te plaatsen geef je aan dat alle delen in de string die *tussen accolades staan* als code mogen beschouwd worden. Een voorbeeld maakt dit duidelijk:
 
 ```java
-string result= $"Ik ben {name} en ik ben {age} jaar oud.";
+string result = $"Ik ben {name} en ik ben {age} jaar oud.";
 ```
 
 In dit geval zal  de inhoud van de variabele ``name`` tussen de string op de plek waar nu ``{name}`` staat geplaatst worden. Idem voor ``age``.
@@ -72,14 +72,14 @@ Het resultaat zal dan worden: ```Ik ben Finkelstein en ik ben 13 jaar oud.```
 #### Berekeningen doen bij string interpolatie
 Je mag eender welke *expressie* tussen de accolades zetten bij string interpolation, denk maar aan:
 ```java
-string result= $"Ik ben {name} en ik ben {age+4} jaar oud.";
+string result = $"Ik ben {name} en ik ben {age+4} jaar oud.";
 ```
 
 Alle expressies tussen de accolades zullen eerst uitgevoerd worden voor ze tussen de string worden geplaatst. De uitvoer wordt nu dus:  ```Ik ben Finkelstein en ik ben 17 jaar oud.```
 
 Eender welke expressie is toegelaten, dus je kan ook complexe berekeningen of zelfs andere methoden aanroepen:
 ```java
-string result= $"Ik ben {age*age+(3%2)} jaar oud.";
+string result = $"Ik ben {age*age+(3%2)} jaar oud.";
 ```
 
 {% hint style='warning' %}
@@ -122,14 +122,14 @@ String interpolatie met het $-teken is een nieuwe C# aanwinst. Je zal echter nog
 ``String.Format`` is een ingebouwde methode die string-interpolatie toelaat op een iets minder intuïtieve manier, als volgt:
 
 ```java
-string result= String.Format("Ik ben {0} en ik ben {1} jaar oud.",name,age);
+string result = String.Format("Ik ben {0} en ik ben {1} jaar oud.",name,age);
 ```
 
 Het getal tussen de accolades geeft telkens aan de hoeveelste parameter na de string hier in de plaats moet gezet worden (0= de eerste, 1= de tweede, enz). De eerste parameter is ``name``, de tweede is ``age``.
 
 Volgende code zal een ander resultaat geven:
 ```java
-string result= String.Format("Ik ben {1} en ben {1} jaar.",name,age);
+string result = String.Format("Ik ben {1} en ben {1} jaar.",name,age);
 ```
 
 Namelijk:  ``Ik ben 13 en ik ben 13 jaar oud.``

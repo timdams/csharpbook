@@ -20,8 +20,8 @@ Maak een programma dat een methode VisualiseerArray implementeert. De methode za
 Voorbeeld van main:
 
 ```java
-int[] array={15, 6, 9};
-int[] array2={0, 1, 2, 3, 4, 5, 6};
+int[] array = {15, 6, 9};
+int[] array2 = {0, 1, 2, 3, 4, 5, 6};
 VisualiseerArray(array);
 VisualiseerArray(array2);
 ```
@@ -46,7 +46,7 @@ Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbi
 
 ![Caesar-encryptie is een erg eenvoudig concept. Het programmeren is iets pittiger.](../assets/5_arrays/practarray8.png) 
 
-Stel bijvoorbeeld dat x=3 dan krijgen we volgende nieuwe alfabet:
+Stel bijvoorbeeld dat x = 3 dan krijgen we volgende nieuwe alfabet:
 
 <!---{line-numbers:false}--->
 ```text

@@ -11,8 +11,8 @@ public class Student
 {
     public Student(string naam, int leeftijd, bool isIngeschreven)
     {
-        Naam=naam;
-        Leeftijd= leeftijd;
+        Naam = naam;
+        Leeftijd = leeftijd;
         IsIngeschreven= isIngeschreven;
     }
 

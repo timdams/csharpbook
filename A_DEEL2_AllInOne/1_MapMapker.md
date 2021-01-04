@@ -72,7 +72,7 @@ De methode van Paint moeten we verplicht overriden (daar ze abstract was in de b
 We kunnen nu in ons hoofdprogramma (main-methode) al direct elementen op het scherm brengen met bijvoorbeeld volgende code:
 
 ```java
-            WallElement steen1= new WallElement();
+            WallElement steen1 = new WallElement();
             steen1.Paint();
 ```
 
@@ -137,8 +137,8 @@ We kunnen nu ongelooflijk veel objecten op het scherm tonen (laten we veronderst
             //Muurtje
             for (int i = 0; i <10 ; i++)
             {
-                Point tempLoc= new Point(2+i,3);
-                WallElement tempWall= new WallElement(tempLoc,'=',10.0);
+                Point tempLoc = new Point(2+i,3);
+                WallElement tempWall = new WallElement(tempLoc,'=',10.0);
                 allObjects.Add(tempWall);
             }
 
@@ -196,7 +196,7 @@ Volgende klasse toont een kadertje met wat tekst in:
 Je kan dit dan als volgt oproepen in je main:
 
 ```java
-Menu menu= new Menu();
+Menu menu = new Menu();
 menu.ShowMenu();
 ```
 
@@ -206,8 +206,8 @@ We geven onze lijst van objecten mee aan ons Menu zodat het Menu object nieuwe z
 ```java
         public void GetInput(List<MapObject> list)
         {
-            string input=Console.ReadLine();
-            if(input=="A" || input=="a")
+            string input = Console.ReadLine();
+            if(input == "A" || input == "a")
             {
                 //Voeg randomzetel toe
             }
@@ -255,34 +255,34 @@ De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar ben
 ## Composiet-klassen
 Voorts kunnen we bijvoorbeeld nu meerdere klassen aanmaken (tafels, stoelen, deuren, etc) en dan een composiet-klasse aanmaken die bijvoorbeeld een volledig salon beschrijft, de code zou er dan als volgt kunnen uitzien:
 ```java
-    class SalonElement: MapObject
+class SalonElement: MapObject
+{
+    private List<MapObject> elementen = new List<MapObject>();
+
+    public SalonElement(Point salonLoc)
     {
-        private List<MapObject> elementen= new List<MapObject>();
+        
+        elementen.Add(new ZetelElement(new Point(2, 2), 3, '+'));
+        elementen.Add(new ZetelElement(new Point(5, 9), 3, '+'));
 
-        public SalonElement(Point salonLoc)
-        {
-          
-            elementen.Add(new ZetelElement(new Point(2, 2), 3, '+'));
-            elementen.Add(new ZetelElement(new Point(5, 9), 3, '+'));
-
-            Location = salonLoc;
-        }
-
-        public override void Paint()
-        {
-            for (int i = 0; i < elementen.Count; i++)
-            {
-                elementen[i].Paint();
-            }
-
-        }
+        Location = salonLoc;
     }
+
+    public override void Paint()
+    {
+        for (int i = 0; i < elementen.Count; i++)
+        {
+            elementen[i].Paint();
+        }
+
+    }
+}
 ```
 Merk op dat we rekening moeten houden met het feit dat de locatie van het salon het punt linksboven is, en dat dus de nieuwe locaties van de zetels vanaf dit punt hun oorsprong hebben. Althans dat willen we.. Als we in het main-programma dan schrijven:
 
 ```java
-            SalonElement salon1= new SalonElement(new Point(6,5));
-            salon1.Paint();
+SalonElement salon1 = new SalonElement(new Point(6,5));
+salon1.Paint();
 ```
 
 ![](../assets/7_overerving/mapmaker4.png)

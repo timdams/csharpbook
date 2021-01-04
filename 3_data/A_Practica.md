@@ -90,16 +90,16 @@ Voorbeeld:
 ```
 Frietjes?
 3   
-Tussenprijs= 60 euro
+Tussenprijs = 60 euro
 koninginnenhapje?
 5
-Tussenprijs= 60 euro + 50 euro
+Tussenprijs = 60 euro + 50 euro
 Ijsjes?
 2
-Tussenprijs= 60 euro + 50 euro + 6 euro
+Tussenprijs = 60 euro + 50 euro + 6 euro
 Dranken?
 5
-Tussenprijs= 60 euro + 50 euro + 6 euro + 10 euro
+Tussenprijs = 60 euro + 50 euro + 6 euro + 10 euro
 
 Het totaal te betalen bedrag is 126 EURO.
 ```

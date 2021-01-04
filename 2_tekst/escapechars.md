@@ -23,7 +23,7 @@ Laten we eens kijken naar de werking van het afkappingsteken als voorbeeld (de z
 Volgende code zal de compiler verkeerd interpreteren, daar hij denkt dat we een leeg karakter wensen op te slaan:
 
 ```java
-char apostrof= ''';
+char apostrof = ''';
 ```
 
 Het gevolg is een litanie aan vreemde foutboodschappen omdat er na de sluitende apostrof (het tweede) plots nog een apostrof (het derde) verschijnt. VS is volledig in de war zo!
@@ -34,7 +34,7 @@ Het gevolg is een litanie aan vreemde foutboodschappen omdat er na de sluitende 
 De juiste manier is om dus een escape character te gebruiken. We gaan met de backslash aanduiden dat het volgende teken (de tweede apostrof) een ``char`` voorstelt en niet het sluitende teken in de code.
 
 ```java
-char apostrof= '\'';
+char apostrof = '\'';
 ```
 
 ### Veel gebruikte escape chars
@@ -56,13 +56,13 @@ Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de bel
 Aangezien strings eigenlijk bestaan uit 1 of meerdere char-elementen, is het logisch dat je ook in een string met escape characters kunt werken. Het woord "'s avonds" schrijf je bijvoorbeeld als volgt:
 
 ```java
-string woord= "\'s avonds";
+string woord = "\'s avonds";
 ```
 
 Idem met aanhalingstekens. Stel je voor dat je een programma wilt schrijven dat C# code op het scherm toont. Dat doe je dan met volgende, nogal Inception-achtige, manier:
 
 ```java
-string inceptionCode= "Console.WriteLine(\"Cool he\");";
+string inceptionCode = "Console.WriteLine(\"Cool he\");";
 Console.WriteLine(inceptionCode);
 ```
 

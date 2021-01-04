@@ -9,8 +9,8 @@ Begin pas aan deze oefeningen wanneer je voldoende geoefend hebt door de vorige 
 Vervolledig deze code zodat ook getoond wordt welke de grootste waarde is die werd ingevoerd.
 
 ```java
-int x= 0;
-int y= 0;
+int x = 0;
+int y = 0;
 do
 {
     y = y + x;

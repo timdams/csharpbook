@@ -234,7 +234,7 @@ Meerdere ``return`` statement in een methode worden afgeraden (maar zijn wel toe
 static string WindRichting()
 {
     Random r = new Random();
-    string result= "onbekend";
+    string result = "onbekend";
     switch (r.Next(0,4))
     {
         case 0:
@@ -328,14 +328,14 @@ De naam ``grens`` kies je zelf. Maar we geven hier dus aan dat de methode ``Bere
 Aanroepen van de methode gebeurt dan als volgt:
 
 ```java
-int getal= 5;
-int resultaat= BerekenFaculteit(getal);
+int getal = 5;
+int resultaat = BerekenFaculteit(getal);
 ```
 
 Of sneller:
 
 ```java
-int resultaat= BerekenFaculteit(5);
+int resultaat = BerekenFaculteit(5);
 ```
 
 
@@ -406,8 +406,8 @@ static void ToonDeling(double teller, double noemer)
 Stel dat we nu in onze main volgende aanroep doen:
 
 ```java
-double n= 4.2;
-double t= 5.2;
+double n = 4.2;
+double t = 5.2;
 ToonDeling(n, t);
 ```
 
@@ -568,7 +568,7 @@ Vaak moet je code schrijven waarin je een getal aan de gebruiker vraagt:
 
 ```java
 Console.WriteLine("Geef leeftijd");
-int leeftijd= int.Parse(Console.ReadLine());
+int leeftijd = int.Parse(Console.ReadLine());
 ```
 
 Waarbij je eerst een zinnetje toont aan de gebruiker en dan z'n input omzet naar een werkbaar getal.
@@ -586,7 +586,7 @@ static int VraagInt(string zin)
 De code van zonet kan je dan nu herschrijven naar:
 
 ```java
-int leeftijd= VraagInt("Geef leeftijd");
+int leeftijd = VraagInt("Geef leeftijd");
 ```
 
 Het voorgaande voorbeeld toont ook ineens aan waarom methoden helpen om je code leesbaarder en onderhoudbaarder te maken. Je ``Main`` blijft gevrijwaard van veel repeterende lijnen code en heeft aanroepen naar (hopelijk) goed benoemde methoden die ieder een specifiek ding doen. Dit maakt het debuggen ook eenvoudiger: je ziet in één oogopslag meestal wat een methode doet (als je ze niet te lang hebt gemaakt natuurlijk).

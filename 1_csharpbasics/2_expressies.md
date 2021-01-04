@@ -54,11 +54,11 @@ Net zoals in de wiskunde kan je in C# met behulp van de haakjes verplichten het 
 
 Je kan nu complexe berekeningen doen door literals, operators en variabelen samen te voegen. Bijvoorbeeld om te weten hoeveel je op Mars zou wegen:
 ```java
-double gewichtOpAarde= 80.3;        //kg
-double gAarde= 9.81;    //m/s² 
-double gMars= 3.711;    //m/s²
+double gewichtOpAarde = 80.3;        //kg
+double gAarde = 9.81;    //m/s² 
+double gMars = 3.711;    //m/s²
 
-double  gewichtOpMars= (gewichtOpAarde/gAarde) * gMars; //kg
+double  gewichtOpMars = (gewichtOpAarde/gAarde) * gMars; //kg
 Console.WriteLine("Je weegt op Mars " + gewichtOpMars + " kg");
 ```
 
@@ -74,8 +74,8 @@ De modulo-operator zal je geregeld gebruiken om bijvoorbeeld te weten of een get
 
 Bijvoorbeeld om te testen of getal even is gebruiken we ``%2``:
 ```java
-int getal= 1234234;
-int rest= getal%2;
+int getal = 1234234;
+int rest = getal%2;
 Console.WriteLine("Indien het getal als rest 0 geeft is deze even."); 
 Console.WriteLine("De rest is: "+ rest);
 ```
@@ -120,12 +120,12 @@ Succes!
 Lees deze zin enkele keren luidop voor, voor je verder gaat: **De types die je in je expressies gebruikt bepalen ook het type van het resultaat.** Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven (klink logisch, maar lees aandachtig verder):
 
 ```java
-int result= 3 + 4;
+int result = 3 + 4;
 ```
 
 Je kan echter geen kommagetallen aan ``int`` toewijzen. Als je dus twee ``double`` variabelen deelt is het resultaat terug een ``double`` en zal deze lijn een fout geven daar je probeert een ``double`` aan een ``int`` toe te wijzen:
 ```java
-int otherResult= 3.1 / 45.2;  //dit is fout!!!
+int otherResult = 3.1 / 45.2;  //dit is fout!!!
 ```
 
 Bovenstaande code geeft volgende fout: ``Cannot implicitly convert double to int.``
@@ -138,9 +138,9 @@ Bovenstaande code geeft volgende fout: ``Cannot implicitly convert double to int
 
 Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. Je bent echter alle informatie na de komma kwijt. Kijk maar:
 ```java
-int getal1= 9;
-int getal2= 2;
-int result= getal1/getal2;
+int getal1 = 9;
+int getal2 = 2;
+int result = getal1/getal2;
 Console.WriteLine(result);
 ```
 **Er zal ``4`` op het scherm verschijnen!** (niet ``4.5`` daar dat geen ``int`` is). 
@@ -151,11 +151,11 @@ Wat als je datatypes mengt? Als je een berekening doet met bijvoorbeeld een ``in
 
 Volgende code zal dus werken:
 ```java
-double result= 3/5.6;
+double result = 3/5.6;
 ```
 Volgende code niet:
 ```java
-int result= 3/5.6;
+int result = 3/5.6;
 ```
 En zal weer dezelfde fout genereren:
 
@@ -165,9 +165,9 @@ Wil je dus het probleem oplossen om 9 te delen door 2 en toch 4.5 te krijgen (en
 
 Het voorbeeld van hierboven herschrijven we daarom naar:
 ```java
-int getal1= 9;
-double getal2= 2.0; //see what we do here!
-double result= getal1/getal2;
+int getal1 = 9;
+double getal2 = 2.0; //see what we do here!
+double result = getal1/getal2;
 Console.WriteLine(result);
 ```
 En nu krijgen we wel ``4.5`` aangezien we nu een ``int`` door een ``double`` delen en C# dus ook het resultaat dan als een ``double`` zal teruggeven.
@@ -189,7 +189,7 @@ Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien 
 Ik stel je voor om volgende expressie te gebruiken om te berekenen wat je van mij krijgt:
 
 ```java
-double helft= 10000.0 * (1 / 2);
+double helft = 10000.0 * (1 / 2);
 ```
 Hoeveel krijg je van me? 
 

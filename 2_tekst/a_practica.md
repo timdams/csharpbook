@@ -67,7 +67,7 @@ Opgelet: sta toe dat de gebruiker 1 voor de eerste harde schijf mag gebruiken, 2
 Bv:
 
 ```java
-int invoer= Convert.ToInt32(Console.ReadLine()) - 1;
+int invoer = Convert.ToInt32(Console.ReadLine()) - 1;
 long totalsize = DriveInfo.GetDrives()[invoer].TotalSize;  
 ```
 {% endhint %}

@@ -138,7 +138,7 @@ static int[] MaakArray(int lengte, int beginwaarde)
 De aanroep van deze methode vereist dan dat je het resultaat opvangt in een nieuwe variabele, als volgt:
 
 ```java
-int[] mijnNieuweArray= MaakArray(4,666);
+int[] mijnNieuweArray = MaakArray(4,666);
 ```
 
 {% hint style='warning' %}
@@ -158,12 +158,12 @@ Snel, zet je helm op, voor er ongelukken gebeuren! We hadden al enkele keren gez
 ```java
 static void PasAan(int[] inarr)
 {
-        inarr[0]= 0;
+        inarr[0] = 0;
 }
 
 public static void Main()
 {
-    int[] verdiepnummers= {1,2,3};
+    int[] verdiepnummers = {1,2,3};
     Console.WriteLine($"VOOR:{verdiepnummers[0]}"); // VOOR:1
     PasAan(verdiepnummers);
     Console.WriteLine($"NA:{verdiepnummers[0]}"); // NA:0
@@ -177,11 +177,11 @@ Vergelijk dit met volgende voorbeeld waar we een ``int`` als parameter meegeven 
 ```java
 	static void PasAan(int inarr)
 	{
-	      inarr= 0; //inarr wordt 0
+	      inarr = 0; //inarr wordt 0
 	}
 	public static void Main()
 	{
-		int[] getallen= {1,2,3};
+		int[] getallen = {1,2,3};
 		PasAan(getallen[0]);
 		Console.WriteLine(getallen[0]); // NA:1
 	}

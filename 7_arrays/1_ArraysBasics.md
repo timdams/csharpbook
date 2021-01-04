@@ -26,7 +26,7 @@ Als  we je nu vragen om de gemiddelde neerslag te berekenen dan krijg je al een 
 
 <!---{line-numbers:false}--->
 ```java
-double gemiddelde= (dag1+dag2+dag3+dag4+dag5+dag6+dag7)/7.0;
+double gemiddelde = (dag1+dag2+dag3+dag4+dag5+dag6+dag7)/7.0;
 ```
 
 Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Of een millennium?! Dat is niet werkbaar zonder een nieuw concept, dat van arrays, te introduceren. Van zodra je een bepaalde soort informatie hebt die je veelvuldig wenst te bewaren dan zijn arrays dus de oplossing.
@@ -48,7 +48,7 @@ Het gemiddelde berekenen kan dan als volgt:
 
 <!---{line-numbers:false}--->
 ```java
-double gemiddelde= (dag[0]+dag[1]+dag[2]+dag[3]+dag[4]+dag[5]+dag[6])/7.0;
+double gemiddelde = (dag[0]+dag[1]+dag[2]+dag[3]+dag[4]+dag[5]+dag[6])/7.0;
 ```
 
 Dat lijkt niet veel beter, integendeel, we zitten nu ook nog met een hoop vierkante haakjes (``[]``). 
@@ -57,12 +57,12 @@ De kracht van arrays komt nu: het getal tussen die vierkante haakjes (de index) 
 
 ```java
 int[] regen  = {34, 45, 0, 34, 12, 0, 23, 7 , 20, 34 , 7 , 42}; //aanmaken array
-double som=0;
-for(int i=0; i<regen.Length;i++)
+double som = 0;
+for(int i = 0; i<regen.Length;i++)
 {
-    som+=regen[i]; //element per element uit array optellen
+    som += regen[i]; //element per element uit array optellen
 }
-double gemiddelde=som/regen.Length;
+double gemiddelde = som/regen.Length;
 ```
 
 
@@ -318,7 +318,7 @@ int dag7 = 23;
 *"Kan ik die namen (dag1, dag2, etc.) met een loop genereren/bereiken zodat ik iets kan doen als volgt?"* **OPGELET! Hier komt een zeer fout voorbeeld aan...**
 ```text
 for(int i=1; i<=7; i++)
-    dagi= ...
+    dagi = ...
 ```
 
 **Dat gaat niet!** Van zodra je van plan bent om variabele-namen "dynamisch" in je code te proberen aan te roepen, moeten er tal van alarmbelletjes afgaan. De kans is dan héél groot dat je probleem beter met een array wordt opgelost dan met een boel variabelen met soortgelijke namen.

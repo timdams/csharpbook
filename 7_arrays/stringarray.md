@@ -35,7 +35,7 @@ Volgende methoden kan je rechtstreeks op string-variabelen oproepen:
 Geeft  het totaal aantal karakters in de string wat logisch is, daar het om een array gaat:
 
 ```java
-string myName="Tim";
+string myName = "Tim";
 Console.WriteLine(myName.Length); //er verschijnt 3 op het scherm
 ```
 
@@ -46,8 +46,8 @@ Console.WriteLine(myName.Length); //er verschijnt 3 op het scherm
 Deze methode geeft  een ``int`` terug die de index bevat waar de string die je als parameter meegaf begint. Kan je gebruiken om te ontdekken of een bepaald woord bijvoorbeeld in een grote lap tekst voorkomt zoals volgend voorbeeld toont:
 
 ```java
-string boek="Ik ben Reinhardt";
-int index= boek.IndexOf("ben");
+string boek = "Ik ben Reinhardt";
+int index = boek.IndexOf("ben");
 Console.WriteLine(index); 
 ```
 Er zal ``3`` verschijnen, daar "ben" start op positie 3 ("ik" staat op positie 0 en 1, gevolgd door een spatie op positie 2). Indien de string niet gevonden werd, zal ``index`` de waarde -1 krijgen.
@@ -57,9 +57,9 @@ Er zal ``3`` verschijnen, daar "ben" start op positie 3 ("ik" staat op positie 0
 ``Trim()`` verwijdert alle onnodige spaties vooraan en achteraan de string en geeft de opgekuiste string terug. Deze methode geeft de opgekuiste string terug als resultaat, je moet deze dus bewaren. In het volgende voorbeeld overschrijven we de originele string met z'n opgekuiste versie:
 
 ```java
-string boek="   Ik ben Reinhardt   ";
+string boek = "   Ik ben Reinhardt   ";
 Console.WriteLine(boek);
-boek=boek.Trim();
+boek = boek.Trim();
 Console.WriteLine(boek);
 ```
 
@@ -76,7 +76,7 @@ Ik ben Reinhardt
 ``ToUpper`` zal de meegegeven string naar ALLCAPS omzetten en geeft de nieuwe string als resultaat terug. ``ToLower()``doet het omgekeerde.
 
 ```java
-string boek="Ik ben Reinhardt";
+string boek = "Ik ben Reinhardt";
 Console.WriteLine(boek.ToUpper());
 Console.WriteLine(boek.ToLower());
 ```
@@ -96,8 +96,8 @@ ik ben reinhardt
 Volgende voorbeeld toont dit en zal dus "Mercy" vervangen door "Reinhardt":
 
 ```java
-string boek="Ik ben Mercy";
-boek=boek.Replace("Mercy","Reinhardt");
+string boek = "Ik ben Mercy";
+boek = boek.Replace("Mercy","Reinhardt");
 Console.WriteLine(boek);
 ```
 
@@ -105,8 +105,8 @@ Console.WriteLine(boek);
 ``Replace`` kan je ook misbruiken om bijvoorbeeld alle woorden uit een stuk tekst te verwijderen door deze te vervangen door een lege ``string`` met de waarde ``""``. Volgende code zal alle ``"e"``'s uit de tekst verwijderen:
 
 ```java
-string boek="Ik ben Mercy";
-boek=boek.Replace("e", "");
+string boek = "Ik ben Mercy";
+boek = boek.Replace("e", "");
 Console.WriteLine(boek);
 ```
 
@@ -120,8 +120,8 @@ Waardoor we ``Ik bn Mrcy`` op het scherm krijgen.
 Volgend voorbeeld zal het stukje "ben " uit de ``string`` weghalen:
 
 ```java
-string boek="Ik ben Mercy";
-boek=boek.Remove(3,4);
+string boek = "Ik ben Mercy";
+boek = boek.Remove(3,4);
 Console.WriteLine(boek);
 ```
 

@@ -8,12 +8,12 @@ En applicatie die geen input van de gebruiker vergt kan even goed een screensave
 **De uitdaging met ``ReadLine`` is dat deze ALTIJD een string teruggeeft:**
 
 ```java
-string userInput= Console.ReadLine();
+string userInput = Console.ReadLine();
 ```
 
 Willen we dat de gebruiker een getal invoert, bijvoorbeeld zijn of haar leeftijd, dan zal dit nog steeds als ``string`` moeten opvangen **en vervolgens CONVERTEREN** .
 
-Dit mag dus niet: ``int userInput= Console.ReadLine();`` en zal in een conversion error resulteren.
+Dit mag dus niet: ``int userInput = Console.ReadLine();`` en zal in een conversion error resulteren.
 
 Invoer van de gebruiker verwerken (dat een andere type dan ``string`` moet zijn) zal dus uit 3 stappen bestaan:
 1. Input **uitlezen** met ``Console.ReadLine()``
@@ -28,8 +28,8 @@ Stel dat we aan de gebruiker z'n gewicht vragen, dan moeten we dus doen:
 
 ```java
 Console.WriteLine("Geef je gewicht:");
-string inputGewicht= Console.ReadLine();
-double gewicht= double.Parse(inputGewicht);
+string inputGewicht = Console.ReadLine();
+double gewicht = double.Parse(inputGewicht);
 ```
 
 <!---{pagebreak} --->
@@ -38,7 +38,7 @@ Voorgaande code kan nog 1 lijntje sneller door ``ReadLine`` ogenblikkelijk als i
 
 ```java
 Console.WriteLine("Geef je gewicht:");
-double gewicht= double.Parse(Console.ReadLine());
+double gewicht = double.Parse(Console.ReadLine());
 ```
 
 ![Schematisch overzicht: ReadLine=>Conversie](../assets/2_beslissingen/readline.png)

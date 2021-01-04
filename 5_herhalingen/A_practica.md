@@ -95,7 +95,7 @@ Je kan van een string weten hoe groot deze is als volgt:
 
 ```java
 //veronderstellend dat myInputGetal van het type string is
-int lengte= myInputGetal.Length;  
+int lengte = myInputGetal.Length;  
 ```
 Je kan dan nu met ``Math.Pow(10,lengte-1)`` berekenen vanaf welke exponent van 10 we moeten beginnen werken.
 {% endhint %}

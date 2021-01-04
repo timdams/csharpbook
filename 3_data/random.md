@@ -10,8 +10,8 @@ De ``Random``-bibliotheek (eigenlijk klasse) laat je toe om  willekeurige gehele
 
 Als volgt: 
 ```java
-Random randomGenerator= new Random();
-int mijnLeeftijd= randomGenerator.Next();
+Random randomGenerator = new Random();
+int mijnLeeftijd = randomGenerator.Next();
 ```
 
 De eerste stap dien je dus maar 1 keer te doen. De naam die je het generatorobject geeft (hier ``randomGenerator``) mag je kiezen, dit is als het ware een variabele en moet dus aan de identifier regels voldoen.
@@ -21,11 +21,11 @@ Vanaf nu kan je telkens aan het generatorobject een nieuw getal vragen m.b.v. de
 Volgende code toont bijvoorbeeld 3 random getallen op het scherm:
 
 ```java
-Random myGen= new Random();
+Random myGen = new Random();
 
-int getal1= myGen.Next();
-int getal2= myGen.Next();
-int getal3= myGen.Next();
+int getal1 = myGen.Next();
+int getal2 = myGen.Next();
+int getal3 = myGen.Next();
 Console.WriteLine(getal1);
 Console.WriteLine(getal2);
 Console.WriteLine(getal3);
@@ -48,9 +48,9 @@ Je kan de ``Next`` methode ook 2 parameters meegeven, namelijk de grenzen waarbi
 Enkele voorbeelden:
 ```java
 Random someGenerator = new Random();
-int a= someGenerator.Next(0,11);  //getal tussen 0 tot en met 10
-int b= someGenerator.Next(55,100);  //getal tussen 55 tot en met 99
-int c= someGenerator.Next(0,b);  //getal tussen 0 tot en met (b-1)
+int a = someGenerator.Next(0,11);  //getal tussen 0 tot en met 10
+int b = someGenerator.Next(55,100);  //getal tussen 55 tot en met 99
+int c = someGenerator.Next(0,b);  //getal tussen 0 tot en met (b-1)
 ```
 
 #### Genereer kommagetallen met NextDouble
@@ -59,15 +59,15 @@ Met de ``NextDouble`` methode kan je kommagetallen genereren tussen ``0.0`` en `
 Wil je een groter kommagetal dan zal je dit gegenereerde getal moeten vermenigvuldigen naar de range die je nodig hebt.
 Stel dat je een getal tussen 0.0 en 10.0 nodig hebt, dan schrijf je:
 ```java
-Random myRan= new Random();
-double randomGetal= myRan.NextDouble() * 10.0;
+Random myRan = new Random();
+double randomGetal = myRan.NextDouble() * 10.0;
 ```
 Je vermenigvuldigt eenvoudigweg je gegenereerde getal met het bereik dat je wenst (10.0 in dit geval)
 
 En wat als je een kommagetal tussen 5.0 en 12.5 wenst?  Als volgt:
 ```java
-Random myRan= new Random();
-double randomGetal= 5.0+  (myRan.NextDouble() * 7.5);
+Random myRan = new Random();
+double randomGetal = 5.0+  (myRan.NextDouble() * 7.5);
 ```
 
 Je bereik is 7.5, namelijk ``12.5 - 5.0`` en vermenigvuldig je het resultaat van je generator hiermee. Vervolgens verschuif je dat bereik naar 5 en verder door er 5 bij op te tellen. Merk op dat we de volgorde van berekeningen *sturen* met onze ronde haakjes.

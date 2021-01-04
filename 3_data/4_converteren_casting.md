@@ -207,11 +207,11 @@ Al deze methoden zitten binnen de **Convert**-bibliotheek van .NET.
 Het gebruik hiervan is zeer eenvoudig. Enkele voorbeelden:
 
 ```java
-int getal= Convert.ToInt32(3.2); //double to int
-double anderGetal= Convert.ToDouble(5); //int to double
-bool isWaar= Convert.ToBoolean(1); //int to bool
-int userAge= Convert.ToInt32("19"); //string to int
-int ageOther= Convert.ToInt32(anderGetal); //double to int
+int getal = Convert.ToInt32(3.2); //double to int
+double anderGetal = Convert.ToDouble(5); //int to double
+bool isWaar = Convert.ToBoolean(1); //int to bool
+int userAge = Convert.ToInt32("19"); //string to int
+int ageOther = Convert.ToInt32(anderGetal); //double to int
 ```
 
 Je plaatst tussen de ronde haakjes de variabele of literal die je wenst te converteren naar een ander type. Merk op dat naar een `int`  converteren met ``.ToInt32()`` moet gebeuren. Om naar een ``short`` te converteren is dit met behulp van ``.ToInt16()``.

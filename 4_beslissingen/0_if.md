@@ -146,7 +146,7 @@ Met ``if``/``else`` kunnen we niet enkel zeggen welke code moet uitgevoerd worde
 
 ```java
 int nummer = 10;
-int max=5;
+int max = 5;
  
 if ( nummer > max )
 {

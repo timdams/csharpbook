@@ -9,12 +9,12 @@ De Math-bibliotheek bevat methoden voor een groot aantal typische wiskundige bew
 Stel dat je de derde macht van een variabel ``getal`` wenst te berekenen. *Zonder* de Math-bibliotheek zou dat er zo uitzien:
 
 ```java
-double result= getal * getal * getal;  //SLECHTE MANIER
+double result = getal * getal * getal;  //SLECHTE MANIER
 ```
 
 Dit valt nog mee, maar wat als je 3 tot de zevende macht moest berekenen? Kortom, laten we eens kijken hoe ``Math`` ons kan helpen. *Met* de Math-bibliotheek kunnen we gebruik maken van de ``Pow`` (**Power**) methode:
 ```java
-double result= Math.Pow(getal, 3);
+double result = Math.Pow(getal, 3);
 ```
 
 Deze methode vereist twee parameters:
@@ -38,9 +38,9 @@ De meeste methoden zijn zeer makkelijk in gebruik en werken bijna allemaal op ee
 Enkele voorbeelden:
 
 ```java
-double sineHoekA= Math.Sin(345); //IN RADIALEN!
-double derdeMachtVan20= Math.Pow(20, 3);
-double complexer= 3 + derdeMachtVan20 * Math.Round(sineHoekA);
+double sineHoekA = Math.Sin(345); //IN RADIALEN!
+double derdeMachtVan20 = Math.Pow(20, 3);
+double complexer = 3 + derdeMachtVan20 * Math.Round(sineHoekA);
 ```
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
@@ -61,8 +61,8 @@ public const double PI;
 Je kan deze als volgt gebruiken in berekeningen:
 
 ```java
-double straal= 5.5;
-double omtrek= Math.PI * 2 * straal;
+double straal = 5.5;
+double omtrek = Math.PI * 2 * straal;
 ```
 
 <!---{pagebreak} --->
@@ -72,8 +72,8 @@ double omtrek= Math.PI * 2 * straal;
 Je zal het ``const`` keyword hier en daar in codevoorbeelden zien staan. Je gebruikt dit om aan te geven dat een variabele onveranderlijk is én niet per ongeluk kan aangepast worden. Je **moet** dit dus ook zelf gebruiken zoals in volgende voorbeeld:
 
 ```java
-const double G_AARDE= 9.81;
-G_AARDE= 10.48; //ZAL ERROR GEVEN
+const double G_AARDE = 9.81;
+G_AARDE = 10.48; //ZAL ERROR GEVEN
 ```
 
 Merk op de schrijfwijze van ``const`` identifiers: deze zetten we in ALLCAPS, waarbij we liggende streepjes gebruiken om het onderscheid tussen de onderlinge woorden aan te geven ("gaarde" is anders een vreemd woord).

@@ -53,7 +53,7 @@ De logische operators geven ook steeds een ``bool`` terug maar verwachten enkel 
 Aangezien onze relationele operators ``bool`` als resultaat geven, kunnen we dus de uitvoer van deze operators gebruiken als operanden voor de logische operators. We gebruiken hierbij haakjes om zeker de volgorde juist te krijgen:
 
 ```java
-bool result= (4 < 6) && ("ja" == "nee");
+bool result = (4 < 6) && ("ja" == "nee");
 ```
 
 In voorgaande code zal het achterste deel ``false`` teruggeven( "ja is niet gelijk aan nee") , het eerste deel zal ``true`` geven (4 is kleiner dan 6 ). De &&-operator wordt dan: `` true && false`` wat ``false`` zal geven.

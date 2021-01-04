@@ -20,11 +20,11 @@ Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week 
 De waarde van de dag staat in een variabele ``int dagKeuze``. We bewaren er 1 in voor maandag, 2 voor dinsdag, enzovoort. Vervolgens kunnen we dan schrijven: 
 
 ```java
-if(dagKeuze==1)
+if(dagKeuze == 1)
 {
     Console.WriteLine("We doen de maandag dingen");
 }
-else if (dagKeuze==2)
+else if (dagKeuze == 2)
 {
     Console.WriteLine("We doen de dinsdag dingen");
 }
@@ -34,18 +34,18 @@ else if
 
 Deze oplossing heeft 2 grote nadelen:
 * Wat als we per ongeluk ``dagKeuze`` een niet geldige waarde geven, zoals 9, 2000 of  -4 ?
-* De code is niet erg leesbaar. Wat was ``dagKeuze==2`` nu weer? Was ``2`` nu dinsdag of woensdag (want misschien was maandag 0 i.p.v. 1) ?
+* De code is niet erg leesbaar. Wat was ``dagKeuze ==2`` nu weer? Was ``2`` nu dinsdag of woensdag (want misschien was maandag 0 i.p.v. 1) ?
 
 #### Slechte oplossing 2: Met strings
 
 Laten we tweede manier eens bekijken: de waarde van de dag bewaren we in een variabele ``string dagKeuze``. We bewaren de dagen als ``"maandag"``, ``"dinsdag"``, etc.
 
 ```java
-if(dagKeuze=="maandag")
+if(dagKeuze == "maandag")
 {
     Console.WriteLine("We doen de maandag dingen");
 }
-else if (dagKeuze=="dinsdag")
+else if (dagKeuze == "dinsdag")
 {
     Console.WriteLine("We doen de dinsdag dingen");
 }
@@ -256,7 +256,7 @@ switch(playerGameState)
 Een ander typisch voorbeeld is schaken. We maken een enum om de speelstukken voor te stellen (``Pion, Koning, Toren`` etc.) en kunnen hen dan laten bewegen en vechten in uiterst leesbare code:
 
 ```java
-if(spelstuk== Schaakstuk.Paard)
+if(spelstuk == Schaakstuk.Paard)
 ```
 
 

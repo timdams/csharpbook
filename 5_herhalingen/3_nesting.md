@@ -12,8 +12,8 @@ We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. W
 Volgende code toont bijvoorbeeld 2 loops die genest werden:
 
 ```java
-int tellerA= 0;
-int tellerB= 0;
+int tellerA = 0;
+int tellerB = 0;
 
 while(tellerA < 3 )  //outer loop
 {

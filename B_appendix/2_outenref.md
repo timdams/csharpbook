@@ -22,7 +22,7 @@ static void VerhoogWaarde(ref int getal)
  
 static void Main(string[] args)
 {
-    int eerste=1;
+    int eerste = 1;
     Console.WriteLine(eerste); //er verschijnt 1 op het scherm
     VerhoogWaarde(ref eerste); //let op het ref keyword!
     Console.WriteLine(eerste); //er verschijnt 2 op het scherm
@@ -38,7 +38,7 @@ Door het ``out`` keyword te gebruiken geven we expliciet aan dat we beseffen dat
 ```java
 static void GeefWaarde(out int getal)
 {
-    getal= 5;
+    getal = 5;
 }
  
 static void Main(string[] args)

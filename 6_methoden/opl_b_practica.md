@@ -83,7 +83,7 @@ static string PaswoordGenerator(int lengte)
 ## Film Default
 
 ```java
-static void FilmRuntime(string naam, int duur= 90, Genre filmgenre= Genre.Onbekend )
+static void FilmRuntime(string naam, int duur = 90, Genre filmgenre = Genre.Onbekend )
 {
     Console.WriteLine($"{naam} ({duur}, {filmgenre})");
 }

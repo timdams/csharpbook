@@ -79,11 +79,11 @@ Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je ee
 Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen (1+2+3+...+10) zou maken:
 
 ```java
-int teller= 1;
+int teller = 1;
 while(teller <= 10)
 {
-   int som= 0;
-   som= som+teller;
+   int som = 0;
+   som = som+teller;
    teller++;
 }
 Console.WriteLine(som); //deze lijn zal een fout genereren
@@ -95,11 +95,11 @@ Voorgaande code zal volgende VS error geven: *The name 'som' does not exist in t
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele ``som`` enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden. Hier de oplossing:
 
 ```java
-int teller= 1;
-int som=0;  
+int teller = 1;
+int som = 0;  
 while(teller <= 10)
 {
-   som= som+teller;
+   som = som+teller;
    teller++
 }
 Console.WriteLine(som); 
@@ -151,7 +151,7 @@ Dankzij loops kunnen we nu ook eenvoudiger omgaan met foutieve input van de gebr
 
 ```java
 Console.WriteLine("Geef uw keuze in: a, b of c");
-string input= Console.ReadLine();
+string input = Console.ReadLine();
 ```
 
 Met een loop kunnen we nu deze vragen blijven stellen tot de gebruiker een geldige input geeft:
@@ -161,7 +161,7 @@ string input;
 do
 {
   Console.WriteLine("Geef uw keuze in: a, b of c");
-  input= Console.ReadLine();
+  input = Console.ReadLine();
 }while(input != "a"  && input != "b" && input != "c");
 ```
 

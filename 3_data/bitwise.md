@@ -25,7 +25,7 @@ string binary = Convert.ToString(value, 2);
 Bitwise operators in C# laten toe om de klassieke binaire bewerkingen (AND, OR, NOT, etc) die je kent uit booleanse algebra toe te passen op je variabelen.
 
 
-Stel dat we volgende twee variabelen hebben: ``int A=60`` en ``int B=13``. 
+Stel dat we volgende twee variabelen hebben: ``int A = 60`` en ``int B = 13``. 
 Volgende operators kan je gebruiken [bron](https://www.tutorialspoint.com/csharp/csharp_bitwise_operators.htm):
 
 |Operator|	Beschrijving|	Voorbeeld|

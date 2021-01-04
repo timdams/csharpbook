@@ -49,7 +49,7 @@ Bijvoorbeeld ``string voornaam, achternaam, adres;``
 
 Van zodra je een variabele hebt gedeclareerd kunnen we dus ten allen tijde deze variabele gebruiken om een waarde aan toe te kennen, de bestaande waarde te overschrijven, of de waarde te gebruiken, zoals:
 
-* **Waarde toekennen**: Herinner dat de toekenning steeds gebeurt van rechts naar links: het deel rechts van het gelijkheidsteken wordt toegewezen aan het deel links er van, bijvoorbeeld: `mijnGetal= 15;`
+* **Waarde toekennen**: Herinner dat de toekenning steeds gebeurt van rechts naar links: het deel rechts van het gelijkheidsteken wordt toegewezen aan het deel links er van, bijvoorbeeld: `mijnGetal = 15;`
 * **Waarde gebruiken**: Bijvoorbeeld `anderGetal = mijnGetal + 15;`
 * **Waarde tonen op scherm**: Bijvoorbeeld `Console.WriteLine(mijnGetal);`
 
@@ -115,13 +115,13 @@ Naast getallen zijn er uiteraard ook nog andere datatypes waar we de literals va
 {% hint style='tip' %}
 Om samen te vatten, even de belangrijkste literal schrijfwijzen op een rijtje:
 ```java
-int getal= 5;
-double anderGetal= 5.5;
-uint nogAnderGetal= 15u;
-float kleinKommaGetal= 158.9f;
+int getal = 5;
+double anderGetal = 5.5;
+uint nogAnderGetal = 15u;
+float kleinKommaGetal = 158.9f;
 char letter = `k`
-bool isDitCool= true;
-string zin= "Ja hoor";
+bool isDitCool = true;
+string zin = "Ja hoor";
 ```
 {% endhint %}
   
@@ -133,14 +133,14 @@ De overige types ``sbyte``, ``short`` en ``ushort`` hebben geen literal aanduidi
 
 Je kan ook hexadecimale notatie (starten met ``0x`` of ``0X``) gebruiken wanneer je bijvoorbeeld met ``int`` of ``byte`` werkt:
 ```java
-int myAge= 0x0024; //36
+int myAge = 0x0024; //36
 byte myByteValue = 0x00C9; //201
 ``` 
 
 Ook binaire notatie (starten met ``0b`` of ``0B``) kan:
 ```java
-int myAge= 0b001001000; //72
-int otherAge= 0b0001_0110_0011_0100_0010 //idem, maar met _ als seperator
+int myAge = 0b001001000; //72
+int otherAge = 0b0001_0110_0011_0100_0010 //idem, maar met _ als seperator
 byte myByteValue =  0b‭00100100‬1;
 ``` 
 
@@ -162,11 +162,11 @@ In dit voorbeeld zal er dus voor gezorgd worden dat de oude waarde van temperatu
 Volgende code toont hoe je bijvoorbeeld eerst de vorige waarde kunt bewaren en dan overschrijven:
 
 ```java
-int temperatuurGisteren= 20;
+int temperatuurGisteren = 20;
 //Doe van alles
 //...
 //Vervolgens: vorige temperatuur in eergisteren bewaren
-int temperatuurEerGisteren= temperatuurGisteren; 
+int temperatuurEerGisteren = temperatuurGisteren; 
 //temperatuur nu overschrijven
 temperatuurGisteren = 25; 
 ```
@@ -178,7 +178,7 @@ Een veel gemaakte fout is variabelen meer dan één keer declareren. Dit hoeft n
 Volgende code zal dus een fout geven:
 
 ```java
-double kdRating= 2.1;
+double kdRating = 2.1;
 //even later...
 double kdRating = 3.4; 
 ```

@@ -37,7 +37,7 @@ Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro 
 
 Met het statement ``Console.Clear();`` kan je de console - je raadt het nooit - leegmaken. Test deze code in het volgende programma:
 
-Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411= 411, 2x411= 822 tot en met 10x411= 4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
+Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411 = 411, 2x411 = 822 tot en met 10x411 = 4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
 
 <!---{line-numbers:false}--->
 ```text

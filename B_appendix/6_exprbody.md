@@ -78,7 +78,7 @@ public int Name
     }
     set
     {
-        name=value;
+        name = value;
     }
 
 }
@@ -90,7 +90,7 @@ private int name;
 public int Name
 {
     get => name;
-    set => name=value;
+    set => name = value;
 }
 ```
 ### Read-only properties met EBM

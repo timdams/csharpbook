@@ -17,7 +17,7 @@ double[][]tickets;
 Vanaf nu kan je dan individuele arrays toewijzen aan ieder element van ```tickets``:
 
 ```java
-tickets=
+tickets =
     {
       new double[] {3.0, 40, 24},
       new double[] {123 , 31.3 },

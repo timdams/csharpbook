@@ -59,7 +59,7 @@ Je kan het resultaat eenvoudig naar je klembord kopiëren en vervolgens in je C#
 Bijvoorbeeld:
 
 ```java
-string myname=@"
+string myname = @"
 ___________________   
 \__    ___/\______ \  
   |    |    |    |  \ 
