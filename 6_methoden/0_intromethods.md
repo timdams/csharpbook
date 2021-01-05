@@ -101,7 +101,7 @@ static void Main(string[] args)
 ```
 
 {% hint style='tip' %}
-``string[] args`` is een verhaal apart, wat niet in dit boek aan de orde is. Weet gewoon dat ja via deze ``args`` opstartparameters aan je programma kan meegeven tijdens het opstarten (bijvoorbeeld ``explorer.exe google.com``) zodat je code hier iets kan doen.
+``string[] args`` is een verhaal apart, wat niet in dit boek aan de orde is. Weet gewoon dat je via deze ``args`` opstartparameters aan je programma kan meegeven tijdens het opstarten (bijvoorbeeld ``explorer.exe google.com``) zodat je code hier iets mee kan doen.
 {% endhint %}
 
 <!---{pagebreak} --->
