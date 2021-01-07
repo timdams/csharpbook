@@ -100,7 +100,7 @@ int som = 0;
 while(teller <= 10)
 {
    som = som+teller;
-   teller++
+   teller++;
 }
 Console.WriteLine(som); 
 ```
