@@ -30,6 +30,8 @@ Er zijn 3 standaard manieren om zogenaamde loops te maken in C#:
 Voorts zullen we ook een speciale loop variant zien in het volgende boekdeel wanneer we arrays en objecten leren kennen:
 * **``foreach``**: een iets leesbaardere manier van loopen die vooral nuttig is wanneer je met objecten gaat werken.
 
+Volgende flowchart kan je helpen om te bepalen wat voor loop je juist zal nodig hebben:
+![](../assets/3_loops/loopflow.png)
 
 <!---NOBOOKSTART--->
 ### Kennisclip
