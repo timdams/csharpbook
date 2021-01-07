@@ -69,6 +69,7 @@ Bij attack en defense toon je de HUIDIGE waarden.
 # LandKaart klasse
 
 Er zijn 5 soorten land. Ieder land genereert 1 mana van de kleur die op de kaart staat. 
+
 ![Kaart uitleg](../../assets/mana.jpg) 
 
 ## Eigenschappen
@@ -108,11 +109,14 @@ Maak 3 CreatureObjecten aan in je main:
 1. Namelijk ten eerste de Mahamori Djinn van hierboven.
     * ``ColoredTypeNeeded``: ManaType.Water, ``AmountColoredTypeNeeded``: 2 en ``AmoundUncoloredTypeNeeded``:4
 2. Alsook een "KinderCatch" (merk ok dat deze kaart geen ``SpecialAbilities`` heeft en je deze property dus als een lege tekst mag voorstellen (``""``)). Deze kaart heeft dus 3 bos-mana en 3 kleurloze mana nodig.
+
 ![Kaart uitleg](../../assets/card2.jpg) 
     * ``ColoredTypeNeeded``: ManaType.Bos, ``AmountColoredTypeNeeded``: 3 en ``AmoundUncoloredTypeNeeded``:3
 3. Als derde deze schattige "Mountain Goat" die als ``SpecialAbility`` "Mountainwalk heeft".
+
 ![Kaart uitleg](../../assets/card3.jpg)
     * ``ColoredTypeNeeded``: ManaType.Vuur, ``AmountColoredTypeNeeded``: 1 en ``AmoundUncoloredTypeNeeded``:0
+    
 # Casting tester
 
 We maken nu een applicatie die uit drie stappen bestaat:

@@ -137,6 +137,7 @@ Een mogelijke manier om deze methode in je programma te gebruiken zou nu kunnen 
 ```java
 string myName = GetNameAuthor();
 ```
+
 <!---{width:60%}--->
 ![Visualisatie van de flow](../assets/4_methoden/return.png)
 
@@ -471,6 +472,7 @@ public static void Main()
     SchrijfNaam();
 }
 ```
+
 <!--- {width:50%} --->
 ![Visualisatie van bovenstaande code zonder terugkerende pijlen](../assets/4_methoden/mmethods.png)
 

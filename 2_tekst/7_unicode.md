@@ -18,6 +18,7 @@ Dit gaat als volgt in z'n werk:
 <!---{pagebreak} --->
 
 Stel je voor dat we volgende "omgekeerde t" wensen te gebruiken in onze applicatie:
+
 <!---{height:30%} --->
 ![Een handig teken als je een huis wilt tekenen in de console](../assets/0_intro/letter.jpg)
 

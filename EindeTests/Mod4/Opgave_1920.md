@@ -39,6 +39,7 @@ Maak een kleine applicatie die kan gebruikt worden om alle reddingswerkers tijde
 
 ### Klassestructuur (40%)
 Implementeer volgende klasse diagram (de naam van de Interface= IRampGebiedResponder)
+
 ![Schema](1920schema.png)
 
 Zorg ervoor dat:

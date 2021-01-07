@@ -29,6 +29,7 @@ Standaard wanneer je je code uitvoert met de grote groene playknop start jouw pr
 Om dit te doen moet je een **breakpoint** (of meerdere) in je code plaatsen. Breakpoint zet je aan een lijn code en wanneer je programma dan aan deze lijn komt tijdens de uitvoer zal de debugger alles pauzeren.
 
 Een breakpoint plaats je door op het grijze gedeelte links van de lijn code te klikken. Als alles goed gaat verschijnt er dan een grote rode "breakpointbol":
+
 <!--- {height:30%} --->
 ![](../assets/1_csharpbasics/breakpoint.png)
 

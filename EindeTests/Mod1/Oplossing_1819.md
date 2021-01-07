@@ -152,7 +152,7 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 
    Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
 
-   ![](../../assets/2_beslissingen/bigcode.jpg)
+![](../../assets/2_beslissingen/bigcode.jpg)
 
    What went wrong?
 

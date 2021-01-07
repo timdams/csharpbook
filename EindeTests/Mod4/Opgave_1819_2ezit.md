@@ -11,7 +11,9 @@ Maak een klasse ``Schilderij``.
 
 Deze heeft 2 minstens methoden
 * TekenSchilderij: de methode zal een willekeurig schilderij op het scherm tekenen in linkerbovenhoek. Een schilderij is steeds 10 bij 10 groot en bestaat uit een willekeurige hoeveelheid gele, rode en groene vlakken. Enkele voorbeelden:
-  ![](schilder.jpg)        
+
+![](schilder.jpg)       
+
 * Opgelet: ieder object tekent een ander schilderij. Als op hetzelfde object 2x na mekaar TekenSchilderij wordt aangeroepen dan zal uiteraard 2x hetzelfde schilderij getekend worden.
 De klasse houdt intern bij uit hoeveel rode, hoeveel gele, en hoeveel rode vlakken het schilderij bestaat.
 

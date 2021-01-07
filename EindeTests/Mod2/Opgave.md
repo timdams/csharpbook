@@ -101,10 +101,12 @@ Extra: De Lyrics verschijnen op de juiste momenten op het scherm (dus vlak voor 
 
 ## Radiostation
 Bij het opstarten van het programma krijg je nu een menu te zien waaruit de gebruiker een liedje kan kiezen dat gespeeld moet worden. Vervolgens wordt dit liedje gespeeld en nadien wordt de vraag terug gesteld. Indien de gebruiker een onbekende keuze invoert dan zal een random liedje worden afgespeeld uit de mogelijke liedjes.
+
 ![](../../assets/Aallinone/jukebox1.png)
 
 ## Songtime
 Wanneer een liedje werd afgespeeld dan dient de methode terug te geven (als double) hoe lang het liedje heeft geduurd. Het hoofdmenu toont dit aan het einde van het afspelen:
+
 ![](../../assets/Aallinone/jukebox2.png)
 
 Je kan de duur van een methode heel eenvoudig methoden als volgt, gebruikmakende van de StopWatch:

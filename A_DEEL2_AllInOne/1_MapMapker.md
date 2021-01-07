@@ -248,6 +248,7 @@ De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar ben
 
         }
 ```
+
 ![](../assets/7_overerving/mapmaker2.png)
 
 ![](../assets/7_overerving/mapmaker3.png)

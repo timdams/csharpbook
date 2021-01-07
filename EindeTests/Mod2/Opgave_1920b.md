@@ -11,7 +11,9 @@ Punten verdeling:
 Het programma zal gedurende maximum 10 jaren steeds de 52 weken van een jaar doorlopen. Het programma zal iedere 10e week een testalarm starten. Doorheen het jaar zullen ook echte alarmen plaatsvinden. 
 Aan het einde van ieder jaar wordt het jaar gevisualiseerd (in welke weken een test, niets of echt alarm plaatsvond)
 Al deze zaken worden in een log bijgehouden zodat op het einde van het programma kan gekeken worden hoeveel percentage echte alarmen hebben plaatsgevonden.
+
 ![overview](1920b1.png)
+
 Dit blijft zich herhalen tot er 10 jaar zijn gepasseerd of wanneer de gebruiker op n heeft gedrukt. 
  
 
@@ -55,6 +57,7 @@ De bool geeft aan of het wel of niet om een test gaat.
 De methode geeft niets terug.
 
 De volgende tekst verschijnt, waarbij het gebouwnummer en of het om een test gaat wordt gecommuniceerd, voorbeelden:
+
 ![vb](1920b2.png)
 
 ##	TestAlarm methode (2p)
