@@ -51,6 +51,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 
 ## Tutorials
 
+* [Microsoft C# tutorial](https://docs.microsoft.com/nl-nl/learn/paths/csharp-first-steps/) Zeer interactief én in het Nederlands. Aanrader.
 * [Dotnet beginning](http://dot.net/videos)
 * [C# Getting started interactive quickstart tutorials](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/): Aanrader.
 * [Online video c#  cursus](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners):  Zeer aan te raden indien je een bepaald concept uit de les niet begrijpt.
