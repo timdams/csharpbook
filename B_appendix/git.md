@@ -5,7 +5,8 @@ In dit hoofdstuk geven we een summier overzicht over git. Bedoeling is dat je gi
 Een [goede uitleg vind je hier](https://www.sitepoint.com/git-for-beginners/).
 
 ### File lifecycle
-  ![file lifecycle](../assets/b_git/filelife.png)
+
+![file lifecycle](../assets/b_git/filelife.png)
 
 ### Belangrijkste commando's
 

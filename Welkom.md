@@ -14,6 +14,7 @@ Veel lees-en programmeerplezier,
 
 Tim Dams 
 Zomer 2020
+
 ![Logo ikke](./assets/me.png)
 
 

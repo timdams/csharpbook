@@ -249,6 +249,7 @@ De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar ben
         }
 ```
 ![](../assets/7_overerving/mapmaker2.png)
+
 ![](../assets/7_overerving/mapmaker3.png)
 
  
@@ -286,6 +287,7 @@ salon1.Paint();
 ```
 
 ![](../assets/7_overerving/mapmaker4.png)
+
 Dan verschijnen onze zetels wel, maar niet op de locatie zoals we wilden (nu verschijnen de zetels op locatie (2,2) en (5,9), terwijl we liever hebben dat ze verschijnen op (2+6, 2+5) en (5+6, 9+5), dus rekening houdende met de locatie van het salon zelf
 
 ## Interface 

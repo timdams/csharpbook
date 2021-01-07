@@ -84,6 +84,7 @@ namespace Demo1
 ```
 
 Volgende afbeelding toont hoe je programma doorheen de code loopt. De pijlen geven de flow aan:
+
 ![Visualisatie van bovenstaande code](../assets/4_methoden/timsoft.png)
 
 ### Main is ook een methode

@@ -35,6 +35,7 @@ Een breakpoint plaats je door op het grijze gedeelte links van de lijn code te k
 In bovenstaande figuur plaatsen we een breakpoint aan lijn 11. De code uitvoer zal dus nog wel lijn 10 uitvoeren, maar niet lijn 11.
 
 Als je nu je project uitvoert zal de code pauzeren aan die lijn en zal VS in "debug modus" openspringen wat er vervolgens als volgt uit ziet:
+
 ![](../assets/1_csharpbasics/debugmode.png)
 
 In dit "nieuwe" scherm zijn er momenteel 2 belangrijke delen:

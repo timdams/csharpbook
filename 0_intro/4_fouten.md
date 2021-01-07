@@ -13,6 +13,7 @@ Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder
 ### Fouten sneller vinden
 
 Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de error-list snel naar al je fouten gaan. Open deze door op het error-icoontje onderaan te klikken:
+
 ![So many errors?!](../assets/1_csharpbasics/errors.png)
 
 Dit zal de "error list" openen (een schermdeel van VS dat we aanraden om altijd open te laten én dus niet weg te klikken):

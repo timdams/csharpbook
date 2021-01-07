@@ -168,7 +168,9 @@ Maak een basis-versie van het spel.
      * **Fase 2**: vraag aan gebruiker welk land mana moet genereren
      * **Fase 3**: vraag aan gebruiker welke held punten moet genereren
    * Na iedere fase ververs je het beeld (``Console.Clear()``) en herteken je de kaarten en toon je de volgende extra info aan de gebruiker, namelijk Mana, Punten en Beurt
+
    ![](../../assets/Aallinone/heroap1.png) 
+   
 3. Na de loop wordt getoond hoeveel beurten de gebruiker heeft nodig gehad
 
 

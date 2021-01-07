@@ -40,6 +40,7 @@ nieuwePloegen = ploegen;
 <!---{pagebreak} --->
 
 De situatie wanneer lijn 2 werd uitgevoerd is de volgende:
+
 <!--- {width:60%} --->
 ![Beerschot is de ploeg van't stad ;)](../assets/5_arrays/refbeervoor.png)
 
