@@ -31,6 +31,7 @@ Voorts zullen we ook een speciale loop variant zien in het volgende boekdeel wan
 * **``foreach``**: een iets leesbaardere manier van loopen die vooral nuttig is wanneer je met objecten gaat werken.
 
 Volgende flowchart kan je helpen om te bepalen wat voor loop je juist zal nodig hebben:
+
 ![](../assets/3_loops/loopflow.png)
 
 <!---NOBOOKSTART--->
