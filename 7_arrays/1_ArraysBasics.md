@@ -39,7 +39,7 @@ Voorgaande lijst van 7 aparte variabelen kunnen we eenvoudiger definiëren met 1
 int[] regen  = {34, 45, 0, 34, 12, 0, 23}; 
 ```
 
-<!--- {width:50%} --->
+<!--- {width:60%} --->
 ![Een schematische voorstelling van een lijst van aparte variabelen en het equivalent met een array](../assets/5_arrays/intro.png)
 
 <!---{pagebreak} --->

@@ -25,7 +25,7 @@ int[] getallen = {5,42,2};
 
 we in ``getallen`` enkel een geheugenadres bewaren dat wijst naar de plek waar de effectieve waarden staan elders in het geheugen. Dit in tegenstelling tot wanneer we ``int age = 5`` schrijven. (de redenen hiervoor zien we in het volgende deel). Volgende afbeelding geeft dit weer:
 
-<!--- {width:80%} --->
+<!--- {width:90%} --->
 ![De wolk stelt het werkgeheugen voor. De geheugenadressen zijn willekeurig](../assets/5_arrays/geheugen.png)
 
 
@@ -41,14 +41,14 @@ nieuwePloegen = ploegen;
 
 De situatie wanneer lijn 2 werd uitgevoerd is de volgende:
 
-<!--- {width:60%} --->
+<!--- {width:70%} --->
 ![Beerschot is de ploeg van't stad ;)](../assets/5_arrays/refbeervoor.png)
 
 Zonder het bestaan van *references* zou je verwachten dat op lijn 3 ``nieuwePloegen`` een kopie krijgt van de inhoud van ``ploegen``. 
 
 De derde lijn(``nieuwePloegen = ploegen;``) zal perfect werken. Wat er echter is gebeurd, is dat we de referentie naar ``ploegen`` ook in ``nieuwePloegen`` hebben geplaatst. **Bijgevolg verwijzen beide variabelen naar dezelfde array, namelijk die waar ``ploegen`` al naar verwees.** We hebben een soort alias gemaakt en kunnen nu op twee manieren de array met de Antwerpse voetbalploegen benaderen. De nieuwe situatie na lijn 3 is dus de volgende geworden:
 
-<!--- {width:60%} --->
+<!--- {width:70%} --->
 ![Beerschot is de ploeg van't stad ;)](../assets/5_arrays/refbeer.png)
 
 <!---{pagebreak} --->

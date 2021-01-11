@@ -81,6 +81,9 @@ We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
 {% endhint %}
 
+<!---{pagebreak} --->
+
+
 In dit boek zullen we altijd het  Project Type  **Console App (.NET Core)** gebruiken. Een console applicatie is een programma dat alle uitvoer naar een zogenaamde *console* stuurt, een shell. M.a.w., je kan enkel tekst (Unicode) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
 
 Kies dit type en klik 'Next'.
@@ -111,10 +114,6 @@ VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Co
 ### IDE Layout
 
 Wanneer je VS opstart zal je mogelijk overweldigd worden door de hoeveelheid menu's, knopjes, schermen, etc. Dit is normaal voor een IDE: deze wil zoveel mogelijk mogelijkheden aanbieden aan de gebruiker. Vergelijk dit met Word: afhankelijk van wat je gaat doen gebruikt iedere gebruiker andere zaken van Word. De makers van Word kunnen dus niet bepaalde zaken weglaten, ze moeten net zoveel mogelijk aanbieden.
-
-{% hint style='warning' %}
-Laat je niet afschrikken door VS. Het is een imponerend programma, maar je zal er sneller dan je verwacht je weg in terugvinden!
-{% endhint %}
 
 We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van een nieuw programma.
 
@@ -147,6 +146,8 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 
 <!---NOBOOKEND--->
 {% endhint %}
+
+<!---{pagebreak} --->
 
 ### Je programma starten
 

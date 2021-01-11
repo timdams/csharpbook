@@ -30,11 +30,13 @@ Console.WriteLine($"En je usernaam is {Environment.UserName}");
 
 In de laatste lijn code tonen we dat je uiteraard ook rechtstreeks de variabelen uit ``Environment`` in je string interpolatie kunt gebruiken en dus niet met een tussenvariabele moet werken.
 
+Je kan [hier](https://docs.microsoft.com/en-us/dotnet/api/system.environment) opzoeken welke nuttige zaken je nog met de bibliotheek kunt doen.
+
 {% hint style='tip' %}
 **WorkingSet** geeft terug hoeveel geheugen het programma van Windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (Wat een vreemde lange zin.). Test maar eens wat er gebeurt als je programma maakt dat uit meer lijnen code bestaat.
 {% endhint %}
 
-Je kan [hier](https://docs.microsoft.com/en-us/dotnet/api/system.environment) opzoeken welke nuttige zaken je nog met de bibliotheek kunt doen.
+
 
 <!---{pagebreak} --->
 

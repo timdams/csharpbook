@@ -96,7 +96,7 @@ int[,,] temperaturen =
 
 Die we als volgt kunnen visualiseren:
 
-<!--- {width:45%} --->
+<!--- {width:65%} --->
 ![De derde dimensie bestaat uit 3 2-dimensionale 2 bij 2 arrays...](../assets/5_arrays/3D.png)
 
 {% hint style='tip' %}
@@ -104,6 +104,8 @@ Zoals je ziet worden meerdimensionale arrays snel een kluwen van komma's, accola
 
 De regel is eenvoudig: als je een 7-dimensionale array nodig hebt, is de kans groot dat je een  volledig verkeerd algoritme hebt verzonnen, of dat je nog niet aan het volgende boekdeel bent begonnen of een topwetenschapper in CERN bent. Choose your reason!
 {% endhint %}
+
+<!---{pagebreak} --->
 
 Stel dat we uit de boeken-array de auteur van het derde boek wensen te tonen dan kunnen we schrijven:
 

@@ -261,6 +261,9 @@ static string WindRichting()
 {% endhint %}
 
 
+<!---{pagebreak} --->
+
+
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
 <!---NOBOOKEND--->
@@ -475,8 +478,8 @@ public static void Main()
 }
 ```
 
-<!--- {width:50%} --->
-![Visualisatie van bovenstaande code zonder terugkerende pijlen](../assets/4_methoden/mmethods.png)
+<!--- {width:60%} --->
+![Visualisatie van bovenstaande code zonder terugkerende pijlen.](../assets/4_methoden/mmethods.png)
 
 <!---{pagebreak} --->
 
@@ -498,7 +501,7 @@ static  void SchrijfNaam()
 
 Deze code heeft een methode die zichzelf aanroept, zonder dat deze ooit afsluit, waardoor we dus in een oneindige aanroep van de methode komen. Dit programma zal een leeg scherm tonen (daar er nooit aan de tweede lijn in de methode wordt geraakt) en dan crashen wanneer het werkgeheugen van de computer op is (daar de methoden nooit afsluit en telkens een kopie aanroept).
 
-![Deze keer zijn er bewust geen terugkerende pijlen getekend: ze zijn er niet](../assets/4_methoden/oneindig.png)
+![Deze keer zijn er bewust geen terugkerende pijlen getekend: ze zijn er niet.](../assets/4_methoden/oneindig.png)
 
 
 <!---{pagebreak} --->

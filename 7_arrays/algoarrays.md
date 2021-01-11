@@ -80,6 +80,8 @@ else
 
 Een nadeel van deze oplossing is dat we steeds de hele ``while`` doorlopen (we gebruiken geen ``break`` vanwege een allergie hiervoor bij de auteur). Bij heel lange arrays is dit dus niet erg performant.
 
+<!---{pagebreak} --->
+
 Volgende oplossing met een ``do while`` toont een performantere oplossing voor het eerste deel van het programma:
 
 ```java
