@@ -12,6 +12,8 @@ VS is een zogenaamde IDE ("Integrated Development Environment") en is op maat ge
 In dit boek zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (makkelijk uitbreidbaar, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
 {% endhint %}
 
+<!---{pagebreak} --->
+
 ### De compiler en Visual Studio
 
 Zoals gezegd: jouw taak als programmeur is algoritmes in C# taal uitschrijven. We zouden dit in een eenvoudige tekstverwerker kunnen doen, maar dan maken we het onszelf lastig. Net zoals je tekst in notepad kunt schrijven, is het handiger dit in bijvoorbeeld Word te doen: je krijgt een spellingchecker en allerlei handige extra's. 
@@ -28,8 +30,6 @@ In dit boek zullen de voorbeelden steeds met de **Community** editie van VS gema
 
 Het is belangrijk bij de installatie dat je minimaal volgende zaken selecteert:
 * de **.NET desktop development** en **.NET Core cross-platform development**  workload. 
-* bij "individual components" de "**Class Designer**" aanduiden
-
 Uiteraard ben je vrij om meerdere zaken te installeren.
 
 <!---{pagebreak} --->
@@ -61,6 +61,7 @@ Je kan dit achteraf nog aanpassen in VS via "Tools" in de menubalk, dan "Import 
 {% endhint %}
 <!---NOBOOKEND--->
 
+<!---{pagebreak} --->
 
 #### Project keuze
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen. Van zodra je projecten gaat aanmaken zullen deze in de toekomst ook op dit scherm getoond worden zodat je snel naar een voorgaand project kunt gaan. 

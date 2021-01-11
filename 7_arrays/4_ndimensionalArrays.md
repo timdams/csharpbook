@@ -23,6 +23,7 @@ De arrays die we nu behandelen zullen steeds "rechthoekig" zijn. Daarmee bedoele
 {% hint style='tip' %}
 Arrays die per rij of kolom een andere hoeveelheid elementen hebben zijn zogenaamde **jagged arrays**, welke we kort hierna bespreken.
 {% endhint %}
+<!---{pagebreak} --->
 
 ### n-dimensionale arrays aanmaken
 Door een komma tussen rechte haakjes te plaatsen tijdens de declaratie van een array, kunnen we meer-dimensionale arrays maken. 
@@ -61,8 +62,6 @@ Ook om nu effectief een array aan te maken gebruiken we de komma-notatie, alleen
 int[,] matrix = new int[5,10];
 ```
 
-<!---{pagebreak} --->
-
 Om een array ook onmiddellijk te initialiseren met waarden gebruiken we de volgende uitdrukking :
 
 ```java
@@ -76,6 +75,8 @@ string[,] boeken =
 ```
 
 Merk op dat we dus nu een 3 bij 4 array maken maar dat dit dus nog steeds een 2D-array is. Iedere rij bestaat uit 3 elementen. We maken letterlijk een array van arrays.
+
+<!---{pagebreak} --->
 
 Of bij een 3D:
 ```java

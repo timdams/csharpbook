@@ -16,6 +16,7 @@ Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de erro
 
 ![So many errors?!](../assets/1_csharpbasics/errors.png)
 
+<!---{pagebreak} --->
 Dit zal de "error list" openen (een schermdeel van VS dat we aanraden om altijd open te laten én dus niet weg te klikken):
 
 <!--- {width:70%} --->
@@ -47,7 +48,7 @@ Lees de boodschap eens goed na: wat denk je dat er gebeurt als je op 'yes' duwt?
 De voorman verschijnt wanneer er iets beschreven wordt waar véél fouten op gemaakt worden, zelfs bij ervaren programmeurs. Opletten geblazen dus.
 {% endhint %}
 
-
+<!---{pagebreak} --->
 
 ### Fouten oplossen
 

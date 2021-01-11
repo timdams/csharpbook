@@ -27,6 +27,8 @@ while(tellerA < 3 )  //outer loop
 }
 ```
 
+<!---{pagebreak} --->
+
 De uitvoer hiervan zal als volgt zijn:
 
 ```text

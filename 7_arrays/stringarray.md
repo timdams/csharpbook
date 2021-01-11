@@ -89,6 +89,8 @@ IK BEN REINHARDT
 ik ben reinhardt
 ```
 
+<!---{pagebreak} --->
+
 #### Replace
 
 ``Replace(string old, string news)`` zal in de string alle substrings die gelijk zijn aan ``old`` vervangen door de meegegeven ``news`` string en deze nieuwe string als resultaat teruggeven. 

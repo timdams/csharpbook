@@ -38,6 +38,8 @@ En zal volgende error genereren:
 
 ![Duidelijk toch!](../assets/5_arrays/arrays3.png)
 
+<!---{pagebreak} --->
+
 ### Arraymethode voorbeeld
 
 Volgend voorbeeld toont een methode die alle getallen van de meegegeven array op het scherm zal tonen:

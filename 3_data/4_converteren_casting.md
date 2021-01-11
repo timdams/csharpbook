@@ -68,6 +68,8 @@ Hierbij dien je aan de compiler te zeggen: "Volgende variabele die van het type 
 Het is als het ware een soort Amerikaanse reflex om te voorkomen dat de compiler later door ons kan aangeklaagd worden omdat hij uiterst belangrijke data heeft doen verloren gaan tijdens de omzetting. Via casting geven we aan dat we de compiler niet zullen aanklagen.
 {% endhint %}
 
+<!---{pagebreak} --->
+
 ### Narrowing
 Casting doe je  wanneer je een variabele wilt toekennen aan een andere variabele van een ander type dat daar eigenlijk **niet inpast** zonder dataverlies. We moeten dan aan **narrowing** doen, letterlijk het versmallen van de data.
 

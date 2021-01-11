@@ -30,7 +30,7 @@ while (myCount < 100)
 
 Zolang ``myCount`` kleiner is dan 100 (``myCount < 100``) zal myCount met 1 verhoogd worden en zal de huidige waarde van myCount getoond worden. We krijgen met dit programma dus alle getallen van 1 tot en met 100 op het scherm onder elkaar te zien. Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 nog wel getoond zal worden. **Begrijp je waarom?** Test dit zelf!
 
-
+<!---{pagebreak} --->
 
 ### Complexe condities
 

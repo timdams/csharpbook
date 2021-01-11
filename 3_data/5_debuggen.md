@@ -21,6 +21,7 @@ Voeg beide samen
 
 Dit is dus een logische fout, oftewel bug (in dit geval een **BOEM!!!!**).
 
+<!---{pagebreak} ---> 
 
 ### Debuggen met Visual Studio
 
@@ -35,6 +36,7 @@ Een breakpoint plaats je door op het grijze gedeelte links van de lijn code te k
 
 In bovenstaande figuur plaatsen we een breakpoint aan lijn 11. De code uitvoer zal dus nog wel lijn 10 uitvoeren, maar niet lijn 11.
 
+<!---{pagebreak} --->
 Als je nu je project uitvoert zal de code pauzeren aan die lijn en zal VS in "debug modus" openspringen wat er vervolgens als volgt uit ziet:
 
 ![](../assets/1_csharpbasics/debugmode.png)
@@ -46,6 +48,7 @@ In dit "nieuwe" scherm zijn er momenteel 2 belangrijke delen:
 
 ![Kan je trouwens verklaren waarom deze deling 0 blijkbaar geeft en niet 1.667.](../assets/1_csharpbasics/debugbug.png)
 
+<!---{pagebreak} --->
 
 ### Door je code steppen
 
@@ -57,6 +60,8 @@ We lichten hier de knoppen toe die je zeker zal nodig hebben:
 * De **continue** knop is logisch: hier op klikken zal je programma terug voortzetten vanaf het breakpoint waar je gepauzeerd bent. Het zal vervolgens verder gaan tot het weer een breakpoint bereikt of wanneer het einde van het programma wordt bereikt.
 * De **rode stop** knop gebruik je indien je niet verder wilt debuggen en ogenblikkelijk terug je code wilt aanpassen.
 * De **step-over** knop (het gebogen pijltje) is een belangrijke knop. Deze zal je code één lijn code verder uitvoeren en dan weer pauzeren. Het laat je dus toe om letterlijk doorheen je code te *stappen*. Je kan dit doen om de flow van je programma te bekijken (zie volgende hoofdstukken) en om te zien hoe bepaalde variabelen evolueren doorheen je code. 
+
+<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}

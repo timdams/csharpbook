@@ -42,6 +42,8 @@ Console.WriteLine($"Nog een getal: {myGen.Next()}");
 De ``new Random()`` code is iets wat in het tweede deel van deze boekenreeks volledig uit de doeken zal gedaan worden. Lig er dus niet van wakker.
 {% endhint %}
 
+<!---{pagebreak} --->
+
 #### Next mogelijkheden
 Je kan de ``Next`` methode ook 2 parameters meegeven, namelijk de grenzen waarbinnen het getal moet gegenereerd worden. De tweede parameter is exclusief dit getal zelf. Wil je dus een willekeurig geheel getal tot en met 10 dan schrijf je 11, niet 10, als tweede parameter:
 

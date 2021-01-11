@@ -35,6 +35,8 @@ if (gevonden)
 
 Voorgaande stukje code is de meest naïeve oplossing. Bedenk echter wat er gebeurt indien het getal dat we zoeken 2 of meerdere keren in de array staat. Index zal dan de positie bevatten van de laatst gevonden 12 in de array. Uiteraard kan je het algoritme aanpassen om hier rekening mee te houden.
 
+<!---{pagebreak} --->
+
 #### Manueel zoeken met for en while
 
 We tonen nu twee voorbeelden van hoe je kan zoeken in een array wanneer we bijvoorbeeld 2 arrays hebben die 'synchroon' zijn. Daarmee bedoelen we: de eerste array bevat producten, de tweede array bevat de prijs van ieder product. De prijs van de producten staat steeds op dezelfde index in de andere array:
@@ -77,8 +79,6 @@ else
 ```
 
 Een nadeel van deze oplossing is dat we steeds de hele ``while`` doorlopen (we gebruiken geen ``break`` vanwege een allergie hiervoor bij de auteur). Bij heel lange arrays is dit dus niet erg performant.
-
-<!---{pagebreak} --->
 
 Volgende oplossing met een ``do while`` toont een performantere oplossing voor het eerste deel van het programma:
 

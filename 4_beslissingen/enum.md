@@ -36,6 +36,8 @@ Deze oplossing heeft 2 grote nadelen:
 * Wat als we per ongeluk ``dagKeuze`` een niet geldige waarde geven, zoals 9, 2000 of  -4 ?
 * De code is niet erg leesbaar. Wat was ``dagKeuze ==2`` nu weer? Was ``2`` nu dinsdag of woensdag (want misschien was maandag 0 i.p.v. 1) ?
 
+<!---{pagebreak} --->
+
 #### Slechte oplossing 2: Met strings
 
 Laten we tweede manier eens bekijken: de waarde van de dag bewaren we in een variabele ``string dagKeuze``. We bewaren de dagen als ``"maandag"``, ``"dinsdag"``, etc.
@@ -66,6 +68,8 @@ Het keyword ``enum`` geeft aan dat we een nieuw datatype maken dat maar enkele m
 {% hint style='tip' %}
 In C# zitten al veel enum-types ingebouwd. Denk maar aan ``ConsoleColor``: wanneer je de kleur van het lettertype van de console wilt veranderen gebruiken we een enum-type. Er werd reeds gedefinieerd wat de toegelaten waarden zijn, bijvoorbeeld: ``Console.ForegroundColor = ConsoleColor.Red;`` 
 {% endhint %}
+
+<!---{pagebreak} --->
 
 ### Zelf enum maken
 Zelf een ``enum`` type maken gebeurt in 2 stappen:

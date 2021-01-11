@@ -185,6 +185,7 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal , 2
 ![Lengte is 5, index laatste element is 4, eerste element is 0](../assets/5_arrays/arrays1.png)
 {% endhint %}
 
+<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}

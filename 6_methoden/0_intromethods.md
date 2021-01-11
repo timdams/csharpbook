@@ -83,6 +83,9 @@ namespace Demo1
 }
 ```
 
+<!---{pagebreak} --->
+
+
 Volgende afbeelding toont hoe je programma doorheen de code loopt. De pijlen geven de flow aan:
 
 ![Visualisatie van bovenstaande code](../assets/4_methoden/timsoft.png)
@@ -257,7 +260,6 @@ static string WindRichting()
 ```
 {% endhint %}
 
-<!---{pagebreak} --->
 
 <!---NOBOOKSTART--->
 {% hint style='warning' %}
@@ -476,6 +478,7 @@ public static void Main()
 <!--- {width:50%} --->
 ![Visualisatie van bovenstaande code zonder terugkerende pijlen](../assets/4_methoden/mmethods.png)
 
+<!---{pagebreak} --->
 
 #### Bugs met methoden
 
@@ -534,6 +537,7 @@ int einde = BerekenSomRecursief(1,3);
 {% endhint %}
 <!---NOBOOKEND--->
 
+<!---{pagebreak} --->
 
 #### Commentaar toevoegen
 

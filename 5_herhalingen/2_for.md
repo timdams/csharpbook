@@ -46,6 +46,8 @@ Voor de *setup*-variabele kiest men meestal ``i``, maar dat is niet noodzakelijk
 Als je in Visual Studio ``for`` typt en dan tweemaal op [tab] duwt krijg je  kant en klare for-loop code.
 {% endhint %}
 
+<!---{pagebreak} --->
+
 ### continue en break
 
 Het ``continue`` keyword laat toe om in een loop de huidige iteratie te eindigen en weer naar de start van de volgende iteratie te gaan. In het volgende voorbeeld gebruiken we ``continue`` om alle getallen van 1 tot 10 te tonen waarbij we echter het getal 5 zullen overslaan:
