@@ -11,13 +11,7 @@ In tegenstelling tot de eerdere meer-dimensionale arrays moeten de interne array
 Het grote verschil bij het aanmaken van bijvoorbeeld een 2D jagged array is het gebruik van de vierkante haken (en dus niet bijvoorbeeld ``tickets[,]``):
 
 ```java
-double[][]tickets;
-```
-
-Vanaf nu kan je dan individuele arrays toewijzen aan ieder element van ```tickets``:
-
-```java
-tickets =
+double[][]tickets=
     {
       new double[] {3.0, 40, 24},
       new double[] {123 , 31.3 },
