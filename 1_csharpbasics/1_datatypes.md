@@ -94,8 +94,8 @@ Voor de kommagetallen zijn er maar 3 mogelijkheden. Ieder datatype heeft een 'vo
 
 | **Type** | **Geheugen** | **Bereik** | **Precisie** |
 | :--- | :--- | :--- | :--- |
-| `float` | **32 bits** | gemiddeld | 7 digits |
-| `double` | 64 bits | **meeste** | 15 digits |
+| `float` | **32 bits** | gemiddeld | ~6-9 digits |
+| `double` | 64 bits | **meeste** | ~15-17 digits |
 | `decimal` | 128 bits | minste | **28-29 digits** |
 
 Zoals je ziet moet je bij kommagetallen een afweging maken tussen 3 even belangrijke criteria.  Heb je ongelooflijk grote precisie nodig dan ga je voor een ``decimal``.  Wil je vooral erg grote of erg kleine getallen kies je voor ``double``.   Zoals je merkt zal je dus zelden ``decimal`` nodig hebben, deze zal vooral nuttig zijn in financiële en wetenschappelijke programma's waar met erg exacte cijfers moet gewerkt worden. 
