@@ -99,6 +99,18 @@ Stel dat we een variabele ``int getal`` hebben:
 Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter zijn om te lezen. Bij twijfel, gebruik gewoon de lange notatie. 
 {% endhint %}
 
+{% hint style='warning' %}
+Bovenstaande verkorte notaties hebben ook een variant waarbij de operator links en de operand rechts staat. Bijvoorbeeld `--getal`. Beide doen het zelfde, maar niet helemaal. Je merkt het verschil in volgende voorbeeld:
+
+```java
+int getal = 1;
+int som = getal++;  //som wordt 1, i  wordt 2
+int som2 = ++som; //som2 wordt 2, som wordt 2
+```
+
+Als je de operator achter de operand zet (``som++``) dan zal eerst de waarde van de operand worden teruggegeven, vervolgens wordt deze verhoogd. Bij de andere (``++som``) is dat omgekeerd: eerst wordt de operand aangepast, en de nieuwe waarde wordt als resultaat teruggegeven.
+{% endhint %}
+
 ##  Expressiedatatypes 
 
 <!---NOBOOKSTART--->
