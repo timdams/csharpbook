@@ -28,8 +28,8 @@ do
 
 if (gevonden)
 {
-    Console.WriteLine($"Rugnummer {teZoekenGetal} eindigde op plek {index + 1}");
-    // +1 omdat de indexering vanaf 0 telt, wat de gebruiker niet moet weten. 
+    Console.WriteLine($"Rugnummer {teZoekenGetal} eindigde op plek {index}");
+    
 }
 ```
 
