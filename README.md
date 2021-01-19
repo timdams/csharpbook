@@ -17,7 +17,7 @@ Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal 
 * Paperback, zwartwit: [Bravenewbook](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544439/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-zwartwit-editie-252007-www-bravenewbooks-nl/)
 * PDF: [Leanpub](http://leanpub.com/ziescherp/)
   
-> **Wenst u het boek in grotere oplage (>10) te bestellen. Contacteer me voor  een mooi korting.**
+> **Wenst u het boek in grotere oplage (>10) te bestellen. Contacteer me voor  een mooie korting.**
 
 **Editie 1** (wordt niet meer geupdate) :
 * [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor **paperback versie**, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar. **enkel editie 1**
