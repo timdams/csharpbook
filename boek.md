@@ -2,10 +2,15 @@ Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal 
 
 De gepubliceerde versies zijn identiek aan deze cursus.
 
-Wil je toch een andere versie dan deze online versie dan kan dat via volgende kanalen:
-* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor paperback versie, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar.
-* [Kobo](https://www.kobo.com/be/nl/ebook/zie-scherp) en [Bol.com](https://www.bol.com/nl/p/zie-scherp/9300000010152880/?bltgh=ncRbMnPGJQ1jY9UziVNKtw.1_4.5.ProductTitle): ebook versie voor op je e-reader (gratis op kobo plus)
-* [Leanpub](http://leanpub.com/ziescherp/): hoge-kwaliteits pdf (AP studenten kunnen deze gratis downloaden via digitap.ap.be)
+**Editie 2:**
+* Paperback, kleur: [Bravenewbooks](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544359/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-251307-www-bravenewbooks-nl/), [bol.com](https://www.bol.com/nl/p/zie-scherp/9300000022269573/?bltgh=jqBAIusZkRDfZ71k-4BEIA.1_4.6.ProductImage), [Standaard boekhandel](https://www.standaardboekhandel.be/p/zie-scherp-9798680652831)
+* Paperback, zwartwit: [Bravenewbook](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544439/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-zwartwit-editie-252007-www-bravenewbooks-nl/)
+* PDF: [Leanpub](http://leanpub.com/ziescherp/)
+  
+
+**Editie 1** (wordt niet meer geupdate) :
+* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor **paperback versie**, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar. **enkel editie 1**
+* [Kobo](https://www.kobo.com/be/nl/ebook/zie-scherp): **ebook versie** voor op je e-reader (gratis op kobo plus)
 
 {% hint style='tip' %}
 Wil ik rijk worden hiermee? Neen, maar ik vind het jammer dat niet iedereen toegang heeft tot mijn briljante cursus ;) 
