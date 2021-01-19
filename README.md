@@ -12,9 +12,17 @@ Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programme
 
 Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal ten allen tijde beschikbaar blijven onder het Creatieve Commons 4.0 principe (zie onderaan). Wil je de auteur sponsoren dan kan dit door het eerste deel (Zie Scherp) via 1 van volgende versies aan te schaffen (De gepubliceerde versies zijn identiek aan deze cursus)
 
-* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor **paperback versie**, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar.
+**Editie 2:**
+* Paperback, kleur: [Bravenewbooks](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544359/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-251307-www-bravenewbooks-nl/), [bol.com](https://www.bol.com/nl/p/zie-scherp/9300000022269573/?bltgh=jqBAIusZkRDfZ71k-4BEIA.1_4.6.ProductImage), [Standaard boekhandel](https://www.standaardboekhandel.be/p/zie-scherp-9798680652831)
+* Paperback, zwartwit: [Bravenewbook](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544439/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-zwartwit-editie-252007-www-bravenewbooks-nl/)
+* PDF: [Leanpub](http://leanpub.com/ziescherp/)
+  
+> **Wenst u het boek in grotere oplage (>10) te bestellen. Contacteer me een sein voor stevige kortingen.**
+
+**Editie 1** (wordt niet meer geupdate) :
+* [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor **paperback versie**, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar. **enkel editie 1**
 * [Kobo](https://www.kobo.com/be/nl/ebook/zie-scherp): **ebook versie** voor op je e-reader (gratis op kobo plus)
-* [Leanpub](http://leanpub.com/ziescherp/): hoge-kwaliteits **pdf** 
+
 
 ![](./assets/boek.png)
 
