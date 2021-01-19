@@ -21,7 +21,7 @@ Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal 
 
 **Editie 1** (wordt niet meer geupdate) :
 * [Amazon.de](https://www.amazon.de/dp/B08HGNS5SF) : fullcolor **paperback versie**, in groter formaat om aantekeningen bij de tekst te plaatsen. Ook kindle versie beschikbaar. **enkel editie 1**
-* [Kobo](https://www.kobo.com/be/nl/ebook/zie-scherp): **ebook versie** voor op je e-reader (gratis op kobo plus)
+* [Kobo](https://www.kobo.com/be/nl/ebook/zie-scherp): **ebook versie** voor op je e-reader
 
 
 ![](./assets/boek.png)
