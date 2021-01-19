@@ -13,8 +13,8 @@ Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programme
 Deze cursus wordt ook aangeboden voor de "buitenwereld". Deze online cursus zal ten allen tijde beschikbaar blijven onder het Creatieve Commons 4.0 principe (zie onderaan). Wil je de auteur sponsoren dan kan dit door het eerste deel (Zie Scherp) via 1 van volgende versies aan te schaffen (De gepubliceerde versies zijn identiek aan deze cursus)
 
 **Editie 2:**
-* Paperback, kleur: [Bravenewbooks](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544359/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-251307-www-bravenewbooks-nl/), [bol.com](https://www.bol.com/nl/p/zie-scherp/9300000022269573/?bltgh=jqBAIusZkRDfZ71k-4BEIA.1_4.6.ProductImage), [Standaard boekhandel](https://www.standaardboekhandel.be/p/zie-scherp-9798680652831)
-* Paperback, zwartwit: [Bravenewbook](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544439/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-zwartwit-editie-252007-www-bravenewbooks-nl/)
+* Paperback, kleur: [Bravenewbooks](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544359/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-251307-www-bravenewbooks-nl/), [bol.com](https://www.bol.com/nl/p/zie-scherp/9300000022269573/?bltgh=jqBAIusZkRDfZ71k-4BEIA.1_4.6.ProductImage), [Standaard boekhandel](https://www.standaardboekhandel.be/p/zie-scherp-9798680652831), [Amazon.nl](https://www.amazon.nl/dp/9464187425/ref=sr_1_3?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=zie+scherp&qid=1611095821&sr=8-3)
+* Paperback, zwartwit: [Bravenewbook](https://www.bravenewbooks.nl/shop/index.php/catalog/product/view/id/544439/s/zie-scherp-c-voor-beginners-enthousiastelingen-en-geeks-zwartwit-editie-252007-www-bravenewbooks-nl/), [Amazon.nl](https://www.amazon.nl/dp/9464187891/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=zie+scherp&qid=1611095821&sr=8-2)
 * PDF: [Leanpub](http://leanpub.com/ziescherp/)
   
 > **Wenst u het boek in grotere oplage (>10) te bestellen. Contacteer me voor  een mooie korting.**
