@@ -49,7 +49,7 @@ Stel dat je dus een array van strings wenst waarin je verschillende kleuren zal 
 ```csharp
 string[] myColors;
 ```
-Vervolgens kunnen we later waarden toekennen aan de array, hiervoor gebruiken we het ``new`` statement.
+Vervolgens kunnen we later waarden toekennen aan de array, hiervoor gebruiken we het ``new`` sleutelwoord.
 
 ```csharp
 string[] myColors;
@@ -201,7 +201,6 @@ for (int i = 0; i < getallen.Length; i++)
     Console.WriteLine(getallen[i]);
 }
 ```
-
 ## Volledig voorbeeldprogramma met arrays
 Met al de voorgaande informatie is het nu mogelijk om heel eenvoudig complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-element om een bepaalde operatie over de hele array toe te passen.
 
@@ -261,5 +260,5 @@ for(int i = 0; i < ploegen.Length; i++)
 }
 ```
 
-**Opgelet: wanneer je met arrays van objecten ([zie later](../11_arraysvanklassen/7_arraysvanobj.md)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
+**Opgelet: wanneer je met arrays van objecten (zie [later](../11_arraysvanklassen/7_arraysvanobj.md)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
 

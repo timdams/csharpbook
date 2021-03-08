@@ -40,14 +40,14 @@ Ieder ``DateTime`` object dat je aanmaakt heeft en hoop nuttige methoden.
 
 Deze methoden kan je gebruiken om een bepaalde aantal dagen, uren, minuten en zo voort aan je huidige object toe te voegen. Al deze methoden geven steeds een **nieuw DateTime object** terug dat je moet bewaren wil je er iets mee doen:
 
-* AddDays
-* AddHours
-* AddMilliseconds
-* AddMinutes
-* AddMonths
-* AddSeconds
-* AddTicks
-* AddYears
+* ``AddDays``
+* ``AddHours``
+* ``AddMilliseconds``
+* ``AddMinutes``
+* ``AddMonths``
+* ``AddSeconds``
+* ``AddTicks``
+* ``AddYears``
 
 
 Een voorbeeld:
@@ -72,7 +72,7 @@ Console.WriteLine(someTime);
 
 # DateTime properties
 
-**Properties** (*eigenschappen*) zijn een zeer uniek aspect van C#. We zullen deze nog tot in den treuren leren maken. Via properties kan je de interne staat van objecten uitlezen én aanpassen, dit op een gecontroleerde manier.
+**Properties**  zijn een zeer uniek aspect van C# zoals we in vorig hoofdstuk zagen. We zullen deze nog tot in den treuren leren maken. Via properties kan je de interne staat van objecten uitlezen én aanpassen, dit op een gecontroleerde manier.
 
 Het fijne aan properties is dat :
 
@@ -82,26 +82,25 @@ Het fijne aan properties is dat :
 Meer hierover later.
 
 Enkele nuttige properties van ``DateTime`` zijn:
-* Date
-* Day
-* DayOfWeek
-* DayOfYear
-* Hour
-* Millisecond
-* Minute
-* Month
-* Second
-* Ticks
-* TimeOfDay
-* Today
-* UtcNow
-* Year
+* ``Date``
+* ``Day``
+* ``DayOfWeek``
+* ``DayOfYear``
+* ``Hour``
+* ``Millisecond``
+* ``Minute``
+* ``Month``
+* ``Second``
+* ``Ticks``
+* ``TimeOfDay``
+* ``Today``
+* ``UtcNow``
+* ``Year``
 
 
 ## Properties gebruiken
 
-Sommige properties zijn read-only, andere kan je zowel naar schrijven als uitlezen.
-*Alle properties van DateTime zijn read-only**..
+**Alle properties van DateTime zijn read-only**.
 
 Een voorbeeld:
 
@@ -157,10 +156,12 @@ WriteLine(now.ToString("T")); // long time
 WriteLine(now.ToString("Y")); // year and month
 ```
 
+{% hint style='tip' %}
 ## Custom format
 Wil je nog meer controle over de output dan kan je ook zelf je formaat specifieren.
 
 [Dit wordt hier volledig uit de doeken gedaan.](https://www.c-sharpcorner.com/blogs/date-and-time-format-in-c-sharp-programming1)
+{% endhint %}
 
 ## Localized time
 
@@ -175,9 +176,13 @@ CultureInfo russianCI = new CultureInfo("ru-RU");
 Console.WriteLine($"Current time in Russian style is: {now.ToString("F", russianCI)}");
 ```
 
+{% hint style='tip' %}
 ### Culture names
+
 Een lijst van alle cultures in .NET kan je [hier terugvinden](http://www.csharp-examples.net/culture-names/). 
+
 **Opgelet, enkel indien een specifieke culture op je computer staat geïnstalleerd zal je deze kunnen gebruiken.**
+{% endhint %}
 
 # Static method
 Sommige methoden zijn ``static`` dat wil zeggen dat je ze enkel rechtstreeks op de klasse kunt aanroepen. Vaak zijn deze methoden hulpmethoden waar de individuele objecten niets aan hebben.
@@ -227,7 +232,3 @@ Vervolgens wordt het scherm leeg gemaakt en wordt de huidige tijd getoond. Merk 
 ## Verjaardag
 
 Maak een applicatie die aan de gebruiker vraagt op welke dag hij jarig is. Toon vervolgens over hoeveel dagen z'n verjaardag dan zal zijn.
-
-## Doe-het-zelf
-
-Verzin zelf een applicatie zodat je zelf nog leert werken met ``DateTime``.

@@ -7,6 +7,8 @@ Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassie
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:
 Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen en met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
 
+
+
 # Je eerste console programma
 
 Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het nog niet open is). **Veeg de code die hier reeds staat niet weg!**
@@ -38,7 +40,18 @@ namespace Demo1
 
 Compileer deze code en voer ze uit: **druk hiervoor op het groene driehoekje. Of via het menu Debug en dan Start Debugging.
 
+{% hint style='danger' %}
 **Let erop dat je iedere 'zin' eindigt met een puntkomma.**
+{% endhint %}
+
+
+{% hint style='danger' %}
+## Moet ik niets bewaren?
+
+Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen bewaard. Trouwens: **Kies nooit voor "save as..."**!!!!
+
+Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.
+{% endhint %}
 
 ## Analyse van de code
 
@@ -94,10 +107,4 @@ namespace Demo1
 
 Kan je ook deze code uitvoeren?! Make it happen en ga dan gezwind naar het volgende hoofdstuk!
 
-## Moet ik niets bewaren?
 
->![](../assets/attention.jpg)
-
-Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen bewaard. Trouwens: **Kies nooit voor "save as..."**!!!!
-
-Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.

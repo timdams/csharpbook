@@ -3,7 +3,7 @@
 In dit deel  zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
 ## If
-De ``if`` uitdrukking is 1 van de meest elementaire uitdrukking in een programmeertaal. De syntax is als volgt:
+De ``if`` is een van de elementairste constructies in een programmeertaal. De syntax is als volgt:
 
 ```csharp
 if (boolean expression) 
@@ -49,6 +49,9 @@ if ( number < 5 )
 
 De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk code zijn dat altijd een ``bool`` als resultaat teruggeeft. 
 
+{% hint style="warning" %}
+We verwachten dat je `if` altijd met een block gebruikt, omdat dat leesbaarder is. De versie zonder block zien we als een stijlfout!
+{% endhint %}
 
 
 ## Veelgemaakte if-fouten
@@ -140,7 +143,7 @@ c contains 1
 c is non-negative
 ```
 
-We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operatoren (``&&``, ``||``, ``!``) .
+We kunnen ook meerdere expressies combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operatoren (``&&``, ``||``, ``!``) .
 
 Een voorbeeld:
 ```csharp
@@ -207,6 +210,9 @@ else if (x == 8)
 }
 ```
 
+{% hint style="info" %}
+Merk op dat `else if` niet meer is dan een verkorte schrijfwijze voor nesting van een `if` in een `else`-block.
+{% endhint %}
 
 ## Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een ``if``/``else if``/``else`` hoort. Binnen dit blok kunnen nu echter opnieuw ``if``/``else if``/``else`` structuren worden aangemaakt.

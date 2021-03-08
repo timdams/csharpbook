@@ -1,0 +1,2 @@
+# Magic The Gathering API
+

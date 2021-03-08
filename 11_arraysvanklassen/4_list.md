@@ -1,12 +1,14 @@
-# List collectie
+# List
 
 Een List<> collectie is de meest standaard collectie die je kan beschouwen als een veiligere variant op een een doodnormale array.
 
-> De Generieke ``List<>`` klasse bevindt zich in de ``System.Collections.Generic`` namespace. Je dient deze namespace dus als ``using`` bovenaan toe te voegen wil je deze klasse kunnen gebruiken.
+{% hint style='tip' %}
+De Generieke ``List<>`` klasse bevindt zich in de ``System.Collections.Generic`` namespace. Je dient deze namespace dus als ``using`` bovenaan toe te voegen wil je deze klasse kunnen gebruiken.
+{% endhint %}
 
 ## List aanmaken
 
-De klasse ``List<>`` is een zogenaamde generieke klasse ([zien we later](../17_gencols/0_generics_intro.MD)). Tussen de ``< >``tekens plaatsen we het type dat de lijst zal moeten gaan bevatten. Bijvoorbeeld:
+De klasse ``List<>`` is een zogenaamde generieke klasse. Tussen de ``< >``tekens plaatsen we het type dat de lijst zal moeten gaan bevatten. Bijvoorbeeld:
 
 * ``List<int> alleGetallen= new List<int>();``
 * ``List<bool> binaryList = new List<bool>();``
@@ -25,7 +27,7 @@ In volgende voorbeeld maken we een List aan die objecten van het type string mag
 List<String> myStringList = new List<String>();
 myStringList.Add("This is the first item in my list!");
 myStringList.Add("And another one!");
-``` 
+```
 
 ## Elementen indexeren
 
@@ -63,7 +65,7 @@ voegt de string toe op de tweede plek en schuift de rest naar achter
 
 Je kan met een eenvoudige ``for`` of while-loop over een lijst itereren, maar het gebruik van een foreach-loop is toch handiger.
 
-Dit is dan ook de meestgebruikte operatie om eenvoudig ([Pro's: je kan ook Linq overwegen!](https://www.tutorialspoint.com/linq/)) en snel een bepaald stuk code toe te passen op ieder element van de lijst:
+Dit is dan ook de meestgebruikte operatie om eenvoudig en snel een bepaald stuk code toe te passen op ieder element van de lijst:
 
 ```csharp
 List<int> integerList=new List<int>();

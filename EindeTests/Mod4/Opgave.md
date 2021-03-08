@@ -1,4 +1,6 @@
-*Volgende opgave kwam uit de vaardigheidsproef module 4 van dit vak juni 2019.*
+{% hint style='tip' %}
+Volgende opgave kwam uit de vaardigheidsproef module 4 van dit vak juni 2019.
+{% endhint %}
 
 # Hammertje Tik
 Maak een digitale console-versie van het klassieke kinderspel hamertje Tik

@@ -1,3 +1,5 @@
+# Arrays en methoden
+
 ## Methoden met arrays als parameter maken
 Zoals alle types kan je ook arrays van eender welk type als parameter gebruiken bij het schrijven van een methode.
 
@@ -51,7 +53,8 @@ De ``ToonArray`` methode aanroepen kan dan als volgt:
 ToonArray(leeftijden);
 ``` 
 En de output zal dan zijn:
-```
+
+```text
 Array output:
 2
 5

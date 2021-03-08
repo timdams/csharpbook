@@ -1,10 +1,4 @@
-# Module 3 Afsluiter
-
-## Opgave
-
-> Een goede oefening om te testen of je alle leerstof van de voorbije hoofdstukken goed beheerst.
-
-### Deel 1: Pokemon manager
+# Deel 1: Pokemon manager
 
 Kan je alle kennis van dit semester gebruiken om een volwaardige Pokémon-gerelateerde manager te maken? Beeld je in dat je een programma schrijft dat toelaat dat gebruikers kunnen bijhouden welke Pokémons ze reeds hebben. Je array is een soort verzamelmap waarin je alle Pokémons kan plaatsen die je vindt.
 De gebruiker krijgt een menu waarin hij kan kiezen om:
@@ -15,7 +9,7 @@ De gebruiker krijgt een menu waarin hij kan kiezen om:
 * Statistieken van een specifieke verzamelde Pokémon te tonen
 * Specifieke verzamelde Pokémon van level te verhogen
 
-### Deel 2: Manager klasse
+# Deel 2: Manager klasse
 
 Plaat alle logica uit deel 1 in een nieuwe ``PokeManager``klasse. Plaats je array met Pokémon als static array in deze klasse. Deze klasse zal quasi enkel ``static`` methoden hebben, zoals:
 * ``ToonMenu``
@@ -43,7 +37,7 @@ while(true)
 }
 ```
 
-### (PRO) Deel 3: CSV bestanden verwerken
+# (PRO) Deel 3: CSV bestanden verwerken
 
 Zorg ervoor dat je:
 

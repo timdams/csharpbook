@@ -8,7 +8,6 @@ Net zoals we hebben gezien dat de Math-klasse een heleboel nuttige methoden in z
 
 ```csharp
 using System;
-using System.Linq;
 namespace methodmovie
 {
    class Program
@@ -40,7 +39,7 @@ int oudsteleeftijd = leeftijden.Max();
 ```
 
 # System.Array
-Alle C# arrays erven over van de ``System.Array`` klasse (klasse en overerving zien we later dit semester), hierdoor kan je zaken zoals ``Length`` gebruiken op je array. De ``System.Array`` klasse heeft echter ook nog een hoop andere nuttige methoden zoals de ``BinarySearch()``, ``Sort()`` en ``Reverse()`` methoden. Het gebruik hiervan is steeds dezelfde zoals volgende voorbeelden tonen:
+Alle C# arrays erven over van de ``System.Array`` klasse (klasse en overerving zien we later), hierdoor kan je zaken zoals ``Length`` gebruiken op je array. De ``System.Array`` klasse heeft echter ook nog een hoop andere nuttige methoden zoals de ``BinarySearch()``, ``Sort()`` en ``Reverse()`` methoden. Het gebruik hiervan is steeds dezelfde zoals volgende voorbeelden tonen:
 
 ## Sort: Arrays sorteren
 Om arrays te sorteren roep je de ``Sort()``-methode op als volgt, als parameter geef je de array mee die gesorteerd moet worden.

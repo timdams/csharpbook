@@ -1,150 +1,160 @@
-# Meetlat
+# Oefening 1: klasse `Pokemon` (h9-pokeattack)
 
-Maak een klasse "Meetlat". Via een write-only property BeginLengte kan de gebruiker de lengte van een voorwerp instellen (in meter). Via een reeks read-only properties (die transformeren) kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
+## Leerdoelen
 
-* LengteInM
-* LengteInCm
-* LengteInKm
-* LengteInVoet (1m= 3.2808ft)
+* herhalen aanmaken klassen
+* herhalen aanmaken instantiemethoden
+* herhalen aanmaken full properties
 
-**Opgelet het ``readonly`` keyword heb je niét nodig om readonly properties te maken. Zoek op hoe je dit wel doet.**
+## Functionele analyse
 
-Voorbeeld gebruik van klasse:
+We willen een bootleg Pokémon spel maken. We starten met een klasse om Pokémon voor te stellen.
 
-```csharp
-Meetlat mijnLat = new Meetlat();
-mijnLat.BeginLengte = 2;
-Console.WriteLine($"{mijnLat.LengteInM} meter is {mijnLat.LengteInVoet} voet.");
-```
+### Technische analyse
 
-# Pokémon
+Schrijf een klasse `Pokemon` met volgende onderdelen:
+- een full property `MaxHP`
+  - deze stelt een getal voor dat altijd minstens 20 en maximum 1000 bedraagt
+  - als je een lagere of hogere waarde probeert in te stellen, wordt de dichtstbijzijnde waarde ingesteld
+- een full property `HP`
+  - deze stelt een getal voor dat altijd groter dan of gelijk aan 0 is; verder kan de waarde ook nooit groter gemaakt worden dan `MaxHP`; elke poging om het getal kleiner dan 0 te maken, maakt het gelijk aan 0 en elke poging om boven `MaxHP` te gaan, maakt het gelijk aan `MaxHP`.
+- een autoproperty `PokeSpecies` om aan te geven over welk soort Pokémon het gaat; maak hiervoor een enum `PokeSpecies` met waarden `Bulbasaur`, `Charmander`, `Squirtle`, `Pikachu`
+- een autoproperty `PokeType` om aan te geven wat het element van de Pokémon is; maak hiervoor een enum `PokeTypes` met waarden `Grass`, `Fire`, `Water`, `Electric`
+- een methode `Attack()`: deze zorgt ervoor dat de naam van het soort Pokémon in hoofdletters en in kleur wordt geprint. Je kan de methode `ToString()` van een enum gebruiken. De kleur die je gebruikt is als volgt:
+  - groen voor type `Grass`
+  - rood voor type `Fire`
+  - blauw voor `Water`
+  - geel voor `Electric`
 
-We gaan een programma schrijven dat ons toelaat enkele basis-eigenschappen van specifieke Pokémon te berekenen terwijl ze levellen.
-Nadruk van deze oefening is het juist gebruiken van properties. Bekijk de cheat sheet bij twijfel.  
+Schrijf dan een statische `MakePokemon`-methode in de klasse `Pokemon` die één `Pokemon` van elke soort maakt (je mag de soort en het type invullen na het aanmaken van de objecten) en elk van deze `Pokemon` één keer hun methode `Attack` laat uitvoeren. Elke `Pokemon` start bovendien met 20 hit points als huidige waarde en als maximumwaarde.
 
->Disclaimer: de informatie in deze tekst is een vereenvoudigde versie van de echte Pokémon-stats in de mate dat ik het allemaal een beetje kon begrijpen en juist interpreteren.
-
-## Hoe Pokémon werken
-
-Korte uitleg over Pokémon en hun interne werking: Iedere Pokémon wordt uniek gemaakt door z’n base-stats, deze zijn voor iedere Pokémon anders. Deze base-stats  (punt 3) zijn onveranderlijk en blijven dus doorheen het hele leven van een Pokémon dezelfde. Je kan de base-stats als het dna van een Pokémon beschouwen.
-
-De full-stats (punt 9) zijn echter de stats die de effectieve ‘krachten’ van een Pokémon bepalen in een gevecht. Deze stats worden berekend gebaseerd op de vaste base-stats en het huidige level van de Pokémon. Hoe hoger het level van de Pokémon, hoe hoger dus zijn full-stats. 
-
-![Pokémon](../assets/6_klassen/pokemon.png)
-
-
-![](../assets/infoclip.png)
-* [Meer uitleg bij bovenstaande tekening](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=245f5d03-dbe4-49d9-b9e9-ab720084b984)
-
-## De Pokémonopdracht
-
-Maak een consoleapplicatie met daarin een klasse Pokémon die de werking zoals hierboven beschreven heeft:
-
-### Base-stats
-De base-stats worden als ints bewaard. Maak voor al deze basis-eigenschappen full properties, namelijk:
-
-* HP_Base
-* Attack_Base
-* Defense_Base
-* SpecialAttack_Base
-* SpecialDefense_Base
-* Speed_Base
-
-### Extra stats
-
-
-Voorts wordt een Pokémon ook gedefinieerd door z’n naam (string), type (string, bv. "grass & poison") en nummer (int), maak hiervoor auto properties aan.
-
-> Met ``nummer`` bedoelen we de Pokémon index die je in de Pokédex kunt opzoeken. Zo heeft Bulbasaur nummer 1 en Pikachu heeft 25. 
-
-
-### Level
-
-Voeg een fullproperty Level toe (type int). Deze heeft een public get, maar een private setter.
-
-Voeg een publieke methode "VerhoogLevel" toe. Deze methode zal , via de private setter van Level (zie vorig punt), de level van de Pokémon met 1 verhogen. Deze methode heeft géén parameters nodig en return niets.
-
-### Statistieken
-
-Voeg 2 read-only properties toe (enkel get, géén set) genaamd "Average" en "Total":
-
-* De Average-property geeft het gemiddelde van de 6 base-stats terug, dus ``(HP_Base + Attack_Base + Defense_Base + SpAttack_Base + SpDefense_Base +Speed_Base)/6``.
-
-* De Total-property geeft de som terug van de 6 basestats. Daar de base stats niet evolueren met het level veranderen dus ``Average`` en ``Total`` ook niet van zodra de base-stats werden ingesteld, toch mag je beide statistieken steeds herberekenen in de get.
-
-### Level-gebaseerde stats
-
-De eigenschappen van de Pokémon die mee evolueren met het leven gaan we steeds als read-only property implementeren:
-
-* Voeg een read-only property ``HP_Full``  toe om de maximum health voor te stellen. Deze wordt berekend als volgt: ``( ( (HP_Base + 50) * Level) / 50) + 10 `` wanneer de get wordt aangeroepen.
-* Voeg voor iedere base-stat een ``XX_Full`` readonly property toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
-Attack_Full bijvoorbeeld wordt dus berekend als: ``( (Attack_Base * Level) / 50) + 5``
-
-> Was voorgaande uitleg wat complex? Bekijk zeker bovenstaande kennisclip die alles nog eens samenvat.
-
-### Maak enkele Pokémon
-
-Kies enkele Pokémon uit [deze lijst](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats) en maak in je Main enkele Pokémon-objecten aan met de juiste eigenschappen.
-
-Opgelet: **Je dient dus enkel de base stats in te stellen. Alle andere zaken zijn op deze stats en het huidige level van de Pokémon gebaseerd**.
-
-Toon aan dat de Average, Total , HP en andere stats correct berekend worden (controleer in de tabel op de voorgaande url).
-
-#### Level-up tester
-
-Maak een kleine loop die je toelaat om per loop een bepaalde Pokémon z’n level met 1 te verhogen en vervolgens toon je dan z’n nieuwe stats.
-
-Test eens hoe de stats na bv 100 levels evolueren. Je zal zien dat bepaalde stats pas na een paar keer levelen ook effectief beginnen stijgen.
-
-**Voeg extra functionaliteit toe naar keuze.**
-
-## Deel 2: De Pokémontester
-
-> vergelijk je oplossing uit het vorige deel [met volgende oplossing](../assets/6_klassen/Pokemon.cs).
-
-Het is een heel gedoe om telkens manueel de informatie van een Pokémon op het scherm te outputen. Voeg een methode ``public void ShowInfo()`` toe aan je Pokemon klasse. Deze methode zal alle relevante informatie (alle properties!) in een mooie vorm op het scherm tonen, bv:
-
+### Voorbeeldinteractie
 ```text
-Pikachu (level 5)
-Base stats:
-    * Health = 56
-    * Speed = 30
-    etc
-Full stats:
-    * Health = 100
-    etc.
+BULBASAUR!
+CHARMANDER!
+SQUIRTLE!
+PIKACHU!
+```
+(In groen, rood, blauw en geel.)
+
+# Oefening 2 (h9-consciouspokemon)
+
+## Leerdoelen
+
+* arrays van objecten
+* `null`
+
+## Functionele analyse
+In een gevecht begin je met je eerste Pokémon die nog bij bewustzijn is. Bewusteloze Pokémon kunnen immers niet vechten. Schrijf een statische methode om de eerste bewuste Pokémon te vinden.
+
+## Technische analyse
+Schrijf een **statische** methode `FirstConsciousPokemon` met één parameter: een array van `Pokemon`. Deze methode loopt met een `for`-lus door de array en geeft als antwoord de eerste `Pokemon` terug met minstens 1 HP. Je moet zorgen dat de methode aanvaard wordt door de compiler, ook als er geen enkele bewuste Pokémon in de rij is bijgehouden.
+
+Schrijf ook een statische methode `TestConsciousPokemon()` die een array van dezelfde vier Pokémon als hierboven maakt, waarbij Bulbasaur en Charmander 0 HP hebben en Squirtle 2 HP. Toon wat gebeurt als de eerste wakkere Pokémon aanvaalt. Dit is de methode die je vanuit je keuzemenu zal oproepen.
+
+### Voorbeeldinteractie
+```text
+SQUIRTLE!
 ```
 
-Maak nu een nieuwe console-applicatie genaamd "Pokémon Tester":
+# Oefening 3 (h9-consciouspokemon-improved)
 
-1. Voeg je Pokemon-klasse-bestand toe aan dit project. Verander de "namespace" van dit bestand naar de namespace van je nieuwe console-applicatie  (lees [hier](../B_appendix/namespaces.md) hoe je klassen kunt herbruiken).
-2. Maak enkele Pokémon objecten aan en stel hun base stats in.
-3. Schrijf een applicatie die aan de gebruiker eerst de 6 base-stats vraagt. Vervolgens wordt de Pokémon aangemaakt met die stats en worden de full-stats aan de gebruiker getoond.
-4. Vraag nu aan de gebruiker tot welke level de Pokémon moet gelevelled worden. Roep zoveel keer de LevelUp-methode aan van de Pokémon. (of kan je dit via een parameter doorgeven aan LevelUp?!)
-5. Toon terug de full-stats van de nu ge-levelde Pokémon.
+## Leerdoelen
 
-## Deel 3: Pokémon-battler
+* arrays van objecten
+* `null`
 
-### Pokémon generator
+## Functionele analyse
+Je moet ook het geval afhandelen waarbij al je Pokémon KO zijn.
 
-Maak een methode met volgende signatuur: ``static Pokemon GeneratorPokemon()``. Plaats deze methode *niet* in je Pokémon-klasse, maar in  Program.cs.
+## Technische analyse
+Breid je methode `TestConsciousPokemon` uit zodat ze niet crasht wanneer al je Pokémon KO zijn. Doe dit in een nieuwe versie, `TestConsciousPokemonSafe`.
 
-Deze methode zal telkens een Pokémon aanmaken met willekeurige base-stats. Bepaal zelf hoe je dit gaat doen.
+### Voorbeeldinteractie
+```text
+Al je Pokémon zijn KO! Haast je naar het Pokémon center.
+```
 
-### Battle tester
+# Oefening 4: value en reference (h9-pokevalueref)
 
-Voeg een methode met volgende signatuur toe aan je hoofdprogramma (dus ook weer in Program.cs):
-``static int Battle(Pokemon poke1, Pokemon poke2)``.
+## Leerdoelen
+* call by value vs. call by reference
 
-De methode zal een getal teruggeven dat aangeeft welke van de twee Pokémons een gevecht zou winnen. 1= poke1, 2 = poke2, 0 = gelijke stand.
+## Functionele analyse
+Een beginnend programmeur bij Game Freak heeft volgende statische methode geschreven in je klasse:
 
-Controleer steeds of 1 of beide van de meegegeven Pokémons niet ``null`` zijn. Indien er 1 ``null`` is dan wint uiteraard de andere. Indien allebei ``null`` wint niemand (dus return je 0). Test of dit werkt!
+```
+public static void RestoreHP(int oldHP, int newHP) {
+    oldHP = newHP;
+}
+```
 
-Bepaal zelf hoe Pokémons vechten (bv. degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze constant zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken).
+Hij gaat ervan uit dat dit werkt:
 
-### Alles samen
+```
+public static void DemoRestoreHP() {
+// aanmaken van array bewusteloze Pokemon van 4 soorten zoals eerder: zelf doen
+for(int i = 0; i < pokemon.Length; i++) {
+    Pokemon.RestoreHP(pokemon[i].HP,pokemon[i].MaxHP);
+    }
+}
+for(int i = 0; i < pokemon.Length; i++) {
+    Console.WriteLine(pokemon[i].HP)
+    }
+}
+```
 
-Genereer 2 willekeurige Pokémons met je generator en laat ze vechten met je battle-methode. Toon wat output aan de gebruiker zodat hij ziet wat er allemaal gebeurt (en gebruik zeker de ``ShowInfo`` methode om dit snel te doen). Kan je dit in een loop zetten en wat leuker maken met Pokémons die telkens levelen als ze een gevecht winnen?!
+Maar dit klopt niet. Los zijn bug op.
 
-### Meer info
-Voor de volledige info over Pokémon hun stats. [Klik hier.](https://bulbapedia.bulbagarden.net/wiki/Statistic "Stats Pokémon")
+## Technische analyse
+Je moet `RestoreHP` anders schrijven en ook het gebruik ervan aanpassen. Je mag de parameters van `RestoreHP` volledig aanpassen en ook de eerste `for`-lus veranderen. De tweede `for`-lus en het aanmaken van de array van `Pokemon` moeten exact gebeuren zoals ze geschreven zijn.
+
+Roep `DemoRestoreHP()` op uit je keuzemenu.
+
+### Voorbeeldinteractie
+```text
+20
+20
+20
+20
+```
+
+# Oefening 5: uitkomst gevecht (h9-fight)
+
+## Leerdoelen
+* gebruik van `Random`
+* `null` guard
+* call by reference
+
+## Functionele analyse
+Hoe wreed het ook is, Pokémon zijn bestemd om tegen elkaar te vechten. Schrijf een simulatie van een gevecht met een willekeurig element.
+
+## Technische analyse
+Schrijf eerst een enumeratie `FightOutcome` met drie mogelijkheden: `WIN`, `LOSS` en `UNDECIDED` ("onbeslist").
+
+Schrijf dan een **statische** methode `FightOutcome` in de klasse `Pokemon`. Deze heeft drie parameters, twee `Pokemon`-objecten en één `Random`-object.
+
+`FightOutcome()` werkt als volgt:
+- Een van de twee Pokémon mag eerst aan de beurt; welke van de twee wordt willekeurig beslist met behulp van het `Random`-object.
+- Wanneer een Pokémon aan de beurt is, voert hij zijn `Attack()` methode uit.
+- Hierna verlaagt de HP van de andere Pokémon met een getal tussen 0 en 20.
+- Hierna is de andere van de twee Pokémon aan de beurt, maar alleen als hij nog bij bewustzijn is.
+- De match is voorbij wanneer één van de twee Pokémon 0 HP heeft bereikt. Dan wordt het resultaat teruggegeven:
+  - `WIN` als de eerste Pokémon die je als parameter hebt meegegeven nog bij bewustzijn is.
+  - `LOSS` als de tweede nog bij bewustzijn is.
+
+Handel ook situaties af waarbij minstens één van de twee Pokémon `null` is of al KO is bij het begin van de match. Dan wint de andere vanzelf, tenzij ze allebei ontbreken of KO zijn. Dan is de uitkomst `UNDECIDED`.
+
+Schrijf ten slotte een methode `DemoFightOutcome()` die twee Pokémon naar keuze aanmaakt, hen tegen elkaar laat vechten tot er een resultaat is en dat resultaat dan op het scherm toont.
+
+Test je methode met alle combinaties:
+
+- twee gezonde Pokémon
+- één bewusteloos
+- twee bewusteloos
+- één `null`
+- twee `null`
+- één bewusteloos en één `null`
+
+## Afronden
+Ga na dat al je code van de eerste oefeningen nog werkt nadat je de laatste hebt afgerond en plaats alles op Bitbucket.

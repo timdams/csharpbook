@@ -11,9 +11,12 @@ Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is 
 Jouw taak als programmeur in deze cursus is algoritmes in C# taal uitschrijven. We zouden dit in een eenvoudige tekstverwerker kunnen doen, maar dan maken we het onszelf lastig. Net zoals je tekst in notepad kunt schrijven, is het handiger dit in bijvoorbeeld Word te doen: je krijgt een spellingchecker en allerlei handige extra's. Ook voor het schrijven van computer code is het handiger om een zogenaamde IDE te gebruiken, een omgeving die ons zal helpen foutloze C# code te schrijven.
 
 Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken. De compiler zal je C# code omzetten naar de IL-code  zodat jij (of anderen) je applicatie op een computer (of ander apparaat) kunnen gebruiken. Zolang de C# niet exact voldoet aan de C# syntax (zie verder) zal de compiler het vertikken een uitvoerbaar bestand voor je te genereren. 
+
 ![Vereenvoudigd compiler overzicht](../assets/0_intro/compilereenvoudig.png)
 
-**Opmerking**: In deze cursus zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (gratis, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
+{% hint style='danger' %} 
+In deze cursus zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (gratis, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
+{% endhint %}
 
 # Visual Studio Installeren
 
@@ -37,7 +40,10 @@ Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschi
 
 We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 
-> Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
+
+{% hint style='tip' %}
+Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
+{% endhint %}
 
 Dit semester kiezen we steeds als Project Type  **Console App (.NET Core)**. Kies dit type en klik 'Next'.
 
@@ -45,10 +51,13 @@ Dit semester kiezen we steeds als Project Type  **Console App (.NET Core)**. Kie
 
  Op het volgende scherm kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
 
+{% hint style='danger' %}
 **De solution name blijf je af (deze moet momenteel dezelfde naam zijn als je project)**
+{% endhint %}
 
- > Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld geraakt met projecten zoals Project201.
-
+{% hint style='tip' %}
+Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld geraakt met projecten zoals Project201.
+{% endhint %}
 Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen)
 
 ![VS Project maken](../assets/0_intro/vsprojectname.PNG)

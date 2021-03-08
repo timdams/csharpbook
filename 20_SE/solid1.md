@@ -1,4 +1,36 @@
-> Dit hoofdstuk werd origineel geschreven door Tom Peeters. [Bron.](https://github.com/tomptrs/solid)
+# test:
+
+
+
+{% hint style='tip' %}
+Important tip: this note needs to be highlighted
+{% endhint %}
+
+{% hint style='danger' %}
+Important danger: this note needs to be highlighted
+{% endhint %}
+
+
+Bron: https://github.com/GitbookIO/plugin-codetabs
+
+{% codetabs name="Python", type="py" -%}
+msg = "Hello World"
+print msg
+{%- language name="JavaScript", type="js" -%}
+var msg = "Hello World";
+console.log(msg);
+{%- language name="HTML", type="html" -%}
+<b>Hello World</b>
+{%- endcodetabs %}
+
+
+https://github.com/GitbookIO/plugin-codetabs
+
+{% plantuml %}
+Bob->Alice : hello
+{% endplantuml %}
+
+> Dit hoofdstuk werd origineel geschreven door Tom Peeters. [Bron.](https://github.com/tomptrs/solid) maar moet nog langs editor Tim ;)
 
 ## Inleiding
 
@@ -1968,22 +2000,5 @@ Dit strategy patroon invoegen gaf ons heel wat werk, maar de winst is dat ik pri
 Alle bovenstaande veranderingen moeten leiden tot makkelijker te onderhouden code. Een heel verschil met proceduraal programmeren, maar wanneer je dit onder knie hebt, zal je veel gemakkelijker tests kunnen schrijven en veranderingen implementeren! 
 
  
-> Eigenschap van het strategy patrooon: Het strategy patroon laat toe om objecten in real time van status te veranderen.
+> Eigenschap van het strategy patroon: Het strategy patroon laat toe om objecten in real time van status te veranderen.
 
-
-Digitap iframe: 
-
-
-<iframe src="https://learning.ap.be/mod/hvp/embed.php?id=256343" width="1428" height="85" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://learning.ap.be/mod/hvp/library/js/h5p-resizer.js" charset="UTF-8"></script>
-
-H5P iframe:
-
-<iframe src="https://h5p.org/h5p/embed/617" width="1091" height="675" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
-
-WP beta site iframe
-
-<iframe src="http://beta.eaict.ap.be/wp-admin/admin-ajax.php?action=h5p_embed&id=1" width="958" height="625" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="http://beta.eaict.ap.be/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
-
-insidegithub iframe
-
-<iframe src="https://github.com/timdams/csharpbook/raw/master/test.h5p?action=h5p_embed&id=1" width="958" height="625" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>

@@ -1,5 +1,3 @@
-
-
 In dit hoofdstuk gaan we dieper in hoe we objecten kunnen vergelijken op gelijkheid met behulp van de ``Equals`` methode die in ``System.Object`` gedefinieerd wordt. We hebben dit reeds behandeld in het hoofdstuk over [System.Object](../13_advancedovererving/4_System_Object.md). We hebben nu echter voldoende bagage dankzij de voorgaande hoofdstukken om een complete oplossing te vinden.
 
 We zullen stap voor stap opbouwen en motiveren waarom dit de enige correcte manier is. 
@@ -154,7 +152,7 @@ Bekijken we de signature van de Equals methode in System.Object dan zien we:
 public virtual bool Equals(Object obj)
 ```
  
-Met andere woorden, deze methode is ``virtual`` gemaakt zodat andere klasse deze methode kunnen override`'n. 
+Met andere woorden, deze methode is ``virtual`` gemaakt zodat andere klasse deze methode kunnen override'n. 
 Laten we dit eerst eens **niet** doen. Daar Point van ``System.Object`` overerft kunnen we schrijven:
 
 ```csharp

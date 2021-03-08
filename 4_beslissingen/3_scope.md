@@ -26,8 +26,11 @@ if( something == true)
 Console.WriteLine(getal); 
 ```
 
-> De scope van variabelen is soms wat verwarrend. Hopelijk kan volgende kennis je helpen: [Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).
+{% hint style='tip' %}
+De scope van variabelen is soms wat verwarrend maar wel een onderdeel dat je deze hele cursus zal zien terugkomen. 
 
+Hopelijk kan volgende kennisclip je helpen: [Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).
+{% endhint %}
 
 # Variabelen met zelfde naam
 Zolang je in de scope van een variabele bent kan je geen nieuwe variabele met dezelfde naam aanmaken:

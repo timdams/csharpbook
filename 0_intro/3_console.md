@@ -1,6 +1,6 @@
-# First program verbeteren
+# Input verwerken met ReadLine
 
-We nemen terug ons eerste programma erbij en gaan hieraan verder werken:
+We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
 
 ```csharp
 using System;
@@ -28,7 +28,6 @@ Zo kan je bijvoorbeeld input van de gebruiker inlezen en bewaren in een variabel
 ```csharp
 string result;
 result = Console.ReadLine();
-
 ```
 
 Bespreking van deze code:
@@ -66,7 +65,7 @@ Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont 
 
 ## Input gebruiker verwerken en gebruiken
 
-We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``,  gebruiken en tonen op het scherm. 
+We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele ``result``  gebruiken en tonen op het scherm. 
 
 ```csharp
 Console.WriteLine("Dag ");
@@ -74,7 +73,7 @@ Console.WriteLine(result);
 Console.WriteLine(" hoe gaat het met je?");
 ```
 
-In de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. 
+Op de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. 
 
 Met andere woorden: de ``WriteLine`` methode zal op het scherm tonen wat de gebruiker even daarvoor heeft ingevoerd.
 
@@ -82,9 +81,6 @@ Je volledige programma ziet er dus nu zo uit:
 
 ```csharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Demo1
 {
@@ -138,7 +134,7 @@ hoe gaat het met je?
 
 ## Write en WriteLine
 
-De ``WriteLine``-methode zal steeds een line break (een 'enter') aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
+De ``WriteLine``-methode zal steeds een line break (een 'enter' ) aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
 
 De ``Write``-methode zal geen enter aan het einde van de lijn toevoegen. Als je dus vervolgens iets toevoegt (met een volgende ``Write`` of ``WriteLine``) **dan zal dit aan dezelfde lijn toegevoegd worden.**
 
@@ -196,17 +192,6 @@ Console.Write(result);
 Console.Write("_hoe gaat het met je?");
 ```
 
-> Een leuke conversatie uit de oude doos:
-
-> fuck0ff: hi, does someone here know the escape sequence for a blank?  
-fuck0ff: hello? a blank ?  
-fuck0ff: escape sequence like 't' for tab, and blank like the things you do between words. ?  
-fuck0ff: it's for a c program  
-fuck0ff: has the channel #programming anything to do with, like to program?  
-MadSciFab: why do u need an escape sequence for a blank space?  
-MakAtak: err.. is that what you call "space"?  
-Bron: [bash.org](http://bash.org/?21854)
-
 ## Zinnen aan elkaar plakken
 
 We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om variabelen van het type string aan elkaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
@@ -215,9 +200,9 @@ We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# 
 Console.WriteLine("Dag " + result + " hoe gaat het met je?");
 ```
 
-Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling tot de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
+Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
 
-Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code vervangt door de lijn er onder:
+Bekijk zelf eens wat het verschil wanneer je volgende lijn code vervangt door de lijn er onder:
 
 ```csharp
 Console.WriteLine("Dag "+ result + " hoe gaat het met je?");

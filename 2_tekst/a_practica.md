@@ -1,90 +1,165 @@
-# Enkele opmerkingen vooraf
+# Oefeningen
 
-1. Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:
-![](../assets/infoclip.png)
-[Meerdere projecten in 1 solution](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a)
+## Oefening: H2-string-interpolation
 
-**Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
+### Leerdoelen
 
-2. Sommige oefeningen zullen soms **[PRO]** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
+* gebruik van string interpolation
 
-# ASCII Art
+### Functionele analyse
 
-Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze aan de start van een van je bestaande programma's zodat nu je naam wordt getoond wanneer het programma start, gevolgd door de rest.
+Oefening H1-maaltafels en H1-ruimte dienen we te herschrijven volgens de principes van string interpolation.
 
-# String interpolation
+### Technische analyse
 
-Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest geven. Pas string interpolatie m.b.v. ``$`` (manier 2) toe in deze 2 oefeningen.
+#### UI
 
-# ASCII Art & Colors
+console applicatie
 
-Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine`, alsook de werking van kleuren in console-applicaties, om je ASCII-art naam van de eerdere oefening nu van kleur te voorzien. Zorg ervoor dat minstens 1 letter in een andere kleur is.
+#### voorbeeldinteractie\(s\)
 
-> Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
+Zie oefening H1-maaltafels en H1-ruimte.
 
-# Systeem informatie
+### Technische hulp
 
-## Deel 1
+#### Programmaverloop
 
-Maak een applicatie die de belangrijkste computer-informatie (geheugen, etc) aan de gebruiker toont m.b.v. de ``Environment`` bibliotheek.
-Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
+Pas string interpolatie mbv `$` \(manier 2\) toe.
 
-**Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
+#### Testscenario's
 
-## [PRO] Deel 2
+* Zie oefening H1-maaltafels en H1-ruimte.
 
-Ook informatie over de harde schijven kan je verkrijgen (in bits). 
-Dit vereist wel dat je bovenaan je programma volgende lijn bijschrijft: ``using System.IO``. 
+### Ondersteunend materiaal
 
-Vervolgens kan je in je programma schrijven:
+Hou het voorlopig op de cursus.
 
-```csharp
-long cdriveinbytes = DriveInfo.GetDrives()[0].AvailableFreeSpace;  
-long totalsize = DriveInfo.GetDrives()[0].TotalSize;  
+## Oefening: H2-systeem-informatie
+
+### Leerdoelen
+
+* gebruik van string interpolation
+* gebruik van `Environment` class
+
+### Functionele analyse
+
+Maak een applicatie die de belangrijkste computer-informatie \(geheugen, etc\) aan de gebruiker toont.
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Uw computer heeft een 64-bit besturingssysteem: True
+De naam van uw pc is: LAPTOP
+Uw pc heeft 4 processorkernen.
+ikke is uw gebruikersnaam.
+Je gebruikt 11 megabytes aan geheugen
 ```
 
- De lijn met ``using`` is om aan te geven dat we iets uit de ``System.IO`` bibliotheek nodig hebben, namelijk ``DriveInfo``.
-Schrijven we dat niet dan moeten we in onze code DriveInfo aanroepen met z'n volledige path: ``System.IO.DriveInfo....``
+### Technische hulp
 
-De 0 tussen rechte haakjes is de index van welke schijf je informatie wenst. 0 is de eerste harde schijf, 1 de tweede, enzovoort. (Ter info: dit zijn arrays, zie later)
+#### Programmaverloop
 
-Vraag aan de gebruiker het nummer van de harde schijf waar meer informatie over moet getoond worden. 
-
-Opgelet: sta toe dat de gebruiker 1 voor de eerste harde schijf mag gebruiken, 2 voor de tweede, enzovoort. Je zal dus in code nog manueel 1 moeten aftrekken van de invoer van de gebruiken.
-Bv:
+Pas string interpolatie mbv `$` \(manier 2\) toe.  
+De computerinformatie kan je verkrijgen mbv de Environment-klasse. Hier enkele voorbeelden \(kijk zelf of er nog nuttige properties over je computer in staan en voorzie deze ook binnen jouw code\):
 
 ```csharp
-int invoer= Convert.ToInt32(Console.ReadLine()) - 1;
-long totalsize = DriveInfo.GetDrives()[invoer].TotalSize;  
- ```
+bool is64bit = Environment.Is64BitOperatingSystem;
+string pcName = Environment.MachineName;
+int procCount = Environment.ProcessorCount;
+string userName = Environment.UserName;
+long memory = Environment.WorkingSet; //zal ongeveer 11 MB teruggeven.
+```
 
-# Weerstandberekenaar
+> **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. \(wat een vreemde lange zin\).
+
+Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
+
+**Formatteer de informatie met behulp van de $-notatie zodat deze deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
+
+#### Testscenario's
+
+* wat gebeurt er wanneer je het datatype string zou wijzigen in int?
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H2-weerstandberekenaar-deel1
+
+### Leerdoelen
+
+* gebruik van math class
+
+### Functionele analyse
 
 Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de streepjes wel, maar niet hoe je die kunt omzetten naar de effectieve weerstandswaarde. In dit programma kunnen we de gebruiker helpen.
 
-![](../assets/1_csharpbasics/colors.jpg)
+![](../../.gitbook/assets/colors.jpg)
 
-(Bron afbeelding: [https://www.esdsite.nl](https://www.esdsite.nl))
+\(Bron afbeelding: [https://www.esdsite.nl](https://www.esdsite.nl)\)
 
-## Deel 1
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de eerste ring: 2
+Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de tweede ring: 2
+Geef de waarde (uitgedrukt in een getal van -2 tot 7) van de derde ring (exponent): 2
+Resultaat is 2200 Ohm, ofwel 22x100.
+```
+
+### Technische hulp
+
+#### Programmaverloop
 
 Maak een programma dat de weerstandwaarde berekent gebaseerd op:
 
 * Ring 1: die de tientallen voorstelt
 * Ring 2: die de eenheden voorstel
-* [ENKEL VOOR PRO] Ring 3: die de exponent (10 tot de macht) voorstelt. (tip:``Math.Pow(10,ring3)``)
+* Ring 3: die de exponent \(10 tot de macht\) voorstelt. \(tip:`Math.Pow(10,ring3`\)\)
 
-Gebruik twee variabelen van het type ``int`` waar je getal van 0 tot 9 telkens aan kan toewijzen. (we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele)
+Gebruik drie variabelen van het type `int`. \(we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele\)
 
-Test dat je formule / berekening klopt om gebaseerd op 2 (of 3) ringen de weerstandswaarde te berekenen. 
+Test dat je "formule/berekening" klopt om gebaseerd op 2 \(of 3\) ringen de weerstandswaarde te berekenen.
 
-## Deel 2
+#### Testscenario's
 
-Plaats het geheel in een mooie UNICODE/Ascii-tabel
+* wat gebeurt er wanneer je een hoger getal dan 9 zou invoeren?
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H2-weerstandberekenaar-deel2
+
+### Leerdoelen
+
+* gebruik van UNICODE
+
+### Functionele analyse
+
+Zie deel 1.
+
+### Technische hulp
+
+#### Programmaverloop
+
+Zie deel 1 en plaats het geheel in een mooie UNICODE-tabel.
 
 Hier enkele nuttige tekens:
 
-```
+```text
 ╔═══════════════╦═══════════════╗
 ║ 
 ╟───────────────╫───────────────╢
@@ -92,19 +167,30 @@ Hier enkele nuttige tekens:
 ╚═══════════════╩═══════════════╝
 ```
 
-Gebruik $-string interpolatie om de informatie in de tabel te tonen zodat je volgende uitvoer kunt genereren:
-![](../assets/1_csharpbasics/tabel.png)
+Gebruik $-string interpolatie om de informatie in de tabel te tonen zodat je volgende uitvoer kunt genereren: ![](../../.gitbook/assets/tabel.png)
 
 of:
 
-![](../assets/1_csharpbasics/tabel2.png)
+![](../../.gitbook/assets/tabel2.png)
 
-## [PRO²] Deel 3
+#### Testscenario's
 
-Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken).
+* wat gebeurt er wanneer je een waarde van circle 1, 2 of 3 uit meer dan twee cijfers bestaat?
 
-# [PRO] Shell-starter
-Je kan de output van een ``Process.Start()`` programma naar je console scherm sturen. Dit vereist wat meer code. Volgend voorbeeld zal de output van het commando ``ipconfig /all`` op het scherm tonen:
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H2-shell-starter
+
+### Leerdoelen
+
+* gebruik van `Process.Start()`
+* verwerken van uitvoer
+
+### Functionele analyse
+
+Je kan de output van een `Process.Start()` programma naar je console scherm sturen. Dit vereist wat meer code. Volgende voorbeeld zal de output van het commando `ipconfig /all` op het scherm tonen:
 
 ```csharp
 System.Diagnostics.Process process = new System.Diagnostics.Process();
@@ -116,40 +202,34 @@ process.StartInfo.RedirectStandardError = true;
 process.Start(); //start process
 
 // Read the output (or the error)
-string output = process.StandardOutput.ReadToEnd(); //normal output
+string output = process.StandardOutput.ReadToEnd();
 Console.WriteLine(output);
-string err = process.StandardError.ReadToEnd(); //error output (if any)
+string err = process.StandardError.ReadToEnd();
 Console.WriteLine(err);
 //Continue
 Console.WriteLine("Klaar");
 ```
 
-> Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan ``ping``. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
+Onder macOS heb je een ander commando nodig. Gebruik daar `"ifconfig"` voor het \(uitvoerbaar\) bestand en geef een lege string mee voor de argumenten.
 
-Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren, eventueel na input van de gebruiker.
-Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
+### Technische hulp
+
+#### Programmaverloop
+
+Maak enkele kleine C\# programma's die bepaalde shell-commando's zullen uitvoeren en die de uitvoer in hoofdletters weergeven in plaats van in de gewone vorm. Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
 
 ```text
 hostname
-
 arp -a
-
-getmac
-
+getmac (enkel onder Windows)
 nslookup google.com
-
-netstat
 ```
 
-Andere toffe commando's kunnen zijn:
+#### Testscenario's
 
-```text
-chrome.exe ap.be
-notepad mytest.txt
-```
+* Probeer van bovenstaande programma's al die, die compatibel zijn met je besturingssysteem.
 
-Of de naam van een bestand dat je wilt openen, maar dan met het hele path:
+### Ondersteunend materiaal
 
-```text
-c:\Temp\mydocument.docx
-```
+Hou het voorlopig op de cursus.
+

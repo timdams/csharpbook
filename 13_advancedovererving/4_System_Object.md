@@ -45,8 +45,10 @@ public virtual string ToString()
  { return GetType(); }
  ```
  Merk twee zaken op:
+
  1. GetType wordt aangeroepen en die output krijg je terug.
  2. De methode is **virtual** gedefinieerd.
+
  **Alle 4 methoden in System.Object zijn ``virtual`` , en je kan deze dus ``override``'n!**
  
  ### ToString() overriden
@@ -109,16 +111,20 @@ public override bool Equals(Object o)
 
 De lijn ``Student temp = (Student)o;`` zal het ``object o`` casten naar een ``Student``. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het ``object o``.
 
+{% hint style='tip' %}
 [Dit concept heet polymorfisme en wordt later uitgelegd](../15_polymorfisme/11_polymo_intro.MD).
+{% endhint %}
 
 ## GetHashcode
 Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. 
 
 Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.
 
+{% hint style='tip' %}
 # Ik ben nog niet helemaal mee?
 Niet getreurd, je bent niet de enige. Overerving,System.object, Equals,...het is allemaal een hoop nieuwe kennis om te verwerken. 
 Aan het [einde van deze cursus](../18_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
+{% endhint %}
 
 # Kennisclip
 ![](../assets/infoclip.png)

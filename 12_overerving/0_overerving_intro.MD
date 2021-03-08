@@ -11,7 +11,9 @@ Wanneer twee klassen met behulp van een "x is een y"-relatie kunnen beschreven w
 * Een paard **is een** dier (paard = child-klasse, dier= parent-klasse)
 * Een tulp **is een** plant
 
-(Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over compositie)
+{% hint style='warning' %}
+Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over [compositie](../14_compositie/0_compositie_intro.MD).
+{% endhint %}
 
 ## Inheritance in CS
 
@@ -51,11 +53,11 @@ In C# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten
 
 ## Transitive
 
-Overerving in C# is transitief, dit wil zeggen dat de child-klasse ALLES overerft van de parent-klasse: methoden, properties, etc.
+Overerving in C# is transitief, dit wil zeggen dat de child-klasse niet alleen overerft van haar ouderklasse, maar ook van grootouderklassen enzovoort. Je zou bijvoorbeeld een subklasse `Pony` van de klasse `Paard` kunnen toevoegen. Een `Pony` is een `Paard` en een `Paard` is een `Dier`, dus een `Pony` is ook een `Dier` en heeft bijvoorbeeld een methode `Eet`.
 
 ## Protected
 
-Ook al is overevring transitief, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechtsreeks aanroepbaar zijn in de child-klasse. Private geeft aan dat het element enkel in de klasse zichtbaar is:
+Ook al **heeft** een subklasse alle onderdeeltjes van een ouderklasse, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechtsreeks aanroepbaar zijn in de child-klasse. Private betekent namelijk: "enkel toegankelijk binnenin **deze** klasse". Private geeft aan dat het element enkel in de klasse zichtbaar is:
 
 ```csharp
 class Paard: Dier
@@ -71,6 +73,8 @@ class Dier
    private int leeftijd;
 }
 ```
+
+Een `Paard` **heeft** nog wel een leeftijd, maar binnenin de code voor de klasse `Paard` kan je de leeftijd niet zomaar opvragen of aanpassen.
 
 Je kan dit oplossen door de **protected** access modifier ipv private te gebruiken. Met protected geef je aan dat het element enkel zichtbaar is binnen de klasse **en** binnen child-klassen:
 

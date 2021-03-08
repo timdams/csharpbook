@@ -2,7 +2,7 @@
 
 ## RapportModule
 
-Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad weergegeven worden. Dit zijn de mogelijkheden:
+Ontwerp een klasse ``Resultaat`` die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een ``Resultaat``-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad weergegeven worden. Dit zijn de mogelijkheden:
 
 * < 50: niet geslaagd;
 * tussen 50 en 68: voldoende;
@@ -22,7 +22,7 @@ mijnpunten.PrintGraad();
 ```
 ## Nummers
 
-Maak een klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
+Maak een klasse ``Nummers``. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
 
 * ``Som``: geeft de som van beide getallen terug
 * ``Verschil``: geeft het verschil van beide getallen terug
@@ -62,12 +62,12 @@ Maak een nieuwe klasse ``Student``.
 
 Deze klasse heeft 6 autoproperties:
 
-* Naam (string)
-* Leeftijd (int)
-* Klas (maak dit van een ``enum``)
-* PuntenCommunicatie (int)
-* PuntenProgrammingPrinciples (int)
-* PuntenWebTech (int)
+* ``Naam`` (``string``)
+* ``Leeftijd`` (``int``)
+* ``Klas`` (maak dit van een ``enum``)
+* ``PuntenCommunicatie`` (``int``)
+* ``PuntenProgrammingPrinciples`` (``int``)
+* ``PuntenWebTech`` (``int``)
 
 Voeg aan de klasse een methode ``BerekenTotaalCijfer`` toe. Wanneer deze methode wordt aangeroepen dan wordt het gemiddelde van de 3 punten  teruggegeven als double zodat dit op het scherm kan getoond worden.
 
@@ -104,21 +104,21 @@ Gemiddelde:               13.3
 ## PizzaTime
 Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
 
-* toppings (string): bevat beschrijving van wat er op ligt, bv. ananas, pepperoni, etc.
-* diameter (integer): doorsnede van de pizza in cm.
-* price (double): prijs van de pizza in euro.
+* ``toppings`` (``string``): bevat beschrijving van wat er op ligt, bv. ananas, peperoni, etc.
+* ``diameter`` (``integer``): doorsnede van de pizza in cm.
+* ``price`` (``double``): prijs van de pizza in euro.
 
 Zorg ervoor dat je met behulp van full properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
 
 ## Figuren
 
-Maak een eenvoudige klasse Rechthoek aan die een lengte en breedte als private datafields heeft. Deze kunnen enkel via full properties ingesteld worden en nooit onder 1 gaan.
+Maak een eenvoudige klasse ``Rechthoek`` aan die een lengte en breedte als private datafields heeft. Deze kunnen enkel via full properties ingesteld worden en nooit onder 1 gaan.
 
-Maak ook een klasse Driehoek die een basis en hoogte als fields heeft.
+Maak ook een klasse ``Driehoek`` die een basis en hoogte als fields heeft.
 
 Beide klassen hebben een methode ``ToonOppervlakte`` die de oppervlakte van de figuur in kwestie op het scherm toont.
 
-Toon de werking van het project aan door een aantal instanties van Driehoek en Rechthoek te maken, met verschillende groottes. Roep van iedere figuur de ToonOppervlakte-methode aan.
+Toon de werking van het project aan door een aantal instanties van ``Driehoek`` en ``Rechthoek`` te maken, met verschillende groottes. Roep van iedere figuur de ``ToonOppervlakte``-methode aan.
 
 ## Sports
 
@@ -128,21 +128,21 @@ Kies je favoriete sport of game. Maak een klasse aan die een speler uit deze spo
 
 Voorzie een methode ``StelIn`` die je toelaat om de private datafields in te stellen:
 
-Voorzie ook minstens 1 "Naam" (string) dataveld.
+Voorzie ook minstens 1 ``naam`` (``string``) dataveld.
 
 Voorzie per data field ook telkens een full property. Waar nodig zorg je er voor dat er geen illegale waarden kunnen ingesteld worden (bv mutsnummer bij waterpolo gaat maar van 1 tot 13).
 
 Bijvoorbeeld:
 
-* klasse Waterpolospeler
+* klasse ``Waterpolospeler``
 * datavelden:
-  * spelerNaam(string)
-  * mutsnummer (int)
-  * isDoelman (bool)
-  * isReserve(bool)
-  * reeks (string, bv "Cadet")
+  * ``spelerNaam``(``string``)
+  * ``mutsnummer`` (``int``)
+  * ``isDoelman`` (``bool``)
+  * ``isReserve``(``bool``)
+  * ``reeks`` (``string``, bv "Cadet")
 
-Methoden: GooiBal, Watertrappen, StelIn
+Methoden: ``GooiBal``, ``Watertrappen``, ``StelIn``
 
 De methode ``StelIn`` zou dan zou kunnen aangeroepen worden:
 
@@ -160,32 +160,32 @@ Toon maw aan dat je:
 * Instanties (objecten) van deze klasse kunt maken
 * Kunt werken met deze instanties (properties instellen én uitlezen, aanroepen van methoden)
 
-
-
+{% hint style='tip' %}
 ### enums
 
 Kan je in voorgaand voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
+{% endhint %}
 
 
 ## BankManager
 
-Ontwerp een klasse Account die minstens een Naamveld, bedrag en rekeningnummer bevat. Voorzie 3 methoden:
+Ontwerp een klasse Account die minstens een ``naamveld``, ``balans`` en ``rekeningnummer`` bevat. Voorzie 3 methoden:
 
-1. WithdrawFunds: bepaald bedrag wordt van rekening verwijderd
-2. PayInFunds: bepaald bedrag (als parameter) wordt op de rekening gezet
-3. GetBalance: het totale bedrag op de rekening wordt teruggegeven
+1. ``WithdrawFunds``: bepaald bedrag wordt van de ``balans`` verwijderd
+2. ``PayInFunds``: bepaald bedrag (als parameter) wordt op de rekening gezet en aan ``balans`` toegevoegd
+3. ``GetBalance``: het totale bedrag op de rekening wordt teruggegeven, m.a.w. ``balans`` wordt teruggegeven
 
-Pas de WithdrawFunds methode aan zodat als returntype het bedrag (int) wordt teruggegeven. Indien het gevraagde bedrag meer dan de balance is dan geef je al het geld terug dat nog op de rekening staat en toon je in de console dat niet al het geld kon worden gegeven.
+Pas de ``WithdrawFunds`` methode aan zodat als returntype het bedrag (int) wordt teruggegeven. Indien het gevraagde bedrag meer dan de balans is dan geef je al het geld terug dat nog op de rekening staat en toon je in de console dat niet al het geld kon worden gegeven.
 
-Maak 2 instanties van het type Account aan en toon aan dat je geld van de ene account aan de andere kunt geven, als volgt:
+Maak 2 instanties van het type ``Account`` aan en toon aan dat je geld van de ene account aan de andere kunt geven, als volgt:
 
 ```csharp
 BankAccount rekening1=new BankAccount();
 BankAccount rekening2=new BankAccount();
 ```
 
-Voeg aan de Account-klasse een private field toe zijnde van het type accountState dat een enumeratie bevat. De account kan in volgende states zijn "Geldig", "Geblokkeerd"). 
-Maak een bijhorende publieke Methode  waarmee je de account van state kunt veranderen. Deze methode (noem ze ChangeState) vereist één parameter van het type accountState natuurlijk.
+Voeg aan de ``Account``-klasse een private field toe zijnde van het type ``accountState`` dat een enumeratie bevat. De account kan in volgende states zijn "Geldig", "Geblokkeerd"). 
+Maak een bijhorende publieke Methode  waarmee je de account van state kunt veranderen. Deze methode (noem ze ChangeState) vereist één parameter van het type ``accountState`` natuurlijk.
 
 Indien een persoon geld van of naar een Geblokkeerde rekening wil sturen dan zal er een error op het scherm verschijnen.
 

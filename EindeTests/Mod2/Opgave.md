@@ -1,7 +1,3 @@
-# Module 2 Afsluiter
-
-## Opgave
-> Een goede oefening om te testen of je alle leerstof van de voorbije hoofdstukken goed beheerst en een oefening die zal lijken op de vaardigheidsproef.
 
 In deze opgave gaan we stap voor stap een "radio" opbouwen. We zullen daarbij werken met methoden, arrays en loops.
 

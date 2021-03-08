@@ -9,9 +9,9 @@ int age = 4.3;
 Je kan geen appelen in peren veranderen zonder magie: in het geval van C# zal je moeten **converteren of casten**. 
 
 Dit kan op 3 manieren:
-* Via casting: de (oude) manier die ook werkt in veel andere programmeertalen.
-* Via de Convert. bibliotheek van .NET.
-* Via *parsing* die we enkel terloops bespreken, maar die niet bij de leerstof van deze cursus hoort. Deze manier is enkel nuttig om strings om te zetten naar andere zaken.
+* Via casting: de (klassieke) manier die ook werkt in veel andere programmeertalen.
+* Via de Convert bibliotheek van .NET. Deze staat omzettingen toe die handig zijn, maar niet op het niveau van de taal zijn vastgelegd.
+* Via *parsing* die we enkel terloops bespreken, maar die niet bij de leerstof van deze cursus hoort. Parsing betekent dat je tekst met een bepaalde vorm omzet naar data en werkt dus alleen op strings.
 
 
 ## Casting
@@ -25,7 +25,7 @@ Casting heb je nodig om een variabele van een bepaald type voor een ander type t
 
 Het is belangrijk in te zien dat het casten van een variabele naar een ander type enkel een gevolg heeft TIJDENS het uitwerken van de expressie waarbinnen je werkt. De variabele in het geheugen zal voor eeuwig en altijd het type zijn waarin het origineel gedeclareerd werd.
 
-> **Je dient enkel aan casting te doen wanneer je aan *narrowing* doet: een datatype omzetten naar een ander datatype dat een verlies aan data met zich zal meebrengen.**
+> **Je dient voornamelijk aan casting te doen wanneer je aan *narrowing* doet: een datatype omzetten naar een ander datatype dat een verlies aan data met zich zal meebrengen.**
 
 Casting duid je aan door voor de variabele of literal het datatype tussen haakjes te plaatsen naar wat het omgezet moet worden:
 
@@ -78,7 +78,7 @@ int temperatuurGemiddeld = (temperatuurGisteren + temperatuurVandaag)/2;
 ```
 Test dit eens met de waarden 20 en 25. Wat zou je verwachten als resultaat? Inderdaad: 22,5 (omdat (20+25)/2 = 22.5) *Nochtans krijg je 22 op scherm te zien en zal de variabele temperatuurGemiddeld ook effectief de waarde 22 bewaren en niet 22.5.*
 
-Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (temperatuurGisteren, temperatuurVandaag en 2) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon *weggegooid*, vandaar de uitkomst. **Dit is narrowing.**
+Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (temperatuurGisteren, temperatuurVandaag en 2) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon *weggegooid*, vandaar de uitkomst.
 
 Hoe krijgen we de correctere uitslag te zien? Door temperatuurGemiddeld als kommagetal te declareren (bijvoorbeeld door het type double):
 
@@ -107,7 +107,7 @@ var2 = var1;
 Deze code zal zonder problemen gaan. `var2` zal de waarde `20.0` bevatten. De inhoud van `var1` wordt *verbreed* naar een `double`, eenvoudigweg door er een kommagetal van te maken. Er gaat **geen** inhoud verloren echter. Je hoeft dus niet expliciet de casting-notatie zoals ``(double)var1`` te doen, de computer ziet zelf dat hij de inhoud van ``var1`` zonder dataverlies kan toekennen aan ``var2``.
 
 ## Conversie
-Casting is de 'oldschool' manier van data omzetten die vooral zeer nuttig is daar deze ook werkt in andere C#-related programmeertalen zoals C, C++ en Java. 
+Casting is een in de taal ingebakken manier van data omzetten, die vooral zeer nuttig is daar deze ook werkt in andere C#-related programmeertalen zoals C, C++ en Java. 
 
 Echter, .NET heeft ook  ingebouwde conversie-methoden die je kunnen helpen om data van het ene type naar het andere te brengen. Het nadeel is dat ze iets meer typwerk (en dus meer code) verwachten dan bij casting. 
 Al deze methoden zitten binnen de **Convert**-bibliotheek van .NET.
@@ -134,7 +134,7 @@ Je kan [alle conversie-mogelijkheden hier bekijken](https://msdn.microsoft.com/e
 
 Naast conversie en casting bestaat er ook nog parsing.
 
-Parsing is anders dan conversie en casting. Parsing zal je dit jaar enkel nodig hebben om tekst naar getallen om te zetten. Intern zal bijna altijd ``Convert.To...`gebruikt worden.
+Parsing is anders dan conversie en casting. Parsing zal je enkel nodig hebben dit jaar om tekst naar getallen om te zetten.
 
 Ieder ingebouwd type heeft  een .Parse() methode die je kan aanroepen om strings om te zetten naar het gewenste type. Parsing zal je echter minder vaak nodig hebben. Gebruik deze enkel wanneer
 

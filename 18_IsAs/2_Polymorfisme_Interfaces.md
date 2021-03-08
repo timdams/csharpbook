@@ -7,10 +7,12 @@ We tonen dit in een voorbeeld.
 De idee is de volgende: mensen kunnen spreken. Leraren, Studenten, Politieker, en ja zelfs Advocaten zijn mensen. Echter, enkel Politiekers en Advocaten hebben ook de interface IVloeker die hen toelaat eens goed te vloeken.  Brave leerkrachten en studenten doen dat niet. We willen een programma dat lijsten van mensen bevat waarbij we de vloekers kunnen doen vloeken zonder complexe code te moeten schrijven.
 
 We hebben volgende klasse-structuur:
+
 ![](../assets/12_isas/polyinterface.png)
 
 
 Als basis klasse ``Mens``  hebben we dan:
+
 ```csharp
 public class Mens
 {
@@ -21,6 +23,7 @@ public class Mens
 }
 ```
 Voorts definiëren we de interface:
+
 ```csharp
 interface IVloeker
 {

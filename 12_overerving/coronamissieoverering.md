@@ -8,7 +8,7 @@
 
 # Nieuw virus
 
-1. Zorg ervoor dat de methode ``TryVaccin`` virtual wordt gemaakt in de Vaccin klasse.
+1. Zorg ervoor dat de methode ``TryVaccin`` virtual wordt gemaakt in de Virus klasse.
 2. Maak een klasse DomVirus dat overerft van Virus. Deze klasse voert nog steeds TryVaccin uit zonder aanpassingen. Echter, 50% van de tijd zal de aanroep van TryVaccin resulteren in het verhogen (ipv verlagen) van de ``DoomCountdown`` teller.
 
 # Test vaccin en nieuwe virus
@@ -27,7 +27,7 @@ We gaan de centra over de 7 continenten verspreiden. Maar we gaan hiervoor een n
 Maak de Dictionary als volgt:
 
 ```csharp
-Dictionary<string,VaccinatieCentrum> centraDB = new Dictionary<string,VaccinatieCentrum>
+Dictionary<string,VaccinatieCentrum> centraDB = new Dictionary<string,VaccinatieCentrum>();
 ```
 
 ``string`` geeft hier aan dat we als key een string gebruiken, en dat de elementen in de dictionary allemaal Vaccinatiecentra zijn.

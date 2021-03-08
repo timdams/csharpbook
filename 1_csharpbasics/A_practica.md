@@ -1,89 +1,346 @@
-> Het is aanbevolen dat je per hoofdstuk een nieuwe folder aanmaakt op je computer. Per oefening maak je dan best een nieuw project aan dat je in de folder zet. Geef ieder project een duidelijke naam (bv EuroNaarDollar) zodat je later vlot je oefeningen kan terugvinden. Denk er aan dat je je projecten best enkel met cijfers en letters benoemd (dus beter EuroNaarDollar dan Euro-Dollar).
+# Oefeningen
 
-# Simple maths
-Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toont:
+## Oefening: H1-variabelen\_hoofdletters
+
+### Leerdoelen
+
+* gebruik van variabelen om input en output via `Console.ReadLine` en `Console.WriteLine` op te slaan en terug te tonen
+
+### Functionele analyse
+
+Een applicatie vraagt je tekst in te voeren die dan daarna zal worden getoond met allemaal hoofdletters.
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+![](../../.gitbook/assets/image%20%282%29.png)
+
+### Technische hulp
+
+#### Programmaverloop
+
+Lees de gebruikersinvoer van de console en slaag dit op in een variabele.
+
+Zet de inhoud van deze variabele om in hoofdletters. Je kan dit doen door `ToUpper()` toe te voegen aan een variabele van het type `string`. Bijvoorbeeld `myText.ToUpper()` in plaats van `myText`.
+
+Uiteindelijk geef je dan deze variabele weer in de console.
+
+#### Testscenario's
+
+* Voer tekst in met spaties
+* Voer tekst in van meer dan 100 karakters
+* Voer tekst in van 1 karakter
+* Voer geen tekst in
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H1-optellen
+
+### Leerdoelen
+
+* gebruik van variabelen om input via `Console.ReadLine` op te slaan 
+* berekeningen met de opgeslagen data uitvoeren
+* het resultaat dat werd opgeslagen in een variabele via `onsole.WriteLine` te tonen
+
+### Functionele analyse
+
+Een applicatie vraagt je twee getallen in te voeren. Na de invoer van het tweede getal worden beide getallen bij elkaar opgeteld. Het resultaat wordt uiteindelijk weergeven.
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+**Werking**
+
+1. De vraag wordt gesteld om een getal in te typen en daarna op enter/return te drukken.
+2. Er wordt gevraagd een tweede getal in te typen en dan op enter/return te drukken.
+3. De twee getallen worden opgeteld.
+4. Het resultaat wordt weergegeven.
+
+#### voorbeeldinteractie\(s\)
+```text
+Wat is het eerste getal?
+> 1
+Wat is het tweede getal?
+> 4
+De som is 5.
+```
+
+### Technische hulp
+
+#### Programmaverloop
+
+Lees de gebruikersinvoer van de console en slaag dit op in een variabele voor wat het eerste getal betreft. Herhaal dit voor het tweede getal. Tel de twee getallen samen en bewaar deze in een derde variabele. Uiteindelijk geef je dan de inhoud van deze derde variabele weer in de console. Tip: getal1 = Convert.ToInt32\(invoer1\);
+
+#### Testscenario's
+
+* Voer tekst in.
+* Voer een getal met 100 cijfers in.
+* Voer geen getal in.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H1-verbruik-wagen
+
+### Leerdoelen
+
+* gebruik van variabelen om input via `Console.ReadLine` op te slaan 
+* berekeningen met de opgeslagen data uitvoeren
+* het resultaat dat werd opgeslagen in een variabele via `onsole.WriteLine` te tonen
+
+### Functionele analyse
+
+Een applicatie zal voor jou het gemiddelde verbruik van een wagen berekenen.
+
+Hiervoor worden volgende vragen gesteld:
+
+1. Hoeveel liter is er nog aanwezig in de benzinetank. 
+2. Hoeveel liter zit er nog in de benzinetank na de rit. 
+3. Ook de kilometerstand van bij de aanvang van de rit wordt gevraagd en ook deze nadat de rit werd uitgevoerd. 
+
+Op basis van deze parameters wordt het gemiddelde verbruik berekend en weergegeven.
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+**Werking**
+
+1. De vraag wordt gesteld om het aantal liter, aanwezig in de benzinetank, op te geven. 
+2. Daarna wordt gevraagd om ook het aantal liter op te geven na de rit. 
+3. De kilometerstand van de aanvang van de rit wordt gevraagd. 
+4. Uiteindelijk ook de kilometerstand na het beëindigen van de rit wordt opgevraagd.
+
+#### voorbeeldinteractie\(s\)
+
+{% hint style="danger" %}
+De screenshot vermeldt het afgeronde verbruik, maar dat hoef je niet te tonen. De instructie om af te ronden heb je nog niet gezien.
+{% endhint %}
+
+![](../../.gitbook/assets/image.png)
+
+### Technische hulp
+
+#### Programmaverloop
+
+Lees de gebruikersinvoer van de console en slaag dit op in variabelen.
+
+Zorg ervoor dat je het juiste gegevenstype kiest voor de verschillende variabelen.
+
+Nadien voer je de berekening uit om op basis van de ingevoerde gegevens het gemiddeld verbruik te berekenen \(100 \* \(aantalLiterinTank1 - aantalLiterinTank2\) / \(kilometerstand2 - kilometerstand1\)\)
+
+Uiteindelijk geef je dan het resultaat weer in de console.
+
+#### Testscenario's
+
+* Voer tekst in.
+* Voer een getal met 100 cijfers in.
+* Voer geen getal in.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H1-beetje-wiskunde
+
+### Leerdoelen
+
+* expressies schrijven
+* voorrang van operatoren
+* effect van operaties naargelang datatype begrijpen
+
+### Functionele analyse
+
+Je schrijft een programma dat de rol vervult van een rekenmachine. Het voert volgende berekeningen uit:
+
+* -1 + 4 \* 6
+* \( 35+ 5 \) % 7
+* 14 + -4 \* 6 / 11
+* 2 + 15 / 6 \* 1 - 7 % 2
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
 
 ```text
--1 + 4 * 6
-
-( 35 + 5 ) % 7
-
-14 + -4 * 6 / 11
-
-2 + 15 / 6 * 1 - 7 % 2
+23
+5
+12
+3
 ```
 
-Test wat er gebeurt indien je het resultaat in een ``int`` bewaard en wat er gebeurt als je deze in een ``double`` bewaard.
-Toon beide uitkomsten (m.b.v. ``WriteLine``) telkens op het scherm.
+### Technische hulp
 
-Opgelet: de % hier is de modulo-operator!
+#### Programmaverloop
 
-# Gemiddelde
+Eerst wordt een resultaat berekend, daarna wordt het geprint.
 
-Maak 3 variabelen aan van het type ``int`` genaamd ``september``, ``oktober`` en ``november``. Plaats in elke variabele de hoeveelheid uren slaap je die maand verwacht te doen. Bereken nu het gemiddelde van 3 maanden en toon het resultaat op het scherm (kies uiteraard 3 verschillende hoeveelheden slaap).
+#### Testscenario's
 
-# Euro naar dollar
+* Test uit met getallen van het type `int`.
+* Test uit met getallen van het type `float`.
 
-Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers. Je hoeft niet af te ronden. Het resultaat op het scherm wordt als volgt weergegeven: ``[x] EUR is gelijk aan [y] USD``.
+### Ondersteunend materiaal
 
-# Tafel en Console.Clear()
+[Hier](https://www.programiz.com/csharp-programming/operator-precedence-associativity) vind je een tabel terug die uitlegt welke operaties voorrang hebben.
 
-Met het statement ``Console.Clear();`` kan je de console - je raadt het nooit - leegmaken. Test deze code in het volgende programma:
+## Oefening: H1-gemiddelde
 
-Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411= 411, 2x411= 822 tot en met 10x411= 4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
+### Leerdoelen
+
+* expressies schrijven
+* voorrang van operatoren
+* effect van operaties naargelang datatype begrijpen
+
+### Functionele analyse
+
+Je schrijft een programma dat het gemiddelde van 18, 11 en 8 berekent, d.w.z. deze drie getallen optelt en de som deelt door drie.
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
 
 ```text
-1 x 411 = 411
-Druk op enter voor de volgende lijn.
-[Scherm leeg gemaakt]
-2 x 411 = 822
-Druk op enter voor de volgende lijn.
-[Scherm leeg gemaakt]
-...
+12
 ```
 
-**Plaats 411 in een variabele aan de start van het programma en gebruik deze in je berekeningen verderop. Toon dat je code ook werkt door de inhoud van de variabele in een ander getal te veranderen zodat je van dat nieuwe getal nu de tafels van vermenigvuldiging krijgt.**
+### Technische hulp
 
+#### Programmaverloop
 
-Je kan wachten tot de gebruiker op enter duwt door gewoon een lege ``Console.ReadLine`` te doen, zoals volgende voorbeeld toont:
+Eerst wordt het resultaat berekend, daarna wordt het geprint.
 
-```csharp
-Console.WriteLine("Eerste beeld");
-Console.WriteLine("Druk enter om voort te gaan.");
-Console.ReadLine();
-Console.Clear();
-Console.WriteLine("Tweede beeld");
+#### Testscenario's
+
+* Test uit met getallen van het type `int`.
+* Test uit met getallen van het type `float`.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H1-maaltafels
+
+### Leerdoelen
+
+* de console leegmaken
+* werken met wiskundige operatoren
+* interactie met de gebruiker
+
+### Functionele analyse
+
+Je schrijft een programma dat de tafel van vermenigvuldiging voor 411 geeft. Dit programma wacht steeds tot de gebruiker op ENTER duwt voor het het volgend resultaat toont. Verder maakt het steeds het scherm leeg voor het een nieuw resultaat toont. Zie "programmaverloop".
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+1 * 411 is 411.
 ```
 
-> Merk op dat ``Console.Clear()`` niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
+```text
+2 * 411 is 822.
+```
 
-# Kill/Death-ratio
+\(enzovoort\)
 
-Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio.
+```text
+10 * 411 is 4110.
+```
 
-(**opgelet: begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met ``int`` zou werken).
+### Technische hulp
 
-# Gewicht in space
+#### Programmaverloop
 
-Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.
+Voor elk resultaat wordt het scherm eerst leeggemaakt. Daarna pas wordt het resultaat getoond. Wanneer de gebruiker op ENTER duwt, wordt deze handeling herhaald voor het volgende resultaat \(of eindigt het programma, na het tiende resultaat\). Het scherm leegmaken doe je met `Console.Clear()`. Plaats 411 ook in een variabele.
 
-Maak een variabele ``double gewichtOpAarde`` aan. Wijs een gewicht toe (bv. het jouwe). Schrijf nu een programma dat onder elkaar jouw gewicht op verschillende planeten toont.
+#### Testscenario's
 
-Hier de omzettingstabel (je gewicht op Mercurius is dus je gewicht op aarde x 0.38):
+* Test uit zoals gegeven.
+* Test uit voor 511. Je zou maar één teken in je code moeten aanpassen als je de instructies hebt gevolgd.
 
-* Mercurius: 0.38
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H1-ruimte
+
+### Leerdoelen
+
+* werken met kommagetallen
+
+### Functionele analyse
+
+Je massa is overal dezelfde en wordt uitgedrukt in kilogram. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent en wordt uitgedrukt in Newton. Je hebt dus een ander gewicht op andere planeten. Zo is je gewicht veel groter op Jupiter dan op Mars, omdat Jupiter meer zwaartekracht uitoefent dan Mars. Schrijf een programma dat je gewicht op aarde omzet naar je gewicht op een ander hemellichaam. Je krijgt volgende omzettingstabel:
+
+* Mercurius: 0.38 \(een persoon van 100kg voelt zich alsof hij 38kg weegt\) 
 * Venus: 0.91
-* Aarde: 1.00
+* Aarde: 1.00 \(een persoon van 100kg voelt zich alsof hij 100kg weegt\)
 * Mars: 0.38
 * Jupiter: 2.34
 * Saturnus: 1.06
 * Uranus: 0.92
 * Neptunus: 1.19
-* Pluto: 0.06  (we laten de discussie achterwege of pluto wel of niet een planeet is)
+* Pluto: 0.06 
 
-De output zijn verschillende lijnen onder elkaar in de vorm van:
+### Technische analyse
 
-``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
+#### UI
 
-Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt en die van pluto in het groen.
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Op Mercurius heb je een schijnbaar gewicht van 26.22kg.
+Op Venus heb je een schijnbaar gewicht van 62.79kg.
+Op Aarde heb je een schijnbaar gewicht van 69kg.
+Op Mars heb je een schijnbaar gewicht van 26.22kg.
+Op Jupiter heb je een schijnbaar gewicht van 161.46kg.
+Op Saturnus heb je een schijnbaar gewicht van 73.14kg.
+Op Uranus heb je een schijnbaar gewicht van 63.48kg.
+Op Neptunus heb je een schijnbaar gewicht van 82.11kg.
+Op Pluto heb je een schijnbaar gewicht van 4.14kg.
+```
+
+### Technische hulp
+
+#### Programmaverloop
+
+Plaats je gewicht in een variabele. Kies zelf een geschikt type.
+
+#### Testscenario's
+
+* Test uit voor je eigen gewicht.
+* Test uit voor het gewicht van een persoon met een massa van 100kg.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
 

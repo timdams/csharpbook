@@ -1,5 +1,12 @@
 # Enum datatypes
-> Deel van dit hoofdstuk is uit Visual C# 2012 -  De basis (Sander Gerz)
+{% hint style='tip' %}
+Delen van dit hoofdstuk komen uit Visual C# 2012 -  De basis (Sander Gerz)
+{% endhint %}
+
+{% hint style='warning' %}
+Dit is nog zo'n onderschat hoofdstuk. Enums zijn wat raar in het begin, maar van zodra je er mee weg bent zal je niet meer zonder kunnen!
+{% endhint %}
+
 
 # De bestaansreden voor enums
 Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week iets anders moet doen. In een wereld zonder enums (enumeraties) zou je dit kunnen schrijven op 2 zeer foutgevoelige manieren:

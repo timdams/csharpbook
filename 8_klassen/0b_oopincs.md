@@ -35,7 +35,9 @@ Je kan "eender waar" een klasse aanmaken, maar het is een goede gewoonte om per 
 * Kies Class..
 * Geef een goede naam voor je klasse
 
+{% hint style='warning' %}
 **De naam van je klasse moet voldoen aan de identifier regels die ook gelden voor het aanmaken van variabelen!**
+{% endhint %}
 
 ![Klasse toevoegen in VS](../assets/6_klassen/klassadd.png)
 
@@ -58,4 +60,6 @@ Let goed op dat je dus op de juiste plekken dit alles doet (bekijk de onderstaan
 
 ![basics oop same in vv](../assets/6_klassen/allessamen.png)
 
-> Je hebt dus in het verleden ook al objecten aangemaakt. Telkens je met Random werkt deed je dit al. Dit wil zeggen dat er dus in .NET ergens reeds een voorgeprogrammeerde klasse ``Random`` bestaat met de interne werking.
+{% hint style='tip' %}
+Je hebt dus in het verleden ook al objecten aangemaakt. Telkens je met Random werkt deed je dit al. Dit wil zeggen dat er dus in .NET ergens reeds een voorgeprogrammeerde klasse ``Random`` bestaat met de interne werking.
+{% endhint %}

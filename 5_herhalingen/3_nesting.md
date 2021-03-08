@@ -1,8 +1,9 @@
 # Nested loops
+
 Wanneer we 1 of meerdere loops in een andere loop plaatsen dan spreken we over **geneste loops**. 
 Geneste loops komen vaak voor, maar zijn wel een ras apart wanneer je deze zaken wilt debuggen en correct schrijven.
 
- ![](../assets/3_loops/nesting.png)
+ ![Deze afbeelding komt uit het zeer aan te raden handboek "Microsoft Visual C# .NET" van Joyce Farrell.](../assets/3_loops/nesting.png)
 
 
  We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loops de **inner loop(s)** zijn. 
@@ -29,7 +30,11 @@ while(tellerA < 3 )  //outer loop
 
  ![](../assets/3_loops/nestedoutput.png)
 
+{% hint style='tip' %}
 **Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner en outer loop apart)**
+{% endhint %}
+
+
 
 # Geneste loops tellen
 Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenenigvuldig je al deze getallen met elkaar.

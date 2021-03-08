@@ -1,7 +1,9 @@
-# Meer met methoden
+{% hint style='tip' %}
 Volgende sectie is grotendeels gebaseerd op het volgende [artikel](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments).
+{% endhint %}
 
-## Named parameters
+
+# Named parameters
 Wanneer je een methode aanroept is de volgorde van je argumenten belangrijk: deze moeten meegeven worden in de volgorde zoals de methode parameters ze verwachten.
 
 Met behulp van named parameters kan je echter expliciet aangeven welke argument aan welke methode-parameter moet meegegeven worden. 
@@ -30,7 +32,7 @@ We kunnen named parameters aangeven door de naam van de parameter gevolg door ee
  PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);
  ```
 
-### Volgorde van named parameters belangrijk
+## Volgorde van named parameters belangrijk
 Je mag ook een combinatie doen van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).
 Enkele voorbeelden:
 ```csharp
@@ -46,7 +48,7 @@ PrintOrderDetails(31, sellerName: "Gift Shop", "Red Mug");
 PrintOrderDetails(31, "Red Mug", sellerName: "Gift Shop");
 ```
 
-## Optionele parameters
+# Optionele parameters
 Soms wil je dat een methode een standaard waarde voor een parameter gebruikt indien de programmeur in z'n aanroep geen waarde meegaf. Dat kan met behulp van optionele of default parameters.
 
 Je geef aan dat een parameter optioneel is door deze een default waarde te geven in de methode-signatuur. Deze waarde zal dan gebruikt worden indien de parameter geen waarde van de aanroeper heeft gekregen.
@@ -77,7 +79,7 @@ Met optionele parameters kunnen we dit indien gewenst omzeilen. Volgende aanroep
 ExampleMethod(3, age: 4);
 ```
 
-## Method overloading
+# Method overloading
 
 Method overloading wil zeggen dat je een **methode met dezelfde naam en returntype** meerdere keren definieert maar met andere parameters qua type en aantal. De compiler zal dan zelf bepalen welke methode moet aangeroepen worden gebaseerd op het aantal en type parameters dat je meegeeft.
 
@@ -102,7 +104,7 @@ Afhankelijk van de aanroep zal dus de ene of andere uitgevoerd worden. Volgende 
             Console.WriteLine($"Circle: {ComputeArea(7)}");
 ```
 
-### Betterness rule
+## Betterness rule
 Indien de compiler twijfelt tijdens de **overload resolution** (welke versie moet aangeroepen worden) zal de betterness rule worden gehanteerd: de best 'passende' methode zal aangeroepen worden.
 Stel dat we volgende overloaded methoden hebben:
 
@@ -167,6 +169,7 @@ static void Toonverhouding(double a, int b) //versie B
 ```
 
 Indien ook die regel niet werkt dan zal een error optreden zoals hier wat zal resulteren in een **Ambigious overload error**:
+
 ```csharp
 static void Main(string[] args)
 {
@@ -187,8 +190,3 @@ static void Toonverhouding(double a, int b)
 }
 
 ```
-
-# Kennisclip
-![](../assets/infoclip.png)
-* [Method overloading](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d43a3aa5-2481-4e8a-aef0-a9a700cb2821)
-* [Named en optionele parameters](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e8df8cd1-e83a-4632-b69f-a9a700cd9bc9)

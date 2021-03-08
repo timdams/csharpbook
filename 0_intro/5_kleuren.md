@@ -26,28 +26,10 @@ Als je deze code uitvoert krijg je als resultaat:
 
 ![Resultaat voorgaande code](../assets/0_intro/kleuren.PNG)
 
+{% hint style='tip' %}
+Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen.
+{% endhint %}
 
-> Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen.
-
-# Mogelijke kleuren
-
-Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
-
-* ConsoleColor.Black
-* ConsoleColor.DarkBlue
-* ConsoleColor.DarkGreen
-* ConsoleColor.DarkCyan
-* ConsoleColor.DarkRed
-* ConsoleColor.DarkMagenta
-* ConsoleColor.DarkYellow
-* ConsoleColor.Gray
-* ConsoleColor.DarkGray
-* ConsoleColor.Blue
-* ConsoleColor.Green
-* ConsoleColor.Cyan
-* ConsoleColor.Red
-* ConsoleColor.Magenta
-* ConsoleColor.Yellow
 
 # Kleur resetten
 
@@ -61,3 +43,26 @@ Console.WriteLine("Error!!!! Contacteer de helpdesk");
 Console.ResetColor();
 Console.WriteLine("Het programma sluit nu af");
 ```
+
+# Mogelijke kleuren 
+
+Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
+
+* ``ConsoleColor.Black``
+* ``ConsoleColor.DarkBlue``
+* ``ConsoleColor.DarkGreen``
+* ``ConsoleColor.DarkCyan``
+* ``ConsoleColor.DarkRed``
+* ``ConsoleColor.DarkMagenta``
+* ``ConsoleColor.DarkYellow``
+* ``ConsoleColor.Gray``
+* ``ConsoleColor.DarkGray``
+* ``ConsoleColor.Blue``
+* ``ConsoleColor.Green``
+* ``ConsoleColor.Cyan``
+* ``ConsoleColor.Red``
+* ``ConsoleColor.Magenta``
+* ``ConsoleColor.Yellow``
+
+
+![Bron afbeelding : https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/](../assets/1_csharpbasics/kleurenconsole.jpg)

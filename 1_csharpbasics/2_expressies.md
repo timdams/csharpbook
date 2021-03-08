@@ -2,7 +2,14 @@
 
 Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die op 1 resultaat uitkomen. De volgende code is bijvoorbeeld een expressie: `3+2`.
 
-Het resultaat van deze expressie is 5. [Meer informatie over expressies hier](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions).
+Het resultaat van deze expressie is 5. 
+
+{% hint style='tip' %}
+
+Over expressies in C# is véél te vertellen, maar niet aan de orde in deze cursus. Bekijk [zeker volgende tekst](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions) indien je meer interesse hebt.
+
+{% endhint %}
+
 
 ## Expressie-resultaat toewijzen
 
@@ -39,9 +46,9 @@ int hoogte = 20 * breedte;
 # Operators
 Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgen de wiskundige regels van **volgorde van berekeningen**:
 
-1. Haakjes
-2. Vermenigvuldigen: ``*`` en ``/`` (alsook `%` die we later zien)
-3. Optellen: `+` en `-`
+1. **Haakjes**
+2. **Vermenigvuldigen, delen en modulo**: ``*`` (vermenigvuldigen), ``/`` (delen) en ``%`` (rest na deling, ook module genoemd)
+3. **Optellen en aftrekken**: `+` en `-`
 (etc.)
 
 Net zoals in de wiskunde kan je in C# met behulp van de haakjes verplichten het deel tussen de haakjes eerst te doen, ongeacht de andere operators en hun volgorde van berekeningen:
@@ -57,7 +64,7 @@ double zwaartekrachtAarde= 9.81;    //m/s²
 double zwaartekrachtMars= 3.711;    //m/s²
 
 double  gewichtOpMars= (gewichtOpAarde/zwaartekrachtAarde) * zwaartekrachtMars; //kg
-Console.WriteLine("Je weeg op Mars" + gewichtOpMars + " kg");
+Console.WriteLine("Je weegt op Mars" + gewichtOpMars + " kg");
 ```
 
 ## Modulo operator ``%``
@@ -141,7 +148,7 @@ En nu krijgen we wel ``4.5``.
 
 Het kan subtiel en ambetant worden in grotere berekeningen.
 
-Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien (fictief)(wishfull thinking) 10000 euro per maand. 
+Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien (fictief) 10000 euro per maand. 
 Ik gebruik volgende formule:
 
 ```csharp

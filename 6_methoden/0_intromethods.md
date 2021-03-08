@@ -144,7 +144,7 @@ for (int i = 1; i < 11; i++)
 
 Dit zal als resultaat geven
 
-```
+```text
 Faculteit van 1 is 1
 Faculteit van 2 is 2
 Faculteit van 3 is 6
@@ -243,15 +243,7 @@ Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische 
 * [Introductie methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=500f8c7e-874c-4e01-a2e5-aaf600dcda06)
 * [Sneller methoden schrijven m.b.v. IntelliSense](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b93447e7-88a1-49ec-992f-a9af00b22dde)
 
-
-
-
-# Why should I care?
-![](../assets/care.jpg)
-
-Volg nu een voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. 
-
-Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na *n* jaren met de volgende formule:
+Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na n jaren met de volgende formule:
 
 ```csharp
 eindkapitaal = startkapitaal x (1 + (rentepercentage/100))^n

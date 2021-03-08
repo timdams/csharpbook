@@ -51,15 +51,6 @@ Van zodra een object in de array staat kan je deze vanuit de array aanspreken d.
 mijnKlas[3].Name= "Vincent Lagasse";
 ```
 
-### Null check met ?
-
-Ook hier kan je met ``?`` een null check schrijven:
-
-```csharp
-mijnKlas?[3]?.Name= "Romeo Montague ";
-```
-Merk op dat het eerste vraagteken controleer of de array niet ``null``is. Het tweede vraagteken, na de index, is om te controleren of het element op die index niet ``null`` is.
-
 # Arrays als parameters en return
 
 Ook arrays mag je als parameters en returntype gebruiken in methoden. De werking hiervan is identiek aan die van value-types.

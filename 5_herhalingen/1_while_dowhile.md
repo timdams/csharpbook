@@ -16,6 +16,7 @@ Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden
 Telkens wanneer het programma aan het einde van het ``while`` codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer ``true`` dan wordt de code weer uitgevoerd. Van zodra de test ``false`` is zal de code voorbij het codeblock springen en na het ``while`` codeblok doorgaan.
 
 Het diagramma is duidelijk:
+
  ![](../assets/3_loops/while.png)
 
 
@@ -53,8 +54,10 @@ do{
 } while (booleaanse expressie);
 ```
 
+{% hint style='warning' %}
 Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
 Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop.
+{% endhint %}
 
 ```csharp
 int i = 10;
@@ -101,7 +104,9 @@ while(teller<10)
 }
 ```
 
-> Probeer er altijd zeker van te zijn dat de variabele(n) die je gebruikt in je test-conditie ook in de loop aangepast worden. Als deze in de loop constant blijft dan zal ook de test-conditie dezelfde blijven en heb je dus een oneindige loop gemaakt.
+{% hint style='tip' %}
+Probeer er altijd zeker van te zijn dat de variabele(n) die je gebruikt in je test-conditie ook in de loop aangepast worden. Als deze in de loop constant blijft dan zal ook de test-conditie dezelfde blijven en heb je dus een oneindige loop gemaakt.
+{% endhint %}
 
 ## Scope van variabelen in loops
 Let er op dat de [scope](../4_beslissingen/3_scope.md) van variabelen bij loops zeer belangrijk is. Indien je een variabelen binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende cyclus van de loop start.
@@ -151,9 +156,15 @@ do
 **Zolang (while) de gebruiker niet ``"a"`` OF ``"b"`` OF ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
 
 Merk op dat we de variabele ``string input`` VOOR de `` do while`` moeten aanmaken. Zouden we die IN de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
-> Je ziet dat het stuk ``} while(input...);`` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft).
+
+{% hint style='tip' %}
+Je ziet dat het stuk ``} while(input...);`` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft.
+{% endhint %}
+
 
 # Kennisclip
+
 ![](../assets/infoclip.png)
+
 * [De while loop en soorten loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3d1f021e-0152-4dcd-9e73-a99800b53707)
 * [Do-while loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=82314092-f4bf-408b-bb3f-a99800b6f1c8)

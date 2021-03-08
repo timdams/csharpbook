@@ -1,83 +1,276 @@
-# BMI met if
+# Oefeningen
 
-Pas je BMI-programma ([zie practica vorige hoofdstuk](../3_data/A_Practica.md#bmi-berekenaar)) aan zodat je programma feedback geeft aan de gebruiker naargelang het berekende BMI.
+## H4-BMI-if
 
-De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
+### Leerdoelen
 
-* Onder de 18,5 (rood): ondergewicht.
-* Tussen de 18,5 en de 24,9 (groen): normaal gewicht. 
-* Tussen de 25 en de 29,9 (donkergeel): overgewicht. Je loopt niet echt een risico, maar je mag niet dikker worden.
-* Tussen de 30 en de 39,9 (rood): Zwaarlijvigheid (obesitas). Verhoogde kans op allerlei aandoeningen zoals diabetes, hartaandoeningen en rugklachten. Je zou 5 tot 10 kg moeten vermageren.
-* Boven de 40 (magenta): ernstige zwaarlijvigheid. Je moet dringend vermageren want je gezondheid is in gevaar (of je hebt je lengte of gewicht in verkeerde eenheid ingevoerd).
+* conditionele boodschappen
 
-# Schoenverkoper
-a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20 euro. Indien de gebruiker 10 paar of meer koopt kosten de eerste 9 paar nog steeds 20 euro, de overige kosten echter maar 10 euro. Toon aan de gebruiker de totale prijs.
+### Functionele analyse
 
-Voorbeeld:  
-* 8 schoenen kost 8x20 = 160 euro
-* 12 schoenen kost 9x20 + 3x10 = 210 euro
+Deze opgave bouwt verder op H3-BMI-berekenaar. Meerbepaald moet je de gebruiker niet alleen zijn of haar BMI tonen, maar moet je ook een gekleurde boodschap tonen die laat weten of de BMI goed zit of niet.
 
-b) Voeg nu toe dat het programma eerst aan de kassier vraagt tot hoeveel schoenen de korting niet geldt. 
+Voor een BMI lager dan 18,5 toon je de boodschap "ondergewicht" in rode tekst. Voor een BMI die hoger ligt dan 18,5 maar lager dan 25, toon je de boodschap "normaal gewicht" in groene tekst. Voor een hogere BMI, maar lager dan 30, toon je in gele tekst "overgewicht". Voor een hogere BMI, maar lager dan 40, toon je "zwaarlijvig" in rode tekst. Voor een hogere BMI toon je "ernstige obesitas" in magenta.
 
-Voorbeeld:
-* De kassiester voert 6 in. Dan kosten 8 schoenen: 6x20 + 2x10 = 140 euro.
+### Technische analyse
 
-# Ohm-berekenaar
-Vraag aan de gebruiker wat hij wenst te berekenen: spanning, weerstand of stroomsterkte. Vraag vervolgens de 2 andere waarden (als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand) en bereken m.b.v. de wet van Ohm de gewenste waarde.
+Via `if` en `else` \(en dus ook `else if`\) kan je gevallen onderscheiden. Gebruik `ConsoleColor.Red`, `ConsoleColor.Green`, `ConsoleColor.Yellow` en `ConsoleColor.Magenta`.
 
-# Kleurcode weerstand naar ohm
-Vraag aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst (bv ``groen``). Toon vervolgens de de waarde van deze weerstand.
-Als dus de gebruiker na elkaar invoert:
+#### UI
 
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Hoeveel weeg je in kg?
+> 69.0
+Hoe groot ben je in m?
+> 1.78
+Je BMI bedraagt 21.78.
+normaal gewicht
 ```
-rood
-paars
-rood
+
+{% hint style="info" %}
+De tekst zou in het groen moeten verschijnen maar Gitbook staat dit niet meteen toe.
+{% endhint %}
+
+## H4-schoenverkoper
+
+### Leerdoelen
+
+* conditionele berekeningen
+
+### Functionele analyse
+
+Maak een programma dat aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost normaal 20 euro. Indien de gebruiker 10 paar of meer koopt, kost elk paar maar 10 euro. Toon aan de gebruiker de totale prijs.
+
+Breid in een tweede stap je programma uit zodat gevraagd wordt vanaf welk aantal schoenen de prijs daalt naar 10 euro.
+
+### Technische analyse
+
+Hou variabelen bij voor de prijs, de gereduceerde prijs en het aantal paar dat nodig is om korting te krijgen. De eerste twee variabelen maak je `const`.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Hoeveel paar schoenen wil je kopen?
+> 3
+Je moet 60 euro betalen.
 ```
-Dan zal het programma tonen:
 
-``Deze weerstand heeft een waarde van  2700 Ohm``
+```text
+Hoeveel paar schoenen wil je kopen?
+> 12
+Je moet 120 euro betalen.
+```
 
-Indien je deze oefening maakt nadat je reeds ``switch`` hebt leren gebruiken, los deze oefening dan met ``switch`` op. Nog niet gezien? Ga voor ``if``/``else if`` code.
+\(Na de uitbreiding\)
 
+```text
+Vanaf welk aantal geldt de korting?
+> 7
+Hoeveel paar schoenen wil je kopen?
+> 8
+Je moet 80 euro betalen.
+```
 
-# Orakeltje van Delphi, part deux
-Vul de oefening aan uit het vorige hoofdstuk (zie [hier](../3_data/A_Practica.md#het-orakeltje-van-delphi)). Voor het orakel je vertelt hoe lang je te leven hebt zal het eerste vragen of je een vrouw (``v``) of een man (``m``) bent. Dan vraagt ze je leeftijd.
-Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Laat het orakel een duur voorspellen die kan. Als een vrouw van 50 de vraag stelt dan zal het orakel dus een getal tussen 5 en 100 (``150-50``) genereren. Een man van 35 zal tussen de 5 en 85 (``120-35``) jaren langer kunnen leven. 
+## H4-Ohm-berekenaar
 
+### Leerdoelen
 
-# Casino
- Genereer  een random getal van 1 t.e.m. 6 maar toon dit niet aan de gebruiker. Vraag aan de gebruiker welk getal hij denkt dat de computer heeft "geworpen". Indien de gebruiker juist raadt verschijnt er "proficiat" op het scherm. Anders: "you lose".
+* conditionele berekeningen
 
- # Casino 3
- Vul de voorgaande oefening aan, maar laat de gebruiker 3x na mekaar raden. Enkel als hij juist raadt mag hij nog eens raden. Als hij ook de derde juist raadt wint hij. In alle andere gevallen niet.
+{% hint style="info" %}
+De wet van Ohm houdt in dat een elektrische stroom \(voorgesteld als `I`\) gelijk is aan een spanningsverschil \(`U`\) gedeeld door een weerstand \(`R`\), dus I = U / R.
+{% endhint %}
 
-# Quiz
-Maak een quiz. Maak gebruik van het ``switch``-statement om de input van de gebruiker (a, b, c of d) te verwerken en bij iedere vraag aan te geven of dit juist of fout is. Voorzie 3 multiple choice vragen. Houdt bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore (Juist is +2, fout is -1).
+### Functionele analyse
 
- Zoek op hoe je de kleur van de letters en de achtergrond in een console-applicatie kunt aanpassen en pas dit toe op je quiz om deze er iets boeiender uit te laten zien. Toon iedere vraag op een nieuw scherm.
+Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroomsterkte. Vraag vervolgens de twee andere waarden \(als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand\) en bereken m.b.v. de wet van Ohm de gewenste waarde en toon aan de gebruiker.
 
-# Schrikkeljaar
+### Technische analyse
+
+Denk eraan dat de gegeven formule wiskundig gedefinieerd is. In C♯ zal je rekening moeten houden met het feit dat deze drie maten uitgedrukt kunnen worden in kommagetallen.
+
+Je mag hier gewoon strings gebruiken om na te gaan welke maat de gebruiker heeft ingetypt. Je mag veronderstellen dat de getallen uitgedrukt zijn in de gewoonlijke eenheden \(volt, ampère, ohm\) zodat je ze gewoon kan invullen in de formule.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Wat wil je berekenen? spanning, weerstand of stroomsterkte?
+> stroomsterkte
+Wat is de spanning?
+> 30
+Wat is de weerstand?
+> 20
+De stroomsterkte bedraagt 1.5.
+```
+
+## H4-Schrikkeljaar
+
+### Leerdoelen
+
+* conditionele berekeningen
+* geneste condities
+
+### Functionele analyse
+
 De gebruiker voert een jaartal in en jouw programma toont of het wel of geen schrikkeljaar is. Een schrikkeljaar is deelbaar door 4, behalve als het ook deelbaar is door 100, tenzij het wél deelbaar is door 400.
-Bijvoorbeeld: 
-* 1997: geen schrikkeljaar
-* 1996: wél schrikkeljaar
-* 1900: geen schrikkeljaar
-* 2000: wél schrikkeljaar
 
-# GuntherD Stemwijzer
-Kan jij volgende ludieke stemwijzer van GuntherD in een eenvoudig programma gieten dat door een reeks j/n vragen aan de gebruiker uiteindelijk zijn "stemprofiel" toont?
+### Technische analyse
 
+* gebruik de modulo-operator \(`%`\) om deelbaarheid door 4 na te gaan
+* gebruik een constructie met geneste `if`s \(en `else`s\) om alle gevallen af te handelen
 
-![](../assets/2_beslissingen/stemwijzer.png)
+#### UI
 
-# Enum seizoenen
-Maak een enum die de seizoenen van het jaar bevat. Vraag aan de gebruiker om een maandnummer in te voeren. Gebruik vervolgens een switch om te bepalen in welk seizoen deze maand (grotendeels) ligt. Wijs deze enum toe aan een variabele in de switch.
-Vervolgens gebruik je een if om, gebaseerd op deze enum-variabele, te tonen of het om een koud seizoen (winter en herfst) of een warm seizoen (zomer en lente) gaat.
+console applicatie
 
-# Enum bij BMI
+#### voorbeeldinteractie\(s\)
 
-Maak een enum die de verschillende soorten gewichten voorsteld (Obees, Zwaarlijvig, NormaalGewicht, etc.) Pas de bestaande "BMI met if" oefening aan zodat je deze enum gebruikt om je code leesbaarder te maken. 
+```text
+> 1997
+geen schrikkeljaar
+```
 
-# Kleurcode weerstand naar ohm, met enum
-Open de "Kleurcode weerstand naar ohm" die je eerder in dit hoofdstuk hebt gemaakt. Gebruik enum om de weerstandskleuren voor te stellen zodat je veel leesbaardere code krijgt.
+```text
+> 1996
+schrikkeljaar
+```
+
+```text
+> 1900
+geen schrikkeljaar
+```
+
+```text
+> 2000
+schrikkeljaar
+```
+
+## H4-kleurcodes
+
+### Leerdoelen
+
+* conditionele berekeningen
+* werken met `switch`
+
+### Functionele analyse
+
+Deze oefening bouwt voort op H2-weerstandberekenaar-deel1. Vraag nu aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst \(bv `groen`\). Toon vervolgens de de waarde van deze weerstand.
+
+### Technische analyse
+
+Je zal elke kleur moeten omzetten in een getal en dan je eerdere oplossing hergebruiken. Omzetten doe je door de ingevoerde tekst te vergelijken met een vaste string en naargelang het resultaat variabelen voor ring 1, 2 en 3 in te vullen. **Los deze oefening op met `switch`!**
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Wat is de kleur van de eerste ring?
+> rood
+Wat is de kleur van de tweede ring?
+> paars
+Wat is de kleur van de derde ring?
+> rood
+Deze weerstand heeft waarde van 2700 Ohm
+```
+
+{% hint style="info" %}
+Voel je je vandaag extra leergierig? Maak dan een extra `enum`, `ResistorColors` en zet de ingegeven tekst om naar waarden binnen deze `enum` vooraleer je de berekening uitvoert.
+{% endhint %}
+
+## H4-orakeltje
+
+### Leerdoelen
+
+* conditionele berekeningen
+* werken met `switch`
+* werken met enumeraties
+
+### Functionele analyse
+
+Vul de oefening aan uit het vorige hoofdstuk \(zie [deze pagina](../3_data/A_Practica.md)\). Voor het orakel je vertelt hoe lang je te leven hebt zal eerst vragen naar je geslacht, dat je ingeeft als `v` of `m`. Dan vraagt ze je leeftijd. Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Het orakel moet rekening houden met je huidige leeftijd, dus het mag niet zeggen dan een man nog 110 jaar te leven heeft als hij al 50 is, want dan zou hij ouder worden dan 120.
+
+### Technische analyse
+
+* Je mag veronderstellen dat de huidige leeftijd onder het theoretische maximum ligt.
+* Gebruik een `enum`, met als naam `Sexes` en als waarden `Male` en `Female` om de geslachten voor te stellen.
+  * Het programma zou in dit geval misschien iets simpeler zijn zonder, maar dan gebruik je dit een eerste keer.
+* Je kan vermijden dat de voorspelde leeftijd te hoog gaat door je `.Next`-call aan te passen, zodat de hoogst mogelijke waarde diegene is waarbij je de maximale leeftijd voor het gegeven geslacht bereikt.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Wat is je geslacht?
+> m
+Hoe oud ben je?
+> 32
+Je hebt nog 80 jaar te leven!
+```
+
+## H4-ruimte-specifiek
+
+{% hint style="danger" %}
+Dit is een complexere oefening dan de vorige! Pak het stapje voor stapje aan en gebruik indien nodig de debugger.
+{% endhint %}
+
+### Leerdoelen
+
+* werken met enumeraties
+* conversie van enums van en naar getallen
+* werken met `switch`
+
+### Functionele analyse
+
+Deze opgave bouwt verder op H1-ruimte. Eerst vraag je de gebruiker om zijn of haar gewicht in te voeren. Daarna geef je een lijst van de planeten in ons zonnestelsel \(Pluto inbegrepen, ook al is dat officieel geen planeet\). Iedere planeet wordt voorafgegaan door een nummer. Dan selecteert de gebruiker het nummer van een van deze planeten en ten slotte toont het programma hoe veel de persoon weegt op de planeet in kwestie.
+
+### Technische analyse
+
+Je hebt hier verschillende zaken nodig:
+
+* conversie naar een `double` om een gewicht in te lezen
+* een `enum` om de planeten voor te stellen
+* conversie van de planeten naar getallen om de gebruiker een nummer voor elke planeet te tonen
+* conversie in de omgekeerde richting om de keuze van de gebruiker te verstaan
+* een `switch` om de juiste vermenigvuldigingsfactor te bepalen
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Hoeveel weeg je?
+> 69.0
+Voor welke planeet wil je je gewicht kennen?
+1. Mercurius
+2. Venus
+3. Aarde
+4. Mars
+5. Jupiter
+6. Saturnus
+7. Uranus
+8. Neptunus
+9. Pluto
+> 2
+Daar weeg je 62.79kg.
+```
+

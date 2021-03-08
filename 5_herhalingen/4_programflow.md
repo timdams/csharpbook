@@ -5,25 +5,30 @@ Een flowchart (letterlijk: *stroomkaart*) of stroomdiagram is een schematische b
 
 
 Een flowchart bestaat uit een aantal elementen:
-* Pijl: een pijl geeft aan naar welk volgende blok wordt gegaan. Indien boven de pijl een bepaalde waarde staat wil dit zeggen dat deze pijl enkel wordt gevolgd als de uitkomst van het vorige blok de getoonde waarde geeft.
-* Start en einde: aangegeven met een cirkel met daarin de woorden "Start" of "Einde"
-* Verwerk-stap: een statement zoals "Voeg 1 toe aan X" wordt in een rechthoek geplaatst. Alle code die geen invoer nodig heeft zet je in een rechthoek.
-* Input/output: Een parallellogram gebruik je om in-of uitvoer van de gebruiker of scherm te tonen. Bv "Verkrijg X van gebruiker" of "Toon volgende zin op het scherm".
-* Condities en beslissingen: Een ruit wordt gebruikt wanneer een beslissing moet genomen worden. De condities van if en while-loops zet je dus in een ruit. De pijlen die eruit volgen geven aan welke pijl moet gevolgd worden gegeven een bepaalde waarde van de conditie.
+* **Pijl**: een pijl geeft aan naar welk volgende blok wordt gegaan. Indien boven de pijl een bepaalde waarde staat wil dit zeggen dat deze pijl enkel wordt gevolgd als de uitkomst van het vorige blok de getoonde waarde geeft.
+* **Start en einde**: aangegeven met een cirkel met daarin de woorden "Start" of "Einde"
+* **Verwerk-stap**: een statement zoals "Voeg 1 toe aan X" wordt in een rechthoek geplaatst. Alle code die geen invoer nodig heeft zet je in een rechthoek.
+* **Input/output**: Een parallellogram gebruik je om in-of uitvoer van de gebruiker of scherm te tonen. Bv "Verkrijg X van gebruiker" of "Toon volgende zin op het scherm".
+* **Condities en beslissingen**: Een ruit wordt gebruikt wanneer een beslissing moet genomen worden. De condities van if en while-loops zet je dus in een ruit. De pijlen die eruit volgen geven aan welke pijl moet gevolgd worden gegeven een bepaalde waarde van de conditie.
 
 # Flow-elementen
 We tonen nu kort de verschillende program flow elementen en hoe ze in een flowchart voorkomen.  
 ##	If-element
- ![](../assets/3_loops/if.png)
+
+![](../assets/3_loops/if.png)
+
 ##	If-else element
 
- ![](../assets/3_loops/ifelse.png)
+![](../assets/3_loops/ifelse.png)
 
 ##	While-element
- ![](../assets/3_loops/while.png)
+
+![](../assets/3_loops/while.png)
 
 ##	Do while-element
- ![](../assets/3_loops/dowhile.png)
+
+![](../assets/3_loops/dowhile.png)
+
 Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat. Dit is dus de manier om een while/do while te herkennen: er wordt naar een eerder punt in de code gegaan, een punt waar we reeds geweest waren
 
 ##	For-element
@@ -37,5 +42,7 @@ De finale flowchart ziet er als volgt uit:
 
 Zoals verteld kunnen we een flowchart in beide richtingen gebruiken. We hebben de flowchart hiervoor gemaakt, gebaseerd op onze oplossing van het vorige labo. Maar stel dat je deze flowchart krijgt, dan kan je dus ook deze chart rechtstreeks omzetten in C#.
 
+{% hint style='tip' %}
 # Code 2 flow
-Via de website en app "Code2flow" ([site](https://code2flow.com/app)) kan je heel eenvoudig een flowchart genereren van pseudocode.
+Via de [website en app "Code2flow"](https://code2flow.com/app) kan je heel eenvoudig een flowchart genereren van pseudocode.
+{% endhint %}

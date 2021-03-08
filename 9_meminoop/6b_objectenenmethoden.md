@@ -71,7 +71,7 @@ static void VerhoogGetal(int inmeting)
 }
 ```
 
-## Delen van objecten als parameter
+## Onderdelen van objecten als parameter
 
 Stel dat we volgende methode hebben
 

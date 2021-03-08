@@ -42,9 +42,13 @@ Stel dat je een getal tussen 0.0 en 10.0 nodig hebt, dan schrijf je:
 Random myran= new Random();
 double randomgetal= myran.NextDouble() * 10.0;
 ```
-# Ik krijg dezelfde random getallen :(
+
+{% hint style='warning' %}
+**Ik krijg dezelfde random getallen? Wat nu?**
 
 [Zie hier voor meer informatie indien je dezelfde random nummers genereert.](http://csharpindepth.com/Articles/Chapter12/Random.aspx)
+{% endhint %}
+
 
 # Kennisclip
 ![](../assets/infoclip.png)

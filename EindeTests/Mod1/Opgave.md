@@ -1,7 +1,10 @@
 # Module 1 Afsluiter
+{% hint style='tip' %}
+Dit is een goede oefening om te testen of je alle leerstof van de voorbije hoofdstukken goed beheerst.
 
+We hebben deze cursus in 4 delen ("modules") opgedeeld. Aan het einde van ieder deel komen enkele geïntegreerde opdrachten die alle kennis van het voorgaande deel vereist. Sommige van deze oefeningen waren ooit testen/examens van deze cursus.
+{% endhint %}
 ## Opgave
-> Een goede oefening om te testen of je alle leerstof van de voorbije hoofdstukken goed beheerst en een oefening die zal lijken op de vaardigheidsproef.
 
 Maak een multitool-applicatie die wanneer deze opstart aan de gebruiker een menu toont. Afhankelijk van de input van de gebruiker zal er vervolgens een ander stuk uitgevoerd worden. De verschillende keuzes zijn (de gebruiker voert een cijfer in!):
 

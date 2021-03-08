@@ -65,7 +65,7 @@ switch (option)
 
 ## Opgelet:
 
-De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.)
+De case waarden moeten literals zijn. Dit zijn waarden die je letterlijk uitschrijft, d.w.z. die je niet voorstelt als variabele (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.)
 
 # Falthrough
 

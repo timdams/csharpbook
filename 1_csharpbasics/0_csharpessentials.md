@@ -43,9 +43,15 @@ Deze keywords zijn:
 |using|using static|*virtual*|**void**|
 |volatile|**while**| | |
 
-> De keywords in vet zijn keywords die we dit semester zullen kennen. Die in cursief in het tweede semester. De overige zal je zelf moeten leren ;).
 
-(indien je deze tabel in pdf bekijkt zal deze om zeep zijn. Onze gitbook gnomes proberen dit op te lossen maar voorlopig vinden we helaas geen oplossing, waarvoor onze excuses)
+{% hint style='tip' %}
+De keywords in vet zijn keywords die we dit semester zullen kennen. Die in cursief in het tweede semester. De overige zal je zelf moeten leren ;).
+{% endhint %}
+
+{% hint style='tip' %}
+Indien je deze tabel in pdf bekijkt zal deze om zeep zijn. Onze gitbook gnomes proberen dit op te lossen maar voorlopig vinden ze helaas geen oplossing, waarvoor onze excuses.
+{% endhint %}
+
 
 # Variabelen, identifiers en naamgeving
 
@@ -63,16 +69,16 @@ De verschillende datatypes bespreken we in een volgend [hoofdstuk](1_datatypes.m
 
 De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan **variabelen** (en later ook methoden, objecten, etc.) dan moeten we een aantal regels volgen:
 
-* Hoofdlettergevoelig: de identifiers ``tim`` en ``Tim`` zijn verschillend zoals reeds vermeld.
-* Geen keywords: identifiers mogen geen gereserveerde C# keywords zijn. De keywords van hierboven mogen dus niet. Varianten waarbij de hoofdletters anders zijn mogen wel, bijvoorbeeld: ``gOTO`` en ``stRINg`` mogen dus wel, maar niet ``goto`` of ``string`` daar beide een gereserveerd keyword zijn maar dankzij de hoofdlettergevoelig-regel is dit dus toegelaten. ``INT`` mag ook ook, maar niet ``int``.
-* Eerste karakter-regel: het eerste karakter van de identifier mag enkel zijn:
+* **Hoofdlettergevoelig**: de identifiers ``tim`` en ``Tim`` zijn verschillend zoals reeds vermeld.
+* **Geen keywords**: identifiers mogen geen gereserveerde C# keywords zijn. De keywords van hierboven mogen dus niet. Varianten waarbij de hoofdletters anders zijn mogen wel, bijvoorbeeld: ``gOTO`` en ``stRINg`` mogen dus wel, maar niet ``goto`` of ``string`` daar beide een gereserveerd keyword zijn maar dankzij de hoofdlettergevoelig-regel is dit dus toegelaten. ``INT`` mag ook ook, maar niet ``int``.
+* **Eerste karakter-regel**: het eerste karakter van de identifier mag enkel zijn:
   * kleine of grote letter
   * liggend streepje (``_``)
-* Alle andere karakters: de overige karakters mogen enkel zijn:
+* **Alle andere karakters-regels**: de overige karakters mogen enkel zijn:
   * kleine of grote letter
   * liggend streepje
   * een cijfer (``0`` tot en met ``9``)
-* Lengte: Een legale identifier mag zo lang zijn als je wenst, maar je houd het best leesbaar.
+* **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houd het best leesbaar.
 
 ### Enkele voorbeelden
 
@@ -93,7 +99,7 @@ Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
 
 ## Naamgeving afspraken
 
-Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding guidelines** die doorheen je opleiding moeten gevolgd worden. Naarmate we meer C# leren zullen er extra guidelines bijkomen (zie [deze appendix voor alle guidelines van de opleiding](../B_appendix/codingguidelines.md)).
+Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding guidelines** die doorheen je opleiding moeten gevolgd worden. Naarmate we meer C# leren zullen er extra guidelines bijkomen (zie [deze pagina met richtlijnen](../_intro/afsprakencode.md)).
 
 * **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever ``gewicht`` of ``leeftijd`` in plaats van ``a`` of ``meuh``.
 * **Camel casing**: gebruik camel casing indien je meerdere woorden in je identifier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn ``leeftijdTimDams`` of ``aantalLeerlingenKlas1EA``. Merk op dat we liefst het eerste woord met kleine letter starten. Uiteraard zijn er geen spaties toegelaten.

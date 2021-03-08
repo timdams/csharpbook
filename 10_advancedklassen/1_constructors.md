@@ -26,13 +26,13 @@ Als programmeur van eigen klassen zijn er 3 opties voor je:
 * Je hebt enkel een **default** constructor nodig. Je kan nog steeds objecten met ``new Student()`` aanmaken, maar je gaat zelf beschrijven wat er moet gebeuren bij de default constructor
 * Je wenst gebruik te maken van een of meerdere **overloaded** constructoren, hierbij zal je dan extra argumenten kunnen meegeven bij de creatie van een object, bijvoorbeeld: ``new Student(24, "Jos")``.
 
+{% hint style='warning' %}
 ## Constructors zijn soms gratis, soms niet
-
-![Opgelet](../assets/attention.jpg)
 
 Een lege default constructor voor je klasse krijg je standaard wanneer je een nieuwe klasse aanmaakt. Je ziet deze niet en kan deze niet aanpassen. Je kan echter daarom altijd objecten met ``new myClass()`` aanmaken.
 
 Van zodra je echter beslist om zelf een of meerdere constructors te schrijven zal C# zeggen "ok, jij je zin, nu doe je alles zelf". De default constructor die je gratis kreeg zal ook niet meer bestaan en heb je die dus nodig dan zal je die dus zelf moeten schrijven!
+{% endhint %}
 
 ## Default constructor
 
@@ -73,6 +73,10 @@ Zoals verteld moet de constructor de naam van de klasse hebben, public zijn en g
 
 Vervolgens voegen we de code toe die we nodig hebben:
 
+{% hint style="danger" %}
+Dit is in veel programmeertalen slecht gebruik van `Random`, maar we hebben nog niet de nodige achtergrond om de juiste werkwijze te tonen. Dat komt binnenkort!
+{% endhint %}
+
 ```csharp
 class Student
 {
@@ -87,12 +91,11 @@ class Student
 
 ```
 
-
-Telkens we nu een object zouden aanmaken met ``new Student()`` zal deze een willekeurige leeftijd hebben.
+Telkens we nu een object zouden aanmaken met `new Student()` zal deze een willekeurige leeftijd hebben.
 
 ### Opmerking bij voorgaande code
 
-* Als je twee of meerdere Studenten snel in je code na mekaar aanmaakt zullen deze dezelfde leeftijd hebben. Dit is omdat ieder object z'n eigen ``Random`` aanmaakt en zoals we weten zal een random generator dezelfde getallen genereren als deze vlak na mekaar (in tijd) zijn aangemaakt. Een oplossing zullen we hier later voor zien. Spoiler, ``static`` is de oplossing hiervoor:
+* Als je op een gelijkaardige manier in andere programmeertalen twee of meerdere Studenten snel na mekaar aanmaakt zullen deze dezelfde leeftijd hebben. Dit is omdat ieder object z'n eigen `Random` aanmaakt en zoals we weten zal een random generator dezelfde getallen genereren als deze vlak na mekaar \(in tijd\) zijn aangemaakt. Een oplossing zullen we hier later voor zien. Spoiler, `static` is de oplossing hiervoor:
 
 ```csharp
 class Student
@@ -108,18 +111,17 @@ class Student
 
 ```
 
-## Overloaded constructor
+### Constructor met parameter(s)
 
-Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. 
-Met andere woorden, stel dat we dit willen schrijven:
+Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. Met andere woorden, stel dat we dit willen schrijven:
 
 ```csharp
 Student jos= new Student(19);
 ```
 
-Als we dit met voorgaande klasse , die enkel een default constructor heeft, uitvoeren zal de code een fout geven. C# vindt geen constructor die een int als parameter aanvaardt.
+Als we dit met voorgaande klasse , die enkel een default constructor heeft, uitvoeren zal de code een fout geven. C\# vindt geen constructor die een int als parameter aanvaardt.
 
-[Net zoals bij overloading van methoden](../6_methoden/3_advancedmethod.md) kunnen we ook constructors overloaden. De code is verrassen gelijkaardig als bij method overloading:
+[Net zoals bij overloading van methoden](../../semester-1-programming-principles/h6-methoden/3_advancedmethod.md) kunnen we ook constructors overloaden. De code is verrassen gelijkaardig als bij method overloading:
 
 ```csharp
 class Student
@@ -134,19 +136,16 @@ class Student
 
 ```
 
-Dat was eenvoudig he.
-**Maar** denk eraan: je hebt een overloaded constructor geschreven en dus heeft C# gezet "ok, je schrijft zelf constructor, trek je plan. Maar de default zal je ook zal moeten schrijven!"
-Je kan nu enkel je objecten met ``new Student(25)`` aanmaken. Schrijf je ``new Student()`` dan zal je een error krijgen. Wil je die constructor, de default constructor, nog hebben dan zal je die dus ook moeten schrijven, bijvoorbeeld:
-
+Dat was eenvoudig. **Maar** denk eraan: je hebt een eigen constructor geschreven en dus heeft C\# gezet "ok, je schrijft zelf constructor, trek je plan. Maar de default zal je ook zal moeten schrijven!" Je kan nu enkel je objecten met `new Student(25)` aanmaken. Schrijf je `new Student()` dan zal je een error krijgen. Wil je die constructor nog hebben, dan zal je die met de hand moeten schrijven, bijvoorbeeld:
 
 ```csharp
 class Student
 {
-    public Student(int startage) //overloaded
+    public Student(int startage) // met parameter
     {
         age= startage;
     }
-    
+
     public Student() //default
     {
         Random r= new Random();
@@ -158,8 +157,16 @@ class Student
 
 ```
 
-### Meerdere overloaded constructor
-Wil je meerdere overloaded constructors dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
+### Wanneer heb ik constructoren nodig?
+Tot zeer recent maakten we onze objecten steeds aan met de default constructor. Pas daarna gaven we eventuele properties de juiste waarde. Dat houdt een risico in: er is een periode waarin onze objecten nog niet "af" zijn. In het slechtste geval vergeten we zelfs om de properties in te stellen en krijgen we objecten die misschien ongeldig zijn.
+
+Constructoren helpen dit probleem te voorkomen. Als we één constructor hebben, bijvoorbeeld `Student(string name)`, **moeten** we die gebruiken. We kunnen dus niet vergeten bijvoorbeeld `frankVermeulen.Name = "Frank Vermeulen"` te schrijven, want we worden gedwongen meteen `new Student("Frank Vermeulen")` te schrijven.
+
+Samengevat: **als er eigenschappen zijn die je meteen bij het aanmaken van een object wil instellen, maak er dan parameters van een constructor voor**.
+
+#### Overloaded constructoren
+
+Wil je meerdere overloaded constructors, dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
 
 ```csharp
 class Student
@@ -168,7 +175,7 @@ class Student
     {
         age= startage;
     }
-    
+
     public Student(int startage, bool werkstart) //overloaded
     {
         age= startage;
@@ -185,6 +192,37 @@ class Student
     private bool isWerkStudent
 }
 
+```
+
+#### Constructor chaining
+Als je meerdere overloaded constructoren hebt, hoef je niet in elke constructor alle code voor objectinitialisatie te schrijven. Het sleutelwoordje `this` biedt de mogelijkheid **eerst** een andere constructor aan te roepen en eventueel andere operaties toe te voegen. Dit heet **constructor chaining**. In bovenstaand voorbeeld kan je ook dit schrijven:
+
+```csharp
+class Student
+{
+    public Student(int startage) : this(startage, false)
+    {
+    // niet nodig hier code uit uitgebreidere constructor te herhalen
+    // hier kan nog extra code worden uitgevoerd na de oproep van de uitgebreide constructor
+    }
+
+    public Student(int startage, bool werkstart) //overloaded
+    {
+        age= startage;
+        isWerkStudent=werkstart;
+    }
+
+    public Student() //default
+    {
+        // helaas wordt onderstaande code pas **na** de chained constructor opgeroepen
+	// gebruik van this heeft hier dus niet veel zin
+        Random r= new Random();
+        age= r.Next(10,20);
+    }
+
+    private int age;
+    private bool isWerkStudent
+}
 ```
 
 # Kennisclip

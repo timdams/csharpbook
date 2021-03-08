@@ -47,7 +47,11 @@ Wat zal de uitkomst zijn van volgende expressies? (protip: het zal steeds ``true
 * ``true || false ``
 * ``!true && false ``
 
->Voorgaande oefeningen komen uit een kennistoets examen. Het is voornaam dat je dit soort expressies vlot kunt oplossen!
+{% hint style='tip' %}
+Voorgaande oefeningen komen uit een vorige kennistoets examen. Het is voornaam dat je dit soort expressies vlot kunt oplossen!
+{% endhint %}
+
+
 
 # Kennisclip
 ![](../assets/infoclip.png)
